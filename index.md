@@ -77,11 +77,11 @@ My research combines computer science and statistics to optimize and secure Smar
         </td>
         <td>
             <a href="https://www.tcs.com/">
-            <img src="/images/tcs.png" width="95" height="110"></a>
+            <img src="/images/tcs.png" width="100" height="115"></a>
         </td>
          <td>
             <a href="https://www.nrel.gov/">
-            <img src="/images/nrel.png"></a>
+            <img src="/images/nrel.png" "100" height="115"></a>
         </td> 
     </tr>
     <tr>
