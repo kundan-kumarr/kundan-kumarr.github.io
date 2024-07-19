@@ -21,8 +21,8 @@ My research combines computer science and statistics to tackle real-world challe
     <col width="85%">
 
 <tr>
-        <td valign="top"><strong>[June 2024]</strong></td>
-        <td>Our paper on <a href="">Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids </a> has been accepted in <a href="https://pes-gridedge.org/"> EEE PES GRID EDGE TECHNOLOGIES CONFERENCE & EXPOSITION&#42; 2025</a></td>
+        <td valign="top"><strong>[Jun 2024]</strong></td>
+        <td>Our paper on <a href="">Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids </a> has been accepted in <a href="https://pes-gridedge.org/"> IEEE PES-GRID-EDGE TECHNOLOGIES CONFERENCE & EXPOSITION&#42; 2025</a></td>
     </tr>
 
     <tr>
@@ -69,7 +69,7 @@ My research combines computer science and statistics to tackle real-world challe
         </td>
         <td>
              <a href="https://www.oxfordml.school/">
-            <img src="/images/images.png" width="100" height="115"></a>
+            <img src="/images/images.png" width="200" height="115"></a>
             
         </td>
     <tr>
