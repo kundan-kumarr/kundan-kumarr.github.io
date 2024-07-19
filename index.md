@@ -69,7 +69,7 @@ My research combines computer science and statistics to tackle real-world challe
         </td>
         <td>
              <a href="https://www.oxfordml.school/">
-            <img src="/images/oxml.png" width="200" height="115"></a>
+            <img src="/images/oxml.png" width="200" height="95"></a>
             
         </td>
     <tr>
