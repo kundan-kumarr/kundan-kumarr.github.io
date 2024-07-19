@@ -81,7 +81,7 @@ My research combines computer science and statistics to optimize and secure Smar
         </td>
          <td>
             <a href="https://www.nrel.gov/">
-            <img src="/images/nrel.png" width="300" height="215"></a>
+            <img src="/images/nrel.png" width="200" height="215"></a>
         </td> 
     </tr>
     <tr>
