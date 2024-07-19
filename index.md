@@ -81,12 +81,12 @@ My research combines computer science and statistics to optimize and secure Smar
         </td>
          <td>
             <a href="https://www.nrel.gov/">
-            <img src="/images/nrel.png" width="100" height="115"></a>
+            <img src="/images/nrel.png" width="300" height="215"></a>
         </td> 
     </tr>
     <tr>
         <td>Udacity<br></td>
-        <td>TCS<br></td>
-        <td>NREL<br>Summer 2024</td> 
+        <td>2012-2014<br></td>
+        <td>Summer 2024<br></td> 
     </tr>
 </table>
