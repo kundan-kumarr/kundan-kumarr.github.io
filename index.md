@@ -8,11 +8,11 @@ comments: false
 
 <!-- Hey there! -->
 
-I am pursuing a Ph.D. in [Computer Science](https://www.cs.iastate.edu/) with a minor in [Statistics](https://www.stat.iastate.edu) at [Iowa State University](https://www.iastate.edu/). Under the guidance of [Dr. Ravikumar Gelli](https://www.engineering.iastate.edu/people/profile/gelli/), my research primarily revolves around optimizing Smart Grids. I am particularly focused on enhancing the security of Smart Grids through the application of cutting-edge techniques such as Deep Reinforcement Learning, Graph Neural Networks, and Generative Adversarial Networks (GANs). My research aims to contribute to the development of robust and efficient systems for Smart Grids.
+I am currently pursuing a Ph.D. in [Computer Science](https://www.cs.iastate.edu/) with a minor in [Statistics](https://www.stat.iastate.edu) at [Iowa State University](https://www.iastate.edu/), working under the guidance of [Dr. Ravikumar Gelli](https://www.engineering.iastate.edu/people/profile/gelli/). My research is centered around optimizing Smart Grids, with a particular focus on enhancing their security using advanced techniques such as Deep Reinforcement Learning, Graph Neural Networks, and Generative Adversarial Networks (GANs). By integrating computer science and statistical methodologies, my goal is to develop robust and efficient systems that contribute to the advancement of Smart Grid technologies.
 
-In addition to my work on Smart Grids, I am deeply interested in statistical machine learning, deep learning, computer vision, and robotics. My research extends to exploring the applications of GPT (Generative Pre-trained Transformer) models, a line of research that I find particularly intriguing. Investigating the capabilities and potential of GPT models in the context of Smart Grids and related technologies is a significant aspect of my research agenda.
+In addition to my work on Smart Grids, I am deeply interested in various other domains including statistical machine learning, deep learning, computer vision, and robotics. I am also passionate about the potential of GPT (Generative Pre-trained Transformer) models and their applications in Smart Grid technologies. Furthermore, I have a strong interest in self-driving technology, where I explore how advancements in AI and machine learning can drive innovation in autonomous systems.
 
-My research combines computer science and statistics to optimize and secure Smart Grids. I'm passionate about advancing AI and machine learning for practical applications.
+My research combines computer science and statistics to tackle real-world challenges and push the boundaries of technology in both Smart Grids and self-driving projects.
 
 ---------------------------
 <h3 align="center">News</h3>
@@ -20,6 +20,16 @@ My research combines computer science and statistics to optimize and secure Smar
     <col width="15%">
     <col width="85%">
 
+<tr>
+        <td valign="top"><strong>[June 2024]</strong></td>
+        <td>Our paper on <a href="">Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids </a> has been accepted in <a href="https://pes-gridedge.org/"> EEE PES GRID EDGE TECHNOLOGIES CONFERENCE & EXPOSITION&#42; 2025</a></td>
+    </tr>
+
+    <tr>
+        <td valign="top"><strong>[Apr 2024]</strong></td>
+        <td>Our paper on <a href="">Workshop for High Performance Computing </a> has been accepted in <a href="https://www.psc.edu/"> Pittsburgh Supercomputing Center&#42; 2024</a></td>
+    </tr>
+    
         <tr>
         <td valign="top"><strong>[Feb 2024]</strong></td>
         <td>Our paper on <a href="">Bayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control </a> has been accepted in <a href="https://pes-gm.org/"> PES-General Meeting&#42; 2024</a></td>
