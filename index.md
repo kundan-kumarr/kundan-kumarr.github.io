@@ -58,8 +58,9 @@ My research combines computer science and statistics to optimize and secure Smar
             <img src="/images/BIT.png" width="100" height="115"></a>
         </td>
         <td>
-            <a href="https://www.tcs.com/">
-            <img src="/images/tcs.png" width="95" height="110"></a>
+             <a href="https://www.oxfordml.school/">
+            <img src="/images/images.png" width="100" height="115"></a>
+            
         </td>
     <tr>
     <tr>
@@ -67,7 +68,7 @@ My research combines computer science and statistics to optimize and secure Smar
      <tr>
         <td>Iowa State University<br></td>
         <td>BIT Sindri, India<br></td>
-        <td>TCS, India<br></td>
+        <td>Oxford, UK<br></td>
     </tr>
     </tr>
         <td>
@@ -75,8 +76,8 @@ My research combines computer science and statistics to optimize and secure Smar
             <img src="/images/udacity.png" width="100" height="115"></a>
         </td>
         <td>
-            <a href="https://www.oxfordml.school/">
-            <img src="/images/images.png" width="100" height="115"></a>
+            <a href="https://www.tcs.com/">
+            <img src="/images/tcs.png" width="95" height="110"></a>
         </td>
         <!-- <td>
             <a href="https://www.groupon.com/">
