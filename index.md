@@ -68,7 +68,7 @@ My research combines computer science and statistics to optimize and secure Smar
      <tr>
         <td>Iowa State University<br></td>
         <td>BIT Sindri, India<br></td>
-        <td>Oxford, UK<br></td>
+        <td>Summer 2022<br></td>
     </tr>
     </tr>
         <td>
@@ -86,7 +86,7 @@ My research combines computer science and statistics to optimize and secure Smar
     </tr>
     <tr>
         <td>Udacity<br></td>
-        <td>OxML Summer School<br></td>
+        <td>TCS<br></td>
         <!-- <td>Groupon<br>Summer 2017</td> -->
     </tr>
 </table>
