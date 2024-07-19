@@ -79,14 +79,14 @@ My research combines computer science and statistics to optimize and secure Smar
             <a href="https://www.tcs.com/">
             <img src="/images/tcs.png" width="95" height="110"></a>
         </td>
-        <!-- <td>
-            <a href="https://www.groupon.com/">
-            <img src="/images/grpn.png"></a>
-        </td> -->
+         <td>
+            <a href="https://www.nrel.gov/">
+            <img src="/images/nrel.png"></a>
+        </td> 
     </tr>
     <tr>
         <td>Udacity<br></td>
         <td>TCS<br></td>
-        <!-- <td>Groupon<br>Summer 2017</td> -->
+        <td>NREL<br>Summer 2024</td> 
     </tr>
 </table>
