@@ -29,12 +29,12 @@ Independent living is considered an essential part of society, but activities of
 
 ## Project Files
 
-- [iPython Notebook](https://github.com/kundan7kumar/Fruit-Classification/blob/main/HCI575_Final_Fruit_detection.ipynb)
-- [Project Code Description](https://kundan7kumar.github.io/Fruit-Classification/HCI575_Final_Fruit_detection/HCI575_Final_Fruit_detection.html)
+- [iPython Notebook](https://github.com/kundan-kumarr/Fruit-Classification/blob/main/HCI575_Final_Fruit_detection.ipynb)
+- [Project Code Description](https://kundan-kumarr.github.io/Fruit-Classification/HCI575_Final_Fruit_detection/HCI575_Final_Fruit_detection.html)
 
 
 
 ## Project Navigation
 
-Code : [Fruit Classification Code](https://github.com/kundan7kumar/Fruit-Classification/tree/main)
+Code : [Fruit Classification Code](https://github.com/kundan-kumarr/Fruit-Classification/tree/main)
 
