@@ -59,9 +59,9 @@
 #     ad-slot:
 #   bing-verify:
 #   googlescholar: "https://scholar.google.com/citations?user=1zDpIJkAAAAJ&hl=en&authuser=2"
-#   github: kundan7kumar
+#   github: kundan-kumarr
 #   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#   linkedin: kundan7kumar #username
+#   linkedin: kundan-kumarr #username
 #   medium: https://kkundann.medium.com/
 #   orcid: "https://orcid.org/0000-0002-3229-6649"
 #   xing: #username
@@ -140,9 +140,9 @@ owner:
   #   ad-slot: ""
   # bing-verify: ""
   googlescholar: "https://scholar.google.com/citations?user=1zDpIJkAAAAJ&hl=en&authuser=2"
-  github: kundan7kumar
+  github: kundan-kumarr
   stackoverflow: #123456/username   # from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: kundan7kumar #username
+  linkedin: kundan-kumarr #username
   medium: https://medium.com/@cs.kundann
   orcid: "0000-0002-3229-6649"
   Notion: "https://kkumarr.notion.site/Kundan-dashboard-be98587a184d465da5510f2fce263585?pvs=4"
