@@ -1,87 +1,3 @@
-# # Site wide configuration
-
-# title: Kundan Kumar
-# locale: en_US
-# url: "https://kundan7kumar.github.io"
-# # Jekyll configuration
-
-# permalink:   /:categories/:title/
-# markdown:    kramdown
-# highlighter: rouge
-# sass:
-#   sass_dir: _sass
-#   style: compressed
-# gems:
-#   - jekyll-sitemap
-
-# kramdown:
-#   auto_ids: true
-#   footnote_nr: 1
-#   entity_output: as_char
-#   toc_levels: 1..6
-#   use_coderay: false
-
-# #   # Analytics
-# # analytics:
-# #   provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
-# #   google:
-# #     tracking_id          :
-
-
-# # Pagination
-# pagination:
-#   enabled: true
-
-# related_blog_posts:
-#   enabled: true
-#   max_related: 5
-  
-# # Site owner
-# owner:
-#   name: Kundan Kumar
-#   avatar: bio.jpg
-#   position: Ph.D. Student
-#   school: Iowa State University
-#   place: Ames, Iowa, US
-#   bio: "I am currently pursuing a PhD in Computer Science with a minor in Statistics at Iowa State University. 
-#   My areas of interest include Reinforcement Learning, Machine Vision, and Cybersecurity.Pursuing PhD at Iowa State University in Computer Science and minoring in Statistics.
-#   Interested in Reinforcement Learning, Machine vision, and Cybersecurity"
-#   email: kkumar@iastate.edu
-#   disqus-shortname: kundan
-
-#   twitter: kundan7kumar #username
-#   facebook: #username
-#   google:
-#     plus:
-#     analytics:
-#     verify:
-#     ad-client:
-#     ad-slot:
-#   bing-verify:
-#   googlescholar: "https://scholar.google.com/citations?user=1zDpIJkAAAAJ&hl=en&authuser=2"
-#   github: kundan-kumarr
-#   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#   linkedin: kundan-kumarr #username
-#   medium: https://kkundann.medium.com/
-#   orcid: "https://orcid.org/0000-0002-3229-6649"
-#   xing: #username
-#   instagram: #username
-#   lastfm: #username
-#   tumblr: #username
-#   pinterest: #username
-#   foursquare: #username
-#   steam: #username
-#   dribbble: #username
-#   youtube: #username
-#   soundcloud: #username
-#   weibo: #username
-#   flickr: #username
-#   codepen: #username
-#   scholar: #username
-#   # medium: @kkundannqs
-
-# include: [".htaccess","_pages","files"]
-# exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 # Site wide configuration
 title: Kundan Kumar
 locale: en_US
@@ -143,7 +59,7 @@ owner:
   github: kundan-kumarr
   stackoverflow: #123456/username   # from a "http://stackoverflow.com/users/123456/username" link
   linkedin: kundan-kumarr #username
-  medium: https://medium.com/@cs.kundann
+  medium: @cs.kundann
   orcid: "0000-0002-3229-6649"
   Notion: "https://kkumarr.notion.site/Kundan-dashboard-be98587a184d465da5510f2fce263585?pvs=4"
   # instagram: ""
