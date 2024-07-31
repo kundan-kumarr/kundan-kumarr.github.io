@@ -14,7 +14,7 @@ comments: false
 <h4 align="right">-Ray Kurzweil</h4>
 
 --------------------------------------------------------------
-<h3 align="center"><a href="kundan7kumar.github.io/datascience-blog/"> Data Science</a></h3>
+<h3 align="center"><a href="kundan-kumarr.github.io/datascience-blog/"> Data Science</a></h3>
 <table class='news-table'>
     <col width="33%">
     <col width="33%">
@@ -85,7 +85,7 @@ comments: false
     <!-- Third Set of Divs -->
 </table>
 -----------------------------------------------------------
-<h3 align="center"><a href="https://kundan7kumar.github.io/algorithmic-challenge/">Data Structure and Algorithm </a></h3>
+<h3 align="center"><a href="https://kundan-kumarr.github.io/algorithmic-challenge/">Data Structure and Algorithm </a></h3>
 <table class='news-table'>
     <col width="50%">
     <col width="50%">
@@ -94,7 +94,7 @@ comments: false
             <div style="border: 2px solid black; padding: 15px; border-radius:5px;">
               <img src="https://example.com/image.png" alt="Image">
               <p>Data-Structures Coding & Notes</p>
-              <p><a class="more-link" href="https://github.com/kundan7kumar/algorithmic-challenge" target="_blank"><i class="fa fa-github"></i>Github</a></p>
+              <p><a class="more-link" href="https://github.com/kundan-kumarr/algorithmic-challenge" target="_blank"><i class="fa fa-github"></i>Github</a></p>
             </div>
         </td>
 
@@ -108,7 +108,7 @@ comments: false
     </tr>
 </table>
 ------------------------------------------------------------------
-<h3 align="center"><a href="https://kundan7kumar.github.io/statistics-analysis/">Statistics</a></h3>
+<h3 align="center"><a href="https://kundan-kumarr.github.io/statistics-analysis/">Statistics</a></h3>
 
 <table class='news-table' style="margin: 0 auto; width: 70%;">
     <col width="90%">
@@ -118,7 +118,7 @@ comments: false
                 <!-- <img src="/images/statistics.png" alt="Image" style="width: 550px; height: 90px;"> -->
                 <p>Statistical analysis is an essential tool for looking to analyze data and help understand, interpret data and draw meaningful conclusions from the findings. The statistical analysis notes include probability theory, hypothesis testing, regression analysis, statistical modeling, and data visualization. Please find the GitHub link for my Notes.</p>
             </div>
-            <p style="position: absolute; bottom: 10px; right: 15px;"><a class="more-link" href="https://kundan7kumar.github.io/statistics-analysis/" target="_blank"><i class="fa fa-github"></i>Github</a></p>
+            <p style="position: absolute; bottom: 10px; right: 15px;"><a class="more-link" href="https://kundan-kumarr.github.io/statistics-analysis/" target="_blank"><i class="fa fa-github"></i>Github</a></p>
         </td>
     </tr>
 </table>
