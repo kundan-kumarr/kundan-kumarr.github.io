@@ -95,8 +95,8 @@ My research combines computer science and statistics to tackle real-world challe
         </td>
     </tr>
     <tr>
-        <td>Udacity<br></td>
-        <td>2012-2014<br></td>
-        <td>Summer 2024<br></td>
+        <td>Pittsburgh Supercomputing Center<br></td>
+        <td>2024-Present<br></td>
+        <td>2024-Present<br></td>
     </tr>
 </table>
