@@ -13,7 +13,7 @@ share: false
     <col width="15%">
     <col width="85%">
     <tr>
-        <!-- <td valign="top"><strong>[Jan 2020]</strong></td> -->
+        <td valign="top"><strong>[Jan 2020]</strong></td>
         <td>Joined <a href="https://cs.iastate.edu/">Iowa State University </a> as a Ph.D. Student to further enhance my knowledge in machine learning and AI.&#128230;</td>
     </tr>
     <tr>
