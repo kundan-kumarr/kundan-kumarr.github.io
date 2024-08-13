@@ -59,27 +59,25 @@ My research combines computer science and statistics to tackle real-world challe
 
 <table align="center" class='affl-pic'>
     <tr>
-        <td>
+        <td style="text-align:center; vertical-align:middle;">
             <a href="https://www.iastate.edu/">
             <img src="/images/ISU.png" width="100" height="115"></a>
         </td>
-        <td>
+        <td style="text-align:center; vertical-align:middle;">
         <a href="https://www.oxfordml.school/">
        <img src="/images/oxml1.png" width="100" height="115"></a>
         </td>
+    </tr>
     <tr>
+        <td style="text-align:center;">Iowa State University<br>(2020-Present)</td>
+        <td style="text-align:center;">Oxford Machine Learning<br>(August 2022)</td>
+    </tr>
     <tr>
-    </tr>
-     <tr>
-        <td>Iowa State University<br>(2020-Present)</td>
-        <td>Oxford Machine Learning<br>(August 2022)</td>
-    </tr>
-    </tr>
-        <td>
+        <td style="text-align:center; vertical-align:middle;">
         <a href="https://www.psc.edu/">
         <img src="/images/psc.jpg" width="100" height="115"></a>
         </td>
-         <td>
+        <td style="text-align:center; vertical-align:middle;">
             <a href="https://www.nrel.gov/">
             <img src="/images/nrel1.png" width="100" height="215"></a>
         </td>
