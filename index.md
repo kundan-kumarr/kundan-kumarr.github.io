@@ -97,8 +97,8 @@ My research combines computer science and statistics to tackle real-world challe
         </td>
     </tr>
     <tr>
-        <td>Oxford Machine Learning<br>August 2022</td>
-        <td>2024-Present<br>2024-Present</td>
-        <td>Machine Learning Scientist<br>2024-Present</td>
+        <td>Oxford Machine Learning<br>(August 2022)</td>
+        <td>Pittsburgh Supercomputing<br>(2024-Present)</td>
+        <td>Machine Learning Scientist<br>(2024-Present)</td>
     </tr>
 </table>
