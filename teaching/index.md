@@ -56,6 +56,7 @@ I am currently a Teaching Assistant for the following courses in the [Department
   - Microsoft Excel: advanced features like VLOOKUP, macros, etc.
   - Microsoft Access: input, storage, processing, manipulation, querying, and analysis of data for business applications.
 
+<hr style="border: 1px solid gray">
 ## Future Plans and Goals
 
 In addition to my current responsibilities, I am eager to explore innovative teaching methodologies and integrate cutting-edge technologies into the curriculum. My long-term goal is to continue supporting students' learning journeys while contributing to the academic community through research and collaboration.
