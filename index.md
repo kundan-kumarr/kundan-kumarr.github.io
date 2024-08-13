@@ -75,11 +75,11 @@ My research combines computer science and statistics to tackle real-world challe
     <tr>
         <td style="text-align:center; vertical-align:middle;">
         <a href="https://www.psc.edu/">
-        <img src="/images/psc.jpg" width="100" height="115"></a>
+        <img src="/images/psc.jpg" width="200" height="115"></a>
         </td>
         <td style="text-align:center; vertical-align:middle;">
             <a href="https://www.nrel.gov/">
-            <img src="/images/nrel1.png" width="100" height="215"></a>
+            <img src="/images/nrel1.png" width="200" height="215"></a>
         </td>
     </tr>
     <tr>
