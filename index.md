@@ -97,7 +97,7 @@ My research combines computer science and statistics to tackle real-world challe
         </td>
     </tr>
     <tr>
-        <td>August 2022<br></td>
+        <td>August 2022<br>August 2022</td>
         <td>2024-Present<br></td>
         <td>2024-Present<br></td>
     </tr>
