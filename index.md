@@ -97,8 +97,8 @@ My research combines computer science and statistics to tackle real-world challe
         </td>
     </tr>
     <tr>
-        <td>August 2022<br>August 2022</td>
-        <td>2024-Present<br></td>
-        <td>2024-Present<br></td>
+        <td>Oxford Machine Learning<br>August 2022</td>
+        <td>2024-Present<br>2024-Present</td>
+        <td>Machine Learning Scientist<br>2024-Present</td>
     </tr>
 </table>
