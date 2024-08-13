@@ -1,6 +1,6 @@
 ---
 layout: page
-title: courses
+title: Courses
 tags: [kundan, kumar, travel, graduate]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: false
@@ -23,7 +23,7 @@ I think social media addiction like facebook, instagram, youtube etc are ruining
 <!-- Sporting Activities: -->
 ----
 
-<h3 align="center">Ice Skating</h3>
+<h3 align="center">Machine Learning</h3>
 <table class='news-table'>
     <col width="15%">
     <col width="85%">
@@ -41,7 +41,7 @@ I think social media addiction like facebook, instagram, youtube etc are ruining
 </table>
 
 ----
-<h3 align="center">Martial Arts</h3>
+<h3 align="center">Deep Learning</h3>
 <table class='news-table'>
     <col width="15%">
     <col width="85%">
@@ -63,30 +63,7 @@ I think social media addiction like facebook, instagram, youtube etc are ruining
 </table>
 
 ----
-<h3 align="center">Swimming</h3>
-<table class='news-table'>
-    <col width="15%">
-    <col width="85%">
-
-    <tr>
-        <td valign="top"><strong>[Jan 2020]</strong></td>
-        <td>Joined <a href="https://cs.iastate.edu/">Iowa State University </a> as a Ph.D. Student, moving further enhancement of knowledge in the process &#128230;
-        </td>
-    </tr>
-
-    <tr>
-        <td valign="top"><strong>[Apr 2016]</strong></td>
-        <td>Our paper on <a href="https://ieeexplore.ieee.org/abstract/document/7479095">Deep Value of Information Estimators for Collaborative Human-Machine Information Gathering </a> has been accepted in <a href="https://iccps.acm.org/2016/">ICCPS&#42; 2016</a></td>
-    </tr>
-    <tr>
-        <td valign="top"><strong>[Dec 2016]</strong></td>
-        <td>Completed MS in Computer Science at <a href="https://www.iastate.edu/">Iowa State University</a> &#127891;
-        </td>
-    </tr>
-</table>
-
-----
-<h3 align="center">Physical Fitness</h3>
+<h3 align="center">Reinforcement Learning</h3>
 <table class='news-table'>
     <col width="15%">
     <col width="85%">
@@ -109,7 +86,7 @@ I think social media addiction like facebook, instagram, youtube etc are ruining
 </table>
 
 ----
-<h3 align="center">Golf</h3>
+<h3 align="center">Computer Vision</h3>
 <table class='news-table'>
     <col width="15%">
     <col width="85%">
@@ -124,7 +101,6 @@ I think social media addiction like facebook, instagram, youtube etc are ruining
         <td valign="top"><strong>[Apr 2016]</strong></td>
         <td>Our paper on <a href="https://ieeexplore.ieee.org/abstract/document/7479095">Deep Value of Information Estimators for Collaborative Human-Machine Information Gathering </a> has been accepted in <a href="https://iccps.acm.org/2016/">ICCPS&#42; 2016</a></td>
     </tr>
-
     <tr>
         <td valign="top"><strong>[Dec 2016]</strong></td>
         <td>Completed MS in Computer Science at <a href="https://www.iastate.edu/">Iowa State University</a> &#127891;
@@ -133,8 +109,7 @@ I think social media addiction like facebook, instagram, youtube etc are ruining
 </table>
 
 ----
-
-<h3 align="center">Meditation</h3>
+<h3 align="center">Natural Language Processing</h3>
 <table class='news-table'>
     <col width="15%">
     <col width="85%">
@@ -159,7 +134,7 @@ I think social media addiction like facebook, instagram, youtube etc are ruining
 
 ----
 
-<h3 align="center">Photography </h3>
+<h3 align="center">Statistics</h3>
 <table class='news-table'>
     <col width="15%">
     <col width="85%">
@@ -183,7 +158,32 @@ I think social media addiction like facebook, instagram, youtube etc are ruining
 </table>
 
 ----
-<h3 align="center">Music</h3>
+
+<h3 align="center">Robotics </h3>
+<table class='news-table'>
+    <col width="15%">
+    <col width="85%">
+
+    <tr>
+        <td valign="top"><strong>[Jan 2020]</strong></td>
+        <td>Joined <a href="https://cs.iastate.edu/">Iowa State University </a> as a Ph.D. Student, moving further enhancement of knowledge in the process &#128230;
+        </td>
+    </tr>
+
+    <tr>
+        <td valign="top"><strong>[Apr 2016]</strong></td>
+        <td>Our paper on <a href="https://ieeexplore.ieee.org/abstract/document/7479095">Deep Value of Information Estimators for Collaborative Human-Machine Information Gathering </a> has been accepted in <a href="https://iccps.acm.org/2016/">ICCPS&#42; 2016</a></td>
+    </tr>
+
+    <tr>
+        <td valign="top"><strong>[Dec 2016]</strong></td>
+        <td>Completed MS in Computer Science at <a href="https://www.iastate.edu/">Iowa State University</a> &#127891;
+        </td>
+    </tr>
+</table>
+
+----
+<h3 align="center">Self Driving Cars</h3>
 <table class='news-table'>
     <col width="15%">
     <col width="85%">
