@@ -1,13 +1,11 @@
 ---
 layout: page
-title: Activites
+title: courses
 tags: [kundan, kumar, travel, graduate]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: false
 share: false
 ---
-
-Hey All!
 
 <!-- I realized myself about life in 2020 and COVID confined my life in the shell. I had lethargy my life from long time
 and this quarantine period made me realized me to break the monotonicity and achieve a greater heights in my life.
@@ -22,7 +20,7 @@ Finally, I realized A healthy mind and body will
 
 I think social media addiction like facebook, instagram, youtube etc are ruining the life. I limited the use such platform. -->
 
-Sporting Activities:
+<!-- Sporting Activities: -->
 ----
 
 <h3 align="center">Ice Skating</h3>
