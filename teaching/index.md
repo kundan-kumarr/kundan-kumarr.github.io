@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Courses
+title: Teaching Statement
 tags: [courses, kundan, kumar, iowa, isu, graduate]
 modified:
 comments: false
 nav_var: 2
 ---
 
-## Teaching Statement
+<!-- ## Teaching Statement -->
 
 As a Teaching Assistant at [Iowa State University](https://www.iastate.edu/), my primary objective is to foster a supportive and engaging learning environment that empowers students to develop their skills in computer science. I believe in a hands-on approach to teaching, where students are encouraged to apply theoretical concepts to practical problems. My goal is to guide students in their journey to become confident and proficient in software development, user interface design, and database management, preparing them for successful careers in the technology industry.
 
