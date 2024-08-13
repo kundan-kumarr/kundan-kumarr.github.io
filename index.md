@@ -68,8 +68,9 @@ My research combines computer science and statistics to tackle real-world challe
             <img src="/images/BIT.png" width="100" height="115"></a>
         </td>
         <td>
-             <a href="https://www.oxfordml.school/">
-            <img src="/images/oxml.png" width="200" height="95"></a>
+        <a href="https://www.tcs.com/">
+        <img src="/images/tcs.png" width="100" height="115"></a>
+
 
         </td>
     <tr>
@@ -78,24 +79,25 @@ My research combines computer science and statistics to tackle real-world challe
      <tr>
         <td>Iowa State University<br></td>
         <td>BIT Sindri, India<br></td>
-        <td>Summer 2022<br></td>
+        <td>TCS 2022<br></td>
     </tr>
     </tr>
         <td>
-            <a href="https://www.psc.edu/">
-            <img src="/images/psc.jpg" width="100" height="115"></a>
+        <a href="https://www.oxfordml.school/">
+       <img src="/images/oxml1.png" width="200" height="95"></a>
+
         </td>
         <td>
-            <a href="https://www.tcs.com/">
-            <img src="/images/tcs.png" width="100" height="115"></a>
+        <a href="https://www.psc.edu/">
+        <img src="/images/psc.jpg" width="100" height="115"></a>
         </td>
          <td>
             <a href="https://www.nrel.gov/">
-            <img src="/images/nrel.png" width="200" height="215"></a>
+            <img src="/images/nrel1.png" width="200" height="215"></a>
         </td>
     </tr>
     <tr>
-        <td>Pittsburgh Supercomputing Center<br></td>
+        <td>2024-Present<br></td>
         <td>2024-Present<br></td>
         <td>2024-Present<br></td>
     </tr>
