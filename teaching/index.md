@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Teaching Statement
+title: Teaching
 tags: [courses, kundan, kumar, iowa, isu, graduate]
 modified:
 comments: false
@@ -13,7 +13,7 @@ As a Teaching Assistant at [Iowa State University](https://www.iastate.edu/), my
 
 <hr style="border: 1px solid gray">
 
-## Courses Taught as Teaching Assistant
+## Courses Taught/Mentorship
 
 I am currently a Teaching Assistant for the following courses in the [Department of Computer Science](https://cs.iastate.edu/) at [Iowa State University](https://www.iastate.edu/):
 
