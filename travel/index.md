@@ -13,12 +13,8 @@ share: false
     <col width="15%">
     <col width="85%">
     <tr>
-        <td valign="top"><strong>[Jan 2020]</strong></td>
+        <!-- <td valign="top"><strong>[Jan 2020]</strong></td> -->
         <td>Joined <a href="https://cs.iastate.edu/">Iowa State University </a> as a Ph.D. Student to further enhance my knowledge in machine learning and AI.&#128230;</td>
-    </tr>
-    <tr>
-        <td valign="top"><strong>[Apr 2016]</strong></td>
-        <td><a href="https://ieeexplore.ieee.org/abstract/document/7479095">Deep Value of Information Estimators for Collaborative Human-Machine Information Gathering</a> was accepted at <a href="https://iccps.acm.org/2016/">ICCPS&#42; 2016</a></td>
     </tr>
     <tr>
         <td valign="top"><strong>Topics Covered</strong></td>
