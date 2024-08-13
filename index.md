@@ -79,7 +79,7 @@ My research combines computer science and statistics to tackle real-world challe
      <tr>
         <td>Iowa State University<br></td>
         <td>BIT Sindri, India<br></td>
-        <td>TCS 2022<br></td>
+        <td>Tata Consultancy Services, India<br></td>
     </tr>
     </tr>
         <td>
