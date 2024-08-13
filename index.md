@@ -64,29 +64,17 @@ My research combines computer science and statistics to tackle real-world challe
             <img src="/images/ISU.png" width="100" height="115"></a>
         </td>
         <td>
-            <a href="https://www.bitsindri.ac.in/">
-            <img src="/images/BIT.png" width="100" height="115"></a>
-        </td>
-        <td>
-        <a href="https://www.tcs.com/">
-        <img src="/images/tcs.png" width="100" height="115"></a>
-
-
+        <a href="https://www.oxfordml.school/">
+       <img src="/images/oxml1.png" width="100" height="115"></a>
         </td>
     <tr>
     <tr>
     </tr>
      <tr>
-        <td>Iowa State University<br></td>
-        <td>BIT Sindri, India<br></td>
-        <td>Tata Consultancy Services, India<br></td>
+        <td>Iowa State University<br>(2020-Present)</td>
+        <td>Oxford Machine Learning<br>(August 2022)</td>
     </tr>
     </tr>
-        <td>
-        <a href="https://www.oxfordml.school/">
-       <img src="/images/oxml1.png" width="100" height="115"></a>
-
-        </td>
         <td>
         <a href="https://www.psc.edu/">
         <img src="/images/psc.jpg" width="100" height="115"></a>
@@ -97,7 +85,7 @@ My research combines computer science and statistics to tackle real-world challe
         </td>
     </tr>
     <tr>
-        <td>Oxford Machine Learning<br>(August 2022)</td>
+
         <td>Pittsburgh Supercomputing<br>(2024-Present)</td>
         <td>Machine Learning Scientist<br>(2024-Present)</td>
     </tr>
