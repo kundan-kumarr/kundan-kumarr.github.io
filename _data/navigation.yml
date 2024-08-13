@@ -9,8 +9,11 @@
 # - title: Publications
 #   url: /publications/
 
-- title: Courses
+- title: Teaching
   url: /teaching/
+
+- title: Courses
+  url: /travel/
 
 - title: Projects
   url: /projects/
@@ -44,8 +47,7 @@
 #     - title: Customer Support
 #       url: /customer-support.html
 
-# - title: Extra-Activites
-#   url: /travel/
+
 
 
 # https://hikaruyamagishi.com/teaching/
