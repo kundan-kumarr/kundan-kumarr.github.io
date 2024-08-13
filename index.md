@@ -29,7 +29,7 @@ My research combines computer science and statistics to tackle real-world challe
         <td valign="top"><strong>[Apr 2024]</strong></td>
         <td>Our paper on <a href="">Workshop for High Performance Computing </a> has been accepted in <a href="https://www.psc.edu/"> Pittsburgh Supercomputing Center&#42; 2024</a></td>
     </tr>
-    
+
         <tr>
         <td valign="top"><strong>[Feb 2024]</strong></td>
         <td>Our paper on <a href="">Bayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control </a> has been accepted in <a href="https://pes-gm.org/"> PES-General Meeting&#42; 2024</a></td>
@@ -70,7 +70,7 @@ My research combines computer science and statistics to tackle real-world challe
         <td>
              <a href="https://www.oxfordml.school/">
             <img src="/images/oxml.png" width="200" height="95"></a>
-            
+
         </td>
     <tr>
     <tr>
@@ -82,8 +82,8 @@ My research combines computer science and statistics to tackle real-world challe
     </tr>
     </tr>
         <td>
-            <a href="https://www.udacity.com/">
-            <img src="/images/udacity.png" width="100" height="115"></a>
+            <a href="https://www.psc.edu/">
+            <img src="/images/psc.jpg" width="100" height="115"></a>
         </td>
         <td>
             <a href="https://www.tcs.com/">
@@ -92,11 +92,11 @@ My research combines computer science and statistics to tackle real-world challe
          <td>
             <a href="https://www.nrel.gov/">
             <img src="/images/nrel.png" width="200" height="215"></a>
-        </td> 
+        </td>
     </tr>
     <tr>
         <td>Udacity<br></td>
         <td>2012-2014<br></td>
-        <td>Summer 2024<br></td> 
+        <td>Summer 2024<br></td>
     </tr>
 </table>
