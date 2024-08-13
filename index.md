@@ -84,7 +84,7 @@ My research combines computer science and statistics to tackle real-world challe
     </tr>
         <td>
         <a href="https://www.oxfordml.school/">
-       <img src="/images/oxml1.png" width="200" height="95"></a>
+       <img src="/images/oxml1.png" width="100" height="115"></a>
 
         </td>
         <td>
@@ -93,11 +93,11 @@ My research combines computer science and statistics to tackle real-world challe
         </td>
          <td>
             <a href="https://www.nrel.gov/">
-            <img src="/images/nrel1.png" width="200" height="215"></a>
+            <img src="/images/nrel1.png" width="100" height="215"></a>
         </td>
     </tr>
     <tr>
-        <td>2024-Present<br></td>
+        <td>August 2022<br></td>
         <td>2024-Present<br></td>
         <td>2024-Present<br></td>
     </tr>
