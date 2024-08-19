@@ -30,14 +30,22 @@ Deep Reinforcement Learning, Deep Learning Neural Networks, Machine Learning, Tr
 #### Conferences Paper
 
 1. **Kundan Kumar**, Gelli RaviKumar    
-[Bayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control]()   
-*Conference on PES General Meeting(PES-GM), 2024.*   
+[Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids](Accepted)   
+*Conference of IEEE PES Grid Edge Technologies Conference & Exposition(Grid-edge), 2025.*   
 [<button type="button" class="btn btn-info">Paper</button>](https://arxiv.org/abs/2202.13541)
+[<button type="button" class="btn btn-info">Poster</button>](https://arxiv.org/abs/2202.13541)
+
+1. **Kundan Kumar**,Aditya Akilesh Mantha, Gelli RaviKumar    
+[Bayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control]()   
+*Conference on IEEE PES General Meeting(PES-GM), 2024.*   
+[<button type="button" class="btn btn-info">Paper</button>](https://arxiv.org/abs/2202.13541)
+[<button type="button" class="btn btn-info">Poster</button>](https://arxiv.org/abs/2202.13541)
 
 2. **Kundan Kumar**, Gelli RaviKumar    
 [Deep RL-based Volt-VAR Control and Attack Resiliency for DER-integrated Distribution Grids]()   
-*Conference on Innovative Smart Grid Technologies(ISGT), 2024.*   
+*Conference on IEEE Innovative Smart Grid Technologies(ISGT), 2024.*   
 [<button type="button" class="btn btn-info">Paper</button>](https://ieeexplore.ieee.org/document/10454163)
+[<button type="button" class="btn btn-info">Poster</button>](https://arxiv.org/abs/2202.13541)
 
 3. JK Francis, C Kumar, J Herrera-Gerena, **Kundan Kumar**, MJ Darr     
 [Deep Learning and Pattern-based Methodology for Multivariable Sensor Data Regression]()   
