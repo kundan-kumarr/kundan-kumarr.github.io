@@ -28,10 +28,18 @@ I am currently a Teaching Assistant for the following courses in the [Department
 
 ### COMS 309: Software Development Practices
 - **Instructor**: Prof. [Simanta Mitra](https://www.cs.iastate.edu/people/simanta-mitra)
+- - **Topics Covered**:
+  - Spring Boot
+  - Android and iOS application development
+  - SQL
+  - Mockito test framework
+  - CI/CD pipeline
+    
 - **Responsibilities**:
   - Supervising class groups on end-to-end software development projects.
   - Assisting students with understanding and applying concepts such as SQL, Spring Boot, Mockito test framework, CI/CD pipeline, Android, and iOS application development.
   - Offering practical guidance on software development management methods.
+
 
 ### COMS 363: Introduction to Database Management Systems
 - **Instructor**: Prof. [Wallapak Tavanapong](https://www.cs.iastate.edu/tavanapo)
@@ -41,7 +49,12 @@ I am currently a Teaching Assistant for the following courses in the [Department
   - Database design using the entity-relationship model, data dependencies, and object definition language.
   - Application development using SQL-like languages and general-purpose host languages with application program interfaces.
   - Working with databases such as PrestoDB and implementing machine learning applications using Google Cloud DB.
-
+    
+- **Responsibilities**:
+  - Assisting students with database design and query languages.
+  - Supporting application development projects using various database technologies.
+  - Providing guidance on working with different database systems and implementing machine learning solutions.
+    
 ### COMS 362: Object-oriented Analysis and Design
 - **Instructor**: Prof. [Matthew Tan Creti](https://www.cs.iastate.edu/people/matthew-tan-creti)
 - **Topics Covered**:
