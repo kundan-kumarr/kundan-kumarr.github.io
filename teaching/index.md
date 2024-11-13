@@ -49,13 +49,21 @@ I am currently a Teaching Assistant for the following courses in the [Department
   - Design notations such as the Unified Modeling Language (UML).
   - Design patterns.
   - Group design and programming with large programming projects.
-
+- **Responsibilities**:
+  - Guiding students through object-oriented design principles and UML notations.
+  - Assisting with group projects and large-scale programming assignments.
+  - Providing support and feedback on design patterns and system design.
+    
 ### COMS 113: Introduction to Spreadsheets and Databases
 - **Instructor**: Prof. [Adisak Sukul](https://www.cs.iastate.edu/adisak)
 - **Topics Covered**:
-  - Microsoft Excel: advanced features like VLOOKUP, macros, etc.
+  - Microsoft Excel: basic to advanced features like VLOOKUP, macros, etc.
   - Microsoft Access: input, storage, processing, manipulation, querying, and analysis of data for business applications.
-
+- **Responsibilities**:
+  - Assisting students with advanced Excel functions and database management in Microsoft Access.
+  - Supporting data manipulation, querying, and analysis for business applications.
+  - Providing practical guidance on using spreadsheets and databases for real-world scenarios.
+    
 <hr style="border: 1px solid gray">
 ## Future Plans and Goals
 
