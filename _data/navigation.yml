@@ -1,10 +1,6 @@
 # Site navigation links
-# - title: Home
-#   url: /
-home:
-   title: Home
-   url: /
-   baseurl: /
+- title: Home
+  url: /
 
 - title: Research
   url: /research/
