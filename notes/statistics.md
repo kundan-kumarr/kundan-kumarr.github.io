@@ -1,5 +1,5 @@
 ---
 layout: page
 title: Statistics
-permalink: /travel/statistics/
+permalink: /notes/statistics/
 ---
