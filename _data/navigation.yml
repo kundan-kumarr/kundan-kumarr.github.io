@@ -1,13 +1,9 @@
 # Site navigation links
-
 - title: Home
   url: /
 
 - title: Research
   url: /research/
-
-# - title: Publications
-#   url: /publications/
 
 - title: Projects
   url: /projects/
@@ -21,39 +17,27 @@
 - title: CV
   url: /reports/
 
-- title: Notes
+- title: Resources
   url: /notes/
+  dropdown: true
+  items:
+    - title: Reinforcement-Learning
+      url: /notes/reinforcement-learning/
+    - title: Statistics
+      url: /notes/statistics/
+    - title: Machine-Learning
+      url: /notes/machine-learning/
+    - title: Deep-Learning
+      url: /notes/deep-learning/
 
 - title: Contact
   url: /contact/
-
-
-# - title: About
-#   url: /about.html
-# - title: Team
-#   url: /team.html
-# - title: Contact
-#   url: /contact.html
-# - title: Store
-#   url: /store.html
-# - title: Support
-#   url: /support.html
-#   sublinks:
-#     - title: FAQ
-#       url: /faq.html
-#     - title: Documentation
-#       url: /documentation.html
-#     - title: separator
-#     - title: Customer Support
-#       url: /customer-support.html
-
-
 
 
 # https://hikaruyamagishi.com/teaching/
 # https://www.jesseajohnston.net/posts/2022/career-update/
 # https://jayrobwilliams.com/software/
 #
-# https://kundan7kumar.github.io/statistics-analysis/index.html
-# https://kundan7kumar.github.io/data-science/intro.html
+# https://kundan-kumarr.github.io/statistics-analysis/index.html
+# https://kundan-kumarr.github.io/data-science/intro.html
 # https://github.com/ucsb-cs48/ucsb-cs48.github.io

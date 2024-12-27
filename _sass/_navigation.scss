@@ -1,0 +1,49 @@
+.nav {
+    ul {
+        li.dropdown {
+            position: relative;
+
+            &:hover .dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-toggle {
+                padding-right: 1.5em;
+                position: relative;
+
+                i {
+                    margin-left: 0.3em;
+                }
+            }
+
+            .dropdown-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background: #fff;
+                min-width: 180px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                border-radius: 3px;
+                z-index: 1000;
+
+                li {
+                    display: block;
+                    width: 100%;
+                    margin: 0;
+
+                    a {
+                        display: block;
+                        padding: 8px 15px;
+                        line-height: 1.5;
+                        white-space: nowrap;
+
+                        &:hover {
+                            background: #f5f5f5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
