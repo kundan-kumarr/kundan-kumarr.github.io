@@ -61,7 +61,6 @@ I introduce students to essential business tools and concepts:
 
 
 ## Future Goals
-<hr style="border: 1px solid gray">
 I am committed to continuous improvement in teaching methodology and curriculum development. My objectives include:
 
 * Incorporating emerging technologies into course materials
