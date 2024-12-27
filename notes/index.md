@@ -6,13 +6,13 @@ nav_order: 8
 dropdown: true
 children:
     - title: Reinforcement-Learning
-      permalink: /travel/reinforcement-learning/
+      permalink: /notes/reinforcement-learning/
     - title: divider
     - title: Statistics
-      permalink: /travel/statistics/
+      permalink: /notes/statistics/
     - title: divider
     - title: Machine-Learning
-      permalink: /travel/machine-learning/
+      permalink: /notes/machine-learning/
 ---
 
 
