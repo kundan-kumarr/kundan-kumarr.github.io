@@ -7,23 +7,21 @@
         <ul>
             {% for link in site.data.navigation %}
                     {% if link.dropdown %}
-                        <li class="dropdown">
-                            <a href="{{ domain }}{{ link.url }}" class="dropdown-toggle">
-                                {{ link.title }} <i class="fa fa-caret-down"></i>
+                        <li class="nav-item dropdown">
+                            <a href="{{ domain }}{{ link.url }}" class="nav-link">
+                                {{ link.title }}
                             </a>
-                            <ul class="dropdown-menu">
+                            <div class="dropdown-content">
                                 {% for item in link.items %}
-                                    <li>
-                                        <a href="{{ domain }}{{ item.url }}" {% if item.url contains 'http' %}target="_blank"{% endif %}>
-                                            {{ item.title }}
-                                        </a>
-                                    </li>
+                                    <a href="{{ domain }}{{ item.url }}" {% if item.url contains 'http' %}target="_blank"{% endif %}>
+                                        {{ item.title }}
+                                    </a>
                                 {% endfor %}
-                            </ul>
+                            </div>
                         </li>
                     {% else %}
-                        <li>
-                            <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>
+                        <li class="nav-item">
+                            <a href="{{ domain }}{{ link.url }}" class="nav-link" {% if link.url contains 'http' %}target="_blank"{% endif %}>
                                 {{ link.title }}
                             </a>
                         </li>
@@ -33,7 +31,6 @@
     </nav>
   </div><!-- /.top-navigation -->
 </div><!-- /.navigation-wrapper -->
-
 
 <!-- <nav>
   <ul>
