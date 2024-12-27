@@ -1,80 +1,69 @@
 ---
 layout: page
-title: Teaching
-tags: [courses, kundan, kumar, iowa, isu, graduate]
-modified:
-comments: false
-nav_var: 2
+title: Teaching Experience
+permalink: /teaching/
+description: My teaching experience and contributions at Iowa State University
+nav: true
+nav_order: 2
 ---
 
-<!-- ## Teaching Statement -->
+# Teaching Philosophy
 
-As a Teaching Assistant at [Iowa State University](https://www.iastate.edu/), my primary objective is to foster a supportive and engaging learning environment that empowers students to develop their skills in computer science. I believe in a hands-on approach to teaching, where students are encouraged to apply theoretical concepts to practical problems. My goal is to guide students in their journey to become confident and proficient in software development, user interface design, and database management, preparing them for successful careers in the technology industry.
+As a Teaching Assistant at [Iowa State University](https://www.iastate.edu/), I am dedicated to creating an inclusive and dynamic learning environment that enables students to excel in computer science. My teaching approach emphasizes practical application of theoretical concepts, encouraging students to develop hands-on experience in software development, user interface design, and database management. I believe in preparing students for real-world challenges in the technology industry through project-based learning and individualized support.
 
-<hr style="border: 1px solid gray">
-
-## Courses Taught/Mentorship
-
-I am currently a Teaching Assistant for the following courses in the [Department of Computer Science](https://cs.iastate.edu/) at [Iowa State University](https://www.iastate.edu/):
+## Current Teaching Responsibilities
 
 ### COMS 319: Construction of User Interfaces
-- **Topics Covered**:
-  - Creation of User Interfaces
-  - Raspberry Pi
-- **Responsibilities**:
-  - Assisting students with hands-on projects involving UI creation.
-  - Providing support for Raspberry Pi-based development.
+I assist students in developing practical skills in UI development and working with Raspberry Pi hardware. My role includes:
+
+* Guiding students through hands-on UI development projects
+* Supporting hardware-software integration with Raspberry Pi
+* Providing feedback on user interface design principles and implementation
 
 ### COMS 309: Software Development Practices
-- - **Topics Covered**:
-  - Spring Boot
-  - Android and iOS application development
-  - SQL
-  - Mockito test framework
-  - CI/CD pipeline
-    
-- **Responsibilities**:
-  - Supervising class groups on end-to-end software development projects.
-  - Assisting students with understanding and applying concepts such as SQL, Spring Boot, Mockito test framework, CI/CD pipeline, Android, and iOS application development.
-  - Offering practical guidance on software development management methods.
+As a TA for this comprehensive software development course, I focus on:
 
+* Mentoring student teams in full-stack development projects
+* Teaching modern development technologies including:
+  * Spring Boot backend development
+  * Android and iOS mobile application development
+  * SQL database management
+  * Mockito testing framework
+  * CI/CD pipeline implementation
+* Facilitating agile development practices and project management skills
 
-### COMS 363: Introduction to Database Management Systems
-- **Topics Covered**:
-  - Relational, object-oriented, and semi-structured data models and query languages.
-  - SQL, ODMG, and XML standards.
-  - Database design using the entity-relationship model, data dependencies, and object definition language.
-  - Application development using SQL-like languages and general-purpose host languages with application program interfaces.
-  - Working with databases such as PrestoDB and implementing machine learning applications using Google Cloud DB.
-    
-- **Responsibilities**:
-  - Assisting students with database design and query languages.
-  - Supporting application development projects using various database technologies.
-  - Providing guidance on working with different database systems and implementing machine learning solutions.
-    
+### COMS 363: Database Management Systems
+I support students in understanding complex database concepts and implementations:
+
+* Teaching relational, object-oriented, and semi-structured data models
+* Guiding students through SQL, ODMG, and XML standards
+* Assisting with database design using ER modeling and data dependencies
+* Supporting projects involving PrestoDB and Google Cloud DB
+* Integrating machine learning applications with database systems
+
 ### COMS 362: Object-oriented Analysis and Design
-- **Topics Covered**:
-  - Object-oriented requirements analysis and systems design.
-  - Design notations such as the Unified Modeling Language (UML).
-  - Design patterns.
-  - Group design and programming with large programming projects.
-- **Responsibilities**:
-  - Guiding students through object-oriented design principles and UML notations.
-  - Assisting with group projects and large-scale programming assignments.
-  - Providing support and feedback on design patterns and system design.
-    
-### COMS 113: Introduction to Spreadsheets and Databases
-- **Topics Covered**:
-  - Microsoft Excel: basic to advanced features like VLOOKUP, macros, etc.
-  - Microsoft Access: input, storage, processing, manipulation, querying, and analysis of data for business applications.
-- **Responsibilities**:
-  - Assisting students with advanced Excel functions and database management in Microsoft Access.
-  - Supporting data manipulation, querying, and analysis for business applications.
-  - Providing practical guidance on using spreadsheets and databases for real-world scenarios.
-    
-<hr style="border: 1px solid gray">
-## Future Plans and Goals
+I help students master object-oriented principles and system design:
 
-In addition to my current responsibilities, I am eager to explore innovative teaching methodologies and integrate cutting-edge technologies into the curriculum. My long-term goal is to continue supporting students' learning journeys while contributing to the academic community through research and collaboration.
+* Teaching UML notation and design documentation
+* Guiding implementation of design patterns
+* Supporting large-scale group programming projects
+* Providing feedback on system architecture and design decisions
 
-<!-- Additional resources and inspiration: https://alshedivat.github.io/al-folio/blog/ -->
+### COMS 113: Spreadsheets and Databases
+I introduce students to essential business tools and concepts:
+
+* Teaching advanced Excel features (VLOOKUP, macros, data analysis)
+* Guiding database management with Microsoft Access
+* Supporting data manipulation and analysis for business applications
+* Demonstrating practical applications in real-world scenarios
+
+## Future Goals
+
+I am committed to continuous improvement in teaching methodology and curriculum development. My objectives include:
+
+* Incorporating emerging technologies into course materials
+* Developing innovative teaching methods to enhance student engagement
+* Contributing to the computer science education community through research and collaboration
+* Creating more interactive and hands-on learning experiences
+
+Feel free to contact me to discuss any of these courses or potential collaborations in computer science education.
