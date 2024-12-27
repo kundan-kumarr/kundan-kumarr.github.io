@@ -78,21 +78,6 @@ owner:
 
 # Navigation
 # Collections
-collections:
-  projects:
-    output: true
-    permalink: /:collection/:path/
-
-# Defaults for collections
-defaults:
-  # _projects
-  - scope:
-      path: ""
-      type: projects
-    values:
-      layout: single
-      author_profile: true
-      share: true
 
 # Sidebar navigation
 defaults:
