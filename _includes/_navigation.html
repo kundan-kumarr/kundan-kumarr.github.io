@@ -1,21 +1,33 @@
 <div class="navigation-wrapper">
-  <div class="site-name">
-    <a href="{{ site.url }}/">{{ site.title }}</a>
-  </div>
   <div class="top-navigation">
+    <div class="site-name">
+      <a href="{{ site.url }}/">{{ site.title }}</a>
+    </div>
+    
     <nav role="navigation" id="site-nav" class="nav">
-      <ul>
+      <ul class="left-nav">
+        {% for link in site.data.navigation %}
+          {% if link.title != "Resources" and link.title != "Contact" %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <nav class="nav">
+      <ul class="right-nav">
         {% for link in site.data.navigation %}
           {% if link.title == "Resources" %}
             <li class="dropdown">
-              <a href="#">{{ link.title }}</a>
+              <a href="#" class="dropdown-toggle">{{ link.title }}</a>
               <ul class="dropdown-content">
                 {% for item in link.items %}
                   <li><a href="{{ item.url }}">{{ item.title }}</a></li>
                 {% endfor %}
               </ul>
             </li>
-          {% else %}
+          {% endif %}
+          {% if link.title == "Contact" %}
             <li><a href="{{ link.url }}">{{ link.title }}</a></li>
           {% endif %}
         {% endfor %}
