@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Teaching
+title: Teaching Statement
 permalink: /teaching/
 description: My teaching experience and contributions at Iowa State University
 nav: true
