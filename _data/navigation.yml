@@ -1,28 +1,51 @@
 # Site navigation links
-- title: Home
-  url: /
+# - title: Home
+#   url: /
 
-- title: Research
-  url: /research/
+# - title: Research
+#   url: /research/
 
-- title: Projects
-  url: /projects/
+# - title: Projects
+#   url: /projects/
 
-- title: Teaching
-  url: /teaching/
+# - title: Teaching
+#   url: /teaching/
 
-- title: Blog
-  url: /blog/
+# - title: Blog
+#   url: /blog/
 
-- title: CV
-  url: /reports/
+# - title: CV
+#   url: /reports/
 
-- title: Resources
-  url: /notes/
+# - title: Resources
+#   url: /notes/
 
-- title: Contact
-  url: /contact/
+# - title: Contact
+#   url: /contact/
+production_url: https://ucsb-cs48.github.io
 
+# List the title and url for each item on navigation bar.
+# For items that should be relative urls, put the baseurl of the site
+# they come from, / for main site, and /f18, /s19, etc for child sites.
+
+home:
+   title: UCSB CS48
+   url: /
+   baseurl: /
+
+main_dropdown:
+   title: Resources
+   items:
+     - title: Topics
+       url: /topics/
+     - title: Java Topics
+       url: /javatopics/ 
+     - title: JavaScript Topics
+       url: /jstopics/       
+     - title: Patterns
+       url: /patterns/
+     - title: Standards
+       url: /standards/
 
 # https://hikaruyamagishi.com/teaching/
 # https://www.jesseajohnston.net/posts/2022/career-update/
