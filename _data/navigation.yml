@@ -19,16 +19,6 @@
 
 - title: Resources
   url: /notes/
-  dropdown: true
-  items:
-    - title: Reinforcement-Learning
-      url: /notes/reinforcement-learning/
-    - title: Statistics
-      url: /notes/statistics/
-    - title: Machine-Learning
-      url: /notes/machine-learning/
-    - title: Deep-Learning
-      url: /notes/deep-learning/
 
 - title: Contact
   url: /contact/
