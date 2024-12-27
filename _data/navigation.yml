@@ -9,20 +9,20 @@
 # - title: Publications
 #   url: /publications/
 
-- title: Teaching
-  url: /teaching/
-
-- title: Courses
-  url: /travel/
-
 - title: Projects
   url: /projects/
+
+- title: Teaching
+  url: /teaching/
 
 - title: Blog
   url: /blog/
 
 - title: CV
   url: /reports/
+
+- title: Notes
+  url: /notes/
 
 - title: Contact
   url: /contact/
