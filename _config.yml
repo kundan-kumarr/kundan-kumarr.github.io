@@ -55,11 +55,11 @@ owner:
   #   ad-client: ""
   #   ad-slot: ""
   # bing-verify: ""
-  googlescholar: "https://scholar.google.com/citations?user=1zDpIJkAAAAJ&hl=en&authuser=2"
-  github: kundan-kumarr
-  stackoverflow: #123456/username   # from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: kundan-kumarr #username
-  medium: https://kkresearch.medium.com/
+  googlescholar: "1zDpIJkAAAAJ"
+  github: "kundan-kumarr"
+  linkedin: "kundan-kumarr" #username
+  medium: "https://kkresearch.medium.com/"
+  youtube: "@AIAgentic-007"
   orcid: "0000-0002-3229-6649"
   # instagram: ""
   # lastfm: ""
@@ -68,7 +68,7 @@ owner:
   # foursquare: ""
   # steam: ""
   # dribbble: ""
-  youtube: "@AIAgentic-007"
+  # stackoverflow: #123456/username   # from a "http://stackoverflow.com/users/123456/username" link
   # soundcloud: ""
   # weibo: ""
   # flickr: ""
