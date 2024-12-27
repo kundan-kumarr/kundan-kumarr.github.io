@@ -58,7 +58,7 @@ I introduce students to essential business tools and concepts:
 * Guiding database management with Microsoft Access
 * Supporting data manipulation and analysis for business applications
 * Demonstrating practical applications in real-world scenarios
-
+<hr style="border: 1px solid gray">
 
 ## Future Goals
 I am committed to continuous improvement in teaching methodology and curriculum development. My objectives include:
