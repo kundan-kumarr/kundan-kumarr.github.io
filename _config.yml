@@ -90,27 +90,17 @@ defaults:
         nav: "notes"
       
 # Navigation
-docs:
+# Navigation
+navigation:
   - title: Notes
-    children:
-      - title: "Reinforcement Learning"
+    url: /travel/
+    submenu:
+      - title: Reinforcement-Learning
         url: /travel/reinforcement-learning/
-      - title: "Statistics"
+      - title: Statistics
         url: /travel/statistics/
-      - title: "Machine Learning"
+      - title: Machine-Learning
         url: /travel/machine-learning/
-
-# Main navigation links
-main:
-  - title: "Resources"
-    url: /notes/
-    children:
-      - title: "Reinforcement Learning"
-        url: /notes/reinforcement-learning/
-      - title: "Statistics"
-        url: /notes/statistics/
-      - title: "Machine Learning"
-        url: /notes/machine-learning/
 
 include:
   - ".htaccess"
