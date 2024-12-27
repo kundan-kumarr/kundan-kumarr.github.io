@@ -90,17 +90,6 @@ defaults:
         nav: "notes"
       
 # Navigation
-# Navigation
-navigation:
-  - title: Resources
-    url: /notes/
-    submenu:
-      - title: Reinforcement-Learning
-        url: /notes/reinforcement-learning/
-      - title: Statistics
-        url: /notes/statistics/
-      - title: Machine-Learning
-        url: /notes/machine-learning/
 
 include:
   - ".htaccess"
