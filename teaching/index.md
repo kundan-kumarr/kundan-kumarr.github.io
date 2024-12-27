@@ -59,9 +59,9 @@ I introduce students to essential business tools and concepts:
 * Supporting data manipulation and analysis for business applications
 * Demonstrating practical applications in real-world scenarios
 
-<hr style="border: 1px solid gray">
-## Future Goals
 
+## Future Goals
+<hr style="border: 1px solid gray">
 I am committed to continuous improvement in teaching methodology and curriculum development. My objectives include:
 
 * Incorporating emerging technologies into course materials
