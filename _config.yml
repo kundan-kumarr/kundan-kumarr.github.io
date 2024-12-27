@@ -76,6 +76,18 @@ owner:
   # scholar: ""
   # medium: @kkundannqs
 
+# Navigation
+navigation:
+  - title: Notes
+    url: /travel/
+    submenu:
+      - title: Reinforcement-Learning
+        url: /travel/reinforcement-learning/
+      - title: Statistics
+        url: /travel/statistics/
+      - title: Machine-Learning
+        url: /travel/machine-learning/
+        
 include:
   - ".htaccess"
   - "_pages"
