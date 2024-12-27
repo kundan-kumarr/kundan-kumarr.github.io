@@ -20,8 +20,9 @@
 - title: Resources
   url: /notes/
 
-# - title: Contact
-#   url: /contact/
+- title: Contact
+  url: /contact/
+  
 # production_url: https://ucsb-cs48.github.io
 
 # List the title and url for each item on navigation bar.
