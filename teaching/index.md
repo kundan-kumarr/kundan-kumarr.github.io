@@ -1,17 +1,19 @@
 ---
 layout: page
-title: Teaching Experience
+title: Teaching
 permalink: /teaching/
 description: My teaching experience and contributions at Iowa State University
 nav: true
 nav_order: 2
 ---
 
-# Teaching Philosophy
+<!-- ## Teaching Statement -->
 
 As a Teaching Assistant at [Iowa State University](https://www.iastate.edu/), I am dedicated to creating an inclusive and dynamic learning environment that enables students to excel in computer science. My teaching approach emphasizes practical application of theoretical concepts, encouraging students to develop hands-on experience in software development, user interface design, and database management. I believe in preparing students for real-world challenges in the technology industry through project-based learning and individualized support.
 
-## Current Teaching Responsibilities
+<hr style="border: 1px solid gray">
+
+## Teaching Responsibilities
 
 ### COMS 319: Construction of User Interfaces
 I assist students in developing practical skills in UI development and working with Raspberry Pi hardware. My role includes:
@@ -57,6 +59,7 @@ I introduce students to essential business tools and concepts:
 * Supporting data manipulation and analysis for business applications
 * Demonstrating practical applications in real-world scenarios
 
+<hr style="border: 1px solid gray">
 ## Future Goals
 
 I am committed to continuous improvement in teaching methodology and curriculum development. My objectives include:
