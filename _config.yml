@@ -39,10 +39,10 @@ related_blog_posts:
 owner:
   name: Kundan Kumar
   avatar: bio.jpg
-  position: Ph.D. Student
+  position: Ph.D. Candidate
   school: Iowa State University
   place: Ames, Iowa, US
-  bio: "I am currently pursuing a PhD in Computer Science with a minor in Statistics at Iowa State University. My areas of interest include Reinforcement Learning, Machine Vision, and Cybersecurity."
+  bio: "I am currently pursuing a PhD in Computer Science with a minor in Statistics at Iowa State University. My areas of interest include Reinforcement Learning, Machine Vision, and AI-Security."
   email: kkumar@iastate.edu
   disqus-shortname: kundan
 
@@ -61,7 +61,6 @@ owner:
   linkedin: kundan-kumarr #username
   medium: https://medium.com/@cs.kundann
   orcid: "0000-0002-3229-6649"
-  Notion: "https://kkumarr.notion.site/Kundan-dashboard-be98587a184d465da5510f2fce263585?pvs=4"
   # instagram: ""
   # lastfm: ""
   # tumblr: ""
