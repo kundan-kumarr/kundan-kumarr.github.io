@@ -18,7 +18,6 @@ As a Teaching Assistant at [Iowa State University](https://www.iastate.edu/), my
 I am currently a Teaching Assistant for the following courses in the [Department of Computer Science](https://cs.iastate.edu/) at [Iowa State University](https://www.iastate.edu/):
 
 ### COMS 319: Construction of User Interfaces
-- **Instructor**: Prof. [Abraham Aldaco](https://www.cs.iastate.edu/people/abraham-aldaco)
 - **Topics Covered**:
   - Creation of User Interfaces
   - Raspberry Pi
@@ -27,7 +26,6 @@ I am currently a Teaching Assistant for the following courses in the [Department
   - Providing support for Raspberry Pi-based development.
 
 ### COMS 309: Software Development Practices
-- **Instructor**: Prof. [Simanta Mitra](https://www.cs.iastate.edu/people/simanta-mitra)
 - - **Topics Covered**:
   - Spring Boot
   - Android and iOS application development
@@ -42,7 +40,6 @@ I am currently a Teaching Assistant for the following courses in the [Department
 
 
 ### COMS 363: Introduction to Database Management Systems
-- **Instructor**: Prof. [Wallapak Tavanapong](https://www.cs.iastate.edu/tavanapo)
 - **Topics Covered**:
   - Relational, object-oriented, and semi-structured data models and query languages.
   - SQL, ODMG, and XML standards.
@@ -56,7 +53,6 @@ I am currently a Teaching Assistant for the following courses in the [Department
   - Providing guidance on working with different database systems and implementing machine learning solutions.
     
 ### COMS 362: Object-oriented Analysis and Design
-- **Instructor**: Prof. [Matthew Tan Creti](https://www.cs.iastate.edu/people/matthew-tan-creti)
 - **Topics Covered**:
   - Object-oriented requirements analysis and systems design.
   - Design notations such as the Unified Modeling Language (UML).
@@ -68,7 +64,6 @@ I am currently a Teaching Assistant for the following courses in the [Department
   - Providing support and feedback on design patterns and system design.
     
 ### COMS 113: Introduction to Spreadsheets and Databases
-- **Instructor**: Prof. [Adisak Sukul](https://www.cs.iastate.edu/adisak)
 - **Topics Covered**:
   - Microsoft Excel: basic to advanced features like VLOOKUP, macros, etc.
   - Microsoft Access: input, storage, processing, manipulation, querying, and analysis of data for business applications.
