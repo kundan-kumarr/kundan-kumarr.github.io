@@ -42,7 +42,7 @@ owner:
   position: Ph.D. Candidate
   school: Iowa State University
   place: Ames, Iowa, US
-  bio: "I am currently pursuing a PhD in Computer Science with a minor in Statistics at Iowa State University. My areas of interest include Reinforcement Learning, Machine Vision, and AI-Security."
+  bio: "I am a PhD Candidate in Computer Science with a minor in Statistics at Iowa State University. My areas of interest include Reinforcement Learning, Machine Vision, and AI-Security."
   email: kkumar@iastate.edu
   disqus-shortname: kundan
 
@@ -111,7 +111,7 @@ main:
         url: /travel/statistics/
       - title: "Machine Learning"
         url: /travel/machine-learning/
-        
+
 include:
   - ".htaccess"
   - "_pages"
