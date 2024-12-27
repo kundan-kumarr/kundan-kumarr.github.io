@@ -15,17 +15,24 @@ children:
       permalink: /travel/machine-learning/
 ---
 
-# Notes
+## Technical Notes
 
-Welcome to my technical notes section. Here you'll find detailed notes on various topics in computer science and machine learning.
+Welcome to my collection of technical notes and tutorials. Here you'll find detailed explanations and implementations across various topics in computer science and machine learning.
 
-## Topics Covered:
+### [Reinforcement Learning](reinforcement-learning/)
+- Theoretical foundations of RL
+- Implementation guides
+- Case studies and applications
 
-### Reinforcement Learning
-Detailed notes on RL algorithms, implementations, and applications.
+### [Statistics](statistics/)
+- Probability theory
+- Statistical inference
+- Applied statistics in ML
 
-### Statistics
-Statistical concepts, probability theory, and their applications in data science.
+### [Machine Learning](machine-learning/)
+- Classical ML algorithms
+- Deep learning
+- Practical implementations
 
-### Machine Learning
-Core machine learning concepts, algorithms, and practical implementations.
+---
+
