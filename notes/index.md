@@ -1,6 +1,6 @@
 ---
 layout: page
-title: notes
+title: Technical Notes
 nav: true
 nav_order: 8
 dropdown: true
@@ -15,7 +15,6 @@ children:
       permalink: /travel/machine-learning/
 ---
 
-## Technical Notes
 
 Welcome to my collection of technical notes and tutorials. Here you'll find detailed explanations and implementations across various topics in computer science and machine learning.
 
