@@ -102,15 +102,15 @@ docs:
 
 # Main navigation links
 main:
-  - title: "Notes"
+  - title: "Resources"
     url: /notes/
     children:
       - title: "Reinforcement Learning"
-        url: /travel/reinforcement-learning/
+        url: /notes/reinforcement-learning/
       - title: "Statistics"
-        url: /travel/statistics/
+        url: /notes/statistics/
       - title: "Machine Learning"
-        url: /travel/machine-learning/
+        url: /notes/machine-learning/
 
 include:
   - ".htaccess"
