@@ -6,22 +6,18 @@
     <nav role="navigation" id="site-nav" class="nav">
       <ul>
         {% for link in site.data.navigation %}
-          {% if link.dropdown %}
+          {% if link.title == "Resources" %}
             <li class="dropdown">
-              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
-              <div class="dropdown-content">
+              <a href="{{ link.url }}" class="dropdown-toggle">{{ link.title }}</a>
+              <ul class="dropdown-menu">
                 {% for item in link.items %}
-                  <a href="{{ domain }}{{ item.url }}" {% if item.url contains 'http' %}target="_blank"{% endif %}>
-                    {{ item.title }}
-                  </a>
+                  <li><a href="{{ domain }}{{ item.url }}">{{ item.title }}</a></li>
                 {% endfor %}
-              </div>
+              </ul>
             </li>
           {% else %}
             <li>
-              <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>
-                {{ link.title }}
-              </a>
+              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endif %}
         {% endfor %}
