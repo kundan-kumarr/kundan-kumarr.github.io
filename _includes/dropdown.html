@@ -1,0 +1,16 @@
+{% if page.dropdown %}
+<div class="dropdown">
+  <button class="dropbtn">{{ page.title }}
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    {% for item in page.children %}
+      {% if item.title == "divider" %}
+        <hr>
+      {% else %}
+        <a href="{{ item.permalink | relative_url }}">{{ item.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

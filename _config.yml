@@ -77,15 +77,39 @@ owner:
   # medium: @kkundannqs
 
 # Navigation
-navigation:
+# Add to your existing _config.yml:
+
+# Sidebar navigation
+defaults:
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+        nav: "notes"
+      
+# Navigation
+docs:
   - title: Notes
-    url: /travel/
-    submenu:
-      - title: Reinforcement-Learning
+    children:
+      - title: "Reinforcement Learning"
         url: /travel/reinforcement-learning/
-      - title: Statistics
+      - title: "Statistics"
         url: /travel/statistics/
-      - title: Machine-Learning
+      - title: "Machine Learning"
+        url: /travel/machine-learning/
+
+# Main navigation links
+main:
+  - title: "Notes"
+    url: /notes/
+    children:
+      - title: "Reinforcement Learning"
+        url: /travel/reinforcement-learning/
+      - title: "Statistics"
+        url: /travel/statistics/
+      - title: "Machine Learning"
         url: /travel/machine-learning/
         
 include:
