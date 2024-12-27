@@ -92,15 +92,15 @@ defaults:
 # Navigation
 # Navigation
 navigation:
-  - title: Notes
-    url: /travel/
+  - title: Resources
+    url: /notes/
     submenu:
       - title: Reinforcement-Learning
-        url: /travel/reinforcement-learning/
+        url: /notes/reinforcement-learning/
       - title: Statistics
-        url: /travel/statistics/
+        url: /notes/statistics/
       - title: Machine-Learning
-        url: /travel/machine-learning/
+        url: /notes/machine-learning/
 
 include:
   - ".htaccess"
