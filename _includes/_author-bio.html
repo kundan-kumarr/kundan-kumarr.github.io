@@ -1,7 +1,7 @@
 {% if page.author %}
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
 {% endif %}
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <div itemscope itemtype="http://schema.org/Person">
 
 {% if author.avatar contains 'http' %}
@@ -39,10 +39,10 @@
   {% if author.medium %}<a href="{{ author.medium }}" class="author-social" target="_blank"><i class="fa fa-fw fa-medium"></i> Medium</a>{% endif %}
   <!-- {% if author.orcid %}<a href="{{ author.orcid }}" class="author-social" target="_blank"><i class="fa fa-orcid"></i> ORCID</a>{% endif %} -->
   
-
+{% if author.orcid %}<a href="{{ author.orcid }}" class="author-social" target="_blank"><i class="ai ai-orcid ai-fw"></i> ORCID</a>{% endif %}
   <!-- {% if author.orcid %}<a href="{{ author.orcid }}"><i class="fa fa-orcid" aria-hidden="true" style="padding-right: 1.5em;"></i>ORCID</a>{% endif %} -->
 
-{% if author.orcid %}<a href="{{ author.orcid }}" class="author-social" target="_blank"><img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" alt="ORCID iD icon" style="width: 16px; height: 16px; margin-right: 4px; vertical-align: middle;"> ORCID</a>{% endif %}
+<!-- {% if author.orcid %}<a href="{{ author.orcid }}" class="author-social" target="_blank"><img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" alt="ORCID iD icon" style="width: 16px; height: 16px; margin-right: 4px; vertical-align: middle;"> ORCID</a>{% endif %} -->
 
   <!-- {% if author.orcid %}
   <a href="https://orcid.org/{{ author.orcid }}" target="_blank">
