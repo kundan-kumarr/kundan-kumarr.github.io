@@ -42,12 +42,14 @@
 
   <!-- {% if author.orcid %}<a href="{{ author.orcid }}"><i class="fa fa-orcid" aria-hidden="true" style="padding-right: 1.5em;"></i>ORCID</a>{% endif %} -->
 
-  {% if author.orcid %}
+{% if author.orcid %}<a href="{{ author.orcid }}" class="author-social" target="_blank"><img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" alt="ORCID iD icon" style="width: 16px; height: 16px; margin-right: 4px; vertical-align: middle;"> ORCID</a>{% endif %}
+
+  <!-- {% if author.orcid %}
   <a href="https://orcid.org/{{ author.orcid }}" target="_blank">
     <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID icon" style="height: 16px; width: 16px; margin-right: 5px;">
     <span style="font-size: 16px;">Orcid</span>
   </a>
-{% endif %}
+{% endif %} -->
 <br>
 {% if site.owner.Notion %}
   <a href="{{ site.owner.Notion }}" target="_blank">
