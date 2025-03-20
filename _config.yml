@@ -4,14 +4,15 @@ locale: en_US
 url: "https://kundan-kumarr.github.io"
 
 # Jekyll configuration
-# permalink: /:categories/:title/
 permalink: /posts/:year/:month/:day/:title/
 markdown: kramdown
 highlighter: rouge
+
 sass:
   sass_dir: _sass
   style: compressed
-gems:
+
+plugins:
   - jekyll-sitemap
 
 kramdown:
@@ -21,16 +22,11 @@ kramdown:
   toc_levels: 1..6
   use_coderay: false
 
-# Analytics
-analytics:
-  provider: "google-universal" # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id: ""
-
 # Pagination
 pagination:
   enabled: true
 
+# Related posts (check if your theme/plugin supports this)
 related_blog_posts:
   enabled: true
   max_related: 5
@@ -44,57 +40,38 @@ owner:
   place: Ames, Iowa, US
   bio: "I am a PhD Candidate in Computer Science with a minor in Statistics at Iowa State University. My areas of interest include Reinforcement Learning, Machine Vision, and AI-Security."
   email: kkumar@iastate.edu
-  disqus-shortname: kundan
 
-  twitter: kundan7kumar #username
-  facebook: #username
-  # google:
-  #   plus: ""
-  #   analytics: ""
-  #   verify: ""
-  #   ad-client: ""
-  #   ad-slot: ""
-  # bing-verify: ""
+  twitter: kundan7kumar
   googlescholar: "1zDpIJkAAAAJ"
   github: "kundan-kumarr"
-  linkedin: "kundan-kumarr" #username
+  linkedin: "kundan-kumarr"
   medium: "https://kkresearch.medium.com/"
   youtube: "@AIAgentic-007"
   orcid: "0000-0002-3229-6649"
-  # instagram: ""
-  # lastfm: ""
-  # tumblr: ""
-  # pinterest: ""
-  # foursquare: ""
-  # steam: ""
-  # dribbble: ""
-  # stackoverflow: #123456/username   # from a "http://stackoverflow.com/users/123456/username" link
-  # soundcloud: ""
-  # weibo: ""
-  # flickr: ""
-  # codepen: ""
-  # scholar: ""
-  # medium: @kkundannqs
 
-# Navigation
-# Collections
+disqus:
+  shortname: kundan
 
 # Sidebar navigation
 defaults:
-  # _docs
   - scope:
       path: ""
       type: docs
     values:
       sidebar:
         nav: "notes"
-      
-# Navigation
+
+# Collections (if using _docs)
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
 
 include:
   - ".htaccess"
   - "_pages"
   - "files"
+
 exclude:
   - "lib"
   - "config.rb"
