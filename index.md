@@ -14,7 +14,7 @@ To support cross-domain generalization, I develop **transfer learning techniques
 
 Beyond smart energy systems, I maintain active research interests in **probabilistic reasoning**, **statistical machine learning**, and **robotics**, as well as the integration of **LLMs** with simulation and control frameworks. I am particularly excited about the potential of LLMs to improve human-AI interaction, enhance contextual awareness, and drive more interpretable and adaptive behavior in intelligent systems.
 
-My overarching goal is to advance the frontiers of computational intelligence by designing AI systems that are not only high-performing, but also **robust, secure, explainable**, and **physically grounded** in real-world applications.
+
 
 ---
 
