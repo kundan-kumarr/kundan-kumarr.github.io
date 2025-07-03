@@ -1,0 +1,9 @@
+---
+title: "covidnor"
+description: "Open COVID19 data for Norway"
+author: "Chi Zhang"
+date: "2022-10-22"
+categories: [data]
+---
+
+https://github.com/csids/covidnor

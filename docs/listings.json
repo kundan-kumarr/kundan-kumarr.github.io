@@ -1,0 +1,126 @@
+[
+  {
+    "listing": "/projects/projects.html",
+    "items": [
+      "/projects/os_teaching/index.html",
+      "/projects/phuse/index.html",
+      "/projects/dan/index.html",
+      "/projects/ehr/index.html",
+      "/projects/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/talks/talks.html",
+    "items": [
+      "/talks/community_20240921_quartofriends/index.html",
+      "/talks/ehr_20240918_betterehr/index.html",
+      "/talks/community_20240710_camis/index.html",
+      "/talks/rstats_20240613_teaching/index.html",
+      "/talks/rstats_20230721_teaching/index.html",
+      "/talks/ph_20220616_splverse/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/blog.html",
+    "items": [
+      "/blog/blog_20241105_positconf2024/index.html",
+      "/blog/blog_20240923_quartofriends/index.html",
+      "/blog/blog_20230921_positconf2023/index.html",
+      "/blog/blog_20230904_cen2023/index.html",
+      "/blog/blog_20230717_teaching/index.html",
+      "/blog/blog_20230301_ds_clinreport/index.html",
+      "/blog/blog_20230112_roche_opensource/index.html",
+      "/blog/blog_20230104_qtwAcademic/index.html",
+      "/blog/blog_20230103_blogdown2quarto/index.html",
+      "/blog/readnotes_20240606_bad_pharma/index.html",
+      "/blog/readnotes_20240218_open_source/index.html",
+      "/blog/readnotes_2023010x_preventable_sridhar/index.html",
+      "/blog/readnotes_2023010x_pandemic_gates/index.html",
+      "/blog/technotes_20250703_research_guide/index.html",
+      "/blog/technotes_20240506_ohdsi_part1/index.html",
+      "/blog/technotes_20231018_qt_styling/index.html",
+      "/blog/technotes_20231001_qt_webr/index.html",
+      "/blog/technotes_20230519_pkgcran/index.html",
+      "/blog/technotes_20230301_clinreport_part4/index.html",
+      "/blog/technotes_20230228_clinreport_part3/index.html",
+      "/blog/technotes_20230225_shinyappsio/index.html",
+      "/blog/technotes_20230222_clinreport_part2/index.html",
+      "/blog/technotes_20230220_pkgdown/index.html",
+      "/blog/technotes_20230205_clinreport_part1/index.html",
+      "/blog/technotes_20230111_deployqt/index.html"
+    ]
+  },
+  {
+    "listing": "/rpkg/rpkg.html",
+    "items": [
+      "/rpkg/ggehr/index.html",
+      "/rpkg/qtwAcademic/index.html"
+    ]
+  },
+  {
+    "listing": "/teaching/teaching.html",
+    "items": [
+      "/teaching/coms1130/index.html",
+      "/teaching/coms3090/index.html",
+      "/teaching/coms3190/index.html",
+      "/teaching/coms3620/index.html",
+      "/teaching/coms3630/index.html",
+      "/teaching/coms4170/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/drl.html",
+    "items": [
+      "/projects/os_teaching/index.html",
+      "/projects/phuse/index.html",
+      "/projects/dan/index.html",
+      "/projects/ehr/index.html",
+      "/projects/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/stat.html",
+    "items": [
+      "/projects/os_teaching/index.html",
+      "/projects/phuse/index.html",
+      "/projects/dan/index.html",
+      "/projects/ehr/index.html",
+      "/projects/sykdomspulsen/index.html",
+      "/projects/noreden/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/dl.html",
+    "items": [
+      "/projects/os_teaching/index.html",
+      "/projects/phuse/index.html",
+      "/projects/dan/index.html",
+      "/projects/ehr/index.html",
+      "/projects/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/cv.html",
+    "items": [
+      "/projects/os_teaching/index.html",
+      "/projects/phuse/index.html",
+      "/projects/dan/index.html",
+      "/projects/ehr/index.html",
+      "/projects/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/robo.html",
+    "items": [
+      "/projects/os_teaching/index.html",
+      "/projects/phuse/index.html",
+      "/projects/dan/index.html",
+      "/projects/ehr/index.html",
+      "/projects/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/guide/guide.html",
+    "items": []
+  }
+]

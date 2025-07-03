@@ -1,0 +1,54 @@
+---
+title: "COMS 3620"
+description: "Object-Oriented Analysis and Design"
+date: "2025-01-10"
+categories: [teaching, Computer Science]
+type: Computer Science
+---
+
+## COMS 3620 – Object-Oriented Analysis and Design
+
+### 📘 Course Description
+
+**COMS 3620** is a project-based course focused on **object-oriented requirements analysis and system design**. Students learn to apply **Unified Modeling Language (UML)** and **design patterns** to build robust and evolvable software systems. The course emphasizes teamwork, iterative development, and the communication of design decisions through technical documentation and presentations.
+
+---
+
+### 🧑‍🏫 My Role as Teaching Assistant
+
+As a **Teaching Assistant** for COMS 3620, I provided critical support to students in both design and implementation phases of large-scale object-oriented projects. My contributions included:
+
+- **UML & Design Mentorship:** Assisted students in modeling system requirements using UML (use case diagrams, class diagrams, sequence diagrams).
+- **Project Guidance:** Advised student teams during the full development cycle—from requirement analysis and domain modeling to implementation and testing.
+- **Design Critique & Feedback:** Evaluated and gave feedback on design homeworks, helping students strengthen their reasoning with design principles and patterns.
+- **Technical Assistance:** Supported Java implementation of OO designs, clarifying concepts like inheritance, polymorphism, abstraction, and class hierarchies.
+- **Presentation Coaching:** Helped teams prepare and deliver clear, well-structured final project presentations and reports.
+
+This role enhanced my skills in software architecture, peer instruction, and coaching students on both **technical correctness** and **design clarity**.
+
+---
+
+### 🎯 Learning Outcomes
+
+Upon completing the course, students are expected to:
+
+- Analyze software system requirements and model problem domains  
+- Design robust object-oriented systems using design principles and heuristics  
+- Apply and justify the use of **design patterns**  
+- Produce UML-based design documentation  
+- Implement object-oriented solutions in **Java** using abstraction, inheritance, and polymorphism  
+- Present and explain team design decisions in written and oral formats  
+- Collaborate effectively in team-based development projects
+
+---
+
+### 📚 Topics Covered
+
+- Procedural & Data Abstraction  
+- Modularity, Objects, State  
+- Unified Modeling Language (UML)  
+- Design Principles & Patterns  
+- Metalinguistic Abstraction  
+- Project Presentations & Evaluation
+
+> 💡 [Course Catalog](http://catalog.iastate.edu/azcourses/com_s/) | [Email](mailto:kkumar@iastate.edu)

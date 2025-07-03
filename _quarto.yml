@@ -1,0 +1,71 @@
+project:
+  type: website
+  output-dir: docs
+  
+
+website:
+  page-navigation: true
+  title: "Hello, I'm Kundan"
+  site-url: https://kundan-kumarr.github.io
+  favicon: misc/info/favicon.png
+  repo-url: https://github.com/kundan-kumarr/kundan-kumarr.github.io
+  repo-actions: [edit, issue]
+  
+  page-footer: 
+    left: "&copy; Copyright 2025, Kundan Kumar"
+    right: 
+      - icon: github
+        href: https://github.com/kundan-kumarr/kundan-kumarr.github.io
+
+  navbar: 
+    background: "#A9CCE3"
+    search: true
+    right: 
+      - text: "Research"
+        href: rpkg/rpkg.qmd
+        
+      - text: "Projects"
+        menu:
+        - text: "✨ All Projects"  # Main projects page
+          href: projects/projects.qmd
+        - text: "---"          # Divider (optional)
+        - text: "Large Language Models"
+          href: projects/projects.qmd
+        - text: "Deep Reinforcement Learning"
+          href: projects/drl.qmd
+        - text: "Deep/Machine Learning"
+          href: projects/dl.qmd
+        - text: "Statistics"
+          href: projects/stat.qmd
+        - text: "Computer Vision"
+          href: projects/cv.qmd
+        - text: "Robotics"
+          href: projects/robo.qmd
+    
+     # - text: "Projects"
+    #    href: projects/projects.qmd
+      
+      - text: "Teaching"
+        href: teaching/teaching.qmd
+        
+      - text: "Talks"
+        href: talks/talks.qmd
+
+      - text: "Blogs"
+        href: blog/blog.qmd
+        
+     # - text: "Interview Guide"
+    #    href: guide/guide.qmd
+    
+      - text: "About me"
+        href: about_me.qmd
+        
+      #- text: "CV"
+      #  href: misc/info/CV-CZ-2407.pdf
+
+
+format:
+  html:
+    theme: styles.scss
+
+

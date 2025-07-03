@@ -1,0 +1,16 @@
+Version: 1.0
+ProjectId: 01ea32ea-ec93-4b00-8607-4ece27f7bb4b
+
+RestoreWorkspace: Default
+SaveWorkspace: Default
+AlwaysSaveHistory: Default
+
+EnableCodeIndexing: Yes
+UseSpacesForTab: Yes
+NumSpacesForTab: 2
+Encoding: UTF-8
+
+RnwWeave: Sweave
+LaTeX: pdfLaTeX
+
+ProjectName: kundan-kumarr.github.io

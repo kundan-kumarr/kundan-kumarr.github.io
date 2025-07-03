@@ -1,0 +1,73 @@
+---
+title: "Teaching"
+description: |
+listing:
+  - id: medstat
+    max-description-length: 500
+    image-height: 250px
+    fields: [title, description, type]
+    contents:
+      - coms1130
+      - coms3090
+      - coms3190
+      - coms3620
+      - coms3630
+      - coms4170
+      
+    type: table
+    grid-item-border: false
+    sort-ui: false
+    filter-ui: false
+    
+---
+
+As a Teaching Assistant at Iowa State University, I am dedicated to creating an inclusive and dynamic learning environment that enables students to excel in computer science. My teaching approach emphasizes practical application of theoretical concepts, encouraging students to develop hands-on experience in software development, user interface design, and database management. I believe in preparing students for real-world challenges in the technology industry through project-based learning and individualized support.
+
+
+### Teaching Assistant/Mentor 
+
+::: {#medstat}
+:::
+
+<!--
+## Workshops
+
+::: {#workshop}
+:::
+
+  - id: workshop
+    max-description-length: 500
+    image-height: 250px
+    fields: [title, description, type]
+    contents: 
+      - r_novice
+      - workshop_bioinf
+      - workshop_rladies_zurich
+    type: table
+    grid-item-border: false
+    sort-ui: false
+    filter-ui: false
+-->
+
+<!--
+## Guides and Cheatsheets
+
+| Title |   Description            |
+|:-----:|:------------------------:|
+| [ggplot2](https://github.com/chizapoth/chizapoth.github.io/blob/main/resources/lecture_ggplot.pdf) | Lecture notes for `ggplot2` at the Carpentries workshop, UiO|
+| [list of commands](https://ocbe-uio.github.io/teaching_mf9130e/lab/list_of_commands.html) | Quick reference list of R commands used in my statistics classes |
+
+-->
+
+
+
+### Future Goals 
+---
+I am committed to continually improving teaching methods and curriculum design. My goals include:
+
+- Incorporating emerging AI and software development tools into teaching.
+- Creating interactive, hands-on, project-based learning environments.
+- Contributing to the computer science education community through curriculum research and mentoring.
+- Expanding opportunities for students to apply theory to real-world computing challenges.
+
+Feel free to [reach out](mailto:cs.kundann@gmail.com) if you would like to collaborate or learn more about my teaching and mentorship activities.

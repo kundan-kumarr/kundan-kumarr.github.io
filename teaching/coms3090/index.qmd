@@ -1,0 +1,62 @@
+---
+title: "COMS 3090"
+description: "Software Development Practices"
+date: "2025-01-10"
+categories: [teaching, Computer Science]
+type: Computer Science
+---
+
+## COMS 3090 – Software Development Practices
+
+### 🧠 Course Overview
+
+This course provides a **practical introduction to software engineering principles** including process models, requirements engineering, system design, testing, and project management. It emphasizes collaborative software development through a **semester-long group project**, focusing on teamwork, accountability, and real-world delivery practices.
+
+---
+
+### 🎯 Learning Objectives
+
+Students completing this course will:
+
+- Gain practical exposure to the **software development lifecycle**, from requirements to implementation and testing.
+- Learn to apply **project management techniques** including cost estimation, scheduling, and risk analysis.
+- Collaborate in teams to **design, develop, and deliver** a working software product.
+- Use software engineering **artifacts and tools** such as source control, UML, SQL schemas, and versioning systems.
+- Understand **software ethics**, legal responsibilities, and industry best practices.
+- Practice **client/server programming concepts** including socket communication and APIs.
+
+---
+
+### 🛠️ Topics Covered
+
+- Software Process Models and Lifecycle  
+- Requirements Analysis & Specification  
+- Architecture and System Design  
+- Project Scheduling, Risk Management, and Metrics  
+- Testing, Inspections, and Code Reviews  
+- Software Configuration & Source Control  
+- Database Schema Design and SQL  
+- Object-Oriented Concepts and Modeling  
+- Networking & Client-Server Programming (HTTP, DNS, Sockets)  
+  - DNS, IP, URI
+  - Introduction to the client/server model
+  - Http
+  - Socket APIs
+  - Client/server APIs
+- Professional Ethics in Computing
+
+---
+
+### 👨‍🏫 My Role as Teaching Assistant
+
+As a **Teaching Assistant** for COMS 3090, I supported over 150 students in mastering software development practices through lectures, labs, and team projects. My responsibilities included:
+
+- **Mentoring Project Teams:** Guided multiple student groups through requirements gathering, iterative design, and implementation milestones for their semester-long projects.
+- **Lab Instruction:** Facilitated labs covering Git, object-oriented modeling, system architecture, and backend programming fundamentals.
+- **Technical Support:** Helped students with debugging, API integrations, testing techniques, and version control during weekly office hours.
+- **Evaluation & Feedback:** Assisted in grading project deliverables, presentations, and code quality, providing constructive feedback for improvement.
+- **Process Coaching:** Reinforced agile principles, milestone planning, documentation quality, and collaborative communication.
+
+This role allowed me to blend **technical mentorship** with **project coordination**, while reinforcing industry practices and promoting engineering discipline among future software professionals.
+
+> 💡 [Course Catalog](http://catalog.iastate.edu/azcourses/com_s/) | [Email](mailto:kkumar@iastate.edu)

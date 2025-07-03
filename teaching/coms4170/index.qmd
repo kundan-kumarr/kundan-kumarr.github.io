@@ -1,0 +1,32 @@
+---
+title: "COMS 4170"
+description: "Software Testing"
+date: "2025-05-04"
+categories: [course, Computer Science]
+type: Computer Science
+---
+
+## COMS 4170 – Software Testing
+
+[COMS 4170](https://www.cs.iastate.edu/courses/com-s-4170/) is an upper-level undergraduate/graduate course at Iowa State University, taught by Professor [Myra Cohen](https://www.cs.iastate.edu/people/myra-cohen), focusing on rigorous methods for software testing and quality assurance.
+
+I served as the **Teaching Assistant** for this course in Spring 2025, where I was responsible for:
+
+- Leading weekly lab sessions and guiding students through practical exercises on test case generation and software testing tools.
+- Assisting in course content delivery and reinforcing core topics such as black-box and white-box testing, test adequacy criteria, integration, and regression testing.
+- Designing and grading assignments and exams, ensuring alignment with pedagogical goals.
+- Providing one-on-one mentoring to students to support their understanding of software quality assurance methodologies.
+
+### Key Topics Covered:
+- Principles and methodologies of software testing
+- Test design techniques: black-box and white-box
+- Test models and adequacy criteria
+- Integration and system testing
+- Regression testing strategies
+- Use of automated software testing tools
+- Testing management and process strategies
+
+**Textbook:** *Introduction to Software Testing*, 2nd edition by Paul Ammann and Jeff Offutt.
+
+---
+

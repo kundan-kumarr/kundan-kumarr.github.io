@@ -1,0 +1,46 @@
+---
+title: "Kundan Kumar"
+image: misc/info/photo.png
+about:
+  id: hero-heading
+  template: trestles
+  image-width: 12em
+  image-shape: round
+  links:
+    - icon: mailbox
+      text: Gmail
+      href: mailto:cs.kundann@gmail.com
+    - icon: github
+      text: Github
+      href: http://github.com/kundan-kumarr/
+    - icon: linkedin
+      text: Linkedin
+      href: https://www.linkedin.com/in/kundan-kumarr/
+    - icon: youtube
+      text: YouTube
+      href: https://www.youtube.com/@AIAgentic-007/
+    - icon: rss
+      text: Substack
+      href: https://neuravp.substack.com/
+    - icon: book
+      text: Scholar
+      href: https://scholar.google.com/citations?user=1zDpIJkAAAAJ
+---
+<!--
+- icon: twitter
+      text: Twitter
+      href: http://twitter.com/kundan7kumar/
+-->
+::: {#hero-heading}
+
+Hello! 
+
+I am a researcher and Ph.D. candidate developing **Safe Reinforcement Learning, Vision-based Simulation, and Large Language Models (LLMs)** for real-world autonomous systems and critical infrastructure. My work combines **deep reinforcement learning (DRL)**, **physics-informed AI**, and **safe control** to build robust AI agents for smart energy systems, robotics, and autonomous vehicles.
+
+In 2024, I worked as a Machine Learning Engineer Internship at the [National Renewable Energy Laboratory](https://www.nrel.gov/), where I developed a Bayesian Semi supervised algorithm for phase identification using small, limited, and unreliable datasets. This work has been accepted for presentation at the [PES-GM 2025 Conference](https://pes-gm.org/). 
+
+In my spare time, I also create educational content simplifying **AI, ML, and statistics**, sharing insights on [Substack](https://neuravp.substack.com/) and [YouTube](https://www.youtube.com/@AIAgentic-007/).
+
+Outside of work, I enjoy cooking and skating.
+
+:::

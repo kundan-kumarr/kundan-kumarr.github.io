@@ -1,0 +1,136 @@
+/* Main timeline container */
+.experience-timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* Vertical timeline line */
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: #e74c3c;
+  transform: translateX(-50%);
+}
+
+/* Experience entry styling */
+.experience-entry {
+  position: relative;
+  margin-bottom: 50px;
+  clear: both;
+  min-height: 120px;
+}
+
+/* Left entries */
+.experience-entry.left .experience-content {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+}
+
+.experience-entry.left .date-marker {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Right entries */
+.experience-entry.right .experience-content {
+  float: right;
+  width: 45%;
+  margin-left: 5%;
+}
+
+.experience-entry.right .date-marker {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Circle on timeline */
+.circle {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border: 4px solid #e74c3c;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* Date badge */
+.date-badge {
+  position: absolute;
+  top: 0;
+  background-color: #e74c3c;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+  z-index: 2;
+}
+
+.experience-entry.left .date-badge {
+  left: 30px;
+}
+
+.experience-entry.right .date-badge {
+  right: 30px;
+}
+
+/* Content box styling */
+.experience-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.experience-content h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 40px;
+  }
+  
+  .experience-entry.left .experience-content,
+  .experience-entry.right .experience-content {
+    float: right;
+    width: calc(100% - 80px);
+    margin-left: 80px;
+    margin-right: 0;
+  }
+  
+  .experience-entry.left .date-marker,
+  .experience-entry.right .date-marker {
+    left: 40px;
+    transform: none;
+  }
+  
+  .circle {
+    left: 0;
+    transform: none;
+  }
+  
+  .experience-entry.left .date-badge,
+  .experience-entry.right .date-badge {
+    left: -80px;
+    width: 70px;
+    font-size: 0.85em;
+  }
+}
