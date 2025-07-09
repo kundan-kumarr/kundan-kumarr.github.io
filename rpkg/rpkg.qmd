@@ -1,6 +1,36 @@
+
 ---
 title: "Research"
 page-layout: article
+listing:
+  - id: safe_rl
+    title: "Safe Reinforcement Learning"
+    type: grid
+    contents: [safe_rl_1, safe_rl_2, safe_rl_3]
+    grid-columns: 3
+    grid-item-border: true
+    categories: [Safe RL]
+  
+  - id: meta_learning
+    title: "Transfer & Meta Learning"
+    type: grid
+    contents: [meta_1, meta_2, meta_3]
+    grid-columns: 3
+    grid-item-border: true
+
+  - id: vision_sim
+    title: "Vision-Based Simulation"
+    type: grid
+    contents: [vision_1, vision_2]
+    grid-columns: 3
+    grid-item-border: true
+
+  - id: llm_control
+    title: "LLM-Augmented Control"
+    type: grid
+    contents: [llm_1, llm_2]
+    grid-columns: 3
+    grid-item-border: true
 ---
 
 ## Research Vision
