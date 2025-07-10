@@ -1,68 +1,123 @@
 ---
 title: "Teaching"
-description: |
-listing:
-  - id: medstat
-    max-description-length: 500
-    image-height: 250px
-    fields: [title, description, type]
-    contents:
-      - coms1130
-      - coms3090
-      - coms3190
-      - coms3620
-      - coms3630
-      - coms4170
-      
-    type: table
-    grid-item-border: false
-    sort-ui: false
-    filter-ui: false
-    
+page-layout: article
 ---
 
-As a Teaching Assistant at Iowa State University, I am dedicated to creating an inclusive and dynamic learning environment that enables students to excel in computer science. My teaching approach emphasizes practical application of theoretical concepts, encouraging students to develop hands-on experience in software development, user interface design, and database management. I believe in preparing students for real-world challenges in the technology industry through project-based learning and individualized support.
+As a Teaching Assistant at Iowa State University, I am dedicated to creating an inclusive and dynamic learning environment that enables students to excel in computer science. My teaching approach emphasizes practical application of theoretical concepts, encouraging students to develop hands-on experience in software development, user interface design, and database management. I believe in preparing students for real-world challenges in the technology industry through project-based learning and personalized support.
+
+**Courses I have served as a Teaching Assistant or Mentor in:**
 
 
-### Teaching Assistant/Mentor 
 
-::: {#medstat}
+## COMS 1130 – Spreadsheets and Databases
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+![](/misc/info/teaching/spreadsheets.png)
 :::
 
-<!--
-## Workshops
+::: {.g-col-12 .g-col-md-10}
+[Fall 2016](/teaching/coms1130/)
 
-::: {#workshop}
+Foundational course in using tools like Microsoft Excel and Access for data organization, analysis, and reporting. Students learn formulas, pivot tables, queries, and form design for practical business and data applications.
 :::
 
-  - id: workshop
-    max-description-length: 500
-    image-height: 250px
-    fields: [title, description, type]
-    contents: 
-      - r_novice
-      - workshop_bioinf
-      - workshop_rladies_zurich
-    type: table
-    grid-item-border: false
-    sort-ui: false
-    filter-ui: false
--->
-
-<!--
-## Guides and Cheatsheets
-
-| Title |   Description            |
-|:-----:|:------------------------:|
-| [ggplot2](https://github.com/chizapoth/chizapoth.github.io/blob/main/resources/lecture_ggplot.pdf) | Lecture notes for `ggplot2` at the Carpentries workshop, UiO|
-| [list of commands](https://ocbe-uio.github.io/teaching_mf9130e/lab/list_of_commands.html) | Quick reference list of R commands used in my statistics classes |
-
--->
+:::
 
 
 
-### Future Goals 
----
+## COMS 3090 – Software Development Practices
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+![](/misc/info/teaching/software_development.png)
+:::
+
+::: {.g-col-12 .g-col-md-10}
+[Fall 2022](/teaching/coms3090/), &nbsp; [Spring 2023](/teaching/coms3090/), , &nbsp; [Spring 2024](/teaching/coms3090/)
+
+**Hands-on course** focused on modern software development practices, including Git, Agile methodologies, code reviews, unit testing, and CI/CD. Students engage in team-based projects that simulate real-world workflows, emphasizing collaboration, documentation, and iterative development.
+:::
+
+:::
+
+
+
+## COMS 3190 – User Interface Design
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+![](/misc/info/teaching/user_interface.png)
+:::
+
+::: {.g-col-12 .g-col-md-10}
+[Fall 2023](/teaching/coms3190/)
+
+Explores the principles of designing user-friendly and efficient interfaces. Combines hardware and data-driven UI practices, integrating Raspberry Pi for IoT applications and Nodejs for fronted visualization and interaction.
+:::
+
+:::
+
+
+
+## COMS 3620 – Object-Oriented Analysis and Design
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+![](/misc/info/teaching/object_oriented.png)
+:::
+
+::: {.g-col-12 .g-col-md-10}
+[Fall 2020](/teaching/coms3620/), &nbsp; [Spring 2021](/teaching/coms3620/), &nbsp; [Fall 2021](/teaching/coms3620/), &nbsp; [Fall 2024](/teaching/coms3620/)
+
+Teaches how to model and design software systems using object-oriented principles. Emphasis is on UML diagrams, design patterns, and implementation in Java to build modular, maintainable, and scalable software.
+:::
+
+:::
+
+
+
+## COMS 3630 – Database Management Systems
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+![](/misc/info/teaching/databases.png)
+:::
+
+::: {.g-col-12 .g-col-md-10}
+[Spring 2022](/teaching/coms3630/)
+
+Covers the fundamentals of database architecture, data modeling, and SQL. Students gain hands-on experience with relational databases and explore indexing, transactions, normalization, and database design.
+:::
+
+:::
+
+
+
+## COMS 4170 – Software Testing
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+![](/misc/info/teaching/software_testing.png)
+:::
+
+::: {.g-col-12 .g-col-md-10}
+[Spring 2025](/teaching/coms4170/)
+
+Focuses on the principles and practices of software verification and validation. Students learn to design and execute test cases, use debugging tools, and apply automation frameworks to ensure software quality and reliability.
+:::
+
+:::
+
+
+## Future Goals
+
 I am committed to continually improving teaching methods and curriculum design. My goals include:
 
 - Incorporating emerging AI and software development tools into teaching.
@@ -70,4 +125,4 @@ I am committed to continually improving teaching methods and curriculum design. 
 - Contributing to the computer science education community through curriculum research and mentoring.
 - Expanding opportunities for students to apply theory to real-world computing challenges.
 
-Feel free to [reach out](mailto:cs.kundann@gmail.com) if you would like to collaborate or learn more about my teaching and mentorship activities.
+[Reach out via email](mailto:cs.kundann@gmail.com) if you'd like to collaborate or learn more.

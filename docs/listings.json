@@ -1,12 +1,13 @@
 [
   {
-    "listing": "/projects/projects.html",
+    "listing": "/teaching/teaching.html",
     "items": [
-      "/projects/os_teaching/index.html",
-      "/projects/phuse/index.html",
-      "/projects/dan/index.html",
-      "/projects/ehr/index.html",
-      "/projects/sykdomspulsen/index.html"
+      "/teaching/coms1130/index.html",
+      "/teaching/coms3090/index.html",
+      "/teaching/coms3190/index.html",
+      "/teaching/coms3620/index.html",
+      "/teaching/coms3630/index.html",
+      "/teaching/coms4170/index.html"
     ]
   },
   {
@@ -18,6 +19,67 @@
       "/talks/rstats_20240613_teaching/index.html",
       "/talks/rstats_20230721_teaching/index.html",
       "/talks/ph_20220616_splverse/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/cv.html",
+    "items": [
+      "/projects/os_teaching/index.html",
+      "/projects/phuse/index.html",
+      "/projects/dan/index.html",
+      "/projects/ehr/index.html",
+      "/projects/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/projects.html",
+    "items": [
+      "/projects/os_teaching/index.html",
+      "/projects/phuse/index.html",
+      "/projects/dan/index.html",
+      "/projects/ehr/index.html",
+      "/projects/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/robo.html",
+    "items": [
+      "/projects/os_teaching/index.html",
+      "/projects/phuse/index.html",
+      "/projects/dan/index.html",
+      "/projects/ehr/index.html",
+      "/projects/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/drl.html",
+    "items": [
+      "/projects/os_teaching/index.html",
+      "/projects/phuse/index.html",
+      "/projects/dan/index.html",
+      "/projects/ehr/index.html",
+      "/projects/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/dl.html",
+    "items": [
+      "/projects/os_teaching/index.html",
+      "/projects/phuse/index.html",
+      "/projects/dan/index.html",
+      "/projects/ehr/index.html",
+      "/projects/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/stat.html",
+    "items": [
+      "/projects/os_teaching/index.html",
+      "/projects/phuse/index.html",
+      "/projects/dan/index.html",
+      "/projects/ehr/index.html",
+      "/projects/sykdomspulsen/index.html",
+      "/projects/noreden/index.html"
     ]
   },
   {
@@ -51,14 +113,7 @@
     ]
   },
   {
-    "listing": "/rpkg/rpkg.html",
-    "items": [
-      "/rpkg/ggehr/index.html",
-      "/rpkg/qtwAcademic/index.html"
-    ]
-  },
-  {
-    "listing": "/teaching/teaching.html",
+    "listing": "/teaching/teaching1.html",
     "items": [
       "/teaching/coms1130/index.html",
       "/teaching/coms3090/index.html",
@@ -67,60 +122,5 @@
       "/teaching/coms3630/index.html",
       "/teaching/coms4170/index.html"
     ]
-  },
-  {
-    "listing": "/projects/drl.html",
-    "items": [
-      "/projects/os_teaching/index.html",
-      "/projects/phuse/index.html",
-      "/projects/dan/index.html",
-      "/projects/ehr/index.html",
-      "/projects/sykdomspulsen/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/stat.html",
-    "items": [
-      "/projects/os_teaching/index.html",
-      "/projects/phuse/index.html",
-      "/projects/dan/index.html",
-      "/projects/ehr/index.html",
-      "/projects/sykdomspulsen/index.html",
-      "/projects/noreden/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/dl.html",
-    "items": [
-      "/projects/os_teaching/index.html",
-      "/projects/phuse/index.html",
-      "/projects/dan/index.html",
-      "/projects/ehr/index.html",
-      "/projects/sykdomspulsen/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/cv.html",
-    "items": [
-      "/projects/os_teaching/index.html",
-      "/projects/phuse/index.html",
-      "/projects/dan/index.html",
-      "/projects/ehr/index.html",
-      "/projects/sykdomspulsen/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/robo.html",
-    "items": [
-      "/projects/os_teaching/index.html",
-      "/projects/phuse/index.html",
-      "/projects/dan/index.html",
-      "/projects/ehr/index.html",
-      "/projects/sykdomspulsen/index.html"
-    ]
-  },
-  {
-    "listing": "/guide/guide.html",
-    "items": []
   }
 ]

@@ -8,14 +8,14 @@ about:
   image-shape: round
   links:
     - icon: mailbox
-      text: Gmail
+      text: Email
       href: mailto:cs.kundann@gmail.com
-    - icon: github
-      text: Github
-      href: http://github.com/kundan-kumarr/
     - icon: linkedin
-      text: Linkedin
+      text: LinkedIn
       href: https://www.linkedin.com/in/kundan-kumarr/
+    - icon: github
+      text: GitHub
+      href: http://github.com/kundan-kumarr/
     - icon: youtube
       text: YouTube
       href: https://www.youtube.com/@AIAgentic-007/
@@ -26,21 +26,25 @@ about:
       text: Scholar
       href: https://scholar.google.com/citations?user=1zDpIJkAAAAJ
 ---
-<!--
-- icon: twitter
-      text: Twitter
-      href: http://twitter.com/kundan7kumar/
--->
+
 ::: {#hero-heading}
 
-Hello! 
+Hello!
 
-I am a researcher and Ph.D. candidate developing **Safe Reinforcement Learning, Vision-based Simulation, and Large Language Models (LLMs)** for real-world autonomous systems and critical infrastructure. My work combines **deep reinforcement learning (DRL)**, **physics-informed AI**, and **safe control** to build robust AI agents for smart energy systems, robotics, and autonomous vehicles.
+I'm **Kundan Kumar** — a Ph.D. candidate and researcher building **safe and trustworthy AI systems** for real-world autonomous applications. My research integrates **deep reinforcement learning (DRL)**, **physics-informed AI**, and **safe control** to create robust agents for smart energy systems, robotics, and autonomous vehicles.
 
-In 2024, I worked as a Machine Learning Engineer Internship at the [National Renewable Energy Laboratory](https://www.nrel.gov/), where I developed a Bayesian Semi supervised algorithm for phase identification using small, limited, and unreliable datasets. This work has been accepted for presentation at the [PES-GM 2025 Conference](https://pes-gm.org/). 
+In 2024, I worked as a **Machine Learning Engineer Intern** at the [National Renewable Energy Laboratory (NREL)](https://www.nrel.gov/), where I designed a **Bayesian semi-supervised learning algorithm** for phase identification on small, limited, and unreliable datasets. This work will be presented at the **[IEEE PES General Meeting 2025](https://pes-gm.org/)**.
 
-In my spare time, I also create educational content simplifying **AI, ML, and statistics**, sharing insights on [Substack](https://neuravp.substack.com/) and [YouTube](https://www.youtube.com/@AIAgentic-007/).
+I'm passionate about democratizing AI knowledge. I create educational content simplifying **AI, ML, and statistics** on [Substack](https://neuravp.substack.com/) and [YouTube](https://www.youtube.com/@AIAgentic-007/).
 
-Outside of work, I enjoy cooking and skating.
+Outside of research, I enjoy **cooking** and **skating**. 🛼
 
 :::
+
+## Recent Posts
+Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd)
+
+:::{#recent-posts}
+:::
+
+<p align="right">[All Posts »](/posts.qmd)</p>
