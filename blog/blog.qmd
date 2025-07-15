@@ -1,69 +1,24 @@
 ---
-title: "Blog and notes"
-description: |
-  A place to store learnings and thoughts on public health, data science and open source development 
+title: "Blogs"
+toc: false
 listing:
-  - id: blog
-    fields: [title, date]
-    contents: 
-      - "blog_*/index.qmd"
-    type: table
-    grid-item-border: false
-    sort-ui: false
-    sort: "date desc"
-    filter-ui: false
-    categories: true
-    date-format: short
-    
-  - id: readnotes
-    fields: [title, date]
-    contents: 
-      - "readnotes_*/index.qmd"
-    type: table
-    grid-item-border: false
-    sort-ui: false
-    sort: "date desc"
-    filter-ui: false
-    categories: true
-    date-format: short
-
-  - id: technotes
-    fields: [title, date]
-    contents: 
-      - "technotes_*/index.qmd"
-    type: table
-    grid-item-border: false
-    sort-ui: false
-    sort: "date desc"
-    filter-ui: false
-    categories: true
-    date-format: short
-
+  contents: talks
+  type: default
+  image-align: left
+  fields: 
+    - title
+    - description
+    - date
+    - image
+    - categories
+  categories: true
+  sort: "date desc"
+  page-size: 5
 ---
 
-### Blog
+<!-- # Upcoming
 
-::: {#blog}
-:::
+None at this time.
 
-
-### Technical notes
-
-Most of the technical notes are in the newly built note repository, [Data Apothecary's Notes](https://chizapoth.github.io/data-apothecary-notes/). Please feel free to reach out if you found any errors!
-
-I'd be glad if it helps you in some way.
-
-::: {#technotes}
-:::
-
-
-
-
-### Reading notes
-
-This section is constantly being updated.
-
-::: {#readnotes}
-:::
-
-
+# Past
+-->
