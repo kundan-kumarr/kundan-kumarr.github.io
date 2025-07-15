@@ -559,7 +559,7 @@ Iowa State University
   </a>
 </div>
 <div style="text-align:center; margin-top:2rem;">
-  <a href="projects/cv.qmd" style="
+  <a href="projects.qmd" style="
     display: inline-block;
     background-color: #1e567d;
     color: white;
