@@ -163,21 +163,10 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/projects1/drl.html",
-      "/projects1/prohect2.html",
-      "/projects1/nor_mortality/index.html",
-      "/projects1/os_teaching/index.html",
-      "/projects1/dl.html",
-      "/projects1/robo.html",
-      "/projects1/dan/index.html",
-      "/projects1/projects.html",
-      "/projects1/noreden/index.html",
-      "/projects1/sykdomspulsen/index.html",
-      "/projects1/ehr/index.html",
-      "/projects1/phuse/index.html",
-      "/projects1/stat.html",
-      "/projects1/cv.html",
-      "/projects1/projects1.html"
+      "/projects/washi.html",
+      "/projects/roadmap.html",
+      "/projects/orcas.html",
+      "/projects/wacse.html"
     ]
   },
   {

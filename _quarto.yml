@@ -17,8 +17,8 @@ website:
     center: |
       <a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
       <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-      <a class="link-dark me-2" href="https://orcid.org/0000-0000-0000-0000" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a>
-      <a class="link-dark me-2" href="https://scholar.google.com/citations?user=xxxxxxxxxxx" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a>
+      <a class="link-dark me-2" href="https://orcid.org/0000-0002-3229-6649" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a>
+      <a class="link-dark me-2" href="https://scholar.google.com/citations?user=1zDpIJkAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a>
       <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a>
 
     right: 
@@ -43,20 +43,20 @@ website:
         icon: puzzle-fill
         menu:
           - text: "✨ All Projects"
-            href: projects/projects.qmd
+            href: projects.qmd
           - text: "---"
           - text: "Large Language Models"
-            href: projects/projects.qmd
+            href: projects1/projects.qmd
           - text: "Deep Reinforcement Learning"
-            href: projects/drl.qmd
+            href: projects1/drl.qmd
           - text: "Deep/Machine Learning"
-            href: projects/dl.qmd
+            href: projects1/dl.qmd
           - text: "Statistics"
-            href: projects/stat.qmd
+            href: projects1/stat.qmd
           - text: "Computer Vision"
-            href: projects/cv.qmd
+            href: projects1/cv.qmd
           - text: "Robotics"
-            href: projects/robo.qmd
+            href: projects1/robo.qmd
       - text: "Teaching"
         icon: mortarboard-fill
         href: teaching/teaching.qmd
