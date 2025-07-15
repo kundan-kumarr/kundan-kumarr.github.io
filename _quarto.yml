@@ -1,7 +1,6 @@
 project:
   type: website
   output-dir: docs
-  
 
 website:
   page-navigation: true
@@ -11,15 +10,23 @@ website:
   favicon: misc/info/favicon.png
   repo-url: https://github.com/kundan-kumarr/kundan-kumarr.github.io
   repo-actions: [edit, issue]
-  
-  page-footer: 
-    left: "&copy; Copyright 2025, Kundan Kumar"
+
+  page-footer:  
+    left: >-
+      &#169; 2025 Kundan Kumar &#8729; Made with <a href="https://quarto.org" target="_blank">Quarto</a>
+    center: |
+      <a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+      <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      <a class="link-dark me-2" href="https://orcid.org/0000-0000-0000-0000" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a>
+      <a class="link-dark me-2" href="https://scholar.google.com/citations?user=xxxxxxxxxxx" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a>
+      <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a>
+
     right: 
-      - icon: github
-        href: https://github.com/kundan-kumarr/kundan-kumarr.github.io
+      - text: "Contact"
+        aria-label: "Contact Form"
+        href: "contact.qmd"
 
   navbar: 
-    #background: light
     background: "#A9CCE3"
     search: true
     right: 
@@ -29,71 +36,43 @@ website:
       - text: CV
         icon: file-earmark-text-fill
         href: cv.qmd
-        
       - text: "Research"
         icon: lightbulb-fill
         href: rpkg/rpkg.qmd
-    #  - text: Research1
-      #  menu:
-       #   - text: List of Publications
-       #     href: publications.qmd
-        #  - text: Selected Papers
-        #    href: posts.qmd#category=paper
-         # - text: Grants
-        #    href: projects.qmd 
       - text: "Projects"
         icon: puzzle-fill
         menu:
-        - text: "✨ All Projects"  # Main projects page
-          href: projects/projects.qmd
-        - text: "---"          # Divider (optional)
-        - text: "Large Language Models"
-          href: projects/projects.qmd
-        - text: "Deep Reinforcement Learning"
-          href: projects/drl.qmd
-        - text: "Deep/Machine Learning"
-          href: projects/dl.qmd
-        - text: "Statistics"
-          href: projects/stat.qmd
-        - text: "Computer Vision"
-          href: projects/cv.qmd
-        - text: "Robotics"
-          href: projects/robo.qmd
-    
-     # - text: "Projects"
-    #    href: projects/projects.qmd
-      
+          - text: "✨ All Projects"
+            href: projects/projects.qmd
+          - text: "---"
+          - text: "Large Language Models"
+            href: projects/projects.qmd
+          - text: "Deep Reinforcement Learning"
+            href: projects/drl.qmd
+          - text: "Deep/Machine Learning"
+            href: projects/dl.qmd
+          - text: "Statistics"
+            href: projects/stat.qmd
+          - text: "Computer Vision"
+            href: projects/cv.qmd
+          - text: "Robotics"
+            href: projects/robo.qmd
       - text: "Teaching"
         icon: mortarboard-fill
         href: teaching/teaching.qmd
-        
-      #- text: "Talks"
-      #  icon: mic-fill
-        # href: talks/talks.qmd
-
       - text: "Blogs"
         icon: pen-fill
         href: blog/blog.qmd
-        
-      #- text: "Publications"
-       # icon: journal-bookmark-fill
-       # href: publications.qmd
-    
-     # - text: "About me"
-     #   href: about_me.qmd
-        
-      #- text: "CV"
-      #  href: misc/info/CV-CZ-2407.pdf
-
 
   google-analytics:
-      tracking-id: ""  # Please delete or replace with your own tracking ID
-      anonymize-ip: true 
-    
+    tracking-id: ""  # Add your tracking ID if needed
+    anonymize-ip: true 
+
 bibliography: references.bib
 
 format:
   html:
     theme: styles.scss
-
-
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">

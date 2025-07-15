@@ -1,6 +1,7 @@
 ---
 title: "Kundan Kumar"
 image: misc/info/photo.png
+subtitle: "Research Scientist and GenAI Data Scientist"
 page-layout: article
 format: 
   html:
@@ -49,6 +50,7 @@ To support cross-domain generalization, I develop **transfer learning techniques
 
 Beyond smart energy systems, I maintain active research interests in **probabilistic reasoning**, **statistical machine learning**, and **robotics**, as well as the integration of **LLMs** with simulation and control frameworks. I am particularly excited about the potential of LLMs to improve human-AI interaction, enhance contextual awareness, and drive more interpretable and adaptive behavior in intelligent systems.
 -->
+## Hi there!
 
 I am a researcher focused on developing intelligent, secure, and adaptable AI systems for next-generation cyber-physical infrastructure. My work spans **deep reinforcement learning (DRL)**, **multi-agent systems**, **large language models (LLMs)**, **safe and explainable AI**, **computer vision**, and **robotics**, with real-world applications in smart energy systems, autonomous vehicles, and critical infrastructure.
 

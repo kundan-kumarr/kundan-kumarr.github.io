@@ -34,12 +34,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-16f0be44cf0b9c8dc4714857273be9e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-02780870f810cbea2942d4f924fa0322.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-b4c4310c461329769839695e4062df9a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,11 +75,12 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '', { 'anonymize_ip': true});
 </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -103,7 +103,7 @@ gtag('config', '', { 'anonymize_ip': true});
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../cv.qmd"> <i class="bi bi-file-earmark-text-fill" role="img">
+    <a class="nav-link" href="../cv.html"> <i class="bi bi-file-earmark-text-fill" role="img">
 </i> 
 <span class="menu-text">CV</span></a>
   </li>  
@@ -120,32 +120,32 @@ gtag('config', '', { 'anonymize_ip': true});
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects">    
         <li>
-    <a class="dropdown-item" href="../projects/projects.html">
+    <a class="dropdown-item" href="../projects/projects.qmd">
  <span class="dropdown-text">✨ All Projects</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li>
-    <a class="dropdown-item" href="../projects/projects.html">
+    <a class="dropdown-item" href="../projects/projects.qmd">
  <span class="dropdown-text">Large Language Models</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../projects/drl.html">
+    <a class="dropdown-item" href="../projects/drl.qmd">
  <span class="dropdown-text">Deep Reinforcement Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../projects/dl.html">
+    <a class="dropdown-item" href="../projects/dl.qmd">
  <span class="dropdown-text">Deep/Machine Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../projects/stat.html">
+    <a class="dropdown-item" href="../projects/stat.qmd">
  <span class="dropdown-text">Statistics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../projects/cv.html">
+    <a class="dropdown-item" href="../projects/cv.qmd">
  <span class="dropdown-text">Computer Vision</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../projects/robo.html">
+    <a class="dropdown-item" href="../projects/robo.qmd">
  <span class="dropdown-text">Robotics</span></a>
   </li>  
     </ul>
@@ -168,12 +168,30 @@ gtag('config', '', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#research-vision" id="toc-research-vision" class="nav-link active" data-scroll-target="#research-vision">🚀 Research Vision</a></li>
+  <li><a href="#research-themes" id="toc-research-themes" class="nav-link" data-scroll-target="#research-themes">🧠 Research Themes</a>
+  <ul class="collapse">
+  <li><a href="#safe-rl" id="toc-safe-rl" class="nav-link" data-scroll-target="#safe-rl">Safe &amp; Trustworthy Reinforcement Learning</a></li>
+  <li><a href="#tl-rl" id="toc-tl-rl" class="nav-link" data-scroll-target="#tl-rl">Transfer Learning &amp; Meta-Adaptation</a></li>
+  <li><a href="#vision-sim" id="toc-vision-sim" class="nav-link" data-scroll-target="#vision-sim">Vision-Simulation Integration</a></li>
+  <li><a href="#llm-control" id="toc-llm-control" class="nav-link" data-scroll-target="#llm-control">LLM-Augmented Decision Systems</a></li>
+  </ul></li>
+  <li><a href="#application-domains" id="toc-application-domains" class="nav-link" data-scroll-target="#application-domains">🔬 Application Domains</a></li>
+  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">📚 Selected Publications</a></li>
+  <li><a href="#ongoing-projects" id="toc-ongoing-projects" class="nav-link" data-scroll-target="#ongoing-projects">🧪 Ongoing Projects</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/rpkg/rpkg.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -182,7 +200,7 @@ gtag('config', '', { 'anonymize_ip': true});
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -195,93 +213,230 @@ gtag('config', '', { 'anonymize_ip': true});
 
 
 <section id="research-vision" class="level2">
-<h2 class="anchored" data-anchor-id="research-vision">Research Vision</h2>
-<p>My research focuses on developing safe, adaptable, and trustworthy AI systems for complex, safety-critical environments. I integrate techniques from <strong>physics-informed deep reinforcement learning (DRL)</strong>, <strong>vision-based simulation</strong>, and <strong>large language models (LLMs)</strong> to design AI agents capable of robust decision-making in dynamic cyber-physical systems such as smart energy grids, autonomous vehicles, and robotics. My work bridges real-world system constraints with advanced machine learning to build agents that are not only high-performing, but also interpretable, resilient, and safe.</p>
+<h2 data-anchor-id="research-vision">🚀 Research Vision</h2>
+<p>I aim to advance the frontier of <strong>safe, interpretable, and adaptive AI</strong> for cyber-physical systems operating under uncertainty and dynamic constraints. My research sits at the intersection of <strong>machine learning</strong>, <strong>optimization</strong>, and <strong>control theory</strong>, with a particular focus on:</p>
+<ul>
+<li><strong>Physics-informed Deep Reinforcement Learning (DRL)</strong></li>
+<li><strong>Probabilistic &amp; Bayesian Modeling</strong></li>
+<li><strong>Large Language Models (LLMs) for autonomous reasoning</strong></li>
+<li><strong>Vision-based simulation environments</strong></li>
+</ul>
+<p>By tightly integrating domain knowledge into learning frameworks, I design agents capable of robust decision-making in real-world, high-stakes environments such as <strong>smart grids</strong>, <strong>robotics</strong>, and <strong>intelligent infrastructure</strong>.</p>
 <hr>
 </section>
-<section id="research-areas" class="level2">
-<h2 class="anchored" data-anchor-id="research-areas">Research Areas</h2>
-<section id="safe-reinforcement-learning" class="level3">
-<h3 class="anchored" data-anchor-id="safe-reinforcement-learning">🔬 Safe Reinforcement Learning</h3>
+<section id="research-themes" class="level2">
+<h2 data-anchor-id="research-themes">🧠 Research Themes</h2>
+<section id="safe-rl" class="level3">
+<h3 data-anchor-id="safe-rl">Safe &amp; Trustworthy Reinforcement Learning</h3>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; padding: 1rem; border: 1.5px solid #ddd; border-radius: 12px; background-color: #f9fbfd; box-shadow: 1px 1px 6px rgba(0,0,0,0.05); margin-bottom: 1.5rem;">
+<div style="flex: 1 1 300px; min-width: 250px;">
+<p>
+<strong>🎯 Objective</strong>
+</p>
+<p>
+Develop control agents that guarantee <strong>system safety</strong>, <strong>stability</strong>, and <strong>robust learning</strong> in dynamic, uncertain, and partially observable environments.
+</p>
+<p>
+<strong>🔍 Core Focus Areas</strong>
+</p>
 <ul>
-<li>Physics-Informed RL with embedded domain constraints</li>
-<li>Adversarial robustness &amp; uncertainty quantification</li>
-<li>Safe exploration and constrained policy optimization</li>
+<li>
+Constrained policy optimization and reward shaping
+</li>
+<li>
+Physics-based priors in DRL
+</li>
+<li>
+Adversarial resilience and anomaly detection
+</li>
+<li>
+Epistemic and aleatoric uncertainty quantification
+</li>
 </ul>
+</div>
+<div style="flex: 1 1 250px; text-align: center;">
+<p><img src="../projects1/ehr/hex_ggehr.png" alt="Safe RL Diagram" style="max-width: 100%; border-radius: 8px;"></p>
+</div>
+</div>
 </section>
-<section id="transfer-learning-meta-learning" class="level3">
-<h3 class="anchored" data-anchor-id="transfer-learning-meta-learning">🎯 Transfer Learning &amp; Meta-Learning</h3>
+<section id="tl-rl" class="level3">
+<h3 data-anchor-id="tl-rl">Transfer Learning &amp; Meta-Adaptation</h3>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; padding: 1rem; border: 1.5px solid #ddd; border-radius: 12px; background-color: #f9fbfd; box-shadow: 1px 1px 6px rgba(0,0,0,0.05); margin-bottom: 1.5rem;">
+<div style="flex: 1 1 300px; min-width: 250px;">
+<p>
+<strong>🎯 Objective</strong>
+</p>
+<p>
+Enabling rapid generalization across distribution shifts in topology, weather, or load profiles.
+</p>
+<p>
+<strong>🔍 Core Focus Areas</strong>
+</p>
 <ul>
-<li>Policy transfer across varied network topologies</li>
-<li>Simulation-to-real transfer in safety-critical domains</li>
-<li>Cross-domain generalization across environments</li>
+<li>
+Transferable actor-critic architectures
+</li>
+<li>
+Simulation-to-real (Sim2Real) adaptation
+</li>
+<li>
+Meta-RL for sample efficiency
+</li>
 </ul>
+</div>
+<div style="flex: 1 1 250px; text-align: center;">
+<p><img src="../projects1/ehr/hex_ggehr.png" alt="Safe RL Diagram" style="max-width: 100%; border-radius: 8px;"></p>
+</div>
+</div>
 </section>
-<section id="vision-based-simulation" class="level3">
-<h3 class="anchored" data-anchor-id="vision-based-simulation">🔎 Vision-Based Simulation</h3>
+<section id="vision-sim" class="level3">
+<h3 data-anchor-id="vision-sim">Vision-Simulation Integration</h3>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; padding: 1rem; border: 1.5px solid #ddd; border-radius: 12px; background-color: #f9fbfd; box-shadow: 1px 1px 6px rgba(0,0,0,0.05); margin-bottom: 1.5rem;">
+<div style="flex: 1 1 300px; min-width: 250px;">
+<p>
+<strong>🎯 Objective</strong>
+</p>
+<p>
+Bridge the gap between perception and control by combining <strong>synthetic sensors</strong>, <strong>simulated environments</strong>, and <strong>end-to-end learning</strong> pipelines.
+</p>
+<p>
+<strong>🔍 Core Focus Areas</strong>
+</p>
 <ul>
-<li>Perception and control using <strong>CARLA simulator</strong></li>
-<li>Computer vision for object detection, scene understanding</li>
-<li>Vision-based control pipelines for autonomous systems</li>
+<li>
+Perception-action loops with CARLA, AirSim
+</li>
+<li>
+Multi-modal representation fusion (image + state)
+</li>
+<li>
+Autonomous control with embedded perception modules
+</li>
+<li>
+End-to-end autonomous control pipelines
+</li>
 </ul>
+</div>
+<div style="flex: 1 1 250px; text-align: center;">
+<p><img src="../projects1/ehr/hex_ggehr.png" alt="Safe RL Diagram" style="max-width: 100%; border-radius: 8px;"></p>
+</div>
+</div>
 </section>
-<section id="llm-augmented-control-reasoning" class="level3">
-<h3 class="anchored" data-anchor-id="llm-augmented-control-reasoning">🔗 LLM-Augmented Control Reasoning</h3>
+<section id="llm-control" class="level3">
+<h3 data-anchor-id="llm-control">LLM-Augmented Decision Systems</h3>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; padding: 1rem; border: 1.5px solid #ddd; border-radius: 12px; background-color: #f9fbfd; box-shadow: 1px 1px 6px rgba(0,0,0,0.05); margin-bottom: 1.5rem;">
+<div style="flex: 1 1 300px; min-width: 250px;">
+<p>
+<strong>🎯 Objective</strong>
+</p>
+<p>
+Develop control agents that guarantee <strong>system safety</strong>, <strong>stability</strong>, and <strong>robust learning</strong> in dynamic, uncertain, and partially observable environments.
+</p>
+<p>
+<strong>🔍 Core Focus Areas</strong>
+</p>
 <ul>
-<li>Integrating large language models for high-level decision-making</li>
-<li>Context-aware planning and explainable reasoning</li>
-<li>Human-AI collaboration in control and robotics</li>
+<li>
+LLMs for summarizing environment states and guiding agents
+</li>
+<li>
+Translating textual inputs into actionable policies
+</li>
+<li>
+Facilitating human-AI collaboration in dynamic tasks
+</li>
 </ul>
+</div>
+<div style="flex: 1 1 250px; text-align: center;">
+<p><img src="../projects1/ehr/hex_ggehr.png" alt="Safe RL Diagram" style="max-width: 100%; border-radius: 8px;"></p>
+</div>
+</div>
 </section>
-<section id="core-application-domains" class="level3">
-<h3 class="anchored" data-anchor-id="core-application-domains">⚡ Core Application Domains</h3>
-<ul>
-<li>Smart Energy Systems (Volt-VAR Control, Grid Resilience)</li>
-<li>Autonomous Vehicles &amp; Robotics</li>
-<li>AI Safety in Cyber-Physical Infrastructure</li>
-</ul>
+</section>
+<section id="application-domains" class="level2">
+<h2 data-anchor-id="application-domains">🔬 Application Domains</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Domain</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>⚡ <strong>Smart Energy Systems</strong></td>
+<td>Volt-VAR control, DER coordination, and federated DRL for power grid stability</td>
+</tr>
+<tr class="even">
+<td>🚘 <strong>Autonomous Systems</strong></td>
+<td>Safe navigation, adaptive planning, and control in simulation and real-world driving environments</td>
+</tr>
+<tr class="odd">
+<td>🛡 <strong>Secure AI for Infrastructure</strong></td>
+<td>Resilience against cyber-attacks and adversarial scenarios in safety-critical systems</td>
+</tr>
+</tbody>
+</table>
 <hr>
-</section>
 </section>
 <section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">Publications</h2>
-<section id="journal-papers" class="level3">
-<h3 class="anchored" data-anchor-id="journal-papers">Journal Papers</h3>
+<h2 data-anchor-id="publications">📚 Selected Publications</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">📝 Journal Papers</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">🎤 Conference Papers</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <ol type="1">
 <li><strong>Kundan Kumar</strong>, Gelli Ravikumar<br>
 <strong>Physics-based Deep Reinforcement Learning for Grid-Resilient Volt-VAR Control</strong> <em>(Under Review)</em><br>
 <em>IEEE Transactions on Smart Grid, 2025</em><br>
-<span style="display:inline-flex; gap:4px;"> <a class="btn btn-primary" style="font-size: 0.75rem; padding: 3px 8px;" href="https://arxiv.org/abs/2202.13541">Paper</a> <a class="btn btn-success" style="font-size: 0.75rem; padding: 3px 8px;" href="#">Code</a> <a class="btn btn-info" style="font-size: 0.75rem; padding: 3px 8px;" href="#">Poster</a> </span></li>
+<span style="display:inline-flex; gap:4px;"> <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2202.13541">Paper</a> <a class="btn btn-success btn-sm" href="#">Code</a> <a class="btn btn-info btn-sm" href="#">Poster</a> </span></li>
 </ol>
-</section>
-<section id="conference-papers" class="level3">
-<h3 class="anchored" data-anchor-id="conference-papers">Conference Papers</h3>
+<hr>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <ol type="1">
 <li><p><strong>Kundan Kumar</strong>, Gelli Ravikumar<br>
 <strong>Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids</strong><br>
 <em>IEEE PES Grid Edge Technologies Conference &amp; Exposition, 2025</em><br>
-<span style="display:inline-flex; gap:4px;"> <a class="btn btn-primary" style="font-size: 0.75rem; padding: 3px 8px;" href="https://arxiv.org/abs/2202.13541">Paper</a> <a class="btn btn-success" style="font-size: 0.75rem; padding: 3px 8px;" href="#">Code</a> <a class="btn btn-info" style="font-size: 0.75rem; padding: 3px 8px;" href="#">Poster</a> </span></p></li>
+<span style="display:inline-flex; gap:4px;"> <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2202.13541">Paper</a> <a class="btn btn-success btn-sm" href="#">Code</a> <a class="btn btn-info btn-sm" href="#">Poster</a> </span></p></li>
 <li><p><strong>Kundan Kumar</strong>, Aditya Akilesh Mantha, Gelli Ravikumar<br>
 <strong>Bayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control</strong><br>
 <em>IEEE PES General Meeting, 2024</em><br>
-<span style="display:inline-flex; gap:4px;"> <a class="btn btn-primary" style="font-size: 0.75rem; padding: 3px 8px;" href="https://arxiv.org/abs/2202.13541">Paper</a> <a class="btn btn-success" style="font-size: 0.75rem; padding: 3px 8px;" href="#">Code</a> <a class="btn btn-info" style="font-size: 0.75rem; padding: 3px 8px;" href="#">Poster</a> </span></p></li>
+<span style="display:inline-flex; gap:4px;"> <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2202.13541">Paper</a> <a class="btn btn-success btn-sm" href="#">Code</a> <a class="btn btn-info btn-sm" href="#">Poster</a> </span></p></li>
 <li><p><strong>Kundan Kumar</strong>, Gelli Ravikumar<br>
 <strong>Deep RL-based Volt-VAR Control and Attack Resiliency for DER-integrated Distribution Grids</strong><br>
 <em>IEEE ISGT, 2024</em><br>
-<span style="display:inline-flex; gap:4px;"> <a class="btn btn-primary" style="font-size: 0.75rem; padding: 3px 8px;" href="https://ieeexplore.ieee.org/document/10454163">Paper</a> <a class="btn btn-success" style="font-size: 0.75rem; padding: 3px 8px;" href="#">Code</a> <a class="btn btn-info" style="font-size: 0.75rem; padding: 3px 8px;" href="#">Poster</a> </span></p></li>
+<span style="display:inline-flex; gap:4px;"> <a class="btn btn-primary btn-sm" href="https://ieeexplore.ieee.org/document/10454163">Paper</a> <a class="btn btn-success btn-sm" href="#">Code</a> <a class="btn btn-info btn-sm" href="#">Poster</a> </span></p></li>
 <li><p>JK Francis, C Kumar, J Herrera-Gerena, <strong>Kundan Kumar</strong>, MJ Darr<br>
 <strong>Deep Learning and Pattern-based Methodology for Multivariable Sensor Data Regression</strong><br>
 <em>IEEE ICMLA, 2022</em><br>
-<span style="display:inline-flex; gap:4px;"> <a class="btn btn-primary" style="font-size: 0.75rem; padding: 3px 8px;" href="https://ieeexplore.ieee.org/document/10069730">Paper</a> <a class="btn btn-success" style="font-size: 0.75rem; padding: 3px 8px;" href="#">Code</a> <a class="btn btn-info" style="font-size: 0.75rem; padding: 3px 8px;" href="#">Poster</a> </span></p></li>
+<span style="display:inline-flex; gap:4px;"> <a class="btn btn-primary btn-sm" href="https://ieeexplore.ieee.org/document/10069730">Paper</a> <a class="btn btn-success btn-sm" href="#">Code</a> <a class="btn btn-info btn-sm" href="#">Poster</a> </span></p></li>
 <li><p>Kin Gwn Lore, Nicholas Sweet, <strong>Kundan Kumar</strong>, N Ahmed, S Sarkar<br>
 <strong>Deep Value of Information Estimators for Collaborative Human-Machine Information Gathering</strong><br>
 <em>ACM/IEEE ICCPS, 2016</em><br>
-<span style="display:inline-flex; gap:4px;"> <a class="btn btn-primary" style="font-size: 0.75rem; padding: 3px 8px;" href="https://arxiv.org/abs/1512.07592">Paper</a> <a class="btn btn-success" style="font-size: 0.75rem; padding: 3px 8px;" href="#">Code</a> <a class="btn btn-info" style="font-size: 0.75rem; padding: 3px 8px;" href="#">Poster</a> </span></p></li>
+<span style="display:inline-flex; gap:4px;"> <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/1512.07592">Paper</a> <a class="btn btn-success btn-sm" href="#">Code</a> <a class="btn btn-info btn-sm" href="#">Poster</a> </span></p></li>
 </ol>
+</div>
+</div>
+</div>
 <hr>
-
-
 </section>
+<section id="ongoing-projects" class="level2">
+<h2 data-anchor-id="ongoing-projects">🧪 Ongoing Projects</h2>
+<ul>
+<li><p><strong>Federated DRL for Cyber-Resilient Volt-VAR Optimization</strong><br>
+Exploring decentralized, communication-efficient coordination among DERs using LSTM-enhanced PPO agents.</p></li>
+<li><p><strong>One-Shot Policy Transfer with Physics Priors</strong><br>
+Training grid agents in simpler environments and adapting to complex grids (IEEE 123-bus, 8500-node) in few iterations.</p></li>
+<li><p><strong>LLM-Guided Autonomous Planning for Smart Buildings</strong><br>
+Integrating OpenAI and Claude with CityLearn to convert user prompts into interpretable policy instructions.</p></li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -305,13 +460,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -706,18 +854,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Copyright 2025, Kundan Kumar</p>
+<p>© 2025 Kundan Kumar ∙ Made with <a href="https://quarto.org" target="_blank">Quarto</a></p>
 </div>   
     <div class="nav-footer-center">
-      &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/rpkg/rpkg.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<p><a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a> <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark me-2" href="https://orcid.org/0000-0000-0000-0000" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a> <a class="link-dark me-2" href="https://scholar.google.com/citations?user=xxxxxxxxxxx" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a> <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/rpkg/rpkg.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/kundan-kumarr/kundan-kumarr.github.io">
-      <i class="bi bi-github" role="img">
-</i> 
-    </a>
+    <li class="nav-item">
+    <a class="nav-link" href="../contact.html">
+<p>Contact</p>
+</a>
   </li>  
 </ul>
     </div>

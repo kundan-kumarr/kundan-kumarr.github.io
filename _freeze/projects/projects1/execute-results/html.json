@@ -1,0 +1,12 @@
+{
+  "hash": "0c9fa0eb655e5256cdb6c15b69d8ec29",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Projects\"\nauthor: \"\"\ncomments: false\ncitation: false\ndescription: |\n  This portfolio includes openly available educational material I have created,<br> along with works, software, and tools I have contributed to or designed.\npage-layout: full\ntitle-block-banner: false\nformat: \n  html: \n    page-layout: full\nlisting: false\nheader-includes: >\n  <link rel=\"stylesheet\" href=\"../assets/listing-default.css\">\n  <link rel=\"\" href=\"../assets/custom-css.js\"> \nresources:\n  - ../assets/listing-default.css\n  - ../assets/custom-css.js\n---\n\n\n## ✨ Large Language Models\n::: {.project-grid}\n\ncontents: projects/llm\ntype: grid\nfields: [image, title, description]\nsort: \"date desc\"\nimage-align: left\nimage-height: 100%\n:::\n:::\n\n## 🚀 Deep Reinforcement Learning\n::: {.project-grid}\n```{listing}\ncontents: projects/drl\ntype: grid\nfields: [image, title, description]\nsort: \"date desc\"\nimage-align: left\nimage-height: 100%\n:::\n:::\n\n## 🧠 Deep/Machine Learning\n::: {.project-grid}\n```{listing}\ncontents: projects/dl\ntype: grid\nfields: [image, title, description]\nsort: \"date desc\"\nimage-align: left\nimage-height: 100%\n:::\n:::\n\n## 📊 Statistics\n::: {.project-grid}\n```{listing}\ncontents: projects/statistics\ntype: grid\nfields: [image, title, description]\nsort: \"date desc\"\nimage-align: left\nimage-height: 100%\n:::\n:::\n\n## 👁️‍🗨️ Computer Vision\n::: {.project-grid}\n```{listing}\ncontents: projects/cv\ntype: grid\nfields: [image, title, description]\nsort: \"date desc\"\nimage-align: left\nimage-height: 100%\n:::\n:::\n\n## 🤖 Robotics\n::: {.project-grid}\n```{listing}\ncontents: projects/robotics\ntype: grid\nfields: [image, title, description]\nsort: \"date desc\"\nimage-align: left\nimage-height: 100%\n:::\n:::\n\n",
+    "supporting": [
+      "projects1_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

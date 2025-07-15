@@ -122,5 +122,156 @@
       "/teaching/coms3630/index.html",
       "/teaching/coms4170/index.html"
     ]
+  },
+  {
+    "listing": "/projects/projects1.html",
+    "items": [
+      "/projects/dan/index.html",
+      "/projects/ehr/index.html",
+      "/projects/nor_mortality/index.html",
+      "/projects/noreden/index.html",
+      "/projects/os_teaching/index.html",
+      "/projects/phuse/index.html",
+      "/projects/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/prohect2.html",
+    "items": [
+      "/projects/dan/index.html",
+      "/projects/ehr/index.html",
+      "/projects/nor_mortality/index.html",
+      "/projects/noreden/index.html",
+      "/projects/os_teaching/index.html",
+      "/projects/phuse/index.html",
+      "/projects/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/projetcs.html",
+    "items": []
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects1/drl.html",
+      "/projects1/prohect2.html",
+      "/projects1/nor_mortality/index.html",
+      "/projects1/os_teaching/index.html",
+      "/projects1/dl.html",
+      "/projects1/robo.html",
+      "/projects1/dan/index.html",
+      "/projects1/projects.html",
+      "/projects1/noreden/index.html",
+      "/projects1/sykdomspulsen/index.html",
+      "/projects1/ehr/index.html",
+      "/projects1/phuse/index.html",
+      "/projects1/stat.html",
+      "/projects1/cv.html",
+      "/projects1/projects1.html"
+    ]
+  },
+  {
+    "listing": "/projects1/cv.html",
+    "items": [
+      "/projects1/os_teaching/index.html",
+      "/projects1/phuse/index.html",
+      "/projects1/dan/index.html",
+      "/projects1/ehr/index.html",
+      "/projects1/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/projects1/projects.html",
+    "items": [
+      "/projects1/os_teaching/index.html",
+      "/projects1/phuse/index.html",
+      "/projects1/dan/index.html",
+      "/projects1/ehr/index.html",
+      "/projects1/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/projects1/dl.html",
+    "items": [
+      "/projects1/os_teaching/index.html",
+      "/projects1/phuse/index.html",
+      "/projects1/dan/index.html",
+      "/projects1/ehr/index.html",
+      "/projects1/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/projects1/drl.html",
+    "items": [
+      "/projects1/os_teaching/index.html",
+      "/projects1/phuse/index.html",
+      "/projects1/dan/index.html",
+      "/projects1/ehr/index.html",
+      "/projects1/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/projects1/prohect2.html",
+    "items": [
+      "/projects1/dan/index.html",
+      "/projects1/ehr/index.html",
+      "/projects1/nor_mortality/index.html",
+      "/projects1/noreden/index.html",
+      "/projects1/os_teaching/index.html",
+      "/projects1/phuse/index.html",
+      "/projects1/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/projects1/robo.html",
+    "items": [
+      "/projects1/os_teaching/index.html",
+      "/projects1/phuse/index.html",
+      "/projects1/dan/index.html",
+      "/projects1/ehr/index.html",
+      "/projects1/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/projects1/projetcs.html",
+    "items": []
+  },
+  {
+    "listing": "/projects1/stat.html",
+    "items": [
+      "/projects1/os_teaching/index.html",
+      "/projects1/phuse/index.html",
+      "/projects1/dan/index.html",
+      "/projects1/ehr/index.html",
+      "/projects1/sykdomspulsen/index.html",
+      "/projects1/noreden/index.html"
+    ]
+  },
+  {
+    "listing": "/projects1/projects1.html",
+    "items": [
+      "/projects1/dan/index.html",
+      "/projects1/ehr/index.html",
+      "/projects1/nor_mortality/index.html",
+      "/projects1/noreden/index.html",
+      "/projects1/os_teaching/index.html",
+      "/projects1/phuse/index.html",
+      "/projects1/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/blog1.html",
+    "items": [
+      "/blog/talks/2024-02-21_rladies-abuja-quarto-params/index.html",
+      "/blog/talks/2024-01-18_rladies-dc_quarto-params/index.html",
+      "/blog/talks/2023-09-25_posit_parameterized-quarto/index.html",
+      "/blog/talks/2023-08-19_cascadia_shiny-wacse/index.html",
+      "/blog/talks/2023-06-13_wade_washi-wacse/index.html",
+      "/blog/talks/2023-04-20_rladies_orcas-web-scraping/index.html",
+      "/blog/talks/2022-05-25_wagisa_arcgis-wacse/index.html",
+      "/blog/talks/2021-11-14_setac_insecticides_water/index.html",
+      "/blog/talks/2021-11-09_awra_insecticides_water/index.html"
+    ]
   }
 ]

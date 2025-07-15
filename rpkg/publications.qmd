@@ -1,0 +1,135 @@
+## 📚 Selected Publications
+
+::: {.panel-tabset}
+
+### 📝 Journal Papers
+
+1. **Kundan Kumar**, Gelli Ravikumar  
+**Physics-based Deep Reinforcement Learning for Grid-Resilient Volt-VAR Control** *(Under Review)*  
+*IEEE Transactions on Smart Grid, 2025*  
+<span style="display:inline-flex; gap:4px;">
+<a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2202.13541">Paper</a>
+<a class="btn btn-success btn-sm" href="#">Code</a>
+<a class="btn btn-info btn-sm" href="#">Poster</a>
+</span>
+
+---
+
+### 🎤 Conference Papers
+
+::: {.panel-tabset}
+
+#### Page 1
+
+1. **Kundan Kumar**, Gelli Ravikumar  
+**Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids**  
+*IEEE PES Grid Edge Technologies Conference & Exposition, 2025*  
+<span style="display:inline-flex; gap:4px;">
+<a class="btn btn-primary btn-sm">Paper</a>
+<a class="btn btn-success btn-sm">Code</a>
+<a class="btn btn-info btn-sm">Poster</a>
+</span>
+
+2. **Kundan Kumar**, Aditya Akilesh Mantha, Gelli Ravikumar  
+**Bayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control**  
+*IEEE PES General Meeting, 2024*  
+<span style="display:inline-flex; gap:4px;">
+<a class="btn btn-primary btn-sm">Paper</a>
+<a class="btn btn-success btn-sm">Code</a>
+<a class="btn btn-info btn-sm">Poster</a>
+</span>
+
+3. **Kundan Kumar**, Gelli Ravikumar  
+**Deep RL-based Volt-VAR Control and Attack Resiliency for DER-integrated Distribution Grids**  
+*IEEE ISGT, 2024*  
+<span style="display:inline-flex; gap:4px;">
+<a class="btn btn-primary btn-sm">Paper</a>
+<a class="btn btn-success btn-sm">Code</a>
+<a class="btn btn-info btn-sm">Poster</a>
+</span>
+
+#### Page 2
+
+4. JK Francis, C Kumar, J Herrera-Gerena, **Kundan Kumar**, MJ Darr  
+**Deep Learning and Pattern-based Methodology for Multivariable Sensor Data Regression**  
+*IEEE ICMLA, 2022*  
+<span style="display:inline-flex; gap:4px;">
+<a class="btn btn-primary btn-sm">Paper</a>
+<a class="btn btn-success btn-sm">Code</a>
+<a class="btn btn-info btn-sm">Poster</a>
+</span>
+
+5. Kin Gwn Lore, Nicholas Sweet, **Kundan Kumar**, N Ahmed, S Sarkar  
+**Deep Value of Information Estimators for Collaborative Human-Machine Information Gathering**  
+*ACM/IEEE ICCPS, 2016*  
+<span style="display:inline-flex; gap:4px;">
+<a class="btn btn-primary btn-sm">Paper</a>
+<a class="btn btn-success btn-sm">Code</a>
+<a class="btn btn-info btn-sm">Poster</a>
+</span>
+
+:::
+
+### 🎤 Conference Papers
+
+#### 📄 Page 1 {#conf-page-1}
+
+1. **Kundan Kumar**, Gelli Ravikumar  
+**Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids**  
+*IEEE PES Grid Edge Technologies Conference & Exposition, 2025*  
+<span style="display:inline-flex; gap:4px;">
+<a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2202.13541">Paper</a>
+<a class="btn btn-success btn-sm" href="#">Code</a>
+<a class="btn btn-info btn-sm" href="#">Poster</a>
+</span>
+
+2. **Kundan Kumar**, Aditya Akilesh Mantha, Gelli Ravikumar  
+**Bayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control**  
+*IEEE PES General Meeting, 2024*  
+<span style="display:inline-flex; gap:4px;">
+<a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2202.13541">Paper</a>
+<a class="btn btn-success btn-sm" href="#">Code</a>
+<a class="btn btn-info btn-sm" href="#">Poster</a>
+</span>
+
+3. **Kundan Kumar**, Gelli Ravikumar  
+**Deep RL-based Volt-VAR Control and Attack Resiliency for DER-integrated Distribution Grids**  
+*IEEE ISGT, 2024*  
+<span style="display:inline-flex; gap:4px;">
+<a class="btn btn-primary btn-sm" href="https://ieeexplore.ieee.org/document/10454163">Paper</a>
+<a class="btn btn-success btn-sm" href="#">Code</a>
+<a class="btn btn-info btn-sm" href="#">Poster</a>
+</span>
+
+<div class="pagination">
+  <a href="#conf-page-1" class="active">1</a>
+  <a href="#conf-page-2">2</a>
+</div>
+
+---
+
+#### 📄 Page 2 {#conf-page-2}
+
+4. JK Francis, C Kumar, J Herrera-Gerena, **Kundan Kumar**, MJ Darr  
+**Deep Learning and Pattern-based Methodology for Multivariable Sensor Data Regression**  
+*IEEE ICMLA, 2022*  
+<span style="display:inline-flex; gap:4px;">
+<a class="btn btn-primary btn-sm" href="https://ieeexplore.ieee.org/document/10069730">Paper</a>
+<a class="btn btn-success btn-sm" href="#">Code</a>
+<a class="btn btn-info btn-sm" href="#">Poster</a>
+</span>
+
+5. Kin Gwn Lore, Nicholas Sweet, **Kundan Kumar**, N Ahmed, S Sarkar  
+**Deep Value of Information Estimators for Collaborative Human-Machine Information Gathering**  
+*ACM/IEEE ICCPS, 2016*  
+<span style="display:inline-flex; gap:4px;">
+<a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/1512.07592">Paper</a>
+<a class="btn btn-success btn-sm" href="#">Code</a>
+<a class="btn btn-info btn-sm" href="#">Poster</a>
+</span>
+
+<div class="pagination">
+  <a href="#conf-page-1">1</a>
+  <a href="#conf-page-2" class="active">2</a>
+</div>
+
