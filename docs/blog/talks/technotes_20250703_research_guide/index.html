@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kundan Kumar">
-<meta name="dcterms.date" content="2025-07-03">
-<meta name="description" content="Research Scientist Interview Guide">
+<meta name="author" content="Chi Zhang">
+<meta name="dcterms.date" content="2023-01-03">
+<meta name="description" content="Time to reboot the personal website. Now, with Quarto">
 
-<title>Research Scientist Interview Guide – Kundan Kumar</title>
+<title>Website reboot: switching from Blogdown to Quarto – Kundan Kumar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-16f0be44cf0b9c8dc4714857273be9e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-7e91bf38cb53840541350ac5c838557d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-b4c4310c461329769839695e4062df9a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -124,32 +124,32 @@ gtag('config', '', { 'anonymize_ip': true});
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects">    
         <li>
-    <a class="dropdown-item" href="../../../projects/projects.qmd">
+    <a class="dropdown-item" href="../../../projects.html">
  <span class="dropdown-text">✨ All Projects</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li>
-    <a class="dropdown-item" href="../../../projects/projects.qmd">
+    <a class="dropdown-item" href="../../../projects1/projects.html">
  <span class="dropdown-text">Large Language Models</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../projects/drl.qmd">
+    <a class="dropdown-item" href="../../../projects1/drl.html">
  <span class="dropdown-text">Deep Reinforcement Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../projects/dl.qmd">
+    <a class="dropdown-item" href="../../../projects1/dl.html">
  <span class="dropdown-text">Deep/Machine Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../projects/stat.qmd">
+    <a class="dropdown-item" href="../../../projects1/stat.html">
  <span class="dropdown-text">Statistics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../projects/cv.qmd">
+    <a class="dropdown-item" href="../../../projects1/cv.html">
  <span class="dropdown-text">Computer Vision</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../projects/robo.qmd">
+    <a class="dropdown-item" href="../../../projects1/robo.html">
  <span class="dropdown-text">Robotics</span></a>
   </li>  
     </ul>
@@ -160,7 +160,7 @@ gtag('config', '', { 'anonymize_ip': true});
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../blog/blog.html"> <i class="bi bi-pen-fill" role="img">
+    <a class="nav-link" href="../../../blog/blog.qmd"> <i class="bi bi-pen-fill" role="img">
 </i> 
 <span class="menu-text">Blogs</span></a>
   </li>  
@@ -180,12 +180,8 @@ gtag('config', '', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#key-interview-components" id="toc-key-interview-components" class="nav-link" data-scroll-target="#key-interview-components">Key Interview Components</a></li>
-  <li><a href="#recommended-preparation-resources" id="toc-recommended-preparation-resources" class="nav-link" data-scroll-target="#recommended-preparation-resources">Recommended Preparation Resources</a></li>
-  <li><a href="#example-interview-questions" id="toc-example-interview-questions" class="nav-link" data-scroll-target="#example-interview-questions">Example Interview Questions</a></li>
-  <li><a href="#my-personal-advice" id="toc-my-personal-advice" class="nav-link" data-scroll-target="#my-personal-advice">My Personal Advice</a></li>
-  <li><a href="#mentorship" id="toc-mentorship" class="nav-link" data-scroll-target="#mentorship">Mentorship</a></li>
+  <li><a href="#from-blogdown-to-distill" id="toc-from-blogdown-to-distill" class="nav-link active" data-scroll-target="#from-blogdown-to-distill">From Blogdown to Distill</a></li>
+  <li><a href="#time-to-try-quarto" id="toc-time-to-try-quarto" class="nav-link" data-scroll-target="#time-to-try-quarto">Time to try Quarto</a></li>
   </ul>
 <div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/blog/talks/technotes_20250703_research_guide/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -194,16 +190,16 @@ gtag('config', '', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Research Scientist Interview Guide</h1>
+<h1 class="title">Website reboot: switching from Blogdown to Quarto</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Data science</div>
-    <div class="quarto-category">Interview Guide</div>
+    <div class="quarto-category">Quarto</div>
+    <div class="quarto-category">Website</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    <p>Research Scientist Interview Guide</p>
+    <p>Time to reboot the personal website. Now, with Quarto</p>
   </div>
 </div>
 
@@ -213,14 +209,14 @@ gtag('config', '', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Kundan Kumar </p>
+             <p>Chi Zhang </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 3, 2025</p>
+      <p class="date">January 3, 2023</p>
     </div>
   </div>
   
@@ -232,115 +228,60 @@ gtag('config', '', { 'anonymize_ip': true});
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This guide provides a comprehensive framework to prepare for <strong>Research Scientist positions</strong> in academia, industry research labs (FAANG, OpenAI, DeepMind, etc.), and national labs. It combines insights from my own experience, interviews, and conversations with hiring managers.</p>
-<hr>
+<section id="from-blogdown-to-distill" class="level2">
+<h2 class="anchored" data-anchor-id="from-blogdown-to-distill">From Blogdown to Distill</h2>
+<p>Since the first time I tried the “academic” template in the popular <code>blogdown</code> package in 2019, three years have passed. Back then, it was THE way to build a personal website using R. The “academic” template was notoriously rich in content, and my solution was to delete components, compile, if it works - great; if not, I put the deleted content back. It worked for a while.</p>
+<p>When the <code>distill</code> package came out (probably in 2020?), I rebooted my website since I preferred its clean, minimalistic style. The look was possibly more appropriate for websites for an organisation or tutorials rather than personal blog, yet I appreciated the simplicity.</p>
+<p>Then I stopped updating my website. Between mid 2020 and early 2022, I was too stressed about completing my PhD, and balancing my other two jobs wasn’t the easiest thing. During this period, my mind had been going back to the old site from time to time, but it was hard to find enough time or energy to write about stuff.</p>
 </section>
-<section id="key-interview-components" class="level2">
-<h2 class="anchored" data-anchor-id="key-interview-components">Key Interview Components</h2>
-<section id="research-portfolio-deep-dive" class="level3">
-<h3 class="anchored" data-anchor-id="research-portfolio-deep-dive">1️⃣ <strong>Research Portfolio Deep Dive</strong></h3>
+<section id="time-to-try-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="time-to-try-quarto">Time to try Quarto</h2>
+<p>Now that I’ve finally completed the more pressing tasks in October 2022, I can catch up to the <em>cool kids</em> on twitter: create a website with <strong>Quarto</strong>!</p>
+<p>There were quite a lot of discussions about Quarto in the summer 2022. I wasn’t following the discussions closely, but I remember there were quite a few talks in the Rstudio conference this year. Then more and more people switched to Quarto on Twitter. Then people I know also switched to Quarto. What’s the fuzz about?</p>
+<p>My experience with Quarto is focused on websites. I have not tried other forms of publishing. So far I have created:</p>
 <ul>
-<li>Be able to explain your <strong>core research contributions</strong> in detail.</li>
-<li>Clearly articulate: problem definition, novelty, methods, results, and real-world impact.</li>
-<li>Prepare multiple levels of technical depth (5-min, 15-min, 30-min versions).</li>
-<li>Practice connecting your work to broader research trends and applications.</li>
+<li><p>a <a href="https://ocbe-uio.github.io/2022_bioinformatics_workshop/">workshop website</a> for my colleagues</p></li>
+<li><p>a personal website (the one you are reading right now)</p></li>
+<li><p>an R package (<a href="https://chizapoth.github.io/rpkg/qtwAcademic/">qtwAcademic</a>)that wraps three Quarto website templates for beginners</p></li>
 </ul>
+<p>Here are a few things I like about Quarto. Given that I’m not very experienced in front-end development, these comments are going to be about ease-of-use and design, rather than the technicalities.</p>
+<section id="clean-look-for-both-personal-and-workshopcourses" class="level3">
+<h3 class="anchored" data-anchor-id="clean-look-for-both-personal-and-workshopcourses">Clean look for both personal and workshop/courses</h3>
+<p>When I was using “academic” template in <code>blogdown</code>, I liked the structure of the site: projects, talks, blog, softwares and publications sections are clearly displayed at the top. What I didn’t like is that the <em>default homepage</em> was a very long single page; yet its customisation wasn’t the easist. Other templates were either too simple (for blog only), or more suitable for image display (photography projects). I wanted a website that keep the good structure of “academic”, which is quite suitable for academics (hence the name); while keeping each section independent.</p>
+<p>With <code>distill</code> I could achieve the structure I wanted; but I didn’t enjoy it too much as a personal website (at least it wasn’t as flexible as Quarto). <code>distill</code> is still pretty decent for organisations or documentation site.</p>
+<p>With Quarto, I can achieve the desired looks for not only a <strong>personal</strong> website (with or without blogs), but also a <strong>workshop, event</strong> or even <strong>course</strong> website. This is fantastic! The top, sidebar or hybrid navigation makes the site structure very clear, especially when there are lots of content. As an aspiring lecturer at university, this is really <em>One Quarto Rules Them All</em>.</p>
 </section>
-<section id="technical-machine-learning-knowledge" class="level3">
-<h3 class="anchored" data-anchor-id="technical-machine-learning-knowledge">2️⃣ <strong>Technical Machine Learning Knowledge</strong></h3>
+<section id="flexible-yet-not-overwhelming" class="level3">
+<h3 class="anchored" data-anchor-id="flexible-yet-not-overwhelming">Flexible yet not overwhelming</h3>
+<p>As I mentioned above, hacking “academic” in <code>blogdown</code> was not that easy - simply because there were too many folders that you are not actually supposed to modify. It was confusing to know what to change in order to achieve the desired output, and multiple folders were having the same names, making it very challenging for beginners. Ironically, this is usually the first template beginners start with!</p>
+<p>That’s why I immediately fell for Quarto: you only need 4 components to make a decent minimalistic website work:</p>
 <ul>
-<li>Reinforcement Learning: algorithms, policy gradients, actor-critic, safe RL.</li>
-<li>Deep Learning: optimization, architecture design, generalization, transformers.</li>
-<li>Probabilistic Modeling: Bayesian inference, uncertainty estimation, graphical models.</li>
-<li>Generative Models: GANs, VAEs, diffusion models.</li>
-<li>Large Language Models: LLM scaling laws, prompting, fine-tuning, RAG architectures.</li>
-<li>Vision: object detection, segmentation, multi-modal perception.</li>
+<li><p><code>_quarto.yml</code> to control the overall layout</p></li>
+<li><p><code>index.qmd</code> at the root folder to control the homepage</p></li>
+<li><p><code>about.qmd</code> for some basic information about the creator or the website</p></li>
+<li><p><code>project.qmd</code> for projects or any other content that the creator wants to display</p></li>
 </ul>
+<p>The way that <code>_quarto.yml</code> clearly specifies the <code>.qmd</code> files really helps beginners to understand where things are. This has been extremely useful for me when I wanted to learn how people made their website by reading the source code - I could understand exactly where to find the information I needed. The clear structure greatly helps the creators themselves, and also those who want to learn.</p>
 </section>
-<section id="system-design-applied-ml-problems" class="level3">
-<h3 class="anchored" data-anchor-id="system-design-applied-ml-problems">3️⃣ <strong>System Design / Applied ML Problems</strong></h3>
-<ul>
-<li>Be able to discuss:
-<ul>
-<li>End-to-end ML pipelines</li>
-<li>Data challenges (imbalance, noisy labels, drift)</li>
-<li>Model serving and deployment challenges</li>
-<li>Scalability, latency, interpretability</li>
-</ul></li>
-</ul>
-</section>
-<section id="coding-and-algorithmic-skills" class="level3">
-<h3 class="anchored" data-anchor-id="coding-and-algorithmic-skills">4️⃣ <strong>Coding and Algorithmic Skills</strong></h3>
-<ul>
-<li>Leetcode-style DSA for research interviews (moderate level)</li>
-<li>Data manipulation (pandas, numpy, SQL)</li>
-<li>Model prototyping (PyTorch, TensorFlow, JAX)</li>
-</ul>
-</section>
-<section id="behavioral-and-collaboration-skills" class="level3">
-<h3 class="anchored" data-anchor-id="behavioral-and-collaboration-skills">5️⃣ <strong>Behavioral and Collaboration Skills</strong></h3>
-<ul>
-<li>“Tell me about a time…” questions.</li>
-<li>Collaboration across teams.</li>
-<li>Handling ambiguous open-ended research problems.</li>
-<li>Communication with product teams or non-research stakeholders.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="recommended-preparation-resources" class="level2">
-<h2 class="anchored" data-anchor-id="recommended-preparation-resources">Recommended Preparation Resources</h2>
-<ul>
-<li><strong>Papers</strong>: Read papers from top-tier conferences (NeurIPS, ICML, ICLR, CVPR, ACL).</li>
-<li><strong>Coding</strong>: Leetcode (medium), ML system design problems.</li>
-<li><strong>System Design</strong>: Read “Designing Machine Learning Systems” by Chip Huyen.</li>
-<li><strong>Mock Interviews</strong>: Practice mock sessions with peers or mentors.</li>
-<li><strong>Presentation</strong>: Prepare 1-2 strong 20-minute research talks.</li>
-</ul>
-<hr>
-</section>
-<section id="example-interview-questions" class="level2">
-<h2 class="anchored" data-anchor-id="example-interview-questions">Example Interview Questions</h2>
-<ul>
-<li>How does your research contribute to state-of-the-art methods?</li>
-<li>Walk me through one of your recent papers.</li>
-<li>How would you apply your methods to X domain?</li>
-<li>What challenges remain in your area of research?</li>
-<li>How do you evaluate safety, robustness, or uncertainty in your models?</li>
-<li>How would you adapt your methods if labeled data was extremely limited?</li>
-</ul>
-<hr>
-</section>
-<section id="my-personal-advice" class="level2">
-<h2 class="anchored" data-anchor-id="my-personal-advice">My Personal Advice</h2>
-<ul>
-<li><strong>Clarity beats complexity</strong> — explain ideas simply.</li>
-<li>Be enthusiastic about your work and its impact.</li>
-<li>Connect your strengths to the job’s mission.</li>
-<li>Show your ability to collaborate and iterate.</li>
-</ul>
-<hr>
-</section>
-<section id="mentorship" class="level2">
-<h2 class="anchored" data-anchor-id="mentorship">Mentorship</h2>
-<p>If you’re preparing for Research Scientist interviews and would like advice or mentorship, feel free to reach out at <a href="mailto:cs.kundann@gmail.com">cs.kundann@gmail.com</a>.</p>
-<hr>
+<section id="great-community" class="level3">
+<h3 class="anchored" data-anchor-id="great-community">Great community</h3>
+<p>Rstats people have a great community. I wouldn’t be able to make my site the way I wanted if people haven’t been sharing their works. I have learned a lot by reading the source code by <a href="https://emitanaka.org">Dr Emi Tanaka</a>, <a href="https://mr.schochastics.net">Dr David Schoch</a>, <a href="https://beamilz.com">Bea Milz</a>, <a href="https://mine-cr.com">Prof Mine Cetinnkaya-Rundel</a>’s <a href="https://sta210-s22.github.io/website/">STA 210 - Regression Analysis</a> course.</p>
+<p>I also made my own R package that wraps three templates to create Quarto websites that are frequently used by academics, <a href="https://chizapoth.github.io/qtwAcademic/">qtwAcademic</a>. In the following days I plan to write up more detailed explanations on how to use the package, along with some new features.</p>
 
 
 </section>
+</section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{kumar2025,
-  author = {Kumar, Kundan},
-  title = {Research {Scientist} {Interview} {Guide}},
-  date = {2025-07-03},
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{zhang2023,
+  author = {Zhang, Chi},
+  title = {Website Reboot: Switching from {Blogdown} to {Quarto}},
+  date = {2023-01-03},
   url = {https://kundan-kumarr.github.io/blog/talks/technotes_20250703_research_guide/},
   langid = {en}
 }
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-kumar2025" class="csl-entry quarto-appendix-citeas" role="listitem">
-Kumar, Kundan. 2025. <span>“Research Scientist Interview Guide.”</span>
-July 3, 2025. <a href="https://kundan-kumarr.github.io/blog/talks/technotes_20250703_research_guide/">https://kundan-kumarr.github.io/blog/talks/technotes_20250703_research_guide/</a>.
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-zhang2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+Zhang, Chi. 2023. <span>“Website Reboot: Switching from Blogdown to
+Quarto.”</span> January 3, 2023. <a href="https://kundan-kumarr.github.io/blog/talks/technotes_20250703_research_guide/">https://kundan-kumarr.github.io/blog/talks/technotes_20250703_research_guide/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -770,7 +711,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p>© 2025 Kundan Kumar ∙ Made with <a href="https://quarto.org" target="_blank">Quarto</a></p>
 </div>   
     <div class="nav-footer-center">
-<p><a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a> <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark me-2" href="https://orcid.org/0000-0000-0000-0000" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a> <a class="link-dark me-2" href="https://scholar.google.com/citations?user=xxxxxxxxxxx" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a> <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a></p>
+<p><a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a> <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark me-2" href="https://orcid.org/0000-0002-3229-6649" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a> <a class="link-dark me-2" href="https://scholar.google.com/citations?user=1zDpIJkAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a> <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a></p>
 <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/blog/talks/technotes_20250703_research_guide/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
@@ -783,6 +724,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+/assets/html/kofi.html
 
 
 

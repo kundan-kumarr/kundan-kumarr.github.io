@@ -25,6 +25,7 @@ about:
     - icon: book
       text: Scholar
       href: https://scholar.google.com/citations?user=1zDpIJkAAAAJ
+
 ---
 
 ::: {#hero-heading}
@@ -47,4 +48,3 @@ Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News
 :::{#recent-posts}
 :::
 
-<p align="right">[All Posts »](/posts.qmd)</p>

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Quarto Academic Website Template adapted by Dr.&nbsp;Gang He">
 
-<title>Projects – Kundan Kumar</title>
+<title>Quarto Academic, PhD – Kundan Kumar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,7 +37,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-16f0be44cf0b9c8dc4714857273be9e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -72,20 +72,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-date','listing-image','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -217,7 +217,7 @@ window.Quarto = {
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog/blog.qmd"> <i class="bi bi-pen-fill" role="img">
+    <a class="nav-link" href="./blog/index.html"> <i class="bi bi-pen-fill" role="img">
 </i> 
 <span class="menu-text">Blogs</span></a>
   </li>  
@@ -229,156 +229,128 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="QXJjR0lT">ArcGIS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UiUyMHBhY2thZ2U=">R package <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U2hpbnklMjBhcHA=">Shiny app <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
+
+
+
+<div class="quarto-about-trestles column-page">
+  <div class="about-entity">
+    <img src="files/images/placeholder4.JPG" class="about-image
+  rounded " style="width: 70%;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
+<h1 class="title">Quarto Academic, PhD</h1>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
+<div class="quarto-title-meta column-page">
   </div>
-  
-
-
 </header>
+    <div class="about-links">
+  <a href="https://www.github.com" class="about-link" rel="" target="_blank">
+    <i class="bi bi-sun"></i>
+     <span class="about-link-text">Lab</span>
+  </a>
+  <a href="https://baruch.cuny.edu" class="about-link" rel="" target="_blank">
+    <i class="bi bi-globe"></i>
+     <span class="about-link-text">Uprofile</span>
+  </a>
+  <a href="mailto:email@gmail.com" class="about-link" rel="" target="">
+    <i class="bi bi-envelope"></i>
+     <span class="about-link-text">E-mail</span>
+  </a>
+  <a href="https://linkedin.com" class="about-link" rel="" target="_blank">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text">LinkedIn</span>
+  </a>
+  <a href="https://www.youtube.com" class="about-link" rel="" target="_blank">
+    <i class="bi bi-youtube"></i>
+     <span class="about-link-text">YouTube</span>
+  </a>
+  <a href="https://orcid.org" class="about-link" rel="" target="_blank">
+     <span class="about-link-text">{{&lt; ai orcid &gt;}} ORCID</span>
+  </a>
+  <a href="https://www.webofscience.com" class="about-link" rel="" target="_blank">
+     <span class="about-link-text">{{&lt; ai clarivate &gt;}} Web of Science</span>
+  </a>
+  <a href="https://www.scopus.com" class="about-link" rel="" target="_blank">
+     <span class="about-link-text">{{&lt; ai scopus &gt;}} Scopus</span>
+  </a>
+  <a href="https://scholar.google.com" class="about-link" rel="" target="_blank">
+     <span class="about-link-text">{{&lt; ai google-scholar &gt;}} Google Scholar</span>
+  </a>
+</div>
+  </div>
+  <div class="about-contents"><div id="hero-heading">
+<p>I’m a <a href="https://github.com/drganghe/quarto-academic-website-template">Quarto Academeic Website Template</a> adapted by <a href="http://drganghe.github.io">Dr.&nbsp;Gang He</a>.</p>
+<p>I’m a template that you can fork to build your own website with easy adaptation and deployment.</p>
+<ol type="1">
+<li><strong>Star</strong> this repository to bookmark it for future reference.<br>
+</li>
+<li><strong>Fork</strong> this repository and rename it to <code>YourGitHubUserName.github.io</code>.<br>
+</li>
+<li><strong>Update</strong> the <code>_quarto.yml</code> file to configure your site’s basic settings.<br>
+</li>
+<li><strong>Add or edit content</strong> in the following files and folders:
+<ul>
+<li><code>/posts/</code> – posts about publications, news, events<br>
+</li>
+<li><code>teaching.qmd</code> – teaching information<br>
+</li>
+<li><code>projects.yml</code> – research or other projects<br>
+</li>
+<li><code>people.qmd</code> and <code>/people/</code> – team or collaborators<br>
+</li>
+<li><code>/files/</code> - profiles, images, pdfs, and includes</li>
+</ul></li>
+<li><a href="https://quarto.org/docs/websites/"><strong>Render and preview</strong></a> your site locally.<br>
+</li>
+<li><a href="https://quarto.org/docs/publishing/github-pages.html"><strong>Publish</strong></a> your site using GitHub Pages (make sure <a href="https://quarto.org/docs/publishing/images/gh-pages-docs-dir.png">configuring</a> your GitHub repository to publish from the <code>docs</code> directory, not the <code>root</code> folder).</li>
+<li><strong>Refine and polish</strong> your content and design as needed.<br>
+</li>
+<li>✅ Enjoy your new website!</li>
+</ol>
+<section id="experience" class="level2">
+<h2 data-anchor-id="experience">Experience</h2>
+<ul>
+<li>Researcher, Univerisity</li>
+</ul>
+</section>
+<section id="education" class="level2">
+<h2 data-anchor-id="education">Education</h2>
+<ul>
+<li>PhD, Univerisity</li>
+</ul>
+</section>
+</div></div>
+</div>
 
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
+<section id="recent-posts" class="level2">
+<h2 data-anchor-id="recent-posts">Recent Posts</h2>
+<p>Check out the latest &nbsp;<a href="posts.qmd#category=paper">Papers</a>&nbsp;, &nbsp;<a href="posts.qmd#category=news">News</a>&nbsp;, &nbsp;<a href="posts.qmd#category=event">Events</a>&nbsp;, and &nbsp;<a href="./posts.qmd">More »</a></p>
+<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UiUyMHBhY2thZ2U=" data-listing-date-sort="1694062800000" data-listing-file-modified-sort="1711662844000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="82">
-<a href="./projects/washi.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://github.com/WA-Department-of-Agriculture/washi/blob/main/man/figures/logo.png?raw=true" class="thumbnail-image card-img" style="height: 150px;" alt="washi logo">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-washi
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UiUyMHBhY2thZ2U='); return false;">
-R package
-</div>
-</div>
-<div class="card-text listing-description">
-Palette and themes for Washington Soil Health Initiative branding
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Sep 7, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="QXJjR0lTJTJDUHl0aG9u" data-listing-date-sort="1691125200000" data-listing-file-modified-sort="1711662844000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="76">
-<a href="./projects/roadmap.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/roadmap.webp" class="thumbnail-image card-img" style="height: 150px;" alt="Screenshot of WaSHI roadmap landing page.">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-WaSHI Soil Health Roadmap
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QXJjR0lT'); return false;">
-ArcGIS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">
-Python
-</div>
-</div>
-<div class="card-text listing-description">
-Washington Soil Health Initiative Roadmap created with Python and ArcGIS Dashboards &amp; Experience Builder
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Aug 4, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="UiUyMHBhY2thZ2U=" data-listing-date-sort="1681966800000" data-listing-file-modified-sort="1711662844000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="129">
-<a href="./projects/orcas.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://github.com/jadeynryan/orcas/blob/master/inst/img/leaflet_screenshot.png?raw=true" class="thumbnail-image card-img" style="height: 150px;" alt="Screenshot of leaflet map with whale icons representing the start and end of the encounters.">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-orcas
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UiUyMHBhY2thZ2U='); return false;">
-R package
-</div>
-</div>
-<div class="card-text listing-description">
-My first personal project to learn web scraping with {rvest} and mapping with {leaflet}
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Apr 20, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="U2hpbnklMjBhcHA=" data-listing-date-sort="1669096800000" data-listing-file-modified-sort="1711662844000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="80">
-<a href="./projects/wacse.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://github.com/WA-Department-of-Agriculture/WaCSE/blob/main/inst/app/www/rmd/img/favicon.png?raw=true" class="thumbnail-image card-img" style="height: 150px;" alt="WaCSE logo">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-WaCSE
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('U2hpbnklMjBhcHA='); return false;">
-Shiny app
-</div>
-</div>
-<div class="card-text listing-description">
-Washington Climate Smart Estimator: A shiny app for comparing climate benefits of agricultural conservation practices
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 22, 2022
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
+
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+<p align="right">
+<a href="./posts.qmd">All Posts »</a>
+</p>
+
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -399,13 +371,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -804,7 +769,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
 <p><a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a> <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark me-2" href="https://orcid.org/0000-0002-3229-6649" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a> <a class="link-dark me-2" href="https://scholar.google.com/citations?user=1zDpIJkAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a> <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a></p>
-<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/projects.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/CopyOfindex.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
@@ -816,7 +781,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-/assets/html/kofi.html
 
 
 
