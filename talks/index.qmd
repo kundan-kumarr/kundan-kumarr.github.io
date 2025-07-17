@@ -23,6 +23,9 @@ listing:
     grid-item-border: false
     sort-ui: true
     filter-ui: true
+categories: [Community]
+priority: 1
+
 ---
 
 ## Upcoming

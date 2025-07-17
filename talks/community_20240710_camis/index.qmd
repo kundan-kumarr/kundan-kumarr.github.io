@@ -1,10 +1,12 @@
 ---
 title: "CAMIS: An Open-Source, Community endeavour for Comparing Analysis Method Implementations"
-description: "UseR! 2024 Salzburg"
+subtitle: "UseR! 2024 Salzburg"   # You can use 'description' as subtitle instead
 date: "2024-07-10"
 categories: [Community]
 priority: 1
+image: image_talk_20240710.png  # ← this is what adds the image to the card
 ---
+
 
 2024.7.8-11, Salzburg, Austria. Conference link: [UseR!](https://events.linuxfoundation.org/user/)
 
