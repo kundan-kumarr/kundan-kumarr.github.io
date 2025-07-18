@@ -12,7 +12,7 @@ page-layout: full
   <tr>
     <td><strong></strong></td>
     <td style="text-align: right;">
-      <a href="misc/info/Kundan_Kumar_CV.pdf" download style="
+      <a href="/others/resume.qmd" style="
         background-color: #f5f0e9;
         color: #934c2f;
         padding: 6px 14px;
@@ -26,6 +26,7 @@ page-layout: full
     </td>
   </tr>
 </table>
+
 
 
 ## <i class="fas fa-briefcase"></i> Professional Experience
@@ -274,23 +275,6 @@ Iowa State University
 - Designed assignments and quizzes aligned with real-world workflows and agile development practices.
 - Mentored students on semester-long capstone projects simulating software engineering team experiences.
 
-<div style="text-align:center; margin-top:1rem;">
-  <a href="/teaching/teaching.qmd" style="
-    display: inline-block;
-    background-color: #1976d2;
-    color: white;
-    padding: 6px 14px;
-    margin: 4px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 600;
-    font-family: 'Nunito', sans-serif;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  "> Teaching Portfolio</a>
-</div>
-
-
 ---
 
 ## <i class="fas fa-flask"></i> Research Experience
@@ -351,22 +335,6 @@ Iowa State University
 - Utilized CARLA simulator for vision‑based autonomous driving tasks, including perception, object detection, trajectory planning, and policy learning in complex traffic scenarios.
 - Applied deep computer vision models for object recognition, semantic segmentation, and sensor fusion, enabling robust situational awareness in autonomous driving and robotics.
 
-<div style="text-align:center; margin-top:1rem;">
-  <a href="/rpkg/rpkg.qmd" style="
-    display: inline-block;
-    background-color: #4caf50;
-    color: white;
-    padding: 6px 14px;
-    margin: 4px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 600;
-    font-family: 'Nunito', sans-serif;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  "> Research Portfolio</a>
-</div>
-
 ---
 
 <!-- 
@@ -379,10 +347,7 @@ Iowa State University
 - [Parameterized Quarto Reports](talks/2023-09-25_posit_parameterized-quarto/) — posit::conf(2023), Chicago
 -->
 
-## <i class="fas fa-user-gear"></i> Skills {.unnumbered}
-
-<div style="text-align: left;">
-
+## <i class="fas fa-user-gear"></i> Skills
 <table style="width: 100%; border-collapse: separate; border-spacing: 0 1rem; font-size: 0.95em;">
   <tr>
     <td><strong>Programming Languages</strong></td>
@@ -417,9 +382,6 @@ Iowa State University
     <td>AWS (EC2, S3, Lambda), GCP, Docker, Kubernetes, Git, Terraform, Jenkins, CircleCI</td>
   </tr>
 </table>
-
-</div>
-
 
 ---
 
@@ -516,7 +478,7 @@ Iowa State University
 
 - AWS (EC2, S3, Lambda), GCP, Docker, Kubernetes, Git, Terraform, Jenkins, CircleCI
 -->
-<!--https://kundan-kumarr.github.io/statistics-analysis/
+<!--
 ## <i class="fas fa-book"></i> Scientific Writing
 
 - **Ryan, J.N.**, Michel, L., et al. *Soil Health Monitoring SOP* — [PDF](https://cms.agr.wa.gov/WSDAKentico/Documents//DO/NRAS/923-NRAS-SoilHealthSOP_WEB.pdf)
@@ -530,47 +492,50 @@ Iowa State University
 
 ```{=html}
 <style>
-  .proj-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1.2rem;
-    margin-top: 1rem;
+  .proj-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+      gap:1.2rem;
+      margin-top:1rem;
   }
-  .proj-card {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #1e567d;
-    border-radius: 8px;
-    background: #fff;
-    overflow: hidden;
-    transition: transform .15s ease;
-    text-decoration: none;
-    color: inherit;
+  .proj-card{
+      display:flex; flex-direction:column;
+      border:2px solid #1e567d; border-radius:8px;
+      background:#fff; overflow:hidden;
+      transition:transform .15s ease;
+      text-decoration:none; color:inherit;
   }
-  .proj-card:hover {
-    transform: translateY(-4px);
+  .proj-card:hover{transform:translateY(-4px);}
+  .proj-card img{
+      width:100%; height:170px; object-fit:contain;
+      padding:20px 20px 10px 20px; background:#f4f8fb;
   }
-  .proj-card img {
-    width: 100%;
-    height: 170px;
-    object-fit: contain;
-    padding: 20px 20px 10px 20px;
-    background: #f4f8fb;
-  }
-  .proj-body {
-    display: block;
-    padding: 1rem 1.1rem 1.3rem 1.1rem;
-    font-family: 'Nunito', sans-serif;
-  }
-  .proj-body strong {
-    color: #0b4c6f;
-    font-size: 1.05rem;
-  }
+  .proj-body{padding:1rem 1.1rem 1.3rem 1.1rem; font-family:'Nunito',sans-serif;}
+  .proj-body h4{margin:0 0 .35rem 0; font-size:1.05rem; color:#0b4c6f;}
+  .proj-body p{margin:0; font-size:.9rem; line-height:1.3; color:#333;}
 </style>
 
 <div class="proj-grid">
 
-  <a class="proj-card" href="projects1/drl.qmd">
+</div>
+
+
+```{=html}
+<style>
+  /* existing rules trimmed */
+  .proj-card{display:flex; flex-direction:column; border:2px solid #1e567d; …}
+  .proj-card img{width:100%; height:170px; object-fit:contain; …}
+  .proj-body{           /* ← now a <span>, so make it act like a block */
+      display:block;
+      padding:1rem 1.1rem 1.3rem 1.1rem;
+      font-family:'Nunito',sans-serif;
+  }
+  .proj-body strong{color:#0b4c6f; font-size:1.05rem;}
+</style>
+
+<div class="proj-grid">
+
+  <a class="proj-card" href="https://kundan-kumarr.github.io/statistics-analysis/">
     <img src="/misc/info/teaching/databases.png" alt="SQL badge">
     <span class="proj-body">
       <strong>Fast Mixed‑Logit Estimation</strong><br>
@@ -578,26 +543,24 @@ Iowa State University
     </span>
   </a>
 
-  <a class="proj-card" href="projects1/dl.qmd">
+  <a class="proj-card" href="https://kundan-kumarr.github.io/statistics-analysis/">
     <img src="/misc/info/teaching/databases.png" alt="cbcTools badge">
     <span class="proj-body">
       <strong>cbcTools Suite</strong><br>
-      Designing choice‑based conjoint experiments and power/system analysis.
+      Designing choice‑based conjoint experiments and power and system analyses.
     </span>
   </a>
 
-  <a class="proj-card" href="projects1/stat.qmd">
+  <a class="proj-card" href="https://kundan-kumarr.github.io/statistics-analysis/">
     <img src="/misc/info/teaching/user_interface.png" alt="CityLearn badge">
     <span class="proj-body">
       <strong>LLM‑Powered Energy Optimizer</strong><br>
       Multi‑building energy optimization in CityLearn with LLM guidance.
     </span>
   </a>
-
 </div>
-
 <div style="text-align:center; margin-top:2rem;">
-  <a href="projects1/projects.qmd" style="
+  <a href="projects.qmd" style="
     display: inline-block;
     background-color: #1e567d;
     color: white;

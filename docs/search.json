@@ -101,8 +101,8 @@
     "objectID": "rpkg/rpkg.html#publications",
     "href": "rpkg/rpkg.html#publications",
     "title": "Research",
-    "section": "📚 Selected Publications",
-    "text": "📚 Selected Publications\n\n📝 Journal Papers🎤 Conference Papers\n\n\n\nKundan Kumar, Gelli Ravikumar\nPhysics-based Deep Reinforcement Learning for Grid-Resilient Volt-VAR Control (Under Review)\nIEEE Transactions on Smart Grid, 2025\n Paper Code Poster \n\n\n\n\n\nKundan Kumar, Gelli Ravikumar\nTransfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids\nIEEE PES Grid Edge Technologies Conference & Exposition, 2025\n Paper Code Poster \nKundan Kumar, Aditya Akilesh Mantha, Gelli Ravikumar\nBayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control\nIEEE PES General Meeting, 2024\n Paper Code Poster \nKundan Kumar, Gelli Ravikumar\nDeep RL-based Volt-VAR Control and Attack Resiliency for DER-integrated Distribution Grids\nIEEE ISGT, 2024\n Paper Code Poster \nJK Francis, C Kumar, J Herrera-Gerena, Kundan Kumar, MJ Darr\nDeep Learning and Pattern-based Methodology for Multivariable Sensor Data Regression\nIEEE ICMLA, 2022\n Paper Code Poster \nKin Gwn Lore, Nicholas Sweet, Kundan Kumar, N Ahmed, S Sarkar\nDeep Value of Information Estimators for Collaborative Human-Machine Information Gathering\nACM/IEEE ICCPS, 2016\n Paper Code Poster"
+    "section": "📚 Publications",
+    "text": "📚 Publications\n\n📝 Journal Papers🎤 Conference Papers\n\n\n\nKundan Kumar, Gelli Ravikumar\nPhysics-based Deep Reinforcement Learning for Grid-Resilient Volt-VAR Control (Under Review)\nIEEE Transactions on Smart Grid, 2025\n Paper Code Poster \n\n\n\n\n\nKundan Kumar, Gelli Ravikumar\nTransfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids\nIEEE PES Grid Edge Technologies Conference & Exposition, 2025\n Paper Code Poster \nKundan Kumar, Aditya Akilesh Mantha, Gelli Ravikumar\nBayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control\nIEEE PES General Meeting, 2024\n Paper Code Poster \nKundan Kumar, Gelli Ravikumar\nDeep RL-based Volt-VAR Control and Attack Resiliency for DER-integrated Distribution Grids\nIEEE ISGT, 2024\n Paper Code Poster \nJK Francis, C Kumar, J Herrera-Gerena, Kundan Kumar, MJ Darr\nDeep Learning and Pattern-based Methodology for Multivariable Sensor Data Regression\nIEEE ICMLA, 2022\n Paper Code Poster \nKin Gwn Lore, Nicholas Sweet, Kundan Kumar, N Ahmed, S Sarkar\nDeep Value of Information Estimators for Collaborative Human-Machine Information Gathering\nACM/IEEE ICCPS, 2016\n Paper Code Poster"
   },
   {
     "objectID": "rpkg/medicode/index.html",
@@ -683,7 +683,7 @@
     "href": "about_me.html",
     "title": "Kundan Kumar",
     "section": "",
-    "text": "Gmail\n  \n  \n    \n     Github\n  \n  \n    \n     Linkedin\n  \n  \n    \n     YouTube\n  \n  \n    \n     Substack\n  \n  \n    \n     Scholar"
+    "text": "Email\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     YouTube\n  \n  \n    \n     Substack\n  \n  \n    \n     Scholar\n  \n\n  \n  \nHi! I’m Kundan Kumar, a Ph.D. candidate and researcher focused on building intelligent, secure, and adaptable AI systems for next-generation cyber-physical infrastructure. My work bridges deep reinforcement learning (DRL), multi-agent systems, large language models (LLMs), safe and explainable AI, and computer vision, with real-world applications in smart grids, autonomous vehicles, and critical infrastructure.\nMy Ph.D. research centers on physics-informed and safety-critical DRL frameworks that embed domain knowledge, safety constraints, and uncertainty into the learning process—enabling agents to make robust and interpretable decisions in dynamic, complex environments. My research within DRL focuses on techniques such as transfer learning, uncertainty quantification, and adversarial resilience to improve generalization, safety, and reliability across diverse tasks and environments.\nI also develop LLM-integrated simulation frameworks for robotics and autonomous systems, combining vision-based perception, trajectory planning, and natural language reasoning to support high-level control and human-AI collaboration.\nBeyond research, I enjoy sharing my insights through educational content on Substack and YouTube. Outside of work, I love cooking and skating. 🛼\n\n\n\n\n\nOther Research Interests\n\n\n\n\nComputer Vision\n\n\nVisual perception, object detection, semantic segmentation, and sensor fusion for autonomous systems.\n\n\n\n\n\nStatistical ML\n\n\nUncertainty quantification, probabilistic modeling, and data-driven inference in dynamic environments.\n\n\n\n\n\nSelf-Driving Systems\n\n\nLearning-based control, trajectory planning, vision-based perception, and sensor fusion in autonomous driving environments.\n\n\n\n\n\n\nExplore My Work\n\n\nBlog\n\n\n\n\n\n\n\n\nResearch Scientist Interview Guide\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nTalks\n\n\n\n\n\n\n\n\n\n\nMy Dummy Talk\n\n\nLearning How to Show a Card\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nPublications\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nProjects\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\n\n\nNews Highlights\n\n\n\n\n\n\n[Jul 2025]\n\n\nSelected for the Cohere Machine Learning Summer School, hosted by Cohere Labs.\n\n\n\n\n[Mar 2025]\n\n\nOur paper on Advanced Semi-Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems has been accepted to IEEE PES General Meeting 2025.\n\n\n\n\n[Jan 2025]\n\n\nOur paper on Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids has been accepted to IEEE PES Grid Edge Technologies Conference & Exposition 2025."
   },
   {
     "objectID": "projects/nor_mortality/index.html",
@@ -802,7 +802,7 @@
     "href": "index.html",
     "title": "Kundan Kumar",
     "section": "",
-    "text": "Email\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     YouTube\n  \n  \n    \n     Substack\n  \n  \n    \n     Scholar\n  \n\n  \n  \nHello!\nI’m Kundan Kumar — a Ph.D. candidate and researcher building safe and trustworthy AI systems for real-world autonomous applications. My research integrates deep reinforcement learning (DRL), physics-informed AI, and safe control to create robust agents for smart energy systems, robotics, and autonomous vehicles.\nIn 2024, I worked as a Machine Learning Engineer Intern at the National Renewable Energy Laboratory (NREL), where I designed a Bayesian semi-supervised learning algorithm for phase identification on small, limited, and unreliable datasets. This work will be presented at the IEEE PES General Meeting 2025.\nI’m passionate about democratizing AI knowledge. I create educational content simplifying AI, ML, and statistics on Substack and YouTube.\nOutside of research, I enjoy cooking and skating. 🛼"
+    "text": "Email\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     YouTube\n  \n  \n    \n     Substack\n  \n  \n    \n     Scholar\n  \n\n  \n  \nHi! I’m Kundan Kumar, a Ph.D. candidate and researcher focused on building intelligent, secure, and adaptable AI systems for next-generation cyber-physical infrastructure. My work bridges deep reinforcement learning (DRL), multi-agent systems, large language models (LLMs), safe and explainable AI, and computer vision, with real-world applications in smart grids, autonomous vehicles, and critical infrastructure.\nMy Ph.D. research centers on physics-informed and safety-critical DRL frameworks that embed domain knowledge, safety constraints, and uncertainty into the learning process—enabling agents to make robust and interpretable decisions in dynamic, complex environments. My research within DRL focuses on techniques such as transfer learning, uncertainty quantification, and adversarial resilience to improve generalization, safety, and reliability across diverse tasks and environments.\nI also develop LLM-integrated simulation frameworks for robotics and autonomous systems, combining vision-based perception, trajectory planning, and natural language reasoning to support high-level control and human-AI collaboration.\nBeyond research, I enjoy sharing my insights through educational content on Substack and YouTube. Outside of work, I love cooking and skating. 🛼\n\n\n\n\n\nOther Research Interests\n\n\n\n\nComputer Vision\n\n\nVisual perception, object detection, semantic segmentation, and sensor fusion for autonomous systems.\n\n\n\n\n\nStatistical ML\n\n\nUncertainty quantification, probabilistic modeling, and data-driven inference in dynamic environments.\n\n\n\n\n\nSelf-Driving Systems\n\n\nLearning-based control, trajectory planning, vision-based perception, and sensor fusion in autonomous driving environments.\n\n\n\n\n\n\nExplore My Work\n\n\nBlog\n\n\n\n\n\n\n\n\nResearch Scientist Interview Guide\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nTalks\n\n\n\n\n\n\n\n\n\n\nMy Dummy Talk\n\n\nLearning How to Show a Card\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nPublications\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nProjects\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\n\n\nNews Highlights\n\n\n\n\n\n\n[Jul 2025]\n\n\nSelected for the Cohere Machine Learning Summer School, hosted by Cohere Labs.\n\n\n\n\n[Mar 2025]\n\n\nOur paper on Advanced Semi-Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems has been accepted to IEEE PES General Meeting 2025.\n\n\n\n\n[Jan 2025]\n\n\nOur paper on Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids has been accepted to IEEE PES Grid Edge Technologies Conference & Exposition 2025."
   },
   {
     "objectID": "index.html#recent-posts",
@@ -1523,7 +1523,7 @@
     "href": "cv.html#skills",
     "title": "Curriculum Vitae",
     "section": " Skills",
-    "text": "Skills\n\n\n\nProgramming Languages\n\n\nPython, R, Java, C++, SAS, MATLAB, SQL, HTML, JS, Node.js, React.js\n\n\n\n\nML & Data Analysis\n\n\nscikit-learn, TensorFlow, PyTorch, Pandas, Matplotlib, Seaborn, Gym, RLlib\n\n\n\n\nLLMs & NLP\n\n\nHugging Face Transformers, LangChain, RAG, Prompt Engineering\n\n\n\n\nHPC & Big Data\n\n\nHadoop, Hive, Spark, Kafka, Kinesis, SLURM, MPI, OpenMP\n\n\n\n\nSimulation & Modeling\n\n\nOpal-RT, OpenDSS (Power), Carla (Autonomous Driving)\n\n\n\n\nOptimization\n\n\nGurobi, Pyomo, BoTorch, Optuna, Hyperopt\n\n\n\n\nVisualization & GIS\n\n\nTableau, ArcGIS, Leaflet\n\n\n\n\nCloud & DevOps\n\n\nAWS (EC2, S3, Lambda), GCP, Docker, Kubernetes, Git, Terraform, Jenkins, CircleCI"
+    "text": "Skills\n\n\n\n\nProgramming Languages\n\n\nPython, R, Java, C++, SAS, MATLAB, SQL, HTML, JS, Node.js, React.js\n\n\n\n\nML & Data Analysis\n\n\nscikit-learn, TensorFlow, PyTorch, Pandas, Matplotlib, Seaborn, Gym, RLlib\n\n\n\n\nLLMs & NLP\n\n\nHugging Face Transformers, LangChain, RAG, Prompt Engineering\n\n\n\n\nHPC & Big Data\n\n\nHadoop, Hive, Spark, Kafka, Kinesis, SLURM, MPI, OpenMP\n\n\n\n\nSimulation & Modeling\n\n\nOpal-RT, OpenDSS (Power), Carla (Autonomous Driving)\n\n\n\n\nOptimization\n\n\nGurobi, Pyomo, BoTorch, Optuna, Hyperopt\n\n\n\n\nVisualization & GIS\n\n\nTableau, ArcGIS, Leaflet\n\n\n\n\nCloud & DevOps\n\n\nAWS (EC2, S3, Lambda), GCP, Docker, Kubernetes, Git, Terraform, Jenkins, CircleCI"
   },
   {
     "objectID": "cv.html#footnotes",
@@ -1572,14 +1572,14 @@
     "href": "cv.html#teaching-experience",
     "title": "Curriculum Vitae",
     "section": " Teaching Experience",
-    "text": "Teaching Experience\n\n\n\n\n\nIowa State University\n\n\n\n\n\nTeaching Assistant\n\n\n 2020  —  2025 \n\n\n\nDepartment of Computer Science\n\nSupported undergraduate/graduate courses including Software Development Practices, Database Systems, and Spreadsheets.\nLed weekly lab sessions, assisted students with debugging and conceptual challenges, and held office hours.\nDesigned assignments and quizzes aligned with real-world workflows and agile development practices.\nMentored students on semester-long capstone projects simulating software engineering team experiences."
+    "text": "Teaching Experience\n\n\n\n\n\nIowa State University\n\n\n\n\n\nTeaching Assistant\n\n\n 2020  —  2025 \n\n\n\nDepartment of Computer Science\n\nSupported undergraduate/graduate courses including Software Development Practices, Database Systems, and Spreadsheets.\nLed weekly lab sessions, assisted students with debugging and conceptual challenges, and held office hours.\nDesigned assignments and quizzes aligned with real-world workflows and agile development practices.\nMentored students on semester-long capstone projects simulating software engineering team experiences.\n\n\n Teaching Portfolio"
   },
   {
     "objectID": "cv.html#research-experience",
     "href": "cv.html#research-experience",
     "title": "Curriculum Vitae",
     "section": " Research Experience",
-    "text": "Research Experience\n\n\n\n\n\nIowa State University\n\n\n\n\n\nResearch Assistant\n\n\n Aug 2022  —  Jul 2025 \n\n\n\n\nResearch on Physics‑Informed Deep Reinforcement Learning for Critical Infrastructure Systems, focusing on Intelligent Resource Management and Security in Large‑Scale Distributed Networks.\nApplied computational deep reinforcement learning algorithms in a Smart Energy System to analyze power simulation data, minimizing voltage violations, power loss, and control errors.\nDeveloped physics‑informed DRL algorithms incorporating domain‑specific physical constraints, achieving 30% improvement in resource allocation efficiency and reducing system violations in complex distributed networks.\nDesigned and implemented adversarial attack detection and mitigation frameworks for AI models in critical systems, enhancing robustness against security threats through systematic testing and defensive techniques.\nCreated novel transfer learning methodologies enabling DRL models to adapt across varying network sizes and topologies, reducing training time by 40% for new configurations.\nDeveloped Python‑based simulation and control framework integrating real‑time hardware (OPAL‑RT and OpenDSS) with distributed systems.\nLeveraged LLM‑driven reasoning and contextual understanding within simulation environments to support real‑time adaptive control, human‑AI collaboration, and predictive system optimization.\n\n\n\n\nResearch Assistant\n\n\n Aug 2020  —  Jul 2022 \n\n\n\n\nResearch on Deep Reinforcement Learning (DRL) and Safety‑Critical Learning for Autonomous Systems, with focus on perception, control, and decision‑making in high‑stakes environments.\nUtilized CARLA simulator for vision‑based autonomous driving tasks, including perception, object detection, trajectory planning, and policy learning in complex traffic scenarios.\nApplied deep computer vision models for object recognition, semantic segmentation, and sensor fusion, enabling robust situational awareness in autonomous driving and robotics."
+    "text": "Research Experience\n\n\n\n\n\nIowa State University\n\n\n\n\n\nResearch Assistant\n\n\n Aug 2022  —  Jul 2025 \n\n\n\n\nResearch on Physics‑Informed Deep Reinforcement Learning for Critical Infrastructure Systems, focusing on Intelligent Resource Management and Security in Large‑Scale Distributed Networks.\nApplied computational deep reinforcement learning algorithms in a Smart Energy System to analyze power simulation data, minimizing voltage violations, power loss, and control errors.\nDeveloped physics‑informed DRL algorithms incorporating domain‑specific physical constraints, achieving 30% improvement in resource allocation efficiency and reducing system violations in complex distributed networks.\nDesigned and implemented adversarial attack detection and mitigation frameworks for AI models in critical systems, enhancing robustness against security threats through systematic testing and defensive techniques.\nCreated novel transfer learning methodologies enabling DRL models to adapt across varying network sizes and topologies, reducing training time by 40% for new configurations.\nDeveloped Python‑based simulation and control framework integrating real‑time hardware (OPAL‑RT and OpenDSS) with distributed systems.\nLeveraged LLM‑driven reasoning and contextual understanding within simulation environments to support real‑time adaptive control, human‑AI collaboration, and predictive system optimization.\n\n\n\n\nResearch Assistant\n\n\n Aug 2020  —  Jul 2022 \n\n\n\n\nResearch on Deep Reinforcement Learning (DRL) and Safety‑Critical Learning for Autonomous Systems, with focus on perception, control, and decision‑making in high‑stakes environments.\nUtilized CARLA simulator for vision‑based autonomous driving tasks, including perception, object detection, trajectory planning, and policy learning in complex traffic scenarios.\nApplied deep computer vision models for object recognition, semantic segmentation, and sensor fusion, enabling robust situational awareness in autonomous driving and robotics.\n\n\n Research Portfolio"
   },
   {
     "objectID": "cv.html#teaching-experience-1",
@@ -1593,7 +1593,7 @@
     "href": "cv.html#projects",
     "title": "Curriculum Vitae",
     "section": " Projects",
-    "text": "Projects\n\n\n\n\n\n\n   Fast Mixed‑Logit Estimation Fast estimation of mixed logit models with preference‑space utility.  \n   cbcTools Suite Designing choice‑based conjoint experiments and power and system analyses.  \n   LLM‑Powered Energy Optimizer Multi‑building energy optimization in CityLearn with LLM guidance.  \n\n\n 📁 Check My Projects"
+    "text": "Projects\n\n\n   Fast Mixed‑Logit Estimation Fast estimation of mixed logit models with preference‑space utility.  \n   cbcTools Suite Designing choice‑based conjoint experiments and power/system analysis.  \n   LLM‑Powered Energy Optimizer Multi‑building energy optimization in CityLearn with LLM guidance.  \n\n\n 📁 Check My Projects"
   },
   {
     "objectID": "cv.html#projects-1",
@@ -1775,21 +1775,21 @@
     "href": "projects/orcas.html",
     "title": "orcas",
     "section": "",
-    "text": "{{&lt; fa brands github &gt;}} Code \nThe goal of orcas is to scrape orca sighting data from the web and visualize it in maps and tables.\nI’ve always had an affinity for the Southern Resident Killer Whales in the Salish Sea. The Center for Whale Research does a lot of really fascinating and important work monitoring their population. They post their survey data on their website; each encounter with the orcas is a separate webpage. I was both curious and intimidated by web scraping so I decided this would make a great case study and personal project. I also learned how to use custom icons in leaflet maps! 🐋"
+    "text": "Code \nThe goal of orcas is to scrape orca sighting data from the web and visualize it in maps and tables.\nI’ve always had an affinity for the Southern Resident Killer Whales in the Salish Sea. The Center for Whale Research does a lot of really fascinating and important work monitoring their population. They post their survey data on their website; each encounter with the orcas is a separate webpage. I was both curious and intimidated by web scraping so I decided this would make a great case study and personal project. I also learned how to use custom icons in leaflet maps! 🐋"
   },
   {
     "objectID": "projects/roadmap.html",
     "href": "projects/roadmap.html",
     "title": "WaSHI Soil Health Roadmap",
     "section": "",
-    "text": "{{&lt; fa laptop &gt;}} App {{&lt; fa brands github &gt;}} Code \nThe Soil Health Roadmap is a science-based guide to maintaining and improving soil health in eight focus areas across Washington state.\nFor each focus area, I created crop and soil maps using the arcpy Python package. I then summarized the crop acreage and soil properties in interactive ArcGIS dashboards to complement the 117-page report."
+    "text": "App  Code \nThe Soil Health Roadmap is a science-based guide to maintaining and improving soil health in eight focus areas across Washington state.\nFor each focus area, I created crop and soil maps using the arcpy Python package. I then summarized the crop acreage and soil properties in interactive ArcGIS dashboards to complement the 117-page report."
   },
   {
     "objectID": "projects/washi.html",
     "href": "projects/washi.html",
     "title": "washi",
     "section": "",
-    "text": "{{&lt; fa box &gt;}} {pkgdown} site {{&lt; fa brands github &gt;}} Code {{&lt; fa brands r-project &gt;}} CRAN \nInspired by other branding R packages such as glitr, ratlas, and nmfspalette, washi provides color palettes and themes consistent with Washington Soil Health Initiative (WaSHI) branding. This package is to be used only by direct collaborators within WaSHI, though you are welcome to adapt the package to suit your own organization’s branding."
+    "text": "{pkgdown} site  Code  CRAN \nInspired by other branding R packages such as glitr, ratlas, and nmfspalette, washi provides color palettes and themes consistent with Washington Soil Health Initiative (WaSHI) branding. This package is to be used only by direct collaborators within WaSHI, though you are welcome to adapt the package to suit your own organization’s branding."
   },
   {
     "objectID": "projects/wacse.html",
@@ -1859,14 +1859,14 @@
     "href": "rpkg/rpkg2.html",
     "title": "Research",
     "section": "",
-    "text": "I aim to advance the frontier of safe, interpretable, and adaptive AI for cyber-physical systems operating under uncertainty and dynamic constraints. My research sits at the intersection of machine learning, optimization, and control theory, with a particular focus on:\n\nPhysics-informed Deep Reinforcement Learning (DRL)\nProbabilistic & Bayesian Modeling\nLarge Language Models (LLMs) for autonomous reasoning\nVision-based simulation environments\n\nBy tightly integrating domain knowledge into learning frameworks, I design agents capable of robust decision-making in real-world, high-stakes environments such as smart grids, robotics, and intelligent infrastructure."
+    "text": "I aim to advance the frontier of safe, interpretable, and adaptive AI for cyber-physical systems operating under uncertainty and dynamic constraints. My research sits at the intersection of machine learning, optimization, and control theory, with a particular focus on:\n\n⚙️ Physics-informed Deep Reinforcement Learning (DRL)\n🔍 Probabilistic & Bayesian Modeling\n🧠 Large Language Models (LLMs) for autonomous reasoning\n🖼️ Vision-based simulation environments\n\nBy tightly integrating domain knowledge into learning frameworks, I design agents capable of robust decision-making in real-world, high-stakes environments such as smart grids, robotics, and intelligent infrastructure."
   },
   {
     "objectID": "rpkg/rpkg2.html#research-vision",
     "href": "rpkg/rpkg2.html#research-vision",
     "title": "Research",
     "section": "",
-    "text": "I aim to advance the frontier of safe, interpretable, and adaptive AI for cyber-physical systems operating under uncertainty and dynamic constraints. My research sits at the intersection of machine learning, optimization, and control theory, with a particular focus on:\n\nPhysics-informed Deep Reinforcement Learning (DRL)\nProbabilistic & Bayesian Modeling\nLarge Language Models (LLMs) for autonomous reasoning\nVision-based simulation environments\n\nBy tightly integrating domain knowledge into learning frameworks, I design agents capable of robust decision-making in real-world, high-stakes environments such as smart grids, robotics, and intelligent infrastructure."
+    "text": "I aim to advance the frontier of safe, interpretable, and adaptive AI for cyber-physical systems operating under uncertainty and dynamic constraints. My research sits at the intersection of machine learning, optimization, and control theory, with a particular focus on:\n\n⚙️ Physics-informed Deep Reinforcement Learning (DRL)\n🔍 Probabilistic & Bayesian Modeling\n🧠 Large Language Models (LLMs) for autonomous reasoning\n🖼️ Vision-based simulation environments\n\nBy tightly integrating domain knowledge into learning frameworks, I design agents capable of robust decision-making in real-world, high-stakes environments such as smart grids, robotics, and intelligent infrastructure."
   },
   {
     "objectID": "rpkg/rpkg2.html#research-themes",
@@ -1893,8 +1893,8 @@
     "objectID": "rpkg/rpkg2.html#ongoing-projects",
     "href": "rpkg/rpkg2.html#ongoing-projects",
     "title": "Research",
-    "section": "📎 Ongoing Projects",
-    "text": "📎 Ongoing Projects\n\nFederated DRL for Cyber-Resilient Volt-VAR Optimization\nExploring decentralized, communication-efficient coordination among DERs using LSTM-enhanced PPO agents.\nOne-Shot Policy Transfer with Physics Priors\nTraining grid agents in simpler environments and adapting to complex grids (IEEE 123-bus, 8500-node) in few iterations.\nLLM-Guided Autonomous Planning for Smart Buildings\nIntegrating OpenAI and Claude with CityLearn to convert user prompts into interpretable policy instructions."
+    "section": "🔄 Ongoing Projects",
+    "text": "🔄 Ongoing Projects\n\n🤖 Federated DRL for Cyber-Resilient Volt-VAR Optimization\nDecentralized, communication-efficient control using LSTM-enhanced PPO agents across distributed DERs.\n⚡ One-Shot Policy Transfer with Physics Priors\nTrain agents on small topologies and adapt to IEEE 123-bus, 8500-node networks in a few iterations.\n🧠 LLM-Guided Autonomous Planning for Smart Buildings\nConvert user prompts to interpretable control policies using LLMs (OpenAI, Claude) in CityLearn environments."
   },
   {
     "objectID": "rpkg/rpkg2.html#research-themes-1",
@@ -1991,8 +1991,8 @@
     "objectID": "rpkg/rpkg.html#ongoing-projects",
     "href": "rpkg/rpkg.html#ongoing-projects",
     "title": "Research",
-    "section": "🧪 Ongoing Projects",
-    "text": "🧪 Ongoing Projects\n\nFederated DRL for Cyber-Resilient Volt-VAR Optimization\nExploring decentralized, communication-efficient coordination among DERs using LSTM-enhanced PPO agents.\nOne-Shot Policy Transfer with Physics Priors\nTraining grid agents in simpler environments and adapting to complex grids (IEEE 123-bus, 8500-node) in few iterations.\nLLM-Guided Autonomous Planning for Smart Buildings\nIntegrating OpenAI and Claude with CityLearn to convert user prompts into interpretable policy instructions."
+    "section": "🔄 Ongoing Projects",
+    "text": "🔄 Ongoing Projects\n\nFederated DRL for Cyber-Resilient Volt-VAR Optimization\nExploring decentralized, communication-efficient coordination among DERs using LSTM-enhanced PPO agents.\nOne-Shot Policy Transfer with Physics Priors\nTraining grid agents in simpler environments and adapting to complex grids (IEEE 123-bus, 8500-node) in few iterations.\nLLM-Guided Autonomous Planning for Smart Buildings\nIntegrating OpenAI and Claude with CityLearn to convert user prompts into interpretable policy instructions."
   },
   {
     "objectID": "blog/blog1.html",
@@ -2924,5 +2924,278 @@
     "title": "My Dummy Talk",
     "section": "",
     "text": "This is a simple demo of a Quarto talk listing with an image, title, and subtitle."
+  },
+  {
+    "objectID": "rpkg/rpkg.html#research-highlights",
+    "href": "rpkg/rpkg.html#research-highlights",
+    "title": "Research",
+    "section": "🌟 Research Highlights",
+    "text": "🌟 Research Highlights\n\n✅ Proposed the first Physics-Informed LSTM-PPO agent for volt-var control on 8500-node networks.\n📉 Achieved 98% reduction in voltage violations and 3× faster convergence in federated DRL.\n🧠 Developed one-shot transfer learning for control agents in complex topologies.\n🤖 Integrated LLM-guided planning into multi-building simulations via CityLearn.\n🔒 Built resilient DRL systems that withstand adversarial and distributional attacks."
+  },
+  {
+    "objectID": "rpkg/rpkg.html#research-focus",
+    "href": "rpkg/rpkg.html#research-focus",
+    "title": "Research",
+    "section": "🧠 ## 🧠 Research Focus Areas",
+    "text": "🧠 ## 🧠 Research Focus Areas\n\nSafe & Trustworthy Reinforcement Learning\n\n\n\n🎯 Objective\n\n\nDevelop control agents that guarantee system safety, stability, and robust learning in dynamic, uncertain, and partially observable environments.\n\n\n🔍 Core Focus Areas\n\n\n\nConstrained policy optimization and reward shaping\n\n\nPhysics-based priors in DRL\n\n\nAdversarial resilience and anomaly detection\n\n\nEpistemic and aleatoric uncertainty quantification\n\n\n\n\n\n\n\n\n\nTransfer Learning & Meta-Adaptation\n\n\n\n🎯 Objective\n\n\nEnabling rapid generalization across distribution shifts in topology, weather, or load profiles.\n\n\n🔍 Core Focus Areas\n\n\n\nTransferable actor-critic architectures\n\n\nSimulation-to-real (Sim2Real) adaptation\n\n\nMeta-RL for sample efficiency\n\n\n\n\n\n\n\n\n\nVision-Simulation Integration\n\n\n\n🎯 Objective\n\n\nBridge the gap between perception and control by combining synthetic sensors, simulated environments, and end-to-end learning pipelines.\n\n\n🔍 Core Focus Areas\n\n\n\nPerception-action loops with CARLA, AirSim\n\n\nMulti-modal representation fusion (image + state)\n\n\nAutonomous control with embedded perception modules\n\n\nEnd-to-end autonomous control pipelines\n\n\n\n\n\n\n\n\n\nLLM-Augmented Decision Systems\n\n\n\n🎯 Objective\n\n\nDevelop control agents that guarantee system safety, stability, and robust learning in dynamic, uncertain, and partially observable environments.\n\n\n🔍 Core Focus Areas\n\n\n\nLLMs for summarizing environment states and guiding agents\n\n\nTranslating textual inputs into actionable policies\n\n\nFacilitating human-AI collaboration in dynamic tasks"
+  },
+  {
+    "objectID": "rpkg/rpkg.html#awards",
+    "href": "rpkg/rpkg.html#awards",
+    "title": "Research",
+    "section": "🏅 Awards & Recognition",
+    "text": "🏅 Awards & Recognition\n\nIEEE PES-GM 2024 Travel Grant Recipient\n\nResearch Excellence Award – Iowa State University\n\nBest Poster Award – Grid Edge Technologies 2025\n\nNREL Outstanding Internship Recognition"
+  },
+  {
+    "objectID": "rpkg/rpkg2.html#research-highlights",
+    "href": "rpkg/rpkg2.html#research-highlights",
+    "title": "Research",
+    "section": "🌟 Research Highlights",
+    "text": "🌟 Research Highlights\n\n✅ Proposed the first Physics-Informed LSTM-PPO agent for volt-var control on 8500-node networks.\n📉 Achieved 98% reduction in voltage violations and 3× faster convergence in federated DRL.\n🧠 Developed one-shot transfer learning for control agents in complex topologies.\n🤖 Integrated LLM-guided planning into multi-building simulations via CityLearn.\n🔒 Built resilient DRL systems that withstand adversarial and distributional attacks."
+  },
+  {
+    "objectID": "rpkg/rpkg2.html#research-focus",
+    "href": "rpkg/rpkg2.html#research-focus",
+    "title": "Research",
+    "section": "🧠 Research Focus Areas",
+    "text": "🧠 Research Focus Areas\n\n\n\n\n🔐 Safe & Trustworthy RL\n\n\n\n\n\nRobust & Stable Learning\n\n\nDevelop agents that ensure system safety, robustness, and interpretability under uncertainty.\n\n\n\n\n\nUncertainty-Aware Policies\n\n\nQuantify epistemic and aleatoric uncertainty in high-stakes, partially observable settings.\n\n\n\n\n\n🔄 Transfer & Meta-Adaptation\n\n\n\n\n\nDomain Adaptation\n\n\nEnable agents to generalize across grids with different topologies, dynamics, and loads.\n\n\n\n\n\nMeta-RL for Efficiency\n\n\nLeverage meta-reasoning to accelerate learning in low-data, high-variance scenarios.\n\n\n\n\n\n👁️ Vision-Simulation Integration\n\n\n\n\n\nPerception-Control Fusion\n\n\nUse CARLA and AirSim to train end-to-end systems in visual RL tasks with sensors.\n\n\n\n\n\nMulti-modal Representations\n\n\nCombine visual, state, and contextual features for better decision-making.\n\n\n\n\n\n🧠 LLM-Augmented Decision Systems\n\n\n\n\n\nLLM-Guided Control\n\n\nTranslate natural language into actionable policies for real-world environments.\n\n\n\n\n\nHuman-AI Collaboration\n\n\nFacilitate interactive control loops between humans and agents using LLMs."
+  },
+  {
+    "objectID": "rpkg/rpkg2.html#application-domains",
+    "href": "rpkg/rpkg2.html#application-domains",
+    "title": "Research",
+    "section": "🔬 Application Domains",
+    "text": "🔬 Application Domains\n\n\n\n\n\n\n\nDomain\nDescription\n\n\n\n\n⚡ Smart Energy Systems\nVolt-VAR control, DER coordination, and federated DRL for power grid stability\n\n\n🚘 Autonomous Systems\nSafe navigation, adaptive planning, and control in simulation and real-world environments\n\n\n🛡 Secure AI for Infrastructure\nResilience against cyber-attacks and adversarial scenarios in safety-critical systems"
+  },
+  {
+    "objectID": "rpkg/rpkg2.html#awards",
+    "href": "rpkg/rpkg2.html#awards",
+    "title": "Research",
+    "section": "🏅 Awards & Recognition",
+    "text": "🏅 Awards & Recognition\n\nIEEE PES-GM 2024 Travel Grant Recipient\n\nResearch Excellence Award – Iowa State University\n\nBest Poster Award – Grid Edge Technologies 2025\n\nNREL Outstanding Internship Recognition"
+  },
+  {
+    "objectID": "rpkg/rpkg2.html#publications",
+    "href": "rpkg/rpkg2.html#publications",
+    "title": "Research",
+    "section": "📚 Publications",
+    "text": "📚 Publications\n\n📝 Journal Papers🎤 Conference Papers\n\n\n\nKundan Kumar, Gelli Ravikumar\nPhysics-based Deep Reinforcement Learning for Grid-Resilient Volt-VAR Control (Under Review)\nIEEE Transactions on Smart Grid, 2025\n Paper Code Poster \n\n\n\n\n\nKundan Kumar, Gelli Ravikumar\nTransfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids\nIEEE PES Grid Edge Technologies, 2025\nKundan Kumar, Aditya Akilesh Mantha, Gelli Ravikumar\nBayesian Optimization for DRL in Robust Volt-Var Control\nIEEE PES General Meeting, 2024\nKundan Kumar, Gelli Ravikumar\nVolt-VAR Control and Attack Resiliency using Deep RL\nIEEE ISGT, 2024\nJK Francis, C Kumar, J Herrera-Gerena, Kundan Kumar, MJ Darr\nSensor Data Regression using Deep Learning & Patterns\nIEEE ICMLA, 2022\nKin Gwn Lore, Nicholas Sweet, Kundan Kumar, et al.\nDeep Value of Information Estimators for Human-Machine Collaboration\nACM/IEEE ICCPS, 2016"
+  },
+  {
+    "objectID": "index1.html",
+    "href": "index1.html",
+    "title": "Kundan Kumar",
+    "section": "",
+    "text": "Email\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     YouTube\n  \n  \n    \n     Substack\n  \n  \n    \n     Scholar\n  \n\n  \n  \nHi! I’m Kundan Kumar, a Ph.D. candidate and researcher focused on building intelligent, secure, and adaptable AI systems for next-generation cyber-physical infrastructure. My work bridges deep reinforcement learning (DRL), multi-agent systems, large language models (LLMs), safe and explainable AI, and computer vision, with real-world applications in smart grids, autonomous vehicles, and critical infrastructure.\nMy Ph.D. research centers on physics-informed and safety-critical DRL frameworks that embed domain knowledge, safety constraints, and uncertainty into the learning process—enabling agents to make robust and interpretable decisions in dynamic, complex environments. My research within DRL focuses on techniques such as transfer learning, uncertainty quantification, and adversarial resilience to improve generalization, safety, and reliability across diverse tasks and environments.\nI also develop LLM-integrated simulation frameworks for robotics and autonomous systems, combining vision-based perception, trajectory planning, and natural language reasoning to support high-level control and human-AI collaboration.\nBeyond research, I enjoy sharing my insights through educational content on Substack and YouTube. Outside of work, I love cooking and skating. 🛼\n\n\n\n\n\n\nOther Research Interests\n\n\n\n\nComputer Vision\n\n\nVisual perception, object detection, semantic segmentation, and sensor fusion for autonomous systems.\n\n\n\n\n\nStatistical ML\n\n\nUncertainty quantification, probabilistic modeling, and data-driven inference in dynamic environments.\n\n\n\n\n\nSelf-Driving Systems\n\n\nLearning-based control, trajectory planning, vision-based perception, and sensor fusion in autonomous driving environments.\n\n\n\n\n\n\n\nExplore My Work\n\n\nBlog\n\n\n\n\n\n\n\n\nResearch Scientist Interview Guide\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nTalks\n\n\n\n\n\n\n\n\n\n\nMy Dummy Talk\n\n\nLearning How to Show a Card\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nPublications\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nProjects\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\n\n\n\nNews Highlights\n\n\n\n\n\n\n[Jul 2025]\n\n\nSelected for the Cohere Machine Learning Summer School, hosted by Cohere Labs.\n\n\n\n\n[Mar 2025]\n\n\nOur paper on Advanced Semi-Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems has been accepted to IEEE PES General Meeting 2025.\n\n\n\n\n[Jan 2025]\n\n\nOur paper on Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids has been accepted to IEEE PES Grid Edge Technologies Conference & Exposition 2025."
+  },
+  {
+    "objectID": "index1.html#research-summary",
+    "href": "index1.html#research-summary",
+    "title": "Kundan Kumar",
+    "section": "🧬 Research Summary",
+    "text": "🧬 Research Summary\nI focus on developing intelligent, secure, and adaptable AI systems for next-generation cyber-physical infrastructure. My work spans:\n\n🔁 Physics-informed DRL\n🧠 LLM-guided autonomous reasoning\n🔍 Uncertainty-aware control\n🤖 Robotics and vision-based decision systems\n\nI design agents that embed physical laws, constraints, and uncertainties into their learning loop, enabling them to generalize across varying system topologies and environmental dynamics. I also explore transfer/meta-learning, adversarial robustness, and real-time control."
+  },
+  {
+    "objectID": "index1.html#technical-interests",
+    "href": "index1.html#technical-interests",
+    "title": "Kundan Kumar",
+    "section": "🔬 Technical Interests",
+    "text": "🔬 Technical Interests\n\nComputer Vision: Object detection, semantic segmentation, sensor fusion\nSoftware Systems: Simulation + control co-design, OpenDSS integration\nStatistical ML: Bayesian modeling, probabilistic inference\nRobotics: Multi-modal reasoning, safe human-robot interaction"
+  },
+  {
+    "objectID": "index1.html#news-highlights",
+    "href": "index1.html#news-highlights",
+    "title": "Kundan Kumar",
+    "section": "📰 News Highlights",
+    "text": "📰 News Highlights\n\n\n\n[Jan 2025]\n\n\nPaper accepted at IEEE Grid Edge Technologies 2025.\n\n\n\n\n[Aug 2024]\n\n\nWorkshop accepted at Pittsburgh Supercomputing Center.\n\n\n\n\n[Jul 2024]\n\n\nBayesian DRL paper accepted to IEEE PES GM 2024.\n\n\n\n\n[Nov 2023]\n\n\nDRL + Attack Resilience paper accepted to IEEE ISGT 2024.\n\n\n\n\n[Aug 2022]\n\n\nCompleted ML tracks at Oxford Machine Learning Summer School.\n\n\n\n\n[Apr 2022]\n\n\nPBMR-DP paper accepted at ICMLA 2022."
+  },
+  {
+    "objectID": "index1.html#explore-my-work",
+    "href": "index1.html#explore-my-work",
+    "title": "Kundan Kumar",
+    "section": "🔗 Explore My Work",
+    "text": "🔗 Explore My Work\n\n\nBlog\n\n\n\nSee all →\n\n\nTalks\n\n\n\nSee all →\n\n\nPublications\n\n\n\nSee all →\n\n\nProjects\n\n\n\nSee all →"
+  },
+  {
+    "objectID": "index1.html#other-research-interests",
+    "href": "index1.html#other-research-interests",
+    "title": "Kundan Kumar",
+    "section": "🔍 Other Research Interests",
+    "text": "🔍 Other Research Interests\n\n\n\n\n👁️ Computer Vision\n\n\nVisual perception, object detection, semantic segmentation, and sensor fusion for autonomous systems.\n\n\n\n\n\n📊 Statistical ML\n\n\nUncertainty quantification, probabilistic modeling, and data-driven inference in dynamic environments.\n\n\n\n\n\n🤖 Robotics\n\n\nLearning-based control, adaptive planning, safe human-robot interaction, and multi-modal robotics."
+  },
+  {
+    "objectID": "others/about_me1.html",
+    "href": "others/about_me1.html",
+    "title": "Kundan Kumar",
+    "section": "",
+    "text": "Gmail\n  \n  \n    \n     Github\n  \n  \n    \n     Linkedin\n  \n  \n    \n     YouTube\n  \n  \n    \n     Substack\n  \n  \n    \n     Scholar"
+  },
+  {
+    "objectID": "others/about_me1.html#hi-there",
+    "href": "others/about_me1.html#hi-there",
+    "title": "Kundan Kumar",
+    "section": "Hi there!",
+    "text": "Hi there!\nI am a researcher focused on developing intelligent, secure, and adaptable AI systems for next-generation cyber-physical infrastructure. My work spans deep reinforcement learning (DRL), multi-agent systems, large language models (LLMs), safe and explainable AI, computer vision, and robotics, with real-world applications in smart energy systems, autonomous vehicles, and critical infrastructure.\nThe core of my Ph.D. research centers on developing physics-informed and safety-critical deep reinforcement learning (DRL) frameworks that embed domain knowledge and system constraints directly into the learning process. By incorporating physical laws, safety boundaries, and system dynamics into policy optimization, I design agents capable of making robust, interpretable, and reliable decisions in dynamic, high-stakes environments. My work addresses challenges such as uncertainty quantification, adversarial resilience, and safe exploration, while enabling agents to generalize across diverse network topologies, environmental conditions, and task distributions through advanced transfer learning and meta-learning techniques.\nI also leverage the CARLA simulator for autonomous driving research, combining computer vision, trajectory planning, and policy learning in complex traffic environments. My work integrates vision-based perception models for object detection, semantic segmentation, and sensor fusion, enabling robust situational awareness for autonomous agents. In parallel, I integrate LLM-based reasoning into simulation and control frameworks to support high-level planning, adaptive decision-making, and interactive human-AI collaboration for robotics and safety-critical control.\nBeyond autonomous and energy systems, my broader research interests include probabilistic modeling, statistical machine learning, and developing AI systems that are robust, trustworthy, and deployable in real-world complex environments.\nOther Research Interests:\n\nComputer Vision: Visual perception, object detection, semantic segmentation, sensor fusion for autonomous systems.\nSoftware Systems: Scalable software engineering, simulation framework development, real-time systems integration.\nStatistical Machine Learning: Uncertainty quantification, probabilistic modeling, data-driven inference in dynamic environments.\nRobotics: Learning-based control, adaptive planning, safe human-robot interaction, multi-modal robotic systems.\n\n\n\nNews\n\n\n\n\n\n\n[Jan 2025]\n\n\nOur paper on Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids has been accepted to IEEE PES Grid Edge Technologies Conference & Exposition 2025.\n\n\n\n\n[Aug 2024]\n\n\nOur paper on Workshop for High Performance Computing has been accepted at Pittsburgh Supercomputing Center 2024.\n\n\n\n\n[Jul 2024]\n\n\nOur paper on Bayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control has been accepted to IEEE PES General Meeting 2024.\n\n\n\n\n[Nov 2023]\n\n\nOur paper Deep RL-based Volt-VAR Control and Attack Resiliency for DER-Integrated Distribution Grids was accepted to IEEE ISGT 2024.\n\n\n\n\n[Aug 2022]\n\n\nParticipated in the Oxford Machine Learning Summer School, completing tracks in MLx Health and MLx Finance.\n\n\n\n\n[Apr 2022]\n\n\nOur paper on Pattern-Based Multivariate Regression using Deep Learning (PBMR-DP) was accepted to ICMLA 2022."
+  },
+  {
+    "objectID": "others/index1.html",
+    "href": "others/index1.html",
+    "title": "Kundan Kumar",
+    "section": "",
+    "text": "Email\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     YouTube\n  \n  \n    \n     Substack\n  \n  \n    \n     Scholar\n  \n\n  \n  \nHi! I’m Kundan Kumar, a Ph.D. candidate and researcher focused on building intelligent, secure, and adaptable AI systems for next-generation cyber-physical infrastructure. My work bridges deep reinforcement learning (DRL), multi-agent systems, large language models (LLMs), safe and explainable AI, and computer vision, with real-world applications in smart grids, autonomous vehicles, and critical infrastructure.\nMy Ph.D. research centers on physics-informed and safety-critical DRL frameworks that embed domain knowledge, safety constraints, and uncertainty into the learning process—enabling agents to make robust and interpretable decisions in dynamic, complex environments. My research within DRL focuses on techniques such as transfer learning, uncertainty quantification, and adversarial resilience to improve generalization, safety, and reliability across diverse tasks and environments.\nI also develop LLM-integrated simulation frameworks for robotics and autonomous systems, combining vision-based perception, trajectory planning, and natural language reasoning to support high-level control and human-AI collaboration.\nBeyond research, I enjoy sharing my insights through educational content on Substack and YouTube. Outside of work, I love cooking and skating. 🛼\n\n\n\n\n\n\nOther Research Interests\n\n\n\n\nComputer Vision\n\n\nVisual perception, object detection, semantic segmentation, and sensor fusion for autonomous systems.\n\n\n\n\n\nStatistical ML\n\n\nUncertainty quantification, probabilistic modeling, and data-driven inference in dynamic environments.\n\n\n\n\n\nSelf-Driving Systems\n\n\nLearning-based control, trajectory planning, vision-based perception, and sensor fusion in autonomous driving environments.\n\n\n\n\n\n\n\nExplore My Work\n\n\nBlog\n\n\n\n\n\n\n\n\nResearch Scientist Interview Guide\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nTalks\n\n\n\n\n\n\n\n\n\n\nMy Dummy Talk\n\n\nLearning How to Show a Card\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nPublications\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nProjects\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\n\n\n\nNews Highlights\n\n\n\n\n\n\n[Jul 2025]\n\n\nSelected for the Cohere Machine Learning Summer School, hosted by Cohere Labs.\n\n\n\n\n[Mar 2025]\n\n\nOur paper on Advanced Semi-Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems has been accepted to IEEE PES General Meeting 2025.\n\n\n\n\n[Jan 2025]\n\n\nOur paper on Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids has been accepted to IEEE PES Grid Edge Technologies Conference & Exposition 2025."
+  },
+  {
+    "objectID": "cv1.html",
+    "href": "cv1.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "📄 Resume"
+  },
+  {
+    "objectID": "cv1.html#professional-experience",
+    "href": "cv1.html#professional-experience",
+    "title": "Curriculum Vitae",
+    "section": " Professional Experience",
+    "text": "Professional Experience\n\n\n\n\n\nNational Renewable Energy Laboratory (NREL)\n\n\n\n\n\nMachine Learning Engineer (Intern)\n\n\n May 2024  —  Jan 2025 \n\n\n\n\nDeveloped novel machine learning models for automated network topology inference and resilient control policy optimization for complex distributed systems under extreme scenarios\nDesigned and developed semi‑supervised learning approaches to tackle the challenge of limited labeled data in networks, achieving 98% improvement in model accuracy with varying labeled data.\nPaper ”Advanced Semi‑Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems” accepted at IEEE Power & Energy Society General Meeting (PES GM) 2025.\n\n\n\n\n\n\n\nComcast\n\n\n\n\n\nSoftware Engineer\n\n\n Jul 2019  —  Feb 2020 \n\n\n\n\nDesigned and implemented real‑time data processing pipelines using Amazon Kinesis and RabbitMQ, processing 1TB+ daily data for fraud detection and system monitoring.\nDeveloped machine learning models for anomaly detection and user behavior analysis, reducing fraudulent activities by 70% through predictive analytics.\nBuilt scalable Spring Boot microservices handling 10K+ concurrent requests, achieving 99.9% uptime for critical system components.\nCreated interactive dashboards using Presto DB and Python visualization tools, enabling real‑time monitoring of network performance metrics and fraud patterns.\n\n\n\n\n\n\n\nIBM\n\n\n\n\n\nSoftware Engineer\n\n\n Jan 2019  —  Jun 2019 \n\n\n\n\nLed cloud infrastructure optimization using OpenShift, implementing auto‑scaling solutions that reduced operational costs by 30%.\nDeveloped a comprehensive monitoring system using Grafana and Flask, providing real‑time visibility into 100+ cloud servers.\nImplemented automated performance monitoring and alerting system, reducing incident response time by 60%.\n\n\n\n\n\n\n\nHewlett Packard Enterprise (HPE)\n\n\n\n\n\nSoftware Engineer\n\n\n Apr 2017  —  Dec 2018 \n\n\n\n\n\nSpearheaded migration of critical applications from HPI to HPE domain, ensuring zero downtime during transition.\nImplemented OAuth 2.0 authentication system and RESTful services using Spring Boot, securing applications serving 50K+ users.\nDesigned and deployed microservices architecture on Apache/WebLogic servers, improving system response time by 40%.\n\n\n\n\n\n\n\nTata Consultancy Services (TCS)\n\n\n\n\n\nSystem Engineer\n\n\n Jul 2012  —  Dec 2015 \n\n\n\n\n\nEngineered high‑performance ETL pipelines for data warehouse integration, processing 100GB+ daily data volumes.\nOptimized database performance through advanced SQL tuning and indexing strategies, reducing query execution time by 70%.\nReceived excellence award for achieving $100K cost savings through database optimization initiatives."
+  },
+  {
+    "objectID": "cv1.html#education",
+    "href": "cv1.html#education",
+    "title": "Curriculum Vitae",
+    "section": " Education",
+    "text": "Education\n\n\n\n\n\nIowa State University\n\n\n\n\n\nPh.D. in Computer Science (Minor: Statistics)\n\n\n 2020  —  2025 (Expected) \n\n\n\n\n\nResearch: Deep RL, Physics-Informed AI, Uncertainty Quantification\nCourses: Deep Learning, NLP, Statistical Theory, Empirical Methods, Algorithms\n\n\n\n\nMS in Computer Science\n\n\n Jan 2015  —  Dec 2016 \n\n\n\n\nFocus: Algorithms, Databases, Network Programming"
+  },
+  {
+    "objectID": "cv1.html#teaching-experience",
+    "href": "cv1.html#teaching-experience",
+    "title": "Curriculum Vitae",
+    "section": " Teaching Experience",
+    "text": "Teaching Experience\n\n\n\n\n\nIowa State University\n\n\n\n\n\nTeaching Assistant\n\n\n 2020  —  2025 \n\n\n\nDepartment of Computer Science\n\nSupported undergraduate/graduate courses including Software Development Practices, Database Systems, and Spreadsheets.\nLed weekly lab sessions, assisted students with debugging and conceptual challenges, and held office hours.\nDesigned assignments and quizzes aligned with real-world workflows and agile development practices.\nMentored students on semester-long capstone projects simulating software engineering team experiences."
+  },
+  {
+    "objectID": "cv1.html#research-experience",
+    "href": "cv1.html#research-experience",
+    "title": "Curriculum Vitae",
+    "section": " Research Experience",
+    "text": "Research Experience\n\n\n\n\n\nIowa State University\n\n\n\n\n\nResearch Assistant\n\n\n Aug 2022  —  Jul 2025 \n\n\n\n\nResearch on Physics‑Informed Deep Reinforcement Learning for Critical Infrastructure Systems, focusing on Intelligent Resource Management and Security in Large‑Scale Distributed Networks.\nApplied computational deep reinforcement learning algorithms in a Smart Energy System to analyze power simulation data, minimizing voltage violations, power loss, and control errors.\nDeveloped physics‑informed DRL algorithms incorporating domain‑specific physical constraints, achieving 30% improvement in resource allocation efficiency and reducing system violations in complex distributed networks.\nDesigned and implemented adversarial attack detection and mitigation frameworks for AI models in critical systems, enhancing robustness against security threats through systematic testing and defensive techniques.\nCreated novel transfer learning methodologies enabling DRL models to adapt across varying network sizes and topologies, reducing training time by 40% for new configurations.\nDeveloped Python‑based simulation and control framework integrating real‑time hardware (OPAL‑RT and OpenDSS) with distributed systems.\nLeveraged LLM‑driven reasoning and contextual understanding within simulation environments to support real‑time adaptive control, human‑AI collaboration, and predictive system optimization.\n\n\n\n\nResearch Assistant\n\n\n Aug 2020  —  Jul 2022 \n\n\n\n\nResearch on Deep Reinforcement Learning (DRL) and Safety‑Critical Learning for Autonomous Systems, with focus on perception, control, and decision‑making in high‑stakes environments.\nUtilized CARLA simulator for vision‑based autonomous driving tasks, including perception, object detection, trajectory planning, and policy learning in complex traffic scenarios.\nApplied deep computer vision models for object recognition, semantic segmentation, and sensor fusion, enabling robust situational awareness in autonomous driving and robotics."
+  },
+  {
+    "objectID": "cv1.html#skills",
+    "href": "cv1.html#skills",
+    "title": "Curriculum Vitae",
+    "section": " Skills",
+    "text": "Skills\n\n\n\nProgramming Languages\n\n\nPython, R, Java, C++, SAS, MATLAB, SQL, HTML, JS, Node.js, React.js\n\n\n\n\nML & Data Analysis\n\n\nscikit-learn, TensorFlow, PyTorch, Pandas, Matplotlib, Seaborn, Gym, RLlib\n\n\n\n\nLLMs & NLP\n\n\nHugging Face Transformers, LangChain, RAG, Prompt Engineering\n\n\n\n\nHPC & Big Data\n\n\nHadoop, Hive, Spark, Kafka, Kinesis, SLURM, MPI, OpenMP\n\n\n\n\nSimulation & Modeling\n\n\nOpal-RT, OpenDSS (Power), Carla (Autonomous Driving)\n\n\n\n\nOptimization\n\n\nGurobi, Pyomo, BoTorch, Optuna, Hyperopt\n\n\n\n\nVisualization & GIS\n\n\nTableau, ArcGIS, Leaflet\n\n\n\n\nCloud & DevOps\n\n\nAWS (EC2, S3, Lambda), GCP, Docker, Kubernetes, Git, Terraform, Jenkins, CircleCI"
+  },
+  {
+    "objectID": "cv1.html#honors-awards",
+    "href": "cv1.html#honors-awards",
+    "title": "Curriculum Vitae",
+    "section": " Honors & Awards",
+    "text": "Honors & Awards\n\nSelected, Seventh Workshop on Autonomous Energy Systems @ NREL (2024)\nSelected, ByteBoost Workshop on Accelerating HPC Research Skills (2024)\nSelected, Oxford Machine Learning Summer School (OxML) (2022)\nExcellence Award, Database Optimization @ TCS\n2nd Place, BAJA SAE India (Safest Terrain Vehicle Category, National Level)"
+  },
+  {
+    "objectID": "cv1.html#service",
+    "href": "cv1.html#service",
+    "title": "Curriculum Vitae",
+    "section": " Service",
+    "text": "Service\n\nReviewer:\n\nIEEE Transactions on Industrial Informatics (2025)\nConference on Neural Information Processing Systems (Ethics)(2025)\nIEEE Transactions on Neural Networks and Learning Systems (2024)\nIEEE PES GM, Grid Edge & ISGT (2023, 2024)\n\nMock Interviewer: Supporting underrepresented minorities in tech.\nVolunteer, Prayaas India (BIT): NGO providing quality education to underprivileged children in slums and villages."
+  },
+  {
+    "objectID": "cv1.html#projects",
+    "href": "cv1.html#projects",
+    "title": "Curriculum Vitae",
+    "section": " Projects",
+    "text": "Projects\n\n\n\n\n\n\n   Fast Mixed‑Logit Estimation Fast estimation of mixed logit models with preference‑space utility.  \n   cbcTools Suite Designing choice‑based conjoint experiments and power and system analyses.  \n   LLM‑Powered Energy Optimizer Multi‑building energy optimization in CityLearn with LLM guidance.  \n\n\n 📁 Check My Projects"
+  },
+  {
+    "objectID": "others/Index2.html",
+    "href": "others/Index2.html",
+    "title": "Kundan Kumar",
+    "section": "",
+    "text": "Email\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     YouTube\n  \n  \n    \n     Substack\n  \n  \n    \n     Scholar\n  \n\n  \n  \nHello!\nI’m Kundan Kumar — a Ph.D. candidate and researcher building safe and trustworthy AI systems for real-world autonomous applications. My research integrates deep reinforcement learning (DRL), physics-informed AI, and safe control to create robust agents for smart energy systems, robotics, and autonomous vehicles.\nIn 2024, I worked as a Machine Learning Engineer Intern at the National Renewable Energy Laboratory (NREL), where I designed a Bayesian semi-supervised learning algorithm for phase identification on small, limited, and unreliable datasets. This work will be presented at the IEEE PES General Meeting 2025.\nI’m passionate about democratizing AI knowledge. I create educational content simplifying AI, ML, and statistics on Substack and YouTube.\nOutside of research, I enjoy cooking and skating. 🛼"
+  },
+  {
+    "objectID": "others/Index2.html#recently",
+    "href": "others/Index2.html#recently",
+    "title": "Kundan Kumar",
+    "section": "Recently …",
+    "text": "Recently …\n\n\nBlog\n\n\n\n\n\n\n\n\nResearch Scientist Interview Guide\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nTalks\n\n\n\n\n\n\n\n\n\n\nMy Dummy Talk\n\n\nLearning How to Show a Card\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nPublications\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nProjects\n\n\n\n\n\nNo matching items\n\n\nSee all →"
+  },
+  {
+    "objectID": "rpkg/research.html",
+    "href": "rpkg/research.html",
+    "title": "Research",
+    "section": "",
+    "text": "I aim to develop safe, interpretable, and adaptive AI systems for real-world cyber-physical environments that operate under uncertainty, constraints, and adversarial conditions. My research bridges the domains of machine learning, optimization, and control theory, with a strong emphasis on safety, robustness, and generalization.\nMy work centers around the following pillars:\n\nSafe & Trustworthy Reinforcement Learning: Designing agents that are robust to adversarial attacks, resilient to distributional shifts, and capable of safe exploration.\nPhysics-informed Deep Reinforcement Learning (DRL): Embedding physical laws and constraints into learning frameworks for stability, interpretability, and faster convergence.\nProbabilistic & Bayesian Modeling: Probabilistic & Bayesian Modeling: Capturing both epistemic and aleatoric uncertainties for reliable control in high-stakes, partially observable systems.\nLarge Language Models (LLMs) for autonomous reasoning: Leveraging large language models (LLMs) to enhance planning, explainability, and human-AI collaboration in control systems.\nVision-based simulation environments: Using platforms like CARLA and CityLearn to train agents in multimodal, visually rich, and interactive worlds.\n\nBy tightly integrating domain knowledge into learning frameworks, I aim to enable resilient, generalizable, and safe AI for critical applications including smart grids, autonomous systems, and intelligent infrastructure."
+  },
+  {
+    "objectID": "rpkg/research.html#research-vision",
+    "href": "rpkg/research.html#research-vision",
+    "title": "Research",
+    "section": "",
+    "text": "I aim to develop safe, interpretable, and adaptive AI systems for real-world cyber-physical environments that operate under uncertainty, constraints, and adversarial conditions. My research bridges the domains of machine learning, optimization, and control theory, with a strong emphasis on safety, robustness, and generalization.\nMy work centers around the following pillars:\n\nSafe & Trustworthy Reinforcement Learning: Designing agents that are robust to adversarial attacks, resilient to distributional shifts, and capable of safe exploration.\nPhysics-informed Deep Reinforcement Learning (DRL): Embedding physical laws and constraints into learning frameworks for stability, interpretability, and faster convergence.\nProbabilistic & Bayesian Modeling: Probabilistic & Bayesian Modeling: Capturing both epistemic and aleatoric uncertainties for reliable control in high-stakes, partially observable systems.\nLarge Language Models (LLMs) for autonomous reasoning: Leveraging large language models (LLMs) to enhance planning, explainability, and human-AI collaboration in control systems.\nVision-based simulation environments: Using platforms like CARLA and CityLearn to train agents in multimodal, visually rich, and interactive worlds.\n\nBy tightly integrating domain knowledge into learning frameworks, I aim to enable resilient, generalizable, and safe AI for critical applications including smart grids, autonomous systems, and intelligent infrastructure."
+  },
+  {
+    "objectID": "rpkg/research.html#research-highlights",
+    "href": "rpkg/research.html#research-highlights",
+    "title": "Research",
+    "section": "🌟 Research Highlights",
+    "text": "🌟 Research Highlights\n\n✅ Proposed the first Physics-Informed LSTM-PPO agent for volt-var control on 8500-node networks.\n📉 Achieved 98% reduction in voltage violations and 3× faster convergence in federated DRL.\n🧠 Developed one-shot transfer learning for control agents in complex topologies.\n🤖 Integrated LLM-guided planning into multi-building simulations via CityLearn.\n🔒 Built resilient DRL systems that withstand adversarial and distributional attacks."
+  },
+  {
+    "objectID": "rpkg/research.html#research-focus",
+    "href": "rpkg/research.html#research-focus",
+    "title": "Research",
+    "section": "My Research Focus Areas",
+    "text": "My Research Focus Areas\n\n\n\n\nDRL-based Control\n\n\n\n\n\nDRL for Volt-VAR\n\n\nDesign control agents for voltage regulation and reactive power optimization in smart distribution grids.\n\n\n\n\n\nPhysics-Informed Actor-Critic\n\n\nEmbed grid physics and control limits directly into the DRL learning loop for stable and efficient decisions.\n\n\n\n\n\nSim-to-Real Transfer\n\n\nTrain agents in simulated OpenDSS environments and deploy them on real-time OPAL-RT setups.\n\n\n\n\n\n\nSafe & Trustworthy RL\n\n\n\n\n\nRobust & Stable Learning\n\n\nDevelop agents that ensure system safety, robustness, and interpretability under uncertainty.\n\n\n\n\n\nUncertainty-Aware Policies\n\n\nQuantify epistemic and aleatoric uncertainty in high-stakes, partially observable settings.\n\n\n\n\n\nPhysics-Informed DRL\n\n\nIncorporate physical constraints into DRL agents to ensure safe and interpretable control.\n\n\n\n\n\nTransfer & Meta-Adaptation\n\n\n\n\n\nDomain Adaptation\n\n\nEnable agents to generalize across grids with different topologies, dynamics, and loads.\n\n\n\n\n\nMeta-RL for Efficiency\n\n\nLeverage meta-reasoning to accelerate learning in low-data, high-variance scenarios.\n\n\n\n\n\nVision-Simulation Integration\n\n\n\n\n\nPerception-Control Fusion\n\n\nUse CARLA and AirSim to train end-to-end systems in visual RL tasks with sensors.\n\n\n\n\n\nMulti-modal Representations\n\n\nCombine visual, state, and contextual features for better decision-making.\n\n\n\n\n\nLLM-Augmented Decision Systems\n\n\n\n\n\nLLM-Guided Control\n\n\nTranslate natural language into actionable policies for real-world environments."
+  },
+  {
+    "objectID": "rpkg/research.html#application-domains",
+    "href": "rpkg/research.html#application-domains",
+    "title": "Research",
+    "section": "Application Domains",
+    "text": "Application Domains\n\n\n\n\n\n\n\nDomain\nDescription\n\n\n\n\n⚡ Smart Energy Systems\nVolt-VAR control, DER coordination, and federated DRL for power grid stability\n\n\n🚘 Autonomous Systems\nSafe navigation, adaptive planning, and control in simulation and real-world environments\n\n\n🛡 Secure AI for Infrastructure\nResilience against cyber-attacks and adversarial scenarios in safety-critical systems"
+  },
+  {
+    "objectID": "rpkg/research.html#publications",
+    "href": "rpkg/research.html#publications",
+    "title": "Research",
+    "section": "Publications",
+    "text": "Publications\n\nJournal PapersConference Papers\n\n\n\nKundan Kumar, Gelli Ravikumar\nPhysics-based Deep Reinforcement Learning for Grid-Resilient Volt-VAR Control (Under Review)\nIEEE Transactions on Smart Grid, 2025\n Paper Code Poster \n\n\n\n\n\n\nKundan Kumar, Gelli Ravikumar\nTransfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids\nIEEE PES Grid Edge Technologies Conference & Exposition, 2025\n Paper Code Poster \nKundan Kumar, Aditya Akilesh Mantha, Gelli Ravikumar\nBayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control\nIEEE PES General Meeting, 2024\n Paper Code Poster \n\n\n\n\nKundan Kumar, Gelli Ravikumar\nDeep RL-based Volt-VAR Control and Attack Resiliency for DER-integrated Distribution Grids\nIEEE ISGT, 2024\n Paper Code Poster \nJK Francis, C Kumar, J Herrera-Gerena, Kundan Kumar, MJ Darr\nDeep Learning and Pattern-based Methodology for Multivariable Sensor Data Regression\nIEEE ICMLA, 2022\n Paper Code Poster \nKin Gwn Lore, Nicholas Sweet, Kundan Kumar, N Ahmed, S Sarkar\nDeep Value of Information Estimators for Collaborative Human-Machine Information Gathering\nACM/IEEE ICCPS, 2016\n Paper Code Poster \n\n\n\n\n Show More"
+  },
+  {
+    "objectID": "rpkg/research.html#ongoing-projects",
+    "href": "rpkg/research.html#ongoing-projects",
+    "title": "Research",
+    "section": "Ongoing Projects",
+    "text": "Ongoing Projects\n\nFederated DRL for Cyber-Resilient Volt-VAR Optimization\nDecentralized, communication-efficient control using LSTM-enhanced PPO agents across distributed DERs.\nOne-Shot Policy Transfer with Physics Priors\nTrain agents on small topologies and adapt to IEEE 123-bus, 8500-node networks in a few iterations.\nLLM-Guided Autonomous Planning for Smart Buildings\nConvert user prompts to interpretable control policies using LLMs (OpenAI, Claude) in CityLearn environments."
+  },
+  {
+    "objectID": "rpkg/research1.html",
+    "href": "rpkg/research1.html",
+    "title": "Conference Papers",
+    "section": "",
+    "text": "&lt;div class=\"paper-card\"&gt;\n  &lt;strong&gt;Kundan Kumar&lt;/strong&gt;, Gelli Ravikumar&lt;br&gt;\n  &lt;em&gt;Transfer Learning Enhanced Deep Reinforcement Learning for Volt–Var Control in Smart Grids&lt;/em&gt;&lt;br&gt;\n  &lt;strong&gt;IEEE PES Grid Edge Technologies Conference & Exposition, 2025&lt;/strong&gt;\n  &lt;div class=\"paper-links\"&gt;\n    &lt;a class=\"btn btn-primary btn-sm\" href=\"https://arxiv.org/abs/2202.13541\"&gt;Paper&lt;/a&gt;\n    &lt;a class=\"btn btn-success btn-sm\" href=\"#\"&gt;Code&lt;/a&gt;\n    &lt;a class=\"btn btn-info btn-sm\" href=\"#\"&gt;Poster&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"paper-card\"&gt;\n  &lt;strong&gt;Kundan Kumar&lt;/strong&gt;, Aditya Akilesh Mantha, Gelli Ravikumar&lt;br&gt;\n  &lt;em&gt;Bayesian Optimization for Deep Reinforcement Learning in Robust Volt–Var Control&lt;/em&gt;&lt;br&gt;\n  &lt;strong&gt;IEEE PES General Meeting, 2024&lt;/strong&gt;\n  &lt;div class=\"paper-links\"&gt;\n    &lt;a class=\"btn btn-primary btn-sm\" href=\"https://arxiv.org/abs/2202.13541\"&gt;Paper&lt;/a&gt;\n    &lt;a class=\"btn btn-success btn-sm\" href=\"#\"&gt;Code&lt;/a&gt;\n    &lt;a class=\"btn btn-info btn-sm\" href=\"#\"&gt;Poster&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"paper-card\"&gt;\n  &lt;strong&gt;Kundan Kumar&lt;/strong&gt;, Gelli Ravikumar&lt;br&gt;\n  &lt;em&gt;Deep RL–based Volt–VAR Control and Attack Resiliency for DER–integrated Distribution Grids&lt;/em&gt;&lt;br&gt;\n  &lt;strong&gt;IEEE ISGT, 2024&lt;/strong&gt;\n  &lt;div class=\"paper-links\"&gt;\n    &lt;a class=\"btn btn-primary btn-sm\" href=\"https://ieeexplore.ieee.org/document/10454163\"&gt;Paper&lt;/a&gt;\n    &lt;a class=\"btn btn-success btn-sm\" href=\"#\"&gt;Code&lt;/a&gt;\n    &lt;a class=\"btn btn-info btn-sm\" href=\"#\"&gt;Poster&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n\n&lt;button onclick=\"showPage(1)\"&gt;1&lt;/button&gt;\n&lt;button onclick=\"showPage(2)\"&gt;2&lt;/button&gt;\n&lt;button onclick=\"showPage(3)\"&gt;3&lt;/button&gt;"
+  },
+  {
+    "objectID": "rpkg/research1.html#research-vision",
+    "href": "rpkg/research1.html#research-vision",
+    "title": "Research",
+    "section": "",
+    "text": "I aim to develop safe, interpretable, and adaptive AI systems for real-world cyber-physical environments that operate under uncertainty, constraints, and adversarial conditions. My research bridges the domains of machine learning, optimization, and control theory, with a strong emphasis on safety, robustness, and generalization.\nMy work centers around the following pillars:\n\nSafe & Trustworthy Reinforcement Learning: Designing agents that are robust to adversarial attacks, resilient to distributional shifts, and capable of safe exploration.\nPhysics-informed Deep Reinforcement Learning (DRL): Embedding physical laws and constraints into learning frameworks for stability, interpretability, and faster convergence.\nProbabilistic & Bayesian Modeling: Capturing both epistemic and aleatoric uncertainties for reliable control in high-stakes, partially observable systems.\nLarge Language Models (LLMs) for autonomous reasoning: Leveraging large language models (LLMs) to enhance planning, explainability, and human-AI collaboration in control systems.\nVision-based simulation environments: Using platforms like CARLA and CityLearn to train agents in multimodal, visually rich, and interactive worlds.\n\nBy tightly integrating domain knowledge into learning frameworks, I aim to enable resilient, generalizable, and safe AI for critical applications including smart grids, autonomous systems, and intelligent infrastructure."
+  },
+  {
+    "objectID": "rpkg/research1.html#publications",
+    "href": "rpkg/research1.html#publications",
+    "title": "Research",
+    "section": "📚 Publications",
+    "text": "📚 Publications\n\nConference Papers\n\n\n\n\n&lt;strong&gt;Kundan Kumar&lt;/strong&gt;, Gelli Ravikumar  \n&lt;br&gt;&lt;em&gt;Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids&lt;/em&gt;  \n&lt;br&gt;&lt;strong&gt;IEEE PES Grid Edge Technologies Conference & Exposition, 2025&lt;/strong&gt;\n&lt;div class=\"paper-links\"&gt;\n  &lt;a class=\"btn btn-primary btn-sm\" href=\"https://arxiv.org/abs/2202.13541\"&gt;Paper&lt;/a&gt;\n  &lt;a class=\"btn btn-success btn-sm\" href=\"#\"&gt;Code&lt;/a&gt;\n  &lt;a class=\"btn btn-info btn-sm\" href=\"#\"&gt;Poster&lt;/a&gt;\n&lt;/div&gt;\n\n\n&lt;strong&gt;Kundan Kumar&lt;/strong&gt;, Aditya Akilesh Mantha, Gelli Ravikumar  \n&lt;br&gt;&lt;em&gt;Bayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control&lt;/em&gt;  \n&lt;br&gt;&lt;strong&gt;IEEE PES General Meeting, 2024&lt;/strong&gt;\n&lt;div class=\"paper-links\"&gt;\n  &lt;a class=\"btn btn-primary btn-sm\" href=\"https://arxiv.org/abs/2202.13541\"&gt;Paper&lt;/a&gt;\n  &lt;a class=\"btn btn-success btn-sm\" href=\"#\"&gt;Code&lt;/a&gt;\n  &lt;a class=\"btn btn-info btn-sm\" href=\"#\"&gt;Poster&lt;/a&gt;\n&lt;/div&gt;\n\n\n&lt;strong&gt;Kundan Kumar&lt;/strong&gt;, Gelli Ravikumar  \n&lt;br&gt;&lt;em&gt;Deep RL-based Volt-VAR Control and Attack Resiliency for DER-integrated Distribution Grids&lt;/em&gt;  \n&lt;br&gt;&lt;strong&gt;IEEE ISGT, 2024&lt;/strong&gt;\n&lt;div class=\"paper-links\"&gt;\n  &lt;a class=\"btn btn-primary btn-sm\" href=\"https://ieeexplore.ieee.org/document/10454163\"&gt;Paper&lt;/a&gt;\n  &lt;a class=\"btn btn-success btn-sm\" href=\"#\"&gt;Code&lt;/a&gt;\n  &lt;a class=\"btn btn-info btn-sm\" href=\"#\"&gt;Poster&lt;/a&gt;\n&lt;/div&gt;\n\n\n\n\n\nJK Francis, C Kumar, J Herrera-Gerena, &lt;strong&gt;Kundan Kumar&lt;/strong&gt;, MJ Darr  \n&lt;br&gt;&lt;em&gt;Deep Learning and Pattern-based Methodology for Multivariable Sensor Data Regression&lt;/em&gt;  \n&lt;br&gt;&lt;strong&gt;IEEE ICMLA, 2022&lt;/strong&gt;\n&lt;div class=\"paper-links\"&gt;\n  &lt;a class=\"btn btn-primary btn-sm\" href=\"https://ieeexplore.ieee.org/document/10069730\"&gt;Paper&lt;/a&gt;\n  &lt;a class=\"btn btn-success btn-sm\" href=\"#\"&gt;Code&lt;/a&gt;\n  &lt;a class=\"btn btn-info btn-sm\" href=\"#\"&gt;Poster&lt;/a&gt;\n&lt;/div&gt;\n\n\nKin Gwn Lore, Nicholas Sweet, &lt;strong&gt;Kundan Kumar&lt;/strong&gt;, N Ahmed, S Sarkar  \n&lt;br&gt;&lt;em&gt;Deep Value of Information Estimators for Collaborative Human-Machine Information Gathering&lt;/em&gt;  \n&lt;br&gt;&lt;strong&gt;ACM/IEEE ICCPS, 2016&lt;/strong&gt;\n&lt;div class=\"paper-links\"&gt;\n  &lt;a class=\"btn btn-primary btn-sm\" href=\"https://arxiv.org/abs/1512.07592\"&gt;Paper&lt;/a&gt;\n  &lt;a class=\"btn btn-success btn-sm\" href=\"#\"&gt;Code&lt;/a&gt;\n  &lt;a class=\"btn btn-info btn-sm\" href=\"#\"&gt;Poster&lt;/a&gt;\n&lt;/div&gt;\n\n\n\n\n1 2"
+  },
+  {
+    "objectID": "rpkg/research1.html#conference-papers",
+    "href": "rpkg/research1.html#conference-papers",
+    "title": "Conference Papers",
+    "section": "",
+    "text": "&lt;div class=\"paper-card\"&gt;\n  &lt;strong&gt;Kundan Kumar&lt;/strong&gt;, Gelli Ravikumar&lt;br&gt;\n  &lt;em&gt;Transfer Learning Enhanced Deep Reinforcement Learning for Volt–Var Control in Smart Grids&lt;/em&gt;&lt;br&gt;\n  &lt;strong&gt;IEEE PES Grid Edge Technologies Conference & Exposition, 2025&lt;/strong&gt;\n  &lt;div class=\"paper-links\"&gt;\n    &lt;a class=\"btn btn-primary btn-sm\" href=\"https://arxiv.org/abs/2202.13541\"&gt;Paper&lt;/a&gt;\n    &lt;a class=\"btn btn-success btn-sm\" href=\"#\"&gt;Code&lt;/a&gt;\n    &lt;a class=\"btn btn-info btn-sm\" href=\"#\"&gt;Poster&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"paper-card\"&gt;\n  &lt;strong&gt;Kundan Kumar&lt;/strong&gt;, Aditya Akilesh Mantha, Gelli Ravikumar&lt;br&gt;\n  &lt;em&gt;Bayesian Optimization for Deep Reinforcement Learning in Robust Volt–Var Control&lt;/em&gt;&lt;br&gt;\n  &lt;strong&gt;IEEE PES General Meeting, 2024&lt;/strong&gt;\n  &lt;div class=\"paper-links\"&gt;\n    &lt;a class=\"btn btn-primary btn-sm\" href=\"https://arxiv.org/abs/2202.13541\"&gt;Paper&lt;/a&gt;\n    &lt;a class=\"btn btn-success btn-sm\" href=\"#\"&gt;Code&lt;/a&gt;\n    &lt;a class=\"btn btn-info btn-sm\" href=\"#\"&gt;Poster&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"paper-card\"&gt;\n  &lt;strong&gt;Kundan Kumar&lt;/strong&gt;, Gelli Ravikumar&lt;br&gt;\n  &lt;em&gt;Deep RL–based Volt–VAR Control and Attack Resiliency for DER–integrated Distribution Grids&lt;/em&gt;&lt;br&gt;\n  &lt;strong&gt;IEEE ISGT, 2024&lt;/strong&gt;\n  &lt;div class=\"paper-links\"&gt;\n    &lt;a class=\"btn btn-primary btn-sm\" href=\"https://ieeexplore.ieee.org/document/10454163\"&gt;Paper&lt;/a&gt;\n    &lt;a class=\"btn btn-success btn-sm\" href=\"#\"&gt;Code&lt;/a&gt;\n    &lt;a class=\"btn btn-info btn-sm\" href=\"#\"&gt;Poster&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n\n&lt;button onclick=\"showPage(1)\"&gt;1&lt;/button&gt;\n&lt;button onclick=\"showPage(2)\"&gt;2&lt;/button&gt;\n&lt;button onclick=\"showPage(3)\"&gt;3&lt;/button&gt;"
   }
 ]

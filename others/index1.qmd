@@ -105,6 +105,21 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 
 ---
 
+<!--
+## 🧬 Research Summary
+
+I focus on developing intelligent, secure, and adaptable AI systems for next-generation cyber-physical infrastructure. My work spans:
+
+- 🔁 **Physics-informed DRL**
+- 🧠 **LLM-guided autonomous reasoning**
+- 🔍 **Uncertainty-aware control**
+- 🤖 **Robotics and vision-based decision systems**
+
+I design agents that embed physical laws, constraints, and uncertainties into their learning loop, enabling them to generalize across varying system topologies and environmental dynamics. I also explore transfer/meta-learning, adversarial robustness, and real-time control.
+
+---
+
+-->
 
 ### Other Research Interests
 
@@ -132,6 +147,14 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 
 </div>
 
+<!--
+## 🔬 Technical Interests
+
+- **Computer Vision:** Object detection, semantic segmentation, sensor fusion
+- **Software Systems:** Simulation + control co-design, OpenDSS integration
+- **Statistical ML:** Bayesian modeling, probabilistic inference
+- **Robotics:** Multi-modal reasoning, safe human-robot interaction
+-->
 
 ---
 
@@ -170,6 +193,42 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 ::::
 
 ---
+<!--
+### 📰 News Highlights
+
+<table class="news-table">
+
+  <tr>
+    <td><strong>[Jan 2025]</strong></td>
+    <td>Paper accepted at <a href="https://pes-gridedge.org/">IEEE Grid Edge Technologies 2025</a>.</td>
+  </tr>
+  
+  <tr>
+    <td><strong>[Jan 2025]</strong></td>
+    <td>Paper accepted at <a href="https://pes-gridedge.org/">IEEE Grid Edge Technologies 2025</a>.</td>
+  </tr>
+  <tr>
+    <td><strong>[Aug 2024]</strong></td>
+    <td>Workshop accepted at <a href="https://www.psc.edu/">Pittsburgh Supercomputing Center</a>.</td>
+  </tr>
+  <tr>
+    <td><strong>[Jul 2024]</strong></td>
+    <td>Bayesian DRL paper accepted to <a href="https://pes-gm.org/">IEEE PES GM 2024</a>.</td>
+  </tr>
+  <tr>
+    <td><strong>[Nov 2023]</strong></td>
+    <td>DRL + Attack Resilience paper accepted to <a href="https://ieee-isgt.org/">IEEE ISGT 2024</a>.</td>
+  </tr>
+  <tr>
+    <td><strong>[Aug 2022]</strong></td>
+    <td>Completed ML tracks at <a href="https://www.oxfordml.school/">Oxford Machine Learning Summer School</a>.</td>
+  </tr>
+  <tr>
+    <td><strong>[Apr 2022]</strong></td>
+    <td>PBMR-DP paper accepted at <a href="https://www.icmla-conference.org/icmla22/">ICMLA 2022</a>.</td>
+  </tr>
+</table>
+-->
 
 <h4 align="center">News Highlights</h4>
 
@@ -193,4 +252,22 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
     <td>Our paper on <a href="https://ieeexplore.ieee.org/document/10887439">Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids</a> has been accepted to <a href="https://pes-gridedge.org/">IEEE PES Grid Edge Technologies Conference & Exposition 2025</a>.</td>
   </tr>
 
+ 
+
+<!--
+  <tr>
+    <td valign="top"><strong>[Nov 2023]</strong></td>
+    <td>Our paper <a href="https://ieeexplore.ieee.org/document/10454163">Deep RL-based Volt-VAR Control and Attack Resiliency for DER-Integrated Distribution Grids</a> was accepted to <a href="https://ieee-isgt.org/">IEEE ISGT 2024</a>.</td>
+  </tr>
+
+  <tr>
+    <td valign="top"><strong>[Aug 2022]</strong></td>
+    <td>Participated in the <a href="https://www.oxfordml.school/">Oxford Machine Learning Summer School</a>, completing tracks in MLx Health and MLx Finance.</td>
+  </tr>
+
+  <tr>
+    <td valign="top"><strong>[Apr 2022]</strong></td>
+    <td>Our paper on <a href="https://arxiv.org/pdf/2202.13541.pdf">Pattern-Based Multivariate Regression using Deep Learning (PBMR-DP)</a> was accepted to <a href="https://www.icmla-conference.org/icmla22/">ICMLA 2022</a>.</td>
+  </tr>
+-->
 </table>

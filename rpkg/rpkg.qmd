@@ -21,7 +21,7 @@ By tightly integrating domain knowledge into learning frameworks, I design agent
 
 ---
 
-## 🧠 Research Themes {#research-themes}
+## 🧠 ## 🧠 Research Focus Areas {#research-focus}
 
 ### Safe & Trustworthy Reinforcement Learning {#safe-rl}
 
@@ -126,7 +126,7 @@ By tightly integrating domain knowledge into learning frameworks, I design agent
 
 ---
 
-## 📚 Selected Publications {#publications}
+## 📚 Publications {#publications}
 
 ::: {.panel-tabset}
 
@@ -194,7 +194,7 @@ By tightly integrating domain knowledge into learning frameworks, I design agent
 
 ---
 
-## 🧪 Ongoing Projects {#ongoing-projects}
+## 🔄 Ongoing Projects {#ongoing-projects}
 
 - **Federated DRL for Cyber-Resilient Volt-VAR Optimization**  
   Exploring decentralized, communication-efficient coordination among DERs using LSTM-enhanced PPO agents.

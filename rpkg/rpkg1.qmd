@@ -117,3 +117,12 @@ Application domains include smart energy systems, autonomous driving, robotics, 
 <a class="btn btn-info" style="font-size: 0.75rem; padding: 3px 8px;" href="#">Poster</a>
 </span>
 ---
+
+<!--
+## 🏅 Awards & Recognition {#awards}
+
+- IEEE PES-GM 2024 Travel Grant Recipient  
+- Research Excellence Award – Iowa State University  
+- Best Poster Award – Grid Edge Technologies 2025  
+- NREL Outstanding Internship Recognition  
+-->

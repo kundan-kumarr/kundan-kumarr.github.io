@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./misc/info/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,6 +68,121 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-blog .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-subtitle','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 18,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-blog'] = new List('listing-blog', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-talk .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-subtitle','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 18,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-talk'] = new List('listing-talk', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-publication .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-publication'] = new List('listing-publication', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-project .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-subtitle','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-project'] = new List('listing-project', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
 
 <script type="text/javascript">
@@ -77,10 +194,39 @@ gtag('config', '', { 'anonymize_ip': true});
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -168,45 +314,40 @@ gtag('config', '', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 
 
 
-<!-- 
-  - icon: twitter
-      text: Twitter
-      href: http://twitter.com/kundan7kumar/
--->
-<div class="quarto-about-jolla">
-  <img src="misc/info/photo.png" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-trestles column-page">
+  <div class="about-entity">
+    <img src="misc/info/photo.png" class="about-image
+  round " style="height: 12em; width: 12em;">
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Kundan Kumar</h1>
+<p class="subtitle lead">Research Scientist and GenAI Data Scientist</p>
 </div>
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
   </div>
-</header><div id="hero-heading">
-</div> 
-  <hr class="about-sep">
-   <div class="about-links">
+</header>
+    <div class="about-links">
   <a href="mailto:cs.kundann@gmail.com" class="about-link" rel="" target="">
     <i class="bi bi-mailbox"></i>
-     <span class="about-link-text">Gmail</span>
-  </a>
-  <a href="http://github.com/kundan-kumarr" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
+     <span class="about-link-text">Email</span>
   </a>
   <a href="https://www.linkedin.com/in/kundan-kumarr/" class="about-link" rel="" target="">
     <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">Linkedin</span>
+     <span class="about-link-text">LinkedIn</span>
+  </a>
+  <a href="http://github.com/kundan-kumarr/" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">GitHub</span>
   </a>
   <a href="https://www.youtube.com/@AIAgentic-007/" class="about-link" rel="" target="">
     <i class="bi bi-youtube"></i>
@@ -221,36 +362,213 @@ gtag('config', '', { 'anonymize_ip': true});
      <span class="about-link-text">Scholar</span>
   </a>
 </div>
+  </div>
+  <div class="about-contents"><div id="hero-heading">
+<p>Hi! I’m <strong>Kundan Kumar</strong>, a Ph.D.&nbsp;candidate and researcher focused on building <strong>intelligent, secure, and adaptable AI systems</strong> for next-generation cyber-physical infrastructure. My work bridges <strong>deep reinforcement learning (DRL)</strong>, <strong>multi-agent systems</strong>, <strong>large language models (LLMs)</strong>, <strong>safe and explainable AI</strong>, and <strong>computer vision</strong>, with real-world applications in <strong>smart grids</strong>, <strong>autonomous vehicles</strong>, and <strong>critical infrastructure</strong>.</p>
+<p>My Ph.D.&nbsp;research centers on <strong>physics-informed and safety-critical DRL frameworks</strong> that embed domain knowledge, safety constraints, and uncertainty into the learning process—enabling agents to make robust and interpretable decisions in dynamic, complex environments. My research within DRL focuses on techniques such as <strong>transfer learning</strong>, <strong>uncertainty quantification</strong>, and <strong>adversarial resilience</strong> to improve generalization, safety, and reliability across diverse tasks and environments.</p>
+<p>I also develop <strong>LLM-integrated simulation frameworks</strong> for robotics and autonomous systems, combining <strong>vision-based perception</strong>, <strong>trajectory planning</strong>, and <strong>natural language reasoning</strong> to support high-level control and human-AI collaboration.</p>
+<p>Beyond research, I enjoy sharing my insights through educational content on <a href="https://neuravp.substack.com/">Substack</a> and <a href="https://www.youtube.com/@AIAgentic-007/">YouTube</a>. Outside of work, I love <strong>cooking</strong> and <strong>skating</strong>. 🛼</p>
+</div></div>
 </div>
 
-<!--
-I am currently pursuing a Ph.D. in [Computer Science](https://www.cs.iastate.edu/) with a minor in [Statistics](https://www.stat.iastate.edu) at [Iowa State University](https://www.iastate.edu/), under the guidance of [Dr. Ravikumar Gelli](https://www.engineering.iastate.edu/people/profile/gelli/) and [Dr. Christopher Quinn](https://www.cs.iastate.edu/people/christopher-quinn). My research focuses on developing intelligent, secure, and adaptable AI systems for smart energy applications. I explore a broad range of methodologies, including **single-agent and multi-agent reinforcement learning (DRL)**, **Large Language Models (LLMs)**, **graphical models**, and **adversarial robustness**, to enhance the control, resilience, and adaptability of cyber-physical infrastructure.
-
-At the core of my work is the application of **physics-informed reinforcement learning**, where domain-specific constraints are embedded directly into the learning process to ensure safety, interpretability, and compliance with real-world systems. I design and evaluate AI systems capable of operating under uncertainty, detecting adversarial behavior, and making reliable decisions in dynamic environments. My research on adversarial robustness aims to strengthen the security of AI agents against manipulation, supporting safe deployment in high-stakes applications.
-
-To support cross-domain generalization, I develop **transfer learning techniques** that allow reinforcement learning agents to adapt across diverse topologies, environmental dynamics, and operational conditions. I also lead the design of a **Python-based control and simulation framework**, integrating real-time co-simulation platforms like **OpenDSS**, enabling rapid development, testing, and validation of intelligent control algorithms in realistic smart energy settings.
-
-Beyond smart energy systems, I maintain active research interests in **probabilistic reasoning**, **statistical machine learning**, and **robotics**, as well as the integration of **LLMs** with simulation and control frameworks. I am particularly excited about the potential of LLMs to improve human-AI interaction, enhance contextual awareness, and drive more interpretable and adaptive behavior in intelligent systems.
--->
-<p>I am a researcher focused on developing intelligent, secure, and adaptable AI systems for next-generation cyber-physical infrastructure. My work spans <strong>deep reinforcement learning (DRL)</strong>, <strong>multi-agent systems</strong>, <strong>large language models (LLMs)</strong>, <strong>safe and explainable AI</strong>, <strong>computer vision</strong>, and <strong>robotics</strong>, with real-world applications in smart energy systems, autonomous vehicles, and critical infrastructure.</p>
-<p>The core of my Ph.D.&nbsp;research centers on developing <strong>physics-informed and safety-critical deep reinforcement learning (DRL) frameworks</strong> that embed domain knowledge and system constraints directly into the learning process. By incorporating physical laws, safety boundaries, and system dynamics into policy optimization, I design agents capable of making robust, interpretable, and reliable decisions in dynamic, high-stakes environments. My work addresses challenges such as <strong>uncertainty quantification</strong>, <strong>adversarial resilience</strong>, and <strong>safe exploration</strong>, while enabling agents to generalize across diverse network topologies, environmental conditions, and task distributions through advanced <strong>transfer learning</strong> and <strong>meta-learning</strong> techniques.</p>
-<p>I also leverage the <strong>CARLA simulator</strong> for autonomous driving research, combining computer vision, trajectory planning, and policy learning in complex traffic environments. My work integrates <strong>vision-based perception models</strong> for object detection, semantic segmentation, and sensor fusion, enabling robust situational awareness for autonomous agents. In parallel, I integrate <strong>LLM-based reasoning</strong> into simulation and control frameworks to support high-level planning, adaptive decision-making, and interactive human-AI collaboration for robotics and safety-critical control.</p>
-<p>Beyond autonomous and energy systems, my broader research interests include <strong>probabilistic modeling</strong>, <strong>statistical machine learning</strong>, and developing AI systems that are robust, trustworthy, and deployable in real-world complex environments.</p>
-<p><strong>Other Research Interests:</strong></p>
-<ul>
-<li><strong>Computer Vision:</strong> Visual perception, object detection, semantic segmentation, sensor fusion for autonomous systems.</li>
-<li><strong>Software Systems:</strong> Scalable software engineering, simulation framework development, real-time systems integration.</li>
-<li><strong>Statistical Machine Learning:</strong> Uncertainty quantification, probabilistic modeling, data-driven inference in dynamic environments.</li>
-<li><strong>Robotics:</strong> Learning-based control, adaptive planning, safe human-robot interaction, multi-modal robotic systems.</li>
-</ul>
 <hr>
-<h3 align="center">
-News
-</h3>
+<!--
+## 🧬 Research Summary
+
+I focus on developing intelligent, secure, and adaptable AI systems for next-generation cyber-physical infrastructure. My work spans:
+
+- 🔁 **Physics-informed DRL**
+- 🧠 **LLM-guided autonomous reasoning**
+- 🔍 **Uncertainty-aware control**
+- 🤖 **Robotics and vision-based decision systems**
+
+I design agents that embed physical laws, constraints, and uncertainties into their learning loop, enabling them to generalize across varying system topologies and environmental dynamics. I also explore transfer/meta-learning, adversarial robustness, and real-time control.
+
+---
+
+-->
+<section id="other-research-interests" class="level3">
+<h3 data-anchor-id="other-research-interests">Other Research Interests</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+<!-- Computer Vision -->
+<div style="border: 1px solid #ddd; border-radius: 12px; padding: 1.2rem; background: #fff; box-shadow: 0 1px 5px rgba(0,0,0,0.05);">
+<h4 style="margin-bottom: 0.5rem;">
+Computer Vision
+</h4>
+<p style="margin: 0;">
+Visual perception, object detection, semantic segmentation, and sensor fusion for autonomous systems.
+</p>
+</div>
+<!-- Statistical Machine Learning -->
+<div style="border: 1px solid #ddd; border-radius: 12px; padding: 1.2rem; background: #fff; box-shadow: 0 1px 5px rgba(0,0,0,0.05);">
+<h4 style="margin-bottom: 0.5rem;">
+Statistical ML
+</h4>
+<p style="margin: 0;">
+Uncertainty quantification, probabilistic modeling, and data-driven inference in dynamic environments.
+</p>
+</div>
+<!-- Self-Driving Systems -->
+<div style="border: 1px solid #ddd; border-radius: 12px; padding: 1.2rem; background: #fff; box-shadow: 0 1px 5px rgba(0,0,0,0.05);">
+<h4 style="margin-bottom: 0.5rem;">
+Self-Driving Systems
+</h4>
+<p style="margin: 0;">
+Learning-based control, trajectory planning, vision-based perception, and sensor fusion in autonomous driving environments.
+</p>
+</div>
+</div>
+<!--
+## 🔬 Technical Interests
+
+- **Computer Vision:** Object detection, semantic segmentation, sensor fusion
+- **Software Systems:** Simulation + control co-design, OpenDSS integration
+- **Statistical ML:** Bayesian modeling, probabilistic inference
+- **Robotics:** Multi-modal reasoning, safe human-robot interaction
+-->
+<hr>
+</section>
+<section id="explore-my-work" class="level3">
+<h3 data-anchor-id="explore-my-work">Explore My Work</h3>
+<div class="grid">
+<section id="blog" class="level4 g-col-3">
+<h4 data-anchor-id="blog">Blog</h4>
+<div id="listing-blog" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-1">
+<div class="g-col-1" data-index="0" data-categories="RGF0YSUyMHNjaWVuY2UlMkNJbnRlcnZpZXclMjBHdWlkZQ==" data-listing-date-sort="1751518800000" data-listing-file-modified-sort="1752084126566" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="377">
+<a href="./blog/talks/technotes_20250703_research_guide/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 200;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Research Scientist Interview Guide
+</h5>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<p><a href="./blog/" class="about-links subtitle">See all →</a></p>
+</section>
+<section id="talks" class="level4 g-col-3">
+<h4 data-anchor-id="talks">Talks</h4>
+<div id="listing-talk" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-1">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1752555600000" data-listing-file-modified-sort="1752617388457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="16">
+<a href="./talks/dummy_talk/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./talks/dummy_talk/talk_image.png" class="thumbnail-image card-img" style="height: 200;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+My Dummy Talk
+</h5>
+<div class="card-subtitle listing-subtitle">
+Learning How to Show a Card
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<p><a href="./talks/" class="about-links subtitle">See all →</a></p>
+</section>
+<section id="publications" class="level4 g-col-3">
+<h4 data-anchor-id="publications">Publications</h4>
+<div id="listing-publication" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-1">
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<p><a href="./publication/" class="about-links subtitle">See all →</a></p>
+</section>
+<section id="projects" class="level4 g-col-3">
+<h4 data-anchor-id="projects">Projects</h4>
+<div id="listing-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-1">
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<p><a href="./project/" class="about-links subtitle">See all →</a></p>
+</section>
+</div>
+<hr>
+<!--
+### 📰 News Highlights
+
+
+<table class="news-table caption-top" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td><strong>[Jan 2025]</strong></td>
+<td>Paper accepted at <a href="https://pes-gridedge.org/">IEEE Grid Edge Technologies 2025</a>.</td>
+</tr>
+<tr class="even">
+<td><strong>[Jan 2025]</strong></td>
+<td>Paper accepted at <a href="https://pes-gridedge.org/">IEEE Grid Edge Technologies 2025</a>.</td>
+</tr>
+<tr class="odd">
+<td><strong>[Aug 2024]</strong></td>
+<td>Workshop accepted at <a href="https://www.psc.edu/">Pittsburgh Supercomputing Center</a>.</td>
+</tr>
+<tr class="even">
+<td><strong>[Jul 2024]</strong></td>
+<td>Bayesian DRL paper accepted to <a href="https://pes-gm.org/">IEEE PES GM 2024</a>.</td>
+</tr>
+<tr class="odd">
+<td><strong>[Nov 2023]</strong></td>
+<td>DRL + Attack Resilience paper accepted to <a href="https://ieee-isgt.org/">IEEE ISGT 2024</a>.</td>
+</tr>
+<tr class="even">
+<td><strong>[Aug 2022]</strong></td>
+<td>Completed ML tracks at <a href="https://www.oxfordml.school/">Oxford Machine Learning Summer School</a>.</td>
+</tr>
+<tr class="odd">
+<td><strong>[Apr 2022]</strong></td>
+<td>PBMR-DP paper accepted at <a href="https://www.icmla-conference.org/icmla22/">ICMLA 2022</a>.</td>
+</tr>
+</tbody>
+</table>
+
+-->
+<h4 align="center">
+News Highlights
+</h4>
 <table class="news-table">
 <colgroup><col width="15%">
 <col width="85%">
 </colgroup><tbody><tr>
+<td valign="top">
+<strong>[Jul 2025]</strong>
+</td>
+<td>
+Selected for the <a href="https://sites.google.com/cohere.com/coherelabs-community/community-programs/summer-school">Cohere Machine Learning Summer School</a>, hosted by Cohere Labs.
+</td>
+</tr>
+<tr>
+<td valign="top">
+<strong>[Mar 2025]</strong>
+</td>
+<td>
+Our paper on <a href="">Advanced Semi-Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems</a> has been accepted to <a href="https://pes-gm.org/">IEEE PES General Meeting 2025</a>.
+</td>
+</tr>
+<tr>
 <td valign="top">
 <strong>[Jan 2025]</strong>
 </td>
@@ -258,86 +576,28 @@ News
 Our paper on <a href="https://ieeexplore.ieee.org/document/10887439">Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids</a> has been accepted to <a href="https://pes-gridedge.org/">IEEE PES Grid Edge Technologies Conference &amp; Exposition 2025</a>.
 </td>
 </tr>
-<tr>
-<td valign="top">
-<strong>[Aug 2024]</strong>
-</td>
-<td>
-Our paper on <a href="#">Workshop for High Performance Computing</a> has been accepted at <a href="https://www.psc.edu/">Pittsburgh Supercomputing Center 2024</a>.
-</td>
-</tr>
-<tr>
-<td valign="top">
-<strong>[Jul 2024]</strong>
-</td>
-<td>
-Our paper on <a href="https://ieeexplore.ieee.org/document/10688889">Bayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control</a> has been accepted to <a href="https://pes-gm.org/">IEEE PES General Meeting 2024</a>.
-</td>
-</tr>
-<tr>
-<td valign="top">
-<strong>[Nov 2023]</strong>
-</td>
-<td>
-Our paper <a href="https://ieeexplore.ieee.org/document/10454163">Deep RL-based Volt-VAR Control and Attack Resiliency for DER-Integrated Distribution Grids</a> was accepted to <a href="https://ieee-isgt.org/">IEEE ISGT 2024</a>.
-</td>
-</tr>
-<tr>
-<td valign="top">
-<strong>[Aug 2022]</strong>
-</td>
-<td>
-Participated in the <a href="https://www.oxfordml.school/">Oxford Machine Learning Summer School</a>, completing tracks in MLx Health and MLx Finance.
-</td>
-</tr>
-<tr>
-<td valign="top">
-<strong>[Apr 2022]</strong>
-</td>
-<td>
-Our paper on <a href="https://arxiv.org/pdf/2202.13541.pdf">Pattern-Based Multivariate Regression using Deep Learning (PBMR-DP)</a> was accepted to <a href="https://www.icmla-conference.org/icmla22/">ICMLA 2022</a>.
-</td>
-</tr>
-</tbody></table>
-<hr>
 <!--
-<h3 align="center">Affiliations</h3>
+  <tr>
+    <td valign="top"><strong>[Nov 2023]</strong></td>
+    <td>Our paper <a href="https://ieeexplore.ieee.org/document/10454163">Deep RL-based Volt-VAR Control and Attack Resiliency for DER-Integrated Distribution Grids</a> was accepted to <a href="https://ieee-isgt.org/">IEEE ISGT 2024</a>.</td>
+  </tr>
 
+  <tr>
+    <td valign="top"><strong>[Aug 2022]</strong></td>
+    <td>Participated in the <a href="https://www.oxfordml.school/">Oxford Machine Learning Summer School</a>, completing tracks in MLx Health and MLx Finance.</td>
+  </tr>
 
-<table class="affl-pic caption-top" data-quarto-postprocess="true" data-align="center">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: center; vertical-align: middle;"><a href="https://www.iastate.edu/"><img src="./images/ISU.png" width="100" height="115" /></a></td>
-<td style="text-align: center; vertical-align: middle;"><a href="https://www.oxfordml.school/"><img src="./images/oxml1.png" width="100" height="115" /></a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Iowa State University<br />
-(2020–Present)</td>
-<td style="text-align: center;">Oxford Machine Learning<br />
-(August 2022)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center; vertical-align: middle;"><a href="https://www.psc.edu/"><img src="./images/psc.jpg" width="200" height="115" /></a></td>
-<td style="text-align: center; vertical-align: middle;"><a href="https://www.nrel.gov/"><img src="./images/nrel1.png" width="200" height="215" /></a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Pittsburgh Supercomputing<br />
-(2024–Present)</td>
-<td style="text-align: center;">Machine Learning Scientist<br />
-(2024–Present)</td>
-</tr>
-</tbody>
-</table>
-
-
+  <tr>
+    <td valign="top"><strong>[Apr 2022]</strong></td>
+    <td>Our paper on <a href="https://arxiv.org/pdf/2202.13541.pdf">Pattern-Based Multivariate Regression using Deep Learning (PBMR-DP)</a> was accepted to <a href="https://www.icmla-conference.org/icmla22/">ICMLA 2022</a>.</td>
+  </tr>
 -->
+</tbody></table>
 
 
 
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -758,7 +1018,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
 <p><a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a> <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark me-2" href="https://orcid.org/0000-0002-3229-6649" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a> <a class="link-dark me-2" href="https://scholar.google.com/citations?user=1zDpIJkAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a> <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a></p>
-<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/publications.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/index1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

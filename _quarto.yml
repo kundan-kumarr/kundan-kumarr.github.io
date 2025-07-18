@@ -38,7 +38,7 @@ website:
         href: cv.qmd
       - text: "Research"
         icon: lightbulb-fill
-        href: rpkg/rpkg.qmd
+        href: rpkg/research.qmd
       - text: "Projects"
         icon: puzzle-fill
         menu:
