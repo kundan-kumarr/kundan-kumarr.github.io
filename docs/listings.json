@@ -163,7 +163,11 @@
   {
     "listing": "/projects.html",
     "items": [
+      "/projects/nor_mortality/index.html",
+      "/projects/ehr-title/index.html",
       "/projects/index.html",
+      "/projects/noreden/index.html",
+      "/projects/drl_mdp/index.html",
       "/projects/washi.html",
       "/projects/roadmap.html",
       "/projects/orcas.html",
@@ -409,7 +413,23 @@
       "/talks/ph_20220616_splverse/index.html",
       "/talks/ehr_20210218_biday/index.html",
       "/talks/ehr_20191028_rladies/index.html",
-      "/talks/rstats_20190402_blogdown/index.html"
+      "/talks/rstats_20190402_blogdown/index.html",
+      "/publication/dummy_talk/index.html",
+      "/publication/community_20240921_quartofriends/index.html",
+      "/publication/ehr_20240918_betterehr/index.html",
+      "/publication/community_20240710_camis/index.html",
+      "/publication/rstats_20240613_teaching/index.html",
+      "/publication/rstats_20230721_teaching/index.html",
+      "/publication/ph_20230330_sp/index.html",
+      "/publication/ehr_20221013_ml_icu/index.html",
+      "/publication/ph_20220616_splverse/index.html",
+      "/publication/ehr_20210218_biday/index.html",
+      "/publication/ehr_20191028_rladies/index.html",
+      "/publication/rstats_20190402_blogdown/index.html",
+      "/projects/drl_mdp/index.html",
+      "/projects/ehr-title/index.html",
+      "/projects/nor_mortality/index.html",
+      "/projects/noreden/index.html"
     ]
   },
   {
@@ -535,7 +555,23 @@
       "/talks/ph_20220616_splverse/index.html",
       "/talks/ehr_20210218_biday/index.html",
       "/talks/ehr_20191028_rladies/index.html",
-      "/talks/rstats_20190402_blogdown/index.html"
+      "/talks/rstats_20190402_blogdown/index.html",
+      "/publication/dummy_talk/index.html",
+      "/publication/community_20240921_quartofriends/index.html",
+      "/publication/ehr_20240918_betterehr/index.html",
+      "/publication/community_20240710_camis/index.html",
+      "/publication/rstats_20240613_teaching/index.html",
+      "/publication/rstats_20230721_teaching/index.html",
+      "/publication/ph_20230330_sp/index.html",
+      "/publication/ehr_20221013_ml_icu/index.html",
+      "/publication/ph_20220616_splverse/index.html",
+      "/publication/ehr_20210218_biday/index.html",
+      "/publication/ehr_20191028_rladies/index.html",
+      "/publication/rstats_20190402_blogdown/index.html",
+      "/projects/drl_mdp/index.html",
+      "/projects/ehr-title/index.html",
+      "/projects/nor_mortality/index.html",
+      "/projects/noreden/index.html"
     ]
   },
   {
@@ -638,6 +674,20 @@
       "/talks/ehr_20210218_biday/index.html",
       "/talks/ehr_20191028_rladies/index.html",
       "/talks/rstats_20190402_blogdown/index.html"
+    ]
+  },
+  {
+    "listing": "/publication/index.html",
+    "items": [
+      "/publication/community_20240921_quartofriends/index.html",
+      "/publication/ehr_20240918_betterehr/index.html",
+      "/publication/community_20240710_camis/index.html",
+      "/publication/rstats_20240613_teaching/index.html",
+      "/publication/rstats_20230721_teaching/index.html",
+      "/publication/ehr_20221013_ml_icu/index.html",
+      "/publication/ph_20220616_splverse/index.html",
+      "/publication/ehr_20210218_biday/index.html",
+      "/publication/rstats_20190402_blogdown/index.html"
     ]
   }
 ]

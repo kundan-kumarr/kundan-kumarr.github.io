@@ -1,0 +1,8 @@
+---
+title: "My Dummy Talk"
+subtitle: "Learning How to Show a Card"
+date: 2025-07-15
+image: talk_image.png
+---
+
+This is a simple demo of a Quarto talk listing with an image, title, and subtitle.

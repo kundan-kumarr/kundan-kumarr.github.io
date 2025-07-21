@@ -140,7 +140,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 :::: {.grid}
 
 ::: {.g-col-3}
-#### Blog
+#### Blogs
 ::: {#blog}
 :::
 [See all &rarr;](/blog/){.about-links .subtitle}
