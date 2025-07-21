@@ -32,7 +32,7 @@ about:
 listing: 
 - id: blog
   contents: 
-    - "../blog/talks/*/index.qmd"
+    - "../blog/*/index.qmd"
     - "../blog/*/index.markdown"
   sort: date desc
   type: grid
