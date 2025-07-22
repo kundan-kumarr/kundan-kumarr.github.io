@@ -105,79 +105,32 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 
 ---
 
+
 ### Other Research Interests
 
-```{=html}
-<style>
-  .proj-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.2rem;
-    margin-top: 1rem;
-  }
-  .proj-card {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #1e567d;
-    border-radius: 8px;
-    background: #fff;
-    overflow: hidden;
-    transition: transform .15s ease;
-    text-decoration: none;
-    color: inherit;
-    min-height: 210px;
-  }
-  .proj-card:hover {
-    transform: translateY(-4px);
-  }
-  .proj-body {
-    display: block;
-    padding: 1rem 1.1rem 1.3rem 1.1rem;
-    font-family: 'Nunito', sans-serif;
-  }
-  .proj-cv strong {
-    color: #57B9FF; /* Blue for Computer Vision */
-    font-size: 1.05rem;
-  }
-  .proj-stat strong {
-    color: #57B9FF; /* Blue for Statistical ML */
-    font-size: 1.05rem;
-  }
-  .proj-drive strong {
-    color: #57B9FF; /* Bluefor Self-Driving */
-    font-size: 1.05rem;
-  }
-  .proj-llm strong {
-    color: #8B008B; /* Dark Magenta for LLM Reasoning */
-    font-size: 1.05rem;
-  }
-</style>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
 
-<div class="proj-grid">
+<!-- Computer Vision -->
+<div style="border: 1px solid #ddd; border-radius: 12px; padding: 1.2rem; background: #fff; box-shadow: 0 1px 5px rgba(0,0,0,0.05);">
+  <h4 style="margin-bottom: 0.5rem;"> Computer Vision</h4>
+  <p style="margin: 0;">Visual perception, object detection, semantic segmentation, and sensor fusion for autonomous systems.</p>
+</div>
 
-  <a class="proj-card" href="https://kundan-kumarr.github.io/data-science/intro.html">
-    <span class="proj-body proj-cv">
-      <strong>Computer Vision</strong><br>
-      Visual perception, object detection, semantic segmentation, and sensor fusion for autonomous systems.
-    </span>
-  </a>
 
-  <a class="proj-card" href="https://kundan-kumarr.github.io/statistics-analysis/">
-    <span class="proj-body proj-stat">
-      <strong>Statistical ML</strong><br>
-      Uncertainty quantification, probabilistic modeling, and data-driven inference in dynamic environments.
-    </span>
-  </a>
+<!-- Statistical Machine Learning -->
+<div style="border: 1px solid #ddd; border-radius: 12px; padding: 1.2rem; background: #fff; box-shadow: 0 1px 5px rgba(0,0,0,0.05);">
+  <h4 style="margin-bottom: 0.5rem;">Statistical ML</h4>
+  <p style="margin: 0;">Uncertainty quantification, probabilistic modeling, and data-driven inference in dynamic environments.</p>
+</div>
 
-<a class="proj-card" href="https://kundan-kumarr.github.io/statistics-analysis/">
-    <span class="proj-body proj-drive">
-      <strong>Self-Driving Systems</strong><br>
-      Learning-based control, trajectory planning, vision-based perception, and sensor fusion in autonomous driving environments.
-    </span>
-  </a>
+<!-- Self-Driving Systems -->
+<div style="border: 1px solid #ddd; border-radius: 12px; padding: 1.2rem; background: #fff; box-shadow: 0 1px 5px rgba(0,0,0,0.05);">
+  <h4 style="margin-bottom: 0.5rem;">Self-Driving Systems</h4>
+  <p style="margin: 0;">Learning-based control, trajectory planning, vision-based perception, and sensor fusion in autonomous driving environments.</p>
+</div>
+
 
 </div>
-```
 
 
 ---
