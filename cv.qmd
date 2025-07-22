@@ -352,7 +352,7 @@ Iowa State University
 - Applied deep computer vision models for object recognition, semantic segmentation, and sensor fusion, enabling robust situational awareness in autonomous driving and robotics.
 
 <div style="text-align:center; margin-top:1rem;">
-  <a href="/rpkg/rpkg.qmd" style="
+  <a href="/rpkg/research.qmd" style="
     display: inline-block;
     background-color: #4caf50;
     color: white;
@@ -597,7 +597,7 @@ Iowa State University
 </div>
 
 <div style="text-align:center; margin-top:2rem;">
-  <a href="projects1/projects.qmd" style="
+  <a href="projects.qmd" style="
     display: inline-block;
     background-color: #1e567d;
     color: white;

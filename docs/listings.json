@@ -169,6 +169,7 @@
       "/projects/noreden/index.html",
       "/projects/drl_mdp/index.html",
       "/projects/washi.html",
+      "/projects/robo/washi.html",
       "/projects/roadmap.html",
       "/projects/orcas.html",
       "/projects/wacse.html"
@@ -825,5 +826,13 @@
       "/projects/nor_mortality/index.html",
       "/projects/noreden/index.html"
     ]
+  },
+  {
+    "listing": "/others/posts.html",
+    "items": []
+  },
+  {
+    "listing": "/others/projects1.html",
+    "items": []
   }
 ]

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kundan-kumarr.github.io/dev/short_bio.html</loc>
-    <lastmod>2025-07-09T18:02:06.567Z</lastmod>
+    <lastmod>2025-07-22T19:56:14.510Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/teaching/coms3620/index.html</loc>
@@ -166,7 +166,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/about_me.html</loc>
-    <lastmod>2025-07-22T00:39:51.053Z</lastmod>
+    <lastmod>2025-07-22T18:19:52.590Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/projects/nor_mortality/index.html</loc>
@@ -218,7 +218,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/index.html</loc>
-    <lastmod>2025-07-21T22:52:08.185Z</lastmod>
+    <lastmod>2025-07-22T18:21:13.794Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/blog/blog_20230103_blogdown2quarto/index.html</loc>
@@ -274,7 +274,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/rpkg/rpkg1.html</loc>
-    <lastmod>2025-07-18T21:23:41.275Z</lastmod>
+    <lastmod>2025-07-22T16:19:46.509Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/rpkg/csdata/index.html</loc>
@@ -330,7 +330,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/cv.html</loc>
-    <lastmod>2025-07-18T20:00:43.147Z</lastmod>
+    <lastmod>2025-07-22T18:23:51.391Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/projects/prohect2.html</loc>
@@ -658,11 +658,11 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/rpkg/research.html</loc>
-    <lastmod>2025-07-18T21:39:38.139Z</lastmod>
+    <lastmod>2025-07-22T16:49:05.953Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/rpkg/research1.html</loc>
-    <lastmod>2025-07-18T21:44:56.343Z</lastmod>
+    <lastmod>2025-07-22T16:48:49.396Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/publication/ehr_20191028_rladies/index.html</loc>
@@ -779,5 +779,21 @@
   <url>
     <loc>https://kundan-kumarr.github.io/others/main.html</loc>
     <lastmod>2025-07-21T22:46:43.616Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/projects/robo/washi.html</loc>
+    <lastmod>2024-03-28T21:54:04.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/others/cv1.html</loc>
+    <lastmod>2025-07-18T20:03:43.714Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/others/posts.html</loc>
+    <lastmod>2025-07-15T21:33:43.171Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/others/projects1.html</loc>
+    <lastmod>2025-07-15T21:38:54.884Z</lastmod>
   </url>
 </urlset>

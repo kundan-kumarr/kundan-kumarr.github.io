@@ -210,7 +210,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 #### Projects
 ::: {#project}
 :::
-[See all &rarr;](/project/){.about-links .subtitle}
+[See all &rarr;](projects.qmd){.about-links .subtitle}
 :::
 
 ::::

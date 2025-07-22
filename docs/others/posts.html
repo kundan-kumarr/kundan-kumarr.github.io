@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Posts about papers, events, news, and more">
 
-<title>Research Scientist Interview Guide – Kundan Kumar</title>
+<title>What’s New &amp; Updated – Kundan Kumar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../misc/info/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -67,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
 
 <script type="text/javascript">
@@ -78,10 +110,39 @@ gtag('config', '', { 'anonymize_ip': true});
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-</head>
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
-<body class="nav-fixed fullcontent">
+<link rel="alternate" type="application/rss+xml" title="Kundan Kumar" href="posts.xml" data-external="1"></head>
+
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -172,13 +233,16 @@ gtag('config', '', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Research Scientist Interview Guide</h1>
+<h1 class="title">What’s New &amp; Updated</h1>
+<p class="subtitle lead">Posts about papers, events, news, and more</p>
 </div>
 
 
@@ -195,106 +259,27 @@ gtag('config', '', { 'anonymize_ip': true});
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This guide provides a comprehensive framework to prepare for <strong>Research Scientist positions</strong> in academia, industry research labs (FAANG, OpenAI, DeepMind, etc.), and national labs. It combines insights from my own experience, interviews, and conversations with hiring managers.</p>
-<hr>
-</section>
-<section id="key-interview-components" class="level2">
-<h2 class="anchored" data-anchor-id="key-interview-components">Key Interview Components</h2>
-<section id="research-portfolio-deep-dive" class="level3">
-<h3 class="anchored" data-anchor-id="research-portfolio-deep-dive">1️⃣ <strong>Research Portfolio Deep Dive</strong></h3>
-<ul>
-<li>Be able to explain your <strong>core research contributions</strong> in detail.</li>
-<li>Clearly articulate: problem definition, novelty, methods, results, and real-world impact.</li>
-<li>Prepare multiple levels of technical depth (5-min, 15-min, 30-min versions).</li>
-<li>Practice connecting your work to broader research trends and applications.</li>
-</ul>
-</section>
-<section id="technical-machine-learning-knowledge" class="level3">
-<h3 class="anchored" data-anchor-id="technical-machine-learning-knowledge">2️⃣ <strong>Technical Machine Learning Knowledge</strong></h3>
-<ul>
-<li>Reinforcement Learning: algorithms, policy gradients, actor-critic, safe RL.</li>
-<li>Deep Learning: optimization, architecture design, generalization, transformers.</li>
-<li>Probabilistic Modeling: Bayesian inference, uncertainty estimation, graphical models.</li>
-<li>Generative Models: GANs, VAEs, diffusion models.</li>
-<li>Large Language Models: LLM scaling laws, prompting, fine-tuning, RAG architectures.</li>
-<li>Vision: object detection, segmentation, multi-modal perception.</li>
-</ul>
-</section>
-<section id="system-design-applied-ml-problems" class="level3">
-<h3 class="anchored" data-anchor-id="system-design-applied-ml-problems">3️⃣ <strong>System Design / Applied ML Problems</strong></h3>
-<ul>
-<li>Be able to discuss:
-<ul>
-<li>End-to-end ML pipelines</li>
-<li>Data challenges (imbalance, noisy labels, drift)</li>
-<li>Model serving and deployment challenges</li>
-<li>Scalability, latency, interpretability</li>
-</ul></li>
-</ul>
-</section>
-<section id="coding-and-algorithmic-skills" class="level3">
-<h3 class="anchored" data-anchor-id="coding-and-algorithmic-skills">4️⃣ <strong>Coding and Algorithmic Skills</strong></h3>
-<ul>
-<li>Leetcode-style DSA for research interviews (moderate level)</li>
-<li>Data manipulation (pandas, numpy, SQL)</li>
-<li>Model prototyping (PyTorch, TensorFlow, JAX)</li>
-</ul>
-</section>
-<section id="behavioral-and-collaboration-skills" class="level3">
-<h3 class="anchored" data-anchor-id="behavioral-and-collaboration-skills">5️⃣ <strong>Behavioral and Collaboration Skills</strong></h3>
-<ul>
-<li>“Tell me about a time…” questions.</li>
-<li>Collaboration across teams.</li>
-<li>Handling ambiguous open-ended research problems.</li>
-<li>Communication with product teams or non-research stakeholders.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="recommended-preparation-resources" class="level2">
-<h2 class="anchored" data-anchor-id="recommended-preparation-resources">Recommended Preparation Resources</h2>
-<ul>
-<li><strong>Papers</strong>: Read papers from top-tier conferences (NeurIPS, ICML, ICLR, CVPR, ACL).</li>
-<li><strong>Coding</strong>: Leetcode (medium), ML system design problems.</li>
-<li><strong>System Design</strong>: Read “Designing Machine Learning Systems” by Chip Huyen.</li>
-<li><strong>Mock Interviews</strong>: Practice mock sessions with peers or mentors.</li>
-<li><strong>Presentation</strong>: Prepare 1-2 strong 20-minute research talks.</li>
-</ul>
-<hr>
-</section>
-<section id="example-interview-questions" class="level2">
-<h2 class="anchored" data-anchor-id="example-interview-questions">Example Interview Questions</h2>
-<ul>
-<li>How does your research contribute to state-of-the-art methods?</li>
-<li>Walk me through one of your recent papers.</li>
-<li>How would you apply your methods to X domain?</li>
-<li>What challenges remain in your area of research?</li>
-<li>How do you evaluate safety, robustness, or uncertainty in your models?</li>
-<li>How would you adapt your methods if labeled data was extremely limited?</li>
-</ul>
-<hr>
-</section>
-<section id="my-personal-advice" class="level2">
-<h2 class="anchored" data-anchor-id="my-personal-advice">My Personal Advice</h2>
-<ul>
-<li><strong>Clarity beats complexity</strong> — explain ideas simply.</li>
-<li>Be enthusiastic about your work and its impact.</li>
-<li>Connect your strengths to the job’s mission.</li>
-<li>Show your ability to collaborate and iterate.</li>
-</ul>
-<hr>
-</section>
-<section id="mentorship" class="level2">
-<h2 class="anchored" data-anchor-id="mentorship">Mentorship</h2>
-<p>If you’re preparing for Research Scientist interviews and would like advice or mentorship, feel free to reach out at <a href="mailto:cs.kundann@gmail.com">cs.kundann@gmail.com</a>.</p>
-<hr>
+<div id="projects">
+
+</div>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list quarto-listing-default">
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -720,7 +705,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
 <p><a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a> <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark me-2" href="https://orcid.org/0000-0002-3229-6649" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a> <a class="link-dark me-2" href="https://scholar.google.com/citations?user=1zDpIJkAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a> <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a></p>
-<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/guide/guide.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/others/posts.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

@@ -126,7 +126,7 @@ gtag('config', '', { 'anonymize_ip': true});
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li>
-    <a class="dropdown-item" href="../projects1/projects.html">
+    <a class="dropdown-item" href="../projects/robo/washi.html">
  <span class="dropdown-text">Large Language Models</span></a>
   </li>  
         <li>
@@ -209,16 +209,16 @@ gtag('config', '', { 'anonymize_ip': true});
 
 <section id="research-vision" class="level2">
 <h2 class="anchored" data-anchor-id="research-vision">Research Vision &amp; Mission</h2>
-<p>I aim to develop <strong>safe, interpretable, and adaptive AI</strong> systems for real-world cyber-physical environments that operate under uncertainty, constraints, and adversarial conditions. My research bridges the domains of <strong>machine learning</strong>, <strong>optimization</strong>, and <strong>control theory</strong>, with a strong emphasis on safety, robustness, and generalization.</p>
+<p>I aim to develop safe, interpretable, and adaptive AI systems for real-world cyber-physical environments that operate under uncertainty, constraints, and adversarial conditions. My research bridges the domains of machine learning, optimization, and control theory, with a strong emphasis on safety, robustness, and generalization.</p>
 <p>My work centers around the following pillars:</p>
 <ul>
-<li><strong>Safe &amp; Trustworthy Reinforcement Learning:</strong> Designing agents that are robust to adversarial attacks, resilient to distributional shifts, and capable of safe exploration.</li>
-<li><strong>Physics-informed Deep Reinforcement Learning (DRL):</strong> Embedding physical laws and constraints into learning frameworks for stability, interpretability, and faster convergence.</li>
-<li><strong>Probabilistic &amp; Bayesian Modeling:</strong> Probabilistic &amp; Bayesian Modeling: Capturing both epistemic and aleatoric uncertainties for reliable control in high-stakes, partially observable systems.</li>
-<li><strong>Large Language Models (LLMs) for autonomous reasoning:</strong> Leveraging large language models (LLMs) to enhance planning, explainability, and human-AI collaboration in control systems.</li>
-<li><strong>Vision-based simulation environments:</strong> Using platforms like CARLA and CityLearn to train agents in multimodal, visually rich, and interactive worlds.</li>
+<li>Safe &amp; Trustworthy Reinforcement Learning: Designing agents that are robust to adversarial attacks, resilient to distributional shifts, and capable of safe exploration.</li>
+<li>Physics-informed Deep Reinforcement Learning (DRL): Embedding physical laws and constraints into learning frameworks for stability, interpretability, and faster convergence.</li>
+<li>Probabilistic &amp; Bayesian Modeling: Probabilistic &amp; Bayesian Modeling: Capturing both epistemic and aleatoric uncertainties for reliable control in high-stakes, partially observable systems.</li>
+<li>Large Language Models (LLMs) for autonomous reasoning: Leveraging large language models (LLMs) to enhance planning, explainability, and human-AI collaboration in control systems.</li>
+<li>Vision-based simulation environments: Using platforms like CARLA and CityLearn to train agents in multimodal, visually rich, and interactive worlds.</li>
 </ul>
-<p>By tightly integrating domain knowledge into learning frameworks, I aim to enable resilient, generalizable, and safe AI for critical applications including <strong>smart grids</strong>, <strong>autonomous systems</strong>, and <strong>intelligent infrastructure</strong>.</p>
+<p>By tightly integrating domain knowledge into learning frameworks, I aim to enable resilient, generalizable, and safe AI for critical applications including smart grids, autonomous systems, and intelligent infrastructure.</p>
 <hr>
 </section>
 <section id="research-focus" class="level2">
@@ -267,38 +267,24 @@ gtag('config', '', { 'anonymize_ip': true});
   text-align: center;
 }
 </style>
+<style>
+  .proj-card img {
+    width: 100%;
+    height: 140px; /* Fixed height */
+    object-fit: contain; /* Keeps aspect ratio, avoids cropping */
+    background-color: #f9f9f9; /* Optional: adds visual consistency */
+    padding: 8px; /* Optional: adds some whitespace */
+    border-bottom: 1px solid #eaeaea; /* Optional: divider under image */
+  }
+</style>
 <!-- Group: 🧠 DRL-based Control -->
 <div class="group-label">
 DRL-based Control
 </div>
 <div class="proj-grid">
-<div class="proj-card">
-<img src="../projects1/icons/drl_control.png" alt="DRL Control">
-<h4 class="anchored">
-DRL for Volt-VAR
-</h4>
-<p>
-Design control agents for voltage regulation and reactive power optimization in smart distribution grids.
-</p>
-</div>
-<div class="proj-card">
-<img src="../projects1/icons/actor_critic.png" alt="Actor Critic">
-<h4 class="anchored">
-Physics-Informed Actor-Critic
-</h4>
-<p>
-Embed grid physics and control limits directly into the DRL learning loop for stable and efficient decisions.
-</p>
-</div>
-<div class="proj-card">
-<img src="../projects1/icons/sim2real.png" alt="Sim2Real Transfer">
-<h4 class="anchored">
-Sim-to-Real Transfer
-</h4>
-<p>
-Train agents in simulated OpenDSS environments and deploy them on real-time OPAL-RT setups.
-</p>
-</div>
+<p><a class="proj-card" href="https://kundan-kumarr.github.io/data-science/intro.html"> <span class="proj-body proj-llm"> <img src="../projects1/icons/drl_control.png" alt="DRL Control"> <strong>DRL for Volt-VAR</strong><br> Design control agents for voltage regulation and reactive power optimization in smart distribution grids. </span> </a></p>
+<p><a class="proj-card" href="https://kundan-kumarr.github.io/data-science/intro.html"> <span class="proj-body proj-llm"> <img src="../projects1/icons/actor_critic.png" alt="Actor Critic"> <strong>Physics-Informed Actor-Critic</strong><br> Embed grid physics and control limits directly into the DRL learning loop for stable and efficient decisions. </span> </a></p>
+<p><a class="proj-card" href="https://kundan-kumarr.github.io/data-science/intro.html"> <span class="proj-body proj-llm"> <img src="../projects1/icons/sim2real.png" alt="Sim2Real Transfer"> <strong>Sim-to-Real Transfer</strong><br> Train agents in simulated OpenDSS environments and deploy them on real-time OPAL-RT setups. </span> </a></p>
 </div>
 <!-- Group 1 -->
 <!-- Group: 🔐 Safe & Trustworthy RL -->
@@ -306,95 +292,77 @@ Train agents in simulated OpenDSS environments and deploy them on real-time OPAL
 Safe &amp; Trustworthy RL
 </div>
 <div class="proj-grid">
-<div class="proj-card">
-<img src="../projects1/icons/safe_rl.png" alt="Safe RL">
-<h4 class="anchored">
-Robust &amp; Stable Learning
-</h4>
-<p>
-Develop agents that ensure system safety, robustness, and interpretability under uncertainty.
-</p>
-</div>
-<div class="proj-card">
-<img src="../projects1/icons/uncertainty.png" alt="Uncertainty Quantification">
-<h4 class="anchored">
-Uncertainty-Aware Policies
-</h4>
-<p>
-Quantify epistemic and aleatoric uncertainty in high-stakes, partially observable settings.
-</p>
-</div>
-<div class="proj-card">
-<img src="../projects1/icons/drl_control.png" alt="Physics-Informed DRL">
-<h4 class="anchored">
-Physics-Informed DRL
-</h4>
-<p>
-Incorporate physical constraints into DRL agents to ensure safe and interpretable control.
-</p>
-</div>
+<p><a class="proj-card" href="https://kundan-kumarr.github.io/data-science/intro.html"> <span class="proj-body proj-llm"> <img src="../assets/img/domain_adaptation.svg" alt="Safe RL"> <strong>Robust &amp; Stable Learning</strong><br> Develop agents that ensure system safety, robustness, and interpretability under uncertainty. </span> </a></p>
+<p><a class="proj-card" href="https://kundan-kumarr.github.io/data-science/intro.html"> <span class="proj-body proj-llm"> <img src="../assets/img/domain_adaptation.svg" alt="Uncertainty Quantification"> <strong>Uncertainty-Aware Policies</strong><br> Quantify epistemic and aleatoric uncertainty in high-stakes, partially observable settings. </span> </a></p>
+<p><a class="proj-card" href="https://kundan-kumarr.github.io/data-science/intro.html"> <span class="proj-body proj-llm"> <img src="../assets/img/domain_adaptation.svg" alt="Physics-Informed DRL"> <strong>Physics-Informed DRL</strong><br> Incorporate physical constraints into DRL agents to ensure safe and interpretable control. </span> </a></p>
 </div>
 <!-- Group 2 -->
 <div class="group-label">
 Transfer &amp; Meta-Adaptation
 </div>
 <div class="proj-grid">
-<div class="proj-card">
-<img src="../projects1/icons/transfer_learning.png" alt="Transfer Learning">
-<h4 class="anchored">
-Domain Adaptation
-</h4>
-<p>
-Enable agents to generalize across grids with different topologies, dynamics, and loads.
-</p>
-</div>
-<div class="proj-card">
-<img src="../projects1/icons/meta_rl.png" alt="Meta RL">
-<h4 class="anchored">
-Meta-RL for Efficiency
-</h4>
-<p>
-Leverage meta-reasoning to accelerate learning in low-data, high-variance scenarios.
-</p>
-</div>
+<p><a class="proj-card" href="https://kundan-kumarr.github.io/data-science/intro.html"> <span class="proj-body proj-llm"> <img src="../assets/img/domain_adaptation.svg" alt="Transfer Learning"> <strong>Domain Adaptation</strong><br> Enable agents to generalize across grids with different topologies, dynamics, and loads. </span> </a></p>
+<p><a class="proj-card" href="https://kundan-kumarr.github.io/data-science/intro.html"> <span class="proj-body proj-llm"> <img src="../projects1/icons/meta_rl.png" alt="Meta RL"> <strong>Meta-RL for Efficiency</strong><br> Leverage meta-reasoning to accelerate learning in low-data, high-variance scenarios. </span> </a></p>
 </div>
 <!-- Group 3 -->
 <div class="group-label">
 Vision-Simulation Integration
 </div>
 <div class="proj-grid">
-<div class="proj-card">
-<img src="../projects1/icons/carla.png" alt="Perception Control">
-<h4 class="anchored">
-Perception-Control Fusion
-</h4>
-<p>
-Use CARLA and AirSim to train end-to-end systems in visual RL tasks with sensors.
-</p>
-</div>
-<div class="proj-card">
-<img src="../projects1/icons/multimodal.png" alt="Multimodal Fusion">
-<h4 class="anchored">
-Multi-modal Representations
-</h4>
-<p>
-Combine visual, state, and contextual features for better decision-making.
-</p>
-</div>
+<p><a class="proj-card" href="https://kundan-kumarr.github.io/data-science/intro.html"> <span class="proj-body proj-llm"> <img src="../projects1/icons/carla.png" alt="Perception Control"> <strong>Perception-Control Fusion</strong><br> Use CARLA and AirSim to train end-to-end systems in visual RL tasks with sensors. </span> </a></p>
+<p><a class="proj-card" href="https://kundan-kumarr.github.io/data-science/intro.html"> <span class="proj-body proj-llm"> <img src="../projects1/icons/multimodal.png" alt="Multimodal Fusion"> <strong>Multi-modal Representations</strong><br> Combine visual, state, and contextual features for better decision-making. </span> </a></p>
 </div>
 <!-- Group 4 -->
 <div class="group-label">
 LLM-Augmented Decision Systems
 </div>
 <div class="proj-grid">
-<div class="proj-card">
-<img src="../projects1/icons/llm_state_summary.png" alt="LLM for summarization">
-<h4 class="anchored">
-LLM-Guided Control
-</h4>
-<p>
-Translate natural language into actionable policies for real-world environments.
-</p>
+<style>
+  .proj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1rem;
+  }
+  .proj-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #1e567d;
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+    transition: transform .15s ease;
+    text-decoration: none;
+    color: inherit;
+    min-height: 210px;
+  }
+  .proj-card:hover {
+    transform: translateY(-4px);
+  }
+  .proj-body {
+    display: block;
+    padding: 1rem 1.1rem 1.3rem 1.1rem;
+    font-family: 'Nunito', sans-serif;
+  }
+  .proj-cv strong {
+    color: #57B9FF; /* Blue for Computer Vision */
+    font-size: 1.05rem;
+  }
+  .proj-stat strong {
+    color: #57B9FF; /* Blue for Statistical ML */
+    font-size: 1.05rem;
+  }
+  .proj-drive strong {
+    color: #57B9FF; /* Bluefor Self-Driving */
+    font-size: 1.05rem;
+  }
+  .proj-llm strong {
+    color: #8B008B; /* Dark Magenta for LLM Reasoning */
+    font-size: 1.05rem;
+  }
+</style>
+<div class="proj-grid">
+<p><a class="proj-card" href="https://kundan-kumarr.github.io/data-science/intro.html"> <span class="proj-body proj-cv"> <img src="../assets/img/domain_adaptation.svg" alt="LLM for summarization"> <strong>LLM-Guided Control</strong><br> Translate natural language into actionable policies for real-world environments. </span> </a></p>
 </div>
 </div>
 </section>
@@ -413,15 +381,15 @@ Translate natural language into actionable policies for real-world environments.
 </thead>
 <tbody>
 <tr class="odd">
-<td>⚡ <strong>Smart Energy Systems</strong></td>
+<td>⚡ Smart Energy Systems</td>
 <td>Volt-VAR control, DER coordination, and federated DRL for power grid stability</td>
 </tr>
 <tr class="even">
-<td>🚘 <strong>Autonomous Systems</strong></td>
+<td>🚘 Autonomous Systems</td>
 <td>Safe navigation, adaptive planning, and control in simulation and real-world environments</td>
 </tr>
 <tr class="odd">
-<td>🛡 <strong>Secure AI for Infrastructure</strong></td>
+<td>🛡 Secure AI for Infrastructure</td>
 <td>Resilience against cyber-attacks and adversarial scenarios in safety-critical systems</td>
 </tr>
 </tbody>
@@ -503,11 +471,11 @@ function toggleConfPapers() {
 <section id="ongoing-projects" class="level2">
 <h2 class="anchored" data-anchor-id="ongoing-projects">Ongoing Projects</h2>
 <ul>
-<li><p><strong>Federated DRL for Cyber-Resilient Volt-VAR Optimization</strong><br>
+<li><p>Federated DRL for Cyber-Resilient Volt-VAR Optimization<br>
 Decentralized, communication-efficient control using LSTM-enhanced PPO agents across distributed DERs.</p></li>
-<li><p><strong>One-Shot Policy Transfer with Physics Priors</strong><br>
+<li><p>One-Shot Policy Transfer with Physics Priors<br>
 Train agents on small topologies and adapt to IEEE 123-bus, 8500-node networks in a few iterations.</p></li>
-<li><p><strong>LLM-Guided Autonomous Planning for Smart Buildings</strong><br>
+<li><p>LLM-Guided Autonomous Planning for Smart Buildings<br>
 Convert user prompts to interpretable control policies using LLMs (OpenAI, Claude) in CityLearn environments.</p></li>
 </ul>
 

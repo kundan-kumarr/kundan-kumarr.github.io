@@ -46,7 +46,7 @@ website:
             href: projects.qmd
           - text: "---"
           - text: "Large Language Models"
-            href: projects1/projects.qmd
+            href: projects/robo/washi.qmd
           - text: "Deep Reinforcement Learning"
             href: projects1/drl.qmd
           - text: "Deep/Machine Learning"
