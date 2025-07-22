@@ -164,7 +164,9 @@
     "listing": "/projects.html",
     "items": [
       "/projects/nor_mortality/index.html",
+      "/projects/llm_nor_mortality/index.html",
       "/projects/ehr-title/index.html",
+      "/projects/llm_noreden/index.html",
       "/projects/index.html",
       "/projects/noreden/index.html",
       "/projects/drl_mdp/index.html",
@@ -569,6 +571,8 @@
       "/publication/rstats_20190402_blogdown/index.html",
       "/projects/drl_mdp/index.html",
       "/projects/ehr-title/index.html",
+      "/projects/llm_nor_mortality/index.html",
+      "/projects/llm_noreden/index.html",
       "/projects/nor_mortality/index.html",
       "/projects/noreden/index.html"
     ]
@@ -834,5 +838,121 @@
   {
     "listing": "/others/projects1.html",
     "items": []
+  },
+  {
+    "listing": "/llms/projects1.html",
+    "items": [
+      "/llms/dan/index.html",
+      "/llms/ehr-title/index.html",
+      "/llms/nor_mortality/index.html",
+      "/llms/noreden/index.html",
+      "/llms/os_teaching/index.html",
+      "/llms/phuse/index.html",
+      "/llms/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/llms/stat.html",
+    "items": [
+      "/llms/os_teaching/index.html",
+      "/llms/phuse/index.html",
+      "/llms/dan/index.html",
+      "/llms/sykdomspulsen/index.html",
+      "/llms/noreden/index.html"
+    ]
+  },
+  {
+    "listing": "/llms/projects.html",
+    "items": [
+      "/llms/os_teaching/index.html",
+      "/llms/phuse/index.html",
+      "/llms/dan/index.html",
+      "/llms/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/llms/dl.html",
+    "items": [
+      "/llms/os_teaching/index.html",
+      "/llms/phuse/index.html",
+      "/llms/dan/index.html",
+      "/llms/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/llms/drl.html",
+    "items": [
+      "/llms/os_teaching/index.html",
+      "/llms/phuse/index.html",
+      "/llms/dan/index.html",
+      "/llms/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/llms/prohect2.html",
+    "items": [
+      "/llms/dan/index.html",
+      "/llms/ehr-title/index.html",
+      "/llms/nor_mortality/index.html",
+      "/llms/noreden/index.html",
+      "/llms/os_teaching/index.html",
+      "/llms/phuse/index.html",
+      "/llms/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/llms/robo.html",
+    "items": [
+      "/llms/os_teaching/index.html",
+      "/llms/phuse/index.html",
+      "/llms/dan/index.html",
+      "/llms/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/llms/cv.html",
+    "items": [
+      "/llms/os_teaching/index.html",
+      "/llms/phuse/index.html",
+      "/llms/dan/index.html",
+      "/llms/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/llms/index.html",
+    "items": [
+      "/llms/drl.html",
+      "/llms/prohect2.html",
+      "/llms/nor_mortality/index.html",
+      "/llms/os_teaching/index.html",
+      "/llms/dl.html",
+      "/llms/robo.html",
+      "/llms/dan/index.html",
+      "/llms/ehr-title/index.html",
+      "/llms/projects.html",
+      "/llms/noreden/index.html",
+      "/llms/sykdomspulsen/index.html",
+      "/llms/phuse/index.html",
+      "/llms/stat.html",
+      "/llms/cv.html",
+      "/llms/projects1.html"
+    ]
+  },
+  {
+    "listing": "/drl.html",
+    "items": [
+      "/projects/nor_mortality/index.html",
+      "/projects/llm_nor_mortality/index.html",
+      "/projects/ehr-title/index.html",
+      "/projects/llm_noreden/index.html",
+      "/projects/index.html",
+      "/projects/noreden/index.html",
+      "/projects/drl_mdp/index.html",
+      "/projects/washi.html",
+      "/projects/robo/washi.html",
+      "/projects/roadmap.html",
+      "/projects/orcas.html",
+      "/projects/wacse.html"
+    ]
   }
 ]

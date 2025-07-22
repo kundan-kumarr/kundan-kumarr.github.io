@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Kundan Kundan">
+<meta name="description" content="Contributor to the Global Healthcare Data Science Community">
 
-<title>Mortality Surveillance in Norway – Kundan Kumar</title>
+<title>PHUSE - CAMIS – Kundan Kumar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-16f0be44cf0b9c8dc4714857273be9e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-b4c4310c461329769839695e4062df9a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-b7885978c661867cb503ae444e302c18.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,10 +83,10 @@ gtag('config', '', { 'anonymize_ip': true});
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -130,11 +132,11 @@ gtag('config', '', { 'anonymize_ip': true});
  <span class="dropdown-text">Large Language Models</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../llms/index.html">
+    <a class="dropdown-item" href="../../llms">
  <span class="dropdown-text">Deep Reinforcement Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../drl.html">
+    <a class="dropdown-item" href="../../projects1/dl.qmd">
  <span class="dropdown-text">Deep/Machine Learning</span></a>
   </li>  
         <li>
@@ -169,22 +171,26 @@ gtag('config', '', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Mortality Surveillance in Norway</h1>
+<header id="title-block-header" class="quarto-title-block default page-columns">
+<div id="title-block-header-title" class="quarto-title page-columns page-full page-layout-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);">
+<h1 class="title">PHUSE - CAMIS</h1>
 </div>
 
+<div>
+  <div id="title-block-title-desc" class="description pt-4">
+    Contributor to the Global Healthcare Data Science Community
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kundan Kundan </p>
+          </div>
+  </div>
     
   
     
@@ -192,30 +198,50 @@ gtag('config', '', { 'anonymize_ip': true});
   
 
 
-</header>
+
+</header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#camis-comparing-analysis-method-implementations-in-software" id="toc-camis-comparing-analysis-method-implementations-in-software" class="nav-link active" data-scroll-target="#camis-comparing-analysis-method-implementations-in-software">CAMIS: Comparing Analysis Method Implementations in Software</a></li>
+  <li><a href="#rwd-working-group" id="toc-rwd-working-group" class="nav-link" data-scroll-target="#rwd-working-group">RWD Working Group</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/llms/phuse/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+<!-- source: https://github.com/gadenbuie/garrickadenbuie-com/blob/main/_partials/title-block-link-buttons/title-block.html -->
+<!-- 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title"> 
+-->
+<!-- <header id="title-block-header" class="quarto-title-block default page-columns"> -->
+<!-- <div class="quarto-title page-columns page-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);"> -->
 
 
-<section id="norwegian-surveillance-system-for-excess-mortality" class="level2">
-<h2 class="anchored" data-anchor-id="norwegian-surveillance-system-for-excess-mortality">Norwegian Surveillance System for Excess Mortality</h2>
-<p><a href="https://www.fhi.no/sv/influensa/influensaovervaking/overvakingssystem-for-dodelighet-eu/">NorMOMO</a></p>
-<p><img src="normomo.png" class="img-fluid"></p>
+
+<p>I am contributing to two working groups at PHUSE: <a href="https://psiaims.github.io/CAMIS/">CAMIS</a>, and RWD - Real World Data Guideline (early stage).</p>
+<section id="camis-comparing-analysis-method-implementations-in-software" class="level3">
+<h3 class="anchored" data-anchor-id="camis-comparing-analysis-method-implementations-in-software">CAMIS: Comparing Analysis Method Implementations in Software</h3>
+<p>CAMIS is a cross-industry group formed of members from PHUSE, PSI and ASA.</p>
+<p>Several discrepancies have been discovered in statistical analysis results between different programming languages, even in fully qualified statistical computing environments. Observing differences across languages can reduce the analyst’s confidence in reliability and, by understanding the source of any discrepancies, one can reinstate confidence in reliability.</p>
+<p>The goal of this project is to demystify conflict when doing QC and to help ease the transitions to new languages and techniques with comparison and comprehensive explanations.</p>
 </section>
-<section id="r-packages-for-mortality-surveillance" class="level2">
-<h2 class="anchored" data-anchor-id="r-packages-for-mortality-surveillance">R packages for mortality surveillance</h2>
-<p>(continue…)</p>
-<ul>
-<li>nowcast</li>
-<li>splalert</li>
-<li>mortanor</li>
-</ul>
-</section>
-<section id="collaboration-with-cause-of-death-registry" class="level2">
-<h2 class="anchored" data-anchor-id="collaboration-with-cause-of-death-registry">Collaboration with Cause of Death Registry</h2>
+<section id="rwd-working-group" class="level3">
+<h3 class="anchored" data-anchor-id="rwd-working-group">RWD Working Group</h3>
+<p>This is a newly formed working group, working on statistical programming guidelines while working on RWD (read world data).</p>
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-kundan" class="csl-entry quarto-appendix-citeas" role="listitem">
+Kundan, Kundan. n.d. <span>“PHUSE - CAMIS.”</span> <a href="https://kundan-kumarr.github.io/llms/phuse/">https://kundan-kumarr.github.io/llms/phuse/</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -633,10 +659,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<script src="https://giscus.app/client.js" data-repo="jadeynryan/jadey-website-giscus" data-repo-id="R_kgDOKisUNQ" data-category="Announcements" data-category-id="DIC_kwDOKisUNc4CaSRD" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" data-loading="lazy" async="">
+<script src="https://utteranc.es/client.js" repo="kundan-kumarr/kundan-kumarr.github.io" issue-term="title" theme="boxy-light" crossorigin="anonymous" async="">
 </script>
-<input type="hidden" id="giscus-base-theme" value="light">
-<input type="hidden" id="giscus-alt-theme" value="light">
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -645,7 +669,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
 <p><a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a> <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark me-2" href="https://orcid.org/0000-0002-3229-6649" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a> <a class="link-dark me-2" href="https://scholar.google.com/citations?user=1zDpIJkAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a> <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a></p>
-<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/projects/nor_mortality/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/llms/phuse/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

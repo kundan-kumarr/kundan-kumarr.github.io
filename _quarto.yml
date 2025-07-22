@@ -48,15 +48,15 @@ website:
           - text: "Large Language Models"
             href: projects/robo/washi.qmd
           - text: "Deep Reinforcement Learning"
-            href: projects1/drl.qmd
+            href: llms/index.qmd
           - text: "Deep/Machine Learning"
-            href: projects1/dl.qmd
+            href: drl.qmd
           - text: "Statistics"
             href: projects1/stat.qmd
           - text: "Computer Vision"
             href: projects1/cv.qmd
           - text: "Robotics"
-            href: projects1/robo.qmd
+            href: drl.qmd
       - text: "Teaching"
         icon: mortarboard-fill
         href: teaching/teaching.qmd

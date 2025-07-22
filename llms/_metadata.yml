@@ -6,7 +6,7 @@ execute:
 title-block-banner: true
 
 # Default fields for citation
-citation: true
+citation: false
 appendix-cite-as: display
 
 # Default for table of contents
@@ -25,9 +25,9 @@ format:
 author: Kundan Kundan
 
 # Enable comments
-comments:
-  utterances:
-    repo: kundan-kumarr/kundan-kumarr.github.io
-    issue-term: title
-    theme: boxy-light
-    label: "comments :crystal_ball:"
+#comments:
+#  utterances:
+#    repo: kundan-kumarr/kundan-kumarr.github.io
+#    issue-term: title
+#    theme: boxy-light
+#    label: "comments :crystal_ball:"

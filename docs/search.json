@@ -1684,7 +1684,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Mortality Surveillance in Norway\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggehr\n\n\nggplot2 extension to EHR data\n\n\n\n\n\n\n\n\n\n\n\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoreden\n\n\nR tools to faciliate sustainable nutrition research\n\n\n\n\n\n\n\n\n\n\n\n\n\nDRL\n\n\nR tools to faciliate sustainable nutrition research\n\n\n\n\n\n\n\n\n\n\n\n\n\nwashi\n\n\n\nR package\n\n\n\nPalette and themes for Washington Soil Health Initiative branding\n\n\n\nSep 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nwashi\n\n\n\nR package\n\n\n\nPalette and themes for Washington Soil Health Initiative branding\n\n\n\nSep 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWaSHI Soil Health Roadmap\n\n\n\nArcGIS\n\n\nPython\n\n\n\nWashington Soil Health Initiative Roadmap created with Python and ArcGIS Dashboards & Experience Builder\n\n\n\nAug 4, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\norcas\n\n\n\nR package\n\n\n\nMy first personal project to learn web scraping with {rvest} and mapping with {leaflet}\n\n\n\nApr 20, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWaCSE\n\n\n\nShiny app\n\n\n\nWashington Climate Smart Estimator: A shiny app for comparing climate benefits of agricultural conservation practices\n\n\n\nNov 22, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Mortality Surveillance in Norway\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMortality Surveillance in Norway\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggehr\n\n\nggplot2 extension to EHR data\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoreden\n\n\nR tools to faciliate sustainable nutrition research\n\n\n\n\n\n\n\n\n\n\n\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoreden\n\n\nR tools to faciliate sustainable nutrition research\n\n\n\n\n\n\n\n\n\n\n\n\n\nDRL\n\n\nR tools to faciliate sustainable nutrition research\n\n\n\n\n\n\n\n\n\n\n\n\n\nwashi\n\n\n\nR package\n\n\n\nPalette and themes for Washington Soil Health Initiative branding\n\n\n\nSep 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nwashi\n\n\n\nR package\n\n\n\nPalette and themes for Washington Soil Health Initiative branding\n\n\n\nSep 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWaSHI Soil Health Roadmap\n\n\n\nArcGIS\n\n\nPython\n\n\n\nWashington Soil Health Initiative Roadmap created with Python and ArcGIS Dashboards & Experience Builder\n\n\n\nAug 4, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\norcas\n\n\n\nR package\n\n\n\nMy first personal project to learn web scraping with {rvest} and mapping with {leaflet}\n\n\n\nApr 20, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWaCSE\n\n\n\nShiny app\n\n\n\nWashington Climate Smart Estimator: A shiny app for comparing climate benefits of agricultural conservation practices\n\n\n\nNov 22, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects1/cv.html",
@@ -3673,5 +3673,201 @@
     "title": "Projects",
     "section": "",
     "text": "No matching items"
+  },
+  {
+    "objectID": "llms/projects1.html",
+    "href": "llms/projects1.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Data Apothecary’s Notes\n\n\n\n\n\n\n\n\n\n\n\n\n\nggehr\n\n\n\n\n\n\n\n\n\n\n\n\n\nMortality Surveillance in Norway\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoreden\n\n\n\n\n\n\n\n\n\n\n\n\n\nTeach in R and Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\nPHUSE - CAMIS\n\n\n\n\n\n\n\n\n\n\n\n\n\nCSIDS\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "llms/stat.html",
+    "href": "llms/stat.html",
+    "title": "Statistics",
+    "section": "",
+    "text": "Real World Data and Public health\nMy main research interest is hospital Electronic Health Records and large health registry data. My PhD (completed in 2022) focused on representation and utilization of hospital EHR data. I am currently working on quality assurance of the prescription and use of antibiotics in a hospital setting, and an R package ggehr to facilitate the exploration of EHR data.\nIn 2020-2022, I worked at Norwegian Institute of Public Health during Covid-19 pandemic. I helped develop Sykdomspulsen (now CSIDS), a real-time infectious disease surveillance and real-time large scale reporting with open source technology.\nSince 2023, I joined NOR-Eden and Norkost projects at University of Oslo. I help develop a set of R tools to facilitate sustainable diet design, noreden.\n\n\n\n\n\n\n\n\n\n\nCSIDS\n\n\nConsortium for Statistics in Disease Surveillance\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoreden\n\n\nR tools to faciliate sustainable nutrition research\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nOpen source data science in healthcare\nI work on open source data science projects with healthcare applications. I am the developer of MF9310E quarto website, leading the transition of teaching university biostatistics courses using R and Quarto. I’m also a co-lead of the PHUSE CAMIS project.\n\n\n\n\n\n\n\n\n\n\nTeach in R and Quarto\n\n\nTransform biostatistics classroom into R and quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\nPHUSE - CAMIS\n\n\nContributor to the Global Healthcare Data Science Community\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Apothecary’s Notes\n\n\nMy own note-taking system for a modern health data scientist\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\nCitationFor attribution, please cite this work as:\nKundan, Kundan. n.d. “Statistics.” https://kundan-kumarr.github.io/llms/stat.html."
+  },
+  {
+    "objectID": "llms/sykdomspulsen/index.html",
+    "href": "llms/sykdomspulsen/index.html",
+    "title": "CSIDS",
+    "section": "",
+    "text": "CSIDS: the Consortium for Statistics in Disease Surveillance (previously Sykdomspulsen) is a real-time analysis and disease surveillance system designed and developed at the Norwegian Institute of Public Health (NIPH/FHI). It is a unique project that processes new data (e.g. covid-19 cases) shortly after it is available. Complex statistical analyses are automatically run for all locations in Norway, producing reports and alerting various stakeholders. This provides the health authorities the ability to make proactive strategic decisions with the most up-to-date information.\n\n\ncsverse is a number of R packages that have been developed by the Sykdomspulsen team to help with infectious diseases surveillance.\n\n\n\nIn November 2022, the core components of Sykdomspulsen and splverse R packages have been migrated to CSIDS: the Consortium for Statistics in Disease Surveillance. Please refer to CSIDS for ongoing developments.\n\n\n\n\nWe receive data from more than 15 data sources every day\n2 000 000 000+ rows of data and results (1TB)\n1 000+ database tables\n1 000 000+ analyses per day\n1 000+ automatic reports per day\n\n\n\nDownload poster (Norwegian)"
+  },
+  {
+    "objectID": "llms/sykdomspulsen/index.html#overview",
+    "href": "llms/sykdomspulsen/index.html#overview",
+    "title": "CSIDS",
+    "section": "",
+    "text": "CSIDS: the Consortium for Statistics in Disease Surveillance (previously Sykdomspulsen) is a real-time analysis and disease surveillance system designed and developed at the Norwegian Institute of Public Health (NIPH/FHI). It is a unique project that processes new data (e.g. covid-19 cases) shortly after it is available. Complex statistical analyses are automatically run for all locations in Norway, producing reports and alerting various stakeholders. This provides the health authorities the ability to make proactive strategic decisions with the most up-to-date information.\n\n\ncsverse is a number of R packages that have been developed by the Sykdomspulsen team to help with infectious diseases surveillance.\n\n\n\nIn November 2022, the core components of Sykdomspulsen and splverse R packages have been migrated to CSIDS: the Consortium for Statistics in Disease Surveillance. Please refer to CSIDS for ongoing developments.\n\n\n\n\nWe receive data from more than 15 data sources every day\n2 000 000 000+ rows of data and results (1TB)\n1 000+ database tables\n1 000 000+ analyses per day\n1 000+ automatic reports per day\n\n\n\nDownload poster (Norwegian)"
+  },
+  {
+    "objectID": "llms/projects.html",
+    "href": "llms/projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Real World Data and Public health\nMy main research interest is hospital Electronic Health Records and large health registry data. My PhD (completed in 2022) focused on representation and utilization of hospital EHR data. I am currently working on quality assurance of the prescription and use of antibiotics in a hospital setting, and an R package ggehr to facilitate the exploration of EHR data.\nIn 2020-2022, I worked at Norwegian Institute of Public Health during Covid-19 pandemic. I helped develop Sykdomspulsen (now CSIDS), a real-time infectious disease surveillance and real-time large scale reporting with open source technology.\nSince 2023, I joined NOR-Eden and Norkost projects at University of Oslo. I help develop a set of R tools to facilitate sustainable diet design, noreden.\n\n\n\n\n\n\n\n\n\n\nCSIDS\n\n\nConsortium for Statistics in Disease Surveillance\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nOpen source data science in healthcare\nI work on open source data science projects with healthcare applications. I am the developer of MF9310E quarto website, leading the transition of teaching university biostatistics courses using R and Quarto. I’m also a co-lead of the PHUSE CAMIS project.\n\n\n\n\n\n\n\n\n\n\nTeach in R and Quarto\n\n\nTransform biostatistics classroom into R and quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\nPHUSE - CAMIS\n\n\nContributor to the Global Healthcare Data Science Community\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Apothecary’s Notes\n\n\nMy own note-taking system for a modern health data scientist\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\nCitationFor attribution, please cite this work as:\nKundan, Kundan. n.d. “Projects.” https://kundan-kumarr.github.io/llms/projects.html."
+  },
+  {
+    "objectID": "llms/dan/index.html",
+    "href": "llms/dan/index.html",
+    "title": "Data Apothecary’s Notes",
+    "section": "",
+    "text": "(This is my own note-taking system using quarto)\n\nAbout the notes\nData Apothecary’s Notes is a note-taking repository for modern data science skills with a focus on drug development and clinical trials. Content will be gradually added while I learn the topics. Therefore, it is by no means a complete guide by the time you read it!\nI try to organize the content in a modular way. I think these should cover the important aspects in which a data scientist / modern statistician should know.\n\nstudy design\ninference\nmodels\nreporting\nprogramming\n\n\n\nWhy quarto\nIn short, quarto has the advantage of making a very well structured website with code chunks easy. No more worry about scattered notes in different folders - put them together, render it so you can find your notes quickly!\n\n\n\n\nCitationFor attribution, please cite this work as:\nKundan, Kundan. n.d. “Data Apothecary’s Notes.” https://kundan-kumarr.github.io/llms/dan/."
+  },
+  {
+    "objectID": "llms/dl.html",
+    "href": "llms/dl.html",
+    "title": "Deep Reinforcement Learning",
+    "section": "",
+    "text": "Real World Data and Public health\nMy main research interest is hospital Electronic Health Records and large health registry data. My PhD (completed in 2022) focused on representation and utilization of hospital EHR data. I am currently working on quality assurance of the prescription and use of antibiotics in a hospital setting, and an R package ggehr to facilitate the exploration of EHR data.\nIn 2020-2022, I worked at Norwegian Institute of Public Health during Covid-19 pandemic. I helped develop Sykdomspulsen (now CSIDS), a real-time infectious disease surveillance and real-time large scale reporting with open source technology.\nSince 2023, I joined NOR-Eden and Norkost projects at University of Oslo. I help develop a set of R tools to facilitate sustainable diet design, noreden.\n\n\n\n\n\n\n\n\n\n\nCSIDS\n\n\nConsortium for Statistics in Disease Surveillance\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nOpen source data science in healthcare\nI work on open source data science projects with healthcare applications. I am the developer of MF9310E quarto website, leading the transition of teaching university biostatistics courses using R and Quarto. I’m also a co-lead of the PHUSE CAMIS project.\n\n\n\n\n\n\n\n\n\n\nTeach in R and Quarto\n\n\nTransform biostatistics classroom into R and quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\nPHUSE - CAMIS\n\n\nContributor to the Global Healthcare Data Science Community\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Apothecary’s Notes\n\n\nMy own note-taking system for a modern health data scientist\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\nCitationFor attribution, please cite this work as:\nKundan, Kundan. n.d. “Deep Reinforcement Learning.” https://kundan-kumarr.github.io/llms/dl.html."
+  },
+  {
+    "objectID": "llms/nor_mortality/index.html",
+    "href": "llms/nor_mortality/index.html",
+    "title": "Mortality Surveillance in Norway",
+    "section": "",
+    "text": "NorMOMO"
+  },
+  {
+    "objectID": "llms/nor_mortality/index.html#norwegian-surveillance-system-for-excess-mortality",
+    "href": "llms/nor_mortality/index.html#norwegian-surveillance-system-for-excess-mortality",
+    "title": "Mortality Surveillance in Norway",
+    "section": "",
+    "text": "NorMOMO"
+  },
+  {
+    "objectID": "llms/nor_mortality/index.html#r-packages-for-mortality-surveillance",
+    "href": "llms/nor_mortality/index.html#r-packages-for-mortality-surveillance",
+    "title": "Mortality Surveillance in Norway",
+    "section": "R packages for mortality surveillance",
+    "text": "R packages for mortality surveillance\n(continue…)\n\nnowcast\nsplalert\nmortanor"
+  },
+  {
+    "objectID": "llms/nor_mortality/index.html#collaboration-with-cause-of-death-registry",
+    "href": "llms/nor_mortality/index.html#collaboration-with-cause-of-death-registry",
+    "title": "Mortality Surveillance in Norway",
+    "section": "Collaboration with Cause of Death Registry",
+    "text": "Collaboration with Cause of Death Registry"
+  },
+  {
+    "objectID": "llms/drl.html",
+    "href": "llms/drl.html",
+    "title": "Deep Reinforcement Learning",
+    "section": "",
+    "text": "Real World Data and Public health\nMy main research interest is hospital Electronic Health Records and large health registry data. My PhD (completed in 2022) focused on representation and utilization of hospital EHR data. I am currently working on quality assurance of the prescription and use of antibiotics in a hospital setting, and an R package ggehr to facilitate the exploration of EHR data.\nIn 2020-2022, I worked at Norwegian Institute of Public Health during Covid-19 pandemic. I helped develop Sykdomspulsen (now CSIDS), a real-time infectious disease surveillance and real-time large scale reporting with open source technology.\nSince 2023, I joined NOR-Eden and Norkost projects at University of Oslo. I help develop a set of R tools to facilitate sustainable diet design, noreden.\n\n\n\n\n\n\n\n\n\n\nCSIDS\n\n\nConsortium for Statistics in Disease Surveillance\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nOpen source data science in healthcare\nI work on open source data science projects with healthcare applications. I am the developer of MF9310E quarto website, leading the transition of teaching university biostatistics courses using R and Quarto. I’m also a co-lead of the PHUSE CAMIS project.\n\n\n\n\n\n\n\n\n\n\nTeach in R and Quarto\n\n\nTransform biostatistics classroom into R and quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\nPHUSE - CAMIS\n\n\nContributor to the Global Healthcare Data Science Community\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Apothecary’s Notes\n\n\nMy own note-taking system for a modern health data scientist\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\nCitationFor attribution, please cite this work as:\nKundan, Kundan. n.d. “Deep Reinforcement Learning.” https://kundan-kumarr.github.io/llms/drl.html."
+  },
+  {
+    "objectID": "llms/prohect2.html",
+    "href": "llms/prohect2.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Data Apothecary’s Notes\n\n\n\n\n\n\n\n\n\n\n\n\n\nggehr\n\n\n\n\n\n\n\n\n\n\n\n\n\nMortality Surveillance in Norway\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoreden\n\n\n\n\n\n\n\n\n\n\n\n\n\nTeach in R and Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\nPHUSE - CAMIS\n\n\n\n\n\n\n\n\n\n\n\n\n\nCSIDS\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "llms/os_teaching/index.html",
+    "href": "llms/os_teaching/index.html",
+    "title": "Teach in R and Quarto",
+    "section": "",
+    "text": "MF9130E - Introductory course in statistics\n8-day intensive course on introductory statistics. April 2023 we made it with R rather than propriety software, coupled with live-coding sessions to enhance understanding of basic concepts such as distribution and hypothesis tests.\nRepository\nCourse website\nRead more about the experience in\n\nblogpost\npresentation\n\n\n\n\n\nCitationFor attribution, please cite this work as:\nKundan, Kundan. n.d. “Teach in R and Quarto.” https://kundan-kumarr.github.io/llms/os_teaching/."
+  },
+  {
+    "objectID": "llms/robo.html",
+    "href": "llms/robo.html",
+    "title": "Deep Reinforcement Learning",
+    "section": "",
+    "text": "Real World Data and Public health\nMy main research interest is hospital Electronic Health Records and large health registry data. My PhD (completed in 2022) focused on representation and utilization of hospital EHR data. I am currently working on quality assurance of the prescription and use of antibiotics in a hospital setting, and an R package ggehr to facilitate the exploration of EHR data.\nIn 2020-2022, I worked at Norwegian Institute of Public Health during Covid-19 pandemic. I helped develop Sykdomspulsen (now CSIDS), a real-time infectious disease surveillance and real-time large scale reporting with open source technology.\nSince 2023, I joined NOR-Eden and Norkost projects at University of Oslo. I help develop a set of R tools to facilitate sustainable diet design, noreden.\n\n\n\n\n\n\n\n\n\n\nCSIDS\n\n\nConsortium for Statistics in Disease Surveillance\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nOpen source data science in healthcare\nI work on open source data science projects with healthcare applications. I am the developer of MF9310E quarto website, leading the transition of teaching university biostatistics courses using R and Quarto. I’m also a co-lead of the PHUSE CAMIS project.\n\n\n\n\n\n\n\n\n\n\nTeach in R and Quarto\n\n\nTransform biostatistics classroom into R and quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\nPHUSE - CAMIS\n\n\nContributor to the Global Healthcare Data Science Community\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Apothecary’s Notes\n\n\nMy own note-taking system for a modern health data scientist\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\nCitationFor attribution, please cite this work as:\nKundan, Kundan. n.d. “Deep Reinforcement Learning.” https://kundan-kumarr.github.io/llms/robo.html."
+  },
+  {
+    "objectID": "llms/ehr-title/index.html",
+    "href": "llms/ehr-title/index.html",
+    "title": "ggehr",
+    "section": "",
+    "text": "ggehr (read: gg E-H-R) stands for ggplot2 extension for EHR data, which provides a set of tools to facilitate EHR (Electronic Health Records) visualization.\nggehr package helps you make visualize EHR data, so that you can\n\nhave an overview of the mixed type information related to a patient;\nvisually identify the errors in data recording.\n\nLearn more about ggehr\n\n\n\nCitationFor attribution, please cite this work as:\nKundan, Kundan. n.d. “Ggehr.” https://kundan-kumarr.github.io/llms/ehr-title/."
+  },
+  {
+    "objectID": "llms/noreden/index.html",
+    "href": "llms/noreden/index.html",
+    "title": "Noreden",
+    "section": "",
+    "text": "Noreden\n\n\n\nCitationFor attribution, please cite this work as:\nKundan, Kundan. n.d. “Noreden.” https://kundan-kumarr.github.io/llms/noreden/."
+  },
+  {
+    "objectID": "llms/phuse/index.html",
+    "href": "llms/phuse/index.html",
+    "title": "PHUSE - CAMIS",
+    "section": "",
+    "text": "I am contributing to two working groups at PHUSE: CAMIS, and RWD - Real World Data Guideline (early stage).\n\nCAMIS: Comparing Analysis Method Implementations in Software\nCAMIS is a cross-industry group formed of members from PHUSE, PSI and ASA.\nSeveral discrepancies have been discovered in statistical analysis results between different programming languages, even in fully qualified statistical computing environments. Observing differences across languages can reduce the analyst’s confidence in reliability and, by understanding the source of any discrepancies, one can reinstate confidence in reliability.\nThe goal of this project is to demystify conflict when doing QC and to help ease the transitions to new languages and techniques with comparison and comprehensive explanations.\n\n\nRWD Working Group\nThis is a newly formed working group, working on statistical programming guidelines while working on RWD (read world data).\n\n\n\n\nCitationFor attribution, please cite this work as:\nKundan, Kundan. n.d. “PHUSE - CAMIS.” https://kundan-kumarr.github.io/llms/phuse/."
+  },
+  {
+    "objectID": "llms/cv.html",
+    "href": "llms/cv.html",
+    "title": "Deep Reinforcement Learning",
+    "section": "",
+    "text": "Real World Data and Public health\nMy main research interest is hospital Electronic Health Records and large health registry data. My PhD (completed in 2022) focused on representation and utilization of hospital EHR data. I am currently working on quality assurance of the prescription and use of antibiotics in a hospital setting, and an R package ggehr to facilitate the exploration of EHR data.\nIn 2020-2022, I worked at Norwegian Institute of Public Health during Covid-19 pandemic. I helped develop Sykdomspulsen (now CSIDS), a real-time infectious disease surveillance and real-time large scale reporting with open source technology.\nSince 2023, I joined NOR-Eden and Norkost projects at University of Oslo. I help develop a set of R tools to facilitate sustainable diet design, noreden.\n\n\n\n\n\n\n\n\n\n\nCSIDS\n\n\nConsortium for Statistics in Disease Surveillance\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nOpen source data science in healthcare\nI work on open source data science projects with healthcare applications. I am the developer of MF9310E quarto website, leading the transition of teaching university biostatistics courses using R and Quarto. I’m also a co-lead of the PHUSE CAMIS project.\n\n\n\n\n\n\n\n\n\n\nTeach in R and Quarto\n\n\nTransform biostatistics classroom into R and quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\nPHUSE - CAMIS\n\n\nContributor to the Global Healthcare Data Science Community\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Apothecary’s Notes\n\n\nMy own note-taking system for a modern health data scientist\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\nCitationFor attribution, please cite this work as:\nKundan, Kundan. n.d. “Deep Reinforcement Learning.” https://kundan-kumarr.github.io/llms/cv.html."
+  },
+  {
+    "objectID": "llms/index.html",
+    "href": "llms/index.html",
+    "title": "Large Language Models",
+    "section": "",
+    "text": "Deep Reinforcement Learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProjects\n\n\nThis porfolio includes openly available educational material I have created, along with works, software, and tools I have contributed to or designed.\n\n\n\n\n\n\n\n\n\n\n\n\n\nMortality Surveillance in Norway\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTeach in R and Quarto\n\n\nTransform biostatistics classroom into R and quarto\n\n\n\n\n\n\n\n\n\n\n\nDeep Reinforcement Learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDeep Reinforcement Learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Apothecary’s Notes\n\n\nMy own note-taking system for a modern health data scientist\n\n\n\n\n\n\n\n\n\n\n\n\n\nggehr\n\n\nggplot2 extension to EHR data\n\n\n\n\n\n\n\n\n\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoreden\n\n\nR tools to faciliate sustainable nutrition research\n\n\n\n\n\n\n\n\n\n\n\n\n\nCSIDS\n\n\nConsortium for Statistics in Disease Surveillance\n\n\n\n\n\n\n\n\n\n\n\n\n\nPHUSE - CAMIS\n\n\nContributor to the Global Healthcare Data Science Community\n\n\n\n\n\n\n\n\n\n\n\nStatistics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDeep Reinforcement Learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProjects\n\n\nThis porfolio includes openly available educational material I have created, along with works, software, and tools I have contributed to or designed.\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "llms/index.html#upcoming",
+    "href": "llms/index.html#upcoming",
+    "title": "Talks",
+    "section": "",
+    "text": "Explore Real-World hospital Electronic Health Records data with ggehr"
+  },
+  {
+    "objectID": "llms/index.html#selected-previous-talks",
+    "href": "llms/index.html#selected-previous-talks",
+    "title": "Talks",
+    "section": "Selected previous talks",
+    "text": "Selected previous talks\n\n\n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nDescription\n\n\nDate\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "drl.html",
+    "href": "drl.html",
+    "title": "Large Language Models Projects",
+    "section": "",
+    "text": "Mortality Surveillance in Norway\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMortality Surveillance in Norway\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggehr\n\n\nggplot2 extension to EHR data\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoreden\n\n\nR tools to faciliate sustainable nutrition research\n\n\n\n\n\n\n\n\n\n\n\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoreden\n\n\nR tools to faciliate sustainable nutrition research\n\n\n\n\n\n\n\n\n\n\n\n\n\nDRL\n\n\nR tools to faciliate sustainable nutrition research\n\n\n\n\n\n\n\n\n\n\n\n\n\nwashi\n\n\n\nR package\n\n\n\nPalette and themes for Washington Soil Health Initiative branding\n\n\n\nSep 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nwashi\n\n\n\nR package\n\n\n\nPalette and themes for Washington Soil Health Initiative branding\n\n\n\nSep 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWaSHI Soil Health Roadmap\n\n\n\nArcGIS\n\n\nPython\n\n\n\nWashington Soil Health Initiative Roadmap created with Python and ArcGIS Dashboards & Experience Builder\n\n\n\nAug 4, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\norcas\n\n\n\nR package\n\n\n\nMy first personal project to learn web scraping with {rvest} and mapping with {leaflet}\n\n\n\nApr 20, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWaCSE\n\n\n\nShiny app\n\n\n\nWashington Climate Smart Estimator: A shiny app for comparing climate benefits of agricultural conservation practices\n\n\n\nNov 22, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/llm_noreden/index.html",
+    "href": "projects/llm_noreden/index.html",
+    "title": "Noreden",
+    "section": "",
+    "text": "Noreden"
+  },
+  {
+    "objectID": "projects/llm_nor_mortality/index.html",
+    "href": "projects/llm_nor_mortality/index.html",
+    "title": "Mortality Surveillance in Norway",
+    "section": "",
+    "text": "NorMOMO"
+  },
+  {
+    "objectID": "projects/llm_nor_mortality/index.html#norwegian-surveillance-system-for-excess-mortality",
+    "href": "projects/llm_nor_mortality/index.html#norwegian-surveillance-system-for-excess-mortality",
+    "title": "Mortality Surveillance in Norway",
+    "section": "",
+    "text": "NorMOMO"
+  },
+  {
+    "objectID": "projects/llm_nor_mortality/index.html#r-packages-for-mortality-surveillance",
+    "href": "projects/llm_nor_mortality/index.html#r-packages-for-mortality-surveillance",
+    "title": "Mortality Surveillance in Norway",
+    "section": "R packages for mortality surveillance",
+    "text": "R packages for mortality surveillance\n(continue…)\n\nnowcast\nsplalert\nmortanor"
+  },
+  {
+    "objectID": "projects/llm_nor_mortality/index.html#collaboration-with-cause-of-death-registry",
+    "href": "projects/llm_nor_mortality/index.html#collaboration-with-cause-of-death-registry",
+    "title": "Mortality Surveillance in Norway",
+    "section": "Collaboration with Cause of Death Registry",
+    "text": "Collaboration with Cause of Death Registry"
   }
 ]
