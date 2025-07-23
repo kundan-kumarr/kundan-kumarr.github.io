@@ -12,7 +12,7 @@ page-layout: full
   <tr>
     <td><strong></strong></td>
     <td style="text-align: right;">
-      <a href="misc/info/Kundan_Kumar_CV.pdf" download style="
+      <a href="http://kundan-kumarr.github.io/misc/info/Kundan_Kumar_CV.pdf" download style="
         background-color: #f5f0e9;
         color: #934c2f;
         padding: 6px 14px;
