@@ -56,20 +56,22 @@ listing:
   fields: [title, subtitle, image]
   max-items: 1
   image-height: "200"
+  
 - id: publication
   contents: 
-    - "../publication/*/index.qmd"
-    - "../publication/*/index.markdown"
+    - "../publications/articles/*.qmd"
+    - "../publications/*/index.markdown"
   sort: date desc
   type: grid
   grid-columns: 1
   categories: false
   sort-ui: false
   filter-ui: false
-  fields: [title, image]
+  fields: [title, year, image]
   max-items: 1
   image-height: "200"
   image-placeholder: ../publication/featured.jpg
+  
 - id: project
   contents: 
     - "../projects/*/index.qmd"
@@ -203,7 +205,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 #### Publications
 ::: {#publication}
 :::
-[See all &rarr;](/publication/){.about-links .subtitle}
+[See all &rarr;](/publications/){.about-links .subtitle}
 :::
 
 ::: {.g-col-3}
