@@ -69,7 +69,8 @@ website:
     anonymize-ip: true 
 
 bibliography: references.bib
-
+filters:
+  - custom-bib-links.lua
 format:
   html:
     theme: styles.scss

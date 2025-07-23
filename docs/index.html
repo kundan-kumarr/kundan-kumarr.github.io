@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-16f0be44cf0b9c8dc4714857273be9e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a67d5d46f982f11381c5eb18e70b6e73.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-616f5aa6220b0e5d7a860425058124c1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -128,34 +128,6 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-publication .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-publication'] = new List('listing-publication', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-project .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -170,6 +142,35 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-project'] = new List('listing-project', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-publication .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-year','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 18,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-publication'] = new List('listing-publication', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -278,7 +279,7 @@ window.Quarto = {
  <span class="dropdown-text">Deep Reinforcement Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects1/dl.qmd">
+    <a class="dropdown-item" href="./drl.html">
  <span class="dropdown-text">Deep/Machine Learning</span></a>
   </li>  
         <li>
@@ -290,7 +291,7 @@ window.Quarto = {
  <span class="dropdown-text">Computer Vision</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects1/robo.qmd">
+    <a class="dropdown-item" href="./drl.html">
  <span class="dropdown-text">Robotics</span></a>
   </li>  
     </ul>
@@ -502,16 +503,26 @@ No matching items
 <h4 data-anchor-id="publications">Publications</h4>
 <div id="listing-publication" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1752555600000" data-listing-file-modified-sort="1752617388457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="16">
-<a href="./publication/dummy_talk/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="dmVyYmFsJTJDYXJ0aWNsZQ==" data-listing-file-modified-sort="1753295065981" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
+<a href="./publications/articles/adaryukov2024.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./publication/dummy_talk/talk_image.png" class="thumbnail-image card-img" style="height: 200;">
+<img loading="lazy" src="https://github.com/jadeynryan/orcas/blob/master/inst/img/leaflet_screenshot.png?raw=true" class="thumbnail-image card-img" style="height: 200;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-My Dummy Talk
+Worth the weight: An examination of unstructured and structured data in graduate admissions
 </h5>
+<table class="card-other-values">
+<tbody><tr>
+<td>
+year
+</td>
+<td class="year">
+2025
+</td>
+</tr>
+</tbody></table>
 </div>
 </div>
 </a>
@@ -521,7 +532,7 @@ My Dummy Talk
 No matching items
 </div>
 </div>
-<p><a href="./publication/" class="about-links subtitle">See all →</a></p>
+<p><a href="./publications/" class="about-links subtitle">See all →</a></p>
 </section>
 <section id="projects" class="level4 g-col-3">
 <h4 data-anchor-id="projects">Projects</h4>

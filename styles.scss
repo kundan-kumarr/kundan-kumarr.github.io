@@ -194,6 +194,52 @@ h4 {
   font-size: 0.85rem;
 }
 
+.btn {
+  border: none;
+  padding: 6px 12px;
+  margin-right: 5px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-sm { font-size: 0.75rem; }
+
+.btn-primary { background-color: #007bff; }
+.btn-success { background-color: #28a745; }
+.btn-info    { background-color: #17a2b8; }
+
+.btn:hover { opacity: 0.85; }
+
+.btn-blue {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-green {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-purple {
+  background-color: #6f42c1;
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: #0056b3;
+}
+
+.btn-green:hover {
+  background-color: #1e7e34;
+}
+
+.btn-purple:hover {
+  background-color: #5a32a3;
+}
+
+
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
