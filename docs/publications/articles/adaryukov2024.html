@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Adaryukov, Biernat, et al.">
+<meta name="author" content="Kundan Kumar">
+<meta name="dcterms.date" content="2024-02-21">
 
-<title>Worth the weight: An examination of unstructured and structured data in graduate admissions – Kundan Kumar</title>
+<title>Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems – Kundan Kumar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -179,10 +180,12 @@ gtag('config', '', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Worth the weight: An examination of unstructured and structured data in graduate admissions</h1>
+<h1 class="title">Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">verbal</div>
-    <div class="quarto-category">article</div>
+    <div class="quarto-category">Bayesian Neural Network</div>
+    <div class="quarto-category">Semi Supervised Learning</div>
+    <div class="quarto-category">Uncertainty Estimation</div>
+    <div class="quarto-category">Conference</div>
   </div>
   </div>
 
@@ -193,10 +196,16 @@ gtag('config', '', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Adaryukov, Biernat, et al. </p>
+             <p>Kundan Kumar </p>
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 21, 2024</p>
+    </div>
+  </div>
   
     
     <div>
@@ -214,15 +223,48 @@ gtag('config', '', { 'anonymize_ip': true});
 </header>
 
 
-<section id="citation-apa-7" class="level2">
-<h2 class="anchored" data-anchor-id="citation-apa-7">Citation (APA 7)</h2>
+<section id="citation-ieee" class="level3">
+<h3 class="anchored" data-anchor-id="citation-ieee">Citation (IEEE)</h3>
 <blockquote class="blockquote">
-<p>Adaryukov, J., Biernat, M., Girard, J. M., Villicana, A. J., &amp; Pleskac, T. J. (in press). Worth the weight: An examination of unstructured and structured data in graduate admissions. <em>Decision.</em></p>
+<p>K. Kumar, K. Utkarsh, J. Wang, and H. V. Padullaparti, “Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems,” Proc. IEEE Power &amp; Energy Society General Meeting (PESGM), 2025. (<em>Accepted</em>)</p>
 </blockquote>
+<section id="presentation" class="level4">
+<h4 class="anchored" data-anchor-id="presentation">Presentation</h4>
+<iframe class="slides" src="https://jadeyryan.quarto.pub/rladies-abuja-quarto-params/slides/#/title-slide">
+</iframe>
+</section>
 </section>
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>In graduate admissions, as in many multiattribute decisions, evaluators must judge candidates from a flood of information, including recommendation letters, personal statements, grades, and standardized test scores. Some of this information is structured, while some is unstructured. Yet most studies of multiattribute decisions focus on decisions made from structured information. This study evaluated how structured and unstructured information is used within graduate admissions decisions. We examined a uniquely comprehensive dataset of N = 2, 231 graduate applications to the University of Kansas, containing full application packages, demographics, and final admissions decisions for each applicant. To make sense of our documents, we applied structural topic modeling (STM), a topic model that allows topic content and prevalence to covary based on other metadata (e.g., department of study). STM allowed us to examine what information the letters and statements contain, and the relationships between variables like gender and race and the textual information. We found that most topics in the unstructured data related to specific fields of study. The STMs did not uncover strong differences among applicants regarding race and gender though the recommendation letters and personal statements for international applicants did show some different topic profiles than domestic applicants. We also found that admissions decision-makers behaved as if they prioritized structured numeric metrics, using unstructured information to check for disqualifications, if at all. However, we found that topics were less reliable than admissions documents, meaning that additional ways of using them cannot be completely ruled out. The implications of our findings on graduate admissions decisions are discussed.</p>
+<p>The integration of advanced metering infrastructure (AMI) into power distribution networks generates valuable data for tasks such as phase identification; however, the limited and unreliable availability of labeled data in the form of customer phase connectivity presents challenges. To address this issue, we propose a <strong>semi-supervised learning (SSL)</strong> framework that effectively leverages both <strong>labeled and unlabeled data</strong>.</p>
+</section>
+<section id="contribution" class="level2">
+<h2 class="anchored" data-anchor-id="contribution">Contribution</h2>
+<p>Our approach incorporates:</p>
+<ul>
+<li><strong>Self-training</strong> with an ensemble of multilayer perceptron classifiers.</li>
+<li><strong>Label spreading</strong> to propagate labels based on data similarity.</li>
+<li><strong>Bayesian Neural Networks (BNNs)</strong> for <strong>uncertainty estimation</strong>, improving confidence and reducing phase identification errors.</li>
+</ul>
+<p><strong>Key Highlights:</strong></p>
+<ul>
+<li>Achieved <strong>~98% ± 0.08 accuracy</strong> on real utility data (Duquesne Light Company) using minimal and unreliable labeled data.</li>
+<li>Uncertainty-aware predictions reduce misclassification risk and improve smart grid reliability.</li>
+<li>Combines <strong>pseudo-labeling</strong>, <strong>graph-based SSL</strong>, and <strong>probabilistic modeling</strong> to handle data scarcity in real-world distribution networks.</li>
+</ul>
+<p>Our SSL + Uncertainty Estimation approach provides an efficient and scalable solution for <strong>phase identification in AMI data</strong>, enabling utilities to improve <strong>modeling, simulation, and operational decision-making</strong>.</p>
+<hr>
+</section>
+<section id="figures" class="level2">
+<h2 class="anchored" data-anchor-id="figures">Figures</h2>
+<ol type="1">
+<li><p><strong>Illustration of SSL Techniques</strong> <img src="semi_supervised_pes_gm_2025/figures/ssl_techniques.png" class="img-fluid"></p></li>
+<li><p><strong>Proposed SSL Framework Applied to AMI Data</strong> <img src="semi_supervised_pes_gm_2025/figures/proposed_framework.png" class="img-fluid"></p></li>
+<li><p><strong>Distribution Feeder Topology</strong> <img src="semi_supervised_pes_gm_2025/figures/feeder_topology.png" class="img-fluid"></p></li>
+<li><p><strong>Training and Testing Data Partitions</strong> <img src="semi_supervised_pes_gm_2025/figures/data_split.png" class="img-fluid"></p></li>
+<li><p><strong>Accuracy Comparison of SSL Methods</strong> <img src="semi_supervised_pes_gm_2025/figures/accuracy_comparison.png" class="img-fluid"></p></li>
+</ol>
+<hr>
 
 
 </section>

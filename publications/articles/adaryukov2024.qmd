@@ -1,23 +1,70 @@
 ---
-title: "Worth the weight: An examination of unstructured and structured data in graduate admissions"
-type: "article"
-author: "Adaryukov, Biernat, et al."
+title: "Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems"
+author: 
+  - name: Kundan Kumar
+date: "2024-02-21"
 year: "2025"
-publication: "Decision"
+publication: "IEEE Power & Energy Society General Meeting"
 doi: "https://doi.org/10.31234/osf.io/j9yeq"
 materials: "https://osf.io/sfhm2/"
 Paper: "https://doi.org/10.31234/osf.io/j9yeq"
-image: "https://github.com/jadeynryan/orcas/blob/master/inst/img/leaflet_screenshot.png?raw=true"
+image: "figures/ssl_techniques.png"
 toc: false
 categories:
-  - verbal
-  - article
+  - Bayesian Neural Network
+  - Semi Supervised Learning
+  - Uncertainty Estimation
+  - Conference
 ---
 
-## Citation (APA 7)
+### Citation (IEEE)
 
-> Adaryukov, J., Biernat, M., Girard, J. M., Villicana, A. J., & Pleskac, T. J. (in press). Worth the weight: An examination of unstructured and structured data in graduate admissions. *Decision.*
+> K. Kumar, K. Utkarsh, J. Wang, and H. V. Padullaparti, “Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems,” Proc. IEEE Power & Energy Society General Meeting (PESGM), 2025. (*Accepted*)
+
+#### Presentation
+<iframe class="slides" src="https://jadeyryan.quarto.pub/rladies-abuja-quarto-params/slides/#/title-slide"></iframe>
 
 ## Abstract
 
-In graduate admissions, as in many multiattribute decisions, evaluators must judge candidates from a flood of information, including recommendation letters, personal statements, grades, and standardized test scores. Some of this information is structured, while some is unstructured. Yet most studies of multiattribute decisions focus on decisions made from structured information. This study evaluated how structured and unstructured information is used within graduate admissions decisions. We examined a uniquely comprehensive dataset of N = 2, 231 graduate applications to the University of Kansas, containing full application packages, demographics, and final admissions decisions for each applicant. To make sense of our documents, we applied structural topic modeling (STM), a topic model that allows topic content and prevalence to covary based on other metadata (e.g., department of study). STM allowed us to examine what information the letters and statements contain, and the relationships between variables like gender and race and the textual information. We found that most topics in the unstructured data related to specific fields of study. The STMs did not uncover strong differences among applicants regarding race and gender though the recommendation letters and personal statements for international applicants did show some different topic profiles than domestic applicants. We also found that admissions decision-makers behaved as if they prioritized structured numeric metrics, using unstructured information to check for disqualifications, if at all. However, we found that topics were less reliable than admissions documents, meaning that additional ways of using them cannot be completely ruled out. The implications of our findings on graduate admissions decisions are discussed.
+The integration of advanced metering infrastructure (AMI) into power distribution networks generates valuable data for tasks such as phase identification; however, the limited and unreliable availability of labeled data in the form of customer phase connectivity presents challenges. To address this issue, we propose a **semi-supervised learning (SSL)** framework that effectively leverages both **labeled and unlabeled data**.
+
+
+## Contribution
+Our approach incorporates:
+
+- **Self-training** with an ensemble of multilayer perceptron classifiers.
+- **Label spreading** to propagate labels based on data similarity.
+- **Bayesian Neural Networks (BNNs)** for **uncertainty estimation**, improving confidence and reducing phase identification errors.
+
+
+**Key Highlights:**
+
+- Achieved **~98% ± 0.08 accuracy** on real utility data (Duquesne Light Company) using minimal and unreliable labeled data.
+- Uncertainty-aware predictions reduce misclassification risk and improve smart grid reliability.
+- Combines **pseudo-labeling**, **graph-based SSL**, and **probabilistic modeling** to handle data scarcity in real-world distribution networks.
+
+Our SSL + Uncertainty Estimation approach provides an efficient and scalable solution for **phase identification in AMI data**, enabling utilities to improve **modeling, simulation, and operational decision-making**.
+
+---
+
+## Figures
+
+1. **Illustration of SSL Techniques**
+   ![](semi_supervised_pes_gm_2025/figures/ssl_techniques.png)
+
+2. **Proposed SSL Framework Applied to AMI Data**
+   ![](semi_supervised_pes_gm_2025/figures/proposed_framework.png)
+
+3. **Distribution Feeder Topology**
+   ![](semi_supervised_pes_gm_2025/figures/feeder_topology.png)
+
+4. **Training and Testing Data Partitions**
+   ![](semi_supervised_pes_gm_2025/figures/data_split.png)
+
+5. **Accuracy Comparison of SSL Methods**
+   ![](semi_supervised_pes_gm_2025/figures/accuracy_comparison.png)
+
+
+---
+
+
