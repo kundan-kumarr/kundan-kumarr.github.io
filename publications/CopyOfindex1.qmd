@@ -1,0 +1,43 @@
+---
+title: "Math in Quarto"
+format:
+  html:
+    math: mathjax # or katex mathjax
+    equation-number: true
+---
+
+## Binomial Formula
+
+\min_{f \in \mathcal{F}} \left[ \frac{1}{n_L} \sum_{i=1}^{n_L} \ell(f(x_i), y_i) + \lambda R_u(f, \mathcal{D}_U) \right]
+
+
+We define the binomial distribution as:
+
+\begin{equation}
+f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+\label{eq:binom}
+\end{equation}
+
+As shown in Equation \@ref(eq:binom), the binomial function defines the probability...
+
+## Binomial Formula
+
+We define the binomial distribution as:(@eq-black-scholes1) 
+
+$$
+f(k) = \binom{n}{k} p^k (1-p)^{n-k}
+$${#eq-black-scholes1}
+
+As shown in Equation \@ref(eq:binom), the binomial function defines the probability...
+
+
+Black-Scholes (@eq-black-scholes) is a mathematical model that seeks to explain the behavior of financial derivatives, most commonly options:
+
+$$
+\frac{\partial \mathrm C}{ \partial \mathrm t } + \frac{1}{2}\sigma^{2} \mathrm S^{2}
+\frac{\partial^{2} \mathrm C}{\partial \mathrm S^2}
+  + \mathrm r \mathrm S \frac{\partial \mathrm C}{\partial \mathrm S}\ =
+  \mathrm r \mathrm C 
+$$ {#eq-black-scholes}
+
+

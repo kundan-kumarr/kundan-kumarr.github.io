@@ -2,12 +2,10 @@
 title: "Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems"
 author: 
   - name: Kundan Kumar
-date: "2024-02-21"
 year: "2025"
+date : 2025-08-01
 publication: "IEEE Power & Energy Society General Meeting"
 doi: "https://doi.org/10.31234/osf.io/j9yeq"
-materials: "https://osf.io/sfhm2/"
-Paper: "https://doi.org/10.31234/osf.io/j9yeq"
 image: "figures/ssl_techniques.png"
 toc: false
 categories:
@@ -21,13 +19,30 @@ categories:
 
 > K. Kumar, K. Utkarsh, J. Wang, and H. V. Padullaparti, “Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems,” Proc. IEEE Power & Energy Society General Meeting (PESGM), 2025. (*Accepted*)
 
-#### Presentation
-<iframe class="slides" src="https://jadeyryan.quarto.pub/rladies-abuja-quarto-params/slides/#/title-slide"></iframe>
 
 ## Abstract
 
 The integration of advanced metering infrastructure (AMI) into power distribution networks generates valuable data for tasks such as phase identification; however, the limited and unreliable availability of labeled data in the form of customer phase connectivity presents challenges. To address this issue, we propose a **semi-supervised learning (SSL)** framework that effectively leverages both **labeled and unlabeled data**.
 
+
+1. **Why Phase Identification Needs a New Approach ?**
+<figure style="text-align: center;">
+  <img src="semi_supervised_pes_gm_2025/figures/ssl_techniques.png" alt="Illustration of Semi-Supervised Learning Techniques" style="width: 60%; height: auto;">
+  <figcaption><strong>Fig. 1:</strong> Illustration of Semi-Supervised Learning Techniques</figcaption>
+</figure>
+Problem: Utilities don’t know which phase
+customers are connected to — this affects
+voltage regulation, DER integration, and fault
+localization.
+• Challenge: Ground truth phase data
+is scarce, unreliable, and costly to collect.
+• Supervised learning ML methods need lots of labeled data – often unavailable
+or unreliable.
+• Motivation: How do we scale phase
+identification without needing tons of labeled
+data?
+
+add techniques
 
 ## Contribution
 Our approach incorporates:
@@ -47,24 +62,116 @@ Our SSL + Uncertainty Estimation approach provides an efficient and scalable sol
 
 ---
 
-## Figures
+## Semi-Supervised Learning Framework
+We formulate SSL as a regularized optimization problem:
 
-1. **Illustration of SSL Techniques**
-   ![](semi_supervised_pes_gm_2025/figures/ssl_techniques.png)
+$$
+\min_{f \in \mathcal{F}} \left[ \frac{1}{n_L} \sum_{i=1}^{n_L} \ell(f(x_i), y_i) + \lambda R_u(f, \mathcal{D}_U) \right]
+$$
+
+Where:
+
+- \( \ell(\cdot, \cdot) \): Supervised loss (cross-entropy)  
+- \( R_u(f, \mathcal{D}_U) \): Unsupervised regularization term  
+- \( \lambda \): Trade-off parameter  
+
+The challenge is designing \( R_u(f, \mathcal{D}_U) \) to effectively leverage unlabeled data.
+
+\begin{equation} 
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  (\#eq:binom)
+\end{equation} 
+You may refer to using `\@ref(eq:binom)`, like see Equation \@ref(eq:binom).
+
+
+We formulate SSL as a regularized optimization problem:
+
+$$
+\min_{f \in \mathcal{F}} \left[ \frac{1}{n_L} \sum_{i=1}^{n_L} \ell(f(x_i), y_i) + \lambda R_u(f, \mathcal{D}_U) \right]
+$$
+ Where $$a^2 + b^2 = d^2$$ is the Unsupervised regularization term
+
+Where:
+$$
+R_u(f, \mathcal{D}_U) 
+$$
+ is the 
+- \( \ell(\cdot, \cdot) \): Supervised loss (cross-entropy)  
+- \( R_u(f, \mathcal{D}_U) \): Unsupervised regularization term  
+- \( \lambda \): Trade-off parameter  
+
+The challenge is designing \( R_u(f, \mathcal{D}_U) \) to effectively leverage unlabeled data.
+
+- $$\ell(\cdot, \cdot)$$: Supervised loss (cross-entropy)
+- $$R_u(f, \mathcal{D}_U)$$: Unsupervised regularization term
+- $$\lambda$$: Trade-off parameter
+
+- \( \ell(\cdot, \cdot) \): Supervised loss (cross-entropy)  
+- \( R_u(f, \mathcal{D}_U) \): Unsupervised regularization term  
+- \( \lambda \): Trade-off parameter  
+
+We formulate SSL as a regularized optimization problem:
+min_{f∈ℱ} [ (1/n_L) ∑^{n_L}_{i=1} ℓ(f(x_i), y_i) + λR_u(f, 𝒟_U) ]
+Where:
+
+ℓ(·,·): Supervised loss (cross-entropy)
+R_u(f, 𝒟_U): Unsupervised regularization term
+λ: Trade-off parameter
+
+The challenge: designing R_u(f, 𝒟_U) that effectively exploits unlabeled data structure
+## Methodology
+
+
+
+
+
+<!--![](semi_supervised_pes_gm_2025/figures/ssl_techniques.png){ width=50% }-->
 
 2. **Proposed SSL Framework Applied to AMI Data**
-   ![](semi_supervised_pes_gm_2025/figures/proposed_framework.png)
+<div style="text-align: center;">
+  <img src="semi_supervised_pes_gm_2025/figures/proposed_framework.png" alt="SSL Framework" style="width: 60%; height: auto;">
+</div>
+
 
 3. **Distribution Feeder Topology**
-   ![](semi_supervised_pes_gm_2025/figures/feeder_topology.png)
+<div style="text-align: center;">
+  <img src="semi_supervised_pes_gm_2025/figures/feeder_topology.png" alt="Network Toplogy" style="width: 60%; height: auto;">
+</div>
+
 
 4. **Training and Testing Data Partitions**
-   ![](semi_supervised_pes_gm_2025/figures/data_split.png)
+<div style="text-align: center;">
+  <img src="semi_supervised_pes_gm_2025/figures/data_split.png" alt="Data Split" style="width: 60%; height: auto;">
+</div>
+
 
 5. **Accuracy Comparison of SSL Methods**
-   ![](semi_supervised_pes_gm_2025/figures/accuracy_comparison.png)
+
+<div style="text-align: center;">
+  <img src="semi_supervised_pes_gm_2025/figures/accuracy_comparison.png" alt="Accuracy Comparison" style="width: 60%; height: auto;">
+</div>
 
 
 ---
+#### Presentation
+<!--<iframe class="slides" src="https://jadeyryan.quarto.pub/rladies-abuja-quarto-params/slides/#/title-slide"></iframe> -->
 
+<iframe 
+  class="slides" 
+  src="semi_supervised_pes_gm_2025/docs/SSL_PESGM_poster.pdf" 
+  width="100%" 
+  height="400px" 
+  style="border: none;">
+</iframe>
 
+<div style="text-align: center; margin-top: 10px;">
+  <a href="semi_supervised_pes_gm_2025/docs/SSL_PESGM_poster.pdf" target="_blank" class="btn btn-primary">
+    View Fullscreen Poster
+  </a>
+</div>
+<!--<iframe 
+  src="semi_supervised_pes_gm_2025/docs/SSL_PESGM_presentation.pdf" 
+  width="100%" 
+  height="400px" 
+  style="border: none;">
+</iframe> -->
