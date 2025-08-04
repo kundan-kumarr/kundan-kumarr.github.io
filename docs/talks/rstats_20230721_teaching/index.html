@@ -80,6 +80,35 @@ gtag('config', '', { 'anonymize_ip': true});
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -216,10 +245,11 @@ gtag('config', '', { 'anonymize_ip': true});
 <p><img src="image_talk_20230721.png" class="img-fluid"></p>
 <p>Time and place: <strong>July 21, 2023 10AM. Roche office, Basel, Switzerland</strong></p>
 <p>Slides for this talk can be accessed <a href="https://github.com/chizapoth/talks/tree/master/2023-07-21-basel" class="btn btn-success btn-sm">Code</a>.</p>
-<section id="about-the-topic" class="level2">
-<h2 class="anchored" data-anchor-id="about-the-topic">About the topic</h2>
+<section id="about-the-topic" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="about-the-topic"><span class="header-section-number">1</span> About the topic</h2>
 <p>The 8 day introductory statistics course (MF9130) at the Faculty of Medicine, University of Oslo is designed for PhD students in medicine, biology, psychology and other health related fields. Similar to other conventional teaching methods, the course has been focusing largely on theory and hand calculation. The software has been Stata and SPSS, and data analysis was mostly left for the students to figure out on their own.</p>
 <p>This year, we made an attempt to transform the course with R, and aimed to teach more practical data analysis skills. We added one session per day where the instructor guide students on R and project management, importing data , basic manipulation and statistical methods. The IT skills of the students vary greatly, and therefore we used the ‘sticky notes’ help system borrowed from the Carpentries to make sure everyone could get help in the first days. We have created a course website using Quarto, where all the material and R exercises (with rendered solution) are available for self-study. We have witnessed amazing progress - by the end of the first week, students with the least computer / data skills were able to work on dataframes, make basic plots and do a chi-squared test. This helps build students confidence in data and statistics, and as a result, they can start to work on their own datasets using the skills immediately.</p>
+
 
 
 </section>

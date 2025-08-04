@@ -77,6 +77,35 @@ gtag('config', '', { 'anonymize_ip': true});
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -233,8 +262,8 @@ To support cross-domain generalization, I develop **transfer learning techniques
 
 Beyond smart energy systems, I maintain active research interests in **probabilistic reasoning**, **statistical machine learning**, and **robotics**, as well as the integration of **LLMs** with simulation and control frameworks. I am particularly excited about the potential of LLMs to improve human-AI interaction, enhance contextual awareness, and drive more interpretable and adaptive behavior in intelligent systems.
 -->
-<section id="hi-there" class="level2">
-<h2 data-anchor-id="hi-there">Hi there!</h2>
+<section id="hi-there" class="level2" data-number="1">
+<h2 data-number="1" data-anchor-id="hi-there"><span class="header-section-number">1</span> Hi there!</h2>
 <p>I am a researcher focused on developing intelligent, secure, and adaptable AI systems for next-generation cyber-physical infrastructure. My work spans <strong>deep reinforcement learning (DRL)</strong>, <strong>multi-agent systems</strong>, <strong>large language models (LLMs)</strong>, <strong>safe and explainable AI</strong>, <strong>computer vision</strong>, and <strong>robotics</strong>, with real-world applications in smart energy systems, autonomous vehicles, and critical infrastructure.</p>
 <p>The core of my Ph.D.&nbsp;research centers on developing <strong>physics-informed and safety-critical deep reinforcement learning (DRL) frameworks</strong> that embed domain knowledge and system constraints directly into the learning process. By incorporating physical laws, safety boundaries, and system dynamics into policy optimization, I design agents capable of making robust, interpretable, and reliable decisions in dynamic, high-stakes environments. My work addresses challenges such as <strong>uncertainty quantification</strong>, <strong>adversarial resilience</strong>, and <strong>safe exploration</strong>, while enabling agents to generalize across diverse network topologies, environmental conditions, and task distributions through advanced <strong>transfer learning</strong> and <strong>meta-learning</strong> techniques.</p>
 <p>I also leverage the <strong>CARLA simulator</strong> for autonomous driving research, combining computer vision, trajectory planning, and policy learning in complex traffic environments. My work integrates <strong>vision-based perception models</strong> for object detection, semantic segmentation, and sensor fusion, enabling robust situational awareness for autonomous agents. In parallel, I integrate <strong>LLM-based reasoning</strong> into simulation and control frameworks to support high-level planning, adaptive decision-making, and interactive human-AI collaboration for robotics and safety-critical control.</p>
@@ -338,6 +367,7 @@ Our paper on <a href="https://arxiv.org/pdf/2202.13541.pdf">Pattern-Based Multiv
 
 
 -->
+
 
 
 

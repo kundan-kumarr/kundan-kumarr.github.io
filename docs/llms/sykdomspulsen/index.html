@@ -80,6 +80,35 @@ gtag('config', '', { 'anonymize_ip': true});
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -207,11 +236,11 @@ gtag('config', '', { 'anonymize_ip': true});
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">1</span> Overview</a>
   <ul class="collapse">
-  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages">R packages</a></li>
-  <li><a href="#from-sykdomspulsen-to-csids" id="toc-from-sykdomspulsen-to-csids" class="nav-link" data-scroll-target="#from-sykdomspulsen-to-csids">From Sykdomspulsen to CSIDS</a></li>
-  <li><a href="#quick-stats" id="toc-quick-stats" class="nav-link" data-scroll-target="#quick-stats">Quick stats</a></li>
+  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages"><span class="header-section-number">1.1</span> R packages</a></li>
+  <li><a href="#from-sykdomspulsen-to-csids" id="toc-from-sykdomspulsen-to-csids" class="nav-link" data-scroll-target="#from-sykdomspulsen-to-csids"><span class="header-section-number">1.2</span> From Sykdomspulsen to CSIDS</a></li>
+  <li><a href="#quick-stats" id="toc-quick-stats" class="nav-link" data-scroll-target="#quick-stats"><span class="header-section-number">1.3</span> Quick stats</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/llms/sykdomspulsen/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -229,19 +258,19 @@ gtag('config', '', { 'anonymize_ip': true});
 
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<section id="overview" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="overview"><span class="header-section-number">1</span> Overview</h2>
 <p><a href="https://www.csids.no">CSIDS: the Consortium for Statistics in Disease Surveillance</a> (previously Sykdomspulsen) is a real-time analysis and disease surveillance system designed and developed at the <a href="https://www.fhi.no">Norwegian Institute of Public Health</a> (NIPH/FHI). It is a unique project that processes new data (e.g.&nbsp;covid-19 cases) shortly after it is available. Complex statistical analyses are automatically run for all locations in Norway, producing reports and alerting various stakeholders. This provides the health authorities the ability to make proactive strategic decisions with the most up-to-date information.</p>
-<section id="r-packages" class="level3">
-<h3 class="anchored" data-anchor-id="r-packages">R packages</h3>
+<section id="r-packages" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="r-packages"><span class="header-section-number">1.1</span> R packages</h3>
 <p><a href="https://www.csids.no/packages.html">csverse</a> is a number of R packages that have been developed by the Sykdomspulsen team to help with infectious diseases surveillance.</p>
 </section>
-<section id="from-sykdomspulsen-to-csids" class="level3">
-<h3 class="anchored" data-anchor-id="from-sykdomspulsen-to-csids">From Sykdomspulsen to CSIDS</h3>
+<section id="from-sykdomspulsen-to-csids" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="from-sykdomspulsen-to-csids"><span class="header-section-number">1.2</span> From Sykdomspulsen to CSIDS</h3>
 <p>In November 2022, the core components of Sykdomspulsen and splverse R packages have been migrated to <a href="https://github.com/csids" class="btn btn-success btn-sm">Code</a>. Please refer to CSIDS for ongoing developments.</p>
 </section>
-<section id="quick-stats" class="level3">
-<h3 class="anchored" data-anchor-id="quick-stats">Quick stats</h3>
+<section id="quick-stats" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="quick-stats"><span class="header-section-number">1.3</span> Quick stats</h3>
 <ul>
 <li>We receive data from more than 15 data sources every day</li>
 <li>2 000 000 000+ rows of data and results (1TB)</li>
@@ -253,6 +282,7 @@ gtag('config', '', { 'anonymize_ip': true});
 <p><img src="conference_handout_2.jpg" width="500"></p>
 <p><a href="conference_poster.pdf" class="btn btn-primary btn-sm">Paper</a></p>
 <p><img src="poster.png" width="600"></p>
+
 
 
 </section>

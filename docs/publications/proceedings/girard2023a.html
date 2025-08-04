@@ -79,6 +79,35 @@ gtag('config', '', { 'anonymize_ip': true});
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -207,15 +236,16 @@ gtag('config', '', { 'anonymize_ip': true});
 </header>
 
 
-<section id="citation-apa-7" class="level2">
-<h2 class="anchored" data-anchor-id="citation-apa-7">Citation (APA 7)</h2>
+<section id="citation-apa-7" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="citation-apa-7"><span class="header-section-number">1</span> Citation (APA 7)</h2>
 <blockquote class="blockquote">
 <p>Girard, J. M., Tie, Y., &amp; Liebenthal, E. (2023). DynAMoS: The Dynamic Affective Movie Clip Database for Subjectivity Analysis. <em>Proceedings of the 11th International Conference on Affective Computing and Intelligent Interaction (ACII).</em></p>
 </blockquote>
 </section>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<section id="abstract" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="abstract"><span class="header-section-number">2</span> Abstract</h2>
 <p>In this paper, we describe the design, collection, and validation of a new video database that includes holistic and dynamic emotion ratings from 83 participants watching 22 affective movie clips. In contrast to previous work in Affective Computing, which pursued a single “ground truth” label for the affective content of each moment of each video (e.g., by averaging the ratings of 2 to 7 trained participants), we embrace the subjectivity inherent to emotional experiences and provide the full distribution of all participants’ ratings (with an average of 76.7 raters per video). We argue that this choice represents a paradigm shift with the potential to unlock new research directions, generate new hypotheses, and inspire novel methods in the Affective Computing community. We also describe several interdisciplinary use cases for the database: to provide dynamic norms for emotion elicitation studies (e.g., in psychology, medicine, and neuroscience), to train and test affective content analysis algorithms (e.g., for dynamic emotion recognition, video summarization, and movie recommendation), and to study subjectivity in emotional reactions (e.g., to identify moments of emotional ambiguity or ambivalence within movies, identify predictors of subjectivity, and develop personalized affective content analysis algorithms). The database is made freely available to researchers for noncommercial use at <a href="https://dynamos.mgb.org" class="uri">https://dynamos.mgb.org</a>.</p>
+
 
 
 </section>

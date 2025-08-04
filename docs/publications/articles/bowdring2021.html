@@ -79,6 +79,35 @@ gtag('config', '', { 'anonymize_ip': true});
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -214,15 +243,16 @@ gtag('config', '', { 'anonymize_ip': true});
 </header>
 
 
-<section id="citation-apa-7" class="level2">
-<h2 class="anchored" data-anchor-id="citation-apa-7">Citation (APA 7)</h2>
+<section id="citation-apa-7" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="citation-apa-7"><span class="header-section-number">1</span> Citation (APA 7)</h2>
 <blockquote class="blockquote">
 <p>Bowdring, M. A., Sayette, M. A., Girard, J. M., &amp; Woods, W. C. (2021). In the eye of the beholder: A comprehensive analysis of stimulus type, perceiver, and target in physical attractiveness perceptions. <em>Journal of Nonverbal Behavior, 45</em>(2), 241–259.</p>
 </blockquote>
 </section>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<section id="abstract" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="abstract"><span class="header-section-number">2</span> Abstract</h2>
 <p>Physical attractiveness plays a central role in psychosocial experiences. One of the top research priorities has been to identify factors affecting perceptions of physical attractiveness (PPA). Recent work suggests PPA derives from different sources (e.g., target, perceiver, stimulus type). Although smiles in particular are believed to enhance PPA, support has been surprisingly limited. This study comprehensively examines the effect of smiles on PPA and, more broadly, evaluates the roles of target, perceiver, and stimulus type in PPA variation. Perceivers (n=181) rated both static images and 5-s videos of targets displaying smiling and neutral-expressions. Smiling images were rated as more attractive than neutral-expression images (regardless of stimulus motion format). Interestingly, perceptions of physical attractiveness were based more on the perceiver than on either the target or format in which the target was presented. Results clarify the effect of smiles, and highlight the significant role of the perceiver, in PPA.</p>
+
 
 
 </section>

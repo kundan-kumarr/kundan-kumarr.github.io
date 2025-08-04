@@ -97,6 +97,35 @@ gtag('config', '', { 'anonymize_ip': true});
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -214,8 +243,8 @@ gtag('config', '', { 'anonymize_ip': true});
 </header>
 
 
-<section id="journal-articles" class="level3">
-<h3 class="anchored" data-anchor-id="journal-articles">Journal Articles</h3>
+<section id="journal-articles" class="level3" data-number="0.1">
+<h3 data-number="0.1" class="anchored" data-anchor-id="journal-articles"><span class="header-section-number">0.1</span> Journal Articles</h3>
 <div class="csl-bib-body" role="list">
 <ol class="csl-bib-list">
 <li class="csl-entry">
@@ -226,8 +255,8 @@ Kumar, Kundan, Ravikumar Gelli, and Christopher Quinn. 2025.<br>
 </div>
 <hr>
 </section>
-<section id="conference-papers" class="level3">
-<h3 class="anchored" data-anchor-id="conference-papers">Conference Papers</h3>
+<section id="conference-papers" class="level3" data-number="0.2">
+<h3 data-number="0.2" class="anchored" data-anchor-id="conference-papers"><span class="header-section-number">0.2</span> Conference Papers</h3>
 <div class="csl-bib-body" role="list">
 <ol class="csl-bib-list">
 <li class="csl-entry">
@@ -238,8 +267,8 @@ Kumar, Kundan, and Christopher Quinn. 2024.<br>
 </div>
 <hr>
 </section>
-<section id="workshop-papers" class="level3">
-<h3 class="anchored" data-anchor-id="workshop-papers">Workshop Papers</h3>
+<section id="workshop-papers" class="level3" data-number="0.3">
+<h3 data-number="0.3" class="anchored" data-anchor-id="workshop-papers"><span class="header-section-number">0.3</span> Workshop Papers</h3>
 <div class="csl-bib-body" role="list">
 <ol class="csl-bib-list">
 <li class="csl-entry">
@@ -249,6 +278,7 @@ Kumar, Kundan, and Nabila Masud. 2024.<br>
 </ol>
 </div>
 <hr>
+
 
 
 </section>

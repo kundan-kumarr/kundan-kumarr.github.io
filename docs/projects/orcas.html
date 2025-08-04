@@ -83,6 +83,35 @@ gtag('config', '', { 'anonymize_ip': true});
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -224,6 +253,7 @@ gtag('config', '', { 'anonymize_ip': true});
 <p>The goal of <code>orcas</code> is to scrape orca sighting data from the web and visualize it in maps and tables.</p>
 <p>I’ve always had an affinity for the Southern Resident Killer Whales in the Salish Sea. The <a href="https://www.whaleresearch.com" title="Center for Whale Research URL">Center for Whale Research</a> does a lot of really fascinating and important work monitoring their population. They post their survey data on their website; each encounter with the orcas is a separate webpage. I was both curious and intimidated by web scraping so I decided this would make a great case study and personal project. I also learned how to use custom icons in <code>leaflet</code> maps! 🐋</p>
 <p><img src="https://github.com/jadeynryan/orcas/blob/master/inst/img/leaflet_screenshot.png?raw=true" class="img-center img-fluid" alt="Screenshot of leaflet map with whale icons representing the start and end of the encounters."></p>
+
 
 
 

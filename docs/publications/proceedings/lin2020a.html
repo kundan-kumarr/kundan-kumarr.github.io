@@ -79,6 +79,35 @@ gtag('config', '', { 'anonymize_ip': true});
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -214,19 +243,20 @@ gtag('config', '', { 'anonymize_ip': true});
 </header>
 
 
-<section id="citation-apa-7" class="level2">
-<h2 class="anchored" data-anchor-id="citation-apa-7">Citation (APA 7)</h2>
+<section id="citation-apa-7" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="citation-apa-7"><span class="header-section-number">1</span> Citation (APA 7)</h2>
 <blockquote class="blockquote">
 <p>Lin, V., Girard, J. M., &amp; Morency, L.-P. (2020). Context-dependent models for predicting and characterizing facial expressiveness. <em>Proceedings of the 3rd Workshop on Affective Content Analysis Co-Located with the 34th AAAI Conference on Artificial Intelligence, 2614,</em> 11–28.</p>
 </blockquote>
 </section>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<section id="abstract" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="abstract"><span class="header-section-number">2</span> Abstract</h2>
 <p>In recent years, extensive research has emerged in affective computing on topics like automatic emotion recognition and determining the signals that characterize individual emotions. Much less studied, however, is expressiveness—the extent to which someone shows any feeling or emotion. Expressiveness is related to personality and mental health and plays a crucial role in social interaction. As such, the ability to automatically detect or predict expressiveness can facilitate significant advancements in areas ranging from psychiatric care to artificial social intelligence. Motivated by these potential applications, we present an extension of the BP4D+ dataset with human ratings of expressiveness and develop methods for (1) automatically predicting expressiveness from visual data and (2) defining relationships between interpretable visual signals and expressiveness. In addition, we study the emotional context in which expressiveness occurs and hypothesize that different sets of signals are indicative of expressiveness in different con-texts (e.g., in response to surprise or in response to pain). Analysis of our statistical models confirms our hypothesis. Consequently, by looking at expressiveness separately in distinct emotional contexts, our predictive models show significant improvements over baselines and achieve com-parable results to human performance in terms of correlation with the ground truth.</p>
 </section>
-<section id="awards" class="level2">
-<h2 class="anchored" data-anchor-id="awards">Awards</h2>
+<section id="awards" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="awards"><span class="header-section-number">3</span> Awards</h2>
 <p>This paper won the <strong>Best Paper Award</strong> at the Workshop on Affective Content Analysis.</p>
+
 
 
 </section>

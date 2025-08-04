@@ -3,7 +3,6 @@ title: "Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase 
 author: 
   - name: Kundan Kumar
 year: "2025"
-date : 2025-08-01
 publication: "IEEE Power & Energy Society General Meeting"
 doi: "https://doi.org/10.31234/osf.io/j9yeq"
 image: "figures/ssl_techniques.png"

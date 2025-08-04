@@ -3,13 +3,13 @@ project:
   output-dir: docs
 
 website:
-  page-navigation: true
   title: "Kundan Kumar"
   description: "Research Scientist"
   site-url: https://kundan-kumarr.github.io
   favicon: misc/info/favicon.png
   repo-url: https://github.com/kundan-kumarr/kundan-kumarr.github.io
   repo-actions: [edit, issue]
+  page-navigation: true
 
   page-footer:  
     left: >-
@@ -20,11 +20,10 @@ website:
       <a class="link-dark me-2" href="https://orcid.org/0000-0002-3229-6649" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a>
       <a class="link-dark me-2" href="https://scholar.google.com/citations?user=1zDpIJkAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a>
       <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a>
-
     right: 
       - text: "Contact"
         aria-label: "Contact Form"
-        href: "contact.qmd"
+        href: contact.qmd
 
   navbar: 
     background: "#A9CCE3"
@@ -65,20 +64,21 @@ website:
         href: blog/index.qmd
 
   google-analytics:
-    tracking-id: ""  # Add your tracking ID if needed
-    anonymize-ip: true 
-
-bibliography: references.bib
-filters:
-  - custom-bib-links.lua
+    tracking-id: "G-F9QK4C80G"   # ✅ Add your GA4 ID here
+    anonymize-ip: true
 
 format:
   html:
     theme: styles.scss
     math: mathjax
     html-math-method: mathjax
-    equation-number: true
-    number-sections: true
+    toc: true
+    toc-depth: 3
+    smooth-scroll: true
     include-in-header:
       - text: |
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+bibliography: references.bib
+filters:
+  - custom-bib-links.lua

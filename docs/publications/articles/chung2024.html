@@ -79,6 +79,35 @@ gtag('config', '', { 'anonymize_ip': true});
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -214,15 +243,16 @@ gtag('config', '', { 'anonymize_ip': true});
 </header>
 
 
-<section id="citation-apa-7" class="level2">
-<h2 class="anchored" data-anchor-id="citation-apa-7">Citation (APA 7)</h2>
+<section id="citation-apa-7" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="citation-apa-7"><span class="header-section-number">1</span> Citation (APA 7)</h2>
 <blockquote class="blockquote">
 <p>Chung, Y., Girard, J. M., Ravichandran, C., Ongur, D., Cohen, B. M., Baker, J. T. (in press). Transdiagnostic modeling of clinician-rated symptoms in affective and non-affective psychotic disorders. <em>Journal of Psychopathology and Clinical Science.</em></p>
 </blockquote>
 </section>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<section id="abstract" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="abstract"><span class="header-section-number">2</span> Abstract</h2>
 <p>Prevailing factor models of psychosis are centered on schizophrenia-related disorders defined by the DSM and ICD, restricting generalizability to other clinical presentations featuring psychosis, even though affective psychoses are more common. This study aims to bridge this gap by conducting exploratory and confirmatory factor analyses, utilizing clinical ratings collected from patients with either affective or non-affective psychoses (n = 1042). Drawing from established clinical instruments, such as the Positive and Negative Syndrome Scale, Young Mania Rating Scale, and Montgomery-Åsberg Depression Rating Scale, a broad spectrum of core psychotic symptoms was considered for the model development. Among the candidate models considered, including correlated factors and multifactor models, a model with seven correlated factors encompassing positive symptoms, negative symptoms, depression, mania, disorganization, hostility, and anxiety was most interpretable with acceptable fit. The seven factors exhibited expected associations with external validators, were replicable through cross- validation, and were generalizable across affective and non-affective psychoses.</p>
+
 
 
 </section>
