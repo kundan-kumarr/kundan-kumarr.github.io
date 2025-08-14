@@ -249,22 +249,22 @@ window.Quarto = {
 <section id="citation-ieee" class="level3">
 <h3 class="anchored" data-anchor-id="citation-ieee">Citation (IEEE)</h3>
 <blockquote class="blockquote">
-<p>K. Kumar, K. Utkarsh, J. Wang, and H. V. Padullaparti, “Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems,” Proc. IEEE Power &amp; Energy Society General Meeting (PESGM), 2025. (<em>Accepted</em>)</p>
+<p>K. Kumar, K. Utkarsh, J. Wang, and H. V. Padullaparti, “Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems,” Proc. IEEE Power &amp; Energy Society General Meeting (PESGM), 2025.</p>
 </blockquote>
 </section>
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p>The integration of advanced metering infrastructure (AMI) into power distribution networks generates valuable data for tasks such as phase identification; however, the limited and unreliable availability of labeled data in the form of customer phase connectivity presents challenges. To address this issue, we propose a <strong>semi-supervised learning (SSL)</strong> framework that effectively leverages both <strong>labeled and unlabeled data</strong>.</p>
 <ol type="1">
-<li><strong>Why Phase Identification Needs a New Approach ?</strong>
+<li><strong>Why Phase Identification Needs a New Approach ?</strong></li>
+</ol>
 <figure style="text-align: center;" class="figure">
 <img src="semi_supervised_pes_gm_2025/figures/ssl_techniques.png" alt="Illustration of Semi-Supervised Learning Techniques" style="width: 60%; height: auto;" class="figure-img">
 <figcaption>
 <strong>Fig. 1:</strong> Illustration of Semi-Supervised Learning Techniques
 </figcaption>
 </figure>
-Problem: Utilities don’t know which phase customers are connected to — this affects voltage regulation, DER integration, and fault localization. • Challenge: Ground truth phase data is scarce, unreliable, and costly to collect. • Supervised learning ML methods need lots of labeled data – often unavailable or unreliable. • Motivation: How do we scale phase identification without needing tons of labeled data?</li>
-</ol>
+<p>Problem: Utilities don’t know which phase customers are connected to — this affects voltage regulation, DER integration, and fault localization. • Challenge: Ground truth phase data is scarce, unreliable, and costly to collect. • Supervised learning ML methods need lots of labeled data – often unavailable or unreliable. • Motivation: How do we scale phase identification without needing tons of labeled data?</p>
 <p>add techniques</p>
 </section>
 <section id="contribution" class="level2">
@@ -286,10 +286,10 @@ Problem: Utilities don’t know which phase customers are connected to — this 
 </section>
 <section id="semi-supervised-learning-framework" class="level2">
 <h2 class="anchored" data-anchor-id="semi-supervised-learning-framework">Semi-Supervised Learning Framework</h2>
-<p>We formulate SSL as a regularized optimization problem:</p>
-<p><span class="math display">\[
+<p>We formulate SSL as a regularized optimization problem:<a href="#eq-black-scholes2" class="quarto-xref">Equation&nbsp;1</a></p>
+<p><span id="eq-black-scholes2"><span class="math display">\[
 \min_{f \in \mathcal{F}} \left[ \frac{1}{n_L} \sum_{i=1}^{n_L} \ell(f(x_i), y_i) + \lambda R_u(f, \mathcal{D}_U) \right]
-\]</span></p>
+\tag{1}\]</span></span></p>
 <p>Where:</p>
 <ul>
 <li>( (, ) ): Supervised loss (cross-entropy)<br>
@@ -326,6 +326,18 @@ R_u(f, \mathcal{D}_U)
 <p>We formulate SSL as a regularized optimization problem: min_{f∈ℱ} [ (1/n_L) ∑^{n_L}_{i=1} ℓ(f(x_i), y_i) + λR_u(f, 𝒟_U) ] Where:</p>
 <p>ℓ(·,·): Supervised loss (cross-entropy) R_u(f, 𝒟_U): Unsupervised regularization term λ: Trade-off parameter</p>
 <p>The challenge: designing R_u(f, 𝒟_U) that effectively exploits unlabeled data structure ## Methodology</p>
+<p>We define the binomial distribution as:(<a href="#eq-black-scholes1" class="quarto-xref">Equation&nbsp;2</a>)</p>
+<p><span id="eq-black-scholes1"><span class="math display">\[
+f(k) = \binom{n}{k} p^k (1-p)^{n-k}
+\tag{2}\]</span></span></p>
+<p>As shown in Equation @ref(eq:binom), the binomial function defines the probability…</p>
+<p>Black-Scholes (<a href="#eq-black-scholes" class="quarto-xref">Equation&nbsp;3</a>) is a mathematical model that seeks to explain the behavior of financial derivatives, most commonly options:</p>
+<p><span id="eq-black-scholes"><span class="math display">\[
+\frac{\partial \mathrm C}{ \partial \mathrm t } + \frac{1}{2}\sigma^{2} \mathrm S^{2}
+\frac{\partial^{2} \mathrm C}{\partial \mathrm S^2}
+  + \mathrm r \mathrm S \frac{\partial \mathrm C}{\partial \mathrm S}\ =
+  \mathrm r \mathrm C
+\tag{3}\]</span></span></p>
 <!--![](semi_supervised_pes_gm_2025/figures/ssl_techniques.png){ width=50% }-->
 <ol start="2" type="1">
 <li><strong>Proposed SSL Framework Applied to AMI Data</strong>

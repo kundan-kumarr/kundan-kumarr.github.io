@@ -1382,50 +1382,50 @@
     "objectID": "teaching/teaching.html#coms-1130-spreadsheets-and-databases",
     "href": "teaching/teaching.html#coms-1130-spreadsheets-and-databases",
     "title": "Teaching",
-    "section": "1 COMS 1130 – Spreadsheets and Databases",
-    "text": "1 COMS 1130 – Spreadsheets and Databases\n\n\n\n\n\nFall 2016\nFoundational course in using tools like Microsoft Excel and Access for data organization, analysis, and reporting. Students learn formulas, pivot tables, queries, and form design for practical business and data applications."
+    "section": "COMS 1130 – Spreadsheets and Databases",
+    "text": "COMS 1130 – Spreadsheets and Databases\n\n\n\n\n\nFall 2016\nFoundational course in using tools like Microsoft Excel and Access for data organization, analysis, and reporting. Students learn formulas, pivot tables, queries, and form design for practical business and data applications."
   },
   {
     "objectID": "teaching/teaching.html#coms-3090-software-development-practices",
     "href": "teaching/teaching.html#coms-3090-software-development-practices",
     "title": "Teaching",
-    "section": "2 COMS 3090 – Software Development Practices",
-    "text": "2 COMS 3090 – Software Development Practices\n\n\n\n\n\nFall 2022,   Spring 2023, ,   Spring 2024\nHands-on course focused on modern software development practices, including Git, Agile methodologies, code reviews, unit testing, and CI/CD. Students engage in team-based projects that simulate real-world workflows, emphasizing collaboration, documentation, and iterative development."
+    "section": "COMS 3090 – Software Development Practices",
+    "text": "COMS 3090 – Software Development Practices\n\n\n\n\n\nFall 2022,   Spring 2023, ,   Spring 2024\nHands-on course focused on modern software development practices, including Git, Agile methodologies, code reviews, unit testing, and CI/CD. Students engage in team-based projects that simulate real-world workflows, emphasizing collaboration, documentation, and iterative development."
   },
   {
     "objectID": "teaching/teaching.html#coms-3190-user-interface-design",
     "href": "teaching/teaching.html#coms-3190-user-interface-design",
     "title": "Teaching",
-    "section": "3 COMS 3190 – User Interface Design",
-    "text": "3 COMS 3190 – User Interface Design\n\n\n\n\n\nFall 2023\nExplores the principles of designing user-friendly and efficient interfaces. Combines hardware and data-driven UI practices, integrating Raspberry Pi for IoT applications and Nodejs for fronted visualization and interaction."
+    "section": "COMS 3190 – User Interface Design",
+    "text": "COMS 3190 – User Interface Design\n\n\n\n\n\nFall 2023\nExplores the principles of designing user-friendly and efficient interfaces. Combines hardware and data-driven UI practices, integrating Raspberry Pi for IoT applications and Nodejs for fronted visualization and interaction."
   },
   {
     "objectID": "teaching/teaching.html#coms-3620-object-oriented-analysis-and-design",
     "href": "teaching/teaching.html#coms-3620-object-oriented-analysis-and-design",
     "title": "Teaching",
-    "section": "4 COMS 3620 – Object-Oriented Analysis and Design",
-    "text": "4 COMS 3620 – Object-Oriented Analysis and Design\n\n\n\n\n\nFall 2020,   Spring 2021,   Fall 2021,   Fall 2024\nTeaches how to model and design software systems using object-oriented principles. Emphasis is on UML diagrams, design patterns, and implementation in Java to build modular, maintainable, and scalable software."
+    "section": "COMS 3620 – Object-Oriented Analysis and Design",
+    "text": "COMS 3620 – Object-Oriented Analysis and Design\n\n\n\n\n\nFall 2020,   Spring 2021,   Fall 2021,   Fall 2024\nTeaches how to model and design software systems using object-oriented principles. Emphasis is on UML diagrams, design patterns, and implementation in Java to build modular, maintainable, and scalable software."
   },
   {
     "objectID": "teaching/teaching.html#coms-3630-database-management-systems",
     "href": "teaching/teaching.html#coms-3630-database-management-systems",
     "title": "Teaching",
-    "section": "5 COMS 3630 – Database Management Systems",
-    "text": "5 COMS 3630 – Database Management Systems\n\n\n\n\n\nSpring 2022\nCovers the fundamentals of database architecture, data modeling, and SQL. Students gain hands-on experience with relational databases and explore indexing, transactions, normalization, and database design."
+    "section": "COMS 3630 – Database Management Systems",
+    "text": "COMS 3630 – Database Management Systems\n\n\n\n\n\nSpring 2022\nCovers the fundamentals of database architecture, data modeling, and SQL. Students gain hands-on experience with relational databases and explore indexing, transactions, normalization, and database design."
   },
   {
     "objectID": "teaching/teaching.html#coms-4170-software-testing",
     "href": "teaching/teaching.html#coms-4170-software-testing",
     "title": "Teaching",
-    "section": "6 COMS 4170 – Software Testing",
-    "text": "6 COMS 4170 – Software Testing\n\n\n\n\n\nSpring 2025\nFocuses on the principles and practices of software verification and validation. Students learn to design and execute test cases, use debugging tools, and apply automation frameworks to ensure software quality and reliability."
+    "section": "COMS 4170 – Software Testing",
+    "text": "COMS 4170 – Software Testing\n\n\n\n\n\nSpring 2025\nFocuses on the principles and practices of software verification and validation. Students learn to design and execute test cases, use debugging tools, and apply automation frameworks to ensure software quality and reliability."
   },
   {
     "objectID": "teaching/teaching.html#future-goals",
     "href": "teaching/teaching.html#future-goals",
     "title": "Teaching",
-    "section": "7 Future Goals",
-    "text": "7 Future Goals\nI am committed to continually improving teaching methods and curriculum design. My goals include:\n\nIncorporating emerging AI and software development tools into teaching.\nCreating interactive, hands-on, project-based learning environments.\nContributing to the computer science education community through curriculum research and mentoring.\nExpanding opportunities for students to apply theory to real-world computing challenges.\n\nReach out via email if you’d like to collaborate or learn more."
+    "section": "Future Goals",
+    "text": "Future Goals\nI am committed to continually improving teaching methods and curriculum design. My goals include:\n\nIncorporating emerging AI and software development tools into teaching.\nCreating interactive, hands-on, project-based learning environments.\nContributing to the computer science education community through curriculum research and mentoring.\nExpanding opportunities for students to apply theory to real-world computing challenges.\n\nReach out via email if you’d like to collaborate or learn more."
   },
   {
     "objectID": "projects/projects1.html",
@@ -4050,7 +4050,7 @@
     "href": "publications/articles/adaryukov2024.html",
     "title": "Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems",
     "section": "",
-    "text": "K. Kumar, K. Utkarsh, J. Wang, and H. V. Padullaparti, “Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems,” Proc. IEEE Power & Energy Society General Meeting (PESGM), 2025. (Accepted)"
+    "text": "K. Kumar, K. Utkarsh, J. Wang, and H. V. Padullaparti, “Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems,” Proc. IEEE Power & Energy Society General Meeting (PESGM), 2025."
   },
   {
     "objectID": "publications/articles/adaryukov2024.html#citation-apa-7",
@@ -4064,7 +4064,7 @@
     "href": "publications/articles/adaryukov2024.html#abstract",
     "title": "Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems",
     "section": "Abstract",
-    "text": "Abstract\nThe integration of advanced metering infrastructure (AMI) into power distribution networks generates valuable data for tasks such as phase identification; however, the limited and unreliable availability of labeled data in the form of customer phase connectivity presents challenges. To address this issue, we propose a semi-supervised learning (SSL) framework that effectively leverages both labeled and unlabeled data.\n\nWhy Phase Identification Needs a New Approach ?\n\n\n\nFig. 1: Illustration of Semi-Supervised Learning Techniques\n\n\nProblem: Utilities don’t know which phase customers are connected to — this affects voltage regulation, DER integration, and fault localization. • Challenge: Ground truth phase data is scarce, unreliable, and costly to collect. • Supervised learning ML methods need lots of labeled data – often unavailable or unreliable. • Motivation: How do we scale phase identification without needing tons of labeled data?\n\nadd techniques"
+    "text": "Abstract\nThe integration of advanced metering infrastructure (AMI) into power distribution networks generates valuable data for tasks such as phase identification; however, the limited and unreliable availability of labeled data in the form of customer phase connectivity presents challenges. To address this issue, we propose a semi-supervised learning (SSL) framework that effectively leverages both labeled and unlabeled data.\n\nWhy Phase Identification Needs a New Approach ?\n\n\n\n\nFig. 1: Illustration of Semi-Supervised Learning Techniques\n\n\nProblem: Utilities don’t know which phase customers are connected to — this affects voltage regulation, DER integration, and fault localization. • Challenge: Ground truth phase data is scarce, unreliable, and costly to collect. • Supervised learning ML methods need lots of labeled data – often unavailable or unreliable. • Motivation: How do we scale phase identification without needing tons of labeled data?\nadd techniques"
   },
   {
     "objectID": "publications/articles/girard2017a.html",
@@ -5191,7 +5191,7 @@
     "href": "publications/articles/adaryukov2024.html#semi-supervised-learning-framework",
     "title": "Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems",
     "section": "Semi-Supervised Learning Framework",
-    "text": "Semi-Supervised Learning Framework\nWe formulate SSL as a regularized optimization problem:\n\\[\n\\min_{f \\in \\mathcal{F}} \\left[ \\frac{1}{n_L} \\sum_{i=1}^{n_L} \\ell(f(x_i), y_i) + \\lambda R_u(f, \\mathcal{D}_U) \\right]\n\\]\nWhere:\n\n( (, ) ): Supervised loss (cross-entropy)\n\n( R_u(f, _U) ): Unsupervised regularization term\n\n( ): Trade-off parameter\n\nThe challenge is designing ( R_u(f, _U) ) to effectively leverage unlabeled data.\n\\[\\begin{equation}\n  f\\left(k\\right) = \\binom{n}{k} p^k\\left(1-p\\right)^{n-k}\n  (\\#eq:binom)\n\\end{equation}\\] You may refer to using \\@ref(eq:binom), like see Equation @ref(eq:binom).\nWe formulate SSL as a regularized optimization problem:\n\\[\n\\min_{f \\in \\mathcal{F}} \\left[ \\frac{1}{n_L} \\sum_{i=1}^{n_L} \\ell(f(x_i), y_i) + \\lambda R_u(f, \\mathcal{D}_U) \\right]\n\\] Where \\[a^2 + b^2 = d^2\\] is the Unsupervised regularization term\nWhere: \\[\nR_u(f, \\mathcal{D}_U)\n\\] is the - ( (, ) ): Supervised loss (cross-entropy)\n- ( R_u(f, _U) ): Unsupervised regularization term\n- ( ): Trade-off parameter\nThe challenge is designing ( R_u(f, _U) ) to effectively leverage unlabeled data.\n\n\\[\\ell(\\cdot, \\cdot)\\]: Supervised loss (cross-entropy)\n\\[R_u(f, \\mathcal{D}_U)\\]: Unsupervised regularization term\n\\[\\lambda\\]: Trade-off parameter\n( (, ) ): Supervised loss (cross-entropy)\n\n( R_u(f, _U) ): Unsupervised regularization term\n\n( ): Trade-off parameter\n\nWe formulate SSL as a regularized optimization problem: min_{f∈ℱ} [ (1/n_L) ∑^{n_L}_{i=1} ℓ(f(x_i), y_i) + λR_u(f, 𝒟_U) ] Where:\nℓ(·,·): Supervised loss (cross-entropy) R_u(f, 𝒟_U): Unsupervised regularization term λ: Trade-off parameter\nThe challenge: designing R_u(f, 𝒟_U) that effectively exploits unlabeled data structure ## Methodology\n\n\nProposed SSL Framework Applied to AMI Data\n\n\n\nDistribution Feeder Topology\n\n\n\nTraining and Testing Data Partitions\n\n\n\nAccuracy Comparison of SSL Methods\n\n\n\n\n\n\nPresentation\n\n\n\n\n View Fullscreen Poster"
+    "text": "Semi-Supervised Learning Framework\nWe formulate SSL as a regularized optimization problem:Equation 1\n\\[\n\\min_{f \\in \\mathcal{F}} \\left[ \\frac{1}{n_L} \\sum_{i=1}^{n_L} \\ell(f(x_i), y_i) + \\lambda R_u(f, \\mathcal{D}_U) \\right]\n\\tag{1}\\]\nWhere:\n\n( (, ) ): Supervised loss (cross-entropy)\n\n( R_u(f, _U) ): Unsupervised regularization term\n\n( ): Trade-off parameter\n\nThe challenge is designing ( R_u(f, _U) ) to effectively leverage unlabeled data.\n\\[\\begin{equation}\n  f\\left(k\\right) = \\binom{n}{k} p^k\\left(1-p\\right)^{n-k}\n  (\\#eq:binom)\n\\end{equation}\\] You may refer to using \\@ref(eq:binom), like see Equation @ref(eq:binom).\nWe formulate SSL as a regularized optimization problem:\n\\[\n\\min_{f \\in \\mathcal{F}} \\left[ \\frac{1}{n_L} \\sum_{i=1}^{n_L} \\ell(f(x_i), y_i) + \\lambda R_u(f, \\mathcal{D}_U) \\right]\n\\] Where \\[a^2 + b^2 = d^2\\] is the Unsupervised regularization term\nWhere: \\[\nR_u(f, \\mathcal{D}_U)\n\\] is the - ( (, ) ): Supervised loss (cross-entropy)\n- ( R_u(f, _U) ): Unsupervised regularization term\n- ( ): Trade-off parameter\nThe challenge is designing ( R_u(f, _U) ) to effectively leverage unlabeled data.\n\n\\[\\ell(\\cdot, \\cdot)\\]: Supervised loss (cross-entropy)\n\\[R_u(f, \\mathcal{D}_U)\\]: Unsupervised regularization term\n\\[\\lambda\\]: Trade-off parameter\n( (, ) ): Supervised loss (cross-entropy)\n\n( R_u(f, _U) ): Unsupervised regularization term\n\n( ): Trade-off parameter\n\nWe formulate SSL as a regularized optimization problem: min_{f∈ℱ} [ (1/n_L) ∑^{n_L}_{i=1} ℓ(f(x_i), y_i) + λR_u(f, 𝒟_U) ] Where:\nℓ(·,·): Supervised loss (cross-entropy) R_u(f, 𝒟_U): Unsupervised regularization term λ: Trade-off parameter\nThe challenge: designing R_u(f, 𝒟_U) that effectively exploits unlabeled data structure ## Methodology\nWe define the binomial distribution as:(Equation 2)\n\\[\nf(k) = \\binom{n}{k} p^k (1-p)^{n-k}\n\\tag{2}\\]\nAs shown in Equation @ref(eq:binom), the binomial function defines the probability…\nBlack-Scholes (Equation 3) is a mathematical model that seeks to explain the behavior of financial derivatives, most commonly options:\n\\[\n\\frac{\\partial \\mathrm C}{ \\partial \\mathrm t } + \\frac{1}{2}\\sigma^{2} \\mathrm S^{2}\n\\frac{\\partial^{2} \\mathrm C}{\\partial \\mathrm S^2}\n  + \\mathrm r \\mathrm S \\frac{\\partial \\mathrm C}{\\partial \\mathrm S}\\ =\n  \\mathrm r \\mathrm C\n\\tag{3}\\]\n\n\nProposed SSL Framework Applied to AMI Data\n\n\n\nDistribution Feeder Topology\n\n\n\nTraining and Testing Data Partitions\n\n\n\nAccuracy Comparison of SSL Methods\n\n\n\n\n\n\nPresentation\n\n\n\n\n View Fullscreen Poster"
   },
   {
     "objectID": "publications/articles/adaryukov2024.html#methodology",

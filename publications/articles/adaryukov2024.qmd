@@ -16,7 +16,7 @@ categories:
 
 ### Citation (IEEE)
 
-> K. Kumar, K. Utkarsh, J. Wang, and H. V. Padullaparti, “Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems,” Proc. IEEE Power & Energy Society General Meeting (PESGM), 2025. (*Accepted*)
+> K. Kumar, K. Utkarsh, J. Wang, and H. V. Padullaparti, “Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems,” Proc. IEEE Power & Energy Society General Meeting (PESGM), 2025.
 
 
 ## Abstract
@@ -25,6 +25,7 @@ The integration of advanced metering infrastructure (AMI) into power distributio
 
 
 1. **Why Phase Identification Needs a New Approach ?**
+
 <figure style="text-align: center;">
   <img src="semi_supervised_pes_gm_2025/figures/ssl_techniques.png" alt="Illustration of Semi-Supervised Learning Techniques" style="width: 60%; height: auto;">
   <figcaption><strong>Fig. 1:</strong> Illustration of Semi-Supervised Learning Techniques</figcaption>
@@ -62,11 +63,11 @@ Our SSL + Uncertainty Estimation approach provides an efficient and scalable sol
 ---
 
 ## Semi-Supervised Learning Framework
-We formulate SSL as a regularized optimization problem:
+We formulate SSL as a regularized optimization problem:@eq-black-scholes2
 
 $$
 \min_{f \in \mathcal{F}} \left[ \frac{1}{n_L} \sum_{i=1}^{n_L} \ell(f(x_i), y_i) + \lambda R_u(f, \mathcal{D}_U) \right]
-$$
+$$ {#eq-black-scholes2}
 
 Where:
 
@@ -120,7 +121,23 @@ R_u(f, 𝒟_U): Unsupervised regularization term
 The challenge: designing R_u(f, 𝒟_U) that effectively exploits unlabeled data structure
 ## Methodology
 
+We define the binomial distribution as:(@eq-black-scholes1) 
 
+$$
+f(k) = \binom{n}{k} p^k (1-p)^{n-k}
+$${#eq-black-scholes1}
+
+As shown in Equation \@ref(eq:binom), the binomial function defines the probability...
+
+
+Black-Scholes (@eq-black-scholes) is a mathematical model that seeks to explain the behavior of financial derivatives, most commonly options:
+
+$$
+\frac{\partial \mathrm C}{ \partial \mathrm t } + \frac{1}{2}\sigma^{2} \mathrm S^{2}
+\frac{\partial^{2} \mathrm C}{\partial \mathrm S^2}
+  + \mathrm r \mathrm S \frac{\partial \mathrm C}{\partial \mathrm S}\ =
+  \mathrm r \mathrm C 
+$$ {#eq-black-scholes}
 
 
 
