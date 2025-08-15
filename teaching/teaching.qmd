@@ -7,9 +7,39 @@ As a Teaching Assistant at Iowa State University, I am dedicated to creating an 
 
 **Courses I have served as a Teaching Assistant or Mentor in:**
 
+<style>
+/* Hide visually but keep in DOM so it appears in TOC */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  border: 0; white-space: nowrap;
+}
+</style>
+<style>
+/* --- Keep TOC items on one line (with ellipsis if needed) --- */
+nav[role="doc-toc"] li > a,
+nav[role="doc-toc"] li > a .nav-link-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  hyphens: none;
+}
+
+/* Optional: give the TOC a bit more room so fewer items truncate */
+.sidebar nav[role="doc-toc"] {
+  min-width: 18rem;   /* tweak to 19–20rem if you want more */
+}
+</style>
 
 
-## COMS 1130 – Spreadsheets and Databases
+
+
+## Spreadsheets and Databases {.visually-hidden #coms1130}
+## COMS 1130 – Spreadsheets and Databases {.unlisted}
+
+
 
 ::: {.grid}
 
@@ -25,9 +55,8 @@ Foundational course in using tools like Microsoft Excel and Access for data orga
 
 :::
 
-
-
-## COMS 3090 – Software Development Practices
+## Software Development Practices {.visually-hidden #coms3090}
+## COMS 3090 – Software Development Practices {.unlisted}
 
 ::: {.grid}
 
@@ -36,16 +65,15 @@ Foundational course in using tools like Microsoft Excel and Access for data orga
 :::
 
 ::: {.g-col-12 .g-col-md-10}
-[Fall 2022](/teaching/coms3090/), &nbsp; [Spring 2023](/teaching/coms3090/), , &nbsp; [Spring 2024](/teaching/coms3090/)
+[Fall 2022](/teaching/coms3090/), &nbsp; [Spring 2023](/teaching/coms3090/), &nbsp; [Spring 2024](/teaching/coms3090/), &nbsp; [Fall 2025](/teaching/coms3090/)
 
 **Hands-on course** focused on modern software development practices, including Git, Agile methodologies, code reviews, unit testing, and CI/CD. Students engage in team-based projects that simulate real-world workflows, emphasizing collaboration, documentation, and iterative development.
 :::
 
 :::
 
-
-
-## COMS 3190 – User Interface Design
+## User Interface Design {.visually-hidden #coms3190}
+## COMS 3190 – User Interface Design {.unlisted}
 
 ::: {.grid}
 
@@ -62,8 +90,8 @@ Explores the principles of designing user-friendly and efficient interfaces. Com
 :::
 
 
-
-## COMS 3620 – Object-Oriented Analysis and Design
+## Object-Oriented Analysis and Design {.visually-hidden #coms3620}
+## COMS 3620 – Object-Oriented Analysis and Design {.unlisted}
 
 ::: {.grid}
 
@@ -79,9 +107,8 @@ Teaches how to model and design software systems using object-oriented principle
 
 :::
 
-
-
-## COMS 3630 – Database Management Systems
+## Database Management Systems {.visually-hidden #coms3630}
+## COMS 3630 – Database Management Systems {.unlisted}
 
 ::: {.grid}
 
@@ -97,9 +124,9 @@ Covers the fundamentals of database architecture, data modeling, and SQL. Studen
 
 :::
 
+## Software Testing {.visually-hidden #coms3630}
+## COMS 4170 – Software Testing {.unlisted}
 
-
-## COMS 4170 – Software Testing
 
 ::: {.grid}
 

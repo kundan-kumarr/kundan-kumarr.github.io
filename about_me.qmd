@@ -85,10 +85,13 @@ listing:
   fields: [title, subtitle, image]
   max-items: 1
   image-height: "200"
-format: 
+
+format:
   html:
     linestretch: 1.7
     page-layout: full
+    toc: false        # hides "On this page" for THIS page
+    page-tools: false # hides "Edit this page" & "Report an issue" for THIS page
 ---
 
 ::: {#hero-heading}

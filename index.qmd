@@ -87,10 +87,12 @@ listing:
   image-height: "200"
   image-placeholder: ../publication/featured.jpg
 
-format: 
+format:
   html:
-    linestretch: 1.7
+    linestretch: 1.9
     page-layout: full
+    toc: false        # hides "On this page" for THIS page
+    page-tools: false # hides "Edit this page" & "Report an issue" for THIS page
 ---
 
 ::: {#hero-heading}
