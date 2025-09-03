@@ -12,7 +12,7 @@ page-layout: full
   <tr>
     <td><strong></strong></td>
     <td style="text-align: right;">
-      <a href="http://kundan-kumarr.github.io/misc/info/Kundan_Kumar_CV1.pdf" download style="
+      <a href="http://kundan-kumarr.github.io/misc/info/Kundan_Kumar_CV.pdf" download style="
         background-color: #f5f0e9;
         color: #934c2f;
         padding: 6px 14px;
@@ -26,7 +26,6 @@ page-layout: full
     </td>
   </tr>
 </table>
-
 
 ## <i class="fas fa-briefcase"></i> Professional Experience
 ::: {.d-inline-flex style="align-items:baseline"}
@@ -59,7 +58,6 @@ National Renewable Energy Laboratory (NREL)
 - Paper ”Advanced Semi‑Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems” accepted at IEEE Power & Energy Society General Meeting (PES GM) 2025.
 
 ---
-
 ::: {.d-inline-flex style="align-items:baseline"}
 ::: p-2
 ![](assets/img/comcast.png){width="90px" fig-alt="Comcast logo"}
@@ -87,9 +85,8 @@ Comcast
 </table> 
 - Designed and implemented real‑time data processing pipelines using Amazon Kinesis and RabbitMQ, processing 1TB+ daily data for fraud detection and system monitoring.
 - Developed machine learning models for anomaly detection and user behavior analysis, reducing fraudulent activities by 70% through predictive analytics.
-- Built scalable Spring Boot microservices handling 10K+ concurrent requests, achieving 99.9% uptime for critical system components.
 - Created interactive dashboards using Presto DB and Python visualization tools, enabling real‑time monitoring of network performance metrics and fraud patterns.
----
+
 
 ::: {.d-inline-flex style="align-items:baseline"}
 ::: p-2
@@ -116,12 +113,10 @@ IBM
     </td>
   </tr>
 </table> 
-
 - Led cloud infrastructure optimization using OpenShift, implementing auto‑scaling solutions that reduced operational costs by 30%.
 - Developed a comprehensive monitoring system using Grafana and Flask, providing real‑time visibility into 100+ cloud servers.
 - Implemented automated performance monitoring and alerting system, reducing incident response time by 60%.
 
----
 
 ::: {.d-inline-flex style="align-items:baseline"}
 ::: p-2
@@ -148,11 +143,10 @@ Hewlett Packard Enterprise (HPE)
     </td>
   </tr>
 </table> 
-<!-- **Software Engineer**   `Apr 2027 – Dec 2022`-->
+<!-- **Software Engineer**   `Apr 2027 – Dec 2022`-->
 - Spearheaded migration of critical applications from HPI to HPE domain, ensuring zero downtime during transition.
 - Implemented OAuth 2.0 authentication system and RESTful services using Spring Boot, securing applications serving 50K+ users.
 - Designed and deployed microservices architecture on Apache/WebLogic servers, improving system response time by 40%.
----
 
 ::: {.d-inline-flex style="align-items:baseline"}
 ::: p-2
@@ -179,11 +173,11 @@ Tata Consultancy Services (TCS)
     </td>
   </tr>
 </table> 
-<!--**System Engineer**   `Jun 2020 – Jul 2022` -->
+<!--**System Engineer**   `Jun 2020 – Jul 2022` -->
 - Engineered high‑performance ETL pipelines for data warehouse integration, processing 100GB+ daily data volumes.
 - Optimized database performance through advanced SQL tuning and indexing strategies, reducing query execution time by 70%.
 - Received excellence award for achieving $100K cost savings through database optimization initiatives.
----
+
 
 
 ## <i class="fas fa-graduation-cap"></i> Education
@@ -213,7 +207,7 @@ Iowa State University
     </td>
   </tr>
 </table> 
-<!-- **Ph.D. in Computer Science (Minor: Statistics)**   `Aug 2020 – Dec 2025 (expected)` -->
+<!-- **Ph.D. in Computer Science (Minor: Statistics)**   `Aug 2020 – Dec 2025 (expected)` -->
 - Research: Deep RL, Physics-Informed AI, Uncertainty Quantification
 - Courses: Deep Learning, NLP, Statistical Theory, Empirical Methods, Algorithms
 
@@ -237,8 +231,6 @@ Iowa State University
 
 - Focus: Algorithms, Databases, Network Programming
 
-
----
 ## <i class="fas fa-chalkboard-teacher"></i> Teaching Experience
 
 ::: {.d-inline-flex style="align-items:baseline"}
@@ -289,9 +281,6 @@ Iowa State University
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   "> Teaching Portfolio</a>
 </div>
-
-
----
 
 ## <i class="fas fa-flask"></i> Research Experience
 
@@ -367,8 +356,6 @@ Iowa State University
   "> Research Portfolio</a>
 </div>
 
----
-
 <!-- 
 ## <i class="fas fa-person-chalkboard"></i> Presentations
 
@@ -420,47 +407,6 @@ Iowa State University
 
 </div>
 
-
----
-
-<!--
-## <i class="fas fa-diagram-project"></i> Projects
-
-<div style="border: 1px solid #ddd; border-radius: 4px; padding: 1rem; margin-bottom: 1rem; background-color: #f9f9f9;">
-<strong>Federated Deep Reinforcement Learning for Decentralized Smart Grids</strong><br>
-- Developed a scalable federated reinforcement learning framework for Volt-VAR control in power systems.  
-- Integrated LSTM-based PPO agents with OpenDSS simulation for real-time voltage regulation across DERs.  
-- Achieved a 98% reduction in voltage violations and 3× speedup in convergence with reduced communication rounds.
-</div>
-
-<div style="border: 1px solid #ddd; border-radius: 4px; padding: 1rem; margin-bottom: 1rem; background-color: #f9f9f9;">
-<strong>Physics-Informed DRL for Smart Grid Optimization</strong><br>
-- Proposed actor-critic networks embedding grid physics into loss functions to improve reliability and interpretability.  
-- Demonstrated robustness across IEEE 13, 34, and 123-bus networks using OpenDSS and OPAL-RT testbeds.
-</div>
-
-<div style="border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; background-color: #f9f9f9;">
-<strong>LLM-Powered Multi-Building Energy Optimization in CityLearn</strong><br>
-- Combined large language models (LLMs) with RL agents in CityLearn for multi-building carbon-aware energy optimization.  
-- Enabled human-query interpretation and adaptive response for energy-efficient coordination.
-</div>
-
-<div style="border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; background-color: #f9f9f9;">
-<strong>Adversarial Attacks and Mitigation in DRL-Controlled Energy Systems</strong><br>
-- Designed white-box and black-box adversarial attacks against DRL agents in smart grids.  
-- Developed detection and mitigation methods using uncertainty estimation and adversarial training.
-</div>
-
-<div style="border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; background-color: #f9f9f9;">
-<strong>One-Shot Transfer Learning for Power Grid Reconfiguration</strong><br>
-- Built a one-shot learning framework to adapt pre-trained DRL agents to new grid topologies.  
-- Achieved 70% reduction in training data needs using graph-based similarity and structural embeddings.
-</div>
-
-
----
--->
-
 ## <i class="fas fa-award"></i> Honors & Awards
 
 - Selected, Seventh Workshop on Autonomous Energy Systems @ NREL (2024)
@@ -468,8 +414,6 @@ Iowa State University
 - Selected, Oxford Machine Learning Summer School (OxML) (2022)
 - Excellence Award, Database Optimization @ TCS
 - 2nd Place, BAJA SAE India (Safest Terrain Vehicle Category, National Level)
-
----
 
 ## <i class="fas fa-handshake-angle"></i> Service
 
@@ -483,52 +427,7 @@ Iowa State University
 
 - **Volunteer**, Prayaas India (BIT): NGO providing quality education to underprivileged children in slums and villages.
 
-<!--
-### Programming Languages
-
-- Python, R, Java, C++, SAS, MATLAB, SQL, HTML, JS, Node.js, React.js
-
-### ML & Data Analysis
-
-- scikit-learn, TensorFlow, PyTorch, Pandas, Matplotlib, Seaborn, Gym, RLlib
-
-### LLMs & NLP
-
-- Hugging Face Transformers, LangChain, RAG, Prompt Engineering
-
-### HPC & Big Data
-
-- Hadoop, Hive, Spark, Kafka, Kinesis, SLURM, MPI, OpenMP
-
-### Simulation & Modeling
-
-- Opal-RT, OpenDSS (Power), Carla (Autonomous Driving)
-
-### Optimization
-
-- Gurobi, Pyomo, BoTorch, Optuna, Hyperopt
-
-### Visualization & GIS
-
-- Tableau, ArcGIS, Leaflet
-
-### Cloud & DevOps
-
-- AWS (EC2, S3, Lambda), GCP, Docker, Kubernetes, Git, Terraform, Jenkins, CircleCI
--->
-<!--https://kundan-kumarr.github.io/statistics-analysis/
-## <i class="fas fa-book"></i> Scientific Writing
-
-- **Ryan, J.N.**, Michel, L., et al. *Soil Health Monitoring SOP* — [PDF](https://cms.agr.wa.gov/WSDAKentico/Documents//DO/NRAS/923-NRAS-SoilHealthSOP_WEB.pdf)
-- **Ryan, J.N.** 2020. *Pesticide Application and Water Quality* — [PDF](https://cms.agr.wa.gov/WSDAKentico/Documents/850-NRAS-PesticideApplication-WaterQuality-FINAL.pdf)
-
----
-
--->
-
 ## <i class="fas fa-diagram-project"></i> Projects
-
-```{=html}
 <style>
   .proj-grid {
     display: grid;
