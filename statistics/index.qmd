@@ -1,0 +1,16 @@
+---
+title: "Statistical Analysis"
+image: "https://github.com/jadeynryan/orcas/blob/master/inst/img/leaflet_screenshot.png?raw=true"
+image-alt: "Screenshot of leaflet map with whale icons representing the start and end of the encounters."
+listing:
+  contents: /
+  type: grid
+  fields: 
+    - title
+    - description
+    - date
+    - image
+    - categories
+  categories: true
+  sort: "date desc"
+---

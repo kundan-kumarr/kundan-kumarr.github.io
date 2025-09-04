@@ -161,21 +161,21 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 
 <div class="proj-grid">
 
-  <a class="proj-card" href="https://kundan-kumarr.github.io/data-science/intro.html">
+  <a class="proj-card" href="/computer_vision/">
     <span class="proj-body proj-cv">
       <strong>Computer Vision</strong><br>
       Visual perception, object detection, semantic segmentation, and sensor fusion for autonomous systems.
     </span>
   </a>
 
-  <a class="proj-card" href="https://kundan-kumarr.github.io/statistics-analysis/">
+  <a class="proj-card" href="/stat_ml/">
     <span class="proj-body proj-stat">
       <strong>Statistical ML</strong><br>
       Uncertainty quantification, probabilistic modeling, and data-driven inference in dynamic environments.
     </span>
   </a>
 
-<a class="proj-card" href="https://kundan-kumarr.github.io/statistics-analysis/">
+<a class="proj-card" href="/self_driving/">
     <span class="proj-body proj-drive">
       <strong>Self-Driving Systems</strong><br>
       Learning-based control, trajectory planning, vision-based perception, and sensor fusion in autonomous driving environments.

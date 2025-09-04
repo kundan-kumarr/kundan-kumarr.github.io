@@ -51,7 +51,7 @@ website:
           - text: "Deep/Machine Learning"
             href: drl.qmd
           - text: "Statistics"
-            href: projects1/stat.qmd
+            href: statistics/index.qmd
           - text: "Computer Vision"
             href: projects1/cv.qmd
           - text: "Robotics"

@@ -1050,5 +1050,137 @@
       "/publications/articles/vanoest2022.html",
       "/publications/articles/adaryukov2024.html"
     ]
+  },
+  {
+    "listing": "/statistics/stat.html",
+    "items": [
+      "/statistics/os_teaching/index.html",
+      "/statistics/phuse/index.html",
+      "/statistics/dan/index.html",
+      "/statistics/sykdomspulsen/index.html",
+      "/statistics/noreden/index.html"
+    ]
+  },
+  {
+    "listing": "/statistics/cv.html",
+    "items": [
+      "/statistics/os_teaching/index.html",
+      "/statistics/phuse/index.html",
+      "/statistics/dan/index.html",
+      "/statistics/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/statistics/index.html",
+    "items": [
+      "/statistics/drl.html",
+      "/statistics/prohect2.html",
+      "/statistics/nor_mortality/index.html",
+      "/statistics/os_teaching/index.html",
+      "/statistics/dl.html",
+      "/statistics/robo.html",
+      "/statistics/dan/index.html",
+      "/statistics/ehr-title/index.html",
+      "/statistics/projects.html",
+      "/statistics/noreden/index.html",
+      "/statistics/sykdomspulsen/index.html",
+      "/statistics/phuse/index.html",
+      "/statistics/stat.html",
+      "/statistics/cv.html",
+      "/statistics/projects1.html"
+    ]
+  },
+  {
+    "listing": "/statistics/robo.html",
+    "items": [
+      "/statistics/os_teaching/index.html",
+      "/statistics/phuse/index.html",
+      "/statistics/dan/index.html",
+      "/statistics/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/statistics/prohect2.html",
+    "items": [
+      "/statistics/dan/index.html",
+      "/statistics/ehr-title/index.html",
+      "/statistics/nor_mortality/index.html",
+      "/statistics/noreden/index.html",
+      "/statistics/os_teaching/index.html",
+      "/statistics/phuse/index.html",
+      "/statistics/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/statistics/drl.html",
+    "items": [
+      "/statistics/os_teaching/index.html",
+      "/statistics/phuse/index.html",
+      "/statistics/dan/index.html",
+      "/statistics/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/statistics/dl.html",
+    "items": [
+      "/statistics/os_teaching/index.html",
+      "/statistics/phuse/index.html",
+      "/statistics/dan/index.html",
+      "/statistics/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/statistics/projects.html",
+    "items": [
+      "/statistics/os_teaching/index.html",
+      "/statistics/phuse/index.html",
+      "/statistics/dan/index.html",
+      "/statistics/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/statistics/projects1.html",
+    "items": [
+      "/statistics/dan/index.html",
+      "/statistics/ehr-title/index.html",
+      "/statistics/nor_mortality/index.html",
+      "/statistics/noreden/index.html",
+      "/statistics/os_teaching/index.html",
+      "/statistics/phuse/index.html",
+      "/statistics/sykdomspulsen/index.html"
+    ]
+  },
+  {
+    "listing": "/stat_ml/index.html",
+    "items": [
+      "/stat_ml/community_20240921_quartofriends/index.html",
+      "/stat_ml/ehr_20240918_betterehr/index.html",
+      "/stat_ml/community_20240710_camis/index.html",
+      "/stat_ml/rstats_20240613_teaching/index.html",
+      "/stat_ml/rstats_20230721_teaching/index.html",
+      "/stat_ml/ph_20220616_splverse/index.html"
+    ]
+  },
+  {
+    "listing": "/self_driving/index.html",
+    "items": [
+      "/self_driving/community_20240921_quartofriends/index.html",
+      "/self_driving/ehr_20240918_betterehr/index.html",
+      "/self_driving/community_20240710_camis/index.html",
+      "/self_driving/rstats_20240613_teaching/index.html",
+      "/self_driving/rstats_20230721_teaching/index.html",
+      "/self_driving/ph_20220616_splverse/index.html"
+    ]
+  },
+  {
+    "listing": "/computer_vision/index.html",
+    "items": [
+      "/computer_vision/community_20240921_quartofriends/index.html",
+      "/computer_vision/ehr_20240918_betterehr/index.html",
+      "/computer_vision/community_20240710_camis/index.html",
+      "/computer_vision/rstats_20240613_teaching/index.html",
+      "/computer_vision/rstats_20230721_teaching/index.html",
+      "/computer_vision/ph_20220616_splverse/index.html"
+    ]
   }
 ]
