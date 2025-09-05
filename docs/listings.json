@@ -308,6 +308,7 @@
     "listing": "/blog/index.html",
     "items": [
       "/blog/technotes_20250703_research_guide/index.html",
+      "/blog/readnotes_2023010x_pandemic_gates/index.html",
       "/blog/blog_20241105_positconf2024/index.html",
       "/blog/blog_20240923_quartofriends/index.html",
       "/blog/readnotes_20240606_bad_pharma/index.html",
@@ -336,7 +337,6 @@
       "/blog/blog_20230112_roche_opensource/index.html",
       "/blog/technotes_20230111_deployqt/index.html",
       "/blog/blog_20230104_qtwAcademic/index.html",
-      "/blog/readnotes_2023010x_pandemic_gates/index.html",
       "/blog/blog_20230103_blogdown2quarto/index.html",
       "/blog/2022-05-25_wagisa_arcgis-wacse/index.html",
       "/blog/2021-11-14_setac_insecticides_water/index.html",
@@ -370,6 +370,7 @@
     "listing": "/index.html",
     "items": [
       "/blog/technotes_20250703_research_guide/index.html",
+      "/blog/readnotes_2023010x_pandemic_gates/index.html",
       "/blog/blog_20241105_positconf2024/index.html",
       "/blog/blog_20240923_quartofriends/index.html",
       "/blog/readnotes_20240606_bad_pharma/index.html",
@@ -398,7 +399,6 @@
       "/blog/blog_20230112_roche_opensource/index.html",
       "/blog/technotes_20230111_deployqt/index.html",
       "/blog/blog_20230104_qtwAcademic/index.html",
-      "/blog/readnotes_2023010x_pandemic_gates/index.html",
       "/blog/blog_20230103_blogdown2quarto/index.html",
       "/blog/2022-05-25_wagisa_arcgis-wacse/index.html",
       "/blog/2021-11-14_setac_insecticides_water/index.html",
@@ -532,6 +532,7 @@
     "listing": "/about_me.html",
     "items": [
       "/blog/technotes_20250703_research_guide/index.html",
+      "/blog/readnotes_2023010x_pandemic_gates/index.html",
       "/blog/blog_20241105_positconf2024/index.html",
       "/blog/blog_20240923_quartofriends/index.html",
       "/blog/readnotes_20240606_bad_pharma/index.html",
@@ -560,7 +561,6 @@
       "/blog/blog_20230112_roche_opensource/index.html",
       "/blog/technotes_20230111_deployqt/index.html",
       "/blog/blog_20230104_qtwAcademic/index.html",
-      "/blog/readnotes_2023010x_pandemic_gates/index.html",
       "/blog/blog_20230103_blogdown2quarto/index.html",
       "/blog/2022-05-25_wagisa_arcgis-wacse/index.html",
       "/blog/2021-11-14_setac_insecticides_water/index.html",

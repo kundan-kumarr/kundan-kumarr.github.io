@@ -1,9 +1,8 @@
 ---
-title: "How to prevent the next pandemic - Bill Gates"
-description: |
-  Reading notes on some of the chapters. 
-author: "Chi Zhang"
-date: "2023-01-04"
+title: "Small Datasets in Machine Learning"
+description: "Comprehensive Techniques of Machine Learning Models and techniqies tailorec for small datasets" 
+author: "Kundan Kumar"
+date: "2025-01-04"
 categories: [Notes]
 sidebar: false
 format: 
@@ -15,7 +14,7 @@ format:
 ---
 
 
-# Notes from each chapter
+# Introduction to Small Data 
 
 ## Learn from COVID
 
