@@ -53,7 +53,7 @@ website:
           - text: "Statistics"
             href: statistics/index.qmd
           - text: "Computer Vision"
-            href: projects1/cv.qmd
+            href: projects/washi.qmd
           - text: "Robotics"
             href: drl.qmd
       - text: "Teaching"
