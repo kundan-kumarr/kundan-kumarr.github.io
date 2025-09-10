@@ -1,26 +1,20 @@
 ---
-title: "Are within- and between-session changes in distress associated with treatment outcomes? Findings from two clinical trials of exposure for eating disorders"
-type: "article"
-author: "Butler, Christian, et al."
-year: "2024"
-publication: "Behavior Research and Therapy"
-doi: "https://doi.org/10.1016/j.brat.2024.104577"
+title: "Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids"
+author: "Kundan Kumar."
+year: "2025"
+publication: "IEEE"
+doi: "https://ieeexplore.ieee.org/abstract/document/10887439"
+image: "figures/TL1.png"
 toc: false
 categories:
-  - clinical
-  - article
+  - Reinforcement Learning
+  - Transfer Learning
 ---
 
-## Citation (APA 7)
+## Citation
 
-> Butler, R. M., Christian, C., Girard, J. M., Vanzhula, I. A., & Levinson, C. A. (2024). Are within- and between-session changes in distress associated with treatment outcomes? Findings from two clinical trials of imaginal exposure for eating disorders. *Behavior Research and Therapy, 180*, 104577.
+> K. Kumar and G. Ravikumar, "Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids," 2025 IEEE PES Grid Edge Technologies Conference & Exposition (Grid Edge), San Diego, CA, USA, 2025, pp. 1-5, doi: 10.1109/GridEdge61154.2025.10887439. *IEEE*
 
 ## Abstract
 
-Objective: Imaginal exposure is a novel intervention for eating disorders (EDs) that has been investigated as a method for targeting ED symptoms and fears. Research is needed to understand mechanisms of change during imaginal exposure for EDs, including whether within- and between-session distress reduction is related to treatment outcomes.
-
-Method: Study 1 tested four sessions of online imaginal exposure (N = 143). Study 2 examined combined imaginal and in vivo exposure, comprising six imaginal exposure sessions (N = 26). ED symptoms and fears were assessed pre- and posttreatment, and subjective distress and state anxiety were collected during sessions.
-
-Results: Subjective distress tended to increase within-session in both studies, and within-session reduction was not associated with change in ED symptoms or fears. In Study 1, between-session reduction of distress and state anxiety was associated with greater decreases in ED symptoms and fears pre-to posttreatment. In Study 2, between-session distress reduction occurred but was not related to outcomes.
-
-Conclusions: Within-session distress reduction may not promote change during exposure for EDs, whereas between-session distress reduction may be associated with better treatment outcomes. These findings corroborate research on distress reduction during exposure for anxiety disorders. Clinicians might consider approaches to exposure-based treatment that focus on distress tolerance and promote between-session distress reduction.
+The integration of renewable energy resources has made power system management increasingly complex. DRL is a potential solution to optimize power system operations, but it requires significant time and resources during training. The control policies developed using DRL are specific to a single grid and require retraining from scratch for other grids. Training the DRL model from scratch is computationally expensive. This paper proposes a novel TL with a DRL framework to optimize VV C across different grids. This framework significantly reduces training time and improves VVC control performance by fine-tuning pre-trained DRL models for various grids. We developed a policy reuse classifier that transfers the knowledge from the IEEE-123 Bus system to the IEEE-13 Bus system. We performed an impact analysis to determine the effectiveness of TL. Our results show that TL improves the VVC control policy by 69.51 %, achieves faster convergence, and reduces the training time by 98.14%.

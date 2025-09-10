@@ -1,0 +1,19 @@
+---
+title: "Deep learning and pattern-based methodology for multivariable sensor data regression"
+type: "article"
+author: "Kundan Kumar"
+year: "2024"
+publication: "IEEE International Conference on Machine Learning and Applications (ICMLA)"
+doi: "https://ieeexplore.ieee.org/abstract/document/10069730"
+toc: false
+categories:
+  - Deep Learning
+  - Multivariable 
+---
+
+## Citation
+
+> J. K. Francis, C. Kumar, J. Herrera-Gerena, K. Kumar and M. J. Darr, "Deep Learning and Pattern-based Methodology for Multivariable Sensor Data Regression," 2022 21st IEEE International Conference on Machine Learning and Applications (ICMLA), Nassau, Bahamas, 2022, pp. 748-753, doi: 10.1109/ICMLA55696.2022.00125. *IEEE.*
+
+## Abstract
+We propose a deep learning methodology for multivariable regression based on pattern recognition that triggers fast learning over sensor data. We used a conversion of sensors-to-image, which enables us to take advantage of Computer Vision architectures and training processes. In addition to this data preparation methodology, we explore using state-of-the-art architectures to generate regression outputs to predict agricultural crop continuous yield information. Finally, we compare with some top models reported in MLCAS2021. We found that using a straightforward training process, we were able to accomplish an MAE of 4.394, RMSE of 5.945, and R2 of 0.861.

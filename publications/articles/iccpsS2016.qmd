@@ -1,0 +1,22 @@
+---
+title: "Deep value of information estimators for collaborative human-machine information gathering"
+type: "article"
+author: " Kundan Kumar"
+year: "2016"
+publication: "ACM/IEEE 7th International Conference on Cyber-Physical Systems (ICCPS"
+preprint: ""
+doi: "https://ieeexplore.ieee.org/abstract/document/7479095"
+materials: ""
+toc: false
+categories:
+  - convolutional neural networks
+  - Value of Information
+---
+
+## Citation
+
+>K. G. Lore, N. Sweet, K. Kumar, N. Ahmed and S. Sarkar, "Deep Value of Information Estimators for Collaborative Human-Machine Information Gathering," 2016 ACM/IEEE 7th International Conference on Cyber-Physical Systems (ICCPS), Vienna, Austria, 2016, pp. 1-10, doi: 10.1109/ICCPS.2016.7479095. *IEEE*.
+
+## Abstract
+
+Effective human-machine collaboration can significantly improve many learning and planning strategies for information gathering via fusion of 'hard' and 'soft' data originating from machine and human sensors, respectively. However, gathering the most informative data from human sensors without task overloading remains a critical technical challenge. In this context, Value of Information (VOI) is a crucial decision- theoretic metric for scheduling interaction with human sensors. We present a new Deep Learning based VOI estimation framework that can be used to schedule collaborative human-machine sensing with efficient online inference and minimal policy hand-tuning. Supervised learning is used to train deep convolutional neural networks (CNNs) to extract hierarchical features from 'images' of belief spaces obtained via data fusion. These features can be associated with soft data query choices to reliably compute VOI for human interaction. The CNN framework is described in detail, and a performance comparison to a feature- based POMDP scheduling policy is provided. The practical feasibility of our method is also demonstrated on a mobile robotic search problem with language-based semantic human sensor inputs.

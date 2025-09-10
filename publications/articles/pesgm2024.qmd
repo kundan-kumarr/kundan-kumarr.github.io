@@ -1,21 +1,21 @@
 ---
-title: "It’s the sentiment that counts: Comparing sentiment analysis tools for estimating affective valence in dream reports"
+title: "Bayesian Optimization for Deep Reinforcement Learning for Robust Volt-Var Control"
 type: "article"
-author: "Baber, Hamilton, et al."
+author: "Kundan Kumar"
 year: "2024"
-publication: "Sleep"
-doi: "https://doi.org/10.1093/sleep/zsae210"
+publication: "IEEE"
+doi: "https://ieeexplore.ieee.org/abstract/document/10688889"
 toc: false
 categories:
-  - verbal
-  - affective
-  - article
+  - Bayesian Optimization
+  - Reinforcement Learning
+  - Smart Energy Systems
 ---
 
-## Citation (APA 7)
+## Citation
 
-> Baber, G. R., Hamilton, N. A., Girard, J. M., Cohen, J. M., Gratton, M. K. P., Ellis, S., & Hemmer, E. (in press). It’s the sentiment that counts: Comparing sentiment analysis tools for estimating affective valence in dream reports. *Sleep.*
+> K. Kumar, A. A. Mantha and G. Ravikumar, "Bayesian Optimization for Deep Reinforcement Learning for Robust Volt-Var Control," 2024 IEEE Power & Energy Society General Meeting (PESGM), Seattle, WA, USA, 2024, pp. 1-5, doi: 10.1109/PESGM51994.2024.10688889. *IEEE*
 
 ## Abstract
 
-TBA
+The high penetration of Renewable Energy Sources (RES) into the grid introduces complexity to the operation and optimization of energy. One potential solution to the challenge is to use deep reinforcement learning (DRL) based techniques to regulate voltage and reactive power under dynamic conditions. However, there is a need to optimize the DRL for better performance and robustness. This paper proposes a Bayesian optimization (BO) technique within the DRL framework to improve the performance and robustness of volt-var control (VVC) in power distribution systems. We combine the actor-critic DRL algorithm with the BO framework to yield fast optimal volt-var control policies. We use BO techniques to estimate DRL-based VVC decisions and accelerate model-training convergence. In the case study, we demonstrated that the BO in DRL on IEEE-13 has improved decision-making by 21.11% and 81.81% for 123 bus test systems. Our research shows that Bayesian-enabled DRL adapts to different grid configurations and maintains voltage profiles within desired limits, thereby improving DRL control policies.

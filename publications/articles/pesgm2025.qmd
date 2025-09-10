@@ -11,7 +11,6 @@ categories:
   - Bayesian Neural Network
   - Semi Supervised Learning
   - Uncertainty Estimation
-  - Conference
 ---
 
 ### Citation (IEEE)
