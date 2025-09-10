@@ -1,14 +1,10 @@
 ---
-title: "washi"
+title: "Motion Prediction and Detection for Autonomous Vehicles"
 description: "Palette and themes for Washington Soil Health Initiative branding"
 author: 
-  - name: Jadey Ryan
-    affiliation: WSDA
-  - name: Molly McIlquham
-    affiliation: WSU
-  - name: Dani Gelardi
-    affiliation: WSDA
-date: "2023-09-07"
+  - name: Kundan Kumar
+    affiliation: ISU
+date: "2022-12-07"
 image: "https://github.com/WA-Department-of-Agriculture/washi/blob/main/man/figures/logo.png?raw=true"
 image-alt: "washi logo"
 categories:

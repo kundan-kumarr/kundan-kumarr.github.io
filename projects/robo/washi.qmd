@@ -1,13 +1,9 @@
 ---
-title: "washi"
-description: "Palette and themes for Washington Soil Health Initiative branding"
+title: "Survival Of Ventilated and Control Flies"
+description: "Hypothesis Analysis of Life Expectancy of Flies in Normal vs ill Ventilated Bottles"
 author: 
-  - name: Jadey Ryan
-    affiliation: WSDA
-  - name: Molly McIlquham
-    affiliation: WSU
-  - name: Dani Gelardi
-    affiliation: WSDA
+  - name: Kundan Kumar
+    affiliation: ISU
 date: "2023-09-07"
 image: "https://github.com/WA-Department-of-Agriculture/washi/blob/main/man/figures/logo.png?raw=true"
 image-alt: "washi logo"

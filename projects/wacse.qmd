@@ -1,14 +1,12 @@
 ---
-title: "WaCSE"
-description: "Washington Climate Smart Estimator: A shiny app for comparing climate benefits of agricultural conservation practices"
+title: "P2P File Sharing Protocol"
+description: "Build a peer-to-peer file sharing protocol that keeps track of which peers are sharing and what files are being shared in the network"
 author: 
-  - name: Jadey Ryan
-    affiliation: WSDA
-  - name: Leslie Michel
-    affiliation: WSDA
-  - name: Dani Gelardi
-    affiliation: WSDA
-date: "2022-11-22"
+  - name: Kundan Kumar
+    affiliation: ISU
+  - name: FeiFei Cheng
+    affiliation: ISU
+date: "2023-01-22"
 image: "https://github.com/WA-Department-of-Agriculture/WaCSE/blob/main/inst/app/www/rmd/img/favicon.png?raw=true"
 image-alt: "WaCSE logo"
 categories:

@@ -1,6 +1,6 @@
 ---
-title: "ggehr"
-description: "ggplot2 extension to EHR data"
+title: "AI-Powered Patient Education System"
+description: "Develop an AI agent to enhance patient education by delivering personalized, on-demand health information through summaries, comprehension checks, and quizzes about relevant medical topic"
 image: "hex_ggehr2.png"
 ---
 

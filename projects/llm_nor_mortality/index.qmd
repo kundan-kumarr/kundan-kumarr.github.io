@@ -1,5 +1,5 @@
 ---
-title: "Mortality Surveillance in Norway"
+title: "Multi-Agent Travel Assistant System"
 image: "normomo_1.png"
 ---
 

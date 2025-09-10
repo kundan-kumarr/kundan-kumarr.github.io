@@ -1,8 +1,8 @@
 ---
-title: "orcas"
-description: "My first personal project to learn web scraping with {rvest} and mapping with {leaflet}"
-author: Jadey Ryan
-date: "2023-04-20"
+title: "Prompt Injection Attacks on LLM Medical Diagnosis by Symptom Elaboration"
+description: "Attacker is to trick the LLM to generate inappropriate possible medical diagnosis which could mislead the end use"
+author: Kundan Kumar
+date: "2025-01-20"
 image: "https://github.com/jadeynryan/orcas/blob/master/inst/img/leaflet_screenshot.png?raw=true"
 image-alt: "Screenshot of leaflet map with whale icons representing the start and end of the encounters."
 categories:

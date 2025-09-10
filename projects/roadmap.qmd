@@ -1,16 +1,14 @@
 ---
-title: "WaSHI Soil Health Roadmap"
-description: "Washington Soil Health Initiative Roadmap created with Python and ArcGIS Dashboards & Experience Builder"
+title: "Classification of Foods Based on their Quality"
+description: "ML model to assess the quality of fruit from an data set, which could be integrated into a product for use in home kitchens"
 author: 
-  - name: Jadey Ryan
-    affiliation: WSDA
-  - name: Molly McIlquham
-    affiliation: WSU
-  - name: Chris Benedit
-    affiliation: WSU
-  - name: Dani Gelardi
-    affiliation: WSDA
-date: "2023-08-04"
+  - name: Kundan Kumar
+    affiliation: ISU
+  - name: Amanda Newendorp
+    affiliation: ISU
+  - name: Pallavi Kandanur
+    affiliation: ISU
+date: "2023-05-03"
 image: roadmap.webp
 image-alt: "Screenshot of WaSHI roadmap landing page."
 categories:

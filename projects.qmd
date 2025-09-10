@@ -1,7 +1,7 @@
 ---
 title: "Projects"
-image: "https://github.com/jadeynryan/orcas/blob/master/inst/img/leaflet_screenshot.png?raw=true"
-image-alt: "Screenshot of leaflet map with whale icons representing the start and end of the encounters."
+image: " "
+image-alt: " "
 listing:
   contents: projects
   type: grid
@@ -14,3 +14,6 @@ listing:
   categories: true
   sort: "date desc"
 ---
+> Doing real-world projects is, I think, the best way to learn and also to engage the world
+> and find out what the world is all about.
+<h4 align="right">-Ray Kurzweil</h4>
