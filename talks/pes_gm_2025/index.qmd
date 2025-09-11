@@ -1,0 +1,33 @@
+---
+title: "Transfer Learning in Deep Reinforcement Learning for Scalable VVC in Smart Grids"
+subtitle: "Transferring knowledge from one grid to another grid"
+description: |
+  Workshop on Autonomous Energy Systems
+date: "2025-07-16"
+categories: [NREL,Reinforcement Learning]
+---
+
+![](image_talk_20220616.png)
+
+
+
+### About the talk
+
+We developed a TL-DRL framework, as shown in Fig.~\ref{fig:A2C}, which involves transferring policy knowledge from one distribution grid to another. Additionally, we have created a policy reuse classifier to determine whether to transfer the policy knowledge from the IEEE-123 Bus to the IEEE-13 Bus system and conducted an impact analysis.
+\begin{equation}\label{eq:ppo_objective}
+\theta_{\text{source}} = \arg \max_{\theta} \mathbb{E}_{\tau \sim \pi_{\theta}} \left[ \sum_{t=0}^{T} \gamma^t r_t - \beta \text{CLIP}(\theta) \right]
+\end{equation}
+The $\theta_{\text{source}}$ is trained with the DRL algorithm on the IEEE-123 Bus, which regulates the VVC voltage profiles within permissible limits.
+
+While $\theta_{\text{target}}$ is the model which transferred the knowledge $\theta_{\text{source}}$ and adapts well in the $\theta_{\text{target}}$  domain.
+\begin{equation}\label{eq:target_theta}
+\theta_{\text{target}} =
+\begin{cases}
+ \begin{aligned}
+ \theta_{\text{source}}\; & \text{if } P(\text{Reuse}|\text{Observation}) > 0.5 
+ \end{aligned} \\
+ \arg \max_{\theta} \mathbb{E}_{\tau \sim \pi_{\theta}} \left[ \sum_{t=0}^{T} \gamma^t r_t \right] & \text{otherwise}
+\end{cases}
+\end{equation}
+
+

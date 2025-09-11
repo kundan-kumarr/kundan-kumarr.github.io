@@ -1,21 +1,24 @@
 ---
 title: "Motion Prediction and Detection for Autonomous Vehicles"
-description: "Palette and themes for Washington Soil Health Initiative branding"
+description: "Develop a framework for vehicle detection and motion planning of vehicles in complex driving scenarios"
 author: 
   - name: Kundan Kumar
-    affiliation: ISU
+    affiliation: Iowa State University
 date: "2022-12-07"
-image: "https://github.com/WA-Department-of-Agriculture/washi/blob/main/man/figures/logo.png?raw=true"
-image-alt: "washi logo"
+image: "yolo_hex_logo.png"
+image-alt: "YOLO logo"
 categories:
-  - R package
+  - Autonomous Systems
+  - Deep Learning
+  - Computer Vision
 ---
 
 <span class="listing-btn-group">
-<a href="https://wa-department-of-agriculture.github.io/washi/" class="btn" role="button">{{< fa box >}} {pkgdown} site</a> 
-<a href="https://github.com/WA-Department-of-Agriculture/washi/" class="btn" role="button">{{< fa brands github >}} Code</a>
-<a href="https://cran.r-project.org/web/packages/washi/index.html" class="btn" role="button">{{< fa brands r-project >}} CRAN</a>
+<a href="https://colab.research.google.com/drive/15rnwjU8S2KLgKfb7Dcl-wI_scgp1FXkC?usp=sharing" class="btn" role="button">{{< fa play >}} Google Colab</a> 
+<a href="https://github.com/ultralytics/yolov5" class="btn" role="button">{{< fa brands github >}} YOLOv5 Code</a>
+<a href="https://pytorch.org/hub/ultralytics_yolov5/" class="btn" role="button">{{< fa brands python >}} PyTorch Hub</a>
 </span>
 
-Inspired by other branding R packages such as [`glitr`](https://github.com/USAID-OHA-SI/glitr), [`ratlas`](https://github.com/atlas-aai/ratlas), and [`nmfspalette`](https://github.com/nmfs-fish-tools/nmfspalette), `washi` provides color palettes and themes consistent with [Washington Soil Health Initiative](https://washingtonsoilhealthinitiative.com) (WaSHI) branding. This package is to be used only by direct collaborators within WaSHI, though you are welcome to adapt the package to suit your own organization’s branding. ![](https://github.com/WA-Department-of-Agriculture/washi/blob/main/man/figures/logo.png?raw=true){.img-center width=15em fig-alt="washi logo"}
+Inspired by other open-source deep learning projects such as [`YOLO`](https://pjreddie.com/darknet/yolo/), [`ResNet`](https://arxiv.org/abs/1512.03385), and [`L5Kit`](https://github.com/woven-planet/l5kit), this project demonstrates object detection and motion prediction for autonomous vehicles using the **Kaggle Lyft motion prediction dataset**. We use **YOLOv5** for real-time object detection and **ResNet-50** for motion trajectory prediction.  
 
+![](yolo_hex_logo.png){.img-center width=15em fig-alt="YOLO hex logo"}

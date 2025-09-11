@@ -9,14 +9,14 @@ listing:
     date-format: iso
     fields: [title, description, date]
     contents: 
-      - ph_20220616_splverse
-      - rstats_20240613_teaching
-      - rstats_20230721_teaching
+      - pes_gm_2025
+      #- rstats_20240613_teaching
+      #- rstats_20230721_teaching
       # - ehr_20221013_ml_icu
       # - ehr_20210218_biday
-      - ehr_20240918_betterehr
-      - community_20240921_quartofriends
-      - community_20240710_camis
+      #- ehr_20240918_betterehr
+      #- community_20240921_quartofriends
+      #- community_20240710_camis
       # - rstats_20190402_blogdown
     type: table
     sort: "date desc"
@@ -30,9 +30,9 @@ priority: 1
 
 ## Upcoming
 
-#### R in Pharma
+#### North American Power Symposium "Grid Innovation for a Reliable and Resilient Energy Future”
 
-Explore Real-World hospital Electronic Health Records data with `ggehr`
+Talks on A Multi-Objective Optimization Framework for Carbon-Aware Smart Energy Management in `NAPS`
 
 
 

@@ -122,7 +122,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/talks/ph_20220616_splverse/index.html</loc>
-    <lastmod>2025-09-09T16:54:47.084Z</lastmod>
+    <lastmod>2025-09-10T21:04:09.619Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/projects/cv.html</loc>
@@ -166,7 +166,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/about_me.html</loc>
-    <lastmod>2025-09-09T16:54:44.388Z</lastmod>
+    <lastmod>2025-09-11T20:16:11.465Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/projects/nor_mortality/index.html</loc>
@@ -218,7 +218,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/index.html</loc>
-    <lastmod>2025-09-09T16:54:46.296Z</lastmod>
+    <lastmod>2025-09-11T20:15:20.729Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/blog/blog_20230103_blogdown2quarto/index.html</loc>
@@ -246,7 +246,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/blog/technotes_20240506_ohdsi_part1/index.html</loc>
-    <lastmod>2025-07-09T18:02:06.566Z</lastmod>
+    <lastmod>2025-09-11T20:12:48.942Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/blog/technotes_20231001_qt_webr/index.html</loc>
@@ -390,7 +390,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/projects/washi.html</loc>
-    <lastmod>2025-09-10T19:24:00.534Z</lastmod>
+    <lastmod>2025-09-11T15:42:16.318Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/projects/wacse.html</loc>
@@ -610,7 +610,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/talks/index.html</loc>
-    <lastmod>2025-09-09T16:54:47.080Z</lastmod>
+    <lastmod>2025-09-11T19:48:24.148Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/CopyOfindex.html</loc>
@@ -630,7 +630,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/talks/dummy_talk/index.html</loc>
-    <lastmod>2025-09-09T16:54:47.022Z</lastmod>
+    <lastmod>2025-09-11T19:59:48.495Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/index1.html</loc>
@@ -658,7 +658,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/rpkg/research.html</loc>
-    <lastmod>2025-09-09T16:54:46.761Z</lastmod>
+    <lastmod>2025-09-11T20:18:59.616Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/rpkg/research1.html</loc>
@@ -1354,7 +1354,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/computer_vision/index.html</loc>
-    <lastmod>2025-09-03T02:28:48.465Z</lastmod>
+    <lastmod>2025-09-09T16:54:44.654Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/computer_vision/ehr_20210218_biday/index.html</loc>
@@ -1555,5 +1555,149 @@
   <url>
     <loc>https://kundan-kumarr.github.io/publications/proceedings/vanoest2022.html</loc>
     <lastmod>2025-09-09T16:54:46.623Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/talks/pes_gm_2025/index.html</loc>
+    <lastmod>2025-09-11T20:01:16.136Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/technotes_20250703_research_guide/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.582Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/technotes_20231018_qt_styling/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/technotes_20230519_pkgcran/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.573Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/technotes_20230228_clinreport_part3/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.571Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/technotes_20230222_clinreport_part2/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.569Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/technotes_20230205_clinreport_part1/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.564Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/readnotes_20240606_bad_pharma/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.554Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/readnotes_2023010x_preventable_sridhar/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.552Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.549Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/blog_20240923_quartofriends/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.537Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/blog_20230904_cen2023/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.535Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/blog_20230301_ds_clinreport/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.532Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/blog_20230104_qtwAcademic/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.524Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/2024-02-21_rladies-abuja-quarto-params/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.518Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/2023-09-25_posit_parameterized-quarto/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.515Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/2023-06-13_wade_washi-wacse/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.511Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/2022-05-25_wagisa_arcgis-wacse/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.462Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/2021-11-09_awra_insecticides_water/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.412Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/2021-11-14_setac_insecticides_water/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.427Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/2023-04-20_rladies_orcas-web-scraping/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.463Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/2023-08-19_cascadia_shiny-wacse/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.513Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/2024-01-18_rladies-dc_quarto-params/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.517Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/blog_20230103_blogdown2quarto/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.522Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/blog_20230112_roche_opensource/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.531Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/blog_20230717_teaching/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.534Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/blog_20230921_positconf2023/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.536Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/blog_20241105_positconf2024/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.549Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/readnotes_2023010x_pandemic_gates/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.550Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/readnotes_20240218_open_source/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.553Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/technotes_20230111_deployqt/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.563Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/technotes_20230220_pkgdown/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.568Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/technotes_20230225_shinyappsio/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.570Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/technotes_20230301_clinreport_part4/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.572Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/technotes_20231001_qt_webr/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.577Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog1/technotes_20240506_ohdsi_part1/index.html</loc>
+    <lastmod>2025-09-09T16:54:44.579Z</lastmod>
   </url>
 </urlset>

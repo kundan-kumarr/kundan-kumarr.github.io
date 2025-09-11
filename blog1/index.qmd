@@ -1,0 +1,24 @@
+---
+title: "Blogs"
+toc: false
+listing:
+  contents: /
+  type: default
+  image-align: left
+  fields: 
+    - title
+    - description
+    - date
+    - image
+    - categories
+  categories: true
+  sort: "date desc"
+  page-size: 5
+---
+
+<!-- # Upcoming
+
+None at this time.
+
+# Past
+-->
