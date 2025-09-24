@@ -1017,12 +1017,12 @@
   {
     "listing": "/blog1/index.html",
     "items": [
-      "/blog1/technotes_20250703_research_guide/index.html",
-      "/blog1/readnotes_2023010x_pandemic_gates/index.html",
       "/blog1/blog_20241105_positconf2024/index.html",
+      "/blog1/technotes_20250703_research_guide/index.html",
+      "/blog1/technotes_20240506_ohdsi_part1/index.html",
+      "/blog1/readnotes_2023010x_pandemic_gates/index.html",
       "/blog1/blog_20240923_quartofriends/index.html",
       "/blog1/readnotes_20240606_bad_pharma/index.html",
-      "/blog1/technotes_20240506_ohdsi_part1/index.html",
       "/blog1/2024-02-21_rladies-abuja-quarto-params/index.html",
       "/blog1/readnotes_20240218_open_source/index.html",
       "/blog1/2024-01-18_rladies-dc_quarto-params/index.html",

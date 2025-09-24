@@ -142,7 +142,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
     font-family: 'Nunito', sans-serif;
   }
   .proj-cv strong {
-    color: #57B9FF; /* Blue for Computer Vision */
+    color: #228B22; /* Blue for Computer Vision */
     font-size: 1.05rem;
   }
   .proj-stat strong {
@@ -150,7 +150,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
     font-size: 1.05rem;
   }
   .proj-drive strong {
-    color: #57B9FF; /* Bluefor Self-Driving */
+    color: #8B0000; /* Bluefor Self-Driving */
     font-size: 1.05rem;
   }
   .proj-llm strong {

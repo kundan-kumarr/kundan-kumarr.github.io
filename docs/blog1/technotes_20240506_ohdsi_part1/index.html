@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Chi Zhang">
-<meta name="dcterms.date" content="2024-05-06">
-<meta name="description" content="Observational Health Data Sciences and Informatics">
+<meta name="author" content="Kundan Kumar">
+<meta name="dcterms.date" content="2025-05-06">
+<meta name="description" content="In class-imbalanced datasets, the majority class dominates while the minority class is underrepresented, leading models to bias their predictions toward the majority class.">
 
-<title>Notes: The Book of OHDSI - Data Analytics – Kundan Kumar</title>
+<title>How to handle class-unbalanced data? – Kundan Kumar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -211,7 +211,10 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#chapter-7-data-analytics-use-cases" id="toc-chapter-7-data-analytics-use-cases" class="nav-link active" data-scroll-target="#chapter-7-data-analytics-use-cases">Chapter 7 Data analytics use cases</a>
+  <li><a href="#data-level-approaches" id="toc-data-level-approaches" class="nav-link active" data-scroll-target="#data-level-approaches">Data-Level Approaches</a></li>
+  <li><a href="#algorithm-level-approaches" id="toc-algorithm-level-approaches" class="nav-link" data-scroll-target="#algorithm-level-approaches">Algorithm-Level Approaches</a></li>
+  <li><a href="#evaluation-level-approaches" id="toc-evaluation-level-approaches" class="nav-link" data-scroll-target="#evaluation-level-approaches">Evaluation-Level Approaches</a></li>
+  <li><a href="#chapter-7-data-analytics-use-cases" id="toc-chapter-7-data-analytics-use-cases" class="nav-link" data-scroll-target="#chapter-7-data-analytics-use-cases">Chapter 7 Data analytics use cases</a>
   <ul class="collapse">
   <li><a href="#characterization" id="toc-characterization" class="nav-link" data-scroll-target="#characterization">Characterization</a></li>
   <li><a href="#population-level-estimation" id="toc-population-level-estimation" class="nav-link" data-scroll-target="#population-level-estimation">Population-level estimation</a></li>
@@ -225,16 +228,16 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Notes: The Book of OHDSI - Data Analytics</h1>
+<h1 class="title">How to handle class-unbalanced data?</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Data science</div>
-    <div class="quarto-category">Observational data</div>
+    <div class="quarto-category">Machine Learning</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    <p>Observational Health Data Sciences and Informatics</p>
+    <p>In class-imbalanced datasets, the majority class dominates while the minority class is underrepresented, leading models to bias their predictions toward the majority class.</p>
   </div>
 </div>
 
@@ -244,14 +247,14 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Chi Zhang </p>
+             <p>Kundan Kumar </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 6, 2024</p>
+      <p class="date">May 6, 2025</p>
     </div>
   </div>
   
@@ -263,6 +266,41 @@ window.Quarto = {
 </header>
 
 
+<p>There are three systematic different ways to handle class imbalanced data.</p>
+<section id="data-level-approaches" class="level2">
+<h2 class="anchored" data-anchor-id="data-level-approaches">Data-Level Approaches</h2>
+<p>Oversampling the minority class</p>
+<p>Random Oversampling: duplicate minority class examples until balance is reached.</p>
+<p>SMOTE (Synthetic Minority Over-sampling Technique): generates synthetic data points for the minority class by interpolating between nearest neighbors.</p>
+<p>ADASYN: similar to SMOTE but focuses on generating harder-to-learn examples.</p>
+<p>Undersampling the majority class</p>
+<p>Random Undersampling: randomly remove majority class examples.</p>
+<p>Cluster Centroids / Tomek Links / NearMiss: more informed undersampling to preserve useful structure.</p>
+<p>Hybrid methods</p>
+<p>Combine oversampling and undersampling to avoid overfitting or losing too much information.</p>
+</section>
+<section id="algorithm-level-approaches" class="level2">
+<h2 class="anchored" data-anchor-id="algorithm-level-approaches">Algorithm-Level Approaches</h2>
+<p>Class Weights / Cost-Sensitive Learning</p>
+<p>Assign higher misclassification cost to minority class (many libraries like scikit-learn allow class_weight=‘balanced’).</p>
+<p>Anomaly Detection / One-Class Models</p>
+<p>Treat minority class as “rare events” and use anomaly detection approaches.</p>
+<p>Ensemble Techniques</p>
+<p>Use Bagging/Boosting with imbalance-aware modifications (e.g., Balanced Random Forest, EasyEnsemble, RUSBoost).</p>
+</section>
+<section id="evaluation-level-approaches" class="level2">
+<h2 class="anchored" data-anchor-id="evaluation-level-approaches">Evaluation-Level Approaches</h2>
+<ul>
+<li>Avoid accuracy as the metric (it will be misleading).</li>
+<li>Prefer metrics that account for imbalance:</li>
+</ul>
+<p>Precision, Recall, F1-score</p>
+<p>ROC-AUC, PR-AUC (especially useful with rare positives)</p>
+<p>Matthews Correlation Coefficient (MCC)</p>
+<p>Balanced Accuracy</p>
+<blockquote class="blockquote">
+<p>If I face class imbalance, I’d start by understanding how severe it is. At the data level, I could resample — oversample the minority with SMOTE or undersample the majority. At the algorithm level, I’d use class weights or imbalance-aware ensembles like Balanced Random Forest. I’d also focus on the right metrics — like precision, recall, F1, or PR-AUC — since accuracy can be misleading. In deep learning, I might use focal loss. For example, in a fraud detection project, I combined SMOTE with class-weighted XGBoost, which improved recall significantly while controlling false positives.</p>
+</blockquote>
 <p><a href="https://ohdsi.github.io/TheBookOfOhdsi/">The Book of OHDSI</a> written by the OHDSI community.</p>
 <p>What is required to go from origin (source data) to destination (evidence):</p>
 <ul>
@@ -280,6 +318,7 @@ window.Quarto = {
 <li>population level effect estimation to apply causal inference for medical product safety surveillance and comparative effectiveness</li>
 <li>patient level prediction to apply machine learning for precision medicine and disease interception</li>
 </ul>
+</section>
 <section id="chapter-7-data-analytics-use-cases" class="level1">
 <h1>Chapter 7 Data analytics use cases</h1>
 <p>Three major categories: characterization, population-level estimation, patient-level prediction</p>
@@ -345,6 +384,8 @@ window.Quarto = {
 <li>high/low risk groups</li>
 <li>probabilistic phenotype</li>
 </ul>
+<p>https://imbalanced-learn.org/stable/user_guide.html#user-guide</p>
+<p>https://imbalanced-learn.org/stable/over_sampling.html</p>
 
 
 

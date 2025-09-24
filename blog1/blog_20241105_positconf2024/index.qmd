@@ -1,10 +1,10 @@
 ---
-title: "Personal Highlights: Positconf 2024"
-author: "Chi Zhang"
+title: "AI Agentic Design Patterns"
+author: "Kundan Kumar"
 description: |
-  My picked talks for 2024 after Posit released the talks on YouTube
-date: "2024-11-05"
-categories: [Data science]
+  Guide for orchestrating LLMs, tools and memory into AI agentic systems.
+date: "2025-09-25"
+categories: [AI-Agentic, Design Patterns]
 title-block-banner: false
 format: 
   html:

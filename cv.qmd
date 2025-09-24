@@ -365,8 +365,12 @@ Iowa State University
 ### Past
 - [Parameterized Quarto Reports](talks/2023-09-25_posit_parameterized-quarto/) — posit::conf(2023), Chicago
 -->
-
+<!--
 ## <i class="fas fa-user-gear"></i> Skills {.unnumbered}
+<div style="display: grid; grid-template-columns: 180px auto; row-gap: 0.7rem; column-gap: 1rem;">
+  <div><strong>Programming</strong></div><div>Python, R, Java, C++, SAS, MATLAB, SQL, HTML, JS, Node.js, React.js</div>
+  <div><strong>Machine/Deep Learning</strong></div><div>scikit-learn, TensorFlow, PyTorch, Pandas, Matplotlib, Seaborn, Gym, RLlib</div>
+</div>
 
 <div style="text-align: left;">
 
@@ -405,6 +409,50 @@ Iowa State University
   </tr>
 </table>
 
+</div>
+-->
+## <i class="fas fa-user-gear"></i> Skills {.unnumbered}
+
+<style>
+  .skills-grid{
+    display:grid;
+    grid-template-columns: minmax(160px,220px) 1fr;
+    row-gap: .7rem;
+    column-gap: 1rem;
+  }
+  @media (max-width: 640px){
+    .skills-grid{ grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="skills-grid">
+  <div><strong>Programming</strong></div>
+  <div>Python, R, Java, C++, SAS, MATLAB, SQL, HTML/CSS, JavaScript (Node.js, React)</div>
+
+  <div><strong>Machine/Deep Learning</strong></div>
+  <div>scikit-learn, TensorFlow, PyTorch, pandas, Matplotlib, Seaborn, Gym, RLlib</div>
+
+  <div><strong>LLMs & NLP</strong></div>
+<div>OpenAI API, Hugging Face Transformers, LangChain, LlamaIndex, RAG (retrievers, chunking, reranking), vector DBs (FAISS, Chroma, Pinecone), prompt engineering & structured outputs, evaluation (Ragas, Promptfoo)</div>
+
+<div><strong>Agentic Systems & Orchestration</strong></div>
+<div>LangGraph (stateful workflows), LangChain Agents (ReAct/MRKL/tools), function/tool calling, multi-agent design, planning & memory, tool-use (search/code/execution), guards & grounding</div>
+
+
+  <div><strong>HPC & Big Data</strong></div>
+  <div>Hadoop, Hive, Spark, Kafka, Kinesis, SLURM, MPI, OpenMP</div>
+
+  <div><strong>Simulation & Modeling</strong></div>
+  <div>OPAL-RT, OpenDSS (Power), CARLA (Autonomous Driving)</div>
+
+  <div><strong>Optimization</strong></div>
+  <div>Gurobi, Pyomo, BoTorch, Optuna, Hyperopt</div>
+
+  <div><strong>Visualization & GIS</strong></div>
+  <div>Tableau, ArcGIS, Leaflet</div>
+
+  <div><strong>Cloud & DevOps</strong></div>
+  <div>AWS (EC2, S3, Lambda), GCP, Docker, Kubernetes, Git, Terraform, Jenkins, CircleCI</div>
 </div>
 
 ## <i class="fas fa-award"></i> Honors & Awards
