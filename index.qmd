@@ -162,11 +162,12 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 <div class="proj-grid">
 
   <a class="proj-card" href="">
-    <span class="proj-body proj-cv">
-      <strong>Computer Vision</strong><br>
-      Visual perception, object detection, semantic segmentation, and sensor fusion for autonomous systems.
+    <span class="proj-body proj-llm">
+      <strong>LLM Reasoning & Agents</strong><br>
+      Agentic workflows (LangChain/LangGraph), tool-use, memory, retrieval, planning & reflection loops for robust multi-step reasoning.
     </span>
   </a>
+
 
   <a class="proj-card" href="">
     <span class="proj-body proj-stat">
@@ -176,11 +177,11 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
   </a>
 
 <a class="proj-card" href="">
-    <span class="proj-body proj-drive">
-      <strong>Self-Driving Systems</strong><br>
-      Learning-based control, trajectory planning, vision-based perception, and sensor fusion in autonomous driving environments.
-    </span>
-  </a>
+  <span class="proj-body proj-drive">
+    <strong>Autonomous Perception & Control</strong><br>
+    Vision-based perception (detection, segmentation, sensor fusion) integrated with learning-based control and trajectory planning for autonomous systems.
+  </span>
+</a>
 
 </div>
 ```
@@ -230,6 +231,11 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
   <col width="15%">
   <col width="85%">
 
+   <tr>
+    <td valign="top"><strong>[Sep 2025]</strong></td>
+    <td>Our paper on <a href="">Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification</a> has been accepted to <a href="https://www.sciencedirect.com/science/article/pii/S037877962500848X?dgcid=coauthor"> Journal on Electric Power Systems Research 2025</a>.</td>
+  </tr>
+
 <tr>
   <td valign="top"><strong>[Jul 2025]</strong></td>
   <td>Selected for the <a href="https://sites.google.com/cohere.com/coherelabs-community/community-programs/summer-school">Cohere Machine Learning Summer School</a>, hosted by Cohere Labs.</td>
@@ -239,11 +245,6 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
   <tr>
     <td valign="top"><strong>[Mar 2025]</strong></td>
     <td>Our paper on <a href="">Advanced Semi-Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems</a> has been accepted to <a href="https://pes-gm.org/">IEEE PES General Meeting 2025</a>.</td>
-  </tr>
-  
-  <tr>
-    <td valign="top"><strong>[Jan 2025]</strong></td>
-    <td>Our paper on <a href="https://ieeexplore.ieee.org/document/10887439">Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids</a> has been accepted to <a href="https://pes-gridedge.org/">IEEE PES Grid Edge Technologies Conference & Exposition 2025</a>.</td>
   </tr>
 
 </table>
