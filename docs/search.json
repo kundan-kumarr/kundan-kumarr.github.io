@@ -3161,7 +3161,7 @@
     "href": "rpkg/research.html#publications",
     "title": "Research",
     "section": "Publications",
-    "text": "Publications\n\nJournal PapersConference Papers\n\n\n\nKundan Kumar, Gelli Ravikumar\nPhysics-based Deep Reinforcement Learning for Grid-Resilient Volt-VAR Control (Under Review)\nIEEE Transactions on Smart Grid, 2025\n Paper Code Poster \n\n\n\n\n\n\nKundan Kumar, Kumar Utkarsh, Wang Jiyu and Padullaparti Harsha Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems\nIEEE PES General Meeting, 2025\n Paper Code Poster \nKundan Kumar, Gelli Ravikumar\nTransfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids\nIEEE PES Grid Edge Technologies Conference & Exposition, 2025\n Paper Code Poster \nKundan Kumar, Aditya Akilesh Mantha, Gelli Ravikumar\nBayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control\nIEEE PES General Meeting, 2024\n Paper Code Poster \n\n\n\n\nKundan Kumar, Gelli Ravikumar\nDeep RL-based Volt-VAR Control and Attack Resiliency for DER-integrated Distribution Grids\nIEEE ISGT, 2024\n Paper Code Poster \nJK Francis, C Kumar, J Herrera-Gerena, Kundan Kumar, MJ Darr\nDeep Learning and Pattern-based Methodology for Multivariable Sensor Data Regression\nIEEE ICMLA, 2022\n Paper Code Poster \nKin Gwn Lore, Nicholas Sweet, Kundan Kumar, N Ahmed, S Sarkar\nDeep Value of Information Estimators for Collaborative Human-Machine Information Gathering\nACM/IEEE ICCPS, 2016\n Paper Code Poster \n\n\n\n\n Show More"
+    "text": "Publications\n\nJournal PapersConference Papers\n\n\n\nArif Hussian, Kundan Kumar, Gelli Ravikumar\nBayesian-optimized bidirectional long-short-term memory network for wind power forecasting with uncertainty quantification Electric Power Systems Research, 2026\n Paper Code Poster \nKundan Kumar, Gelli Ravikumar\nPhysics-based Deep Reinforcement Learning for Grid-Resilient Volt-VAR Control (Under Review)\nIEEE Transactions on Smart Grid, 2025\n Paper Code Poster \n\n\n\n\n\n\nKundan Kumar, Kumar Utkarsh, Wang Jiyu and Padullaparti Harsha Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems\nIEEE PES General Meeting, 2025\n Paper Code Poster \nKundan Kumar, Gelli Ravikumar\nTransfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids\nIEEE PES Grid Edge Technologies Conference & Exposition, 2025\n Paper Code Poster \nKundan Kumar, Aditya Akilesh Mantha, Gelli Ravikumar\nBayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control\nIEEE PES General Meeting, 2024\n Paper Code Poster \n\n\n\n\nKundan Kumar, Gelli Ravikumar\nDeep RL-based Volt-VAR Control and Attack Resiliency for DER-integrated Distribution Grids\nIEEE ISGT, 2024\n Paper Code Poster \nJK Francis, C Kumar, J Herrera-Gerena, Kundan Kumar, MJ Darr\nDeep Learning and Pattern-based Methodology for Multivariable Sensor Data Regression\nIEEE ICMLA, 2022\n Paper Code Poster \nKin Gwn Lore, Nicholas Sweet, Kundan Kumar, N Ahmed, S Sarkar\nDeep Value of Information Estimators for Collaborative Human-Machine Information Gathering\nACM/IEEE ICCPS, 2016\n Paper Code Poster \n\n\n\n\n Show More"
   },
   {
     "objectID": "rpkg/research.html#ongoing-projects",
@@ -7726,5 +7726,54 @@
     "title": "Curriculum Vitae",
     "section": " Skills",
     "text": "Skills\n\n\n\nProgramming\n\n\nPython, R, Java, C++, SAS, MATLAB, SQL, HTML/CSS, JavaScript (Node.js, React)\n\n\nMachine/Deep Learning\n\n\nscikit-learn, TensorFlow, PyTorch, pandas, Matplotlib, Seaborn, Gym, RLlib\n\n\nLLMs & NLP\n\n\nHugging Face Transformers, LangChain, RAG, Prompt Engineering\n\n\nHPC & Big Data\n\n\nHadoop, Hive, Spark, Kafka, Kinesis, SLURM, MPI, OpenMP\n\n\nSimulation & Modeling\n\n\nOPAL-RT, OpenDSS (Power), CARLA (Autonomous Driving)\n\n\nOptimization\n\n\nGurobi, Pyomo, BoTorch, Optuna, Hyperopt\n\n\nVisualization & GIS\n\n\nTableau, ArcGIS, Leaflet\n\n\nCloud & DevOps\n\n\nAWS (EC2, S3, Lambda), GCP, Docker, Kubernetes, Git, Terraform, Jenkins, CircleCI"
+  },
+  {
+    "objectID": "test.html",
+    "href": "test.html",
+    "title": "A Quarto Page Layout Example",
+    "section": "",
+    "text": "This document demonstrates the use of a number of advanced page layout features to produce an attractive and usable document inspired by the Tufte handout style and the use of Tufte’s styles in RMarkdown documents (Xie, Allaire, and Grolemund 2018). The Tufte handout style is a style that Edward Tufte uses in his books and handouts. Tufte’s style is known for its extensive use of sidenotes, tight integration of graphics with text, and well-set typography. Quarto1 supports most of the layout techniques that are used in the Tufte handout style for both HTML and LaTeX/PDF output.\n\nXie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. “Tufte Handouts.” In, 137–46. Chapman; Hall/CRC. https://doi.org/10.1201/9781138359444-6.\n1 To learn more, you can read more about Quarto or visit Code.---\ntitle: \"An Example Using the Tufte Style\"\nauthor: \"John Smith\"\nformat:\n  html:\n    grid:\n1      margin-width: 350px\n  pdf: default\n2reference-location: margin\ncitation-location: margin\n---\n\n1\n\nIncreases the width of the margin to make more room for sidenotes and margin figures (HTML only).\n\n2\n\nPlaces footnotes and cited sources in the margin. Other layout options (for example placing a figure in the margin) will be set per element in examples below.\n\n\nThese layout features are designed with two important goals in mind:\n\nTo produce both PDF and HTML output with similar styles from the same Quarto document;\nTo provide simple syntax to write elements of the Tufte style such as side notes and margin figures. If you’d like a figure placed in the margin, just set the option fig-column: margin for your code chunk, and we will take care of the details for you2.\n\n2 You never need to think about \\begin{marginfigure} or &lt;span class=\"marginfigure\"&gt;; the LaTeX and HTML code under the hood may be complicated, but you never need to learn or write such code.If you have any feature requests or find bugs in these capabilities, please do not hesitate to file them to Code."
+  },
+  {
+    "objectID": "test.html#margin-figures",
+    "href": "test.html#margin-figures",
+    "title": "A Quarto Page Layout Example",
+    "section": "Margin Figures",
+    "text": "Margin Figures\nImages and graphics play an integral role in Tufte’s work. To place figures in the margin you can use the Quarto chunk option column: margin. For example:\n\n```{r}\n#| label: fig-margin\n#| fig-cap: \"MPG vs horsepower, colored by transmission.\"\n#| column: margin\n#| message: false\nlibrary(ggplot2)\n```\n\nWarning: package 'ggplot2' was built under R version 4.5.1\n\n```{r}\n#| label: fig-margin\n#| fig-cap: \"MPG vs horsepower, colored by transmission.\"\n#| column: margin\n#| message: false\nmtcars2 &lt;- mtcars\nmtcars2$am &lt;- factor(\n  mtcars$am, labels = c('automatic', 'manual')\n)\nggplot(mtcars2, aes(hp, mpg, color = am)) +\n  geom_point() + geom_smooth() +\n  theme(legend.position = 'bottom')\n```\n\n\n\n\n\n\n\n\nFigure 1: MPG vs horsepower, colored by transmission.\n\n\n\n\nNote the use of the fig-cap chunk option to provide a figure caption. You can adjust the proportions of figures using the fig-width and fig-height chunk options. These are specified in inches, and will be automatically scaled down to fit within the handout margin."
+  },
+  {
+    "objectID": "test.html#arbitrary-margin-content",
+    "href": "test.html#arbitrary-margin-content",
+    "title": "A Quarto Page Layout Example",
+    "section": "Arbitrary Margin Content",
+    "text": "Arbitrary Margin Content\nYou can include anything in the margin by places the class .column-margin on the element. See an example on the right about the first fundamental theorem of calculus.\n\n\nWe know from the first fundamental theorem of calculus that for \\(x\\) in \\([a, b]\\):\n\\[\\frac{d}{dx}\\left( \\int_{a}^{x} f(u)\\,du\\right)=f(x).\\]"
+  },
+  {
+    "objectID": "test.html#full-width-figures",
+    "href": "test.html#full-width-figures",
+    "title": "A Quarto Page Layout Example",
+    "section": "Full Width Figures",
+    "text": "Full Width Figures\nYou can arrange for figures to span across the entire page by using the chunk option fig-column: page-right.\n\n```{r}\n#| label: fig-fullwidth\n#| fig-cap: \"A full width figure.\"\n#| fig-width: 11\n#| fig-height: 3\n#| fig-column: page-right\n#| warning: false\nggplot(diamonds, aes(carat, price)) + geom_smooth() +\n  facet_grid(~ cut)\n```\n\n\n\n\n\n\n\nFigure 2: A full width figure.\n\n\n\n\n\nOther chunk options related to figures can still be used, such as fig-width, fig-cap, and so on. For full width figures, usually fig-width is large and fig-height is small. In the above example, the plot size is \\(11 \\times 3\\)."
+  },
+  {
+    "objectID": "test.html#arbitrary-full-width-content",
+    "href": "test.html#arbitrary-full-width-content",
+    "title": "A Quarto Page Layout Example",
+    "section": "Arbitrary Full Width Content",
+    "text": "Arbitrary Full Width Content\nAny content can span to the full width of the page, simply place the element in a div and add the class column-page-right. For example, the following code will display its contents as full width.\n::: {.fullwidth}\nAny _full width_ content here.\n:::\nBelow is an example:\n\nR is free software and comes with ABSOLUTELY NO WARRANTY. You are welcome to redistribute it under the terms of the GNU General Public License versions 2 or 3. For more information about these matters see https://www.gnu.org/licenses/."
+  },
+  {
+    "objectID": "test.html#main-column-figures",
+    "href": "test.html#main-column-figures",
+    "title": "A Quarto Page Layout Example",
+    "section": "Main Column Figures",
+    "text": "Main Column Figures\nBesides margin and full width figures, you can of course also include figures constrained to the main column. This is the default type of figures in the LaTeX/HTML output.\n\n```{r}\n#| label: fig-main\n#| fig-cap: \"A figure in the main column.\"\nggplot(diamonds, aes(cut, price)) + geom_boxplot()\n```\n\n\n\n\n\n\n\nFigure 3: A figure in the main column."
+  },
+  {
+    "objectID": "test.html#margin-captions",
+    "href": "test.html#margin-captions",
+    "title": "A Quarto Page Layout Example",
+    "section": "Margin Captions",
+    "text": "Margin Captions\nWhen you include a figure constrained to the main column, you can choose to place the figure’s caption in the margin by using the cap-location chunk option. For example:\n\n```{r}\n#| label: fig-main-margin-cap\n#| fig-cap: \"A figure with a longer caption. The figure appears in the main column, but the caption is placed in the margin. Captions can even contain elements like a citation such as @xie2018.\"\n#| cap-location: margin\nggplot(diamonds, aes(cut, price)) + geom_boxplot()\n```\n\n\n\n\n\n\n\nFigure 4: A figure with a longer caption. The figure appears in the main column, but the caption is placed in the margin. Captions can even contain elements like a citation such as Xie, Allaire, and Grolemund (2018).\n\nXie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. “Tufte Handouts.” In, 137–46. Chapman; Hall/CRC. https://doi.org/10.1201/9781138359444-6."
   }
 ]

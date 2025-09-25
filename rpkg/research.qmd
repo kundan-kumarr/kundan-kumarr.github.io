@@ -278,11 +278,20 @@ By tightly integrating domain knowledge into learning frameworks, I aim to enabl
 
 ### Journal Papers
 
-1. **Kundan Kumar**, Gelli Ravikumar  
+1. Arif Hussian, **Kundan Kumar**, Gelli Ravikumar  
+**Bayesian-optimized bidirectional long-short-term memory network for wind power forecasting with uncertainty quantification** 
+*Electric Power Systems Research, 2026*  
+<span style="display:inline-flex; gap:4px;">
+<a class="btn btn-primary btn-sm" href="https://www.sciencedirect.com/science/article/pii/S037877962500848X">Paper</a>
+<a class="btn btn-success btn-sm" href="#">Code</a>
+<a class="btn btn-info btn-sm" href="#">Poster</a>
+</span>
+
+2. **Kundan Kumar**, Gelli Ravikumar  
 **Physics-based Deep Reinforcement Learning for Grid-Resilient Volt-VAR Control** *(Under Review)*  
 *IEEE Transactions on Smart Grid, 2025*  
 <span style="display:inline-flex; gap:4px;">
-<a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2202.13541">Paper</a>
+<a class="btn btn-primary btn-sm" href="">Paper</a>
 <a class="btn btn-success btn-sm" href="#">Code</a>
 <a class="btn btn-info btn-sm" href="#">Poster</a>
 </span>
@@ -296,7 +305,7 @@ By tightly integrating domain knowledge into learning frameworks, I aim to enabl
 **Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems**  
 *IEEE PES General Meeting, 2025*  
 <span style="display:inline-flex; gap:4px;">
-<a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2202.13541">Paper</a>
+<a class="btn btn-primary btn-sm" href="">Paper</a>
 <a class="btn btn-success btn-sm" href="/misc/info/presentations/SSL_PESGM_presentation.pdf">Code</a>
 <a class="btn btn-info btn-sm" href="/misc/info/posters/SSL_PESGM_poster.pdf">Poster</a>
 </span>
