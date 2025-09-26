@@ -22,10 +22,10 @@ format:
 
 This guide provides a practical framework to prepare for **Research Scientist** roles in academia, industry research labs (FAANG, OpenAI, DeepMind, Anthropic, NVIDIA), and national labs. It blends personal experience with hiring-manager expectations and common evaluation rubrics.
 
-**GitHub repository**: [Research Scientist Preparation Guide](https://github.com/kundan-kumarr/Research-Scientist_Preparation_Guide/)  
-**Data Science Notes**: [Data Science Intro](https://kundan-kumarr.github.io/data-science/intro.html)  
-**Statistical Learning Notes**: [Statistical Analysis](https://kundan-kumarr.github.io/statistics-analysis/)
-
+**GitHub repository**: [Research Scientist Preparation Guide](https://kundan-kumarr.github.io/ResearchScientist-Handbook/)  
+**Data Science Notes**: [Data Science Intro](https://kundan-kumarr.github.io/ai-analysis/)  
+**Statistical Learning Notes**: [Statistical Analysis](https://kundan-kumarr.github.io/statsphere/)
+**LLM** : [Statistical Analysis](https://kundan-kumarr.github.io/Zero2LLM-Crafter/)
 ---
 
 ## What interviewers evaluate
