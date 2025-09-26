@@ -3154,7 +3154,7 @@
     "href": "rpkg/research.html#application-domains",
     "title": "Research",
     "section": "Application Domains",
-    "text": "Application Domains\n\n\n\n\n\n\n\nDomain\nDescription\n\n\n\n\n⚡ Smart Energy Systems\nVolt-VAR control, DER coordination, and federated DRL for power grid stability\n\n\n🚘 Autonomous Systems\nSafe navigation, adaptive planning, and control in simulation and real-world environments\n\n\n🛡 Secure AI for Infrastructure\nResilience against cyber-attacks and adversarial scenarios in safety-critical systems"
+    "text": "Application Domains\n\n\n\nDomain\nDescription\n\n\n\n\nSmart Energy Systems\nVolt-VAR control, DER coordination, and federated DRL for power grid stability\n\n\nAutonomous Systems\nSafe navigation, adaptive planning, and control in simulation and real-world environments\n\n\nSecure AI for Infrastructure\nResilience against cyber-attacks and adversarial scenarios in safety-critical systems"
   },
   {
     "objectID": "rpkg/research.html#publications",

@@ -260,9 +260,9 @@ By tightly integrating domain knowledge into learning frameworks, I aim to enabl
 
 | Domain | Description |
 |--------|-------------|
-| ⚡ Smart Energy Systems | Volt-VAR control, DER coordination, and federated DRL for power grid stability |
-| 🚘 Autonomous Systems | Safe navigation, adaptive planning, and control in simulation and real-world environments |
-| 🛡 Secure AI for Infrastructure | Resilience against cyber-attacks and adversarial scenarios in safety-critical systems |
+| [Smart Energy Systems](https://kundan-kumarr.github.io/SmartGridAI/) | Volt-VAR control, DER coordination, and federated DRL for power grid stability |
+| [Autonomous Systems](https://kundan-kumarr.github.io/ai-analysis) | Safe navigation, adaptive planning, and control in simulation and real-world environments |
+| [Secure AI for Infrastructure](https://kundan-kumarr.github.io/safe-AI/) | Resilience against cyber-attacks and adversarial scenarios in safety-critical systems |
 
 ---
 
