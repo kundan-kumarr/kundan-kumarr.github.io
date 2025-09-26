@@ -1,0 +1,9 @@
+---
+title: "Physics Informed Actor Critic "
+description: "Physics Informed Actor Critic"
+author: "Kundan Kumar"
+date: "2025-10-22"
+categories: [research, DRL]
+---
+
+https://github.com/

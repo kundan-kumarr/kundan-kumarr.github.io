@@ -1,0 +1,17 @@
+---
+title: "uncertainity"
+description: "uncertainity"
+author: "Kundan Kumar"
+date: "2024-10-25"
+categories: [utility]
+---
+
+`cstime` provides convenient and consistent conversion between 
+
+* isoyear
+* isoweek
+* calyear
+* season week (u)
+
+
+<!-- [GitHub link](https://github.com/csids/cstime) -->

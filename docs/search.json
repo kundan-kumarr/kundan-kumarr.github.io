@@ -1143,9 +1143,9 @@
   {
     "objectID": "rpkg/bayesynergy/index.html",
     "href": "rpkg/bayesynergy/index.html",
-    "title": "bayesynergy",
+    "title": "DRL for Smart Energy Systems",
     "section": "",
-    "text": "An R package for Bayesian semi-parametric modelling of in-vitro drug combination experiments\nCode"
+    "text": "Anxperiments\nCode"
   },
   {
     "objectID": "teaching/coms3630/index.html#coms-3630-introduction-to-database-management-systems",
@@ -3147,7 +3147,7 @@
     "href": "rpkg/research.html#research-focus",
     "title": "Research",
     "section": "My Research Focus Areas",
-    "text": "My Research Focus Areas\n\n\n\n\n\nDRL-based Control\n\n\n   DRL for Volt-VAR Design control agents for voltage regulation and reactive power optimization in smart distribution grids.  \n   Physics-Informed Actor-Critic Embed grid physics and control limits directly into the DRL learning loop for stable and efficient decisions.  \n   Sim-to-Real Transfer Train agents in simulated OpenDSS environments and deploy them on real-time OPAL-RT setups.  \n\n\n\n\nSafe & Trustworthy RL\n\n\n   Robust & Stable Learning Develop agents that ensure system safety, robustness, and interpretability under uncertainty.  \n   Uncertainty-Aware Policies Quantify epistemic and aleatoric uncertainty in high-stakes, partially observable settings.  \n   Physics-Informed DRL Incorporate physical constraints into DRL agents to ensure safe and interpretable control.  \n\n\n\nTransfer & Meta-Adaptation\n\n\n   Domain Adaptation Enable agents to generalize across grids with different topologies, dynamics, and loads.  \n   Meta-RL for Efficiency Leverage meta-reasoning to accelerate learning in low-data, high-variance scenarios.  \n\n\n\nVision-Simulation Integration\n\n\n   Perception-Control Fusion Use CARLA and AirSim to train end-to-end systems in visual RL tasks with sensors.  \n   Multi-modal Representations Combine visual, state, and contextual features for better decision-making.  \n\n\n\nLLM-Augmented Decision Systems\n\n\n\n\n   LLM-Guided Control Translate natural language into actionable policies for real-world environments."
+    "text": "My Research Focus Areas\n\n\n\n\n\nDRL-based Control\n\n\n   DRL for Volt-VAR Design control agents for voltage regulation and reactive power optimization in smart distribution grids.  \n   Physics-Informed Actor-Critic Embed grid physics and control limits directly into the DRL learning loop for stable and efficient decisions.  \n   Sim-to-Real Transfer Train agents in simulated OpenDSS environments and deploy them on real-time OPAL-RT setups.  \n\n\n\n\nSafe & Trustworthy RL\n\n\n   Robust & Stable Learning Develop agents that ensure system safety, robustness, and interpretability under uncertainty.  \n   Uncertainty-Aware Policies Quantify epistemic and aleatoric uncertainty in high-stakes, partially observable settings.  \n\n\n\n\nTransfer & Meta-Adaptation\n\n\n   Domain Adaptation Enable agents to generalize across grids with different topologies, dynamics, and loads.  \n   Meta-RL for Efficiency Leverage meta-reasoning to accelerate learning in low-data, high-variance scenarios.  \n\n\n\nVision-Simulation Integration\n\n\n   Perception-Control Fusion Use CARLA and AirSim to train end-to-end systems in visual RL tasks with sensors.  \n   Multi-modal Representations Combine visual, state, and contextual features for better decision-making.  \n\n\n\nLLM-Augmented Decision Systems\n\n\n\n\n   LLM-Guided Control Translate natural language into actionable policies for real-world environments."
   },
   {
     "objectID": "rpkg/research.html#application-domains",
@@ -8090,5 +8090,75 @@
     "title": "Motion Prediction and Detection for Autonomous Vehicles",
     "section": "",
     "text": "Google Colab  YOLOv5 Code  PyTorch Hub \nInspired by other open-source deep learning projects such as YOLO, ResNet, and Code, this project demonstrates object detection and motion prediction for autonomous vehicles using the Kaggle Lyft motion prediction dataset. We use YOLOv5 for real-time object detection and ResNet-50 for motion trajectory prediction."
+  },
+  {
+    "objectID": "rpkg/drl_vvc/index.html",
+    "href": "rpkg/drl_vvc/index.html",
+    "title": "DRL for Smart Energy Systems",
+    "section": "",
+    "text": "Anxperiments\nCode"
+  },
+  {
+    "objectID": "rpkg/sim2real/index.html",
+    "href": "rpkg/sim2real/index.html",
+    "title": "csalert",
+    "section": "",
+    "text": "https://github.com/csids/csalert"
+  },
+  {
+    "objectID": "rpkg/physics-informed-actor-critic/index.html",
+    "href": "rpkg/physics-informed-actor-critic/index.html",
+    "title": "Physics Informed Actor Critic",
+    "section": "",
+    "text": "https://github.com/"
+  },
+  {
+    "objectID": "rpkg/safe/index.html",
+    "href": "rpkg/safe/index.html",
+    "title": "Safe DRL",
+    "section": "",
+    "text": "This oding.\n\nPlanned content:\n\nE\n2\nEu"
+  },
+  {
+    "objectID": "rpkg/uncertainty/index.html",
+    "href": "rpkg/uncertainty/index.html",
+    "title": "uncertainity",
+    "section": "",
+    "text": "cstime provides convenient and consistent conversion between\n\nisoyear\nisoweek\ncalyear\nseason week (u)"
+  },
+  {
+    "objectID": "rpkg/meta_rl/index.html",
+    "href": "rpkg/meta_rl/index.html",
+    "title": "csdata",
+    "section": "",
+    "text": "https://github.com/csids/csdata"
+  },
+  {
+    "objectID": "rpkg/domain_adaptation/index.html",
+    "href": "rpkg/domain_adaptation/index.html",
+    "title": "Domain Adaptation",
+    "section": "",
+    "text": "https://github.com/csids/csmaps"
+  },
+  {
+    "objectID": "rpkg/carla/index.html",
+    "href": "rpkg/carla/index.html",
+    "title": "Carla",
+    "section": "",
+    "text": "This package provides discovery."
+  },
+  {
+    "objectID": "rpkg/llm_control/index.html",
+    "href": "rpkg/llm_control/index.html",
+    "title": "nowcast",
+    "section": "",
+    "text": "https://github.com/csids/nowcast"
+  },
+  {
+    "objectID": "rpkg/multimodal/index.html",
+    "href": "rpkg/multimodal/index.html",
+    "title": "ggehr",
+    "section": "",
+    "text": "ggehr (read: gg E-H-R) stands for ggplot2 extension for EHR data, which provides a set of tools to facilitate EHR (Electronic Health Records) visualization.\nggehr package helps you make visualize EHR data, so that you can\n\nhave an overview of the mixed type information related to a patient;\nvisually identify the errors in data recording.\n\nLearn more about ggehr"
   }
 ]

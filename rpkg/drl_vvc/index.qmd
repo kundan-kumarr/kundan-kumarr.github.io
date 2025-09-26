@@ -1,0 +1,11 @@
+---
+title: "DRL for Smart Energy Systems"
+description: "Deep Reinforcement Learning for Volt VAr Control application"
+author: "Kundan Kumar"
+date: "2025-08-22"
+categories: [research,DRL,Energy Systems]
+---
+
+Anxperiments
+
+[GitHub Link](https://github.com/)
