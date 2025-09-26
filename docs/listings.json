@@ -757,17 +757,17 @@
   {
     "listing": "/drl.html",
     "items": [
-      "/projects/drl_mdp/index.html",
-      "/projects/ehr-title/index.html",
-      "/projects/llm_noreden/index.html",
-      "/projects/llm_nor_mortality/index.html",
-      "/projects/noreden/index.html",
-      "/projects/nor_mortality/index.html",
-      "/projects/orcas.html",
-      "/projects/robo/washi.html",
-      "/projects/roadmap.html",
-      "/projects/wacse.html",
-      "/projects/washi.html"
+      "/drl/drl_mdp/index.html",
+      "/drl/ehr-title/index.html",
+      "/drl/llm_noreden/index.html",
+      "/drl/llm_nor_mortality/index.html",
+      "/drl/noreden/index.html",
+      "/drl/nor_mortality/index.html",
+      "/drl/orcas.html",
+      "/drl/robo/washi.html",
+      "/drl/roadmap.html",
+      "/drl/wacse.html",
+      "/drl/washi.html"
     ]
   },
   {
@@ -1051,6 +1051,57 @@
       "/blog1/2022-05-25_wagisa_arcgis-wacse/index.html",
       "/blog1/2021-11-14_setac_insecticides_water/index.html",
       "/blog1/2021-11-09_awra_insecticides_water/index.html"
+    ]
+  },
+  {
+    "listing": "/llms.html",
+    "items": [
+      "/llms/drl_mdp/index.html",
+      "/llms/ehr-title/index.html",
+      "/llms/llm_noreden/index.html",
+      "/llms/llm_nor_mortality/index.html",
+      "/llms/noreden/index.html",
+      "/llms/nor_mortality/index.html",
+      "/llms/orcas.html",
+      "/llms/robo/washi.html",
+      "/llms/roadmap.html",
+      "/llms/wacse.html",
+      "/llms/washi.html"
+    ]
+  },
+  {
+    "listing": "/robo.html",
+    "items": [
+      "/robo/drl_mdp/index.html",
+      "/robo/ehr-title/index.html",
+      "/robo/llm_noreden/index.html",
+      "/robo/llm_nor_mortality/index.html",
+      "/robo/noreden/index.html",
+      "/robo/nor_mortality/index.html",
+      "/robo/orcas.html",
+      "/drl/robo/washi.html",
+      "/llms/robo/washi.html",
+      "/projects/robo/washi.html",
+      "/robo/robo/washi.html",
+      "/robo/roadmap.html",
+      "/robo/wacse.html",
+      "/robo/washi.html"
+    ]
+  },
+  {
+    "listing": "/dl.html",
+    "items": [
+      "/drl/drl_mdp/index.html",
+      "/drl/ehr-title/index.html",
+      "/drl/llm_noreden/index.html",
+      "/drl/llm_nor_mortality/index.html",
+      "/drl/noreden/index.html",
+      "/drl/nor_mortality/index.html",
+      "/drl/orcas.html",
+      "/drl/robo/washi.html",
+      "/drl/roadmap.html",
+      "/drl/wacse.html",
+      "/drl/washi.html"
     ]
   }
 ]

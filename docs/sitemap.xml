@@ -862,7 +862,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/drl.html</loc>
-    <lastmod>2025-09-09T16:54:46.289Z</lastmod>
+    <lastmod>2025-09-26T19:27:44.999Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/projects/llm_noreden/index.html</loc>
@@ -1166,7 +1166,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/publications/CopyOfindex1.html</loc>
-    <lastmod>2025-09-09T16:54:46.510Z</lastmod>
+    <lastmod>2025-09-24T14:59:40.418Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/blog/technotes_20250703_research_guide/CopyOfindex.html</loc>
@@ -1190,7 +1190,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/statistics/index.html</loc>
-    <lastmod>2025-09-09T16:54:46.963Z</lastmod>
+    <lastmod>2025-09-24T14:59:40.845Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/statistics/ehr-title/index.html</loc>
@@ -1703,5 +1703,137 @@
   <url>
     <loc>https://kundan-kumarr.github.io/test.html</loc>
     <lastmod>2025-09-24T18:41:07.290Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/llms.html</loc>
+    <lastmod>2025-09-26T19:25:05.406Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/robo.html</loc>
+    <lastmod>2025-09-26T19:35:40.853Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/robo/wacse.html</loc>
+    <lastmod>2025-09-24T14:59:40.412Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/robo/roadmap.html</loc>
+    <lastmod>2025-09-24T14:59:40.407Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/robo/nor_mortality/index.html</loc>
+    <lastmod>2025-09-24T14:59:40.398Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/robo/llm_nor_mortality/index.html</loc>
+    <lastmod>2025-09-24T14:59:40.389Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/robo/ehr-title/index.html</loc>
+    <lastmod>2025-09-24T14:59:40.388Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/llms/washi.html</loc>
+    <lastmod>2025-09-24T14:59:40.412Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/llms/robo/washi.html</loc>
+    <lastmod>2025-09-24T14:59:40.410Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/llms/orcas.html</loc>
+    <lastmod>2025-09-24T14:59:40.407Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/llms/llm_noreden/index.html</loc>
+    <lastmod>2025-09-24T14:59:40.396Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/drl/washi.html</loc>
+    <lastmod>2025-09-24T14:59:40.412Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/drl/robo/washi.html</loc>
+    <lastmod>2025-09-24T14:59:40.410Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/drl/orcas.html</loc>
+    <lastmod>2025-09-24T14:59:40.407Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/drl/noreden/index.html</loc>
+    <lastmod>2025-09-24T14:59:40.405Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/drl/llm_noreden/index.html</loc>
+    <lastmod>2025-09-24T14:59:40.396Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/drl/drl_mdp/index.html</loc>
+    <lastmod>2025-09-24T14:59:40.384Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/dl.html</loc>
+    <lastmod>2025-09-26T19:27:44.999Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/drl/ehr-title/index.html</loc>
+    <lastmod>2025-09-24T14:59:40.388Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/drl/llm_nor_mortality/index.html</loc>
+    <lastmod>2025-09-24T14:59:40.389Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/drl/nor_mortality/index.html</loc>
+    <lastmod>2025-09-24T14:59:40.398Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/drl/roadmap.html</loc>
+    <lastmod>2025-09-24T14:59:40.407Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/drl/wacse.html</loc>
+    <lastmod>2025-09-24T14:59:40.412Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/llms/drl_mdp/index.html</loc>
+    <lastmod>2025-09-24T14:59:40.384Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/llms/llm_nor_mortality/index.html</loc>
+    <lastmod>2025-09-24T14:59:40.389Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/llms/roadmap.html</loc>
+    <lastmod>2025-09-24T14:59:40.407Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/llms/wacse.html</loc>
+    <lastmod>2025-09-24T14:59:40.412Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/robo/drl_mdp/index.html</loc>
+    <lastmod>2025-09-24T14:59:40.384Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/robo/llm_noreden/index.html</loc>
+    <lastmod>2025-09-24T14:59:40.396Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/robo/noreden/index.html</loc>
+    <lastmod>2025-09-24T14:59:40.405Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/robo/orcas.html</loc>
+    <lastmod>2025-09-24T14:59:40.407Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/robo/robo/washi.html</loc>
+    <lastmod>2025-09-24T14:59:40.410Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/robo/washi.html</loc>
+    <lastmod>2025-09-24T14:59:40.412Z</lastmod>
   </url>
 </urlset>

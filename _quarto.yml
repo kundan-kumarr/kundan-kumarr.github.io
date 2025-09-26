@@ -45,17 +45,17 @@ website:
             href: projects.qmd
           - text: "---"
           - text: "Large Language Models"
-            href: projects/robo/washi.qmd
+            href: https://kundan-kumarr.github.io/Zero2LLM-Crafter/
           - text: "Deep Reinforcement Learning"
-            href: llms/index.qmd
+            href: drl.qmd
           - text: "Deep/Machine Learning"
-            href: drl.qmd
+            href: https://kundan-kumarr.github.io/ai-analysis/
           - text: "Statistics"
-            href: statistics/index.qmd
+            href: https://kundan-kumarr.github.io/statsphere/
           - text: "Computer Vision"
-            href: projects/washi.qmd
+            href: llms.qmd
           - text: "Robotics"
-            href: drl.qmd
+            href: robo.qmd
       - text: "Teaching"
         icon: mortarboard-fill
         href: teaching/teaching.qmd

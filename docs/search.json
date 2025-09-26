@@ -3831,9 +3831,9 @@
   {
     "objectID": "drl.html",
     "href": "drl.html",
-    "title": "Large Language Models Projects",
+    "title": "DRL",
     "section": "",
-    "text": "Collaboration and Competition\n\n\nTrain a pair of agents to play tennis.\n\n\n\n\n\n\n\n\n\n\n\n\nAI-Powered Patient Education System\n\n\nDevelop an AI agent to enhance patient education by delivering personalized, on-demand health information through summaries, comprehension checks, and quizzes about relevant…\n\n\n\n\n\n\n\n\n\n\n\n\nChatbot Design using Retrieval‑Augmented Generation (RAG)\n\n\nBuilt a domain‑specific chatbot integrating vector‑based retrieval with GPT models to provide accurate, context‑aware responses\n\n\n\n\n\n\n\n\n\n\n\n\nMulti-Agent Travel Assistant System\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoreden\n\n\nR tools to faciliate sustainable nutrition research\n\n\n\n\n\n\n\n\n\n\n\n\nCongressional Policy Analysis using ML and HPCA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrompt Injection Attacks on LLM Medical Diagnosis by Symptom Elaboration\n\n\n\nR package\n\n\n\nAttacker is to trick the LLM to generate inappropriate possible medical diagnosis which could mislead the end use\n\n\n\nJan 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSurvival Of Ventilated and Control Flies\n\n\n\nR package\n\n\n\nHypothesis Analysis of Life Expectancy of Flies in Normal vs ill Ventilated Bottles\n\n\n\nSep 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nClassification of Foods Based on their Quality\n\n\n\nArcGIS\n\nPython\n\n\n\nML model to assess the quality of fruit from an data set, which could be integrated into a product for use in home kitchens\n\n\n\nMay 3, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nP2P File Sharing Protocol\n\n\n\nShiny app\n\n\n\nBuild a peer-to-peer file sharing protocol that keeps track of which peers are sharing and what files are being shared in the network\n\n\n\nJan 22, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nMotion Prediction and Detection for Autonomous Vehicles\n\n\n\nAutonomous Systems\n\nDeep Learning\n\nComputer Vision\n\n\n\nDevelop a framework for vehicle detection and motion planning of vehicles in complex driving scenarios\n\n\n\nDec 7, 2022\n\n\n\n\n\n\nNo matching items"
+    "text": "Doing real-world projects is, I think, the best way to learn and also to engage the world and find out what the world is all about.\n\n-Ray Kurzweil\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCollaboration and Competition\n\n\nTrain a pair of agents to play tennis.\n\n\n\n\n\n\n\n\n\n\n\n\nAI-Powered Patient Education System\n\n\nDevelop an AI agent to enhance patient education by delivering personalized, on-demand health information through summaries, comprehension checks, and quizzes about relevant…\n\n\n\n\n\n\n\n\n\n\n\n\nChatbot Design using Retrieval‑Augmented Generation (RAG)\n\n\nBuilt a domain‑specific chatbot integrating vector‑based retrieval with GPT models to provide accurate, context‑aware responses\n\n\n\n\n\n\n\n\n\n\n\n\nMulti-Agent Travel Assistant System\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoreden\n\n\nR tools to faciliate sustainable nutrition research\n\n\n\n\n\n\n\n\n\n\n\n\nCongressional Policy Analysis using ML and HPCA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrompt Injection Attacks on LLM Medical Diagnosis by Symptom Elaboration\n\n\n\nR package\n\n\n\nAttacker is to trick the LLM to generate inappropriate possible medical diagnosis which could mislead the end use\n\n\n\nJan 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSurvival Of Ventilated and Control Flies\n\n\n\nR package\n\n\n\nHypothesis Analysis of Life Expectancy of Flies in Normal vs ill Ventilated Bottles\n\n\n\nSep 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nClassification of Foods Based on their Quality\n\n\n\nArcGIS\n\nPython\n\n\n\nML model to assess the quality of fruit from an data set, which could be integrated into a product for use in home kitchens\n\n\n\nMay 3, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nP2P File Sharing Protocol\n\n\n\nShiny app\n\n\n\nBuild a peer-to-peer file sharing protocol that keeps track of which peers are sharing and what files are being shared in the network\n\n\n\nJan 22, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nMotion Prediction and Detection for Autonomous Vehicles\n\n\n\nAutonomous Systems\n\nDeep Learning\n\nComputer Vision\n\n\n\nDevelop a framework for vehicle detection and motion planning of vehicles in complex driving scenarios\n\n\n\nDec 7, 2022\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/llm_noreden/index.html",
@@ -7775,5 +7775,320 @@
     "title": "A Quarto Page Layout Example",
     "section": "Margin Captions",
     "text": "Margin Captions\nWhen you include a figure constrained to the main column, you can choose to place the figure’s caption in the margin by using the cap-location chunk option. For example:\n\n```{r}\n#| label: fig-main-margin-cap\n#| fig-cap: \"A figure with a longer caption. The figure appears in the main column, but the caption is placed in the margin. Captions can even contain elements like a citation such as @xie2018.\"\n#| cap-location: margin\nggplot(diamonds, aes(cut, price)) + geom_boxplot()\n```\n\n\n\n\n\n\n\nFigure 4: A figure with a longer caption. The figure appears in the main column, but the caption is placed in the margin. Captions can even contain elements like a citation such as Xie, Allaire, and Grolemund (2018).\n\nXie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. “Tufte Handouts.” In, 137–46. Chapman; Hall/CRC. https://doi.org/10.1201/9781138359444-6."
+  },
+  {
+    "objectID": "llms.html",
+    "href": "llms.html",
+    "title": "LLMs",
+    "section": "",
+    "text": "Doing real-world projects is, I think, the best way to learn and also to engage the world and find out what the world is all about.\n\n-Ray Kurzweil\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCollaboration and Competition\n\n\nTrain a pair of agents to play tennis.\n\n\n\n\n\n\n\n\n\n\n\n\nggehr\n\n\nggplot2 extension to EHR data\n\n\n\n\n\n\n\n\n\n\n\n\nChatbot Design using Retrieval‑Augmented Generation (RAG)\n\n\nBuilt a domain‑specific chatbot integrating vector‑based retrieval with GPT models to provide accurate, context‑aware responses\n\n\n\n\n\n\n\n\n\n\n\n\nMulti-Agent Travel Assistant System\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoreden\n\n\nR tools to faciliate sustainable nutrition research\n\n\n\n\n\n\n\n\n\n\n\n\nMortality Surveillance in Norway\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrompt Injection Attacks on LLM Medical Diagnosis by Symptom Elaboration\n\n\n\nR package\n\n\n\nAttacker is to trick the LLM to generate inappropriate possible medical diagnosis which could mislead the end use\n\n\n\nJan 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSurvival Of Ventilated and Control Flies\n\n\n\nR package\n\n\n\nHypothesis Analysis of Life Expectancy of Flies in Normal vs ill Ventilated Bottles\n\n\n\nSep 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nClassification of Foods Based on their Quality\n\n\n\nArcGIS\n\nPython\n\n\n\nML model to assess the quality of fruit from an data set, which could be integrated into a product for use in home kitchens\n\n\n\nMay 3, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nP2P File Sharing Protocol\n\n\n\nShiny app\n\n\n\nBuild a peer-to-peer file sharing protocol that keeps track of which peers are sharing and what files are being shared in the network\n\n\n\nJan 22, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nMotion Prediction and Detection for Autonomous Vehicles\n\n\n\nAutonomous Systems\n\nDeep Learning\n\nComputer Vision\n\n\n\nDevelop a framework for vehicle detection and motion planning of vehicles in complex driving scenarios\n\n\n\nDec 7, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "robo.html",
+    "href": "robo.html",
+    "title": "Robotics",
+    "section": "",
+    "text": "Doing real-world projects is, I think, the best way to learn and also to engage the world and find out what the world is all about.\n\n-Ray Kurzweil\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCollaboration and Competition\n\n\nTrain a pair of agents to play tennis.\n\n\n\n\n\n\n\n\n\n\n\n\nAI-Powered Patient Education System\n\n\nDevelop an AI agent to enhance patient education by delivering personalized, on-demand health information through summaries, comprehension checks, and quizzes about relevant…\n\n\n\n\n\n\n\n\n\n\n\n\nChatbot Design using Retrieval‑Augmented Generation (RAG)\n\n\nBuilt a domain‑specific chatbot integrating vector‑based retrieval with GPT models to provide accurate, context‑aware responses\n\n\n\n\n\n\n\n\n\n\n\n\nMulti-Agent Travel Assistant System\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoreden\n\n\nR tools to faciliate sustainable nutrition research\n\n\n\n\n\n\n\n\n\n\n\n\nCongressional Policy Analysis using ML and HPCA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrompt Injection Attacks on LLM Medical Diagnosis by Symptom Elaboration\n\n\n\nR package\n\n\n\nAttacker is to trick the LLM to generate inappropriate possible medical diagnosis which could mislead the end use\n\n\n\nJan 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSurvival Of Ventilated and Control Flies\n\n\n\nR package\n\n\n\nHypothesis Analysis of Life Expectancy of Flies in Normal vs ill Ventilated Bottles\n\n\n\nSep 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nSurvival Of Ventilated and Control Flies\n\n\n\nR package\n\n\n\nHypothesis Analysis of Life Expectancy of Flies in Normal vs ill Ventilated Bottles\n\n\n\nSep 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nSurvival Of Ventilated and Control Flies\n\n\n\nR package\n\n\n\nHypothesis Analysis of Life Expectancy of Flies in Normal vs ill Ventilated Bottles\n\n\n\nSep 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nSurvival Of Ventilated and Control Flies\n\n\n\nR package\n\n\n\nHypothesis Analysis of Life Expectancy of Flies in Normal vs ill Ventilated Bottles\n\n\n\nSep 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nClassification of Foods Based on their Quality\n\n\n\nArcGIS\n\nPython\n\n\n\nML model to assess the quality of fruit from an data set, which could be integrated into a product for use in home kitchens\n\n\n\nMay 3, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nP2P File Sharing Protocol\n\n\n\nShiny app\n\n\n\nBuild a peer-to-peer file sharing protocol that keeps track of which peers are sharing and what files are being shared in the network\n\n\n\nJan 22, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nMotion Prediction and Detection for Autonomous Vehicles\n\n\n\nAutonomous Systems\n\nDeep Learning\n\nComputer Vision\n\n\n\nDevelop a framework for vehicle detection and motion planning of vehicles in complex driving scenarios\n\n\n\nDec 7, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "robo/wacse.html",
+    "href": "robo/wacse.html",
+    "title": "P2P File Sharing Protocol",
+    "section": "",
+    "text": "App  Code \nThe Washington State Department of Agriculture developed WaCSE for the Washington State Conservation Commission to use in the Sustainable Farms and Fields (SFF) program. Intended users are the Conservation Commission, conservation districts, growers, and anyone interested in reducing agricultural greenhouse gas (GHG) emissions. This interactive tool estimates the reduction of GHG emissions from different conservation practices across Washington’s diverse counties."
+  },
+  {
+    "objectID": "robo/roadmap.html",
+    "href": "robo/roadmap.html",
+    "title": "Classification of Foods Based on their Quality",
+    "section": "",
+    "text": "App  Code \nThe Soil Health Roadmap is a science-based guide to maintaining and improving soil health in eight focus areas across Washington state.\nFor each focus area, I created crop and soil maps using the arcpy Python package. I then summarized the crop acreage and soil properties in interactive ArcGIS dashboards to complement the Paper."
+  },
+  {
+    "objectID": "robo/nor_mortality/index.html",
+    "href": "robo/nor_mortality/index.html",
+    "title": "Congressional Policy Analysis using ML and HPCA",
+    "section": "",
+    "text": "NorMOMO"
+  },
+  {
+    "objectID": "robo/nor_mortality/index.html#norwegian-surveillance-system-for-excess-mortality",
+    "href": "robo/nor_mortality/index.html#norwegian-surveillance-system-for-excess-mortality",
+    "title": "Congressional Policy Analysis using ML and HPCA",
+    "section": "",
+    "text": "NorMOMO"
+  },
+  {
+    "objectID": "robo/nor_mortality/index.html#r-packages-for-mortality-surveillance",
+    "href": "robo/nor_mortality/index.html#r-packages-for-mortality-surveillance",
+    "title": "Congressional Policy Analysis using ML and HPCA",
+    "section": "R packages for mortality surveillance",
+    "text": "R packages for mortality surveillance\n(continue…)\n\nnowcast\nsplalert\nmortanor"
+  },
+  {
+    "objectID": "robo/nor_mortality/index.html#collaboration-with-cause-of-death-registry",
+    "href": "robo/nor_mortality/index.html#collaboration-with-cause-of-death-registry",
+    "title": "Congressional Policy Analysis using ML and HPCA",
+    "section": "Collaboration with Cause of Death Registry",
+    "text": "Collaboration with Cause of Death Registry"
+  },
+  {
+    "objectID": "robo/llm_nor_mortality/index.html",
+    "href": "robo/llm_nor_mortality/index.html",
+    "title": "Multi-Agent Travel Assistant System",
+    "section": "",
+    "text": "NorMOMO"
+  },
+  {
+    "objectID": "robo/llm_nor_mortality/index.html#norwegian-surveillance-system-for-excess-mortality",
+    "href": "robo/llm_nor_mortality/index.html#norwegian-surveillance-system-for-excess-mortality",
+    "title": "Multi-Agent Travel Assistant System",
+    "section": "",
+    "text": "NorMOMO"
+  },
+  {
+    "objectID": "robo/llm_nor_mortality/index.html#r-packages-for-mortality-surveillance",
+    "href": "robo/llm_nor_mortality/index.html#r-packages-for-mortality-surveillance",
+    "title": "Multi-Agent Travel Assistant System",
+    "section": "R packages for mortality surveillance",
+    "text": "R packages for mortality surveillance\n(continue…)\n\nnowcast\nsplalert\nmortanor"
+  },
+  {
+    "objectID": "robo/llm_nor_mortality/index.html#collaboration-with-cause-of-death-registry",
+    "href": "robo/llm_nor_mortality/index.html#collaboration-with-cause-of-death-registry",
+    "title": "Multi-Agent Travel Assistant System",
+    "section": "Collaboration with Cause of Death Registry",
+    "text": "Collaboration with Cause of Death Registry"
+  },
+  {
+    "objectID": "robo/ehr-title/index.html",
+    "href": "robo/ehr-title/index.html",
+    "title": "AI-Powered Patient Education System",
+    "section": "",
+    "text": "ggehr (read: gg E-H-R) stands for ggplot2 extension for EHR data, which provides a set of tools to facilitate EHR (Electronic Health Records) visualization.\nggehr package helps you make visualize EHR data, so that you can\n\nhave an overview of the mixed type information related to a patient;\nvisually identify the errors in data recording.\n\nLearn more about ggehr"
+  },
+  {
+    "objectID": "llms/washi.html",
+    "href": "llms/washi.html",
+    "title": "Motion Prediction and Detection for Autonomous Vehicles",
+    "section": "",
+    "text": "Google Colab  YOLOv5 Code  PyTorch Hub \nInspired by other open-source deep learning projects such as YOLO, ResNet, and Code, this project demonstrates object detection and motion prediction for autonomous vehicles using the Kaggle Lyft motion prediction dataset. We use YOLOv5 for real-time object detection and ResNet-50 for motion trajectory prediction."
+  },
+  {
+    "objectID": "llms/robo/washi.html",
+    "href": "llms/robo/washi.html",
+    "title": "Survival Of Ventilated and Control Flies",
+    "section": "",
+    "text": "{pkgdown} site  Code  CRAN \nInspired by other branding R packages such as Code, Code, and Code, washi provides color palettes and themes consistent with Washington Soil Health Initiative (WaSHI) branding. This package is to be used only by direct collaborators within WaSHI, though you are welcome to adapt the package to suit your own organization’s branding."
+  },
+  {
+    "objectID": "llms/orcas.html",
+    "href": "llms/orcas.html",
+    "title": "Prompt Injection Attacks on LLM Medical Diagnosis by Symptom Elaboration",
+    "section": "",
+    "text": "Code \nThe goal of orcas is to scrape orca sighting data from the web and visualize it in maps and tables.\nI’ve always had an affinity for the Southern Resident Killer Whales in the Salish Sea. The Center for Whale Research does a lot of really fascinating and important work monitoring their population. They post their survey data on their website; each encounter with the orcas is a separate webpage. I was both curious and intimidated by web scraping so I decided this would make a great case study and personal project. I also learned how to use custom icons in leaflet maps! 🐋"
+  },
+  {
+    "objectID": "llms/llm_noreden/index.html",
+    "href": "llms/llm_noreden/index.html",
+    "title": "Chatbot Design using Retrieval‑Augmented Generation (RAG)",
+    "section": "",
+    "text": "Noreden"
+  },
+  {
+    "objectID": "drl/washi.html",
+    "href": "drl/washi.html",
+    "title": "Motion Prediction and Detection for Autonomous Vehicles",
+    "section": "",
+    "text": "Google Colab  YOLOv5 Code  PyTorch Hub \nInspired by other open-source deep learning projects such as YOLO, ResNet, and Code, this project demonstrates object detection and motion prediction for autonomous vehicles using the Kaggle Lyft motion prediction dataset. We use YOLOv5 for real-time object detection and ResNet-50 for motion trajectory prediction."
+  },
+  {
+    "objectID": "drl/robo/washi.html",
+    "href": "drl/robo/washi.html",
+    "title": "Survival Of Ventilated and Control Flies",
+    "section": "",
+    "text": "{pkgdown} site  Code  CRAN \nInspired by other branding R packages such as Code, Code, and Code, washi provides color palettes and themes consistent with Washington Soil Health Initiative (WaSHI) branding. This package is to be used only by direct collaborators within WaSHI, though you are welcome to adapt the package to suit your own organization’s branding."
+  },
+  {
+    "objectID": "drl/orcas.html",
+    "href": "drl/orcas.html",
+    "title": "Prompt Injection Attacks on LLM Medical Diagnosis by Symptom Elaboration",
+    "section": "",
+    "text": "Code \nThe goal of orcas is to scrape orca sighting data from the web and visualize it in maps and tables.\nI’ve always had an affinity for the Southern Resident Killer Whales in the Salish Sea. The Center for Whale Research does a lot of really fascinating and important work monitoring their population. They post their survey data on their website; each encounter with the orcas is a separate webpage. I was both curious and intimidated by web scraping so I decided this would make a great case study and personal project. I also learned how to use custom icons in leaflet maps! 🐋"
+  },
+  {
+    "objectID": "drl/noreden/index.html",
+    "href": "drl/noreden/index.html",
+    "title": "Noreden",
+    "section": "",
+    "text": "Noreden"
+  },
+  {
+    "objectID": "drl/llm_noreden/index.html",
+    "href": "drl/llm_noreden/index.html",
+    "title": "Chatbot Design using Retrieval‑Augmented Generation (RAG)",
+    "section": "",
+    "text": "Noreden"
+  },
+  {
+    "objectID": "dl.html",
+    "href": "dl.html",
+    "title": "DRL",
+    "section": "",
+    "text": "Doing real-world projects is, I think, the best way to learn and also to engage the world and find out what the world is all about.\n\n-Ray Kurzweil\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCollaboration and Competition\n\n\nTrain a pair of agents to play tennis.\n\n\n\n\n\n\n\n\n\n\n\n\nAI-Powered Patient Education System\n\n\nDevelop an AI agent to enhance patient education by delivering personalized, on-demand health information through summaries, comprehension checks, and quizzes about relevant…\n\n\n\n\n\n\n\n\n\n\n\n\nChatbot Design using Retrieval‑Augmented Generation (RAG)\n\n\nBuilt a domain‑specific chatbot integrating vector‑based retrieval with GPT models to provide accurate, context‑aware responses\n\n\n\n\n\n\n\n\n\n\n\n\nMulti-Agent Travel Assistant System\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoreden\n\n\nR tools to faciliate sustainable nutrition research\n\n\n\n\n\n\n\n\n\n\n\n\nCongressional Policy Analysis using ML and HPCA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrompt Injection Attacks on LLM Medical Diagnosis by Symptom Elaboration\n\n\n\nR package\n\n\n\nAttacker is to trick the LLM to generate inappropriate possible medical diagnosis which could mislead the end use\n\n\n\nJan 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSurvival Of Ventilated and Control Flies\n\n\n\nR package\n\n\n\nHypothesis Analysis of Life Expectancy of Flies in Normal vs ill Ventilated Bottles\n\n\n\nSep 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nClassification of Foods Based on their Quality\n\n\n\nArcGIS\n\nPython\n\n\n\nML model to assess the quality of fruit from an data set, which could be integrated into a product for use in home kitchens\n\n\n\nMay 3, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nP2P File Sharing Protocol\n\n\n\nShiny app\n\n\n\nBuild a peer-to-peer file sharing protocol that keeps track of which peers are sharing and what files are being shared in the network\n\n\n\nJan 22, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nMotion Prediction and Detection for Autonomous Vehicles\n\n\n\nAutonomous Systems\n\nDeep Learning\n\nComputer Vision\n\n\n\nDevelop a framework for vehicle detection and motion planning of vehicles in complex driving scenarios\n\n\n\nDec 7, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "drl/ehr-title/index.html",
+    "href": "drl/ehr-title/index.html",
+    "title": "AI-Powered Patient Education System",
+    "section": "",
+    "text": "ggehr (read: gg E-H-R) stands for ggplot2 extension for EHR data, which provides a set of tools to facilitate EHR (Electronic Health Records) visualization.\nggehr package helps you make visualize EHR data, so that you can\n\nhave an overview of the mixed type information related to a patient;\nvisually identify the errors in data recording.\n\nLearn more about ggehr"
+  },
+  {
+    "objectID": "drl/llm_nor_mortality/index.html",
+    "href": "drl/llm_nor_mortality/index.html",
+    "title": "Multi-Agent Travel Assistant System",
+    "section": "",
+    "text": "NorMOMO"
+  },
+  {
+    "objectID": "drl/llm_nor_mortality/index.html#norwegian-surveillance-system-for-excess-mortality",
+    "href": "drl/llm_nor_mortality/index.html#norwegian-surveillance-system-for-excess-mortality",
+    "title": "Multi-Agent Travel Assistant System",
+    "section": "",
+    "text": "NorMOMO"
+  },
+  {
+    "objectID": "drl/llm_nor_mortality/index.html#r-packages-for-mortality-surveillance",
+    "href": "drl/llm_nor_mortality/index.html#r-packages-for-mortality-surveillance",
+    "title": "Multi-Agent Travel Assistant System",
+    "section": "R packages for mortality surveillance",
+    "text": "R packages for mortality surveillance\n(continue…)\n\nnowcast\nsplalert\nmortanor"
+  },
+  {
+    "objectID": "drl/llm_nor_mortality/index.html#collaboration-with-cause-of-death-registry",
+    "href": "drl/llm_nor_mortality/index.html#collaboration-with-cause-of-death-registry",
+    "title": "Multi-Agent Travel Assistant System",
+    "section": "Collaboration with Cause of Death Registry",
+    "text": "Collaboration with Cause of Death Registry"
+  },
+  {
+    "objectID": "drl/nor_mortality/index.html",
+    "href": "drl/nor_mortality/index.html",
+    "title": "Congressional Policy Analysis using ML and HPCA",
+    "section": "",
+    "text": "NorMOMO"
+  },
+  {
+    "objectID": "drl/nor_mortality/index.html#norwegian-surveillance-system-for-excess-mortality",
+    "href": "drl/nor_mortality/index.html#norwegian-surveillance-system-for-excess-mortality",
+    "title": "Congressional Policy Analysis using ML and HPCA",
+    "section": "",
+    "text": "NorMOMO"
+  },
+  {
+    "objectID": "drl/nor_mortality/index.html#r-packages-for-mortality-surveillance",
+    "href": "drl/nor_mortality/index.html#r-packages-for-mortality-surveillance",
+    "title": "Congressional Policy Analysis using ML and HPCA",
+    "section": "R packages for mortality surveillance",
+    "text": "R packages for mortality surveillance\n(continue…)\n\nnowcast\nsplalert\nmortanor"
+  },
+  {
+    "objectID": "drl/nor_mortality/index.html#collaboration-with-cause-of-death-registry",
+    "href": "drl/nor_mortality/index.html#collaboration-with-cause-of-death-registry",
+    "title": "Congressional Policy Analysis using ML and HPCA",
+    "section": "Collaboration with Cause of Death Registry",
+    "text": "Collaboration with Cause of Death Registry"
+  },
+  {
+    "objectID": "drl/roadmap.html",
+    "href": "drl/roadmap.html",
+    "title": "Classification of Foods Based on their Quality",
+    "section": "",
+    "text": "App  Code \nThe Soil Health Roadmap is a science-based guide to maintaining and improving soil health in eight focus areas across Washington state.\nFor each focus area, I created crop and soil maps using the arcpy Python package. I then summarized the crop acreage and soil properties in interactive ArcGIS dashboards to complement the Paper."
+  },
+  {
+    "objectID": "drl/wacse.html",
+    "href": "drl/wacse.html",
+    "title": "P2P File Sharing Protocol",
+    "section": "",
+    "text": "App  Code \nThe Washington State Department of Agriculture developed WaCSE for the Washington State Conservation Commission to use in the Sustainable Farms and Fields (SFF) program. Intended users are the Conservation Commission, conservation districts, growers, and anyone interested in reducing agricultural greenhouse gas (GHG) emissions. This interactive tool estimates the reduction of GHG emissions from different conservation practices across Washington’s diverse counties."
+  },
+  {
+    "objectID": "llms/llm_nor_mortality/index.html",
+    "href": "llms/llm_nor_mortality/index.html",
+    "title": "Multi-Agent Travel Assistant System",
+    "section": "",
+    "text": "NorMOMO"
+  },
+  {
+    "objectID": "llms/llm_nor_mortality/index.html#norwegian-surveillance-system-for-excess-mortality",
+    "href": "llms/llm_nor_mortality/index.html#norwegian-surveillance-system-for-excess-mortality",
+    "title": "Multi-Agent Travel Assistant System",
+    "section": "",
+    "text": "NorMOMO"
+  },
+  {
+    "objectID": "llms/llm_nor_mortality/index.html#r-packages-for-mortality-surveillance",
+    "href": "llms/llm_nor_mortality/index.html#r-packages-for-mortality-surveillance",
+    "title": "Multi-Agent Travel Assistant System",
+    "section": "R packages for mortality surveillance",
+    "text": "R packages for mortality surveillance\n(continue…)\n\nnowcast\nsplalert\nmortanor"
+  },
+  {
+    "objectID": "llms/llm_nor_mortality/index.html#collaboration-with-cause-of-death-registry",
+    "href": "llms/llm_nor_mortality/index.html#collaboration-with-cause-of-death-registry",
+    "title": "Multi-Agent Travel Assistant System",
+    "section": "Collaboration with Cause of Death Registry",
+    "text": "Collaboration with Cause of Death Registry"
+  },
+  {
+    "objectID": "llms/roadmap.html",
+    "href": "llms/roadmap.html",
+    "title": "Classification of Foods Based on their Quality",
+    "section": "",
+    "text": "App  Code \nThe Soil Health Roadmap is a science-based guide to maintaining and improving soil health in eight focus areas across Washington state.\nFor each focus area, I created crop and soil maps using the arcpy Python package. I then summarized the crop acreage and soil properties in interactive ArcGIS dashboards to complement the Paper."
+  },
+  {
+    "objectID": "llms/wacse.html",
+    "href": "llms/wacse.html",
+    "title": "P2P File Sharing Protocol",
+    "section": "",
+    "text": "App  Code \nThe Washington State Department of Agriculture developed WaCSE for the Washington State Conservation Commission to use in the Sustainable Farms and Fields (SFF) program. Intended users are the Conservation Commission, conservation districts, growers, and anyone interested in reducing agricultural greenhouse gas (GHG) emissions. This interactive tool estimates the reduction of GHG emissions from different conservation practices across Washington’s diverse counties."
+  },
+  {
+    "objectID": "robo/llm_noreden/index.html",
+    "href": "robo/llm_noreden/index.html",
+    "title": "Chatbot Design using Retrieval‑Augmented Generation (RAG)",
+    "section": "",
+    "text": "Noreden"
+  },
+  {
+    "objectID": "robo/noreden/index.html",
+    "href": "robo/noreden/index.html",
+    "title": "Noreden",
+    "section": "",
+    "text": "Noreden"
+  },
+  {
+    "objectID": "robo/orcas.html",
+    "href": "robo/orcas.html",
+    "title": "Prompt Injection Attacks on LLM Medical Diagnosis by Symptom Elaboration",
+    "section": "",
+    "text": "Code \nThe goal of orcas is to scrape orca sighting data from the web and visualize it in maps and tables.\nI’ve always had an affinity for the Southern Resident Killer Whales in the Salish Sea. The Center for Whale Research does a lot of really fascinating and important work monitoring their population. They post their survey data on their website; each encounter with the orcas is a separate webpage. I was both curious and intimidated by web scraping so I decided this would make a great case study and personal project. I also learned how to use custom icons in leaflet maps! 🐋"
+  },
+  {
+    "objectID": "robo/robo/washi.html",
+    "href": "robo/robo/washi.html",
+    "title": "Survival Of Ventilated and Control Flies",
+    "section": "",
+    "text": "{pkgdown} site  Code  CRAN \nInspired by other branding R packages such as Code, Code, and Code, washi provides color palettes and themes consistent with Washington Soil Health Initiative (WaSHI) branding. This package is to be used only by direct collaborators within WaSHI, though you are welcome to adapt the package to suit your own organization’s branding."
+  },
+  {
+    "objectID": "robo/washi.html",
+    "href": "robo/washi.html",
+    "title": "Motion Prediction and Detection for Autonomous Vehicles",
+    "section": "",
+    "text": "Google Colab  YOLOv5 Code  PyTorch Hub \nInspired by other open-source deep learning projects such as YOLO, ResNet, and Code, this project demonstrates object detection and motion prediction for autonomous vehicles using the Kaggle Lyft motion prediction dataset. We use YOLOv5 for real-time object detection and ResNet-50 for motion trajectory prediction."
   }
 ]

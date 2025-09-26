@@ -1,0 +1,19 @@
+---
+title: "Robotics"
+image: " "
+image-alt: " "
+listing:
+  contents: robo
+  type: grid
+  fields: 
+    - title
+    - description
+    - date
+    - image
+    - categories
+  categories: true
+  sort: "date desc"
+---
+> Doing real-world projects is, I think, the best way to learn and also to engage the world
+> and find out what the world is all about.
+<h4 align="right">-Ray Kurzweil</h4>
