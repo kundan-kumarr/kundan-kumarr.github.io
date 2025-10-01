@@ -4,7 +4,7 @@ author:
   - name: Kundan Kumar
 year: "2025"
 publication: "IEEE Power & Energy Society General Meeting"
-doi: "https://doi.org/10.31234/osf.io/j9yeq"
+doi: ""
 image: "figures/ssl_techniques.png"
 toc: false
 categories:
@@ -15,24 +15,41 @@ categories:
 
 ### Citation (IEEE)
 
-> K. Kumar, K. Utkarsh, J. Wang, and H. V. Padullaparti, “Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems,” Proc. IEEE Power & Energy Society General Meeting (PESGM), 2025.
+> **K. Kumar**, K. Utkarsh, J. Wang, and H. V. Padullaparti, “Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems,” Proc. IEEE Power & Energy Society General Meeting (PESGM), 2025.
 
 
 ## Abstract
 
-The integration of advanced metering infrastructure (AMI) into power distribution networks generates valuable data for tasks such as phase identification; however, the limited and unreliable availability of labeled data in the form of customer phase connectivity presents challenges. To address this issue, we propose a **semi-supervised learning (SSL)** framework that effectively leverages both **labeled and unlabeled data**.
+The integration of advanced metering infrastructure (AMI) into power distribution networks generates valuable data for tasks such as phase identification; however, the limited and unreliable availability of labeled data in the form of customer phase connectivity presents challenges. To address this issue, we propose a semi-supervised learning (SSL) bayesian framework that effectively leverages both limited labeled and unlimited unlabeled data.
 
 
-1. **Why Phase Identification Needs a New Approach ?**
+1. Why Phase Identification Needs a New Approach ?
 
-<figure style="text-align: center;">
-  <img src="semi_supervised_pes_gm_2025/figures/ssl_techniques.png" alt="Illustration of Semi-Supervised Learning Techniques" style="width: 60%; height: auto;">
+**Problem:** Utilities don’t know which phase customers are connected to this affects
+voltage regulation, DER integration, and fault localization.
+
+<table style="width:100%; border-collapse: collapse;">
+  <tr>
+    <td style="width:50%; text-align:center; vertical-align:top; padding-right:15px;">
+      <img src="semi_supervised_pes_gm_2025/figures/ssl_techniques.png" style="width:90%; height:auto;">
+      <div><strong>Fig. 1:</strong> Illustration of Semi-Supervised Learning Techniques</div>
+    </td>
+    <td style="width:50%; vertical-align:top; font-size:0.95em;">
+      <p><strong>Challenges & Motivation</strong></p>
+      <ul>
+        <li><strong>Challenge:</strong> Ground truth phase data is scarce, unreliable, and costly to collect.</li>
+        <li><strong>Problem:</strong> Supervised ML methods require large amounts of labeled data and often unavailable or unreliable.</li>
+        <li><strong>Motivation:</strong> How do we scale phase identification without needing tons of labeled data?</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<!--  <img src="semi_supervised_pes_gm_2025/figures/ssl_techniques.png" alt="Illustration of Semi-Supervised Learning Techniques" style="width: 60%; height: auto;">
   <figcaption><strong>Fig. 1:</strong> Illustration of Semi-Supervised Learning Techniques</figcaption>
 </figure>
-Problem: Utilities don’t know which phase
-customers are connected to — this affects
-voltage regulation, DER integration, and fault
-localization.
+
+
 • Challenge: Ground truth phase data
 is scarce, unreliable, and costly to collect.
 • Supervised learning ML methods need lots of labeled data – often unavailable
@@ -40,28 +57,41 @@ or unreliable.
 • Motivation: How do we scale phase
 identification without needing tons of labeled
 data?
+<table style="width:100%; border-collapse: collapse;">
+  <tr>
+    <td style="width:50%; text-align:center; vertical-align:top; padding-right:15px;">
+      <img src="semi_supervised_pes_gm_2025/figures/ssl_techniques.png" style="width:90%; height:auto;">
+      <div><strong>Fig. 1:</strong> Illustration of Semi-Supervised Learning Techniques</div>
+    </td>
+    <td style="width:50%; vertical-align:top; font-size:0.95em;">
+      <p><strong>Challenges & Motivation</strong></p>
+      <ul>
+        <li><strong>Challenge:</strong> Ground truth phase data is scarce, unreliable, and costly to collect.</li>
+        <li><strong>Problem:</strong> Supervised ML methods require large amounts of labeled data – often unavailable or unreliable.</li>
+        <li><strong>Motivation:</strong> How do we scale phase identification without needing tons of labeled data?</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-add techniques
+add techniques -->
 
 ## Contribution
 Our approach incorporates:
 
-- **Self-training** with an ensemble of multilayer perceptron classifiers.
-- **Label spreading** to propagate labels based on data similarity.
-- **Bayesian Neural Networks (BNNs)** for **uncertainty estimation**, improving confidence and reducing phase identification errors.
+- Self-training with an ensemble of multilayer perceptron classifiers.
+- Label spreading to propagate labels based on data similarity.
+- Bayesian Neural Networks (BNNs) for uncertainty estimation, improving confidence and reducing phase identification errors.
 
+Key Highlights:*
 
-**Key Highlights:**
-
-- Achieved **~98% ± 0.08 accuracy** on real utility data (Duquesne Light Company) using minimal and unreliable labeled data.
+- Achieved **~98% ± 0.08** accuracy on real utility data (Duquesne Light Company) using minimal and unreliable labeled data.
 - Uncertainty-aware predictions reduce misclassification risk and improve smart grid reliability.
-- Combines **pseudo-labeling**, **graph-based SSL**, and **probabilistic modeling** to handle data scarcity in real-world distribution networks.
+- Combines pseudo-labeling, graph-based SSL, and probabilistic modeling to handle data scarcity in real-world distribution networks.
 
-Our SSL + Uncertainty Estimation approach provides an efficient and scalable solution for **phase identification in AMI data**, enabling utilities to improve **modeling, simulation, and operational decision-making**.
+Our "SSL + Uncertainty Estimation" approach provides an efficient and scalable solution for phase identification in AMI data, enabling utilities to improve modeling, simulation, and operational decision-making.
 
----
-
-## Semi-Supervised Learning Framework
+## Semi-Supervised Learning Framework for AMI
 We formulate SSL as a regularized optimization problem:@eq-black-scholes2
 
 $$

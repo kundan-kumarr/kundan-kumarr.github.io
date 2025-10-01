@@ -158,27 +158,27 @@ window.Quarto = {
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li>
-    <a class="dropdown-item" href="../../projects/robo/washi.html">
+    <a class="dropdown-item" href="https://kundan-kumarr.github.io/Zero2LLM-Crafter/">
  <span class="dropdown-text">Large Language Models</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../llms/index.html">
+    <a class="dropdown-item" href="../../drl.html">
  <span class="dropdown-text">Deep Reinforcement Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../drl.html">
+    <a class="dropdown-item" href="https://kundan-kumarr.github.io/ai-analysis/">
  <span class="dropdown-text">Deep/Machine Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../statistics/index.html">
+    <a class="dropdown-item" href="https://kundan-kumarr.github.io/statsphere/">
  <span class="dropdown-text">Statistics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../projects/washi.html">
+    <a class="dropdown-item" href="../../llms.html">
  <span class="dropdown-text">Computer Vision</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../drl.html">
+    <a class="dropdown-item" href="../../robo.html">
  <span class="dropdown-text">Robotics</span></a>
   </li>  
     </ul>
@@ -231,14 +231,6 @@ window.Quarto = {
     
   
     
-    <div>
-    <div class="quarto-title-meta-heading">Doi</div>
-    <div class="quarto-title-meta-contents">
-      <p class="doi">
-        <a href="https://doi.org/https://doi.org/10.31234/osf.io/j9yeq">https://doi.org/10.31234/osf.io/j9yeq</a>
-      </p>
-    </div>
-  </div>
   </div>
   
 
@@ -249,43 +241,97 @@ window.Quarto = {
 <section id="citation-ieee" class="level3">
 <h3 class="anchored" data-anchor-id="citation-ieee">Citation (IEEE)</h3>
 <blockquote class="blockquote">
-<p>K. Kumar, K. Utkarsh, J. Wang, and H. V. Padullaparti, “Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems,” Proc. IEEE Power &amp; Energy Society General Meeting (PESGM), 2025.</p>
+<p><strong>K. Kumar</strong>, K. Utkarsh, J. Wang, and H. V. Padullaparti, “Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems,” Proc. IEEE Power &amp; Energy Society General Meeting (PESGM), 2025.</p>
 </blockquote>
 </section>
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>The integration of advanced metering infrastructure (AMI) into power distribution networks generates valuable data for tasks such as phase identification; however, the limited and unreliable availability of labeled data in the form of customer phase connectivity presents challenges. To address this issue, we propose a <strong>semi-supervised learning (SSL)</strong> framework that effectively leverages both <strong>labeled and unlabeled data</strong>.</p>
+<p>The integration of advanced metering infrastructure (AMI) into power distribution networks generates valuable data for tasks such as phase identification; however, the limited and unreliable availability of labeled data in the form of customer phase connectivity presents challenges. To address this issue, we propose a semi-supervised learning (SSL) bayesian framework that effectively leverages both limited labeled and unlimited unlabeled data.</p>
 <ol type="1">
-<li><strong>Why Phase Identification Needs a New Approach ?</strong></li>
+<li>Why Phase Identification Needs a New Approach ?</li>
 </ol>
-<figure style="text-align: center;" class="figure">
-<img src="semi_supervised_pes_gm_2025/figures/ssl_techniques.png" alt="Illustration of Semi-Supervised Learning Techniques" style="width: 60%; height: auto;" class="figure-img">
-<figcaption>
+<p><strong>Problem:</strong> Utilities don’t know which phase customers are connected to this affects voltage regulation, DER integration, and fault localization.</p>
+<table style="width:100%; border-collapse: collapse;">
+<tbody><tr>
+<td style="width:50%; text-align:center; vertical-align:top; padding-right:15px;">
+<img src="semi_supervised_pes_gm_2025/figures/ssl_techniques.png" style="width:90%; height:auto;">
+<div>
 <strong>Fig. 1:</strong> Illustration of Semi-Supervised Learning Techniques
-</figcaption>
+</div>
+</td>
+<td style="width:50%; vertical-align:top; font-size:0.95em;">
+<p>
+<strong>Challenges &amp; Motivation</strong>
+</p>
+<ul>
+<li>
+<strong>Challenge:</strong> Ground truth phase data is scarce, unreliable, and costly to collect.
+</li>
+<li>
+<strong>Problem:</strong> Supervised ML methods require large amounts of labeled data and often unavailable or unreliable.
+</li>
+<li>
+<strong>Motivation:</strong> How do we scale phase identification without needing tons of labeled data?
+</li>
+</ul>
+</td>
+</tr>
+</tbody></table>
+<!--  <img src="semi_supervised_pes_gm_2025/figures/ssl_techniques.png" alt="Illustration of Semi-Supervised Learning Techniques" style="width: 60%; height: auto;">
+  <figcaption><strong>Fig. 1:</strong> Illustration of Semi-Supervised Learning Techniques</figcaption>
 </figure>
-<p>Problem: Utilities don’t know which phase customers are connected to — this affects voltage regulation, DER integration, and fault localization. • Challenge: Ground truth phase data is scarce, unreliable, and costly to collect. • Supervised learning ML methods need lots of labeled data – often unavailable or unreliable. • Motivation: How do we scale phase identification without needing tons of labeled data?</p>
-<p>add techniques</p>
+
+
+• Challenge: Ground truth phase data
+is scarce, unreliable, and costly to collect.
+• Supervised learning ML methods need lots of labeled data – often unavailable
+or unreliable.
+• Motivation: How do we scale phase
+identification without needing tons of labeled
+data?
+
+<table class="caption-top" data-quarto-postprocess="true" style="width:100%; border-collapse: collapse;">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center; width: 50%; vertical-align: top; padding-right: 15px;"><img src="semi_supervised_pes_gm_2025/figures/ssl_techniques.png" class="img-fluid" style="width:90%; height:auto;" />
+<div>
+<strong>Fig. 1:</strong> Illustration of Semi-Supervised Learning Techniques
+</div></td>
+<td style="width: 50%; vertical-align: top; font-size: 0.95em"><p><strong>Challenges &amp; Motivation</strong></p>
+<ul>
+<li><strong>Challenge:</strong> Ground truth phase data is scarce, unreliable, and costly to collect.</li>
+<li><strong>Problem:</strong> Supervised ML methods require large amounts of labeled data – often unavailable or unreliable.</li>
+<li><strong>Motivation:</strong> How do we scale phase identification without needing tons of labeled data?</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+
+add techniques -->
 </section>
 <section id="contribution" class="level2">
 <h2 class="anchored" data-anchor-id="contribution">Contribution</h2>
 <p>Our approach incorporates:</p>
 <ul>
-<li><strong>Self-training</strong> with an ensemble of multilayer perceptron classifiers.</li>
-<li><strong>Label spreading</strong> to propagate labels based on data similarity.</li>
-<li><strong>Bayesian Neural Networks (BNNs)</strong> for <strong>uncertainty estimation</strong>, improving confidence and reducing phase identification errors.</li>
+<li>Self-training with an ensemble of multilayer perceptron classifiers.</li>
+<li>Label spreading to propagate labels based on data similarity.</li>
+<li>Bayesian Neural Networks (BNNs) for uncertainty estimation, improving confidence and reducing phase identification errors.</li>
 </ul>
-<p><strong>Key Highlights:</strong></p>
+<p>Key Highlights:*</p>
 <ul>
-<li>Achieved <strong>~98% ± 0.08 accuracy</strong> on real utility data (Duquesne Light Company) using minimal and unreliable labeled data.</li>
+<li>Achieved <strong>~98% ± 0.08</strong> accuracy on real utility data (Duquesne Light Company) using minimal and unreliable labeled data.</li>
 <li>Uncertainty-aware predictions reduce misclassification risk and improve smart grid reliability.</li>
-<li>Combines <strong>pseudo-labeling</strong>, <strong>graph-based SSL</strong>, and <strong>probabilistic modeling</strong> to handle data scarcity in real-world distribution networks.</li>
+<li>Combines pseudo-labeling, graph-based SSL, and probabilistic modeling to handle data scarcity in real-world distribution networks.</li>
 </ul>
-<p>Our SSL + Uncertainty Estimation approach provides an efficient and scalable solution for <strong>phase identification in AMI data</strong>, enabling utilities to improve <strong>modeling, simulation, and operational decision-making</strong>.</p>
-<hr>
+<p>Our “SSL + Uncertainty Estimation” approach provides an efficient and scalable solution for phase identification in AMI data, enabling utilities to improve modeling, simulation, and operational decision-making.</p>
 </section>
-<section id="semi-supervised-learning-framework" class="level2">
-<h2 class="anchored" data-anchor-id="semi-supervised-learning-framework">Semi-Supervised Learning Framework</h2>
+<section id="ami-semi-supervised-learning-framework" class="level2">
+<h2 class="anchored" data-anchor-id="ami-semi-supervised-learning-framework">AMI Semi-Supervised Learning Framework</h2>
 <p>We formulate SSL as a regularized optimization problem:<a href="#eq-black-scholes2" class="quarto-xref">Equation&nbsp;1</a></p>
 <p><span id="eq-black-scholes2"><span class="math display">\[
 \min_{f \in \mathcal{F}} \left[ \frac{1}{n_L} \sum_{i=1}^{n_L} \ell(f(x_i), y_i) + \lambda R_u(f, \mathcal{D}_U) \right]
