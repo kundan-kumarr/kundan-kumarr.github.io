@@ -1,0 +1,33 @@
+{
+  "listing": "/about_me.html",
+  "items": [
+    "/blog/technotes_20250703_research_guide/index.html",
+    "/blog/technotes_20240506_ohdsi_part1/index.html",
+    "/talks/pes_gm_2025/index.html",
+    "/talks/community_20240921_quartofriends/index.html",
+    "/talks/ehr_20240918_betterehr/index.html",
+    "/talks/community_20240710_camis/index.html",
+    "/talks/rstats_20240613_teaching/index.html",
+    "/talks/rstats_20230721_teaching/index.html",
+    "/talks/dummy_talk/index.html",
+    "/talks/ph_20230330_sp/index.html",
+    "/talks/ehr_20221013_ml_icu/index.html",
+    "/talks/ehr_20210218_biday/index.html",
+    "/talks/ehr_20191028_rladies/index.html",
+    "/talks/rstats_20190402_blogdown/index.html",
+    "/publications/articles/Journal1.html",
+    "/publications/articles/gridedge2025.html",
+    "/publications/articles/iccpsS2016.html",
+    "/publications/articles/icmla2022.html",
+    "/publications/articles/isgt2024.html",
+    "/publications/articles/naps2025.html",
+    "/publications/articles/pesgm2024.html",
+    "/publications/articles/pesgm2025.html",
+    "/projects/drl_mdp/index.html",
+    "/projects/ehr-title/index.html",
+    "/projects/llm_nor_mortality/index.html",
+    "/projects/llm_noreden/index.html",
+    "/projects/nor_mortality/index.html",
+    "/projects/noreden/index.html"
+  ]
+}
