@@ -199,7 +199,6 @@ $$ {#eq-black-scholes}
 
 ---
 #### Presentation
-<!--<iframe class="slides" src="https://jadeyryan.quarto.pub/rladies-abuja-quarto-params/slides/#/title-slide"></iframe> -->
 
 <iframe 
   class="slides" 
