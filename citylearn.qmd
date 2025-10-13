@@ -1,0 +1,49 @@
+---
+title: "LLM-Powered Energy Optimizer"
+description: "Integrating large language models with multi-building energy management in CityLearn for adaptive, interpretable, and efficient optimization."
+author: Kundan Kumar
+date: "2025-01-20"
+image: "/misc/info/projects/city_learn.png"
+image-alt: "Badge for LLM-Powered Energy Optimizer showing buildings and an LLM communication icon."
+categories:
+  - Energy Optimization
+  - Reinforcement Learning
+  - LLM Integration
+---
+
+<span class="listing-btn-group">
+<a href="https://github.com/kundan-kumarr/LLM-Energy-Optimizer" class="btn" role="button">{{< fa brands github >}} Code</a>
+</span>
+
+The **LLM-Powered Energy Optimizer** integrates **Large Language Models (LLMs)** with the **CityLearn** multi-building energy environment to achieve **adaptive energy coordination and optimization**.  
+By combining the reasoning ability of LLMs with reinforcement-based control agents, this framework demonstrates how **language-driven guidance** can enhance **decision-making and interpretability** in smart energy systems.
+
+---
+
+###  System Overview
+The project leverages **CityLearn**, an open-source urban energy simulator, where multiple buildings interact with shared energy resources such as batteries, HVAC systems, and renewable units.  
+The LLM acts as a **high-level advisor**, generating structured reasoning steps, policy explanations, and optimization prompts to assist the RL controller in selecting efficient energy actions.
+
+---
+
+### Core Components
+- **CityLearn Environment:** Multi-building coordination for energy storage and HVAC scheduling  
+- **LLM Agent Layer:** Generates task explanations, reasoning chains, and adaptive control advice  
+- **Reinforcement Learning Backbone:** PPO and SAC algorithms for optimizing power and comfort metrics  
+- **Physics-Informed Feedback:** Embeds voltage, power, and thermal constraints into decision flow  
+
+---
+
+### Objectives
+- Reduce total energy consumption and carbon footprint  
+- Improve system interpretability through LLM reasoning chains  
+- Enable human-in-the-loop adjustments using natural-language instructions  
+
+---
+
+### Research Impact
+This work bridges the gap between **natural-language intelligence** and **energy optimization**, enabling explainable, sustainable, and **LLM-guided adaptive control** in modern smart cities.
+
+---
+
+![](/misc/info/projects/city_learn.png){.img-center fig-alt="Badge for LLM-Powered Energy Optimizer showing buildings and an LLM communication icon."}

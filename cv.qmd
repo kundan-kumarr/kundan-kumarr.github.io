@@ -30,7 +30,7 @@ page-layout: full
 ## <i class="fas fa-briefcase"></i> Professional Experience
 ::: {.d-inline-flex style="align-items:baseline"}
 ::: p-2
-![](assets/img/nrel.png){width="100px" fig-alt="NREL logo"}
+![](assets/img/nrel.png){width="90px" fig-alt="NREL logo"}
 :::
 ::: h3
 National Renewable Energy Laboratory (NREL)
@@ -90,7 +90,7 @@ Comcast
 
 ::: {.d-inline-flex style="align-items:baseline"}
 ::: p-2
-![](assets/img/IBM.png){width="90px" fig-alt="IBM logo"}
+![](assets/img/IBM.png){width="60px" fig-alt="IBM logo"}
 :::
 ::: h3
 IBM
@@ -120,7 +120,7 @@ IBM
 
 ::: {.d-inline-flex style="align-items:baseline"}
 ::: p-2
-![](assets/img/hp.png){width="90px" fig-alt="HP logo"}
+![](assets/img/hp.png){width="60px" fig-alt="HP logo"}
 :::
 ::: h3
 Hewlett Packard Enterprise (HPE)
@@ -208,10 +208,10 @@ Iowa State University
   </tr>
 </table> 
 <!-- **Ph.D. in Computer Science (Minor: Statistics)**   `Aug 2020 – Dec 2025 (expected)` -->
-- Research: Deep RL, Physics-Informed AI, Uncertainty Quantification
-- Courses: Deep Learning, NLP, Statistical Theory, Empirical Methods, Algorithms
+- Research: Deep RL, Physics-Informed AI, Uncertainty Quantification, LLM Agents
+- Courses: Deep Learning, NLP, Statistical Theory, Empirical Methods, Algorithm, Databases
 
- <table style="width: 100%; margin-bottom: 0.5rem;">
+<!-- <table style="width: 100%; margin-bottom: 0.5rem;">
   <tr>
     <td><strong>MS in Computer Science</strong></td>
     <td style="text-align: right;">
@@ -230,7 +230,7 @@ Iowa State University
 </table> 
 
 - Focus: Algorithms, Databases, Network Programming
-
+-->
 ## <i class="fas fa-chalkboard-teacher"></i> Teaching Experience
 
 ::: {.d-inline-flex style="align-items:baseline"}
@@ -517,24 +517,24 @@ Iowa State University
 
 <div class="proj-grid">
 
-  <a class="proj-card" href="projects1/drl.qmd">
-    <img src="/misc/info/teaching/databases.png" alt="SQL badge">
-    <span class="proj-body">
-      <strong>Fast Mixed‑Logit Estimation</strong><br>
-      Fast estimation of mixed logit models with preference‑space utility.
-    </span>
-  </a>
+  <a class="proj-card" href="rag_energy_advisor.qmd">
+  <img src="/misc/info/projects/llm_energy_advisor.png" alt="RAG Energy Advisor badge">
+  <span class="proj-body">
+    <strong>RAG-Enhanced Energy Advisor</strong><br>
+    Retrieval-augmented LLM agent for adaptive control and decision support.
+  </span>
+</a>
 
-  <a class="proj-card" href="projects1/dl.qmd">
-    <img src="/misc/info/teaching/databases.png" alt="cbcTools badge">
-    <span class="proj-body">
-      <strong>cbcTools Suite</strong><br>
-      Designing choice‑based conjoint experiments and power/system analysis.
-    </span>
-  </a>
+ <a class="proj-card" href="llm_grid_planner.qmd">
+  <img src="/misc/info/projects/llm_grid_planner.png" alt="LLM Grid Planner badge">
+  <span class="proj-body">
+    <strong>LLM-Driven Grid Planner</strong><br>
+    Natural-language-guided reinforcement learning for smart grid management.
+  </span>
+</a>
 
-  <a class="proj-card" href="projects1/stat.qmd">
-    <img src="/misc/info/teaching/user_interface.png" alt="CityLearn badge">
+  <a class="proj-card" href="citylearn.qmd">
+    <img src="/misc/info/projects/citylearnn.png" alt="CityLearn badge">
     <span class="proj-body">
       <strong>LLM‑Powered Energy Optimizer</strong><br>
       Multi‑building energy optimization in CityLearn with LLM guidance.

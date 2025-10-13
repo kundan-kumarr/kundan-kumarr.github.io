@@ -1495,7 +1495,7 @@
     "href": "cv.html#education",
     "title": "Curriculum Vitae",
     "section": " Education",
-    "text": "Education\n\n\n\n\n\nIowa State University\n\n\n\n\n\nPh.D. in Computer Science (Minor: Statistics)\n\n\n 2020  —  2025 (Expected) \n\n\n\n\n\nResearch: Deep RL, Physics-Informed AI, Uncertainty Quantification\nCourses: Deep Learning, NLP, Statistical Theory, Empirical Methods, Algorithms\n\n\n\n\nMS in Computer Science\n\n\n Jan 2015  —  Dec 2016 \n\n\n\n\nFocus: Algorithms, Databases, Network Programming"
+    "text": "Education\n\n\n\n\n\nIowa State University\n\n\n\n\n\nPh.D. in Computer Science (Minor: Statistics)\n\n\n 2020  —  2025 (Expected) \n\n\n\n\n\nResearch: Deep RL, Physics-Informed AI, Uncertainty Quantification, LLM Agents\nCourses: Deep Learning, NLP, Statistical Theory, Empirical Methods, Algorithm, Databases"
   },
   {
     "objectID": "cv.html#communities-and-organizations",
@@ -1593,7 +1593,7 @@
     "href": "cv.html#projects",
     "title": "Curriculum Vitae",
     "section": " Projects",
-    "text": "Projects\n\n\n   Fast Mixed‑Logit Estimation Fast estimation of mixed logit models with preference‑space utility.  \n   cbcTools Suite Designing choice‑based conjoint experiments and power/system analysis.  \n   LLM‑Powered Energy Optimizer Multi‑building energy optimization in CityLearn with LLM guidance.  \n\n\n 📁 Check My Projects"
+    "text": "Projects\n\n\n   RAG-Enhanced Energy Advisor Retrieval-augmented LLM agent for adaptive control and decision support.  \n   LLM-Driven Grid Planner Natural-language-guided reinforcement learning for smart grid management.  \n   LLM‑Powered Energy Optimizer Multi‑building energy optimization in CityLearn with LLM guidance.  \n\n\n 📁 Check My Projects"
   },
   {
     "objectID": "cv.html#projects-1",
@@ -8300,5 +8300,47 @@
     "title": "How to handle class-unbalanced data?",
     "section": "Data-Level Approaches (Resampling Techniques)",
     "text": "Data-Level Approaches (Resampling Techniques)\n\nOversampling the minority class\n\nRandom Oversampling: duplicate minority class examples until balance is reached.\nSMOTE (Synthetic Minority Over-sampling Technique): generates synthetic data points for the minority class by interpolating between nearest neighbors.\nADASYN: similar to SMOTE but focuses on generating harder-to-learn examples.\n\n\n\nUndersampling the majority class\n\nRandom Undersampling: randomly remove majority class examples.\nCluster Centroids / Tomek Links / NearMiss: more informed undersampling to preserve useful structure.\n\n\n\nHybrid methods\n\nCombine oversampling and undersampling to avoid overfitting or losing too much information.\n\nAlgorithm-Level Approaches\nClass Weights / Cost-Sensitive Learning\nAssign higher misclassification cost to minority class (many libraries like scikit-learn allow class_weight=‘balanced’).\nAnomaly Detection / One-Class Models\nTreat minority class as “rare events” and use anomaly detection approaches.\nEnsemble Techniques\nUse Bagging/Boosting with imbalance-aware modifications (e.g., Balanced Random Forest, EasyEnsemble, RUSBoost).\nEvaluation-Level Approaches Confusion Matrix: A breakdown of predictions into a table showing correct predictions (the diagonal) and the types of incorrect predictions made (what classes incorrect predictions were assigned). Precision: A measure of a classifiers exactness. Recall: A measure of a classifiers completeness F1 Score (or F-score): A weighted average of precision and recall. Avoid accuracy as the metric (it will be misleading).\nPrefer metrics that account for imbalance:\nPrecision, Recall, F1-score\nROC-AUC, PR-AUC (especially useful with rare positives)\nMatthews Correlation Coefficient (MCC)\nBalanced Accuracy\n. Data Collection & Domain Knowledge\nGather more examples of the minority class if possible (often the best long-term solution).\nUse domain knowledge to engineer features that help separate classes better.\nActive learning: selectively label more examples from uncertain regions.\n\nAdvanced / Modern Techniques\n\nGenerative Models (GANs, VAEs): to synthesize minority samples.\nSemi-supervised or Self-supervised Learning: leverage unlabeled data to improve representation of minority class.\nFocal Loss (in deep learning): gives higher weight to hard-to-classify (often minority) samples.\nCourse link"
+  },
+  {
+    "objectID": "orcas.html",
+    "href": "orcas.html",
+    "title": "Prompt Injection Attacks on LLM Medical Diagnosis by Symptom Elaboration",
+    "section": "",
+    "text": "Code \nThe goal of orcas is to scrape orca sighting data from the web and visualize it in maps and tables.\nI’ve always had an affinity for the Southern Resident Killer Whales in the Salish Sea. The Center for Whale Research does a lot of really fascinating and important work monitoring their population. They post their survey data on their website; each encounter with the orcas is a separate webpage. I was both curious and intimidated by web scraping so I decided this would make a great case study and personal project. I also learned how to use custom icons in leaflet maps! 🐋"
+  },
+  {
+    "objectID": "mixed_logit.html",
+    "href": "mixed_logit.html",
+    "title": "Prompt Injection Attacks on LLM Medical Diagnosis by Symptom Elaboration",
+    "section": "",
+    "text": "Code \nThe goal of orcas is to scrape orca sighting data from the web and visualize it in maps and tables.\nI’ve always had an affinity for the Southern Resident Killer Whales in the Salish Sea. The Center for Whale Research does a lot of really fascinating and important work monitoring their population. They post their survey data on their website; each encounter with the orcas is a separate webpage. I was both curious and intimidated by web scraping so I decided this would make a great case study and personal project. I also learned how to use custom icons in leaflet maps! 🐋"
+  },
+  {
+    "objectID": "cbc.html",
+    "href": "cbc.html",
+    "title": "Prompt Injection Attacks on LLM Medical Diagnosis by Symptom Elaboration",
+    "section": "",
+    "text": "Code \nThe goal of orcas is to scrape orca sighting data from the web and visualize it in maps and tables.\nI’ve always had an affinity for the Southern Resident Killer Whales in the Salish Sea. The Center for Whale Research does a lot of really fascinating and important work monitoring their population. They post their survey data on their website; each encounter with the orcas is a separate webpage. I was both curious and intimidated by web scraping so I decided this would make a great case study and personal project. I also learned how to use custom icons in leaflet maps! 🐋"
+  },
+  {
+    "objectID": "citylearn.html",
+    "href": "citylearn.html",
+    "title": "LLM-Powered Energy Optimizer",
+    "section": "",
+    "text": "Code \nThe LLM-Powered Energy Optimizer integrates Large Language Models (LLMs) with the CityLearn multi-building energy environment to achieve adaptive energy coordination and optimization.\nBy combining the reasoning ability of LLMs with reinforcement-based control agents, this framework demonstrates how language-driven guidance can enhance decision-making and interpretability in smart energy systems.\n\n\nSystem Overview\nThe project leverages CityLearn, an open-source urban energy simulator, where multiple buildings interact with shared energy resources such as batteries, HVAC systems, and renewable units.\nThe LLM acts as a high-level advisor, generating structured reasoning steps, policy explanations, and optimization prompts to assist the RL controller in selecting efficient energy actions.\n\n\n\nCore Components\n\nCityLearn Environment: Multi-building coordination for energy storage and HVAC scheduling\n\nLLM Agent Layer: Generates task explanations, reasoning chains, and adaptive control advice\n\nReinforcement Learning Backbone: PPO and SAC algorithms for optimizing power and comfort metrics\n\nPhysics-Informed Feedback: Embeds voltage, power, and thermal constraints into decision flow\n\n\n\n\nObjectives\n\nReduce total energy consumption and carbon footprint\n\nImprove system interpretability through LLM reasoning chains\n\nEnable human-in-the-loop adjustments using natural-language instructions\n\n\n\n\nResearch Impact\nThis work bridges the gap between natural-language intelligence and energy optimization, enabling explainable, sustainable, and LLM-guided adaptive control in modern smart cities."
+  },
+  {
+    "objectID": "rag_energy_advisor.html",
+    "href": "rag_energy_advisor.html",
+    "title": "RAG-Enhanced Energy Advisor",
+    "section": "",
+    "text": "Code \nThe RAG-Enhanced Energy Advisor explores how retrieval-augmented generation (RAG) frameworks can improve decision-making and control strategies in energy management systems — while also examining their potential security vulnerabilities.\nThis project simulates a scenario where an attacker attempts to trick an LLM into generating inappropriate or unsafe outputs, such as fabricated or misleading control actions, or even false medical diagnostics within smart building health-energy systems.\nThe system aims to demonstrate defensive prompting, retrieval filtering, and trust calibration mechanisms to ensure that LLM-based advisory systems remain robust, interpretable, and safe.\n\n\nResearch Context\n\nIntegrates RAG pipelines for real-time adaptive learning in multi-building environments.\n\nExamines prompt-injection attacks that can mislead models into unsafe or irrelevant outputs.\n\nIntroduces trust-aware retrieval weighting to dynamically filter retrieved documents based on domain relevance and safety metrics.\n\n\n\n\nCore Technologies\n\nLangChain for retrieval orchestration\n\nFAISS / ChromaDB for vector-based semantic search\n\nOpenAI GPT / Llama 3 as the base reasoning model\n\nCityLearn environment for multi-building simulation and energy optimization\n\n\n\n\nKey Insights\nThe project highlights the dual nature of RAG systems — powerful for enhancing reasoning and grounding, yet susceptible to data poisoning and adversarial instructions.\nBy incorporating safety filters and reinforcement-based trust weighting, this framework helps move toward secure, reliable LLM-driven control in energy and cyber-physical systems."
+  },
+  {
+    "objectID": "llm_grid_planner.html",
+    "href": "llm_grid_planner.html",
+    "title": "LLM-Driven Grid Planner",
+    "section": "",
+    "text": "Code \nThe LLM-Driven Grid Planner demonstrates how Large Language Models (LLMs) can serve as adaptive reasoning agents in smart grid management.\nIt integrates natural-language-guided reinforcement learning (RL) for real-time grid optimization, enabling interpretable and human-aligned decision support for operators.\n\n\nFramework\nTraditional grid control systems rely on predefined rule-based logic or black-box deep RL agents.\nIn contrast, this framework introduces a language-driven layer, allowing system operators to provide high-level natural-language goals, which the LLM translates into structured RL objectives or safety constraints.\nThis synergy creates an interpretable control loop, where human intentions, grid dynamics, and agent behavior are aligned through continuous dialogue and reasoning.\n\n\n\nCore Components\n\nLLM Planner: Parses operator input and converts it into structured optimization or control policies.\n\nRL Agent: Learns to execute the translated goals using algorithms like PPO, DDPG, or SAC.\n\nSmart Grid Environment: Simulates volt-VAR, power flow, and frequency management scenarios.\n\nExplainability Layer: Generates step-by-step rationales behind control decisions for improved trust and transparency.\n\n\n\n\nObjectives\n\nEnable human-in-the-loop grid management using natural language.\n\nImprove safety and interpretability in reinforcement learning decisions.\n\nSupport scalable grid optimization through AI-assisted planning and control.\n\n\n\n\nBroader Impact\nThe LLM-Driven Grid Planner exemplifies a step toward explainable, trustworthy, and interactive AI for smart infrastructure.\nBy merging language reasoning with reinforcement learning, it establishes a foundation for next-generation AI-assisted energy systems that are safer, transparent, and easier to govern."
   }
 ]

@@ -1,0 +1,52 @@
+---
+title: "LLM-Driven Grid Planner"
+description: "A natural-language-guided reinforcement learning framework for smart grid management and adaptive decision-making."
+author: Kundan Kumar
+date: "2025-01-20"
+image: "/misc/info/projects/llm_grid_planner.png"
+image-alt: "Badge for LLM-Driven Grid Planner showing grid and AI reasoning icons."
+categories:
+  - Smart Grids
+  - Reinforcement Learning
+  - LLM Guidance
+---
+
+<span class="listing-btn-group">
+<a href="https://github.com/kundan-kumarr/LLM-Grid-Planner" class="btn" role="button">{{< fa brands github >}} Code</a>
+</span>
+
+The **LLM-Driven Grid Planner** demonstrates how **Large Language Models (LLMs)** can serve as **adaptive reasoning agents** in **smart grid management**.  
+It integrates **natural-language-guided reinforcement learning (RL)** for real-time grid optimization, enabling interpretable and human-aligned decision support for operators.
+
+---
+
+### Framework
+Traditional grid control systems rely on predefined rule-based logic or black-box deep RL agents.  
+In contrast, this framework introduces a **language-driven layer**, allowing system operators to provide **high-level natural-language goals**, which the LLM translates into structured RL objectives or safety constraints.
+
+This synergy creates an **interpretable control loop**, where human intentions, grid dynamics, and agent behavior are aligned through continuous dialogue and reasoning.
+
+---
+
+### Core Components
+- **LLM Planner:** Parses operator input and converts it into structured optimization or control policies.  
+- **RL Agent:** Learns to execute the translated goals using algorithms like PPO, DDPG, or SAC.  
+- **Smart Grid Environment:** Simulates volt-VAR, power flow, and frequency management scenarios.  
+- **Explainability Layer:** Generates step-by-step rationales behind control decisions for improved trust and transparency.  
+
+---
+
+### Objectives
+- Enable **human-in-the-loop grid management** using natural language.  
+- Improve **safety and interpretability** in reinforcement learning decisions.  
+- Support **scalable grid optimization** through AI-assisted planning and control.  
+
+---
+
+### Broader Impact
+The LLM-Driven Grid Planner exemplifies a step toward **explainable, trustworthy, and interactive AI** for **smart infrastructure**.  
+By merging **language reasoning** with **reinforcement learning**, it establishes a foundation for **next-generation AI-assisted energy systems** that are safer, transparent, and easier to govern.
+
+---
+
+![](/misc/info/projects/llm_grid_planner.png){.img-center fig-alt="Badge for LLM-Driven Grid Planner showing grid and AI reasoning icons."}

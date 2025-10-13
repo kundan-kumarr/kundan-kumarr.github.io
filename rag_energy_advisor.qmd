@@ -1,0 +1,46 @@
+---
+title: "RAG-Enhanced Energy Advisor"
+description: "Demonstrates how retrieval-augmented generation (RAG) can be exploited or safeguarded when attackers attempt to induce inappropriate responses, such as misleading medical or control suggestions."
+author: Kundan Kumar
+date: "2025-01-20"
+image: "/misc/info/projects/llm_energy_advisor.png"
+image-alt: "Badge for the RAG-Enhanced Energy Advisor showing document and energy icons."
+categories:
+  - LLM Security
+  - Energy Systems
+  - RAG Framework
+---
+
+<span class="listing-btn-group">
+<a href="https://github.com/kundan-kumarr/RAG-Energy-Advisor" class="btn" role="button">{{< fa brands github >}} Code</a>
+</span>
+
+The **RAG-Enhanced Energy Advisor** explores how **retrieval-augmented generation (RAG)** frameworks can improve decision-making and control strategies in **energy management systems** — while also examining their potential **security vulnerabilities**.
+
+This project simulates a scenario where an attacker attempts to **trick an LLM** into generating **inappropriate or unsafe outputs**, such as fabricated or misleading control actions, or even **false medical diagnostics** within smart building health-energy systems.  
+The system aims to demonstrate **defensive prompting, retrieval filtering, and trust calibration** mechanisms to ensure that LLM-based advisory systems remain **robust, interpretable, and safe**.
+
+---
+
+### Research Context
+- Integrates **RAG pipelines** for real-time adaptive learning in multi-building environments.  
+- Examines **prompt-injection attacks** that can mislead models into unsafe or irrelevant outputs.  
+- Introduces **trust-aware retrieval weighting** to dynamically filter retrieved documents based on domain relevance and safety metrics.
+
+---
+
+### Core Technologies
+- **LangChain** for retrieval orchestration  
+- **FAISS / ChromaDB** for vector-based semantic search  
+- **OpenAI GPT / Llama 3** as the base reasoning model  
+- **CityLearn environment** for multi-building simulation and energy optimization  
+
+---
+
+### Key Insights
+The project highlights the **dual nature of RAG systems** — powerful for enhancing reasoning and grounding, yet susceptible to **data poisoning and adversarial instructions**.  
+By incorporating **safety filters** and **reinforcement-based trust weighting**, this framework helps move toward **secure, reliable LLM-driven control** in energy and cyber-physical systems.
+
+---
+
+![](/misc/info/projects/llm_energy_advisor.png){.img-center fig-alt="Badge for the RAG-Enhanced Energy Advisor showing document and energy icons."}
