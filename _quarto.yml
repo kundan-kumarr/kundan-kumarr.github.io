@@ -38,24 +38,33 @@ website:
       - text: "Research"
         icon: lightbulb-fill
         href: rpkg/research.qmd
-      - text: "Projects"
+      - text: "Projects & Notes"
         icon: puzzle-fill
         menu:
           - text: "✨ All Projects"
             href: projects.qmd
           - text: "---"
-          - text: "Large Language Models"
-            href: https://kundan-kumarr.github.io/Zero2LLM-Crafter/
           - text: "Deep Reinforcement Learning"
             href: drl.qmd
-          - text: "Deep/Machine Learning"
-            href: https://kundan-kumarr.github.io/ai-analysis/
-          - text: "Statistics"
-            href: https://kundan-kumarr.github.io/statsphere/
-          - text: "Computer Vision"
+          - text: "Computer Vision & LLMs"
             href: llms.qmd
           - text: "Robotics"
             href: robo.qmd
+          - text: "---"
+          - text: "📚 Notes"
+          - text: "Large Language Models"
+            href: https://kundan-kumarr.github.io/Zero2LLM-Crafter/
+          - text: "Deep & Machine Learning"
+            href: https://kundan-kumarr.github.io/ai-analysis/
+          - text: "Statistics"
+            href: https://kundan-kumarr.github.io/statsphere/
+          - text: "AI for Smart Grids"
+            href: hhttps://kundan-kumarr.github.io/SmartGridAI/
+          - text: "AI Security"
+            href: https://kundan-kumarr.github.io/safe-AI/
+          - text: "ResearchScientist-Handbook"
+            href: https://kundan-kumarr.github.io/ResearchScientist-Handbook/
+          
       - text: "Teaching"
         icon: mortarboard-fill
         href: teaching/teaching.qmd
