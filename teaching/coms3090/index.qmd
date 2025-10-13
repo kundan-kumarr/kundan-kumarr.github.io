@@ -8,13 +8,13 @@ type: Computer Science
 
 ## COMS 3090 – Software Development Practices
 
-### 🧠 Course Overview
+### Course Overview
 
 This course provides a **practical introduction to software engineering principles** including process models, requirements engineering, system design, testing, and project management. It emphasizes collaborative software development through a **semester-long group project**, focusing on teamwork, accountability, and real-world delivery practices.
 
 ---
 
-### 🎯 Learning Objectives
+### Learning Objectives
 
 Students completing this course will:
 
@@ -27,7 +27,7 @@ Students completing this course will:
 
 ---
 
-### 🛠️ Topics Covered
+### Topics Covered
 
 - Software Process Models and Lifecycle  
 - Requirements Analysis & Specification  
@@ -47,7 +47,7 @@ Students completing this course will:
 
 ---
 
-### 👨‍🏫 My Role as Teaching Assistant
+### My Role as Teaching Assistant
 
 As a **Teaching Assistant** for COMS 3090, I supported over 150 students in mastering software development practices through lectures, labs, and team projects. My responsibilities included:
 
@@ -59,4 +59,4 @@ As a **Teaching Assistant** for COMS 3090, I supported over 150 students in mast
 
 This role allowed me to blend **technical mentorship** with **project coordination**, while reinforcing industry practices and promoting engineering discipline among future software professionals.
 
-> 💡 [Course Catalog](http://catalog.iastate.edu/azcourses/com_s/) | [Email](mailto:kkumar@iastate.edu)
+> [Course Catalog](http://catalog.iastate.edu/azcourses/com_s/) | [Email](mailto:kkumar@iastate.edu)

@@ -306,7 +306,8 @@
   {
     "listing": "/blog/index.html",
     "items": [
-      "/blog/technotes_20250703_research_guide/index.html",
+      "/blog/technotes_20230228_clinreport_part3/index.html",
+      "/blog/technotes_20250925_research_guide/index.html",
       "/blog/technotes_20240506_ohdsi_part1/index.html"
     ]
   },
@@ -331,7 +332,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/blog/technotes_20250703_research_guide/index.html",
+      "/blog/technotes_20230228_clinreport_part3/index.html",
+      "/blog/technotes_20250925_research_guide/index.html",
       "/blog/technotes_20240506_ohdsi_part1/index.html",
       "/talks/pes_gm_2025/index.html",
       "/talks/community_20240921_quartofriends/index.html",
@@ -439,7 +441,8 @@
   {
     "listing": "/about_me.html",
     "items": [
-      "/blog/technotes_20250703_research_guide/index.html",
+      "/blog/technotes_20230228_clinreport_part3/index.html",
+      "/blog/technotes_20250925_research_guide/index.html",
       "/blog/technotes_20240506_ohdsi_part1/index.html",
       "/talks/pes_gm_2025/index.html",
       "/talks/community_20240921_quartofriends/index.html",
