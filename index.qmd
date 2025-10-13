@@ -167,7 +167,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 
 <div class="proj-grid">
 
-  <a class="proj-card" href="https://kundan-kumarr.github.io/Zero2LLM-Crafter/">
+  <a class="proj-card" href="">
     <span class="proj-body proj-llm">
       <strong>LLM Reasoning & Agents</strong><br>
       Agentic workflows (LangChain/LangGraph), tool-use, memory, retrieval, planning & reflection loops for robust multi-step reasoning.
@@ -175,14 +175,14 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
   </a>
 
 
-  <a class="proj-card" href="https://kundan-kumarr.github.io/statsphere">
+  <a class="proj-card" href="">
     <span class="proj-body proj-stat">
       <strong>Statistical ML</strong><br>
       Uncertainty quantification, probabilistic modeling, and data-driven inference in dynamic environments.
     </span>
   </a>
 
-<a class="proj-card" href="https://kundan-kumarr.github.io/ai-analysis/">
+<a class="proj-card" href="">
   <span class="proj-body proj-drive">
     <strong>Autonomous Perception & Control</strong><br>
     Vision-based perception (detection, segmentation, sensor fusion) integrated with learning-based control and trajectory planning for autonomous systems.
