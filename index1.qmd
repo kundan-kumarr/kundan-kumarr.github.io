@@ -192,206 +192,67 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 </div>
 ```
 
+
 ---
 
 ### Explore My Work
 
-```{=html}
-<style>
-  .explore-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 2rem;
-    margin-top: 1.5rem;
-    align-items: start;
-  }
+:::: {.grid}
 
-  .explore-item {
-    display: flex;
-    flex-direction: column;
-  }
+::: {.g-col-3}
+#### Blogs
+::: {#blog}
+:::
+[See all &rarr;](/blog/){.about-links .subtitle}
+:::
 
-  .explore-title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: #1e529d;
-    margin-bottom: 0.8rem;
-  }
+::: {.g-col-3}
+#### Talks
+::: {#talk}
+:::
+[See all &rarr;](/talks/){.about-links .subtitle}
+:::
 
-  .explore-box {
-    border: 0px solid #007bff33;
-    background: #f9fbff;
-    border-radius: 10px;
-    padding: 0.1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-    
-  }
+::: {.g-col-3}
+#### Publications
+::: {#publication}
+:::
+[See all &rarr;](/publications/){.about-links .subtitle}
+:::
 
-  .explore-box:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  }
+::: {.g-col-3}
+#### Projects
+::: {#project}
+:::
+[See all &rarr;](projects.qmd){.about-links .subtitle}
+:::
 
-  .explore-link {
-    text-align: center;
-    margin-top: 0.8rem;
-  }
+::::
 
-  .explore-link a {
-    color: #e65100;
-    font-weight: 600;
-    text-decoration: none;
-  }
-
-  .explore-link a:hover {
-    text-decoration: underline;
-  }
-</style>
-
-<div class="explore-section">
-
-  <div class="explore-item">
-    <h4 class="explore-title">Blogs</h4>
-    <div class="explore-box">
-      <div id="blog"></div>
-    </div>
-    <p class="explore-link"><a href="/blog/">See all →</a></p>
-  </div>
-
-  <div class="explore-item">
-    <h4 class="explore-title">Talks</h4>
-    <div class="explore-box">
-      <div id="talk"></div>
-    </div>
-    <p class="explore-link"><a href="/talks/">See all →</a></p>
-  </div>
-
-  <div class="explore-item">
-    <h4 class="explore-title">Publications</h4>
-    <div class="explore-box">
-      <div id="publication"></div>
-    </div>
-    <p class="explore-link"><a href="/publications/">See all →</a></p>
-  </div>
-
-  <div class="explore-item">
-    <h4 class="explore-title">Projects</h4>
-    <div class="explore-box">
-      <div id="project"></div>
-    </div>
-    <p class="explore-link"><a href="projects.qmd">See all →</a></p>
-  </div>
-
-</div>
-```
 ---
 
-```{=html}
-<style>
-.news-container {
-  position: relative;
-  padding-left: 10rem;
-  margin-left: 2rem;
-}
-
-.news-container::before {
-  content: '';
-  position: absolute;
-  left: 8rem;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: #d0d0d0;
-}
-
-.news-item {
-  position: relative;
-  margin-bottom: 2.5rem;
-  padding: 1.2rem 1.5rem;
-  background: #f8f9fa;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  margin-left: 1.5rem;
-}
-
-.news-item:hover {
-  background: #fff;
-  box-shadow: 0 4px 12px rgba(0,123,255,0.15);
-  transform: translateX(5px);
-}
-
-.news-item::before {
-  content: '';
-  position: absolute;
-  left: -15px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 15px solid #f8f9fa;
-}
-.news-item::after {
-  content: '';
-  position: absolute;
-  left: -3rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 12px;
-  height: 12px;
-  background: #007bff;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px #007bff;
-}
-
-.news-date {
-  position: absolute;
-  left: -10.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-weight: 700;
-  color: #007bff;
-  font-size: 0.9rem;
-  text-align: right;
-  width: 7rem;
-}
-
-.news-content {
-  color: #333;
-  line-height: 1.7;
-}
-
-.news-content a {
-  color: #0056b3;
-  text-decoration: none;
-}
-</style>
-
 <h4 align="center">News Highlights</h4>
-<div class="news-container">
-  <div class="news-item">
-    <div class="news-date">[Sep 2025]</div>
-    <div class="news-content">
-      Our paper on <a href="">Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification</a> has been accepted to <a href="https://www.sciencedirect.com/science/article/pii/S037877962500848X?dgcid=coauthor">Journal on Electric Power Systems Research 2026</a>.
-    </div>
-  </div>
-  
-  <div class="news-item">
-    <div class="news-date">[Jul 2025]</div>
-    <div class="news-content">
-      Selected for the <a href="https://sites.google.com/cohere.com/coherelabs-community/community-programs/summer-school">Cohere Machine Learning Summer School</a>, hosted by Cohere Labs.
-    </div>
-  </div>
 
-  <div class="news-item">
-    <div class="news-date">[Mar 2025]</div>
-    <div class="news-content">
-      Our paper on <a href="">Advanced Semi-Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems</a> has been accepted to <a href="https://pes-gm.org/">Conference on IEEE PES General Meeting 2025</a>.
-    </div>
-  </div>
+<table class="news-table">
+  <col width="15%">
+  <col width="85%">
+
+   <tr>
+    <td valign="top"><strong>[Sep 2025]</strong></td>
+    <td>Our paper on <a href="">Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification</a> has been accepted to <a href="https://www.sciencedirect.com/science/article/pii/S037877962500848X?dgcid=coauthor"> Journal on Electric Power Systems Research 2025</a>.</td>
+  </tr>
+
+<tr>
+  <td valign="top"><strong>[Jul 2025]</strong></td>
+  <td>Selected for the <a href="https://sites.google.com/cohere.com/coherelabs-community/community-programs/summer-school">Cohere Machine Learning Summer School</a>, hosted by Cohere Labs.</td>
+</tr>
+
   
-</div>
-```
+  <tr>
+    <td valign="top"><strong>[Mar 2025]</strong></td>
+    <td>Our paper on <a href="">Advanced Semi-Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems</a> has been accepted to <a href="https://pes-gm.org/">IEEE PES General Meeting 2025</a>.</td>
+  </tr>
+
+</table>
+
+---

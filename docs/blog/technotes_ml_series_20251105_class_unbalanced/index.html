@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Kundan Kumar">
+<meta name="dcterms.date" content="2025-09-27">
+<meta name="description" content="The majority class dominates while the minority class is underrepresented, leading models to bias their predictions toward the majority class.">
 
-<title>Kundan Kumar</title>
+<title>How to handle class-unbalanced data? – Kundan Kumar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +26,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./misc/info/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2575636bf12bba71c1c5b79222bd7450.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-575d3ec4fe9cdb2dfa4aaee319388bac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../misc/info/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2575636bf12bba71c1c5b79222bd7450.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-ece7d37b890854f7cc21d9aa6baf186a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,119 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-blog .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-blog'] = new List('listing-blog', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-talk .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-talk'] = new List('listing-talk', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-project .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-project'] = new List('listing-project', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-publication .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-year','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-publication'] = new List('listing-publication', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F9QK4C80G"></script>
 
 <script type="text/javascript">
@@ -233,7 +122,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kundan Kumar</span>
     </a>
   </div>
@@ -244,17 +133,17 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about_me.html"> <i class="bi bi-person-circle" role="img">
+    <a class="nav-link" href="../../about_me.html"> <i class="bi bi-person-circle" role="img">
 </i> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> <i class="bi bi-file-earmark-text-fill" role="img">
+    <a class="nav-link" href="../../cv.html"> <i class="bi bi-file-earmark-text-fill" role="img">
 </i> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./rpkg/research.html"> <i class="bi bi-lightbulb-fill" role="img">
+    <a class="nav-link" href="../../rpkg/research.html"> <i class="bi bi-lightbulb-fill" role="img">
 </i> 
 <span class="menu-text">Research</span></a>
   </li>  
@@ -266,20 +155,20 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects--notes">    
         <li>
-    <a class="dropdown-item" href="./projects.html">
+    <a class="dropdown-item" href="../../projects.html">
  <span class="dropdown-text">✨ All Projects</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li>
-    <a class="dropdown-item" href="./drl.html">
+    <a class="dropdown-item" href="../../drl.html">
  <span class="dropdown-text">Deep Reinforcement Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./llms.html">
+    <a class="dropdown-item" href="../../llms.html">
  <span class="dropdown-text">Computer Vision &amp; LLMs</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./robo.html">
+    <a class="dropdown-item" href="../../robo.html">
  <span class="dropdown-text">Robotics</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
@@ -311,12 +200,12 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./teaching/teaching.html"> <i class="bi bi-mortarboard-fill" role="img">
+    <a class="nav-link" href="../../teaching/teaching.html"> <i class="bi bi-mortarboard-fill" role="img">
 </i> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog/index.html"> <i class="bi bi-pen-fill" role="img">
+    <a class="nav-link" href="../../blog/index.html"> <i class="bi bi-pen-fill" role="img">
 </i> 
 <span class="menu-text">Blogs</span></a>
   </li>  
@@ -328,425 +217,294 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#data-level-approaches-resampling-techniques" id="toc-data-level-approaches-resampling-techniques" class="nav-link active" data-scroll-target="#data-level-approaches-resampling-techniques">Data-Level Approaches (Resampling Techniques)</a></li>
+  <li><a href="#innersource-and-opensource" id="toc-innersource-and-opensource" class="nav-link" data-scroll-target="#innersource-and-opensource">InnerSource and OpenSource</a></li>
+  <li><a href="#r-package-development" id="toc-r-package-development" class="nav-link" data-scroll-target="#r-package-development">R package development</a>
+  <ul class="collapse">
+  <li><a href="#principles-and-tools" id="toc-principles-and-tools" class="nav-link" data-scroll-target="#principles-and-tools">Principles and tools</a></li>
+  <li><a href="#writing-robust-statistical-software" id="toc-writing-robust-statistical-software" class="nav-link" data-scroll-target="#writing-robust-statistical-software">Writing robust statistical software</a></li>
+  </ul></li>
+  <li><a href="#cicd-for-r-packages" id="toc-cicd-for-r-packages" class="nav-link" data-scroll-target="#cicd-for-r-packages">CI/CD for R packages</a>
+  <ul class="collapse">
+  <li><a href="#key-components" id="toc-key-components" class="nav-link" data-scroll-target="#key-components">Key components</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/blog/technotes_ml_series_20251105_class_unbalanced/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-
-
-
-<div class="quarto-about-trestles column-page">
-  <div class="about-entity">
-    <img src="misc/info/photo.png" class="about-image
-  round " style="height: 12em; width: 12em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Kundan Kumar</h1>
-<p class="subtitle lead">Research Scientist | Safe Reinforcement Learning, Multi-Agent Systems &amp; LLM Agents</p>
-</div>
-<div class="quarto-title-meta column-page">
+<h1 class="title">How to handle class-unbalanced data?</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">class imbalance</div>
+    <div class="quarto-category">Data science</div>
   </div>
-</header>
-    <div class="about-links">
-  <a href="mailto:cs.kundann@gmail.com" class="about-link" rel="" target="">
-    <i class="bi bi-mailbox"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-  <a href="https://www.linkedin.com/in/kundan-kumarr/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="http://github.com/kundan-kumarr/" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="https://www.youtube.com/@AIAgentic-007/" class="about-link" rel="" target="">
-    <i class="bi bi-youtube"></i>
-     <span class="about-link-text">YouTube</span>
-  </a>
-  <a href="https://neuravp.substack.com/" class="about-link" rel="" target="">
-    <i class="bi bi-rss"></i>
-     <span class="about-link-text">Substack</span>
-  </a>
-  <a href="https://scholar.google.com/citations?user=1zDpIJkAAAAJ" class="about-link" rel="" target="">
-    <i class="bi bi-book"></i>
-     <span class="about-link-text">Scholar</span>
-  </a>
-</div>
   </div>
-  <div class="about-contents"><div id="hero-heading">
-<p>Hi! I’m <strong style="color:#007bff;">Kundan Kumar</strong>, a Ph.D.&nbsp;candidate in Computer Science at Iowa State University. My research focuses on creating intelligent and adaptable AI systems for next-generation cyber-physical infrastructure, integrating deep reinforcement learning (DRL), multi-agent systems, large language models (LLMs), and computer vision.</p>
-<p>I develop safety-critical DRL frameworks that incorporate domain knowledge and uncertainty, enabling reliable decision-making in complex environments. Recent projects include exploring transfer learning and enhancing adversarial resilience across systems. I also create LLM-integrated simulation frameworks for autonomous systems, combining perception, trajectory planning, and natural language reasoning.</p>
-<p>Outside of research, I share insights on <a href="https://neuravp.substack.com/">Substack</a> and <a href="https://www.youtube.com/@AIAgentic-007/">YouTube</a>. I enjoy cooking and ice skating 🛼 in my free time.</p>
-<!--Hi! I'm <strong style="color:#007bff;">Kundan Kumar</strong>, a Ph.D. candidate and researcher focused on building intelligent, secure, and adaptable AI systems for next-generation cyber-physical infrastructure. My work bridges deep reinforcement learning (DRL), multi-agent systems, large language models (LLMs), safe and explainable AI, and computer vision, with real-world applications in smart grids, autonomous vehicles, and critical infrastructure.
-My Ph.D. research centers on physics-informed and safety-critical DRL frameworks that embed domain knowledge, safety constraints, and uncertainty into the learning process—enabling agents to make robust and interpretable decisions in dynamic, complex environments. My research within DRL focuses on techniques such as transfer learning, uncertainty quantification, and adversarial resilience to improve generalization, safety, and reliability across diverse tasks and environments.
-I also develop LLM-integrated simulation frameworks for robotics and autonomous systems, combining vision-based perception, trajectory planning, and natural language reasoning to support high-level control and human-AI collaboration.
-Beyond research, I enjoy sharing my insights through educational content on [Substack](https://neuravp.substack.com/) and [YouTube](https://www.youtube.com/@AIAgentic-007/). Outside of work, I love cooking and Ice skating 🛼.
--->
-</div></div>
+
+<div>
+  <div class="description">
+    <p>The majority class dominates while the minority class is underrepresented, leading models to bias their predictions toward the majority class.</p>
+  </div>
 </div>
 
-<hr>
-<section id="other-research-interests" class="level3">
-<h3 data-anchor-id="other-research-interests">Other Research Interests</h3>
-<style>
-  .proj-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.2rem;
-    margin-top: 1rem;
-  }
-  .proj-card {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #1e567d;
-    border-radius: 8px;
-    background: #fff;
-    overflow: hidden;
-    transition: transform .15s ease;
-    text-decoration: none;
-    color: inherit;
-    min-height: 210px;
-  }
-  .proj-card:hover {
-    transform: translateY(-4px);
-  }
-  .proj-body {
-    display: block;
-    padding: 1rem 1.1rem 1.3rem 1.1rem;
-    font-family: 'Nunito', sans-serif;
-  }
-  .proj-cv strong {
-    color: #228B22; /* Blue for Computer Vision */
-    font-size: 1.05rem;
-  }
-  .proj-stat strong {
-    color: #57B9FF; /* Blue for Statistical ML */
-    font-size: 1.05rem;
-  }
-  .proj-drive strong {
-    color: #8B0000; /* Bluefor Self-Driving */
-    font-size: 1.05rem;
-  }
-  .proj-llm strong {
-    color: #8B008B; /* Dark Magenta for LLM Reasoning */
-    font-size: 1.05rem;
-  }
-</style>
 
-<div class="proj-grid">
+<div class="quarto-title-meta">
 
-  <a class="proj-card" href="">
-    <span class="proj-body proj-llm">
-      <strong>LLM Reasoning &amp; Agents</strong><br>
-      Agentic workflows (LangChain/LangGraph), tool-use, memory, retrieval, planning &amp; reflection loops for robust multi-step reasoning.
-    </span>
-  </a>
-
-
-  <a class="proj-card" href="">
-    <span class="proj-body proj-stat">
-      <strong>Statistical ML</strong><br>
-      Uncertainty quantification, probabilistic modeling, and data-driven inference in dynamic environments.
-    </span>
-  </a>
-
-<a class="proj-card" href="">
-  <span class="proj-body proj-drive">
-    <strong>Autonomous Perception &amp; Control</strong><br>
-    Vision-based perception (detection, segmentation, sensor fusion) integrated with learning-based control and trajectory planning for autonomous systems.
-  </span>
-</a>
-
-</div>
-<hr>
-</section>
-<section id="explore-my-work" class="level3">
-<h3 data-anchor-id="explore-my-work">Explore My Work</h3>
-<style>
-  .explore-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 2rem;
-    margin-top: 1.5rem;
-    align-items: start;
-  }
-
-  .explore-item {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .explore-title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: #1e529d;
-    margin-bottom: 0.8rem;
-  }
-
-  .explore-box {
-    border: 0px solid #007bff33;
-    background: #f9fbff;
-    border-radius: 10px;
-    padding: 0.1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kundan Kumar </p>
+          </div>
+  </div>
     
-  }
-
-  .explore-box:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  }
-
-  .explore-link {
-    text-align: center;
-    margin-top: 0.8rem;
-  }
-
-  .explore-link a {
-    color: #e65100;
-    font-weight: 600;
-    text-decoration: none;
-  }
-
-  .explore-link a:hover {
-    text-decoration: underline;
-  }
-</style>
-
-<div class="explore-section">
-
-  <div class="explore-item">
-    <h4 class="explore-title">Blogs</h4>
-    <div class="explore-box">
-      <div id="listing-blog" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="RGVlcCUyMExlYXJuaW5nJTJDTkxQJTJDVHJhbnNmb3JtZXJz" data-listing-date-sort="1761022800000" data-listing-file-modified-sort="1761068530668" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2191">
-<a href="./blog/blog_20251020_self_attention_mechanism/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 200;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Self-Attention Mechanism
-</h5>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-    </div>
-    <p class="explore-link"><a href="./blog/">See all →</a></p>
-  </div>
-
-  <div class="explore-item">
-    <h4 class="explore-title">Talks</h4>
-    <div class="explore-box">
-      <div id="listing-talk" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="TlJFTCUyQ1JlaW5mb3JjZW1lbnQlMjBMZWFybmluZw==" data-listing-date-sort="1752642000000" data-listing-file-modified-sort="1758725980961" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="125">
-<a href="./talks/pes_gm_2025/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="talks\pes_gm_2025\image_talk_20220616.png" style="height: 200;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Transfer Learning in Deep Reinforcement Learning for Scalable VVC in Smart Grids
-</h5>
-<div class="card-subtitle listing-subtitle">
-Transferring knowledge from one grid to another grid
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-    </div>
-    <p class="explore-link"><a href="./talks/">See all →</a></p>
-  </div>
-
-  <div class="explore-item">
-    <h4 class="explore-title">Publications</h4>
-    <div class="explore-box">
-      <div id="listing-publication" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="VW5jZXJ0YWludHklMjBFc2l0bWF0aW9uJTJDVGltZSUyMFNlcmllcyUyMEFuYWx5c2lzJTJDRm9yZWNhc3Rpbmc=" data-listing-file-modified-sort="1758725980419" data-listing-reading-time-sort="2" data-listing-word-count-sort="260">
-<a href="./publications/articles/Journal1.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="../publication/featured.jpg" style="height: 200;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification
-</h5>
-<table class="card-other-values">
-
-<tbody><tr>
-<td>
-year
-</td>
-<td class="year">
-2025
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-    </div>
-    <p class="explore-link"><a href="./publications/">See all →</a></p>
-  </div>
-
-  <div class="explore-item">
-    <h4 class="explore-title">Projects</h4>
-    <div class="explore-box">
-      <div id="listing-project" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1758725980384" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="./projects/drl_mdp/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/drl_mdp/noreden2.png" class="thumbnail-image card-img" style="height: 200;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Collaboration and Competition
-</h5>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-    </div>
-    <p class="explore-link"><a href="./projects.html">See all →</a></p>
-  </div>
-
-</div>
-<hr>
-<style>
-.news-container {
-  position: relative;
-  padding-left: 10rem;
-  margin-left: 2rem;
-}
-
-.news-container::before {
-  content: '';
-  position: absolute;
-  left: 8rem;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: #d0d0d0;
-}
-
-.news-item {
-  position: relative;
-  margin-bottom: 2.5rem;
-  padding: 1.2rem 1.5rem;
-  background: #f8f9fa;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  margin-left: 1.5rem;
-}
-
-.news-item:hover {
-  background: #fff;
-  box-shadow: 0 4px 12px rgba(0,123,255,0.15);
-  transform: translateX(5px);
-}
-
-.news-item::before {
-  content: '';
-  position: absolute;
-  left: -15px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 15px solid #f8f9fa;
-}
-.news-item::after {
-  content: '';
-  position: absolute;
-  left: -3rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 12px;
-  height: 12px;
-  background: #007bff;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px #007bff;
-}
-
-.news-date {
-  position: absolute;
-  left: -10.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-weight: 700;
-  color: #007bff;
-  font-size: 0.9rem;
-  text-align: right;
-  width: 7rem;
-}
-
-.news-content {
-  color: #333;
-  line-height: 1.7;
-}
-
-.news-content a {
-  color: #0056b3;
-  text-decoration: none;
-}
-</style>
-
-<h4 align="center">News Highlights</h4>
-<div class="news-container">
-  <div class="news-item">
-    <div class="news-date">[Sep 2025]</div>
-    <div class="news-content">
-      Our paper on <a href="">Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification</a> has been accepted to <a href="https://www.sciencedirect.com/science/article/pii/S037877962500848X?dgcid=coauthor">Journal on Electric Power Systems Research 2026</a>.
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 27, 2025</p>
     </div>
   </div>
   
-  <div class="news-item">
-    <div class="news-date">[Jul 2025]</div>
-    <div class="news-content">
-      Selected for the <a href="https://sites.google.com/cohere.com/coherelabs-community/community-programs/summer-school">Cohere Machine Learning Summer School</a>, hosted by Cohere Labs.
-    </div>
-  </div>
-
-  <div class="news-item">
-    <div class="news-date">[Mar 2025]</div>
-    <div class="news-content">
-      Our paper on <a href="">Advanced Semi-Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems</a> has been accepted to <a href="https://pes-gm.org/">Conference on IEEE PES General Meeting 2025</a>.
-    </div>
+    
   </div>
   
-</div>
+
+
+</header>
+
+
+<p>Class imbalance is a technique to handle the unbalanced data in the data-sets to build a reliable ML model and avoid the model for poor generalization.</p>
+<blockquote class="blockquote">
+<p>Start with class weighting + resampling + proper evaluation metrics. Then move to more advanced techniques like SMOTE, focal loss, or anomaly detection if imbalance is extreme generalization.</p>
+</blockquote>
+<section id="data-level-approaches-resampling-techniques" class="level2">
+<h2 class="anchored" data-anchor-id="data-level-approaches-resampling-techniques">Data-Level Approaches (Resampling Techniques)</h2>
+<section id="oversampling-the-minority-class" class="level3">
+<h3 class="anchored" data-anchor-id="oversampling-the-minority-class">Oversampling the minority class</h3>
+<ul>
+<li><p>Random Oversampling: duplicate minority class examples until balance is reached.</p></li>
+<li><p>SMOTE (Synthetic Minority Over-sampling Technique): generates synthetic data points for the minority class by interpolating between nearest neighbors.</p></li>
+<li><p>ADASYN: similar to SMOTE but focuses on generating harder-to-learn examples.</p></li>
+</ul>
+</section>
+<section id="undersampling-the-majority-class" class="level3">
+<h3 class="anchored" data-anchor-id="undersampling-the-majority-class">Undersampling the majority class</h3>
+<ul>
+<li><p>Random Undersampling: randomly remove majority class examples.</p></li>
+<li><p>Cluster Centroids / Tomek Links / NearMiss: more informed undersampling to preserve useful structure.</p></li>
+</ul>
+</section>
+<section id="hybrid-methods" class="level3">
+<h3 class="anchored" data-anchor-id="hybrid-methods">Hybrid methods</h3>
+<ul>
+<li>Combine oversampling and undersampling to avoid overfitting or losing too much information.</li>
+</ul>
+<p>Algorithm-Level Approaches</p>
+<p>Class Weights / Cost-Sensitive Learning</p>
+<p>Assign higher misclassification cost to minority class (many libraries like scikit-learn allow class_weight=‘balanced’).</p>
+<p>Anomaly Detection / One-Class Models</p>
+<p>Treat minority class as “rare events” and use anomaly detection approaches.</p>
+<p>Ensemble Techniques</p>
+<p>Use Bagging/Boosting with imbalance-aware modifications (e.g., Balanced Random Forest, EasyEnsemble, RUSBoost).</p>
+<p>Evaluation-Level Approaches Confusion Matrix: A breakdown of predictions into a table showing correct predictions (the diagonal) and the types of incorrect predictions made (what classes incorrect predictions were assigned). Precision: A measure of a classifiers exactness. Recall: A measure of a classifiers completeness F1 Score (or F-score): A weighted average of precision and recall. Avoid accuracy as the metric (it will be misleading).</p>
+<p>Prefer metrics that account for imbalance:</p>
+<p>Precision, Recall, F1-score</p>
+<p>ROC-AUC, PR-AUC (especially useful with rare positives)</p>
+<p>Matthews Correlation Coefficient (MCC)</p>
+<p>Balanced Accuracy</p>
+<p>. Data Collection &amp; Domain Knowledge</p>
+<p>Gather more examples of the minority class if possible (often the best long-term solution).</p>
+<p>Use domain knowledge to engineer features that help separate classes better.</p>
+<p>Active learning: selectively label more examples from uncertain regions.</p>
+<ol start="5" type="1">
+<li>Advanced / Modern Techniques</li>
+</ol>
+<p>Generative Models (GANs, VAEs): to synthesize minority samples.</p>
+<p>Semi-supervised or Self-supervised Learning: leverage unlabeled data to improve representation of minority class.</p>
+<p>Focal Loss (in deep learning): gives higher weight to hard-to-classify (often minority) samples.</p>
+<p>Course <a href="https://www.coursera.org/learn/making-data-science-work-for-clinical-reporting">link</a></p>
+</section>
+</section>
+<section id="innersource-and-opensource" class="level1">
+<h1>InnerSource and OpenSource</h1>
+<p>InnerSource: use of open source software development practices and open source-like culture (even though the software developed might still be proprietary)</p>
+<p>When to OpenSource? Which license to use?</p>
+<ul>
+<li>MIT license is the most permissive one</li>
+</ul>
+</section>
+<section id="r-package-development" class="level1">
+<h1>R package development</h1>
+<p>R packages are useful for</p>
+<ul>
+<li><strong>Reusability</strong> by other users, developers, “future me”</li>
+<li><strong>Robustness</strong>: well-tested, maintained for a longer period of time</li>
+<li><strong>Encapsulation</strong>: hidden complexitty inside the package (internal functions), stable interface exposed to the users (exported functions)</li>
+</ul>
+<p>What can ben encapsulated in an R package?</p>
+<ul>
+<li><strong>R functions</strong> (internal, exported)</li>
+<li><strong>Tests</strong> (unit tests, <code>testthat</code> package)</li>
+<li><strong>Data</strong> (raw, processed)</li>
+<li><strong>Analytical code</strong> (reproducible analysis and reporting)</li>
+<li><strong>Text</strong> (literate programming): markdown, Rmarkdown, Quarto, Vignettes</li>
+<li><strong>Interactive applications</strong> (shiny)</li>
+<li><strong>Web APIs</strong> (with <code>plumber</code>)</li>
+</ul>
+<p>Types of R packages: tool based, methods, analytical, web data project</p>
+<section id="principles-and-tools" class="level2">
+<h2 class="anchored" data-anchor-id="principles-and-tools">Principles and tools</h2>
+<p>Reproducibility: Git (code versioning), dependencies (<code>renv</code> for r package dependencies, Docker for system dependencies)</p>
+<section id="clean-code" class="level3">
+<h3 class="anchored" data-anchor-id="clean-code">Clean code</h3>
+<p>Code comments: not recommended! Better to write code in a way that does not need additional comments.</p>
+<p><strong>DRY</strong>: don’t repeat yourself (principle of software development), avoid copy and paste everywhere.</p>
+<p><strong>SRP</strong>: single-responsibility prinicple, a function should do one thing: either plot a chart, saves a file, changes variables etc, but not all.</p>
+<p>Naming conventions</p>
+<ul>
+<li>Reserve <strong>dots</strong> (.) for S3 methods (<code>print.patient</code>)</li>
+<li>Reserve <strong>CamelCase</strong> for R6 classes or package names (<code>OurPatients</code>)</li>
+<li>Use <strong>snake cases</strong> (<code>all_patients</code>) for function names and arguments, use <strong>verb noun</strong> pattern (<code>plot_this()</code>)</li>
+</ul>
+</section>
+<section id="code-smells" class="level3">
+<h3 class="anchored" data-anchor-id="code-smells">Code smells</h3>
+<p>A function might be too large: break into smaller ones (e.g.&nbsp;could fit in one screen)</p>
+<p>A function violates SRP: break into smaller ones, and be explicit in what result it is expected to return</p>
+<p>A function with multiple arguments: the scenarios to be tested increase rapidly. Recommended to minimize number of critical function arguments, and break the function into smaller ones.</p>
+<p>Bad comments in the code: drop the unnecessary, unclear, outdated comments, write code that are self-explanatory.</p>
+</section>
+<section id="development-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="development-workflow">Development workflow</h3>
+<p>Code refactoring: change existing code without its functionality</p>
+<p><strong>TDD</strong>: Test-Driven Development</p>
+<ul>
+<li>start with writing a new (failing) test</li>
+<li>write code thtat passes the nenw tetst</li>
+<li>refactor the code</li>
+<li>and repeat</li>
+</ul>
+<p>Benefits: your code is covered by tests; you think of testing scenarios first; “fail fast” - can immediately repair the code; more freedom to refactor (improve) the code.</p>
+<p>How to <strong>test</strong></p>
+<ul>
+<li>automatically: CI/CD, after pushing Git commits</li>
+<li>manually:
+<ul>
+<li>run all unit tests in the package (<em>Build / Test package</em>)</li>
+<li>run tests in a selected test file (<em>Run Tests</em>)</li>
+<li>run a single test in Rstudio console</li>
+</ul></li>
+</ul>
+<p>How to <strong>check</strong></p>
+<ul>
+<li>R CMD CHECK</li>
+</ul>
+</section>
+</section>
+<section id="writing-robust-statistical-software" class="level2">
+<h2 class="anchored" data-anchor-id="writing-robust-statistical-software">Writing robust statistical software</h2>
+<p>Implement complext statistical methods such that the software is <strong>reliable, and includes appropriate testing</strong> to ensure high quality and validity and ultimately credibility of statistical analysis results.</p>
+<ol type="1">
+<li>choose the <strong>right method</strong> and understand them</li>
+<li>solve the core implementation problem with <strong>prototype</strong> code</li>
+</ol>
+<p>Need to try a few different solutions, compare and select the best one. Might also need to involve domain experts.</p>
+<ol start="3" type="1">
+<li>spend enough time on planning the <strong>design</strong> of the R package</li>
+</ol>
+<p>Don’t write the package right away; instead define the scope, discuss with users, and design the package.</p>
+<p>Start to draw a flow diagram, align names, arguments and classes; write prototype code.</p>
+<ol start="4" type="1">
+<li>assume the package will evolve over time</li>
+</ol>
+<p>Packages you depend on will change; users will require new features</p>
+<p>Write tests</p>
+<ul>
+<li>unit tests</li>
+<li>integration tests</li>
+</ul>
+<p>Make the package extensible</p>
+<ul>
+<li>consider <strong>object oriented</strong> package designs</li>
+<li>combine functions in <strong>pipelines</strong></li>
+</ul>
+<p>Keep it manageable</p>
+<ul>
+<li>avoid too many arguments</li>
+<li>avoid too large functions</li>
+</ul>
+</section>
+</section>
+<section id="cicd-for-r-packages" class="level1">
+<h1>CI/CD for R packages</h1>
+<p>Continuous Integration: tests code changes to maintain the integrity of the codebase</p>
+<p>Continuous Delivery: deploy artifacts (such as an R package) to target systems</p>
+<section id="key-components" class="level2">
+<h2 class="anchored" data-anchor-id="key-components">Key components</h2>
+<section id="dependency-management" class="level3">
+<h3 class="anchored" data-anchor-id="dependency-management">Dependency management</h3>
+<p>Install dependencies (system/OS level; R packages)</p>
+<ul>
+<li>Set <code>repos</code> (can be specified in <code>options()</code>) to e.g.&nbsp;CRAN, BioConductor</li>
+<li><code>renv</code></li>
+<li>container with dependencies pre-installed</li>
+</ul>
+</section>
+<section id="static-code-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="static-code-analysis">Static code analysis</h3>
+<ul>
+<li>Linting (for programmatic and syntax errors) via <code>lintr</code> package</li>
+<li>Code style enforcement via <code>styler</code> package</li>
+<li>Spell checks identifies misspelled words in vignettes, docs and R code via <code>spelling</code> package</li>
+</ul>
+</section>
+<section id="testing" class="level3">
+<h3 class="anchored" data-anchor-id="testing">Testing</h3>
+<ul>
+<li><code>R CMD build</code> builds R packages as a installable artifact</li>
+<li><code>R CMD check</code> runs 20+ checks including unit tests, reports errors, warnigns and notes</li>
+<li>Test coverage reports with <code>covr</code>, checks how many lines of code are covered with tests</li>
+<li><code>R CMD INSTALL</code> tests R package installation</li>
+</ul>
+</section>
+<section id="documentation" class="level3">
+<h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
+<p>Auto-generated docs via <code>Roxygen</code> and <code>pkgdown</code></p>
+</section>
+<section id="release-and-deployments" class="level3">
+<h3 class="anchored" data-anchor-id="release-and-deployments">Release and deployments</h3>
+<p>Release artifacts and deployments to target systems</p>
+<ul>
+<li>Changelog (features, bug fixes) in the <code>NEWS.md</code></li>
+<li>Release: create the package with <code>R CMD build</code>. Validation report with <code>thevalidatoR</code></li>
+<li>Publishing: CRAN, BioConductor</li>
+</ul>
 
 
 
-
-
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -1145,11 +903,11 @@ Collaboration and Competition
 </div>   
     <div class="nav-footer-center">
 <p><a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a> <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark me-2" href="https://orcid.org/0000-0002-3229-6649" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a> <a class="link-dark me-2" href="https://scholar.google.com/citations?user=1zDpIJkAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a> <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a></p>
-<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/blog/technotes_ml_series_20251105_class_unbalanced/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./contact.html">
+    <a class="nav-link" href="../../contact.html">
 <p>Contact</p>
 </a>
   </li>  
@@ -1161,5 +919,5 @@ Collaboration and Competition
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

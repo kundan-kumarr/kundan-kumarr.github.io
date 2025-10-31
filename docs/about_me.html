@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-2575636bf12bba71c1c5b79222bd7450.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d2e6779836cd4aab5cf53d42170b7bf9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-575d3ec4fe9cdb2dfa4aaee319388bac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -128,34 +128,6 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-publication .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-year','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-publication'] = new List('listing-publication', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-project .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -170,6 +142,34 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-project'] = new List('listing-project', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-publication .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-year','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-publication'] = new List('listing-publication', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -297,7 +297,7 @@ window.Quarto = {
  <span class="dropdown-text">Statistics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="hhttps://kundan-kumarr.github.io/SmartGridAI/">
+    <a class="dropdown-item" href="https://kundan-kumarr.github.io/SmartGridAI/">
  <span class="dropdown-text">AI for Smart Grids</span></a>
   </li>  
         <li>
@@ -381,17 +381,17 @@ window.Quarto = {
 <p>Hi! I’m <strong style="color:#007bff;">Kundan Kumar</strong>, a Ph.D.&nbsp;candidate in Computer Science at Iowa State University. My research focuses on creating intelligent and adaptable AI systems for next-generation cyber-physical infrastructure, integrating deep reinforcement learning (DRL), multi-agent systems, large language models (LLMs), and computer vision.</p>
 <p>I develop safety-critical DRL frameworks that incorporate domain knowledge and uncertainty, enabling reliable decision-making in complex environments. Recent projects include exploring transfer learning and enhancing adversarial resilience across systems. I also create LLM-integrated simulation frameworks for autonomous systems, combining perception, trajectory planning, and natural language reasoning.</p>
 <p>Outside of research, I share insights on <a href="https://neuravp.substack.com/">Substack</a> and <a href="https://www.youtube.com/@AIAgentic-007/">YouTube</a>. I enjoy cooking and ice skating 🛼 in my free time.</p>
-<!--a Ph.D. candidate and researcher focused on building intelligent, secure, and adaptable AI systems for next-generation cyber-physical infrastructure. My work bridges deep reinforcement learning (DRL), multi-agent systems, large language models (LLMs), safe and explainable AI, and computer vision, with real-world applications in smart grids, autonomous vehicles, and critical infrastructure.
+<!--Hi! I'm <strong style="color:#007bff;">Kundan Kumar</strong>, a Ph.D. candidate and researcher focused on building intelligent, secure, and adaptable AI systems for next-generation cyber-physical infrastructure. My work bridges deep reinforcement learning (DRL), multi-agent systems, large language models (LLMs), safe and explainable AI, and computer vision, with real-world applications in smart grids, autonomous vehicles, and critical infrastructure.
 My Ph.D. research centers on physics-informed and safety-critical DRL frameworks that embed domain knowledge, safety constraints, and uncertainty into the learning process—enabling agents to make robust and interpretable decisions in dynamic, complex environments. My research within DRL focuses on techniques such as transfer learning, uncertainty quantification, and adversarial resilience to improve generalization, safety, and reliability across diverse tasks and environments.
-I also develop LLM-integrated simulation frameworks for robotics and autonomous systems, combining vision-based perception, trajectory planning, and natural language reasoning to support high-level control and human-AI collaboration. 
+I also develop LLM-integrated simulation frameworks for robotics and autonomous systems, combining vision-based perception, trajectory planning, and natural language reasoning to support high-level control and human-AI collaboration.
 Beyond research, I enjoy sharing my insights through educational content on [Substack](https://neuravp.substack.com/) and [YouTube](https://www.youtube.com/@AIAgentic-007/). Outside of work, I love cooking and Ice skating 🛼.
 -->
 </div></div>
 </div>
 
 <hr>
-<section id="projects-notes-and-interests" class="level3">
-<h3 data-anchor-id="projects-notes-and-interests">Projects, Notes, and Interests</h3>
+<section id="other-research-interests" class="level3">
+<h3 data-anchor-id="other-research-interests">Other Research Interests</h3>
 <style>
   .proj-grid {
     display: grid;
@@ -420,15 +420,15 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
     font-family: 'Nunito', sans-serif;
   }
   .proj-cv strong {
-    color: #228B22; /* Green for Computer Vision */
+    color: #228B22; /* Blue for Computer Vision */
     font-size: 1.05rem;
   }
   .proj-stat strong {
-    color: #007BFF; /* Blue for Statistical ML */
+    color: #57B9FF; /* Blue for Statistical ML */
     font-size: 1.05rem;
   }
   .proj-drive strong {
-    color: #8B0000; /* Dark Red for Self-Driving */
+    color: #8B0000; /* Bluefor Self-Driving */
     font-size: 1.05rem;
   }
   .proj-llm strong {
@@ -438,12 +438,14 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 </style>
 
 <div class="proj-grid">
+
   <a class="proj-card" href="">
     <span class="proj-body proj-llm">
       <strong>LLM Reasoning &amp; Agents</strong><br>
       Agentic workflows (LangChain/LangGraph), tool-use, memory, retrieval, planning &amp; reflection loops for robust multi-step reasoning.
     </span>
   </a>
+
 
   <a class="proj-card" href="">
     <span class="proj-body proj-stat">
@@ -459,24 +461,78 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
   </span>
 </a>
 
-
 </div>
 <hr>
 </section>
 <section id="explore-my-work" class="level3">
 <h3 data-anchor-id="explore-my-work">Explore My Work</h3>
-<div class="grid">
-<section id="blog" class="level4 g-col-3">
-<h4 data-anchor-id="blog">Blog</h4>
-<div id="listing-blog" class="quarto-listing quarto-listing-container-grid">
+<style>
+  .explore-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+    align-items: start;
+  }
+
+  .explore-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .explore-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #1e529d;
+    margin-bottom: 0.8rem;
+  }
+
+  .explore-box {
+    border: 0px solid #007bff33;
+    background: #f9fbff;
+    border-radius: 10px;
+    padding: 0.1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    
+  }
+
+  .explore-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+
+  .explore-link {
+    text-align: center;
+    margin-top: 0.8rem;
+  }
+
+  .explore-link a {
+    color: #e65100;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .explore-link a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<div class="explore-section">
+
+  <div class="explore-item">
+    <h4 class="explore-title">Blogs</h4>
+    <div class="explore-box">
+      <div id="listing-blog" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="Y2xhc3MlMjBpbWJhbGFuY2UlMkNEYXRhJTIwc2NpZW5jZQ==" data-listing-date-sort="1758949200000" data-listing-file-modified-sort="1759857090463" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1054">
-<a href="./blog/technotes_20230228_clinreport_part3/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="RGVlcCUyMExlYXJuaW5nJTJDTkxQJTJDVHJhbnNmb3JtZXJz" data-listing-date-sort="1761022800000" data-listing-file-modified-sort="1761068530668" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2191">
+<a href="./blog/blog_20251020_self_attention_mechanism/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 200;">&nbsp;</div>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-How to handle class-unbalanced data?
+Self-Attention Mechanism
 </h5>
 </div>
 </div></a>
@@ -484,11 +540,14 @@ How to handle class-unbalanced data?
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
-<p><a href=".\blog/" class="about-links subtitle">See all →</a></p>
-</section>
-<section id="talks" class="level4 g-col-3">
-<h4 data-anchor-id="talks">Talks</h4>
-<div id="listing-talk" class="quarto-listing quarto-listing-container-grid">
+    </div>
+    <p class="explore-link"><a href="./blog/">See all →</a></p>
+  </div>
+
+  <div class="explore-item">
+    <h4 class="explore-title">Talks</h4>
+    <div class="explore-box">
+      <div id="listing-talk" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-1">
 <div class="g-col-1" data-index="0" data-categories="TlJFTCUyQ1JlaW5mb3JjZW1lbnQlMjBMZWFybmluZw==" data-listing-date-sort="1752642000000" data-listing-file-modified-sort="1758725980961" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="125">
 <a href="./talks/pes_gm_2025/index.html" class="quarto-grid-link">
@@ -507,11 +566,14 @@ Transferring knowledge from one grid to another grid
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
-<p><a href=".\talks/" class="about-links subtitle">See all →</a></p>
-</section>
-<section id="publications" class="level4 g-col-3">
-<h4 data-anchor-id="publications">Publications</h4>
-<div id="listing-publication" class="quarto-listing quarto-listing-container-grid">
+    </div>
+    <p class="explore-link"><a href="./talks/">See all →</a></p>
+  </div>
+
+  <div class="explore-item">
+    <h4 class="explore-title">Publications</h4>
+    <div class="explore-box">
+      <div id="listing-publication" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-1">
 <div class="g-col-1" data-index="0" data-categories="VW5jZXJ0YWludHklMjBFc2l0bWF0aW9uJTJDVGltZSUyMFNlcmllcyUyMEFuYWx5c2lzJTJDRm9yZWNhc3Rpbmc=" data-listing-file-modified-sort="1758725980419" data-listing-reading-time-sort="2" data-listing-word-count-sort="260">
 <a href="./publications/articles/Journal1.html" class="quarto-grid-link">
@@ -539,11 +601,14 @@ year
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
-<p><a href=".\publications/" class="about-links subtitle">See all →</a></p>
-</section>
-<section id="projects" class="level4 g-col-3">
-<h4 data-anchor-id="projects">Projects</h4>
-<div id="listing-project" class="quarto-listing quarto-listing-container-grid">
+    </div>
+    <p class="explore-link"><a href="./publications/">See all →</a></p>
+  </div>
+
+  <div class="explore-item">
+    <h4 class="explore-title">Projects</h4>
+    <div class="explore-box">
+      <div id="listing-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-1">
 <div class="g-col-1" data-index="0" data-listing-file-modified-sort="1758725980384" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="./projects/drl_mdp/index.html" class="quarto-grid-link">
@@ -561,41 +626,117 @@ Collaboration and Competition
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
-<p><a href="./projects.html" class="about-links subtitle">See all →</a></p>
-</section>
+    </div>
+    <p class="explore-link"><a href="./projects.html">See all →</a></p>
+  </div>
+
 </div>
 <hr>
-<h4 align="center">
-News Highlights
-</h4>
-<table class="news-table">
-<colgroup><col width="15%">
-<col width="85%">
-</colgroup><tbody><tr>
-<td valign="top">
-<strong>[Sep 2025]</strong>
-</td>
-<td>
-Our paper on <a href="">Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification</a> has been accepted to <a href="https://www.sciencedirect.com/science/article/pii/S037877962500848X?dgcid=coauthor"> Journal on Electric Power Systems Research 2025</a>.
-</td>
-</tr>
-<tr>
-<td valign="top">
-<strong>[Jul 2025]</strong>
-</td>
-<td>
-Selected for the <a href="https://sites.google.com/cohere.com/coherelabs-community/community-programs/summer-school">Cohere Machine Learning Summer School</a>, hosted by Cohere Labs.
-</td>
-</tr>
-<tr>
-<td valign="top">
-<strong>[Mar 2025]</strong>
-</td>
-<td>
-Our paper on <a href="">Advanced Semi-Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems</a> has been accepted to <a href="https://pes-gm.org/">IEEE PES General Meeting 2025</a>.
-</td>
-</tr>
-</tbody></table>
+<style>
+.news-container {
+  position: relative;
+  padding-left: 10rem;
+  margin-left: 2rem;
+}
+
+.news-container::before {
+  content: '';
+  position: absolute;
+  left: 8rem;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #d0d0d0;
+}
+
+.news-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding: 1.2rem 1.5rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-left: 1.5rem;
+}
+
+.news-item:hover {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,123,255,0.15);
+  transform: translateX(5px);
+}
+
+.news-item::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #f8f9fa;
+}
+.news-item::after {
+  content: '';
+  position: absolute;
+  left: -3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background: #007bff;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #007bff;
+}
+
+.news-date {
+  position: absolute;
+  left: -10.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  color: #007bff;
+  font-size: 0.9rem;
+  text-align: right;
+  width: 7rem;
+}
+
+.news-content {
+  color: #333;
+  line-height: 1.7;
+}
+
+.news-content a {
+  color: #0056b3;
+  text-decoration: none;
+}
+</style>
+
+<h4 align="center">News Highlights</h4>
+<div class="news-container">
+  <div class="news-item">
+    <div class="news-date">[Sep 2025]</div>
+    <div class="news-content">
+      Our paper on <a href="">Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification</a> has been accepted to <a href="https://www.sciencedirect.com/science/article/pii/S037877962500848X?dgcid=coauthor">Journal on Electric Power Systems Research 2026</a>.
+    </div>
+  </div>
+  
+  <div class="news-item">
+    <div class="news-date">[Jul 2025]</div>
+    <div class="news-content">
+      Selected for the <a href="https://sites.google.com/cohere.com/coherelabs-community/community-programs/summer-school">Cohere Machine Learning Summer School</a>, hosted by Cohere Labs.
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-date">[Mar 2025]</div>
+    <div class="news-content">
+      Our paper on <a href="">Advanced Semi-Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems</a> has been accepted to <a href="https://pes-gm.org/">Conference on IEEE PES General Meeting 2025</a>.
+    </div>
+  </div>
+  
+</div>
 
 
 
