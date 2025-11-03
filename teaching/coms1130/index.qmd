@@ -16,7 +16,7 @@ type: Computer Science
 
 ---
 
-### 🧠 Learning Objectives
+### Learning Objectives
 
 By the end of this course, students will:
 
@@ -26,7 +26,7 @@ By the end of this course, students will:
 
 ---
 
-### 🎯 Topics Covered
+### Topics Covered
 
 **Microsoft Excel (Spreadsheets):**
 
@@ -47,7 +47,7 @@ By the end of this course, students will:
 
 ---
 
-### 👨‍🏫 My Role as Teaching Assistant
+### My Role as Teaching Assistant
 
 As a **Teaching Assistant** for COMS 1130, I contributed to this large foundational course by supporting student learning in both lectures and lab sessions. My responsibilities included:
 
@@ -59,4 +59,4 @@ As a **Teaching Assistant** for COMS 1130, I contributed to this large foundatio
 
 This role helped me strengthen my teaching, mentoring, and technical skills while supporting students in building core competencies that are essential across many academic and professional domains.
 
-> 💡 [Course Catalog](https://www.cs.iastate.edu/courses/com-s-1130) | [Email](mailto:kkumar@iastate.edu)
+> [Course Catalog](https://www.cs.iastate.edu/courses/com-s-1130) | [Email](mailto:kkumar@iastate.edu)

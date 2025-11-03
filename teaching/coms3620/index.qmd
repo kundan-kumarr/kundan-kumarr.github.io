@@ -8,13 +8,13 @@ type: Computer Science
 
 ## COMS 3620 – Object-Oriented Analysis and Design
 
-### 📘 Course Description
+### Course Description
 
 **COMS 3620** is a project-based course focused on **object-oriented requirements analysis and system design**. Students learn to apply **Unified Modeling Language (UML)** and **design patterns** to build robust and evolvable software systems. The course emphasizes teamwork, iterative development, and the communication of design decisions through technical documentation and presentations.
 
 ---
 
-### 🧑‍🏫 My Role as Teaching Assistant
+### My Role as Teaching Assistant
 
 As a **Teaching Assistant** for COMS 3620, I provided critical support to students in both design and implementation phases of large-scale object-oriented projects. My contributions included:
 
@@ -28,7 +28,7 @@ This role enhanced my skills in software architecture, peer instruction, and coa
 
 ---
 
-### 🎯 Learning Outcomes
+### Learning Outcomes
 
 Upon completing the course, students are expected to:
 
@@ -42,7 +42,7 @@ Upon completing the course, students are expected to:
 
 ---
 
-### 📚 Topics Covered
+### Topics Covered
 
 - Procedural & Data Abstraction  
 - Modularity, Objects, State  
@@ -51,4 +51,4 @@ Upon completing the course, students are expected to:
 - Metalinguistic Abstraction  
 - Project Presentations & Evaluation
 
-> 💡 [Course Catalog](http://catalog.iastate.edu/azcourses/com_s/) | [Email](mailto:kkumar@iastate.edu)
+> [Course Catalog](http://catalog.iastate.edu/azcourses/com_s/) | [Email](mailto:kkumar@iastate.edu)

@@ -8,7 +8,7 @@ type: Computer Science
 
 ## COMS 3190 – User Interface Design
 
-### 📘 Course Description
+### Course Description
 
 **COMS 3190** introduces students to the fundamentals of **user interface (UI)** and **user experience (UX)** design through both theory and extensive hands-on development. The course covers **human-computer interaction (HCI)** concepts, front-end and back-end technologies, and the use of modern **frameworks and APIs** for developing web and Windows-based user interfaces.
 
@@ -23,7 +23,7 @@ Students gain experience with:
 
 ---
 
-### 🧑‍🏫 My Role as Teaching Assistant
+### My Role as Teaching Assistant
 
 As a **Teaching Assistant** for COMS 3190, I supported over 100 students in learning full-stack web development principles within the context of UI/UX design. My key responsibilities included:
 
@@ -36,7 +36,7 @@ As a **Teaching Assistant** for COMS 3190, I supported over 100 students in lear
 
 ---
 
-### 🎯 Learning Outcomes
+### Learning Outcomes
 
 Upon completing the course, students are expected to:
 
@@ -48,7 +48,7 @@ Upon completing the course, students are expected to:
 
 ---
 
-### 📚 Topics Covered
+### Topics Covered
 
 - Design Principles for User Interfaces  
 - Human-Computer Interaction (HCI) Fundamentals  
@@ -63,7 +63,7 @@ Upon completing the course, students are expected to:
 - Windows-based UI Development  
 - Client/Server Architecture
 
-> 💡 [Course Catalog](http://catalog.iastate.edu/azcourses/com_s/) | [Email](mailto:kkumar@iastate.edu)
+> [Course Catalog](http://catalog.iastate.edu/azcourses/com_s/) | [Email](mailto:kkumar@iastate.edu)
 
 
 <!-- Date: Monday 23 October 2023, 6:30PM to 8:00PM, CEST 

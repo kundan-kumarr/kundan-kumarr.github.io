@@ -9,7 +9,7 @@ type: Computer Science
 ![](coms3630.png)
 
 ## COMS 3630 – Introduction to Database Management Systems
-### 📘 Course Description
+### Course Description
 
 **COMS 3630** offers a comprehensive introduction to **database systems**, covering both theoretical foundations and practical implementation. Students explore various data models (relational, object-oriented, and semistructured), learn **query languages** such as SQL and NoSQL, and build full-stack applications that integrate modern database backends with web interfaces.
 
@@ -17,7 +17,7 @@ The course emphasizes database **design**, **optimization**, and **application d
 
 ---
 
-### 🧑‍🏫 My Role as Teaching Assistant
+### My Role as Teaching Assistant
 
 As a **Teaching Assistant** for COMS 3630, I supported over 100 students in understanding key database concepts and building end-to-end data-driven applications. My responsibilities included:
 
@@ -29,7 +29,7 @@ As a **Teaching Assistant** for COMS 3630, I supported over 100 students in unde
 
 ---
 
-### 🎯 Learning Outcomes
+### Learning Outcomes
 
 By the end of the course, students are expected to:
 
@@ -40,7 +40,7 @@ By the end of the course, students are expected to:
 
 ---
 
-### 📚 Topics Covered
+### Topics Covered
 
 - Entity-Relationship (ER) Modeling  
 - Relational Model & Relational Algebra  
@@ -53,7 +53,7 @@ By the end of the course, students are expected to:
 - Web Application Integration using SQL APIs & ORMs  
 - Application Development using Host Languages (e.g., Python, JavaScript)
 
-> 💡 [Course Catalog](http://catalog.iastate.edu/azcourses/com_s/) | [Email](mailto:kkumar@iastate.edu)
+> [Course Catalog](http://catalog.iastate.edu/azcourses/com_s/) | [Email](mailto:kkumar@iastate.edu)
 
 
 
