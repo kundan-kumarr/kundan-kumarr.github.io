@@ -1,7 +1,7 @@
 ---
 title: "COMS 4170: Software Testing"
 description: "Software Testing"
-date: "2025-05-04"
+date: "2025-05-24"
 categories: [course, Computer Science]
 type: Computer Science
 ---
@@ -12,6 +12,9 @@ type: Computer Science
 ### Overview
 
 Rigorous study of software testing principles, methodologies, management strategies, and tools. Topics include coverage criteria; specification- and structure-based test design; integration, system, and regression testing; automated test generation; GUI testing; mutation and metamorphic testing; and test management.
+
+![](software_testing.png)
+*Figure: Iterative flow of software testing key phases from requirements to closure.*
 
 ### Learning Objectives:
 
