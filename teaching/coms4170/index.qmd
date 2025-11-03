@@ -1,30 +1,39 @@
 ---
-title: "COMS 4170"
+title: "COMS 4170: Software Testing"
 description: "Software Testing"
 date: "2025-05-04"
 categories: [course, Computer Science]
 type: Computer Science
 ---
 
-## COMS 4170 – Software Testing
+## Software Testing
+[COMS 4170](https://www.cs.iastate.edu/courses/com-s-4170/) is a rigorous course that delves into advanced methods of testing and quality assurance for software at both the undergraduate and graduate levels the Iowa State University. It is taught by Professor [Myra Cohen](https://www.cs.iastate.edu/people/myra-cohen).
 
-[COMS 4170](https://www.cs.iastate.edu/courses/com-s-4170/) is an upper-level undergraduate/graduate course at Iowa State University, taught by Professor [Myra Cohen](https://www.cs.iastate.edu/people/myra-cohen), focusing on rigorous methods for software testing and quality assurance.
+### Overview
 
-I served as the **Teaching Assistant** for this course in Spring 2025, where I was responsible for:
+Rigorous study of software testing principles, methodologies, management strategies, and tools. Topics include coverage criteria; specification- and structure-based test design; integration, system, and regression testing; automated test generation; GUI testing; mutation and metamorphic testing; and test management.
 
-- Leading weekly lab sessions and guiding students through practical exercises on test case generation and software testing tools.
-- Assisting in course content delivery and reinforcing core topics such as black-box and white-box testing, test adequacy criteria, integration, and regression testing.
-- Designing and grading assignments and exams, ensuring alignment with pedagogical goals.
-- Providing one-on-one mentoring to students to support their understanding of software quality assurance methodologies.
+### Learning Objectives:
+
+- Design tests to meet realistic coverage criteria
+- Apply standard software testing techniques and tools
+- Gain hands-on experience with automation and at least one advanced testing method
+
+My Role (**Computer Science Graduate Teaching Assistant**, Spring 2025)
+
+- Assisted in delivering course content and reinforced core topics such as black-box and white-box testing, adequacy and coverage criteria, integration, and regression testing.
+- Supported the design, grading, and feedback process for assignments and examinations.
+- Provided one-on-one mentoring and technical guidance to help students strengthen their understanding of software reliability, testing tools, and debugging practices.
 
 ### Key Topics Covered:
+
 - Principles and methodologies of software testing
-- Test design techniques: black-box and white-box
-- Test models and adequacy criteria
-- Integration and system testing
-- Regression testing strategies
-- Use of automated software testing tools
-- Testing management and process strategies
+- Test design techniques, including black-box and white-box testing
+- Test models, adequacy criteria, and coverage metrics
+- Integration, system, and regression testing strategies
+- Automated test generation and tool-based testing frameworks
+- Test management, documentation, and process optimization
+- Advanced topics such as mutation testing, metamorphic testing, and AI-based testing approaches
 
 **Textbook:** *Introduction to Software Testing*, 2nd edition by Paul Ammann and Jeff Offutt.
 

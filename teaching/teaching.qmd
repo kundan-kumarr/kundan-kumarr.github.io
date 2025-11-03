@@ -3,9 +3,11 @@ title: "Teaching"
 page-layout: article
 ---
 
-As a Teaching Assistant at Iowa State University, I am dedicated to creating an inclusive and dynamic learning environment that enables students to excel in computer science. My teaching approach emphasizes practical application of theoretical concepts, encouraging students to develop hands-on experience in software development, user interface design, and database management. I believe in preparing students for real-world challenges in the technology industry through project-based learning and personalized support.
+As a Computer Science Graduate Teaching Assistant at Iowa State University with over five years of teaching experience, I focus on creating an comprehensive, engaging, and challenging learning environment that meets the different needs of students. My teaching approach emphasizes connecting theory with real-world practice, helping students turn basic computer science ideas into practical skills. I encourage hands-on learning through software development, user interface design, and database projects that build both technical skills and problem-solving abilities. By combining project-based tasks with personalized guidance, I aim to prepare students to face current challenges in the tech field with confidence and creativity. My goal is to help students be ready for jobs in technology and able to think of new ideas.
 
-**Courses I have served as a Teaching Assistant or Mentor in:**
+::: {.callout-note title="Courses I have served as a Computer Science Graduate Teaching Assistant or Mentor in:"}
+:::
+
 
 <style>
 /* Hide visually but keep in DOM so it appears in TOC */
@@ -34,8 +36,6 @@ nav[role="doc-toc"] li > a .nav-link-text {
 </style>
 
 
-
-
 ## Spreadsheets and Databases {.visually-hidden #coms1130}
 ## COMS 1130 – Spreadsheets and Databases {.unlisted}
 
@@ -50,7 +50,7 @@ nav[role="doc-toc"] li > a .nav-link-text {
 ::: {.g-col-12 .g-col-md-10}
 [Fall 2016](/teaching/coms1130/)
 
-Foundational course in using tools like Microsoft Excel and Access for data organization, analysis, and reporting. Students learn formulas, pivot tables, queries, and form design for practical business and data applications.
+This course is a foundational course focused on using tools such as Microsoft Excel and Microsoft Access for effective data organization, analysis, and reporting. Students develop proficiency in applying formulas, creating pivot tables, designing queries, and building forms and visual analyses to support practical business and data-driven decision-making.
 :::
 
 :::
@@ -67,7 +67,8 @@ Foundational course in using tools like Microsoft Excel and Access for data orga
 ::: {.g-col-12 .g-col-md-10}
 [Fall 2022](/teaching/coms3090/), &nbsp; [Spring 2023](/teaching/coms3090/), &nbsp; [Spring 2024](/teaching/coms3090/), &nbsp; [Fall 2025](/teaching/coms3090/)
 
-**Hands-on course** focused on modern software development practices, including Git, Agile methodologies, code reviews, unit testing, and CI/CD. Students engage in team-based projects that simulate real-world workflows, emphasizing collaboration, documentation, and iterative development.
+This course is a practical, **hands-on program** that primarily deals with modern software development standards. It mainly focuses on Git, Agile methodologies, code reviews, unit-testing, and continuous integration and deployment (CI/CD). Students collaborate in team-based projects that replicate development workflows of the real world. These projects put a particular emphasis on collaboration, documentation, and iterative improvement. Finally, the course is about comprehensive Android application and game development, which includes design, implementation, testing, and deployment.
+
 :::
 
 :::
@@ -84,7 +85,7 @@ Foundational course in using tools like Microsoft Excel and Access for data orga
 ::: {.g-col-12 .g-col-md-10}
 [Fall 2023](/teaching/coms3190/)
 
-Explores the principles of designing user-friendly and efficient interfaces. Combines hardware and data-driven UI practices, integrating Raspberry Pi for IoT applications and Nodejs for fronted visualization and interaction.
+This course explores the principles of designing user-friendly and efficient interfaces. It integrates hardware and data-driven UI practices, incorporating Raspberry Pi for Internet of Things (IoT) applications and Node.js for front-end visualization and interactive design.
 :::
 
 :::
@@ -102,7 +103,7 @@ Explores the principles of designing user-friendly and efficient interfaces. Com
 ::: {.g-col-12 .g-col-md-10}
 [Fall 2020](/teaching/coms3620/), &nbsp; [Spring 2021](/teaching/coms3620/), &nbsp; [Fall 2021](/teaching/coms3620/), &nbsp; [Fall 2024](/teaching/coms3620/)
 
-Teaches how to model and design software systems using object-oriented principles. Emphasis is on UML diagrams, design patterns, and implementation in Java to build modular, maintainable, and scalable software.
+This course teaches the modeling and design of software systems using object-oriented principles. It emphasizes the use of UML diagrams, design patterns, and Java implementation to develop modular, maintainable, and scalable software solutions.
 :::
 
 :::
@@ -119,12 +120,13 @@ Teaches how to model and design software systems using object-oriented principle
 ::: {.g-col-12 .g-col-md-10}
 [Spring 2022](/teaching/coms3630/)
 
-Covers the fundamentals of database architecture, data modeling, and SQL. Students gain hands-on experience with relational databases and explore indexing, transactions, normalization, and database design.
-:::
+This course covers the fundamentals of database architecture, data modeling, and Structured Query Language (SQL). Students gain hands-on experience with relational database systems while exploring key concepts such as indexing, transactions, normalization, and comprehensive database design.
 
 :::
 
-## Software Testing {.visually-hidden #coms3630}
+:::
+
+## Software Testing {.visually-hidden #coms4170}
 ## COMS 4170 – Software Testing {.unlisted}
 
 
@@ -137,19 +139,19 @@ Covers the fundamentals of database architecture, data modeling, and SQL. Studen
 ::: {.g-col-12 .g-col-md-10}
 [Spring 2025](/teaching/coms4170/)
 
-Focuses on the principles and practices of software verification and validation. Students learn to design and execute test cases, use debugging tools, and apply automation frameworks to ensure software quality and reliability.
+This course focuses on the principles and practices of software verification and validation. Students learn to design and execute effective test cases, utilize debugging tools, and implement automation frameworks to ensure software quality, reliability, and maintainability.
 :::
 
 :::
 
 
 ## Future Goals
+I am dedicated to the continuous development of my teaching methods and curriculum design. My objectives consist of:
 
-I am committed to continually improving teaching methods and curriculum design. My goals include:
+- Incorporating new AI and software development tools as tools for student learning.
+- Creating interactive, experiential, and project-based learning environments that encourage students to be actively involved.
+- Becoming a resource to the community of computer science education through the innovation of curricula, research, and guidance of other educators.
+- Broadening the students' access to the computing field where they can tackle the challenges of the real world by using their theoretical knowledge.
 
-- Incorporating emerging AI and software development tools into teaching.
-- Creating interactive, hands-on, project-based learning environments.
-- Contributing to the computer science education community through curriculum research and mentoring.
-- Expanding opportunities for students to apply theory to real-world computing challenges.
+[Email](mailto:cs.kundann@gmail.com) me if you want to collaborate or learn more about my teaching and research initiatives.
 
-[Reach out via email](mailto:cs.kundann@gmail.com) if you'd like to collaborate or learn more.

@@ -47,7 +47,7 @@ By the end of this course, students will:
 
 ---
 
-### My Role as Teaching Assistant
+### My Role as Computer Science Teaching Assistant
 
 As a **Teaching Assistant** for COMS 1130, I contributed to this large foundational course by supporting student learning in both lectures and lab sessions. My responsibilities included:
 
