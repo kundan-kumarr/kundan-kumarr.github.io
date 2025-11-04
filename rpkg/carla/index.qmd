@@ -8,5 +8,3 @@ categories: [carla Simulator]
 
 This package provides  discovery.
 
-<!--[GitHub Link](https://github.com/chizapoth/noreden)
- -->

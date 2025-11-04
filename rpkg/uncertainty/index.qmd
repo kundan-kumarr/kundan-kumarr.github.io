@@ -13,5 +13,3 @@ categories: [utility]
 * calyear
 * season week (u)
 
-
-<!-- [GitHub link](https://github.com/csids/cstime) -->

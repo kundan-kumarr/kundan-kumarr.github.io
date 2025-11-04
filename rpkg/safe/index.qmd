@@ -8,7 +8,6 @@ categories: [Utility]
 
 This oding. 
 
-<!--[GitHub Link](https://github.com/chizapoth/medicode) -->
 
 
 Planned content: 
