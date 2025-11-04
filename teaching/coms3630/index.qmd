@@ -1,5 +1,5 @@
 ---
-title: "COMS 3630"
+title: "COMS 3630: Introduction to Database Management Systems"
 description: "Introduction to Database Management Systems"
 date: "2025-01-10"
 categories: [teaching, Computer Science]
@@ -8,7 +8,7 @@ type: Computer Science
 
 ![](coms3630.png)
 
-## COMS 3630 – Introduction to Database Management Systems
+## Introduction to Database Management Systems
 ### Course Description
 
 **COMS 3630** offers a comprehensive introduction to **database systems**, covering both theoretical foundations and practical implementation. Students explore various data models (relational, object-oriented, and semistructured), learn **query languages** such as SQL and NoSQL, and build full-stack applications that integrate modern database backends with web interfaces.
