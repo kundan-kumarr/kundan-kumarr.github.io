@@ -10,10 +10,10 @@ citation: false
 
 comments:
     giscus:
-      repo: jadeynryan/jadey-website-giscus
-      repo-id: R_kgDOKisUNQ
+      repo: kundan-kumarr/kundan-website-giscus
+      repo-id: R_kgDOQPG9Og
       category: Announcements
-      category-id: DIC_kwDOKisUNc4CaSRD
+      category-id: DIC_kwDOQPG9Os4Cxbe7
       mapping: pathname
       reactions-enabled: true
       loading: lazy
