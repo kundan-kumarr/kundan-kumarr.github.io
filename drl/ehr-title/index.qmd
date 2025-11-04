@@ -4,7 +4,7 @@ description: "Develop an AI agent to enhance patient education by delivering per
 image: "hex_ggehr2.png"
 ---
 
-![](hex_ggehr.png){width=20%}
+![](hex.png){width=20%}
 
 `ggehr` (read: gg E-H-R) stands for ggplot2 extension for EHR data, which provides a set of tools to facilitate EHR (Electronic Health Records) visualization.
 
