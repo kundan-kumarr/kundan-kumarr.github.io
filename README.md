@@ -1,8 +1,8 @@
 ### Personal Website
 #####  🌐 kundan-kumarr.github.io
 
-This repository contains the source files for my personal academic website — showcasing my **research**, **teaching**, and **projects**.  
-The site is built using [**Quarto**](https://quarto.org/) and hosted on **GitHub Pages**.
+- This repository contains the source files for my personal academic website — showcasing my **research**, **teaching**, and **projects**.  
+- The site is built using [**Quarto**](https://quarto.org/) and hosted on **GitHub Pages**.
 ---
 
 #### 🧭 Overview
@@ -27,4 +27,5 @@ quarto preview
 This website design and structure were adapted from:
 - Jadey Ryan’s [personal website](https://jadeyryan.com/)
 - Chi Zhang’s [personal website](https://chizapoth.github.io/)
+  
 It is built using the excellent guide [Quarto for Academics](https://quarto.org/docs/blog/posts/2023-05-22-quarto-for-academics/)
