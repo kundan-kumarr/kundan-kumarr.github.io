@@ -1,44 +1,25 @@
 ---
 title: "COMS 3630: Introduction to Database Management Systems"
-description: "Introduction to Database Management Systems"
+description: "A foundational course on the design, implementation, and optimization of modern database systems."
 date: "2025-01-10"
-categories: [teaching, Computer Science]
-type: Computer Science
+categories: ["Course", "Computer Science", "Database"]
+type: "Course"
+image: coms3630.png
 ---
 
-![](coms3630.png)
+## Database Management Systems
 
-## Introduction to Database Management Systems
 ### Course Description
 
 **COMS 3630** offers a comprehensive introduction to **database systems**, covering both theoretical foundations and practical implementation. Students explore various data models (relational, object-oriented, and semistructured), learn **query languages** such as SQL and NoSQL, and build full-stack applications that integrate modern database backends with web interfaces.
 
 The course emphasizes database **design**, **optimization**, and **application development**, using tools like MySQL, MongoDB, and Neo4J.
-
----
-
-### My Role as Teaching Assistant
-
-As a **Teaching Assistant** for COMS 3630, I supported over 100 students in understanding key database concepts and building end-to-end data-driven applications. My responsibilities included:
-
-- **Lab Instruction & Demonstrations:** Led weekly sessions on topics like SQL programming, ER modeling, and NoSQL databases (MongoDB, Neo4J).
-- **Project Mentorship:** Guided students through semester-long projects, helping them design schemas, write efficient queries, and integrate databases with web applications.
-- **Technical Support:** Assisted students in implementing transactions, managing storage, and debugging issues related to query execution and performance.
-- **Design Review & Grading:** Evaluated assignments and database design submissions, providing constructive feedback aligned with best practices.
-- **Office Hours:** Offered one-on-one and group-based academic support on database internals, relational algebra, and query optimization strategies.
-
----
-
-### Learning Outcomes
-
-By the end of the course, students are expected to:
-
-- Design and implement relational databases using **ER modeling and normalization** techniques.  
-- Develop database-driven applications using **SQL**, **APIs**, and **ORM frameworks**.  
-- Work with **NoSQL systems** including document-based (MongoDB) and graph-based (Neo4J) databases.  
-- Understand the inner workings of a DBMS, including **query processing**, **transaction management**, and **storage optimization**.
-
----
+<div style="text-align: center;">
+  <img src="coms3630.png" alt="Database Management Systems Overview" style="width:80%; max-width:700px;">
+  <p style="font-style: italic; color:#8B0000; margin-top:8px;">
+    Figure: Conceptual overview of database management systems and their core components.
+  </p>
+</div>
 
 ### Topics Covered
 
@@ -51,16 +32,32 @@ By the end of the course, students are expected to:
 - Cost Estimation & Query Optimization  
 - Transaction Management & Concurrency Control  
 - Web Application Integration using SQL APIs & ORMs  
-- Application Development using Host Languages (e.g., Python, JavaScript)
-
-> [Course Catalog](http://catalog.iastate.edu/azcourses/com_s/) | [Email](mailto:kkumar@iastate.edu)
+- Application Development using Host Languages (e.g., Python, Java)
 
 
+### My Role
 
-<!-- 
-I have been involved in multiple introductory R workshops at University of Oslo, sometimes as the instructor and sometimes, a helper.
+<p style="color:#1E90FF; font-weight:bold; font-size:1.05em;">
+Computer Science Graduate Teaching Assistant (Spring 2023)
+</p>
 
-You can check the course material for my [ggplot2](https://github.com/chizapoth/chizapoth.github.io/blob/main/resources/lecture_ggplot.pdf) lecture.
+As a **Teaching Assistant** for COMS 3630, I supported over 100 students in understanding key database concepts and building end-to-end data-driven applications. My responsibilities included:
 
-More information about the Carpentries at University of Oslo can be found here: [Carpentries at UiO](https://uio-carpentry.github.io)
--->
+- **Lab Instruction & Demonstrations:** Led weekly sessions on topics like SQL programming, ER modeling, and NoSQL databases (MongoDB, Neo4J).
+- **Project Mentorship:** Guided students through semester-long projects, helping them design schemas, write efficient queries, and integrate databases with web applications.
+- **Technical Support:** Assisted students in implementing transactions, managing storage, and debugging issues related to query execution and performance.
+- **Design Review & Grading:** Evaluated assignments and database design submissions, providing constructive feedback aligned with best practices.
+- **Office Hours:** Offered one-on-one and group-based academic support on database internals, relational algebra, and query optimization strategies.
+
+
+## Learning Outcomes
+
+By the end of the course, students are expected to:
+
+- Design and implement relational databases using **ER modeling and normalization** techniques.  
+- Develop database-driven applications using **SQL**, **APIs**, and **ORM frameworks**.  
+- Work with **NoSQL systems** including document-based (MongoDB) and graph-based (Neo4J) databases.  
+- Understand internal DBMS operations, including **query processing**, **transaction management**, and **storage optimization**.
+
+
+

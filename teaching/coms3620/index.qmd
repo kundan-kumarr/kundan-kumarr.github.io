@@ -1,54 +1,67 @@
 ---
-title: "COMS 3620"
-description: "Object-Oriented Analysis and Design"
+title: "COMS 3620: Object-Oriented Analysis and Design"
+description: "A project-based course emphasizing UML, design patterns, and software architecture principles."
 date: "2025-01-10"
-categories: [teaching, Computer Science]
-type: Computer Science
+categories: ["Course", "Computer Science", "Teaching"]
+type: "Course"
+image: coms3620.png
 ---
 
-## COMS 3620 – Object-Oriented Analysis and Design
+
+## Object-Oriented Analysis and Design
 
 ### Course Description
 
-**COMS 3620** is a project-based course focused on **object-oriented requirements analysis and system design**. Students learn to apply **Unified Modeling Language (UML)** and **design patterns** to build robust and evolvable software systems. The course emphasizes teamwork, iterative development, and the communication of design decisions through technical documentation and presentations.
+**COMS 3620** is a **project-based course** focused on **object-oriented requirements analysis and system design**.  
+Students learn to apply **Unified Modeling Language (UML)** and **design patterns** to develop robust, scalable, and maintainable software systems.  
 
----
-
-### My Role as Teaching Assistant
-
-As a **Teaching Assistant** for COMS 3620, I provided critical support to students in both design and implementation phases of large-scale object-oriented projects. My contributions included:
-
-- **UML & Design Mentorship:** Assisted students in modeling system requirements using UML (use case diagrams, class diagrams, sequence diagrams).
-- **Project Guidance:** Advised student teams during the full development cycle—from requirement analysis and domain modeling to implementation and testing.
-- **Design Critique & Feedback:** Evaluated and gave feedback on design homeworks, helping students strengthen their reasoning with design principles and patterns.
-- **Technical Assistance:** Supported Java implementation of OO designs, clarifying concepts like inheritance, polymorphism, abstraction, and class hierarchies.
-- **Presentation Coaching:** Helped teams prepare and deliver clear, well-structured final project presentations and reports.
-
-This role enhanced my skills in software architecture, peer instruction, and coaching students on both **technical correctness** and **design clarity**.
-
----
-
-### Learning Outcomes
-
-Upon completing the course, students are expected to:
-
-- Analyze software system requirements and model problem domains  
-- Design robust object-oriented systems using design principles and heuristics  
-- Apply and justify the use of **design patterns**  
-- Produce UML-based design documentation  
-- Implement object-oriented solutions in **Java** using abstraction, inheritance, and polymorphism  
-- Present and explain team design decisions in written and oral formats  
-- Collaborate effectively in team-based development projects
-
----
+The course emphasizes **teamwork**, **iterative development**, and **effective communication of design decisions** through documentation and presentations.
+<div style="text-align: center;">
+  <img src="coms3620.png" alt="Object-Oriented Analysis and Design Overview" style="width:80%; max-width:700px;">
+  <p style="font-style: italic; color:#8B0000; margin-top:8px;">
+    Figure: UML-driven process for analyzing, designing, and implementing object-oriented systems.
+  </p>
+</div>
 
 ### Topics Covered
 
 - Procedural & Data Abstraction  
-- Modularity, Objects, State  
+- Modularity, Objects, and State  
 - Unified Modeling Language (UML)  
-- Design Principles & Patterns  
+- Object-Oriented Design Principles & Patterns  
 - Metalinguistic Abstraction  
-- Project Presentations & Evaluation
+- Software Architecture & Evaluation  
+- Team Presentations and Final Project Showcase
 
-> [Course Catalog](http://catalog.iastate.edu/azcourses/com_s/) | [Email](mailto:kkumar@iastate.edu)
+### My Role
+
+<p style="color:#1E90FF; font-weight:bold; font-size:1.05em;">
+Computer Science Graduate Teaching Assistant (Fall 2024)
+</p>
+
+As a Teaching Assistant for COMS 3620, I provided end-to-end guidance to students through both the design and implementation phases of **large-scale object-oriented projects**. My contributions included:
+
+
+- **UML & Design Mentorship:** Assisted students in modeling system requirements using UML (use case diagrams, class diagrams, sequence diagrams).
+- **Project Guidance:** Advised student teams during the full development cycle—from requirement analysis and domain modeling to implementation and testing.
+- **Design Critique & Feedback:** Evaluated and gave feedback on design homeworks, helping students strengthen their reasoning with design principles and patterns.
+- **Technical Assistance:** Supported Java implementation of OOPS designs, clarifying concepts like inheritance, polymorphism, abstraction, and class hierarchies.
+- **Presentation Coaching:** Helped teams prepare and deliver clear, well-structured final project presentations and reports.
+
+This experience strengthened my expertise in **software architecture**, **model-driven design**, and **pedagogical mentoring** for complex system development.
+
+
+
+## Learning Outcomes
+
+Upon completing the course, students will be able to:
+
+- Analyze software requirements and model problem domains using UML.  
+- Design robust object-oriented architectures following proven design principles.  
+- Apply and justify the use of **design patterns** in software construction.  
+- Produce UML-based design documentation and diagrams.  
+- Implement OOPS designs in **Java** using inheritance, abstraction, and polymorphism.  
+- Communicate and defend design decisions through written and oral presentations.  
+- Collaborate effectively in **team-based development environments**.
+
+

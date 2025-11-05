@@ -1,54 +1,62 @@
 ---
-title: "COMS 3190"
-description: "User Interface Design"
+title: "COMS 3190: User Interface Design"
+description: "A hands-on course exploring user interface and experience design through full-stack web development."
 date: "2025-01-10"
-categories: [teaching, Computer Science]
-type: Computer Science
+categories: ["Course", "Computer Science", "Teaching"]
+type: "Course"
+image: coms3190.png
 ---
 
-## COMS 3190 – User Interface Design
+## User Interface Design
 
 ### Course Description
 
-**COMS 3190** introduces students to the fundamentals of **user interface (UI)** and **user experience (UX)** design through both theory and extensive hands-on development. The course covers **human-computer interaction (HCI)** concepts, front-end and back-end technologies, and the use of modern **frameworks and APIs** for developing web and Windows-based user interfaces.
+**COMS 3190** introduces students to the principles and practices of **user interface (UI)** and **user experience (UX)** design through a balance of theory and extensive hands-on development.  
+The course covers **human-computer interaction (HCI)** concepts, **front-end and back-end technologies**, and the use of modern **frameworks and APIs** for developing web and Windows-based user interfaces.  
 
-Students gain experience with:
-
+Students gain experience with:  
 - UI design principles  
-- HTML, CSS, JavaScript  
-- React, Node.js, Express  
+- HTML, CSS, and JavaScript  
+- React, Node.js, and Express  
 - Databases (MongoDB and MySQL)  
 - UML modeling and event-driven architecture  
 - Web and desktop-based client/server applications
 
+<div style="text-align: center;">
+  <img src="coms3190.png" alt="User Interface Design Overview" style="width:80%; max-width:700px;">
+  <p style="font-style: italic; color:#8B0000; margin-top:8px;">
+    Figure: Design-to-development process for building interactive and user-centered applications.
+  </p>
+</div>
+
+### My Role
+
+<p style="color:#1E90FF; font-weight:bold; font-size:1.05em;">
+Computer Science Graduate Teaching Assistant (Fall 2024)
+</p>
+
+As a Teaching Assistant for COMS 3190, I supported over **100 students** in learning **full-stack web development** principles within the context of UI/UX design. My responsibilities included:
+
+- **Technical Instruction:** Led lab sessions and live demos on **HTML**, **CSS**, **JavaScript**, **React**, and **Node.js**, focusing on responsive, accessible design.  
+- **Project Mentorship:** Guided teams through **semester-long UI/UX projects**, helping with **front-end development**, **API design**, and **database integration**.  
+- **Design & Modeling Support:** Assisted students in using **UML** for system modeling and behavioral analysis, including **use case** and **interaction diagrams**.  
+- **Testing Assistance:** Supported **unit testing** and **UI testing** in JavaScript and assisted with **debugging web applications**.  
+- **Code Review & Feedback:** Evaluated submissions and provided feedback on **usability**, **design consistency**, and **code efficiency**.  
+- **Office Hours:** Offered individualized technical support and design mentoring to strengthen students’ understanding of **UI/UX best practices**.
+
+## Learning Outcomes
+
+By the end of this course, students will be able to:
+
+- Design and implement **interactive, accessible user interfaces**.  
+- Apply principles of **HCI, UI design, UX testing**, and **event-driven architecture**.  
+- Develop **responsive full-stack applications** using modern frameworks and tools.  
+- Model system behavior using **UML and interaction diagrams**.  
+- Test and deploy applications using **modern development environments** and **version control**.
+
 ---
 
-### My Role as Teaching Assistant
-
-As a **Teaching Assistant** for COMS 3190, I supported over 100 students in learning full-stack web development principles within the context of UI/UX design. My key responsibilities included:
-
-- **Technical Instruction:** Provided lab support and walkthroughs for building responsive interfaces using HTML, CSS, JavaScript, React, and Node.js.
-- **Project Mentorship:** Guided students through semester-long UI/UX projects, including front-end development, API design, and database integration.
-- **Design & Modeling Help:** Assisted students in using UML for system modeling and behavioral analysis, including use case and interaction diagrams.
-- **Testing Support:** Supported unit testing and UI testing procedures in JavaScript and helped students debug their web applications.
-- **Code Review & Feedback:** Reviewed student submissions and provided feedback on usability, design consistency, and code efficiency.
-- **Office Hours:** Held weekly office hours to help students troubleshoot development issues and understand best practices in UI/UX design.
-
----
-
-### Learning Outcomes
-
-Upon completing the course, students are expected to:
-
-- Design and implement interactive and accessible user interfaces.
-- Apply principles of **HCI, UI design, UX testing**, and event-driven architecture.
-- Use industry-standard tools to build and evaluate responsive, full-stack applications.
-- Analyze and model system behavior using **UML and interaction diagrams**.
-- Deploy and test applications with modern development environments and version control.
-
----
-
-### Topics Covered
+## Topics Covered
 
 - Design Principles for User Interfaces  
 - Human-Computer Interaction (HCI) Fundamentals  
@@ -60,21 +68,6 @@ Upon completing the course, students are expected to:
 - API & Framework Integration  
 - UML Diagrams (Structural, Behavioral, Interaction)  
 - Unit & UI Testing in JavaScript  
-- Windows-based UI Development  
-- Client/Server Architecture
+- Windows-Based UI Development  
+- Client/Server Architecture  
 
-> [Course Catalog](http://catalog.iastate.edu/azcourses/com_s/) | [Email](mailto:kkumar@iastate.edu)
-
-
-<!-- Date: Monday 23 October 2023, 6:30PM to 8:00PM, CEST 
-
-Place: KO2-F-153, Rämistrasse 71, Zürich.
-
-[Event link](https://www.meetup.com/rladies-zurich/events/296330423/)
-
-Presenter: [Chi Zhang](https://chizapoth.github.io). Feel free to reach out with comments and feedback!
-
-Workshop [site](https://chizapoth.github.io/workshop-02quarto/)
-
-<iframe class="slide-deck" style="width:800px; height:600px" src="https://chizapoth.github.io/slides-02quarto/"></iframe>
--->
