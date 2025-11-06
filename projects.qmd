@@ -1,19 +1,20 @@
 ---
 title: "Projects"
-image: " "
-image-alt: " "
+image: ""
+image-alt: ""
 listing:
   contents: projects
   type: grid
-  fields: 
+  sort: "date desc"
+  categories: true
+  date-format: "long"        
+  fields:
     - title
+    - date                  
     - description
-    - date
     - image
     - categories
-  categories: true
-  sort: "date desc"
 ---
-> Doing real-world projects is, I think, the best way to learn and also to engage the world
+> Doing real-world projects is, I think, the best way to learn and also to engage the world  
 > and find out what the world is all about.
-<h4 align="right">-Ray Kurzweil</h4>
+<h4 align="right">– Ray Kurzweil</h4>

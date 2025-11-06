@@ -18,12 +18,12 @@
       "/talks/ehr_20210218_biday/index.html",
       "/talks/ehr_20191028_rladies/index.html",
       "/talks/rstats_20190402_blogdown/index.html",
-      "/projects/project1/index.html",
       "/projects/project2/index.html",
       "/projects/project3/index.html",
       "/projects/project4/index.html",
       "/projects/project5/index.html",
       "/projects/project6/index.html",
+      "/projects/project1/index.html",
       "/projects/project7/index.html",
       "/publications/articles/Journal1.html",
       "/publications/articles/gridedge2025.html",
@@ -38,12 +38,12 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/projects/project1/index.html",
       "/projects/project6/index.html",
       "/projects/project3/index.html",
       "/projects/project4/index.html",
       "/projects/project5/index.html",
       "/projects/project2/index.html",
+      "/projects/project1/index.html",
       "/projects/project8.html",
       "/projects/project7/index.html",
       "/projects/project9.html",
@@ -91,12 +91,12 @@
       "/talks/ehr_20210218_biday/index.html",
       "/talks/ehr_20191028_rladies/index.html",
       "/talks/rstats_20190402_blogdown/index.html",
-      "/projects/project1/index.html",
       "/projects/project2/index.html",
       "/projects/project3/index.html",
       "/projects/project4/index.html",
       "/projects/project5/index.html",
       "/projects/project6/index.html",
+      "/projects/project1/index.html",
       "/projects/project7/index.html",
       "/publications/articles/Journal1.html",
       "/publications/articles/gridedge2025.html",
@@ -177,5 +177,9 @@
       "/blog/technotes_20251102_research_guide/index.html",
       "/blog/technotes_llm_series_20251121_llm_reasoning/index.html"
     ]
+  },
+  {
+    "listing": "/projects/project1/index.html",
+    "items": []
   }
 ]

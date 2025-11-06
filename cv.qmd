@@ -521,7 +521,7 @@ Iowa State University
   <img src="/misc/info/projects/llm_energy_advisor.png" alt="RAG Energy Advisor badge">
   <span class="proj-body">
     <strong>RAG-Enhanced Energy Advisor</strong><br>
-    Retrieval-augmented LLM agent for adaptive control and decision support.
+    Retrieval-augmented LLM agent for adaptive control and decision.
   </span>
 </a>
 

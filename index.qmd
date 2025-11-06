@@ -40,7 +40,7 @@ listing:
   categories: false
   sort-ui: false
   filter-ui: false
-  fields: [title, subtitle, image]
+  fields: [title, date, image]
   max-items: 1
   image-height: "200"
 - id: talk
@@ -53,7 +53,7 @@ listing:
   categories: false
   sort-ui: false
   filter-ui: false
-  fields: [title, subtitle, image]
+  fields: [title, date, image]
   max-items: 1
   image-height: "200"
   
@@ -68,7 +68,7 @@ listing:
   categories: false
   sort-ui: false
   filter-ui: false
-  fields: [title, subtitle, image]
+  fields: [title, date, image]
   max-items: 1
   image-height: "200"
   
@@ -85,7 +85,6 @@ listing:
   fields: [title, year, image]
   max-items: 1
   image-height: "200"
-  image-placeholder: ../publication/featured.jpg
 
 format:
   html:
@@ -375,7 +374,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
   <div class="news-item">
     <div class="news-date">[Sep 2025]</div>
     <div class="news-content">
-      Our paper on <a href="">Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification</a> has been accepted to <a href="https://www.sciencedirect.com/science/article/pii/S037877962500848X?dgcid=coauthor">Journal on Electric Power Systems Research 2026</a>.
+      Our paper on <a href="https://www.sciencedirect.com/science/article/pii/S037877962500848X?dgcid=coauthor">Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification</a> has been accepted to <a href="https://www.sciencedirect.com/journal/electric-power-systems-research">Journal on Electric Power Systems Research 2026</a>.
     </div>
   </div>
   
