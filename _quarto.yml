@@ -44,7 +44,7 @@ website:
           - text: "✨ All Projects"
             href: projects.qmd
           - text: "---"
-          - text: "Deep Reinforcement Learning"
+          - text: "Machine Learning & Intelligent Systems"
             href: drl.qmd
           - text: "Computer Vision & LLMs"
             href: llms.qmd
