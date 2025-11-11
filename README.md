@@ -27,5 +27,6 @@ quarto preview
 This website design and structure were adapted from:
 - Jadey Ryan’s [personal website](https://jadeyryan.com/)
 - Chi Zhang’s [personal website](https://chizapoth.github.io/)
+- Gang He's [personal website](https://drganghe.github.io)
   
 It is built using the excellent guide [Quarto for Academics](https://quarto.org/docs/blog/posts/2023-05-22-quarto-for-academics/)
