@@ -12,6 +12,11 @@ categories:
   - Semi Supervised Learning
   - Uncertainty Estimation
 ---
+<div style="display:flex; justify-content:flex-end; margin-top:-0.5rem; gap:0.5rem;">
+  <a class="btn btn-primary" href="semi_supervised_pes_gm_2025/docs/SSL_PESGM_poster.pdf" target="_blank" rel="noopener">
+    Open Poster (PDF)
+  </a>
+</div>
 
 ### Citation (IEEE)
 
@@ -91,75 +96,32 @@ Key Highlights:*
 
 Our "SSL + Uncertainty Estimation" approach provides an efficient and scalable solution for phase identification in AMI data, enabling utilities to improve modeling, simulation, and operational decision-making.
 
-## Semi-Supervised Learning Framework for AMI
-We formulate SSL as a regularized optimization problem:@eq-black-scholes2
 
+## 3. Problem Formulation of Framework for AMI
+
+  We define phase identification as a **semi-supervised classification problem**,`\@ref(eq:black-scholes2)` where the dataset $D = D_L \cup D_U$ consists of a small labeled subset $D_L$ and a large unlabeled subset $D_U$.
+  
+  The SSL objective is a **regularized minimization**:
+  
 $$
-\min_{f \in \mathcal{F}} \left[ \frac{1}{n_L} \sum_{i=1}^{n_L} \ell(f(x_i), y_i) + \lambda R_u(f, \mathcal{D}_U) \right]
-$$ {#eq-black-scholes2}
+  \min_{f \in \mathcal{F}} \left[ 
+    \frac{1}{n_L} \sum_{i=1}^{n_L} \ell(f(x_i), y_i) 
+    + \lambda R(f, \mathcal{D}_U)
+  \right]
+$${#eq:black-scholes2}
+  
+  where:  
+  - $\ell$ is the supervised loss (e.g., cross-entropy)  
+  - $R(f, \mathcal{D}_U)$ is the regularization term capturing structure in the unlabeled data,
+  - $\lambda$ : trade-off parameter controlling the influence of unlabeled data
 
-Where:
-
-- \( \ell(\cdot, \cdot) \): Supervised loss (cross-entropy)  
-- \( R_u(f, \mathcal{D}_U) \): Unsupervised regularization term  
-- \( \lambda \): Trade-off parameter  
-
-The challenge is designing \( R_u(f, \mathcal{D}_U) \) to effectively leverage unlabeled data.
-
-\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-  (\#eq:binom)
-\end{equation} 
-You may refer to using `\@ref(eq:binom)`, like see Equation \@ref(eq:binom).
+This formulation encourages the model to learn a decision boundary consistent with both labeled examples and the structure of the unlabeled feature space.
 
 
-We formulate SSL as a regularized optimization problem:
-
-$$
-\min_{f \in \mathcal{F}} \left[ \frac{1}{n_L} \sum_{i=1}^{n_L} \ell(f(x_i), y_i) + \lambda R_u(f, \mathcal{D}_U) \right]
-$$
- Where $$a^2 + b^2 = d^2$$ is the Unsupervised regularization term
-
-Where:
-$$
-R_u(f, \mathcal{D}_U) 
-$$
- is the 
-- \( \ell(\cdot, \cdot) \): Supervised loss (cross-entropy)  
-- \( R_u(f, \mathcal{D}_U) \): Unsupervised regularization term  
-- \( \lambda \): Trade-off parameter  
-
-The challenge is designing \( R_u(f, \mathcal{D}_U) \) to effectively leverage unlabeled data.
-
-- $$\ell(\cdot, \cdot)$$: Supervised loss (cross-entropy)
-- $$R_u(f, \mathcal{D}_U)$$: Unsupervised regularization term
-- $$\lambda$$: Trade-off parameter
-
-- \( \ell(\cdot, \cdot) \): Supervised loss (cross-entropy)  
-- \( R_u(f, \mathcal{D}_U) \): Unsupervised regularization term  
-- \( \lambda \): Trade-off parameter  
-
-We formulate SSL as a regularized optimization problem:
-min_{f∈ℱ} [ (1/n_L) ∑^{n_L}_{i=1} ℓ(f(x_i), y_i) + λR_u(f, 𝒟_U) ]
-Where:
-
-ℓ(·,·): Supervised loss (cross-entropy)
-R_u(f, 𝒟_U): Unsupervised regularization term
-λ: Trade-off parameter
-
-The challenge: designing R_u(f, 𝒟_U) that effectively exploits unlabeled data structure
 ## Methodology
 
-We define the binomial distribution as:(@eq-black-scholes1) 
 
-$$
-f(k) = \binom{n}{k} p^k (1-p)^{n-k}
-$${#eq-black-scholes1}
-
-As shown in Equation \@ref(eq:binom), the binomial function defines the probability...
-
-
-Black-Scholes (@eq-black-scholes) is a mathematical model that seeks to explain the behavior of financial derivatives, most commonly options:
+<!--Black-Scholes (@eq-black-scholes) is a mathematical model that seeks to explain the behavior of financial derivatives, most commonly options:
 
 $$
 \frac{\partial \mathrm C}{ \partial \mathrm t } + \frac{1}{2}\sigma^{2} \mathrm S^{2}
@@ -167,10 +129,143 @@ $$
   + \mathrm r \mathrm S \frac{\partial \mathrm C}{\partial \mathrm S}\ =
   \mathrm r \mathrm C 
 $$ {#eq-black-scholes}
+-->
+
+### 4.1 Self-Training with MLP Ensembles
+
+The MLP classifier f(x; $\theta$) is trained on $D_L$ to minimize cross-entropy loss (@eq-self-training):
+
+$$
+\theta = \arg\min_\theta \sum_{(x_i, y_i) \in D_L} \mathcal{L}(f(x_i; \theta), y_i)
+$$ {#eq-self-training}
 
 
+Unlabeled samples with high prediction confidence $p_j$ > $\tau$ receive pseudo-labels:
+
+$$
+D^{\text{new}}_L = \{(x_j, \hat{y}_j) \mid p_j > \tau\}
+$$
+
+The process repeats iteratively, enriching the labeled dataset.
+
+---
+
+### 4.2 Label Spreading (Graph-Based SSL)
+
+We construct a similarity matrix $W$ where edge weights encode feature similarity:
+
+$$
+W_{ij} = 
+\begin{cases}
+\exp\!\left(-\frac{\|x_i - x_j\|^2}{\sigma^2}\right), & i \neq j \\
+0, & i = j
+\end{cases}
+$$
+
+Label distributions are updated iteratively as:
+
+$$
+Y^{(t+1)} = (1 - \alpha)Y^{(t)} + \alpha D^{-1}WY^{(t)}
+$$
+
+This propagates known labels through the data manifold, smoothing class boundaries.
+
+### 4.3 Bayesian Neural Networks (BNNs)
+
+BNNs treat weights as random variables, assigning a Gaussian prior:
+
+$$
+p(W) = \mathcal{N}(W | \mu_{W}, \sigma_W^2)
+$$
+
+Given training data $D_L$, the posterior distribution is:
+
+$$
+p(W | D_L) \propto p(D_L | W) \, p(W)
+$$
+
+The predictive distribution integrates over all possible weight configurations:
+
+$$
+p(y^* | x^*, D_L) = \int p(y^* | x^*, W) \, p(W | D_L) \, dW
+$$
+
+
+We approximate this via Monte Carlo dropout by averaging multiple stochastic forward passes:
+
+$$
+\hat{y}^* = \frac{1}{N} \sum_{n=1}^N f(x^*; W_n)
+$$
+### 4.4 Uncertainty Quantification
+
+Two forms of uncertainty are estimated:
+
+1. **Epistemic (Model Uncertainty):**
+$$
+   U_{\text{epistemic}} = \mathrm{Var}(\hat{y}^*)
+$$
+
+2. **Aleatoric (Data Uncertainty):**
+$$
+   U_{\text{aleatoric}} = \mathbb{E}\!\left[(\hat{y}^* - \mathbb{E}[\hat{y}^*])^2\right]
+$$
+
+Together, they help distinguish between *what the model doesn’t know* and *what cannot be known* due to noise.
 
 <!--![](semi_supervised_pes_gm_2025/figures/ssl_techniques.png){ width=50% }-->
+
+## 5. Experimental Framework
+
+<div style="text-align: center;">
+  <img src="semi_supervised_pes_gm_2025/figures/proposed_framework.png" alt="SSL Framework" style="width: 70%; height: auto;">
+  <div><strong>Fig. 2:</strong> Proposed SSL Framework Applied to AMI Data</div>
+</div>
+
+### Data Flow and Setup
+
+- **Dataset Source:** Real AMI data from a U.S. utility (Duquesne Light Company).  
+- **Feature Set:**  
+  \( F = \{R_0, X_0, R_1, X_1, P, V_{\max}, V_{\min}, V_{\text{avg}}\} \)  
+- **Data Split:** 70% development, 30% test; within development, labeled fractions vary from 5–80%.  
+- **Models:**  
+  - MLP (64–32 layers, ReLU activation)  
+  - Label Spreading with kNN kernel  
+  - 3-layer BNN using Gaussian priors, dropout rate 0.7, Adam optimizer  
+
+<div style="text-align: center;">
+  <img src="semi_supervised_pes_gm_2025/figures/feeder_topology.png" alt="Network Topology" style="width: 60%; height: auto;">
+  <div><strong>Fig. 3:</strong> Distribution Feeder Topology</div>
+</div>
+
+<div style="text-align: center;">
+  <img src="semi_supervised_pes_gm_2025/figures/data_split.png" alt="Data Split" style="width: 60%; height: auto;">
+  <div><strong>Fig. 4:</strong> Training and Testing Data Partitions</div>
+</div>
+
+---
+
+## 6. Results and Discussion
+
+BNNs outperformed both self-training and label spreading across all labeled data ratios.  
+When only **5% of the dataset** was labeled, BNNs already achieved **64.15% ± 0.14**, compared to 34.9% for self-training and 44.3% for label spreading.  
+At **70% labeled data**, the BNN reached **99.06% ± 0.06 accuracy**.
+
+<div style="text-align: center;">
+  <img src="semi_supervised_pes_gm_2025/figures/accuracy_comparison.png" alt="Accuracy Comparison" style="width: 70%; height: auto;">
+  <div><strong>Fig. 5:</strong> Comparison of SSL Algorithms with Uncertainty Estimation</div>
+</div>
+
+**Interpretation:**  
+BNNs’ probabilistic nature allows them to express *how sure* they are about each decision. This prevents overfitting and enables informed decision-making when data are uncertain—crucial for utility operations.
+
+---
+
+## 7. Conclusion
+
+This research presents a **semi-supervised learning framework enhanced with Bayesian uncertainty estimation** for phase identification in power distribution systems.  
+By integrating *pseudo-labeling*, *graph-based label propagation*, and *Bayesian inference*, our framework achieves robust performance with minimal labeled data—**98% ± 0.08 accuracy**—and provides confidence metrics for each prediction.
+
+This uncertainty-aware paradigm is a step toward **trustworthy, data-efficient, and intelligent smart grids**, where models not only predict but also *know when they might be wrong*.
 
 2. **Proposed SSL Framework Applied to AMI Data**
 <div style="text-align: center;">
@@ -197,10 +292,11 @@ $$ {#eq-black-scholes}
 </div>
 
 
+<!--
 ---
 #### Presentation
-<!--<iframe class="slides" src="https://jadeyryan.quarto.pub/rladies-abuja-quarto-params/slides/#/title-slide"></iframe> -->
-
+<!--<iframe class="slides" src=""></iframe> -->
+<!--
 <iframe 
   class="slides" 
   src="semi_supervised_pes_gm_2025/docs/SSL_PESGM_poster.pdf" 
@@ -214,9 +310,4 @@ $$ {#eq-black-scholes}
     View Fullscreen Poster
   </a>
 </div>
-<!--<iframe 
-  src="semi_supervised_pes_gm_2025/docs/SSL_PESGM_presentation.pdf" 
-  width="100%" 
-  height="400px" 
-  style="border: none;">
-</iframe> -->
+-->
