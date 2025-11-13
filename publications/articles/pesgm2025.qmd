@@ -115,7 +115,7 @@ $${#eq:black-scholes2}
   - $R(f, \mathcal{D}_U)$ is the regularization term capturing structure in the unlabeled data,
   - $\lambda$ : trade-off parameter controlling the influence of unlabeled data
 
-This formulation encourages the model to learn a decision boundary consistent with both labeled examples and the structure of the unlabeled feature space.
+This formulation encourages the model to learn a decision boundary consistent with both labeled examples and the structure of the unlabeled feature space. c'
 
 
 ## Methodology
