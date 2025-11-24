@@ -3,7 +3,7 @@ title: "Research Scientist Interview Guide"
 description: |
   Research Scientist Interview Guide
 author: "Kundan Kumar"
-date: "2025-07-03"
+date: "2025-11-24"
 categories: [Data science, Interview Guide]
 sidebar: false
 code-block-bg: true
@@ -20,143 +20,362 @@ format:
 
 ## Overview
 
-This guide provides a practical framework to prepare for **Research Scientist** roles in academia, industry research labs (FAANG, OpenAI, DeepMind, Anthropic, NVIDIA), and national labs. It blends personal experience with hiring-manager expectations and common evaluation rubrics.
+This guide outlines a comprehensive and practical preparation strategy for Research Scientist interviews across academia, FAANG research labs, applied ML groups, and frontier model companies (OpenAI, DeepMind, Anthropic, NVIDIA, Meta FAIR). It blends real-world expectations from hiring managers with the lived experience of preparing for and interviewing with research teams.
 
-**GitHub repository**: [Research Scientist Preparation Guide](https://kundan-kumarr.github.io/ResearchScientist-Handbook/)  
-**Data Science Notes**: [Data Science Intro](https://kundan-kumarr.github.io/ai-analysis/)  
-**Statistical Learning Notes**: [Statistical Analysis](https://kundan-kumarr.github.io/statsphere/)
-**LLM** : [Statistical Analysis](https://kundan-kumarr.github.io/Zero2LLM-Crafter/)
----
+| Resource                     | Link                                                                 |
+|------------------------------|----------------------------------------------------------------------|
+| Research Scientist    | [Preparation Guide](https://kundan-kumarr.github.io/ResearchScientist-Handbook/) |
+| Data Science           | [Data Science Notes ](https://kundan-kumarr.github.io/ai-analysis/)  |
+| Statistical Learning    | [Statistics Notes ](https://kundan-kumarr.github.io/statsphere/) |
+| LLM Curriculum               | [AI Agents Guide](https://kundan-kumarr.github.io/Zero2LLM-Crafter/) |
 
-## What interviewers evaluate
+## 1. Why AI Research Interviews Are Different
 
-- **Research impact**: novelty, citations/adoption, reproducibility, clarity of problem–method–evidence chain.
-- **Technical depth**: math/ML fundamentals, experimental rigor, ablation thinking, error analysis.
-- **Systems sense**: how ideas become products—data, infra, metrics, reliability, safety & ethics.
-- **Execution**: scope → plan → iterate → deliver (papers, open-source, patents, internal wins).
-- **Communication & collaboration**: explain complex work to varied audiences; cross-discipline work.
-- **Culture/LP fit**: ownership, bias for action, frugality, customer/impact obsession.
+Research hiring revolves around one core question:
+
+> **Can you take an ambiguous problem and turn it into a clear idea, an experiment, a result, and an impact?**
+
+To answer this, interviewers probe six major capabilities:
+
+- **Research depth**  
+  Can you clearly explain the *gap*, the *idea*, the *method*, the *evidence*, and the *limitations* of your work?
+
+- **Technical foundations**  
+  Math, ML, optimization, probability, RL, uncertainty modeling, transformers, and systems fundamentals.
+
+- **Experimentation mindset**  
+  How you design baselines, run ablations, debug failures, reason about data, and measure uncertainty.
+
+- **Systems thinking**  
+  How your ideas turn into deployed systems—latency, reliability, guardrails, monitoring, drift, and safety.
+
+- **Execution**  
+  Can you scope, prototype, iterate, debug, and deliver—papers, code, and production impact?
+
+- **Communication**  
+  Can you explain complex ideas clearly to engineers, PMs, research peers, and leadership?
 
 ::: callout-tip
-**Be explicit about *your* contribution.** For each project: *problem → gap → idea → method → evidence → limitations → next steps → impact*.
+For each project, try this lens:  
+**problem → gap → idea → method → evidence → limitations → next steps → impact**
 :::
 
----
+## 2. What the Interview Process Looks Like
 
-## Interview process at a glance
+Most AI research interview loops have a similar skeleton:
 
-**Typical stages**  
-1) Recruiter + HM intro → 2) Tech/Research screens (coding, ML/math, paper deep dive) →  
-3) Onsite: research talk, systems/experimentation design, cross-functional, behavioral/bar raiser →  
-4) Debrief → offer.
+1. **Recruiter / Hiring Manager Screen**  
+   Scope, research fit, background, interests, and communication.
 
-(Use the SVG diagram you generated earlier or embed it with `![](research_scientist_interview_process.svg)`.)
+2. **Technical Screen**  
+   ML fundamentals, math, and a coding round (usually Python).
 
----
+3. **Research Deep Dive**  
+   A long-form discussion of your best project: motivation, choices, experiments, failures.
 
-## Preparation timeline (6–8 weeks)
+4. **Research Talk / Seminar** (45–60 minutes)  
+   A slide-based talk to a mixed audience (researchers, engineers, PMs).
 
-**Weeks 1–2: Foundations & portfolio**
-- Curate 2–3 flagship projects; write 1-page *project briefs* (problem, novelty, 3 results, open questions).
-- Refresh ML math: gradients, likelihoods, bias–variance, generalization, off-policy vs on-policy RL.
-- DS&A 20–30 mins/day (arrays, hash maps, trees, graphs, DP—medium level).
-- Draft talk outline; collect figures; start a reproducible repo.
+5. **Systems / Experimentation Round**  
+   Design and evaluation: metrics, baselines, guardrails, safety, reliability.
 
-**Weeks 3–4: Research talk + deep dives**
-- Build slides (30/45/60 min versions). Timebox: *Motivation 10% → Method 35% → Evidence 40% → Limits + Roadmap 15%*.
-- Prepare **ablation stories** and **negative results**; design a live error analysis demo if feasible.
-- Mock talks with labmates; iterate twice.
+6. **Behavioral / Team Fit**  
+   Ownership, collaboration, scientific judgment, decision-making under uncertainty.
 
-**Weeks 5–6: Systems & coding polish**
-- 5 case studies: online inference, data pipelines, eval at scale, safety/guardrails, monitoring.
-- Practice 6–8 coding problems in 60-min sessions; review idioms (two-pointers, heap, BFS/DFS, topo sort).
-- Draft answers for 8–10 behavioral prompts using STAR(L).
+7. **Debrief & Calibration**  
+   Cross-interviewer discussion → final decision → offer or no offer.
 
-**Week 7+: Company-specific tuning**
-- Read team papers/repos; align your roadmap slide to their charter.
-- Prepare 8–12 **questions to ask** (below).
-- Dry run full onsite (talk + 3 interviews + behavioral) in a single sitting.
 
----
+## 3. Interview Preparation Roadmap
 
-## Research portfolio deep dive
+Preparing for a research scientist role isn’t a weekend sprint. The plan below assumes ~100 days (around 14–15 weeks) of disciplined, focused preparation.
+Think of it as 10 phases (≈10 days each), grouped into larger thematic blocks.
 
-**For each project, be ready to answer:**
-- *Gap*: What prior SOTA did not address? Why now?
-- *Assumptions*: Distributional, structural, or operational assumptions—how validated?
-- *Method*: Key design choices (loss, architecture, training regime, priors/constraints).
-- *Evidence*: Metrics that matter (with CIs); strongest ablation; hardest failure case.
-- *Impact*: External adoption, dataset/code release, internal KPI movement, patents.
-- *Next*: What would you do with 3 months & a small team?
+`#100DaysofPreparation`
 
-**Artifacts checklist**
-- 10–12 figure slide deck (vector PDFs), 1-page PDF overview, GitHub README with quickstart, *repro seed + script*.
+### 3.1 (Weeks 1–2) Build Your Research Portfolio Foundation
 
----
+`Goal:` Establish your scientific identity and core artifacts.
 
-## Technical machine learning knowledge (what to refresh)
+What to accomplish:
 
-- **RL**: policy gradient theorem; advantage estimation; PPO/TRPO constraints; off-policy (DQN/TD3/SAC); safe RL & constraints; exploration vs exploitation; eval instability & seeding.
-- **Deep learning**: optimization (warmup, cosine decay, AdamW), regularization (dropout, mixup, label-smoothing), attention/transformers, LoRA/parameter-efficient finetuning.
-- **Statistics & probabilistic modeling**: MLE/MAP; conjugacy; posterior predictive; calibration (ECE), uncertainty (epistemic vs aleatoric); A/B testing pitfalls.
-- **Generative models**: diffusion schedule & guidance, VAEs ELBO, GAN stability.
-- **LLMs**: instruction tuning, RAG retrieval quality, eval (exact match, nDCG, win-rates), toxicity & safety filters, hallucination mitigation.
-- **Vision/multimodal**: contrastive learning, detection/segmentation metrics (mAP, IoU), data augmentations.
+- Select 2–3 flagship projects — the ones you want to be hired for.
+- Write one-page summaries for each:
+  - problem → gap → idea → method → evidence → limits.
+- Organize code, plots, logs, notebooks, and experiment sheets into a clean structure.
+- Refresh foundational ML math:
+  - Gradients, softmax, cross-entropy
+  - Bias–variance tradeoff, generalization
+  - Regularization basics (weight decay, dropout)
+- Review optimization basics:
+  - SGD, AdamW
+  - Learning rate warmup, cosine decay
+  - MLE vs. MAP
+- Do light DS&A:
+  - 20–30 minutes/day on arrays/strings, hash maps, basic trees.
+  
+`Outcome:` A clear, coherent scientific story and crisp articulation of your contributions.
 
----
+Follow-along tasks:
 
-## ML systems & experimentation design
+- Create a Portfolio/ folder and write 3 one-page project summaries.
+- List your 5 strongest experimental results (with metrics and context).
+- Summarize 3 papers from your target teams (FAANG, DeepMind, OpenAI, Anthropic, etc.).
 
-**5-step template**
-1. **Clarify goal** (user KPI ↔ technical metric; online vs offline).  
-2. **Data** (sources, labeling strategy, noise, sampling, privacy).  
-3. **Model & infra** (baseline → candidate → serving path; latency, cost, reliability).  
-4. **Evaluation** (offline metrics + counterfactual replays + online guardrails; slicing).  
-5. **Risk & safety** (bias, misuse, red-teaming, rollback plan, observability).
 
-**Example prompt (outline answer)**  
-*“Design a near real-time anomaly detector for a power grid substation.”*  
-- KPI: reduce outage MTTR by 20%; constraints: <200 ms latency, 99.9% uptime.  
-- Data: PMU/SCADA streams; label via weak supervision + operator tags.  
-- Baseline: statistical thresholds; Model: streaming autoencoder + EWMA residuals.  
-- Eval: ROC-AUC offline, time-to-detect, false alarms/day; shadow deploy → phased rollout.  
-- Safety: fail-open; human-in-the-loop; drift detector; incident playbook.
+### 3.2 (Weeks 3–4) Deep Learning & Modern Architectures Refresh
 
----
+`Goal:` Regain fluency in the architectures that power modern AI systems.
 
-## Coding & algorithmic skills
+Topics to review:
 
-- Aim for **clean, correct, then optimal**. Speak invariants, test cases, and complexity out loud.
-- Patterns to practice: two-pointers, sliding window, monotonic stack, BFS/DFS, topological sort, binary search on answer, Dijkstra/Union-Find, prefix sums, DP on sequences/trees.
-- ML-adjacent coding: vectorized NumPy, PyTorch modules/forward pass, dataloaders, batching, mixed precision, sanity checks.
+- CNNs, RNNs, LSTMs, GRUs
+- Transformers: attention, QKV projections, multi-head attention
+- Residual connections, LayerNorm, normalization strategies
+- KL divergence, entropy, cross-entropy
+- Positional encodings, rotary embeddings (RoPE)
+- Regularization techniques: dropout, mixup, cutmix, label smoothing
+- Training dynamics:
+  - Gradient flow
+  - Vanishing/exploding gradients
+  - Loss landscapes, sharpness, generalization behavior
 
----
+`Follow-along tasks:`
+- Re-derive softmax + cross-entropy and their gradients.
+- Solve 10 small gradient/optimization exercises.
+- Summarize 3 internals of transformers (e.g., QKV, attention, layer norm) in your own words.
 
-## Research talk: structure & slides
+Hands-on:
 
-**Slide budget (45 min talk + Q&A)**
-- Title & takeaway (1), Motivation (2), Problem/Gap (2), Method (5), Results (6), Ablations (3), Error analysis (2), Limits (1), Roadmap/fit (2).
+- Rebuild a transformer encoder from scratch in PyTorch (minimal but clean).
+- Implement vision augmentations (random crop, flip, color jitter).
+- Reproduce a small-scale paper result (e.g., CIFAR-10 or MNIST baseline).
 
-**Dos**
-- One idea per slide; consistent color for your method; readable axes; include *n* and CI.  
-- Put the *thesis* of each slide in the title: *“Physics constraints cut violations by 38% at same cost.”*
+`Outcome:` You should be comfortable answering: “How does this model actually work?” instead of just “It’s a transformer.”
 
-**Don’ts**
-- Crowded plots, cherry-picked examples, unanchored qualitative claims, tiny captions.
 
----
+## 3.3 (Weeks 5–6) Deep Reinforcement Learning Refresher
 
-## Behavioral: STAR + research flavors
+`Goal:` Achieve deep, working-level confidence with modern DRL.
 
-Use **STAR**: *Situation, Task, Action, Result, Learning*.  
-Prepare 6 stories: conflict, failure, leadership without authority, speed vs quality, mentoring, cross-team project.
+Core topics:
 
-**Example prompt**  
-*“Tell me about a time your experiment invalidated a roadmap item.”*  
-- S/T: critical Q3 milestone hinged on SOTA surpassing baseline.  
-- A: pre-registered analysis; ran holdout; flagged negative lift; proposed minimal viable alternative.  
-- R: saved ~6 wks eng time; reallocated to data quality; shipped smaller win.  
-- L: add “early stop” gates; improved pre-mortem checklist.
+- Derive the policy gradient theorem from first principles.
+- Understand Generalized Advantage Estimation (GAE) and why it stabilizes training.
+- Build intuition for PPO and TRPO:
+  - Clipped objective
+  - Trust regions
+  - KL constraints
+- Master key off-policy algorithms:
+  - DQN, TD3, SAC
+  - When to use which (discrete/continuous, exploration needs).
+- Replay buffers, target networks, delayed policy updates.
+- Exploration vs exploitation in discrete and continuous settings.
+- Diagnosing RL instability:
+  - Value drift
+  - Entropy collapse
+  - Mis-scaled advantages
+  - Reward hacking
+- Safety-aware RL:
+  - Constraint handling, shields, penalties
+  - Reachability logic basics
+- Offline RL fundamentals:
+  - Dataset coverage
+  - Behavior policies
+  - Distributional shift
+- Counterfactual evaluation and why it matters in safety-critical systems.
+
+`Follow-along tasks:`
+
+- Write out the PPO objective and update rule by hand, including clipping, advantage, and entropy terms.
+- Implement PPO or DQN from scratch in PyTorch (keep it minimal but readable).
+- Re-derive the REINFORCE update starting from log-likelihood gradients.
+- Write a one-paragraph explanation of what causes PPO instability and how you’d detect it.
+- Read two recent RL papers from your target teams.
+- Train a simple RL agent:
+  - CartPole, or
+  - A domain-specific environment like OpenDSS/CityLearn.
+- Study 2–3 DRL papers closely related to your dream role.
+
+`Outcome:` Confidently explain, derive, implement, and debug modern RL algorithms and discuss where they fail.
+
+
+## 3.4 (Weeks 7–8) LLMs, RAG, Multimodal Systems, Prompting & Finetuning
+`Goal:` Build a strong working mastery of LLMs and the surrounding ecosystem.
+
+`Topics:`
+
+- Pretraining vs finetuning vs RLHF vs instruction tuning.
+- Parameter-efficient finetuning:
+  - LoRA, QLoRA, PEFT.
+- Tokenization:
+  - BPE, SentencePiece basics.
+- Diffusion models:
+  - Key intuition (noise schedule, denoising).
+- RAG systems:
+  - Chunking strategies
+  - Vector search and indexing
+  - Reranking
+- LLM evaluation:
+  - Exact match, BLEU, nDCG
+  - Win-rate and human eval
+- Safety:
+  - Hallucination mitigation
+  - Safety filters, prompt defenses
+- Knowledge distillation for LLMs.
+- Multimodal encoders (CLIP-style), contrastive learning.
+- Vision metrics:
+  - mAP, IoU, retrieval @k.
+
+`Hands-on tasks:`
+
+- Play with prompt engineering and basic tool calling.
+- Build a minimal RAG pipeline using a public dataset.
+- Finetune a small model (e.g., Mistral-7B, Qwen-2B or similar).
+- Evaluate retriever quality using recall@k or nDCG.
+- Summarize one frontier LLM paper (OpenAI, Anthropic, DeepMind, etc.).
+- Create 5 “hallucination test” prompts and inspect failure cases.
+
+`Outcome:` Can talk about LLMs as both a research topic and a system you can build and debug.
+
+## 3.5 (Weeks 9–10) AI Safety, Alignment & Responsible AI
+
+`Goal:` Develop a rigorous understanding of safety and alignment principles used in modern labs.
+
+`Topics:`
+
+- Alignment foundations:
+  - Outer vs inner alignment
+  - Goal misgeneralization.
+- Deception risks and model monitoring.
+- Red teaming and adversarial prompting.
+- Guardrails & safety filters (moderation models, policy layers).
+- Interpretability:
+  - Saliency
+  - Probing
+  - Causal scrubbing (intuitively)
+- Robustness & adversarial attacks.
+- Reward hacking & specification gaming.
+- Responsible deployment and incident response.
+
+`Hands-on tasks:`
+
+- Evaluate an LLM for hallucination and unsafe completions.
+- Build a small safety classifier (e.g., toxicity or PII detection).
+- Implement simple adversarial prompts to test robustness.
+- Summarize 2–3 alignment papers from DeepMind / OpenAI / Anthropic.
+
+`Outcome:` Can speak maturely and concretely about safety, alignment risks, and mitigation strategies. 
+
+
+## 3.6 (Weeks 11–12) ML Systems, Experimentation Design & Infrastructure
+`Goal:` Understand how research artifacts turn into production-grade systems.
+
+`Topics:`
+
+- Data-centric AI:
+  - Data pipelines, labeling strategies, noise.
+- Feature engineering vs representation learning.
+- Constraints:
+  - Latency, throughput, cost.
+- Monitoring:
+  - Drift, anomalies, reliability SLOs.
+- Guardrails:
+  - Fail-open vs fail-safe
+  - Circuit breakers
+  - Fallback heuristics.
+- Shadow vs online experimentation.
+- Key metrics:
+  - Product KPIs ↔ technical metrics
+  - OOD splits, fairness audits.
+- Reliability:
+  - Rollback plans, incident runbooks.
+
+`Hands-on tasks:`
+
+- Design a deployment plan for a real ML model (e.g., anomaly detection, RAG, recommender).
+- Build a small drift-detection pipeline.
+- Write a full ML system design doc (data → model → eval → rollout).
+- Evaluate at least 3 slices of a dataset: OOD, rare cases, edge cases.
+
+`Outcome:` Can walk through a complete “research to production” story with credible detail.
+
+## 4. Phase 2 (Weeks 13–14): Research Talk, Deep Dives & Scientific Communication
+
+`Goal:` Prepare the single most important artifact in the interview loop—your research story.
+
+`Activities:`
+
+- Build 30, 45, and 60-minute versions of your talk.
+- Use a clear slide ratio:
+  - Motivation (10%)
+  - Problem + Gap (10–15%)
+  - Method (35%)
+  - Results (40%)
+  - Limitations (10%)
+- Create:
+  - 3 strong ablation stories
+  - 1 negative result you can explain with maturity.
+  - A “failure case” slide.
+- Write a single-sentence thesis for your talk.
+- Do at least one dry run alone (no audience).
+- Prepare 25–30 deep-dive technical questions you might be asked.
+- Derive your core equation/algorithm on paper (e.g., loss function, policy update).
+
+`Mock sessions:`
+- Give your talk to peers/mentors.
+- Ask for aggressive Q&A (poke at assumptions, data choices, evaluation).
+- Do a full “paper walkthrough” session, slide by slide or section by section.
+
+`Outcome:` Can defend your work with clarity, honesty, and scientific maturity, including what didn’t work.
+
+## 5. Phase 3 (Week 15): Behavioral Mastery (STAR-L)
+
+`Goal:` Show leadership, ownership, and judgment—not just equations.
+
+`Use STAR-L:` > Situation → Task → Action → Result → Learning
+
+`Prepare stories for:`
+- A failure you owned and learned from.
+- A conflict you resolved or navigated.
+- Working under ambiguity.
+- Mentoring or unblocking someone.
+- Leading without formal authority.
+- A data-quality disaster.
+- A roadmap change after a major negative result.
+
+`Follow-along tasks:`
+
+- Write 10 STAR-L stories.
+- Practice two-minute delivery for each.
+- Record a mock behavioral round (audio or video).
+- Identify your “superpower” and your “growth edges” as a researcher.
+
+### 5.1 Final Polish & Company-Specific Tuning
+
+`Goal:` Finish the cycle aligned, sharp, and confident.
+
+`What to finalize:`
+
+- 30/45/60-minute talk versions.
+- Deep dive answers for your top 2–3 projects.
+- One-page project summaries.
+- A set of 10 questions for each interviewer type (researcher, MLE, PM, HM).
+- A 60-second elevator pitch about who you are as a researcher.
+- A mock onsite simulation:
+>Talk → technical → systems → behavioral.
+
+`Follow-along tasks:`
+- Study 3–5 papers from the target team.
+- Align one slide in your talk to their mission/charter.
+- Prepare a “What I can deliver in 6 months” slide or talking point.
+- Design your Interview Day game plan:
+  - Sleep, food, breaks, notes, mindset.
+
+## Closing Note
+
+This 15-week, ~100-day preparation cycle is not just about surviving interviews.
+It is about becoming a clearer thinker, stronger experimenter, better systems designer, and more confident communicator—the kind of researcher who can walk into any environment and add value quickly.
 
 ---
 
@@ -168,162 +387,135 @@ Prepare 6 stories: conflict, failure, leadership without authority, speed vs qua
 
 ---
 
-## Example technical & research questions
+## Potential Questions to Practice (Post-Guide Add-On)
 
-- Summarize the core contribution of your latest paper in two sentences.  
-- Which ablation most strongly supports your claim? Which one *failed* and why?  
-- How would you adapt your method under 10× less data? Under severe shift?  
-- What is your evaluation blind spot today? How would you close it?  
-- Explain epistemic vs. aleatoric uncertainty with a concrete modeling choice.  
-- For PPO, where does instability come from and how do you diagnose it?  
-- Design a reliable RAG system for safety-critical queries—retrieval, scoring, guardrails, and evaluation.
+Even after a full preparation cycle, the most critical skill is being able to reason aloud under pressure. These are high-signal prompts—exactly the kind you’ll face in research loops at FAANG labs, DeepMind, OpenAI, Anthropic, NVIDIA, and applied ML teams.
+Use them for mock interviews, daily drills, or deep-dive rehearsals.
 
----
+### 1. Research Narrative Questions
+These assess your clarity, causality, and scientific maturity.
 
-## “Ask the interviewer”
+- What was the original problem motivation, and what gap in prior work did you identify?
+- If someone tries to reproduce your paper, what is the first place they might get stuck—and why?
+- What is the core equation behind your method? Derive it.
+- How did you choose hyperparameters and baselines? What alternatives did you reject, and why?
+- What was your strongest ablation and the most surprising negative result?
+- What are the three biggest assumptions in your work? How do they impact generalization?
+- Explain one design decision that turned out to be wrong. What did you learn?
+- If you had 3 more months, what experiment would you run first?
 
-> Use the set that best fits the team. If time is short, ask the **Top 3** in each block.
+### 2. Machine Learning Fundamentals
 
-### Hiring Manager (core, any research team)
-- **Top 3**
-  - What research bets matter most in the next 6–12 months, and how will you measure success?
-  - What makes a “hell-yes” hire here after 90 days? What work would signal that?
-  - How do ideas transition from a paper/prototype to production or a public result?
-- How is impact recognized—publications, product metrics, patents, internal adoption?
-- What are examples of projects that **didn’t** land? Why, and what changed afterward?
-- Where are the biggest data/infra bottlenecks that a new scientist can unlock?
+- These evaluate foundations beyond “tool usage.”
+- Explain bias–variance tradeoff using a real ML experiment you ran.
+- Why is cross-entropy the default classification loss? What are its weaknesses?
+- Explain the difference between calibration and accuracy.
+- When does AdamW outperform Adam? When does SGD outperform both?
+- Why does label smoothing help? When can it hurt?
+- Walk me through how LayerNorm works and what problem it solves.
+- Derive the gradient of softmax + cross-entropy.
+- What makes a metric robust? Give an example from your work.
 
----
+### 3. Deep Learning & Transformers
+- You should be able to explain these without jargon.
+- How does self-attention scale? What is the bottleneck?
+- Why does RoPE (rotary embeddings) help at long sequence lengths?
+- Compare MLP layers in transformers with convolutional layers.
+- How do you detect and fix attention drift or instability?
+- What are the differences between pretraining, SFT, RLHF, and DPO?
+- When would you prefer LoRA to full fine-tuning? When not?
 
-### Research Scientists (peer scientists)
-- **Top 3**
-  - Which **canonical datasets/eval harnesses** are used for your area? How are baselines enforced?
-  - What’s a recent ablation or negative result that changed your roadmap?
-  - How do you share/replicate experiments (internal tooling, seeds, result store)?
-- How are collaborations formed across teams? Any “platform” teams I should align with?
-- What’s the cadence for paper reviews, reading groups, and internal talks?
+### 4. Reinforcement Learning / Control
+Very common for robotics, energy, and autonomy research teams.
 
----
+- Derive the policy gradient theorem.
+- Explain GAE and how it stabilizes PPO.
+- What causes PPO instability? Diagnose this using logs.
+- Compare TD3 vs. SAC—where does each shine?
+- What’s your exploration story? What happens if it collapses too early?
+- How do you enforce safety constraints in RL?
+- Design an experiment to detect reward hacking.
+- Why is offline RL difficult? What are the common failure modes?
 
-### Engineers / MLEs (production & infra)
-- **Top 3**
-  - What are the serving constraints (latency, throughput, cost) and reliability SLOs?
-  - What’s the path from notebook → feature store → online eval → rollout/rollback?
-  - How do you monitor drift and failures in the wild? What’s the on-call/ownership model?
-- What’s the CI/CD story for models (gating tests, shadow, canary, A/B infra)?
-- What would you change in our current stack if you could?
+### 5. LLMs, RAG, and Multimodal Systems
+These appear in GenAI-focused interviews.
 
----
+- How do you design chunk sizes for RAG?
+- Evaluate retriever quality using recall@k and nDCG—what’s the difference?
+- What are the typical root causes of hallucination?
+- Explain instruction tuning vs. alignment.
+- When would you use a reranker?
+- How do you design a guardrail for a safety-critical RAG pipeline?
+- What does it mean for an embedding model to be anisotropic?
 
-### PM / Cross-functional (applied impact)
-- **Top 3**
-  - Which decision or workflow actually changes if this model improves by X%?
-  - What is the single metric you’d show leadership to justify continued investment?
-  - What risks (safety, bias, misuse) keep you up at night for this application?
-- Where does data come from and how does quality/coverage limit the roadmap?
+### 6. Experimentation, Evaluation & Systems Thinking
+These questions separate strong researchers from average candidates.
 
----
+- What is the minimum viable baseline for your task?
+- How do you know if your improvement is statistically meaningful?
+- How do you test for OOD generalization?
+- Propose a slicing strategy for your dataset.
+- Design a drift detection pipeline for a production model.
+- Explain guardrails in the context of ML systems.
+- How would you deploy a model that is correct but unstable?
 
-### Recruiter / Compensation
-- Level targeting and calibration—what evidence best demonstrates readiness for this level?
-- Publication & open-source policy (authors, timing, preprints), conference travel norms.
-- Visa/relocation timeline; expected hire start window and interview re-try policy.
+### 7. Behavioral / Scientific Judgment
+These should follow STAR-L.
 
----
+- Tell me about a time your experiment invalidated your entire roadmap.
+- Describe a major failure—what did you learn?
+- Describe a conflict in a research collaboration and how you resolved it.
+- Tell me about a time you mentored someone technically.
+- When did you choose scientific rigor over speed? When did you choose speed?
+- Describe a risky research bet you made. How did it turn out?
 
-## Example Domain-specific
+### 8. Extremely High-Signal “Bar Raiser” Questions
+These often decide the offer.
 
-### If the team is **RL / Control** (energy, robotics, autonomy)
-- What control horizon & loop latency are assumed (e.g., 200 ms, 1 s)? Any hard real-time constraints?
-- How are safety constraints enforced (e.g., physics-informed losses, shielded RL, reachability)?
-- What are the **reference environments** (e.g., CityLearn/PowerGym, IEEE 13/34/123 bus, HIL)?  
-  How do sim-to-real gaps show up, and how do you mitigate them (domain randomization, calibration)?
-- Which **offline evaluation** and **counterfactual replay** methods are trusted before online trials?
-- What’s the bar for replacing a heuristic/OPF with an RL policy (guardrails, rollback, audits)?
+- What is your strongest research intuition?
+- What’s a problem you won’t solve with deep learning?
+- What is one idea you believe is true but is not proven yet?
+- Teach me the main idea of your method in 20 seconds.
+- If I remove 80% of your training compute, what breaks first?
+- If you were in charge of this team, what would you prioritize for the next 6 months?
 
-### If the team is **LLM / RAG / GenAI**
-- Retrieval stack: index type, chunking, rerankers, **eval** (nDCG, recall@k, answer faithfulness).
-- Hallucination budget & safety: filters/guardrails, red-teaming, and incident handling.
-- Finetuning strategy: SFT/LoRA vs. prompt-only; distillation plans; model/versioning policy.
-- What constitutes “win” in offline eval vs. human eval? How do you resolve conflicts?
-- Data governance: PII/PHI handling, dedup, license compliance, **auto-eval for drift**.
+### 9. Practical Coding / ML Engineering Prompts
+Not LeetCode—real ML-adjacent coding.
 
-### If the team is **Vision / Multimodal**
-- Canonical datasets & metrics (COCO mAP, IoU, retrieval R@k); how are **domain shifts** handled?
-- Labeling strategy & quality control; synthetic data or augmentation policies.
-- Deployment constraints: throughput on edge vs. server; quantization/compilation toolchain.
-- Failure modes that matter most (false positives/negatives, OOD, adversarial artifacts).
+- Implement a basic dataloader with batching and shuffling.
+- Write a PyTorch forward pass for an MLP with dropout.
+- Implement multi-head attention step-by-step.
+- Write vectorized NumPy code to compute cosine similarity.
+- Implement prioritized replay sampling.
+- Build a simple streaming anomaly detector.
+- Given a log file with rewards and losses, produce summary diagnostics.
 
----
+### 10. Lightning-Round “Explain in Plain English” Prompts
+A favorite of FAANG research interviews.
 
-### If you only have time for 3 questions (universal)
-1. **Strategy**: What is the one result you’d want me to deliver in 6 months that proves this hire was a “yes”?  
-2. **Execution**: What is the critical bottleneck (data, infra, evaluation) preventing faster progress today?  
-3. **Fit**: Which strengths would make me *the* complement to the current team’s skills?
+- What is KL divergence?
+- What does entropy measure?
+- What is overfitting, really?
+- Why does normalization matter?
+- What is a confidence interval?
+- Why is drift dangerous?
+- What is a reward function in one sentence?
+- Why do we need baselines?
+
+<!--::: {.callout-note appearance="minimal"}
+**If this guide helped you**, consider supporting the work:
+
+- Subscribe: [NeuraAgentix AI](https://substack.com/@neuraagentixai)  
+- Support: [Buy Me a Coffee](https://www.buymeacoffee.com/kundan_k)
+
+Your support helps me keep building open, free resources for the AI research community.
+:::
+-->
 
 
----
-
-## Checklists
-
-**Day-before technical Interview**
-
-- **Talk readiness:** 30/45/60-min versions; 1-sentence thesis; clearly mark *your* contributions.
-- **Ablations & limits:** 1 strongest ablation you can defend; 1 negative result and what it taught you.
-- **Paper deep dives:** be ready to derive the key equation/algorithm; compare to 2 baselines with numbers.
-- **Math/ML refresh:** RL (policy gradient, GAE, PPO/TRPO intuition), DL (optimizers, regularization), stats (MLE vs MAP, bias–variance, eval metrics).
-- **Coding drills:** 2 timed mediums using core patterns (two-pointers, BFS/DFS, heap, topo sort, DP); practice test-first pseudocode.
-- **Systems prompts:** outline 3 cases (data → model → eval → guardrails → rollout) you can walk through crisply.
-- **Q&A bank:** 10 answers you can deliver fast (assumptions, failure modes, robustness, scalability, safety).
-
-**Day-of Interview**
-
-- **Open strong:** restate problem + constraints; define the success metric before proposing solutions.
-- **Reasoning first:** outline 2–3 approaches; justify trade-offs; state target time/space complexity.
-- **Coding round:** implement incrementally; speak invariants and edge cases; analyze complexity after passing tests.
-- **Research talk:** show the central figure; defend an ablation; admit a limitation and the next experiment.
-- **Design/experimentation:** baseline → candidate → eval plan; define slices; propose risks & rollback.
-- **Close each round:** 30–60s recap with decision, trade-offs, and “next step” you’d run.
-
----
-
-## Offer, Debrief & Negotiation
-
-**1) Right after the loop**
-
-- Keep a short **brag doc**: 5–8 bullets tying your work to measurable impact (citations, benchmarks, improvements).
-- Send thank-you notes; ask the recruiter for **decision timeline** and whether the team needs any follow-ups (extra slides, code pointers).
-
-**2) Debrief (if you don’t get detailed feedback)**
-
-- Ask for 3 bullets: (i) strengths that stood out, (ii) top concern, (iii) what would change the decision next time.
-- If there’s a miscalibration (e.g., level/scope), propose a **targeted follow-up** (short tech screen or focused deep dive).
-
-**3) Offer review (when it comes)**
-
-- Break it down: **base** + **bonus** + **equity/RSUs** (grant, vesting, refreshers) + **sign-on** + **extras** (compute budget, conference travel, publication policy, patent bonus).
-- Clarify: **level**, **title**, team mandate, location policy, start date, performance review cycles, and conference/OSS policies.
-
-**4) Negotiation (impact-first)**
-
-- Anchor with **scope & impact** (what you can deliver in 6–12 months), plus **comparables** (peer offers or market data for the same level/geo).
-- Prioritize asks (pick 2–3): `sign-on` / `equity` / `level` / `research budget` / `conf travel`.  
-- Sample script:  
-  *“Given the scope (X) and the impact I’m positioned to deliver (Y), I’m targeting total comp of Z at level L. If level is fixed, increasing equity by A or adding a B sign-on would bridge the gap. I’d also value C (e.g., conference travel commitment).”*
-
-**5) Timelines**
-
-- If you need time: *“I’m very excited. To make a well-considered decision, could we set a reply date of <date>? I want to complete one pending loop and compare scopes fairly.”*
-- If there’s an exploding deadline, ask for a **short extension** in exchange for a firm decision date and clear intent.
-
-**6) If rejected**
-
-- Request specific growth areas and ask whether a **re-interview window** (e.g., 6 months) with a targeted bar (e.g., systems/experiments) is possible.
-
----
-
-## Mentorship
-
-If you’d like feedback on your talk, paper deep dive, or a full mock onsite, reach me at **cs.kundann@gmail.com**.
+<div class="footer-subscribe">
+  Subscribe to <a href="https://neuravp.substack.com">NeuraAgentix AI</a> &nbsp;·&nbsp;
+  <a href="https://www.buymeacoffee.com/kundan_k">Buy Me a Coffee</a>
+</div>
 
 
