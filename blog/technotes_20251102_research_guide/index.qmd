@@ -86,7 +86,7 @@ Most AI research interview loops have a similar skeleton:
    Cross-interviewer discussion → final decision → offer or no offer.
 
 
-## 3. Interview Preparation Roadmap
+## 3. Phase 1 Interview Preparation Roadmap
 
 Preparing for a research scientist role isn’t a weekend sprint. The plan below assumes ~100 days (around 14–15 weeks) of disciplined, focused preparation.
 Think of it as 10 phases (≈10 days each), grouped into larger thematic blocks.
@@ -154,7 +154,7 @@ Hands-on:
 `Outcome:` You should be comfortable answering: “How does this model actually work?” instead of just “It’s a transformer.”
 
 
-## 3.3 (Weeks 5–6) Deep Reinforcement Learning Refresher
+### 3.3 (Weeks 5–6) Deep Reinforcement Learning Refresher
 
 `Goal:` Achieve deep, working-level confidence with modern DRL.
 
@@ -200,7 +200,7 @@ Core topics:
 `Outcome:` Confidently explain, derive, implement, and debug modern RL algorithms and discuss where they fail.
 
 
-## 3.4 (Weeks 7–8) LLMs, RAG, Multimodal Systems, Prompting & Finetuning
+### 3.4 (Weeks 7–8) LLMs, RAG, Multimodal Systems, Prompting & Finetuning
 `Goal:` Build a strong working mastery of LLMs and the surrounding ecosystem.
 
 `Topics:`
@@ -238,7 +238,7 @@ Core topics:
 
 `Outcome:` Can talk about LLMs as both a research topic and a system you can build and debug.
 
-## 3.5 (Weeks 9–10) AI Safety, Alignment & Responsible AI
+### 3.5 (Weeks 9–10) AI Safety, Alignment & Responsible AI
 
 `Goal:` Develop a rigorous understanding of safety and alignment principles used in modern labs.
 
@@ -268,7 +268,7 @@ Core topics:
 `Outcome:` Can speak maturely and concretely about safety, alignment risks, and mitigation strategies. 
 
 
-## 3.6 (Weeks 11–12) ML Systems, Experimentation Design & Infrastructure
+### 3.6 (Weeks 11–12) ML Systems, Experimentation Design & Infrastructure
 `Goal:` Understand how research artifacts turn into production-grade systems.
 
 `Topics:`
@@ -515,7 +515,7 @@ Your support helps me keep building open, free resources for the AI research com
 
 <div class="footer-subscribe">
   Subscribe to <a href="https://neuravp.substack.com">NeuraAgentix AI</a> &nbsp;·&nbsp;
-  <a href="https://www.buymeacoffee.com/kundan_k">Buy Me a Coffee</a>
+  <!--<a href="https://www.buymeacoffee.com/kundan_k">Buy Me a Coffee</a> -->
 </div>
 
 
