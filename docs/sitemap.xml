@@ -330,7 +330,7 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/rpkg/safe/index.html</loc>
-    <lastmod>2025-11-04T17:11:09.632Z</lastmod>
+    <lastmod>2025-12-04T16:39:06.574Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/rpkg/llm_control/index.html</loc>
@@ -415,5 +415,17 @@
   <url>
     <loc>https://kundan-kumarr.github.io/robo/robo7.html</loc>
     <lastmod>2025-09-24T14:59:40.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog/blog_20251204_safe_ai/index.html</loc>
+    <lastmod>2025-12-04T19:35:35.814Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog/blog_20251124_research_guide/index.html</loc>
+    <lastmod>2025-11-25T20:17:01.544Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/blog/blog_20251210_self_attention_mechanism/index.html</loc>
+    <lastmod>2025-11-04T17:11:08.006Z</lastmod>
   </url>
 </urlset>

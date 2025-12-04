@@ -1,14 +1,12 @@
 ---
-title: "Safe DRL"
-description: "Safe DRL Models"
+title: "Building Safer AI: Alignment and Robust Cyber-Physical Systems"
+description: "Why the next generation of AI must be predictable, aligned, and physically grounded"
 author: "Kundan Kumar"
-date: "2025-02-22"
-categories: [Utility]
+date: "2025-12-04"
+categories: [Safe-AI,Alignment]
 ---
 
-This oding. 
-
-
+> As AI systems move from screens into the physical world, safety shifts from a theoretical concern to an engineering requirement.
 
 Planned content: 
 

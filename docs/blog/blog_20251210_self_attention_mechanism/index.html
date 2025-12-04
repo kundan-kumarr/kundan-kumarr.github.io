@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Kundan Kumar">
-<meta name="dcterms.date" content="2025-12-04">
-<meta name="description" content="Why the next generation of AI must be predictable, aligned, and physically grounded">
+<meta name="dcterms.date" content="2025-10-21">
+<meta name="description" content="My thoughts on the open source transition in pharma, public (health) sector and academia. A culture change is needed, and it’s done better at some places than others. As educators and researchers, there are many things that can be done.">
 
-<title>Building Safer AI: Alignment and Robust Cyber-Physical Systems – Kundan Kumar</title>
+<title>Self-Attention Mechanism – Kundan Kumar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-4931ad3a4f610300299060d87ad9de1f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-b242815c4c9c43e9bec481eb86b578a5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-24b80f85c2e60e4649179432cb61de83.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -220,24 +220,40 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#mathematical-foundations" id="toc-mathematical-foundations" class="nav-link active" data-scroll-target="#mathematical-foundations">Mathematical Foundations</a>
+  <ul class="collapse">
+  <li><a href="#step-1-compute-attention-scores" id="toc-step-1-compute-attention-scores" class="nav-link" data-scroll-target="#step-1-compute-attention-scores">Step 1 — Compute Attention Scores</a></li>
+  <li><a href="#step-2-apply-softmax" id="toc-step-2-apply-softmax" class="nav-link" data-scroll-target="#step-2-apply-softmax">Step 2 — Apply Softmax</a></li>
+  <li><a href="#step-3-weighted-sum-of-values" id="toc-step-3-weighted-sum-of-values" class="nav-link" data-scroll-target="#step-3-weighted-sum-of-values">Step 3 — Weighted Sum of Values</a></li>
+  </ul></li>
+  <li><a href="#complete-equation" id="toc-complete-equation" class="nav-link" data-scroll-target="#complete-equation">Complete Equation</a></li>
+  <li><a href="#clinical-reporting" id="toc-clinical-reporting" class="nav-link" data-scroll-target="#clinical-reporting">Clinical Reporting</a></li>
+  <li><a href="#open-sourcing-public-health" id="toc-open-sourcing-public-health" class="nav-link" data-scroll-target="#open-sourcing-public-health">Open Sourcing Public Health</a></li>
+  <li><a href="#embrace-the-transition" id="toc-embrace-the-transition" class="nav-link" data-scroll-target="#embrace-the-transition">Embrace the transition</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/blog/blog_20251210_self_attention_mechanism/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Building Safer AI: Alignment and Robust Cyber-Physical Systems</h1>
+<h1 class="title">Self-Attention Mechanism</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Safe-AI</div>
-    <div class="quarto-category">Alignment</div>
+    <div class="quarto-category">Deep Learning</div>
+    <div class="quarto-category">NLP</div>
+    <div class="quarto-category">Transformers</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Why the next generation of AI must be predictable, aligned, and physically grounded
+    <p>My thoughts on the open source transition in pharma, public (health) sector and academia. A culture change is needed, and it’s done better at some places than others. As educators and researchers, there are many things that can be done.</p>
   </div>
 </div>
 
@@ -254,7 +270,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 4, 2025</p>
+      <p class="date">October 21, 2025</p>
     </div>
   </div>
   
@@ -266,18 +282,175 @@ window.Quarto = {
 </header>
 
 
-<blockquote class="blockquote">
-<p>As AI systems move from screens into the physical world, safety shifts from a theoretical concern to an engineering requirement.</p>
-</blockquote>
-<p>Planned content:</p>
+<p>Two days ago (Jan 11 2023) I watched a <a href="https://www.youtube.com/watch?v=nqJsLSLd39A">presentation</a> by data scientists at Roche about <strong>why they are making their clinical trials in 2023 open source with R</strong>. As someone who uses R for most of the time and has done similar works (not in pharma, but in <a href="https://chizapoth.github.io/projects/sykdomspulsen/">public health surveillance and reporting</a>: watch <a href="https://www.youtube.com/watch?v=9wmajA7Okrg">my talk</a>, <a href="https://github.com/chizapoth/talks/tree/master/2022-06-16-user_sykdomspulsen" class="btn btn-success btn-sm">Code</a> to find out what we do), I watched the presentation with great interest. Here are my notes, combined with some thoughts on open-source in the industry, public sector and academia.</p>
+<section id="introduction" class="level4">
+<h4 class="anchored" data-anchor-id="introduction">Introduction</h4>
+<p>Self-attention is the <strong>core mathematical engine</strong> behind Transformers — the architecture that powers models like BERT, GPT, and Vision Transformers.<br>
+It enables the model to dynamically focus on <strong>different parts of the input sequence</strong> to build contextual representations.</p>
+<p>Unlike traditional recurrent models (RNNs/LSTMs) that process sequences step-by-step, self-attention processes all tokens <strong>in parallel</strong>, capturing <strong>global dependencies</strong> efficiently.</p>
+</section>
+<section id="mathematical-foundations" class="level1">
+<h1>Mathematical Foundations</h1>
+<p>Let the input be a matrix ( X ^{n d_{}} ),<br>
+where ( n ) is the sequence length and ( d_{} ) is the embedding dimension.</p>
+<p>From this input, we derive <strong>three key matrices</strong> using learnable weight parameters:</p>
+<p>[ Q = X W_Q, K = X W_K, V = X W_V ]</p>
+<p>where</p>
 <ul>
-<li>E</li>
-<li>2</li>
-<li>Eu</li>
+<li>( W_Q, W_K, W_V ^{d_{} d_k} )</li>
+<li>( Q ): Query matrix — “What am I looking for?”</li>
+<li>( K ): Key matrix — “What information do I have?”</li>
+<li>( V ): Value matrix — “What value should be returned if relevant?”</li>
 </ul>
+<hr>
+<section id="step-1-compute-attention-scores" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-compute-attention-scores">Step 1 — Compute Attention Scores</h2>
+<p>The similarity between a query and all keys is computed via the <strong>dot product</strong>:</p>
+<p>[ = Q K^ ]</p>
+<p>Each element ( s_{ij} ) represents <strong>how much token ( i )</strong> attends to <strong>token ( j )</strong>.</p>
+<p>To stabilize gradients, the scores are <strong>scaled</strong> by ( ):</p>
+<p>[ = ]</p>
+<hr>
+</section>
+<section id="step-2-apply-softmax" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-apply-softmax">Step 2 — Apply Softmax</h2>
+<p>We convert scores into <strong>probabilities</strong>:</p>
+<p>[ A = ( ) ]</p>
+<p>Here, each row of ( A ) sums to 1 — it represents the <strong>attention distribution</strong> for one token.</p>
+<hr>
+</section>
+<section id="step-3-weighted-sum-of-values" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-weighted-sum-of-values">Step 3 — Weighted Sum of Values</h2>
+<p>Finally, we multiply the attention weights ( A ) by the value matrix ( V ):</p>
+<p>[ = A V ]</p>
+<p>This produces the contextualized representation for each token — a weighted combination of all token values.</p>
+<hr>
+</section>
+</section>
+<section id="complete-equation" class="level1">
+<h1>Complete Equation</h1>
+<p>The <strong>scaled dot-product self-attention</strong> is thus summarized as:</p>
+<p>[ (Q, K, V) = ( ) V ]</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>- Note down some of the technology which points towards the future of the field - Relate to my experience of open-source applied in public health, specifically public health reporting - Share some thoughts in statistical education of applied students/researchers (e.g.&nbsp;medicine), and training Research Software Engineers</td>
+</tr>
+<tr class="even">
+<td>#### My experience with statistical software</td>
+</tr>
+<tr class="odd">
+<td>To put my opinions in perspective,</td>
+</tr>
+<tr class="even">
+<td>- I <em>do not</em> have experience with SAS or pharma, so I <em>do not</em> have first-hand knowledge on the functionality, ease-of-use or the popularity of commercial softwares in the industry. - I did my MSc and PhD in statistics/biostatistics/medical informatics and R had always been a default choice. - I worked in <strong>public health</strong> for a few years, where <strong>Excel</strong> is possibly the most common tool, and STATA and R are scarcely used (statisticians, epidemiologists, bioinformaticians). - In the past few years, my <strong>university</strong> has made the switch from SPSS to STATA for intro statistics for medical students (while students at higher level, or doing advanced analyses might use R/python), and a test-run with R might be in motion.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="clinical-reporting" class="level1">
+<h1>Clinical Reporting</h1>
+<p>In drug development at pharmaceutical companies (and/or research institutes and hospitals), these data related tasks are very common:</p>
+<ul>
+<li>summarise safety and efficacy data</li>
+<li>provide accurate picture of trial outcomes</li>
+<li>manage data collection across different sites</li>
+</ul>
+<p>Completing these tasks in a <strong>correct, efficient and reproducible</strong> manner is crucial for patient safety. However, these tasks are also <strong>highly resource intensive</strong>: highly trained scientist, statisticians and technincians must be involved in the process. Historically, pharma use <strong>commercial software</strong> such as SAS.</p>
+<section id="regulation-and-exploration-needs" class="level3">
+<h3 class="anchored" data-anchor-id="regulation-and-exploration-needs">Regulation and exploration needs</h3>
+<p>There are requirements for clinical reporting: both regulartory and exploratory. From the regulatory side, there exist industry standards (<a href="https://www.cdisc.org/standards">CDISC</a>) in the clinical research process, such as SDTM (Model for Tabulation of Study Data) and ADaM (Analysis Data Model). Statistical analyses, tables, listings and graphs (TLGs) also fall into this cateogory.</p>
+<p>From the exploratory side, clinical data are highly context dependent, and new formats of data such as imaging are more and more used in prediction modeling and drug development.</p>
+<p>In addition, it is not hard to imagine that the technical competency of employees differ, especially in large organizations. Enabling people with less experience to analyse trial data in a reproducible manner is helpful for not only the learning and growth of employees, but also the productivity of organizations.</p>
+<p>The existing commercial tools are not able to adapt to the rapid changes in the field.</p>
+</section>
+<section id="transition-into-open-source" class="level3">
+<h3 class="anchored" data-anchor-id="transition-into-open-source">Transition into Open-Source</h3>
+<p>In this talk, <a href="https://www.linkedin.com/in/kieran-martin-2b298742/">Dr Kieran Martin</a> at Roche introduced that they started using R as their core data science tool, aiming to move their codebase to having a core R. In the future, they plan to have something that is <strong>lanugage agnostic</strong>: meaning that python, Stan, C++, Julia and beyond can be used for different tasks.</p>
+<p>I only noted down a few of the things they mentioned on the infrastructure side:</p>
+<ul>
+<li>OCEAN - a lanugage agnostic computing platform on AWS (docker)</li>
+<li>Git, Gitlab for version control and collaboration</li>
+<li>Rstudio connect server</li>
+<li>Snakemake for orchestrate production</li>
+</ul>
+</section>
+<section id="r-and-shiny" class="level3">
+<h3 class="anchored" data-anchor-id="r-and-shiny">R and Shiny</h3>
+<p>There are obvious benefits of using R. It is <strong>convenient</strong> to install and use (if you used python and R, you’d probably agree), and the latest development in <strong>Shiny</strong> made it very easy to develop interactive visualizations, suitable for exploration. <strong>Package</strong> development is critical for reproducibility and distributing works - which R does it very well. A few packages developed by pharma are <a href="https://github.com/insightsengineering/teal" class="btn btn-success btn-sm">Code</a> and <a href="https://pharmaverse.github.io/admiral/">admiral: the ADaM in R</a>, which I intend to check out at one point.</p>
+<p>R has deep roots in academia which means the <strong>newest statistical methods</strong> are well covered; which also affects the skill sets that <strong>talents</strong> own - fresh graduates probably already learned it at university. R being open source means that <strong>collaboration</strong> with external partners is much more efficient, and transparent. Strong <strong>community support</strong> is another positive thing that encourages beginners to enter the field and learn.</p>
+<hr>
+</section>
+</section>
+<section id="open-sourcing-public-health" class="level1">
+<h1>Open Sourcing Public Health</h1>
+<section id="surveillance-and-reporting" class="level3">
+<h3 class="anchored" data-anchor-id="surveillance-and-reporting">Surveillance and reporting</h3>
+<p>One key functionality of public health (PH) authorities is <strong>stay informed and inform</strong>. They collect data from labs, hospitals and clinics across the country, summarize into useful statistics in tables and graphs, make reports, then inform the policy makers to make decisions (such as vaccination campaigns).</p>
+<p>Compared to clinical reporting (in my understanding), there are many similarities - we make TLG (tables, listings and graphs). There are also features that make reporting in public health unique:</p>
+<ul>
+<li>PH surveillance and reporting are <strong>dynamic and real-time</strong>, which can change in a matter of days. That is because the situation of different infectious diseases can evolve rapidly, so PH authorities need to make appropriate adjustments.</li>
+<li><strong>Time and location</strong> (spatial-temporal) are important. Different time granularity (daily, weekly) and geographical units (nation, county, municipality, city districts) are typically required for reporting.</li>
+</ul>
+</section>
+<section id="scale-up-and-automate-with-open-source-tools" class="level3">
+<h3 class="anchored" data-anchor-id="scale-up-and-automate-with-open-source-tools">Scale up and automate with open source tools</h3>
+<p>Traditionally, these reports are made manually - one location, one graph per time on a certain disease. When a global pandemic hits, this is definitely not fast enough. At my team (<a href="https://docs.sykdomspulsen.no">Sykdomspulsen</a> team at the Norwegian Institute of Public Health), we tried a different approach. Details of what we did can be found in <a href="https://www.youtube.com/watch?v=9wmajA7Okrg">this talk</a>(<a href="https://github.com/chizapoth/talks/tree/master/2022-06-16-user_sykdomspulsen" class="btn btn-success btn-sm">Code</a>), but to make it brief:</p>
+<ul>
+<li>We developed a fully automated pipeline that connects 15 registries (vaccination, lab, hospital and intensive care and many more). The data is gathered, censored, cleaned and pre-processed for down-stream analysis</li>
+<li>Statistical analysis, tables, graphs and maps are made for <u>all locations in Norway</u> for various outcomes of interest, such as Covid, influenza, respiratory and gastrointestinal infections</li>
+<li>Over 1000 <strong>customized reports</strong> with over 30 graphs and tables are produced daily and sent to local PH officials, where we also had a <strong>shiny website</strong> (Kommunehelsetjenester for Kommunelege) for over 300 PH officials to get most up-to-date information about their own municipality</li>
+</ul>
+<p>By automation, every year Sykdomspulsen can save 700 000 NOK (roughly 70k USD) while making 400 times more real-time reports for public health. Even better, with reproducibility and quality control.</p>
+</section>
+<section id="toolbox" class="level3">
+<h3 class="anchored" data-anchor-id="toolbox">Toolbox</h3>
+<p>Sykdomspulsen is a small team (8 people, 3 are statisticians and 1 engineer), and our infrastructure was built upon R packages, which we call <a href="https://docs.sykdomspulsen.no/packages.html">splverse</a>. Our infrastructure is not fundamentally different from the one Roche introduced, basically:</p>
+<ul>
+<li>R does the task planning and project organization. On top of this, the data cleaning, statistical analysis are implemented. Graphs, tables and maps are made with appropriate R packages</li>
+<li><strong>Rmarkdown</strong> does automated reporting into <code>.docx</code> and <code>.xlsx</code>. Some reports are also in <code>.html</code> tables to be embedded into customized emails</li>
+<li><strong>Rstudio Workbench</strong> and <strong>GitHub</strong> help with teamwork<br>
+</li>
+<li><strong>Docker, GoCD</strong> and <strong>Airflow</strong> do the CI/CD and orchestration</li>
+</ul>
+</section>
+</section>
+<section id="embrace-the-transition" class="level1">
+<h1>Embrace the transition</h1>
+<section id="culture-change-needed" class="level3">
+<h3 class="anchored" data-anchor-id="culture-change-needed">Culture change needed</h3>
+<p>Unfortunately, not all organizations are eager to abandon the old way. Even at our own institute where researchers are the majority, open source and modern day programming is <em>hardly practiced</em> (by my observation). Even worse, under the budget cuts in 2023-24, a large number of younger employees who have the technical skills have left - which left the public health surveillance even more vulnerable now that Covid is far from over.</p>
+<p>In my opinion, public health needs open-source and good programming even more than pharmaceutical companies. Both save lifes - and <strong>PH has less money</strong> to invest in softwares, infrastructures and talents. In this situation, resources should be spent in fields that are critical and most cost-effective; yet in reality this is often <a href="https://www.dagensmedisin.no/artikler/2022/11/14/fhis-tjeneste-sykdomspulsen-legges-ned/">not the case</a>.</p>
+<p>The slow culture change at big organizations can happen, but only if there is a sufficient amount of employees who are willing to embrace the new technology. In the talk by Roche they about about their training strategy. It is not possible to train all users, and not everyone has the same needs at the same time. Therefore, self study with certain study paths is encouraged and supported.</p>
+</section>
+<section id="teach-programming-to-students-in-various-fields" class="level3">
+<h3 class="anchored" data-anchor-id="teach-programming-to-students-in-various-fields">Teach programming to students in various fields</h3>
+<p>Based on my experience in the UK and Norway, students (myself included) learn R programming in one of the two ways</p>
+<ul>
+<li><strong>Learning by Googling</strong> (self-taught): a university degree needs to use it: provides a short introduction, then students learn by using. This is how I learned R at my MSc Statistics degree, and this is probably the most common way</li>
+<li>Workshops at university: organizations such as the <strong>Carpentries</strong> provide course material and teaching a few times per year, where interested students (usually from subjects such as biology) come and learn. These classes are quite popular, and usually have a long waiting list.</li>
+</ul>
+<p>From learning by googling to some organized teaching - that is already some good progress. However, if not, can we improve?</p>
+<p>In my experience with statistical advising with the university hospital, clinical researchers and medical students are enthusastic to get their statistics done, some are also eager to do some analysis themselves. That is good. Yet, there is generally lack of capacity - either knowledge or software skills. Once the statistician who helps with the project stops, the project ends. There is the need to have <strong>in-house statistical capacity</strong>. To this end, <strong>open-source softwares such as R</strong>, and <strong>good programming practice</strong> (reproducibility for example) can help a lot: the license doesn’t end, and everything is documented so that the next person can continue the work.</p>
+<p>I’m glad that my university has made some transitional efforts in this regard: STATA instead of SPSS is being taught to medical students as part of their statistics course. There might be a test-run in R soon, which is very exciting (since I’ll be involved in the teaching)!</p>
+</section>
+<section id="statistical-engineering-and-rses" class="level3">
+<h3 class="anchored" data-anchor-id="statistical-engineering-and-rses">Statistical engineering and RSEs</h3>
+<p>That was the capacity building to <strong>get beginners more independent</strong>. On the other side, there is also the need for better programming practice for researchers at more advanced level. Research Software Engineering (RSE) is starting to get more and more attention, because it is not only relevant for research (i.e.&nbsp;getting papers published), but in broader applications.</p>
+<p>For example, in the talk by Roche, they mentioned that “RSE teams need to accelerate adoption of new statistical methods and biomarker data analysis”, and the implementation with R packages and templates is at its core. In the future more languages would be included such as Python, Stan, C++ and Julia.</p>
+<p>However, RSE as a job title or career path is still a new thing. I know two RSEs at my university, and RSE is definitely <strong>not your typical academic faculty position</strong>: only departments that think it’s important makes positions, often not permanent. To get any new methods actually used in either industry or the public sector outside research, translating methods into tools is must-do. In the future I hope RSE becomes a stable and common career path, and more exciting things can happen.</p>
+<blockquote class="blockquote">
+<p>Interview Questions</p>
+</blockquote>
+<p><span class="blue-text">Implement the self-attention mechanism, which allows a model to dynamically focus on different parts of the input sequence when generating a contextualized representation. The function should return the self-attention output as a numpy array.</span></p>
 
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -679,6 +852,35 @@ window.Quarto = {
     }
   });
   </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="light">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "kundan-kumarr/kundan-website-giscus";
+    script.dataset.repoId = "R_kgDOQPG9Og";
+    script.dataset.category = "Announcements";
+    script.dataset.categoryId = "DIC_kwDOQPG9Os4Cxbe7";
+    script.dataset.mapping = "pathname";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -687,7 +889,7 @@ window.Quarto = {
 </div>   
     <div class="nav-footer-center">
 <p><a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a> <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark me-2" href="https://orcid.org/0000-0002-3229-6649" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a> <a class="link-dark me-2" href="https://scholar.google.com/citations?user=1zDpIJkAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a> <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a></p>
-<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/rpkg/safe/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/blog/blog_20251210_self_attention_mechanism/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
