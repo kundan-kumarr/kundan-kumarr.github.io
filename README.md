@@ -1,5 +1,5 @@
 ### Personal Website
-#####  🌐 kundan-kumarr.github.ioo
+#####  🌐 kundan-kumarr.github.io
 
 - This repository contains the source files for my personal academic website — showcasing my **research**, **teaching**, and **projects**.  
 - The site is built using [**Quarto**](https://quarto.org/) and hosted on **GitHub Pages**.
