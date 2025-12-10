@@ -18,12 +18,15 @@ about:
     - icon: github
       text: GitHub
       href: http://github.com/kundan-kumarr/
-    - icon: youtube
-      text: YouTube
-      href: https://www.youtube.com/@AIAgentic-007/
     - icon: rss
       text: Substack
       href: https://neuravp.substack.com/
+    - icon: twitter
+      text: X (Twitter)
+      href: https://x.com/NeuraAgentixAI
+    - icon: youtube
+      text: YouTube
+      href: https://www.youtube.com/@AIAgentic-007/
     - icon: book
       text: Scholar
       href: https://scholar.google.com/citations?user=1zDpIJkAAAAJ
@@ -116,7 +119,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 
 ---
 
-### Other Research Interests
+<!--### Other Research Interests -->
 
 ```{=html}
 <style>
@@ -163,7 +166,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
     font-size: 1.05rem;
   }
 </style>
-
+<h3 align="center">Other Research Interests</h3>
 <div class="proj-grid">
 
   <a class="proj-card" href="">
@@ -193,7 +196,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 
 ---
 
-### Explore My Work
+<!--### Explore My Work -->
 
 ```{=html}
 <style>
@@ -201,7 +204,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 2rem;
-    margin-top: 1.5rem;
+    margin-top: 0.0rem;
     align-items: start;
   }
 
@@ -249,6 +252,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
   }
 </style>
 
+<h3 align="center">Explore My Work</h3>
 <div class="explore-section">
 
   <div class="explore-item">
@@ -307,7 +311,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 
 .news-item {
   position: relative;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.0rem;
   padding: 1.2rem 1.5rem;
   background: #f8f9fa;
   border-radius: 6px;
@@ -369,28 +373,172 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 }
 </style>
 
+```
+
+
+```{=html}
+<style>
+.news-container {
+  position: relative;
+  padding-left: 10rem;
+  margin-left: 2rem;
+}
+
+/* vertical line */
+.news-container::before {
+  content: '';
+  position: absolute;
+  left: 8rem;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #d0d0d0;
+}
+
+.news-item {
+  position: relative;
+  margin-bottom: 1.8rem;
+  margin-left: 1.5rem;
+  padding: 0 !important;
+  background: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+}
+
+/* blue dot on the line */
+.news-item::after {
+  content: '';
+  position: absolute;
+  left: -3.8rem;              /* aligns with the vertical line */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background: #007bff;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #007bff;
+}
+
+/* date on the left */
+.news-date {
+  position: absolute;
+  left: -10.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  color: #007bff;
+  font-size: 0.9rem;
+  text-align: right;
+  width: 7rem;
+}
+
+/* logo between dot and card */
+.news-logo {
+  position: absolute;
+  left: -1.5rem;              /* between dot and card */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* text card ONLY */
+.news-card {
+  margin-left: 4.5rem;        /* leaves space for logo */
+  background: none !important;
+  border-radius: 0;
+  padding: 1.1rem 1.5rem;
+  box-shadow: none;
+  position: relative;
+}
+
+/* speech-bubble arrow */
+.news-card::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #f8f9fa;
+}
+
+.news-content {
+  color: #333;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.news-content a {
+  color: #0056b3;
+  text-decoration: none;
+}
+</style>
+
 <h4 align="center">News Highlights</h4>
 <div class="news-container">
+
+  <!-- EPSR -->
   <div class="news-item">
     <div class="news-date">[Sep 2025]</div>
-    <div class="news-content">
-      Our paper on <a href="https://www.sciencedirect.com/science/article/pii/S037877962500848X?dgcid=coauthor">Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification</a> has been accepted to <a href="https://www.sciencedirect.com/journal/electric-power-systems-research">Journal on Electric Power Systems Research 2026</a>.
-    </div>
-  </div>
-  
-  <div class="news-item">
-    <div class="news-date">[Jul 2025]</div>
-    <div class="news-content">
-      Selected for the <a href="https://sites.google.com/cohere.com/coherelabs-community/community-programs/summer-school">Cohere Machine Learning Summer School</a>, hosted by Cohere Labs.
+    <img src="/misc/news/epsr.png" alt="Electric Power Systems Research" class="news-logo">
+
+    <div class="news-card">
+      <div class="news-content">
+        Our paper on 
+        <a href="https://www.sciencedirect.com/science/article/pii/S037877962500848X?dgcid=coauthor">
+          Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification
+        </a>
+        has been accepted to 
+        <a href="https://www.sciencedirect.com/journal/electric-power-systems-research">
+          Journal on Electric Power Systems Research 2026
+        </a>.
+      </div>
     </div>
   </div>
 
+  <!-- Cohere ML Summer School -->
   <div class="news-item">
-    <div class="news-date">[Mar 2025]</div>
-    <div class="news-content">
-      Our paper on <a href="">Advanced Semi-Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems</a> has been accepted to <a href="https://pes-gm.org/">Conference on IEEE PES General Meeting 2025</a>.
+    <div class="news-date">[Jul 2025]</div>
+    <img src="/misc/news/cohere.png" alt="Cohere Labs" class="news-logo">
+
+    <div class="news-card">
+      <div class="news-content">
+        Selected for the 
+        <a href="https://sites.google.com/cohere.com/coherelabs-community/community-programs/summer-school">
+          Cohere Machine Learning Summer School
+        </a>, hosted by Cohere Labs.
+      </div>
     </div>
   </div>
-  
+
+  <!-- IEEE PES GM -->
+  <div class="news-item">
+    <div class="news-date">[Mar 2025]</div>
+    <img src="/misc/news/pesgm.png" alt="IEEE PES General Meeting" class="news-logo">
+
+    <div class="news-card">
+      <div class="news-content">
+        Our paper on 
+        <a href="">
+          Advanced Semi-Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems
+        </a>
+        has been accepted to 
+        <a href="https://pes-gm.org/">
+          Conference on IEEE PES General Meeting 2025
+        </a>.
+      </div>
+    </div>
+  </div>
+
 </div>
+
 ```
+
