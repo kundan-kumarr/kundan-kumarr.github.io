@@ -1,5 +1,5 @@
 ---
-title: "Research"
+title: ""
 format:
   html:
     toc: true
@@ -11,33 +11,33 @@ format:
     pandoc-args: ["--number-offset=0"]
 ---
 
-<!--
----
-title: "Research"
-format: html
-toc: true
-toc-title: On this page
-number-sections: false
-anchor-sections: true
-page-layout: full
----
+## Research{#research-vision}
+I develop safe, interpretable, and adaptive AI systems for real-world cyber-physical environments that must operate under uncertainty, strict physical constraints, and adversarial conditions. My work sits at the intersection of machine learning, control theory, optimization, and AI safety, with a core focus on building models that are robust, predictable, and deployable at scale.
 
--->
-## Research Vision & Mission {#research-vision}
-I seek to create safe, interpretable, and adaptive AI systems for real-world cyber-physical environments that operate with uncertainty, constraints, and adversarial settings. My research merges machine learning, optimization, and control theory, focusing on safety, robustness, and generalization.
+### Vision
+I aim to create AI agents that generalize across environments, learn from imperfect or unreliable data, and remain stable under distribution shifts. These capabilities are essential both for scientific progress and for building production-grade intelligent systems used in industry.
 
-My research revolves around the following pillars:
+My research centers around five pillars:
   
-- Safe & Trustworthy Reinforcement Learning: Designing agents robust to adversarial attacks, resilient to distributional shifts, and allowing for safe exploration.
-- Physics-informed Deep Reinforcement Learning (DRL): Embedding physical laws and constraints in the learning frameworks for stability, interpretability, and faster convergence.
-- Probabilistic & Bayesian Modeling: Probabilistic & Bayesian Modeling: Capturing both epistemic and aleatoric uncertainty for trustable control under high stakes, partially observable systems.
-- Large Language Models (LLMs) for autonomous reasoning: Using LLMs for better planning, explainability, and human-AI collaboration in control systems.
--  Vision-based simulation environments: Using platforms such as CARLA and CityLearn to train agents in multimodal, visually rich, and interactive environments.
+- Safe & Trustworthy Reinforcement Learning: Designing agents that remain reliable under sensor noise, hardware faults, non-stationarity, and adversarial perturbations. This includes constraint-aware learning, certified robustness, and safe exploration in safety-critical settings.
+- Physics-informed Deep Reinforcement Learning (DRL): Embedding physical laws, invariants, and feasibility constraints directly into model architectures and learning objectives to improve convergence, interpretability, and real-world deployability.
+- Probabilistic & Bayesian Modeling: Quantifying epistemic and aleatoric uncertainty for risk-aware planning in partially observable, high-stakes environments using Bayesian neural networks, uncertainty-aware RL, and probabilistic inference.
+- Large Language Models (LLMs) for autonomous reasoning: Leveraging LLMs to support high-level planning, explainable decision pipelines, natural-language supervision, and adaptive control. This enables human-AI collaboration and interpretable reasoning in complex systems.
+-  Vision-based simulation environments: Using platforms such as CARLA, CityLearn, AirSim, and OpenDSS to train agents in multimodal, visually rich environments, supporting robust perception-control integration and sim-to-real transfer.
   
-Through the tight coupling of domain knowledge into learning frameworks, I hope to enable resilient, generalizable, and safe AI for critical applications in areas such as smart grids, autonomous systems, and intelligent infrastructure.
 
-## My Research Focus Areas {#research-focus}
+### Mission
+By integrating physics-guided structure, probabilistic reasoning, and safe reinforcement learning, my mission is to build the next generation of AI systems that are:
 
+- Reliable, even under uncertainty, noise, and adversarial conditions
+- Generalizable across tasks, scales, and distribution shifts 
+- Interpretable to operators, engineers, and decision-makers
+- Deployable in large-scale, real-world cyber-physical environments
+
+My research advances the foundation needed to deploy trustworthy AI across critical infrastructures, autonomous systems, and safety-critical infrastructure domains where reliability and robustness are essential for real-world impact.
+
+## Research Focus {#research-focus}
+These focus areas organize my ongoing and recent projects that bridge **fundamental methods** and **deployable systems**.
 <!-- Styling (optional if handled globally) -->
 <style>
 .proj-grid {
@@ -269,15 +269,6 @@ Through the tight coupling of domain knowledge into learning frameworks, I hope 
 
 </div>
 
-## Application Domains {#application-domains}
-
-| Domain | Description |
-|--------|-------------|
-| [Smart Energy Systems](https://kundan-kumarr.github.io/SmartGridAI/) | Volt-VAR control, DER coordination, and federated DRL for power grid stability |
-| [Autonomous Systems](https://kundan-kumarr.github.io/ai-analysis) | Safe navigation, adaptive planning, and control in simulation and real-world environments |
-| [Secure AI for Infrastructure](https://kundan-kumarr.github.io/safe-AI/) | Resilience against cyber-attacks and adversarial scenarios in safety-critical systems |
-
----
 
 ## Publications {#publications}
 
@@ -412,8 +403,6 @@ function toggleConfPapers(){
 
 
 :::
-
----
 
 ## Ongoing Projects {#ongoing-projects}
 
