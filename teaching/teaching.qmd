@@ -3,11 +3,54 @@ title: "Teaching"
 page-layout: article
 ---
 
-As a Computer Science Graduate Teaching Assistant at Iowa State University with over five years of teaching experience, I focus on creating an comprehensive, engaging, and challenging learning environment that meets the different needs of students. My teaching approach emphasizes connecting theory with real-world practice, helping students turn basic computer science ideas into practical skills. I encourage hands-on learning through software development, user interface design, and database projects that build both technical skills and problem-solving abilities. By combining project-based tasks with personalized guidance, I aim to prepare students to face current challenges in the tech field with confidence and creativity. My goal is to help students be ready for jobs in technology and able to think of new ideas.
+
+As a Computer Science Graduate Teaching Assistant at Iowa State University with over five years of teaching experience, I focus on creating a comprehensive, engaging, and challenging learning environment that meets the diverse needs of students. My teaching approach emphasizes connecting theory with real-world practice, helping students turn core computer science concepts into practical skills. I encourage hands-on learning through software development, user interface design, and database projects that build both technical skills and problem-solving abilities. By combining project-based tasks with personalized guidance, I aim to prepare students to face current challenges in the tech field with confidence and creativity.
+
+In addition to classroom and lab, I also create **online learning resources** that break down complex concepts into simple, digestible formats. These include YouTube tutorials, blog articles, and written notes or mini-books that summarize difficult topics into clear, practical explanations and master difficult concepts at their own pace.
+
+<div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+
+  <a href="https://neuravp.substack.com/" target="_blank"
+     style="
+        background:#574D4B; 
+        color:white; 
+        padding:6px 14px; 
+        border-radius:6px; 
+        text-decoration:none; 
+        font-weight:500; 
+        font-size:0.9rem;">
+     📝 Blogs
+  </a>
+
+  <a href="https://www.youtube.com/@AIAgentic-007" target="_blank"
+     style="
+        background:#FF4B4B; 
+        color:white; 
+        padding:6px 14px; 
+        border-radius:6px; 
+        text-decoration:none; 
+        font-weight:500; 
+        font-size:0.9rem;">
+     ▶️ YouTube
+  </a>
+
+  <a href="https://kundan-kumarr.github.io/Zero2LLM-Crafter/" target="_blank"
+     style="
+        background:#4A82F0; 
+        color:white; 
+        padding:6px 14px; 
+        border-radius:6px; 
+        text-decoration:none; 
+        font-weight:500; 
+        font-size:0.9rem;">
+     📘 Notes / Book
+  </a>
+
+</div>
+
 
 ::: {.callout-note title="Courses I have served as a Computer Science Graduate Teaching Assistant or Mentor in:"}
 :::
-
 
 <style>
 /* Hide visually but keep in DOM so it appears in TOC */
@@ -50,7 +93,7 @@ nav[role="doc-toc"] li > a .nav-link-text {
 ::: {.g-col-12 .g-col-md-10}
 [Fall 2016](/teaching/coms1130/)
 
-This course is a foundational course focused on using tools such as Microsoft Excel and Microsoft Access for effective data organization, analysis, and reporting. Students develop proficiency in applying formulas, creating pivot tables, designing queries, and building forms and visual analyses to support practical business and data-driven decision-making.
+This foundational course focuses on using tools such as Microsoft Excel and Microsoft Access for effective data organization, analysis, and reporting. Students develop proficiency in applying formulas, creating pivot tables, designing queries, and building forms and visual analyses to support practical business and data-driven decision-making.
 :::
 
 :::
@@ -67,8 +110,7 @@ This course is a foundational course focused on using tools such as Microsoft Ex
 ::: {.g-col-12 .g-col-md-10}
 [Fall 2022](/teaching/coms3090/), &nbsp; [Spring 2023](/teaching/coms3090/), &nbsp; [Spring 2024](/teaching/coms3090/), &nbsp; [Fall 2025](/teaching/coms3090/)
 
-This course is a practical, **hands-on program** that primarily deals with modern software development standards. It mainly focuses on Git, Agile methodologies, code reviews, unit-testing, and continuous integration and deployment (CI/CD). Students collaborate in team-based projects that replicate development workflows of the real world. These projects put a particular emphasis on collaboration, documentation, and iterative improvement. Finally, the course is about comprehensive Android application and game development, which includes design, implementation, testing, and deployment.
-
+This course is a practical, **hands-on program** that focuses on modern software development standards. Core topics include Git, Agile methodologies, code reviews, unit testing, and continuous integration and deployment (CI/CD). Students collaborate on team-based projects that replicate real-world development workflows, with particular emphasis on collaboration, documentation, and iterative improvement. The course culminates in comprehensive Android application and game development, including design, implementation, testing, and deployment.
 :::
 
 :::
@@ -85,7 +127,7 @@ This course is a practical, **hands-on program** that primarily deals with moder
 ::: {.g-col-12 .g-col-md-10}
 [Fall 2023](/teaching/coms3190/)
 
-This course explores the principles of designing user-friendly and efficient interfaces. It integrates hardware and data-driven UI practices, incorporating Raspberry Pi for Internet of Things (IoT) applications and Node.js for front-end visualization and interactive design.
+This course explores the principles of designing user-friendly and efficient interfaces. It integrates hardware and data-driven UI practices, incorporating Raspberry Pi for Internet of Things (IoT) applications and Node.js for front-end visualization and interactive design. Students learn to design, prototype, and evaluate interfaces with a focus on usability and user experience.
 :::
 
 :::
@@ -103,7 +145,7 @@ This course explores the principles of designing user-friendly and efficient int
 ::: {.g-col-12 .g-col-md-10}
 [Fall 2020](/teaching/coms3620/), &nbsp; [Spring 2021](/teaching/coms3620/), &nbsp; [Fall 2021](/teaching/coms3620/), &nbsp; [Fall 2024](/teaching/coms3620/)
 
-This course teaches the modeling and design of software systems using object-oriented principles. It emphasizes the use of UML diagrams, design patterns, and Java implementation to develop modular, maintainable, and scalable software solutions.
+This course teaches the modeling and design of software systems using object-oriented principles. It emphasizes the use of UML diagrams, design patterns, and Java implementations to develop modular, maintainable, and scalable software solutions. Students gain experience moving from requirements to design to code in a structured, iterative way.
 :::
 
 :::
@@ -120,7 +162,7 @@ This course teaches the modeling and design of software systems using object-ori
 ::: {.g-col-12 .g-col-md-10}
 [Spring 2022](/teaching/coms3630/)
 
-This course covers the fundamentals of database architecture, data modeling, and Structured Query Language (SQL). Students gain hands-on experience with relational database systems while exploring key concepts such as indexing, transactions, normalization, and comprehensive database design.
+This course covers the fundamentals of database architecture, data modeling, and Structured Query Language (SQL). Students gain hands-on experience with relational database systems while exploring key concepts such as indexing, transactions, normalization, and comprehensive database design. Emphasis is placed on designing robust schemas and writing efficient queries for real-world applications.
 
 :::
 
@@ -141,17 +183,14 @@ This course covers the fundamentals of database architecture, data modeling, and
 
 This course focuses on the principles and practices of software verification and validation. Students learn to design and execute effective test cases, utilize debugging tools, and implement automation frameworks to ensure software quality, reliability, and maintainability.
 :::
-
 :::
 
-
 ## Future Goals
-I am dedicated to the continuous development of my teaching methods and curriculum design. My objectives consist of:
+I am dedicated to the continuous development of my teaching methods and curriculum design. My objectives include:
 
-- Incorporating new AI and software development tools as tools for student learning.
-- Creating interactive, experiential, and project-based learning environments that encourage students to be actively involved.
-- Becoming a resource to the community of computer science education through the innovation of curricula, research, and guidance of other educators.
-- Broadening the students' access to the computing field where they can tackle the challenges of the real world by using their theoretical knowledge.
+- Incorporating new AI and software development tools as part of student learning, helping them engage with modern development and analysis workflows.
+- Creating interactive, experiential, and project-based learning environments that encourage students to be actively involved and learn by building.
+- Becoming a resource to the broader computer science education community through curriculum innovation, teaching-focused research, and mentorship of other educators.
+- Broadening students' access to the computing field so they can confidently tackle real-world challenges using both their theoretical foundations and practical skills.
 
 [Email](mailto:cs.kundann@gmail.com) me if you want to collaborate or learn more about my teaching and research initiatives.
-

@@ -193,7 +193,7 @@
     "href": "teaching/teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "As a Computer Science Graduate Teaching Assistant at Iowa State University with over five years of teaching experience, I focus on creating an comprehensive, engaging, and challenging learning environment that meets the different needs of students. My teaching approach emphasizes connecting theory with real-world practice, helping students turn basic computer science ideas into practical skills. I encourage hands-on learning through software development, user interface design, and database projects that build both technical skills and problem-solving abilities. By combining project-based tasks with personalized guidance, I aim to prepare students to face current challenges in the tech field with confidence and creativity. My goal is to help students be ready for jobs in technology and able to think of new ideas."
+    "text": "As a Computer Science Graduate Teaching Assistant at Iowa State University with over five years of teaching experience, I focus on creating a comprehensive, engaging, and challenging learning environment that meets the diverse needs of students. My teaching approach emphasizes connecting theory with real-world practice, helping students turn core computer science concepts into practical skills. I encourage hands-on learning through software development, user interface design, and database projects that build both technical skills and problem-solving abilities. By combining project-based tasks with personalized guidance, I aim to prepare students to face current challenges in the tech field with confidence and creativity.\nIn addition to classroom and lab, I also create online learning resources that break down complex concepts into simple, digestible formats. These include YouTube tutorials, blog articles, and written notes or mini-books that summarize difficult topics into clear, practical explanations and master difficult concepts at their own pace."
   },
   {
     "objectID": "teaching/teaching.html#coms1130",
@@ -207,7 +207,7 @@
     "href": "teaching/teaching.html#coms-1130-spreadsheets-and-databases",
     "title": "Teaching",
     "section": "COMS 1130 – Spreadsheets and Databases",
-    "text": "COMS 1130 – Spreadsheets and Databases\n\n\n\n\n\nFall 2016\nThis course is a foundational course focused on using tools such as Microsoft Excel and Microsoft Access for effective data organization, analysis, and reporting. Students develop proficiency in applying formulas, creating pivot tables, designing queries, and building forms and visual analyses to support practical business and data-driven decision-making."
+    "text": "COMS 1130 – Spreadsheets and Databases\n\n\n\n\n\nFall 2016\nThis foundational course focuses on using tools such as Microsoft Excel and Microsoft Access for effective data organization, analysis, and reporting. Students develop proficiency in applying formulas, creating pivot tables, designing queries, and building forms and visual analyses to support practical business and data-driven decision-making."
   },
   {
     "objectID": "teaching/teaching.html#coms3090",
@@ -221,7 +221,7 @@
     "href": "teaching/teaching.html#coms-3090-software-development-practices",
     "title": "Teaching",
     "section": "COMS 3090 – Software Development Practices",
-    "text": "COMS 3090 – Software Development Practices\n\n\n\n\n\nFall 2022,   Spring 2023,   Spring 2024,   Fall 2025\nThis course is a practical, hands-on program that primarily deals with modern software development standards. It mainly focuses on Git, Agile methodologies, code reviews, unit-testing, and continuous integration and deployment (CI/CD). Students collaborate in team-based projects that replicate development workflows of the real world. These projects put a particular emphasis on collaboration, documentation, and iterative improvement. Finally, the course is about comprehensive Android application and game development, which includes design, implementation, testing, and deployment."
+    "text": "COMS 3090 – Software Development Practices\n\n\n\n\n\nFall 2022,   Spring 2023,   Spring 2024,   Fall 2025\nThis course is a practical, hands-on program that focuses on modern software development standards. Core topics include Git, Agile methodologies, code reviews, unit testing, and continuous integration and deployment (CI/CD). Students collaborate on team-based projects that replicate real-world development workflows, with particular emphasis on collaboration, documentation, and iterative improvement. The course culminates in comprehensive Android application and game development, including design, implementation, testing, and deployment."
   },
   {
     "objectID": "teaching/teaching.html#coms3190",
@@ -235,7 +235,7 @@
     "href": "teaching/teaching.html#coms-3190-user-interface-design",
     "title": "Teaching",
     "section": "COMS 3190 – User Interface Design",
-    "text": "COMS 3190 – User Interface Design\n\n\n\n\n\nFall 2023\nThis course explores the principles of designing user-friendly and efficient interfaces. It integrates hardware and data-driven UI practices, incorporating Raspberry Pi for Internet of Things (IoT) applications and Node.js for front-end visualization and interactive design."
+    "text": "COMS 3190 – User Interface Design\n\n\n\n\n\nFall 2023\nThis course explores the principles of designing user-friendly and efficient interfaces. It integrates hardware and data-driven UI practices, incorporating Raspberry Pi for Internet of Things (IoT) applications and Node.js for front-end visualization and interactive design. Students learn to design, prototype, and evaluate interfaces with a focus on usability and user experience."
   },
   {
     "objectID": "teaching/teaching.html#coms3620",
@@ -249,7 +249,7 @@
     "href": "teaching/teaching.html#coms-3620-object-oriented-analysis-and-design",
     "title": "Teaching",
     "section": "COMS 3620 – Object-Oriented Analysis and Design",
-    "text": "COMS 3620 – Object-Oriented Analysis and Design\n\n\n\n\n\nFall 2020,   Spring 2021,   Fall 2021,   Fall 2024\nThis course teaches the modeling and design of software systems using object-oriented principles. It emphasizes the use of UML diagrams, design patterns, and Java implementation to develop modular, maintainable, and scalable software solutions."
+    "text": "COMS 3620 – Object-Oriented Analysis and Design\n\n\n\n\n\nFall 2020,   Spring 2021,   Fall 2021,   Fall 2024\nThis course teaches the modeling and design of software systems using object-oriented principles. It emphasizes the use of UML diagrams, design patterns, and Java implementations to develop modular, maintainable, and scalable software solutions. Students gain experience moving from requirements to design to code in a structured, iterative way."
   },
   {
     "objectID": "teaching/teaching.html#coms3630",
@@ -263,7 +263,7 @@
     "href": "teaching/teaching.html#coms-3630-database-management-systems",
     "title": "Teaching",
     "section": "COMS 3630 – Database Management Systems",
-    "text": "COMS 3630 – Database Management Systems\n\n\n\n\n\nSpring 2022\nThis course covers the fundamentals of database architecture, data modeling, and Structured Query Language (SQL). Students gain hands-on experience with relational database systems while exploring key concepts such as indexing, transactions, normalization, and comprehensive database design."
+    "text": "COMS 3630 – Database Management Systems\n\n\n\n\n\nSpring 2022\nThis course covers the fundamentals of database architecture, data modeling, and Structured Query Language (SQL). Students gain hands-on experience with relational database systems while exploring key concepts such as indexing, transactions, normalization, and comprehensive database design. Emphasis is placed on designing robust schemas and writing efficient queries for real-world applications."
   },
   {
     "objectID": "teaching/teaching.html#coms4170",
@@ -284,7 +284,7 @@
     "href": "teaching/teaching.html#future-goals",
     "title": "Teaching",
     "section": "Future Goals",
-    "text": "Future Goals\nI am dedicated to the continuous development of my teaching methods and curriculum design. My objectives consist of:\n\nIncorporating new AI and software development tools as tools for student learning.\nCreating interactive, experiential, and project-based learning environments that encourage students to be actively involved.\nBecoming a resource to the community of computer science education through the innovation of curricula, research, and guidance of other educators.\nBroadening the students’ access to the computing field where they can tackle the challenges of the real world by using their theoretical knowledge.\n\nEmail me if you want to collaborate or learn more about my teaching and research initiatives."
+    "text": "Future Goals\nI am dedicated to the continuous development of my teaching methods and curriculum design. My objectives include:\n\nIncorporating new AI and software development tools as part of student learning, helping them engage with modern development and analysis workflows.\nCreating interactive, experiential, and project-based learning environments that encourage students to be actively involved and learn by building.\nBecoming a resource to the broader computer science education community through curriculum innovation, teaching-focused research, and mentorship of other educators.\nBroadening students’ access to the computing field so they can confidently tackle real-world challenges using both their theoretical foundations and practical skills.\n\nEmail me if you want to collaborate or learn more about my teaching and research initiatives."
   },
   {
     "objectID": "rpkg/carla/index.html",
