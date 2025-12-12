@@ -36,12 +36,14 @@ listing:
 /* ===== Title ===== */
 .pub-title-link{
   text-decoration: none;
-  font-weight: 800;
+  font-weight: 550;
 }
 .pub-title-link:hover{
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
 }
+
 
 /* ===== Meta ===== */
 .pub-meta{
