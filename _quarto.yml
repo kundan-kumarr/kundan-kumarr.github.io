@@ -82,7 +82,7 @@ format:
     math: mathjax
     html-math-method: mathjax
     toc: true
-    
+    citeproc: false
     toc-depth: 3
     smooth-scroll: true
     include-in-header:
