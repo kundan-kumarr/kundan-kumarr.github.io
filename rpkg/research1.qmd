@@ -39,7 +39,6 @@ My research advances the foundation needed to deploy trustworthy AI across criti
 ## Research Focus {#research-focus}
 These focus areas organize my ongoing and recent projects that bridge **fundamental methods** and **deployable systems**.
 <!-- Styling (optional if handled globally) -->
-
 ```{=html}
 <style>
   .proj-grid {
@@ -240,6 +239,236 @@ These focus areas organize my ongoing and recent projects that bridge **fundamen
 ```
 
 
+```{=html}
+<style>
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.proj-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.2rem;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.proj-card:hover {
+  transform: translateY(-3px);
+}
+
+.proj-card img {
+  width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.group-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2rem 0 0.5rem 0;
+  color: #6c2b88;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+</style>
+
+<style>
+  .proj-card img {
+    width: 100%;
+    height: 140px; /* Fixed height */
+    object-fit: contain; /* Keeps aspect ratio, avoids cropping */
+    background-color: #f9f9f9; /* Optional: adds visual consistency */
+    padding: 8px; /* Optional: adds some whitespace */
+    border-bottom: 1px solid #eaeaea; /* Optional: divider under image */
+  }
+</style>
+
+
+<!-- Group: 🧠 DRL-based Control -->
+<div class="group-label">DRL-based Control</div>
+
+<div class="proj-grid">
+
+  <a class="proj-card" href="drl_vvc/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="drl_vvc/image.jpg" alt="DRL Control">
+      <strong>DRL for Volt-VAR</strong><br>
+      Design control agents for voltage regulation and reactive power optimization in smart distribution grids.
+    </span>
+  </a>
+
+  <a class="proj-card" href="physics-informed-actor-critic/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="physics-informed-actor-critic/thumbnail.jpg" alt="Actor Critic">
+      <strong>Physics-Informed Actor-Critic</strong><br>
+      Embed grid physics and control limits directly into the DRL learning loop for stable and efficient decisions.
+    </span>
+  </a>
+
+  <a class="proj-card" href="sim2real/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="sim2real/sim2real.png" alt="Sim2Real Transfer">
+      <strong>Sim-to-Real Transfer</strong><br>
+      Train agents in simulated OpenDSS environments and deploy them on real-time OPAL-RT setups.
+    </span>
+  </a>
+
+</div>
+
+
+
+<!-- Group 1 -->
+<!-- Group: 🔐 Safe & Trustworthy RL -->
+<div class="group-label">Safe & Trustworthy RL</div>
+
+<div class="proj-grid">
+
+  <a class="proj-card" href="safe/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="safe/safe.png" alt="Safe RL">
+      <strong>Robust & Stable Learning</strong><br>
+      Develop agents that ensure system safety, robustness, and interpretability under uncertainty.
+    </span>
+  </a>
+
+  <a class="proj-card" href="uncertainty/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="uncertainty/uncertainty.png" alt="Uncertainty Quantification">
+      <strong>Uncertainty-Aware Policies</strong><br>
+      Quantify epistemic and aleatoric uncertainty in high-stakes, partially observable settings.
+    </span>
+  </a>
+
+  </a>
+
+</div>
+
+<!-- Group 2 -->
+<div class="group-label">Transfer & Meta-Adaptation</div>
+
+<div class="proj-grid">
+
+  <a class="proj-card" href="domain_adaptation/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="domain_adaptation/domain_adaptation.png" alt="Transfer Learning">
+      <strong>Domain Adaptation</strong><br>
+      Enable agents to generalize across grids with different topologies, dynamics, and loads.
+    </span>
+  </a>
+
+  <a class="proj-card" href="meta_rl/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="meta_rl/meta_rl.png" alt="Meta RL">
+      <strong>Meta-RL for Efficiency</strong><br>
+      Leverage meta-reasoning to accelerate learning in low-data, high-variance scenarios.
+    </span>
+  </a>
+
+</div>
+
+
+
+<!-- Group 3 -->
+<div class="group-label">Vision-Simulation Integration</div>
+
+<div class="proj-grid">
+
+  <a class="proj-card" href="carla/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="carla/carla.png" alt="Perception Control">
+      <strong>Perception-Control Fusion</strong><br>
+      Use CARLA and AirSim to train end-to-end systems in visual RL tasks with sensors.
+    </span>
+  </a>
+
+  <a class="proj-card" href="multimodal/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="multimodal/multimodal.png" alt="Multimodal Fusion">
+      <strong>Multi-modal Representations</strong><br>
+      Combine visual, state, and contextual features for better decision-making.
+    </span>
+  </a>
+
+</div>
+
+
+
+<!-- Group 4 -->
+<div class="group-label">LLM-Augmented Decision Systems</div>
+<div class="proj-grid">
+<style>
+  .proj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1rem;
+  }
+  .proj-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #1e567d;
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+    transition: transform .15s ease;
+    text-decoration: none;
+    color: inherit;
+    min-height: 210px;
+  }
+  .proj-card:hover {
+    transform: translateY(-4px);
+  }
+  .proj-body {
+    display: block;
+    padding: 1rem 1.1rem 1.3rem 1.1rem;
+    font-family: 'Nunito', sans-serif;
+  }
+  .proj-cv strong {
+    color: #57B9FF; /* Blue for Computer Vision */
+    font-size: 1.05rem;
+  }
+  .proj-stat strong {
+    color: #57B9FF; /* Blue for Statistical ML */
+    font-size: 1.05rem;
+  }
+  .proj-drive strong {
+    color: #57B9FF; /* Bluefor Self-Driving */
+    font-size: 1.05rem;
+  }
+  .proj-llm strong {
+    color: #8B008B; /* Dark Magenta for LLM Reasoning */
+    font-size: 1.05rem;
+  }
+</style>
+
+<div class="proj-grid">
+
+  <a class="proj-card" href="llm_control/index.qmd">
+    <span class="proj-body proj-cv">
+    <img src="llm_control/image.jpg" alt="LLM for summarization">
+      <strong>LLM-Guided Control</strong><br>
+      Translate natural language into actionable policies for real-world environments.
+    </span>
+  </a>
+
+</div>
+
+</div>
+```
+
+
 ## Publications {#publications}
 
 ::: {.panel-tabset}
@@ -250,16 +479,16 @@ These focus areas organize my ongoing and recent projects that bridge **fundamen
 **Bayesian-optimized bidirectional long-short-term memory network for wind power forecasting with uncertainty quantification** , *Electric Power Systems Research, 2026*  
 <span style="display:inline-flex; gap:4px;">
 <a class="btn btn-primary btn-sm" href="https://www.sciencedirect.com/science/article/pii/S037877962500848X">Paper</a>
-<a class="btn btn-success btn-sm" href="#">Code</a>
-<a class="btn btn-info btn-sm" href="#">Poster</a>
+<!--<a class="btn btn-success btn-sm" href="#">Code</a>
+<a class="btn btn-info btn-sm" href="#">Poster</a> -->
 </span>
 
 2. **Kundan Kumar**, Gelli Ravikumar  
 **Physics-based Deep Reinforcement Learning for Grid-Resilient Volt-VAR Control** *(Under Review)*, *IEEE Transactions on Smart Grid, 2025*  
 <span style="display:inline-flex; gap:4px;">
-<a class="btn btn-primary btn-sm" href="">Paper</a>
+<!--<a class="btn btn-primary btn-sm" href="">Paper</a>
 <a class="btn btn-success btn-sm" href="#">Code</a>
-<a class="btn btn-info btn-sm" href="#">Poster</a>
+<a class="btn btn-info btn-sm" href="#">Poster</a> -->
 </span>
 
 ---
@@ -301,7 +530,7 @@ These focus areas organize my ongoing and recent projects that bridge **fundamen
   <span class="paper-title">Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids</span>, IEEE PES Grid Edge Technologies Conference & Exposition, 2025<br>
   <span style="display:inline-flex;gap:4px;">
     <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2202.13541">Paper</a>
-   <!-- <a class="btn btn-success btn-sm" href="#">Code</a> -->
+    <!--<a class="btn btn-success btn-sm" href="#">Code</a> -->
     <a class="btn btn-info btn-sm" href="#">Poster</a>
   </span></li>
 
@@ -312,7 +541,7 @@ These focus areas organize my ongoing and recent projects that bridge **fundamen
   <span class="paper-title">Bayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control</span>, IEEE PES General Meeting, 2024<br>
   <span style="display:inline-flex;gap:4px;">
     <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2202.13541">Paper</a>
-   <!-- <a class="btn btn-success btn-sm" href="#">Code</a> -->
+    <!--<a class="btn btn-success btn-sm" href="#">Code</a> -->
     <a class="btn btn-info btn-sm" href="#">Poster</a>
   </span></li>
 
@@ -320,7 +549,7 @@ These focus areas organize my ongoing and recent projects that bridge **fundamen
   <span class="paper-title">Deep RL-based Volt-VAR Control and Attack Resiliency for DER-Integrated Distribution Grids</span>, IEEE Innovative Smart Grid Technologies (ISGT), 2024<br>
   <span style="display:inline-flex;gap:4px;">
     <a class="btn btn-primary btn-sm" href="https://ieeexplore.ieee.org/document/10454163">Paper</a>
-   <!-- <a class="btn btn-success btn-sm" href="#">Code</a> -->
+    <!-- <a class="btn btn-success btn-sm" href="#">Code</a> -->
     <a class="btn btn-info btn-sm" href="#">Poster</a>
   </span></li>
 
@@ -328,15 +557,15 @@ These focus areas organize my ongoing and recent projects that bridge **fundamen
   <span class="paper-title">Deep Learning and Pattern-based Methodology for Multivariable Sensor Data Regression</span>, IEEE ICMLA, 2022<br>
   <span style="display:inline-flex;gap:4px;">
     <a class="btn btn-primary btn-sm" href="https://ieeexplore.ieee.org/document/10069730">Paper</a>
-    <!--<a class="btn btn-success btn-sm" href="#">Code</a>
-    <a class="btn btn-info btn-sm" href="#">Poster</a> -->
+   <!-- <a class="btn btn-success btn-sm" href="#">Code</a> -->
+    <!--<a class="btn btn-info btn-sm" href="#">Poster</a> -->
   </span></li>
 
   <li>Kin Gwn Lore, Nicholas Sweet, <span class="author-me">Kundan Kumar</span>, N Ahmed, S Sarkar<br>
   <span class="paper-title">Deep Value of Information Estimators for Collaborative Human-Machine Information Gathering</span>, ACM/IEEE ICCPS, 2016<br>
   <span style="display:inline-flex;gap:4px;">
     <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/1512.07592">Paper</a>
-    <!--<a class="btn btn-success btn-sm" href="#">Code</a>
+   <!-- <a class="btn btn-success btn-sm" href="#">Code</a>
     <a class="btn btn-info btn-sm" href="#">Poster</a> -->
   </span></li>
 
@@ -386,3 +615,191 @@ function toggleConfPapers(){
   Convert user prompts to interpretable control policies using LLMs (OpenAI, Claude) in CityLearn environments.
 
 
+<style>
+  .proj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .proj-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.2rem;
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .proj-card:hover {
+    transform: translateY(-3px);
+  }
+
+  /* Small, centered hex-badge style */
+  .proj-card img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    display: block;
+    margin: 0.4rem auto 0.9rem auto;
+    background-color: transparent;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .proj-body {
+    font-family: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .group-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 2rem 0 0.5rem 0;
+    color: #6c2b88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .proj-llm strong {
+    color: #8B008B;
+    font-size: 1.05rem;
+  }
+</style>
+
+<!-- Group: 🧠 DRL-based Control -->
+
+<div class="group-label">DRL-based Control</div>
+
+<div class="proj-grid">
+
+  <a class="proj-card" href="drl_vvc/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="drl_vvc/image.jpg" alt="DRL Control">
+      <strong>DRL for Volt-VAR</strong><br>
+      Design control agents for voltage regulation and reactive power optimization in smart distribution grids.
+    </span>
+  </a>
+
+  <a class="proj-card" href="physics-informed-actor-critic/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="physics-informed-actor-critic/thumbnail.jpg" alt="Actor Critic">
+      <strong>Physics-Informed Actor-Critic</strong><br>
+      Embed grid physics and control limits directly into the DRL learning loop for stable and efficient decisions.
+    </span>
+  </a>
+
+  <a class="proj-card" href="sim2real/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="sim2real/sim2real.png" alt="Sim2Real Transfer">
+      <strong>Sim-to-Real Transfer</strong><br>
+      Train agents in simulated OpenDSS environments and deploy them on real-time OPAL-RT setups.
+    </span>
+  </a>
+
+</div>
+
+<!-- Group: 🔐 Safe & Trustworthy RL -->
+
+<div class="group-label">Safe & Trustworthy RL</div>
+
+<div class="proj-grid">
+
+  <a class="proj-card" href="safe/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="safe/safe.png" alt="Safe RL">
+      <strong>Robust & Stable Learning</strong><br>
+      Develop agents that ensure system safety, robustness, and interpretability under uncertainty.
+    </span>
+  </a>
+
+  <a class="proj-card" href="uncertainty/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="uncertainty/uncertainty.png" alt="Uncertainty Quantification">
+      <strong>Uncertainty-Aware Policies</strong><br>
+      Quantify epistemic and aleatoric uncertainty in high-stakes, partially observable settings.
+    </span>
+  </a>
+
+</div>
+
+<!-- Group: Transfer & Meta-Adaptation -->
+
+<div class="group-label">Transfer & Meta-Adaptation</div>
+
+<div class="proj-grid">
+
+  <a class="proj-card" href="domain_adaptation/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="domain_adaptation/domain_adaptation.png" alt="Transfer Learning">
+      <strong>Domain Adaptation</strong><br>
+      Enable agents to generalize across grids with different topologies, dynamics, and loads.
+    </span>
+  </a>
+
+  <a class="proj-card" href="meta_rl/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="meta_rl/meta_rl.png" alt="Meta RL">
+      <strong>Meta-RL for Efficiency</strong><br>
+      Leverage meta-reasoning to accelerate learning in low-data, high-variance scenarios.
+    </span>
+  </a>
+
+</div>
+
+<!-- Group: Vision-Simulation Integration -->
+
+<div class="group-label">Vision-Simulation Integration</div>
+
+<div class="proj-grid">
+
+  <a class="proj-card" href="carla/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="carla/carla.png" alt="Perception Control">
+      <strong>Perception-Control Fusion</strong><br>
+      Use CARLA and AirSim to train end-to-end systems in visual RL tasks with sensors.
+    </span>
+  </a>
+
+  <a class="proj-card" href="multimodal/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="multimodal/multimodal.png" alt="Multimodal Fusion">
+      <strong>Multi-modal Representations</strong><br>
+      Combine visual, state, and contextual features for better decision-making.
+    </span>
+  </a>
+
+</div>
+
+<!-- Group: LLM-Augmented Decision Systems -->
+
+<div class="group-label">LLM-Augmented Decision Systems</div>
+
+<div class="proj-grid">
+
+  <a class="proj-card" href="llm_control/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="llm_control/image.jpg" alt="LLM-guided control">
+      <strong>LLM-Guided Control</strong><br>
+      Translate natural language into actionable policies for real-world environments.
+    </span>
+  </a>
+
+</div>
+
+<a class="proj-card" href="carla/index.qmd">
+  <img src="carla/carla.png" alt="Perception Control">
+  <strong>Perception-Control Fusion</strong>
+  <span>
+    Use CARLA and AirSim to train end-to-end systems in visual RL tasks with sensors.
+  </span>
+</a>
