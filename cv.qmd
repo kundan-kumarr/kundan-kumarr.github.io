@@ -534,7 +534,7 @@ Deep Reinforcement Learning & Safety-Critical AI for Autonomous Systems
 
 <div class="proj-grid">
 
-  <a class="proj-card" href="rag_energy_advisor.qmd">
+  <a class="proj-card" href="projects/rag_energy_advisor.qmd">
   <img src="/misc/info/projects/llm_energy_advisor.png" alt="RAG Energy Advisor badge">
   <span class="proj-body">
     <strong>RAG-Enhanced Energy Advisor</strong><br>
@@ -542,7 +542,7 @@ Deep Reinforcement Learning & Safety-Critical AI for Autonomous Systems
   </span>
 </a>
 
- <a class="proj-card" href="llm_grid_planner.qmd">
+ <a class="proj-card" href="projects/llm_grid_planner.qmd">
   <img src="/misc/info/projects/llm_grid_planner.png" alt="LLM Grid Planner badge">
   <span class="proj-body">
     <strong>LLM-Driven Grid Planner</strong><br>
@@ -550,7 +550,7 @@ Deep Reinforcement Learning & Safety-Critical AI for Autonomous Systems
   </span>
 </a>
 
-  <a class="proj-card" href="citylearn.qmd">
+  <a class="proj-card" href="projects/citylearn.qmd">
     <img src="/misc/info/projects/citylearnn.png" alt="CityLearn badge">
     <span class="proj-body">
       <strong>LLM‑Powered Energy Optimizer</strong><br>
