@@ -11,6 +11,6 @@ listing:
   categories: true
   sort-ui: true
   filter-ui: true
-  image-placeholder: images/image-placeholder.png
+  image-placeholder: ./images/image-placeholder.png
   fields: [image, date, title, description]
 ---

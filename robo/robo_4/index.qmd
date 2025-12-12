@@ -1,9 +1,0 @@
----
-title: "Chatbot Design using Retrieval‑Augmented Generation (RAG)"
-description: "Built a domain‑specific chatbot integrating vector‑based retrieval with GPT models to provide accurate, context‑aware responses"
-image: "noreden2.png"
----
-
-Noreden
-
-

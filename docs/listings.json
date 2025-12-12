@@ -37,20 +37,33 @@
     ]
   },
   {
-    "listing": "/publications/index.html",
+    "listing": "/blog/index.html",
     "items": [
-      "/publications/articles/naps2025.html",
-      "/publications/articles/pesgm2025.html",
-      "/publications/articles/Journal1.html",
-      "/publications/articles/gridedge2025.html",
-      "/publications/articles/pesgm2024.html",
-      "/publications/articles/isgt2024.html",
-      "/publications/articles/icmla2022.html",
-      "/publications/articles/iccpsS2016.html"
+      "/blog/blog_20251204_safe_ai/index.html",
+      "/blog/blog_20251124_research_guide/index.html",
+      "/blog/blog_20251210_self_attention_mechanism/index.html",
+      "/blog/technotes_ml_series_20251105_class_unbalanced/index.html",
+      "/blog/technotes_llm_series_20251121_llm_reasoning/index.html"
     ]
   },
   {
-    "listing": "/talks.html",
+    "listing": "/projects.html",
+    "items": [
+      "/projects/project6/index.html",
+      "/projects/project3/index.html",
+      "/projects/project4/index.html",
+      "/projects/project5/index.html",
+      "/projects/project2/index.html",
+      "/projects/project1/index.html",
+      "/projects/project8.html",
+      "/projects/project7/index.html",
+      "/projects/project9.html",
+      "/projects/project10.html",
+      "/projects/project11.html"
+    ]
+  },
+  {
+    "listing": "/talks/index.html",
     "items": [
       "/talks/pes_gm_2025/index.html",
       "/talks/community_20240921_quartofriends/index.html",
@@ -67,51 +80,16 @@
     ]
   },
   {
-    "listing": "/dl.html",
+    "listing": "/publications/pub.html",
     "items": [
-      "/drl/drl1/index.html",
-      "/drl/drl/index.html",
-      "/drl/drl2/index.html",
-      "/drl/drl5/index.html",
-      "/drl/drl4/index.html",
-      "/drl/drl3/index.html",
-      "/drl/drl7.html",
-      "/drl/drl6/index.html",
-      "/drl/drl8.html",
-      "/drl/drl9.html",
-      "/drl/drl10.html"
-    ]
-  },
-  {
-    "listing": "/llms.html",
-    "items": [
-      "/llms/llms5/index.html",
-      "/llms/llms2/index.html",
-      "/llms/llms3/index.html",
-      "/llms/llms4/index.html",
-      "/llms/llms1/index.html",
-      "/llms/llms/index.html",
-      "/llms/llms7.html",
-      "/llms/llms6/index.html",
-      "/llms/llms10.html",
-      "/llms/llms8.html",
-      "/llms/llms9.html"
-    ]
-  },
-  {
-    "listing": "/drl.html",
-    "items": [
-      "/drl/drl1/index.html",
-      "/drl/drl/index.html",
-      "/drl/drl2/index.html",
-      "/drl/drl5/index.html",
-      "/drl/drl4/index.html",
-      "/drl/drl3/index.html",
-      "/drl/drl7.html",
-      "/drl/drl6/index.html",
-      "/drl/drl8.html",
-      "/drl/drl9.html",
-      "/drl/drl10.html"
+      "/publications/articles/naps2025.html",
+      "/publications/articles/pesgm2025.html",
+      "/publications/articles/Journal1.html",
+      "/publications/articles/gridedge2025.html",
+      "/publications/articles/pesgm2024.html",
+      "/publications/articles/isgt2024.html",
+      "/publications/articles/icmla2022.html",
+      "/publications/articles/iccpsS2016.html"
     ]
   },
   {
@@ -152,18 +130,11 @@
     ]
   },
   {
-    "listing": "/robo.html",
-    "items": [
-      "/robo/robo_1/index.html",
-      "/robo/robo_6/index.html",
-      "/robo/robo_3/index.html",
-      "/robo/robo_4/index.html",
-      "/robo/robo_5/index.html",
-      "/robo/robo_2/index.html"
-    ]
+    "listing": "/dl.html",
+    "items": []
   },
   {
-    "listing": "/publications/pub.html",
+    "listing": "/publications/index.html",
     "items": [
       "/publications/articles/naps2025.html",
       "/publications/articles/pesgm2025.html",
@@ -173,49 +144,6 @@
       "/publications/articles/isgt2024.html",
       "/publications/articles/icmla2022.html",
       "/publications/articles/iccpsS2016.html"
-    ]
-  },
-  {
-    "listing": "/talks/index.html",
-    "items": [
-      "/talks/pes_gm_2025/index.html",
-      "/talks/community_20240921_quartofriends/index.html",
-      "/talks/ehr_20240918_betterehr/index.html",
-      "/talks/community_20240710_camis/index.html",
-      "/talks/rstats_20240613_teaching/index.html",
-      "/talks/rstats_20230721_teaching/index.html",
-      "/talks/dummy_talk/index.html",
-      "/talks/ph_20230330_sp/index.html",
-      "/talks/ehr_20221013_ml_icu/index.html",
-      "/talks/ehr_20210218_biday/index.html",
-      "/talks/ehr_20191028_rladies/index.html",
-      "/talks/rstats_20190402_blogdown/index.html"
-    ]
-  },
-  {
-    "listing": "/projects.html",
-    "items": [
-      "/projects/project6/index.html",
-      "/projects/project3/index.html",
-      "/projects/project4/index.html",
-      "/projects/project5/index.html",
-      "/projects/project2/index.html",
-      "/projects/project1/index.html",
-      "/projects/project8.html",
-      "/projects/project7/index.html",
-      "/projects/project9.html",
-      "/projects/project10.html",
-      "/projects/project11.html"
-    ]
-  },
-  {
-    "listing": "/blog/index.html",
-    "items": [
-      "/blog/blog_20251204_safe_ai/index.html",
-      "/blog/blog_20251124_research_guide/index.html",
-      "/blog/blog_20251210_self_attention_mechanism/index.html",
-      "/blog/technotes_ml_series_20251105_class_unbalanced/index.html",
-      "/blog/technotes_llm_series_20251121_llm_reasoning/index.html"
     ]
   }
 ]

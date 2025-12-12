@@ -1,9 +1,0 @@
----
-title: "Collaboration and Competition"
-description: "Train a pair of agents to play tennis."
-image: "noreden2.png"
----
-
-
-
-
