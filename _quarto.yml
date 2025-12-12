@@ -44,13 +44,6 @@ website:
           - text: "✨ All Projects"
             href: projects.qmd
           - text: "---"
-          - text: "Machine Learning & Intelligent Systems"
-            href: drl.qmd
-          - text: "Computer Vision & LLMs"
-            href: llms.qmd
-          - text: "Robotics"
-            href: robo.qmd
-          - text: "---"
           - text: "📚 Notes"
           - text: "Large Language Models"
             href: https://kundan-kumarr.github.io/Zero2LLM-Crafter/
@@ -58,10 +51,12 @@ website:
             href: https://kundan-kumarr.github.io/ai-analysis/
           - text: "Statistics"
             href: https://kundan-kumarr.github.io/statsphere/
-          - text: "AI for Smart Grids"
-            href: https://kundan-kumarr.github.io/SmartGridAI/
           - text: "AI Security"
             href: https://kundan-kumarr.github.io/safe-AI/
+          - text: "---"
+          - text: "🧰 Resources"
+          - text: "AI for Smart Grids"
+            href: https://kundan-kumarr.github.io/SmartGridAI/
           - text: "ResearchScientist-Handbook"
             href: https://kundan-kumarr.github.io/ResearchScientist-Handbook/
           
