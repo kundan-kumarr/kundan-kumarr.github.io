@@ -17,20 +17,159 @@ listing:
       year: "Year"
 ---
 
+
 ```{=html}
+<style>
+/* ===== Publication list: no bullets, no left indent ===== */
+.pub-list{
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.pub-list > li{
+  list-style: none;
+  margin: 0 0 1rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* ===== Title ===== */
+.pub-title-link{
+  text-decoration: none;
+  font-weight: 800;
+}
+.pub-title-link:hover{
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ===== Meta ===== */
+.pub-meta{
+  margin-top: .15rem;
+  color: rgba(0,0,0,0.72);
+}
+
+/* ===== Buttons ===== */
+.paper-actions{
+  display: inline-flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.pub-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1.8px solid currentColor;
+  text-decoration: none;
+  font-size: .86rem;
+  font-weight: 650;
+  line-height: 1;
+  background: transparent;
+  transition: color .15s ease, background-color .15s ease, box-shadow .15s ease;
+}
+.pub-btn:hover{
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+
+/* Button types */
+.pub-paper{ color:#1f5fbf; }
+.pub-paper:hover{ color:#174a94; background:rgba(31,95,191,.08); }
+
+.pub-code{ color:#1f8f4d; }
+.pub-code:hover{ color:#166b39; background:rgba(31,143,77,.08); }
+
+.pub-pres{ color:#d93025; }
+.pub-pres:hover{ color:#a61f18; background:rgba(217,48,37,.08); }
+
+.pub-poster{ color:#7b4fd6; }
+.pub-poster:hover{ color:#5f3fb0; background:rgba(123,79,214,.08); }
+
+.pub-details{ color:#444; }
+.pub-details:hover{ color:#111; background:rgba(0,0,0,.05); }
+</style>
+
+
+<style>
+.pub-row{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+}
+
+.pub-thumb{
+  flex:0 0 auto;
+  width:92px;
+  height:92px;
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid rgba(0,0,0,.10);
+  box-shadow:0 6px 16px rgba(0,0,0,.06);
+  background:#fff;
+}
+
+.pub-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.pub-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:1rem;
+}
+
+.pub-title{
+  margin:0;
+  font-size:1.6rem;
+  font-weight:700;
+  color: var(--quarto-hl-color, #8b3f1f); /* fallback */
+}
+
+.pub-total{
+  padding:6px 14px;
+  border-radius:999px;
+  font-size:0.9rem;
+  font-weight:600;
+  color: var(--quarto-hl-color, #8b3f1f);
+  background: rgba(139, 63, 31, 0.08);
+  border:1px solid rgba(139, 63, 31, 0.35);
+  white-space:nowrap;
+}
+
+
+
+.pub-main{ flex:1 1 auto; min-width:0; }
+
+/* mobile: stack nicely */
+@media (max-width: 650px){
+  .pub-row{ flex-direction:column; }
+  .pub-thumb{ width:110px; height:110px; }
+}
+</style>
+
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Publications</li>
   </ol>
 </nav>
 ```
 
+<div class="pub-header">
+  <h3 class="pub-title">Publications</h3>
+  <span class="pub-total">
+    Total:8 <strong><span data-listing-count="articles"></span></strong>
+  </span>
+</div>
 
-### Publications
-
-The following is a list of my research `publications`, including `journal articles`, `conference papers`, `Workshops papers` and `preprints`. 
 
 
 :::{#articles}
 :::
+

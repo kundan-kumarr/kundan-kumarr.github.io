@@ -47,9 +47,8 @@ listing:
   max-items: 1
   image-height: "200"
 - id: talk
-  contents: 
+  contents:
     - "../talks/*/index.qmd"
-    - "../talk/*/index.markdown"
   sort: date desc
   type: grid
   grid-columns: 1

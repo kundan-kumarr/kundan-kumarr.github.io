@@ -8,45 +8,98 @@ As a Computer Science Graduate Teaching Assistant at Iowa State University with 
 
 In addition to classroom and lab, I also create **online learning resources** that break down complex concepts into simple, digestible formats. These include YouTube tutorials, blog articles, and written notes or mini-books that summarize difficult topics into clear, practical explanations and master difficult concepts at their own pace.
 
-<div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+```{=html}
+<style>
+  .teach-links {
+    margin-top: 1.2rem;
+    display: flex;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+  }
 
-  <a href="https://neuravp.substack.com/" target="_blank"
-     style="
-        background:#574D4B; 
-        color:white; 
-        padding:6px 14px; 
-        border-radius:6px; 
-        text-decoration:none; 
-        font-weight:500; 
-        font-size:0.9rem;">
-     📝 Blogs
+  .teach-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    background: transparent;
+    transition: all 0.18s ease;
+  }
+
+  .teach-outline svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Blog */
+  .btn-blog {
+    color: #4b4544;
+    border: 2px solid #4b4544;
+  }
+  .btn-blog:hover {
+    background: #4b4544;
+    color: #fff;
+  }
+
+  /* YouTube */
+  .btn-youtube {
+    color: #c6281e;
+    border: 2px solid #c6281e;
+  }
+  .btn-youtube:hover {
+    background: #d93025;
+    color: #fff;
+  }
+
+  /* Notes */
+  .btn-notes {
+    color: #3e73e6;
+    border: 2px solid #3e73e6;
+  }
+  .btn-notes:hover {
+    background: #3e73e6;
+    color: #fff;
+  }
+</style>
+
+<div class="teach-links">
+
+  <!-- Blog -->
+  <a class="teach-outline btn-blog"
+     href="https://neuravp.substack.com/"
+     target="_blank" rel="noopener">
+    📝
+    <span>Blogs</span>
   </a>
 
-  <a href="https://www.youtube.com/@AIAgentic-007" target="_blank"
-     style="
-        background:#FF4B4B; 
-        color:white; 
-        padding:6px 14px; 
-        border-radius:6px; 
-        text-decoration:none; 
-        font-weight:500; 
-        font-size:0.9rem;">
-     ▶️ YouTube
+  <!-- YouTube -->
+  <a class="teach-outline btn-youtube"
+     href="https://www.youtube.com/@AIAgentic-007"
+     target="_blank" rel="noopener">
+
+    <!-- YouTube SVG icon -->
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M23.5 6.2s-.2-1.7-.9-2.4c-.8-.9-1.7-.9-2.1-1C17.5 2.5 12 2.5 12 2.5h0s-5.5 0-8.5.3c-.4.1-1.3.1-2.1 1C.7 4.5.5 6.2.5 6.2S0 8.1 0 10v1.9c0 1.9.5 3.8.5 3.8s.2 1.7.9 2.4c.8.9 1.9.9 2.4 1 1.7.2 7.2.3 7.2.3s5.5 0 8.5-.3c.4-.1 1.3-.1 2.1-1 .7-.7.9-2.4.9-2.4s.5-1.9.5-3.8V10c0-1.9-.5-3.8-.5-3.8zM9.5 14.5v-5l5 2.5-5 2.5z"/>
+    </svg>
+
+    <span>YouTube</span>
   </a>
 
-  <a href="https://kundan-kumarr.github.io/Zero2LLM-Crafter/" target="_blank"
-     style="
-        background:#4A82F0; 
-        color:white; 
-        padding:6px 14px; 
-        border-radius:6px; 
-        text-decoration:none; 
-        font-weight:500; 
-        font-size:0.9rem;">
-     📘 Notes / Book
+  <!-- Notes -->
+  <a class="teach-outline btn-notes"
+     href="https://kundan-kumarr.github.io/Zero2LLM-Crafter/"
+     target="_blank" rel="noopener">
+    📘
+    <span>Notes / Book</span>
   </a>
 
 </div>
+
+```
 
 
 ::: {.callout-note title="Courses I have served as a Computer Science Graduate Teaching Assistant or Mentor in:"}
@@ -194,3 +247,4 @@ I am dedicated to the continuous development of my teaching methods and curricul
 - Broadening students' access to the computing field so they can confidently tackle real-world challenges using both their theoretical foundations and practical skills.
 
 [Email](mailto:cs.kundann@gmail.com) me if you want to collaborate or learn more about my teaching and research initiatives.
+

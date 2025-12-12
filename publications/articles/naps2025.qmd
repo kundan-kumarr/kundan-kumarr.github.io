@@ -1,24 +1,23 @@
 ---
 title: "A Multi-Objective Optimization Framework for Carbon-Aware Smart Energy Management"
 type: "article"
+pubtype: conference 
 author: "Kundan Kumar"
-year: "2025"
+year: 2025
 publication: "57th North American Power Symposium"
 doi: ""
-image: ""
 toc: false
-categories:
-  - Machine Learning
-  - Multi-Objective Optimization
-  - Energy Optimization
+categories: [Machine Learning, Multi-Objective Optimization, Energy Optimization]
+
+thumbnail: "/misc/info/pubs/thumbs/bilstm.png"
 ---
+
 
 ## Citation
 
 >
 
 ## Abstract
-
 As renewable energy sources become more integrated into the power grid, efficient scheduling of household energy consumption is essential to reduce costs and carbon footprint. In this paper, we introduce an energy optimization framework that optimizes the timing of appliance use based on dynamic carbon intensity and electricity prices. We determine optimal operation schedules using a multi-objective optimization model with a Gurobi solver and machine learning. We combine Random Forest and XGBoost for demand prediction, incorporating their uncertainty estimates into the optimization constraints. The model optimizes ON/OFF appliance schedules while considering constraints like minimum operating times and power balance. It shifts usage to lower-cost and carbon-intensity periods, which helps to reduce energy consumption.
 
 Key contributions include ML-based demand predictions and mixed-integer programming (MIP) optimization that improves robustness to prediction errors while adjusting schedules based on time-of-use pricing and carbon intensity. Our smart scheduling and load shifting achieve a 35.8% reduction in costs, a

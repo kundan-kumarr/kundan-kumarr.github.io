@@ -1,41 +1,68 @@
+
 ```{=html}
 <ul class="pub-list list">
 <% for (const item of items) { %>
   <li <%= metadataAttrs(item) %>>
-    <span class="listing-title lead"><%= item.title %></span><br />
-    <span class="listing-author"><%= item.author %></span><br />
-    <span class="listing-publication fst-italic"><%= item.publication %></span>
-    <span class="listing-year">(<%= item.year %>)</span><br />
-    
+    <div class="pub-row">
 
-    <a href="<%- item.path %>" class="btn btn-primary">Details</a>
+     <% const thumb = item.thumbnail || item.image; %>
+<% if (thumb) { %>
+  <a class="pub-thumb" href="<%- item.path %>">
+    <img src="<%- thumb %>" alt="Thumbnail for <%= item.title %>">
+  </a>
+<% } %>
 
-    <% if (item.doi) { %>
-      <a href="<%- item.doi %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        DOI
-      </a>
-    <% } %>
 
-    <% if (item.preprint) { %>
-      <a href="<%- item.preprint %>" class="btn btn-blue" target="_blank" rel="noopener noreferrer">
-        Paper
-      </a>
-    <% } %>
+      <div class="pub-main">
+        <div class="listing-title lead">
+          <a href="<%- item.path %>" class="pub-title-link"><%= item.title %></a>
+        </div>
 
-    <% if (item.materials) { %>
-      <a href="<%- item.materials %>" class="btn btn-green" target="_blank" rel="noopener noreferrer">
-        Code
-      </a>
-    <% } %>
+        <% if (item.author) { %>
+          <div class="listing-author">
+            <%= Array.isArray(item.author) ? item.author.join(", ") : item.author %>
+          </div>
+        <% } %>
 
-    <% if (item.poster) { %>
-      <a href="<%- item.poster %>" class="btn btn-purple" target="_blank" rel="noopener noreferrer">
-        Poster
-      </a>
-    <% } %>
+        <div class="pub-meta">
+          <% if (item.publication) { %>
+            <span class="listing-publication fst-italic"><%= item.publication %></span>
+          <% } %>
+          <% if (item.year) { %>
+            <span class="listing-year">(<%= item.year %>)</span>
+          <% } %>
+        </div>
 
+        <div class="paper-actions">
+          <a href="<%- item.path %>" class="pub-btn pub-details">Details</a>
+
+          <% if (item.doi) { %>
+            <a href="<%- item.doi %>" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
+          <% } %>
+
+          <% if (item.preprint) { %>
+            <a href="<%- item.preprint %>" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> Paper</a>
+          <% } %>
+
+          <% if (item.materials) { %>
+            <a href="<%- item.materials %>" class="pub-btn pub-code" target="_blank" rel="noopener noreferrer"> Code</a>
+          <% } %>
+
+          <% if (item.slides) { %>
+            <a href="<%- item.slides %>" class="pub-btn pub-pres" target="_blank" rel="noopener noreferrer"> Slides</a>
+          <% } %>
+
+          <% if (item.poster) { %>
+            <a href="<%- item.poster %>" class="pub-btn pub-poster" target="_blank" rel="noopener noreferrer"> Poster</a>
+          <% } %>
+        </div>
+      </div>
+
+    </div>
   </li>
 <% } %>
 </ul>
+
+
 
 ```

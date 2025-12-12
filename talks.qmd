@@ -1,0 +1,16 @@
+---
+title: "Talks"
+description: "Talks, invited lectures, and presentations."
+listing:
+  contents: "talks/*/index.qmd"
+  feed: true
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  image-placeholder: images/image-placeholder.png
+  fields: [image, date, title, description]
+page-layout: full
+---
+

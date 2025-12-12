@@ -1,44 +1,16 @@
 ---
 title: "Talks"
-description: |
+description: "Talks, invited lectures, and presentations."
+page-layout: full
+
 listing:
-  - id: past
-    max-description-length: 500
-    image-height: 130px
-    categories: true
-    date-format: iso
-    fields: [title, description, date]
-    contents: 
-      - pes_gm_2025
-      #- rstats_20240613_teaching
-      #- rstats_20230721_teaching
-      # - ehr_20221013_ml_icu
-      # - ehr_20210218_biday
-      #- ehr_20240918_betterehr
-      #- community_20240921_quartofriends
-      #- community_20240710_camis
-      # - rstats_20190402_blogdown
-    type: table
-    sort: "date desc"
-    grid-item-border: false
-    sort-ui: true
-    filter-ui: true
-categories: [Community]
-priority: 1
-
+  contents: "*/index.qmd"
+  feed: true
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  image-placeholder: images/image-placeholder.png
+  fields: [image, date, title, description]
 ---
-
-## Upcoming
-
-#### North American Power Symposium "Grid Innovation for a Reliable and Resilient Energy Future”
-
-Talks on A Multi-Objective Optimization Framework for Carbon-Aware Smart Energy Management in `NAPS`
-
-
-
-## Selected previous talks
-
-
-::: {#past}
-:::
-

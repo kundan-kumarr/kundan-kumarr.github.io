@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Talks, invited lectures, and presentations.">
 
-<title>copyofresearch – Kundan Kumar</title>
+<title>Talks – Kundan Kumar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../misc/info/favicon.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-4931ad3a4f610300299060d87ad9de1f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b242815c4c9c43e9bec481eb86b578a5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./misc/info/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-4931ad3a4f610300299060d87ad9de1f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-ce2a33eb5efa6bea0a03b7d4b9b49b41.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F9QK4C80G"></script>
 
 <script type="text/javascript">
@@ -110,7 +142,7 @@ window.Quarto = {
 };
 </script>
 
-</head>
+<link rel="alternate" type="application/rss+xml" title="Kundan Kumar" href="talks.xml" data-external="1"></head>
 
 <body class="nav-fixed quarto-light">
 
@@ -119,7 +151,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Kundan Kumar</span>
     </a>
   </div>
@@ -130,17 +162,17 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about_me.html"> <i class="bi bi-person-circle" role="img">
+    <a class="nav-link" href="./about_me.html"> <i class="bi bi-person-circle" role="img">
 </i> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../cv.html"> <i class="bi bi-file-earmark-text-fill" role="img">
+    <a class="nav-link" href="./cv.html"> <i class="bi bi-file-earmark-text-fill" role="img">
 </i> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../rpkg/research.qmd"> <i class="bi bi-lightbulb-fill" role="img">
+    <a class="nav-link" href="./rpkg/research.html"> <i class="bi bi-lightbulb-fill" role="img">
 </i> 
 <span class="menu-text">Research</span></a>
   </li>  
@@ -152,20 +184,20 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects--notes">    
         <li>
-    <a class="dropdown-item" href="../projects.html">
+    <a class="dropdown-item" href="./projects.html">
  <span class="dropdown-text">✨ All Projects</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li>
-    <a class="dropdown-item" href="../drl.html">
+    <a class="dropdown-item" href="./drl.html">
  <span class="dropdown-text">Machine Learning &amp; Intelligent Systems</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../llms.html">
+    <a class="dropdown-item" href="./llms.html">
  <span class="dropdown-text">Computer Vision &amp; LLMs</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../robo.html">
+    <a class="dropdown-item" href="./robo.html">
  <span class="dropdown-text">Robotics</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
@@ -197,12 +229,12 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../teaching/teaching.html"> <i class="bi bi-mortarboard-fill" role="img">
+    <a class="nav-link" href="./teaching/teaching.html"> <i class="bi bi-mortarboard-fill" role="img">
 </i> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog/index.html"> <i class="bi bi-pen-fill" role="img">
+    <a class="nav-link" href="./blog/index.html"> <i class="bi bi-pen-fill" role="img">
 </i> 
 <span class="menu-text">Blogs</span></a>
   </li>  
@@ -218,355 +250,301 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#research-vision" id="toc-research-vision" class="nav-link active" data-scroll-target="#research-vision">Research</a>
-  <ul class="collapse">
-  <li><a href="#vision" id="toc-vision" class="nav-link" data-scroll-target="#vision">Vision</a></li>
-  <li><a href="#mission" id="toc-mission" class="nav-link" data-scroll-target="#mission">Mission</a></li>
-  </ul></li>
-  <li><a href="#research-focus" id="toc-research-focus" class="nav-link" data-scroll-target="#research-focus">Research Focus</a></li>
-  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a></li>
-  <li><a href="#ongoing-projects" id="toc-ongoing-projects" class="nav-link" data-scroll-target="#ongoing-projects">Ongoing Projects</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/rpkg/CopyOfresearch.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
-    </div>
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(12)</span></div><div class="category" data-category="QUklMjBSZXNlYXJjaA==">AI Research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29tbXVuaXR5">Community <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZWhy">ehr <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RW5lcmd5JTIwU3lzdGVtcw==">Energy Systems <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cGg=">ph <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UXVhcnRv">Quarto <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UmVpbmZvcmNlbWVudCUyMExlYXJuaW5n">Reinforcement Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UnN0YXRz">Rstats <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cnN0YXRz">rstats <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UldELUVIUg==">RWD-EHR <span class="quarto-category-count">(3)</span></div><div class="category" data-category="U21hcnQlMjBHcmlkcw==">Smart Grids <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGVhY2hpbmc=">Teaching <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VHJhbnNmZXIlMjBMZWFybmluZw==">Transfer Learning <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page-left" id="quarto-document-content">
 
-
-
-
-<section id="research-vision" class="level2">
-<h2 class="anchored" data-anchor-id="research-vision">Research</h2>
-<p>I develop safe, interpretable, and adaptive AI systems for real-world cyber-physical environments that must operate under uncertainty, strict physical constraints, and adversarial conditions. My work sits at the intersection of machine learning, control theory, optimization, and AI safety, with a core focus on building models that are robust, predictable, and deployable at scale.</p>
-<section id="vision" class="level3">
-<h3 class="anchored" data-anchor-id="vision">Vision</h3>
-<p>I aim to create AI agents that generalize across environments, learn from imperfect or unreliable data, and remain stable under distribution shifts. These capabilities are essential both for scientific progress and for building production-grade intelligent systems used in industry.</p>
-<p>My research centers around five pillars:</p>
-<ul>
-<li>Safe &amp; Trustworthy Reinforcement Learning: Designing agents that remain reliable under sensor noise, hardware faults, non-stationarity, and adversarial perturbations. This includes constraint-aware learning, certified robustness, and safe exploration in safety-critical settings.</li>
-<li>Physics-informed Deep Reinforcement Learning (DRL): Embedding physical laws, invariants, and feasibility constraints directly into model architectures and learning objectives to improve convergence, interpretability, and real-world deployability.</li>
-<li>Probabilistic &amp; Bayesian Modeling: Quantifying epistemic and aleatoric uncertainty for risk-aware planning in partially observable, high-stakes environments using Bayesian neural networks, uncertainty-aware RL, and probabilistic inference.</li>
-<li>Large Language Models (LLMs) for autonomous reasoning: Leveraging LLMs to support high-level planning, explainable decision pipelines, natural-language supervision, and adaptive control. This enables human-AI collaboration and interpretable reasoning in complex systems.</li>
-<li>Vision-based simulation environments: Using platforms such as CARLA, CityLearn, AirSim, and OpenDSS to train agents in multimodal, visually rich environments, supporting robust perception-control integration and sim-to-real transfer.</li>
-</ul>
-</section>
-<section id="mission" class="level3">
-<h3 class="anchored" data-anchor-id="mission">Mission</h3>
-<p>By integrating physics-guided structure, probabilistic reasoning, and safe reinforcement learning, my mission is to build the next generation of AI systems that are:</p>
-<ul>
-<li>Reliable, even under uncertainty, noise, and adversarial conditions</li>
-<li>Generalizable across tasks, scales, and distribution shifts</li>
-<li>Interpretable to operators, engineers, and decision-makers</li>
-<li>Deployable in large-scale, real-world cyber-physical environments</li>
-</ul>
-<p>My research advances the foundation needed to deploy trustworthy AI across critical infrastructures, autonomous systems, and safety-critical infrastructure domains where reliability and robustness are essential for real-world impact.</p>
-</section>
-</section>
-<section id="research-focus" class="level2">
-<h2 class="anchored" data-anchor-id="research-focus">Research Focus</h2>
-<p>These focus areas organize my ongoing and recent projects that bridge <strong>fundamental methods</strong> and <strong>deployable systems</strong>. <!-- Styling (optional if handled globally) --></p>
-</section>
-<section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">Publications</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Journal Papers</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Conference Papers</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<ol type="1">
-<li><p>Arif Hussian, <strong>Kundan Kumar</strong>, Gelli Ravikumar<br>
-<strong>Bayesian-optimized bidirectional long-short-term memory network for wind power forecasting with uncertainty quantification</strong> , <em>Electric Power Systems Research, 2026</em><br>
-<span style="display:inline-flex; gap:4px;"> <a class="btn btn-primary btn-sm" href="https://www.sciencedirect.com/science/article/pii/S037877962500848X">Paper</a> <a class="btn btn-success btn-sm" href="#">Code</a> <a class="btn btn-info btn-sm" href="#">Poster</a> </span></p></li>
-<li><p><strong>Kundan Kumar</strong>, Gelli Ravikumar<br>
-<strong>Physics-based Deep Reinforcement Learning for Grid-Resilient Volt-VAR Control</strong> <em>(Under Review)</em>, <em>IEEE Transactions on Smart Grid, 2025</em><br>
-<span style="display:inline-flex; gap:4px;"> <a class="btn btn-primary btn-sm" href="">Paper</a> <a class="btn btn-success btn-sm" href="#">Code</a> <a class="btn btn-info btn-sm" href="#">Poster</a> </span></p></li>
-</ol>
-<hr>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<h3 class="anchored">
-Conference Papers
-</h3>
-<style>
-  .paper-title {
-    color: #0077cc;        /* professional blue for titles */
-    font-weight: 600;
-  }
-  .author-me {
-    color: #228B22;        /* same blue for your name */
-    font-weight: 600;
-  }
-</style>
-<ol reversed="">
-<!-- visible items -->
-<li>
-<span class="author-me">Kundan Kumar</span>, Gelli Ravikumar<br> <span class="paper-title">A Multi-Objective Optimization Framework for Carbon-Aware Smart Energy Management</span>, IEEE North American Power Symposium (NAPS), 2025<br> <span style="display:inline-flex;gap:4px;"> <a class="btn btn-primary btn-sm" href="">Paper</a> <a class="btn btn-success btn-sm" href="">Code</a> <a class="btn btn-info btn-sm" href="">Poster</a> </span>
-</li>
-<li>
-<span class="author-me">Kundan Kumar</span>, Kumar Utkarsh, Wang Jiyu, Padullaparti Harsha<br> <span class="paper-title">Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems</span>, IEEE PES General Meeting, 2025<br> <span style="display:inline-flex;gap:4px;"> <a class="btn btn-primary btn-sm" href="">Paper</a> <a class="btn btn-success btn-sm" href="../misc/info/presentations/SSL_PESGM_presentation.pdf">Code</a> <a class="btn btn-info btn-sm" href="../misc/info/posters/SSL_PESGM_poster.pdf">Poster</a> </span>
-</li>
-<li>
-<span class="author-me">Kundan Kumar</span>, Gelli Ravikumar<br> <span class="paper-title">Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids</span>, IEEE PES Grid Edge Technologies Conference &amp; Exposition, 2025<br> <span style="display:inline-flex;gap:4px;"> <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2202.13541">Paper</a> <a class="btn btn-success btn-sm" href="#">Code</a> <a class="btn btn-info btn-sm" href="#">Poster</a> </span>
-</li>
-<!-- start collapsible -->
-<div id="conf-more" style="display:none;">
-<li>
-<span class="author-me">Kundan Kumar</span>, Aditya Akilesh Mantha, Gelli Ravikumar<br> <span class="paper-title">Bayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control</span>, IEEE PES General Meeting, 2024<br> <span style="display:inline-flex;gap:4px;"> <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2202.13541">Paper</a> <a class="btn btn-success btn-sm" href="#">Code</a> <a class="btn btn-info btn-sm" href="#">Poster</a> </span>
-</li>
-<li>
-<span class="author-me">Kundan Kumar</span>, Gelli Ravikumar<br> <span class="paper-title">Deep RL-based Volt-VAR Control and Attack Resiliency for DER-Integrated Distribution Grids</span>, IEEE Innovative Smart Grid Technologies (ISGT), 2024<br> <span style="display:inline-flex;gap:4px;"> <a class="btn btn-primary btn-sm" href="https://ieeexplore.ieee.org/document/10454163">Paper</a> <a class="btn btn-success btn-sm" href="#">Code</a> <a class="btn btn-info btn-sm" href="#">Poster</a> </span>
-</li>
-<li>
-JK Francis, C Kumar, J Herrera-Gerena, <span class="author-me">Kundan Kumar</span>, MJ Darr<br> <span class="paper-title">Deep Learning and Pattern-based Methodology for Multivariable Sensor Data Regression</span>, IEEE ICMLA, 2022<br> <span style="display:inline-flex;gap:4px;"> <a class="btn btn-primary btn-sm" href="https://ieeexplore.ieee.org/document/10069730">Paper</a> <a class="btn btn-success btn-sm" href="#">Code</a> <a class="btn btn-info btn-sm" href="#">Poster</a> </span>
-</li>
-<li>
-Kin Gwn Lore, Nicholas Sweet, <span class="author-me">Kundan Kumar</span>, N Ahmed, S Sarkar<br> <span class="paper-title">Deep Value of Information Estimators for Collaborative Human-Machine Information Gathering</span>, ACM/IEEE ICCPS, 2016<br> <span style="display:inline-flex;gap:4px;"> <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/1512.07592">Paper</a> <a class="btn btn-success btn-sm" href="#">Code</a> <a class="btn btn-info btn-sm" href="#">Poster</a> </span>
-</li>
-</div>
-</ol>
-<!-- toggle button -->
-<div style="text-align:center;margin-top:.5rem;">
-<p><button onclick="toggleConfPapers()" style="
-    padding:6px 14px;
-    font-size:.85rem;
-    background:#f1f1f1;
-    color:#333;
-    border:1px solid #aaa;
-    border-radius:6px;
-    cursor:pointer;"> Show More </button></p>
-</div>
-<script>
-function toggleConfPapers(){
-  const section=document.getElementById('conf-more');
-  const btn=event.target;
-  if(section.style.display==='none'){
-    section.style.display='block';
-    btn.textContent='Show Less';
-  }else{
-    section.style.display='none';
-    btn.textContent='Show More';
-  }
-}
-</script>
-</div>
-</div>
-</div>
-</section>
-<section id="ongoing-projects" class="level2">
-<h2 class="anchored" data-anchor-id="ongoing-projects">Ongoing Projects</h2>
-<ul>
-<li><p>Federated DRL for Cyber-Resilient Volt-VAR Optimization<br>
-Decentralized, communication-efficient control using LSTM-enhanced PPO agents across distributed DERs.</p></li>
-<li><p>One-Shot Policy Transfer with Physics Priors<br>
-Train agents on small topologies and adapt to IEEE 123-bus, 8500-node networks in a few iterations.</p></li>
-<li><p>LLM-Guided Autonomous Planning for Smart Buildings<br>
-Convert user prompts to interpretable control policies using LLMs (OpenAI, Claude) in CityLearn environments.</p></li>
-</ul>
-<style>
-  .proj-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 0.5rem;
-  }
-
-  .proj-card {
-    border: 2px solid #ddd;
-    border-radius: 12px;
-    padding: 1.2rem;
-    background: #fff;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.2s ease;
-    max-width: 360px;
-    margin: 0 auto;
-    text-align: center;
-
-    /* ✅ kill hyperlink look inside the whole card */
-    text-decoration: none !important;
-    color: inherit !important;
-  }
-
-  /* ✅ also kill underline/color on any nested elements */
-  .proj-card * {
-    text-decoration: none !important;
-    color: inherit;
-  }
-
-  .proj-card:hover {
-    transform: translateY(-3px);
-    text-decoration: none !important;
-  }
-
-  /* Small, centered hex-badge style */
-  .proj-card img {
-    width: 130px;
-    height: 130px;
-    object-fit: contain;
-    display: block;
-    margin: 0.4rem auto 0.9rem auto;
-    background-color: transparent;
-    padding: 0;
-    border-bottom: none;
-  }
-
-  .proj-body {
-    font-family: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  }
-
-  .group-label {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 2rem 0 0.5rem 0;
-    color: #6c2b88;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    text-align: center;
-  }
-
-  .proj-llm strong {
-    color: #8B008B !important;
-    font-size: 1.05rem;
-  }
-
-  /* Optional: make body text slightly softer */
-  .proj-body {
-    color: #4c4c4c;
-  }
-</style>
-
-<!-- Group: DRL-based Control -->
-
-<div class="group-label">DRL-based Control</div>
-
-<div class="proj-grid">
-
-  <a class="proj-card" href="../rpkg/drl_vvc/index.html">
-    <span class="proj-body proj-llm">
-      <img src="drl_vvc/drl_vvc.png" alt="DRL Control">
-      <strong>DRL for Volt-VAR</strong><br>
-      Design control agents for voltage regulation and reactive power optimization in smart distribution grids.
-    </span>
-  </a>
-
-  <a class="proj-card" href="../rpkg/physics-informed-actor-critic/index.html">
-    <span class="proj-body proj-llm">
-      <img src="physics-informed-actor-critic/physics.png" alt="Actor Critic">
-      <strong>Physics-Informed Actor-Critic</strong><br>
-      Embed grid physics and control limits directly into the DRL learning loop for stable and efficient decisions.
-    </span>
-  </a>
-
-  <a class="proj-card" href="../rpkg/sim2real/index.html">
-    <span class="proj-body proj-llm">
-      <img src="sim2real/sim2real.png" alt="Sim2Real Transfer">
-      <strong>Sim-to-Real Transfer</strong><br>
-      Train agents in simulated OpenDSS environments and deploy them on real-time OPAL-RT setups.
-    </span>
-  </a>
-
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Talks</h1>
 </div>
 
-<!-- Group: 🔐 Safe & Trustworthy RL -->
-
-<div class="group-label">Safe &amp; Trustworthy RL</div>
-
-<div class="proj-grid">
-
-  <a class="proj-card" href="../rpkg/safe/index.html">
-    <span class="proj-body proj-llm">
-      <img src="safe/safe.png" alt="Safe RL">
-      <strong>Robust &amp; Stable Learning</strong><br>
-      Develop agents that ensure system safety, robustness, and interpretability under uncertainty.
-    </span>
-  </a>
-
-  <a class="proj-card" href="../rpkg/uncertainty/index.html">
-    <span class="proj-body proj-llm">
-      <img src="uncertainty/uncertainty.png" alt="Uncertainty Quantification">
-      <strong>Uncertainty-Aware Policies</strong><br>
-      Quantify epistemic and aleatoric uncertainty in high-stakes, partially observable settings.
-    </span>
-  </a>
-
-</div>
-
-<!-- Group: Transfer & Meta-Adaptation -->
-
-<div class="group-label">Transfer &amp; Meta-Adaptation</div>
-
-<div class="proj-grid">
-
-  <a class="proj-card" href="../rpkg/domain_adaptation/index.html">
-    <span class="proj-body proj-llm">
-      <img src="domain_adaptation/domain_adaptation.png" alt="Transfer Learning">
-      <strong>Domain Adaptation</strong><br>
-      Enable agents to generalize across grids with different topologies, dynamics, and loads.
-    </span>
-  </a>
-
-  <a class="proj-card" href="../rpkg/meta_rl/index.html">
-    <span class="proj-body proj-llm">
-      <img src="meta_rl/meta_rl.png" alt="Meta RL">
-      <strong>Meta-RL for Efficiency</strong><br>
-      Leverage meta-reasoning to accelerate learning in low-data, high-variance scenarios.
-    </span>
-  </a>
-
-</div>
-
-<!-- Group: Vision-Simulation Integration -->
-
-<div class="group-label">Vision-Simulation Integration</div>
-
-<div class="proj-grid">
-
-  <a class="proj-card" href="../rpkg/carla/index.html">
-    <span class="proj-body proj-llm">
-      <img src="carla/carla.png" alt="Perception Control">
-      <strong>Perception-Control Fusion</strong><br>
-      Use CARLA and AirSim to train end-to-end systems in visual RL tasks with sensors.
-    </span>
-  </a>
-
-  <a class="proj-card" href="../rpkg/multimodal/index.html">
-    <span class="proj-body proj-llm">
-      <img src="multimodal/multimodal.png" alt="Multimodal Fusion">
-      <strong>Multi-modal Representations</strong><br>
-      Combine visual, state, and contextual features for better decision-making.
-    </span>
-  </a>
-
-</div>
-
-<!-- Group: LLM-Augmented Decision Systems -->
-
-<div class="group-label">LLM-Augmented Decision Systems</div>
-
-<div class="proj-grid">
-
-  <a class="proj-card" href="../rpkg/llm_control/index.html">
-    <span class="proj-body proj-llm">
-      <img src="llm_control/llm_control.png" alt="LLM-guided control">
-      <strong>LLM-Guided Control</strong><br>
-      Translate natural language into actionable policies for real-world environments.
-    </span>
-  </a>
-
+<div>
+  <div class="description">
+    Talks, invited lectures, and presentations.
+  </div>
 </div>
 
 
+<div class="quarto-title-meta column-page-left">
 
-</section>
+    
+  
+    
+  </div>
+  
 
-</main> <!-- /main -->
+
+</header>
+
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title" data-direction="asc">
+        Title
+      </option>
+      <option value="listing-date-sort" data-direction="asc">
+        Date - Oldest
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        Date - Newest
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="U21hcnQlMjBHcmlkcyUyQ1JlaW5mb3JjZW1lbnQlMjBMZWFybmluZyUyQ1RyYW5zZmVyJTIwTGVhcm5pbmclMkNBSSUyMFJlc2VhcmNoJTJDRW5lcmd5JTIwU3lzdGVtcw==" data-listing-date-sort="1752642000000" data-listing-file-modified-sort="1762456420867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="766">
+<a href="./talks/pes_gm_2025/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./talks/pes_gm_2025/image_talk_20220616.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Scaling Smart Grids with Transfer Learning and DRL
+</h5>
+<div class="card-text listing-description delink">
+As renewable energy integration accelerates, modern power grids face mounting complexity in maintaining stability and efficiency. Deep Reinforcement Learning (DRL) has…<strong></strong><strong></strong><br>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul 16, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Q29tbXVuaXR5JTJDUXVhcnRv" data-listing-date-sort="1726894800000" data-listing-file-modified-sort="1762276269636" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="182">
+<a href="./talks/community_20240921_quartofriends/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="images/image-placeholder.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Use Quarto, Make Friends
+</h5>
+<div class="card-text listing-description delink">
+<p>Kolkata UseR meetup</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Sep 21, 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UldELUVIUg==" data-listing-date-sort="1726635600000" data-listing-file-modified-sort="1762276269655" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="162">
+<a href="./talks/ehr_20240918_betterehr/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="talks/ehr_20240918_betterehr/image_talk_20240918.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+One step closer to better Electronic Health Records data
+</h5>
+<div class="card-text listing-description delink">
+<p>PHUSE Single Day Event Basel</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Sep 18, 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Q29tbXVuaXR5" data-listing-date-sort="1720587600000" data-listing-file-modified-sort="1762276269635" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="174">
+<a href="./talks/community_20240710_camis/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./talks/community_20240710_camis/image_talk_20240710.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+CAMIS: An Open-Source, Community endeavour for Comparing Analysis Method Implementations
+</h5>
+<div class="card-text listing-description delink">
+2024.7.8-11, Salzburg, Austria. Conference link: UseR!
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul 10, 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="UnN0YXRzJTJDUXVhcnRvJTJDVGVhY2hpbmc=" data-listing-date-sort="1718254800000" data-listing-file-modified-sort="1762276269669" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="203">
+<a href="./talks/rstats_20240613_teaching/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="talks/rstats_20240613_teaching/image_talk_20240613.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+A one year recap on teaching statistcis to medical students: how can R and Quarto help?
+</h5>
+<div class="card-text listing-description delink">
+<p>R/Medicine 2024 - Online</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jun 13, 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="UnN0YXRzJTJDUXVhcnRvJTJDVGVhY2hpbmc=" data-listing-date-sort="1689915600000" data-listing-file-modified-sort="1762276269668" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="245">
+<a href="./talks/rstats_20230721_teaching/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="talks/rstats_20230721_teaching/image_talk_20230721.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Transforming medical statistics classroom with R and Quarto
+</h5>
+<div class="card-text listing-description delink">
+<p>Basel R meeting</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul 21, 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-listing-date-sort="1689397200000" data-listing-file-modified-sort="1762276269637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="16">
+<a href="./talks/dummy_talk/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./talks/dummy_talk/talk_image.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+My Dummy Talk
+</h5>
+<div class="card-text listing-description delink">
+This is a simple demo of a Quarto talk listing with an image, title, and subtitle.
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul 15, 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="cGg=" data-listing-date-sort="1680152400000" data-listing-file-modified-sort="1762276269663" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="174">
+<a href="./talks/ph_20230330_sp/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="talks/ph_20230330_sp/image_talk_20230330.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Public health surveillance and reporting
+</h5>
+<div class="card-text listing-description delink">
+<p>Join us for a discussion on how open source tools can enable automated, reproducible and scalable public health reporting.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Mar 30, 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="UldELUVIUg==" data-listing-date-sort="1665637200000" data-listing-file-modified-sort="1762276269647" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
+<a href="./talks/ehr_20221013_ml_icu/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="talks/ehr_20221013_ml_icu/image_talk_20221013.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Machine Learning in Intensive Care Units
+</h5>
+<div class="card-text listing-description delink">
+<p>PhD defence trial lecture</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Oct 13, 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="UldELUVIUg==" data-listing-date-sort="1613628000000" data-listing-file-modified-sort="1762276269646" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
+<a href="./talks/ehr_20210218_biday/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="talks/ehr_20210218_biday/image_ehr_20210218.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Network Analysis of Hospital EHR data
+</h5>
+<div class="card-text listing-description delink">
+<p>Big Insight Day, Oslo</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Feb 18, 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="10" data-categories="ZWhy" data-listing-date-sort="1572238800000" data-listing-file-modified-sort="1762276269642" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="./talks/ehr_20191028_rladies/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="talks/ehr_20191028_rladies/image_ehr_20191028.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Learning from Hospital EHR data with R
+</h5>
+<div class="card-text listing-description delink">
+<p>A 15 minutes introduction to hospital EHR data</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Oct 28, 2019
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="11" data-categories="cnN0YXRz" data-listing-date-sort="1554181200000" data-listing-file-modified-sort="1762276269667" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
+<a href="./talks/rstats_20190402_blogdown/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="talks/rstats_20190402_blogdown/image_rstats_20190402.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Building Website in R: Step by Step Introduction to blogdown
+</h5>
+<div class="card-text listing-description delink">
+<p>Talk at Oslo UseR meetup</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Apr 2, 2019
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -974,11 +952,11 @@ Convert user prompts to interpretable control policies using LLMs (OpenAI, Claud
 </div>   
     <div class="nav-footer-center">
 <p><a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a> <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark me-2" href="https://orcid.org/0000-0002-3229-6649" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a> <a class="link-dark me-2" href="https://scholar.google.com/citations?user=1zDpIJkAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a> <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a></p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/rpkg/CopyOfresearch.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/talks.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="../contact.html">
+    <a class="nav-link" href="./contact.html">
 <p>Contact</p>
 </a>
   </li>  
@@ -990,5 +968,5 @@ Convert user prompts to interpretable control policies using LLMs (OpenAI, Claud
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

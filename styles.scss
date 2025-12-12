@@ -272,3 +272,30 @@ h4 {
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 @import url('https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+:root{
+  --pub-color: #9c4a1a;
+}
+
+.breadcrumb a,
+.breadcrumb-item.active,
+.breadcrumb{
+  color: var(--pub-color) !important;
+}
+
+.breadcrumb a:hover{
+  color: var(--pub-color);
+  text-decoration: underline;
+}
+
+.pub-title-link,
+.listing-title,
+.lead{
+  color: var(--pub-color);
+}
+
+.pub-count{
+  color: var(--pub-color);
+  border-color: rgba(156, 74, 26, 0.35);
+  background: rgba(156, 74, 26, 0.06);
+}
