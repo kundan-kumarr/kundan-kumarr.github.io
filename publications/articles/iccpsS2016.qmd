@@ -4,9 +4,11 @@ type: "article"
 author: " Kundan Kumar"
 year: "2016"
 publication: "ACM/IEEE 7th International Conference on Cyber-Physical Systems (ICCPS"
-preprint: ""
+preprint: "https://ieeexplore.ieee.org/abstract/document/7479095"
 doi: "https://ieeexplore.ieee.org/abstract/document/7479095"
-materials: ""
+poster: /posters/ieee-pes-2025-poster.pdf
+slides: /slides/ieee-pes-2025-slides.pdf
+materials: "https://ieeexplore.ieee.org/abstract/document/7479095"
 toc: false
 categories:
   - convolutional neural networks
