@@ -6,11 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kundan Kumar">
-<meta name="dcterms.date" content="2025-01-20">
-<meta name="description" content="A natural-language-guided reinforcement learning framework for smart grid management and adaptive decision-making.">
+<meta name="dcterms.date" content="2019-10-28">
+<meta name="description" content="A 15 minutes introduction to hospital EHR data">
 
-<title>LLM-Driven Grid Planner – Kundan Kumar</title>
+<title>Learning from Hospital EHR data with R – Kundan Kumar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,26 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./misc/info/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-4931ad3a4f610300299060d87ad9de1f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ce2a33eb5efa6bea0a03b7d4b9b49b41.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../misc/info/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-4931ad3a4f610300299060d87ad9de1f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-ce2a33eb5efa6bea0a03b7d4b9b49b41.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -124,7 +121,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kundan Kumar</span>
     </a>
   </div>
@@ -135,17 +132,17 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about_me.html"> <i class="bi bi-person-circle" role="img">
+    <a class="nav-link" href="../../about_me.html"> <i class="bi bi-person-circle" role="img">
 </i> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> <i class="bi bi-file-earmark-text-fill" role="img">
+    <a class="nav-link" href="../../cv.html"> <i class="bi bi-file-earmark-text-fill" role="img">
 </i> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./rpkg/research.html"> <i class="bi bi-lightbulb-fill" role="img">
+    <a class="nav-link" href="../../rpkg/research.html"> <i class="bi bi-lightbulb-fill" role="img">
 </i> 
 <span class="menu-text">Research</span></a>
   </li>  
@@ -157,7 +154,7 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects--notes">    
         <li>
-    <a class="dropdown-item" href="./projects.html">
+    <a class="dropdown-item" href="../../projects.html">
  <span class="dropdown-text">✨ All Projects</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
@@ -191,12 +188,12 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./teaching/teaching.html"> <i class="bi bi-mortarboard-fill" role="img">
+    <a class="nav-link" href="../../teaching/teaching.html"> <i class="bi bi-mortarboard-fill" role="img">
 </i> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog/index.html"> <i class="bi bi-pen-fill" role="img">
+    <a class="nav-link" href="../../blog/index.html"> <i class="bi bi-pen-fill" role="img">
 </i> 
 <span class="menu-text">Blogs</span></a>
   </li>  
@@ -211,51 +208,34 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#framework" id="toc-framework" class="nav-link active" data-scroll-target="#framework">Framework</a></li>
-  <li><a href="#core-components" id="toc-core-components" class="nav-link" data-scroll-target="#core-components">Core Components</a></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#broader-impact" id="toc-broader-impact" class="nav-link" data-scroll-target="#broader-impact">Broader Impact</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/llm_grid_planner.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">LLM-Driven Grid Planner</h1>
+<h1 class="title">Learning from Hospital EHR data with R</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Smart Grids</div>
-    <div class="quarto-category">Reinforcement Learning</div>
-    <div class="quarto-category">LLM Guidance</div>
+    <div class="quarto-category">ehr</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    A natural-language-guided reinforcement learning framework for smart grid management and adaptive decision-making.
+    A 15 minutes introduction to hospital EHR data
   </div>
 </div>
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Kundan Kumar </p>
-          </div>
-  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 20, 2025</p>
+      <p class="date">October 28, 2019</p>
     </div>
   </div>
   
@@ -267,51 +247,10 @@ window.Quarto = {
 </header>
 
 
-<p><span class="listing-btn-group"> <a href="https://github.com/kundan-kumarr/LLM-Grid-Planner" class="btn" role="button"><i class="fa-brands fa-github" aria-label="github"></i> Code</a> </span></p>
-<p>The <strong>LLM-Driven Grid Planner</strong> demonstrates how <strong>Large Language Models (LLMs)</strong> can serve as <strong>adaptive reasoning agents</strong> in <strong>smart grid management</strong>.<br>
-It integrates <strong>natural-language-guided reinforcement learning (RL)</strong> for real-time grid optimization, enabling interpretable and human-aligned decision support for operators.</p>
-<hr>
-<section id="framework" class="level3">
-<h3 class="anchored" data-anchor-id="framework">Framework</h3>
-<p>Traditional grid control systems rely on predefined rule-based logic or black-box deep RL agents.<br>
-In contrast, this framework introduces a <strong>language-driven layer</strong>, allowing system operators to provide <strong>high-level natural-language goals</strong>, which the LLM translates into structured RL objectives or safety constraints.</p>
-<p>This synergy creates an <strong>interpretable control loop</strong>, where human intentions, grid dynamics, and agent behavior are aligned through continuous dialogue and reasoning.</p>
-<hr>
-</section>
-<section id="core-components" class="level3">
-<h3 class="anchored" data-anchor-id="core-components">Core Components</h3>
-<ul>
-<li><strong>LLM Planner:</strong> Parses operator input and converts it into structured optimization or control policies.<br>
-</li>
-<li><strong>RL Agent:</strong> Learns to execute the translated goals using algorithms like PPO, DDPG, or SAC.<br>
-</li>
-<li><strong>Smart Grid Environment:</strong> Simulates volt-VAR, power flow, and frequency management scenarios.<br>
-</li>
-<li><strong>Explainability Layer:</strong> Generates step-by-step rationales behind control decisions for improved trust and transparency.</li>
-</ul>
-<hr>
-</section>
-<section id="objectives" class="level3">
-<h3 class="anchored" data-anchor-id="objectives">Objectives</h3>
-<ul>
-<li>Enable <strong>human-in-the-loop grid management</strong> using natural language.<br>
-</li>
-<li>Improve <strong>safety and interpretability</strong> in reinforcement learning decisions.<br>
-</li>
-<li>Support <strong>scalable grid optimization</strong> through AI-assisted planning and control.</li>
-</ul>
-<hr>
-</section>
-<section id="broader-impact" class="level3">
-<h3 class="anchored" data-anchor-id="broader-impact">Broader Impact</h3>
-<p>The LLM-Driven Grid Planner exemplifies a step toward <strong>explainable, trustworthy, and interactive AI</strong> for <strong>smart infrastructure</strong>.<br>
-By merging <strong>language reasoning</strong> with <strong>reinforcement learning</strong>, it establishes a foundation for <strong>next-generation AI-assisted energy systems</strong> that are safer, transparent, and easier to govern.</p>
-<hr>
-<p><img src="./misc/info/projects/llm_grid_planner.png" class="img-center img-fluid" alt="Badge for LLM-Driven Grid Planner showing grid and AI reasoning icons."></p>
+<p><img src="image_ehr_20191028.png" class="img-fluid"></p>
 
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -721,11 +660,11 @@ By merging <strong>language reasoning</strong> with <strong>reinforcement learni
 </div>   
     <div class="nav-footer-center">
 <p><a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a> <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark me-2" href="https://orcid.org/0000-0002-3229-6649" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a> <a class="link-dark me-2" href="https://scholar.google.com/citations?user=1zDpIJkAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a> <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a></p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/llm_grid_planner.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/talks1/ehr_20191028_rladies/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./contact.html">
+    <a class="nav-link" href="../../contact.html">
 <p>Contact</p>
 </a>
   </li>  
@@ -737,5 +676,5 @@ By merging <strong>language reasoning</strong> with <strong>reinforcement learni
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

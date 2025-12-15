@@ -8,16 +8,9 @@
       "/blog/technotes_ml_series_20251105_class_unbalanced/index.html",
       "/blog/technotes_llm_series_20251121_llm_reasoning/index.html",
       "/talks/pes_gm_2025/index.html",
-      "/talks/community_20240921_quartofriends/index.html",
-      "/talks/ehr_20240918_betterehr/index.html",
-      "/talks/community_20240710_camis/index.html",
       "/talks/rstats_20240613_teaching/index.html",
       "/talks/rstats_20230721_teaching/index.html",
-      "/talks/dummy_talk/index.html",
       "/talks/ph_20230330_sp/index.html",
-      "/talks/ehr_20221013_ml_icu/index.html",
-      "/talks/ehr_20210218_biday/index.html",
-      "/talks/ehr_20191028_rladies/index.html",
       "/talks/rstats_20190402_blogdown/index.html",
       "/projects/project2/index.html",
       "/projects/project3/index.html",
@@ -66,24 +59,24 @@
     ]
   },
   {
-    "listing": "/talks/index.html",
+    "listing": "/talks1/index.html",
     "items": [
-      "/talks/pes_gm_2025/index.html",
-      "/talks/community_20240921_quartofriends/index.html",
-      "/talks/ehr_20240918_betterehr/index.html",
-      "/talks/community_20240710_camis/index.html",
-      "/talks/rstats_20240613_teaching/index.html",
-      "/talks/rstats_20230721_teaching/index.html",
-      "/talks/dummy_talk/index.html",
-      "/talks/ph_20230330_sp/index.html",
-      "/talks/ehr_20221013_ml_icu/index.html",
-      "/talks/ehr_20210218_biday/index.html",
-      "/talks/ehr_20191028_rladies/index.html",
-      "/talks/rstats_20190402_blogdown/index.html"
+      "/talks1/pes_gm_2025/index.html",
+      "/talks1/community_20240921_quartofriends/index.html",
+      "/talks1/ehr_20240918_betterehr/index.html",
+      "/talks1/community_20240710_camis/index.html",
+      "/talks1/rstats_20240613_teaching/index.html",
+      "/talks1/rstats_20230721_teaching/index.html",
+      "/talks1/dummy_talk/index.html",
+      "/talks1/ph_20230330_sp/index.html",
+      "/talks1/ehr_20221013_ml_icu/index.html",
+      "/talks1/ehr_20210218_biday/index.html",
+      "/talks1/ehr_20191028_rladies/index.html",
+      "/talks1/rstats_20190402_blogdown/index.html"
     ]
   },
   {
-    "listing": "/publications/pub.html",
+    "listing": "/publications/index.html",
     "items": [
       "/publications/articles/naps2025.html",
       "/publications/articles/pesgm2025.html",
@@ -96,6 +89,10 @@
     ]
   },
   {
+    "listing": "/dl.html",
+    "items": []
+  },
+  {
     "listing": "/about_me.html",
     "items": [
       "/blog/blog_20251204_safe_ai/index.html",
@@ -104,16 +101,9 @@
       "/blog/technotes_ml_series_20251105_class_unbalanced/index.html",
       "/blog/technotes_llm_series_20251121_llm_reasoning/index.html",
       "/talks/pes_gm_2025/index.html",
-      "/talks/community_20240921_quartofriends/index.html",
-      "/talks/ehr_20240918_betterehr/index.html",
-      "/talks/community_20240710_camis/index.html",
       "/talks/rstats_20240613_teaching/index.html",
       "/talks/rstats_20230721_teaching/index.html",
-      "/talks/dummy_talk/index.html",
       "/talks/ph_20230330_sp/index.html",
-      "/talks/ehr_20221013_ml_icu/index.html",
-      "/talks/ehr_20210218_biday/index.html",
-      "/talks/ehr_20191028_rladies/index.html",
       "/talks/rstats_20190402_blogdown/index.html",
       "/projects/project2/index.html",
       "/projects/project3/index.html",
@@ -133,11 +123,7 @@
     ]
   },
   {
-    "listing": "/dl.html",
-    "items": []
-  },
-  {
-    "listing": "/publications/index.html",
+    "listing": "/publications/pub.html",
     "items": [
       "/publications/articles/naps2025.html",
       "/publications/articles/pesgm2025.html",
@@ -147,6 +133,16 @@
       "/publications/articles/isgt2024.html",
       "/publications/articles/icmla2022.html",
       "/publications/articles/iccpsS2016.html"
+    ]
+  },
+  {
+    "listing": "/talks/index.html",
+    "items": [
+      "/talks/pes_gm_2025/index.html",
+      "/talks/rstats_20240613_teaching/index.html",
+      "/talks/rstats_20230721_teaching/index.html",
+      "/talks/ph_20230330_sp/index.html",
+      "/talks/rstats_20190402_blogdown/index.html"
     ]
   }
 ]

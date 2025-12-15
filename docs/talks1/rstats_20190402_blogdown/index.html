@@ -6,11 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kundan Kumar">
-<meta name="dcterms.date" content="2025-01-20">
-<meta name="description" content="Integrating large language models with multi-building energy management in CityLearn for adaptive, interpretable, and efficient optimization.">
+<meta name="dcterms.date" content="2019-04-02">
+<meta name="description" content="Talk at Oslo UseR meetup">
 
-<title>LLM-Powered Energy Optimizer – Kundan Kumar</title>
+<title>Building Website in R: Step by Step Introduction to blogdown – Kundan Kumar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,26 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./misc/info/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-4931ad3a4f610300299060d87ad9de1f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ce2a33eb5efa6bea0a03b7d4b9b49b41.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../misc/info/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-4931ad3a4f610300299060d87ad9de1f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-ce2a33eb5efa6bea0a03b7d4b9b49b41.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -124,7 +121,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kundan Kumar</span>
     </a>
   </div>
@@ -135,17 +132,17 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about_me.html"> <i class="bi bi-person-circle" role="img">
+    <a class="nav-link" href="../../about_me.html"> <i class="bi bi-person-circle" role="img">
 </i> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> <i class="bi bi-file-earmark-text-fill" role="img">
+    <a class="nav-link" href="../../cv.html"> <i class="bi bi-file-earmark-text-fill" role="img">
 </i> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./rpkg/research.html"> <i class="bi bi-lightbulb-fill" role="img">
+    <a class="nav-link" href="../../rpkg/research.html"> <i class="bi bi-lightbulb-fill" role="img">
 </i> 
 <span class="menu-text">Research</span></a>
   </li>  
@@ -157,7 +154,7 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects--notes">    
         <li>
-    <a class="dropdown-item" href="./projects.html">
+    <a class="dropdown-item" href="../../projects.html">
  <span class="dropdown-text">✨ All Projects</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
@@ -191,12 +188,12 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./teaching/teaching.html"> <i class="bi bi-mortarboard-fill" role="img">
+    <a class="nav-link" href="../../teaching/teaching.html"> <i class="bi bi-mortarboard-fill" role="img">
 </i> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog/index.html"> <i class="bi bi-pen-fill" role="img">
+    <a class="nav-link" href="../../blog/index.html"> <i class="bi bi-pen-fill" role="img">
 </i> 
 <span class="menu-text">Blogs</span></a>
   </li>  
@@ -211,51 +208,34 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#system-overview" id="toc-system-overview" class="nav-link active" data-scroll-target="#system-overview">System Overview</a></li>
-  <li><a href="#core-components" id="toc-core-components" class="nav-link" data-scroll-target="#core-components">Core Components</a></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#research-impact" id="toc-research-impact" class="nav-link" data-scroll-target="#research-impact">Research Impact</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/citylearn.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">LLM-Powered Energy Optimizer</h1>
+<h1 class="title">Building Website in R: Step by Step Introduction to blogdown</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Energy Optimization</div>
-    <div class="quarto-category">Reinforcement Learning</div>
-    <div class="quarto-category">LLM Integration</div>
+    <div class="quarto-category">rstats</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Integrating large language models with multi-building energy management in CityLearn for adaptive, interpretable, and efficient optimization.
+    Talk at Oslo UseR meetup
   </div>
 </div>
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Kundan Kumar </p>
-          </div>
-  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 20, 2025</p>
+      <p class="date">April 2, 2019</p>
     </div>
   </div>
   
@@ -267,49 +247,11 @@ window.Quarto = {
 </header>
 
 
-<p><span class="listing-btn-group"> <a href="https://github.com/kundan-kumarr/LLM-Energy-Optimizer" class="btn" role="button"><i class="fa-brands fa-github" aria-label="github"></i> Code</a> </span></p>
-<p>The <strong>LLM-Powered Energy Optimizer</strong> integrates <strong>Large Language Models (LLMs)</strong> with the <strong>CityLearn</strong> multi-building energy environment to achieve <strong>adaptive energy coordination and optimization</strong>.<br>
-By combining the reasoning ability of LLMs with reinforcement-based control agents, this framework demonstrates how <strong>language-driven guidance</strong> can enhance <strong>decision-making and interpretability</strong> in smart energy systems.</p>
-<hr>
-<section id="system-overview" class="level3">
-<h3 class="anchored" data-anchor-id="system-overview">System Overview</h3>
-<p>The project leverages <strong>CityLearn</strong>, an open-source urban energy simulator, where multiple buildings interact with shared energy resources such as batteries, HVAC systems, and renewable units.<br>
-The LLM acts as a <strong>high-level advisor</strong>, generating structured reasoning steps, policy explanations, and optimization prompts to assist the RL controller in selecting efficient energy actions.</p>
-<hr>
-</section>
-<section id="core-components" class="level3">
-<h3 class="anchored" data-anchor-id="core-components">Core Components</h3>
-<ul>
-<li><strong>CityLearn Environment:</strong> Multi-building coordination for energy storage and HVAC scheduling<br>
-</li>
-<li><strong>LLM Agent Layer:</strong> Generates task explanations, reasoning chains, and adaptive control advice<br>
-</li>
-<li><strong>Reinforcement Learning Backbone:</strong> PPO and SAC algorithms for optimizing power and comfort metrics<br>
-</li>
-<li><strong>Physics-Informed Feedback:</strong> Embeds voltage, power, and thermal constraints into decision flow</li>
-</ul>
-<hr>
-</section>
-<section id="objectives" class="level3">
-<h3 class="anchored" data-anchor-id="objectives">Objectives</h3>
-<ul>
-<li>Reduce total energy consumption and carbon footprint<br>
-</li>
-<li>Improve system interpretability through LLM reasoning chains<br>
-</li>
-<li>Enable human-in-the-loop adjustments using natural-language instructions</li>
-</ul>
-<hr>
-</section>
-<section id="research-impact" class="level3">
-<h3 class="anchored" data-anchor-id="research-impact">Research Impact</h3>
-<p>This work bridges the gap between <strong>natural-language intelligence</strong> and <strong>energy optimization</strong>, enabling explainable, sustainable, and <strong>LLM-guided adaptive control</strong> in modern smart cities.</p>
-<hr>
-<p><img src="./misc/info/projects/city_learn.png" class="img-center img-fluid" alt="Badge for LLM-Powered Energy Optimizer showing buildings and an LLM communication icon."></p>
+<p><img src="image_rstats_20190402.png" class="img-fluid"></p>
+<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
 
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -719,11 +661,11 @@ The LLM acts as a <strong>high-level advisor</strong>, generating structured rea
 </div>   
     <div class="nav-footer-center">
 <p><a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a> <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark me-2" href="https://orcid.org/0000-0002-3229-6649" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a> <a class="link-dark me-2" href="https://scholar.google.com/citations?user=1zDpIJkAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a> <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a></p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/citylearn.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/talks1/rstats_20190402_blogdown/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./contact.html">
+    <a class="nav-link" href="../../contact.html">
 <p>Contact</p>
 </a>
   </li>  
@@ -735,5 +677,5 @@ The LLM acts as a <strong>high-level advisor</strong>, generating structured rea
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

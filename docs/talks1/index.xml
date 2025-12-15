@@ -6,15 +6,15 @@
       version="2.0">
 <channel>
 <title>Kundan Kumar</title>
-<link>https://kundan-kumarr.github.io/talks/</link>
-<atom:link href="https://kundan-kumarr.github.io/talks/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://kundan-kumarr.github.io/talks1/</link>
+<atom:link href="https://kundan-kumarr.github.io/talks1/index.xml" rel="self" type="application/rss+xml"/>
 <description>Talks, invited lectures, and presentations.</description>
 <generator>quarto-1.7.33</generator>
 <lastBuildDate>Wed, 16 Jul 2025 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Scaling Smart Grids with Transfer Learning and DRL</title>
   <dc:creator>Kundan Kumar</dc:creator>
-  <link>https://kundan-kumarr.github.io/talks/pes_gm_2025/</link>
+  <link>https://kundan-kumarr.github.io/talks1/pes_gm_2025/</link>
   <description><![CDATA[ 
 
 
@@ -30,7 +30,7 @@ Every new grid topology or environment demands retraining from scratch, costing 
 <section id="core-idea-transfer-learning-meets-drl" class="level2">
 <h2 class="anchored" data-anchor-id="core-idea-transfer-learning-meets-drl">Core Idea: Transfer Learning Meets DRL</h2>
 <p>Traditional DRL systems learn from scratch. TL-DRL systems, however, <strong>transfer policy knowledge</strong> from a source grid (e.g., IEEE-123 Bus) to a target grid (e.g., IEEE-13 Bus).</p>
-<p><img src="https://kundan-kumarr.github.io/talks/pes_gm_2025/image_talk_20220616.png" class="img-fluid" style="width:60.0%"></p>
+<p><img src="https://kundan-kumarr.github.io/talks1/pes_gm_2025/image_talk_20220616.png" class="img-fluid" style="width:60.0%"></p>
 <p>This approach allows agents to <strong>start smarter</strong>, building upon previously learned representations rather than reinventing them. The heart of this system is a <strong>policy reuse classifier</strong>, a small neural network that decides when the previously learned policy should be reused or adapted.</p>
 <hr>
 </section>
@@ -129,7 +129,7 @@ We also aim to extend this framework to <strong>federated and collaborative lear
 <strong>“Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids.”</strong><br>
 Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
 <p>We developed a TL-DRL framework, as shown in Fig.~<img src="https://latex.codecogs.com/png.latex?%5Cref%7Bfig:A2C%7D">, which involves transferring policy knowledge from one distribution grid to another. Additionally, we have created a policy reuse classifier to determine whether to transfer the policy knowledge from the IEEE-123 Bus to the IEEE-13 Bus system and conducted an impact analysis.</p>
-<p><img src="https://kundan-kumarr.github.io/talks/pes_gm_2025/image_talk_20220616.png" class="img-fluid" style="width:60.0%"></p>
+<p><img src="https://kundan-kumarr.github.io/talks1/pes_gm_2025/image_talk_20220616.png" class="img-fluid" style="width:60.0%"></p>
 </section>
 <section id="about-the-talk" class="level2">
 <h2 class="anchored" data-anchor-id="about-the-talk">About the talk</h2>
@@ -146,19 +146,85 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
   <category>Transfer Learning</category>
   <category>AI Research</category>
   <category>Energy Systems</category>
-  <guid>https://kundan-kumarr.github.io/talks/pes_gm_2025/</guid>
+  <guid>https://kundan-kumarr.github.io/talks1/pes_gm_2025/</guid>
   <pubDate>Wed, 16 Jul 2025 05:00:00 GMT</pubDate>
-  <media:content url="https://kundan-kumarr.github.io/talks/pes_gm_2025/image_talk_20220616.png" medium="image" type="image/png" height="121" width="144"/>
+  <media:content url="https://kundan-kumarr.github.io/talks1/pes_gm_2025/image_talk_20220616.png" medium="image" type="image/png" height="121" width="144"/>
 </item>
 <item>
-  <title>A one year recap on teaching statistcis to medical students: how can R and Quarto help?</title>
-  <link>https://kundan-kumarr.github.io/talks/rstats_20240613_teaching/</link>
+  <title>Use Quarto, Make Friends</title>
+  <link>https://kundan-kumarr.github.io/talks1/community_20240921_quartofriends/</link>
   <description><![CDATA[ 
 
 
 
 
-<p><img src="https://kundan-kumarr.github.io/talks/rstats_20240613_teaching/image_talk_20240613.png" class="img-fluid"></p>
+<p>It has been two years since Quarto became the most popular reproducible publication tool in data science and R community. However Quarto is so much more than just a publication tool! I started using it since late 2022, and it has helped me become more organized, productive and connected with people in the data science community.</p>
+<p>In this talk I will not focus on the technical aspects on ‘how’ to use this tool. In the first part of the talk, I would like to report the latest news and trends seen in the useR conference and Posit conf, the two biggest global R events. In the second part, I will share my own experience in using Quarto for my career: from learning new skills, collaborating with co-workers, teaching university courses to networking and building a community (CAMIS collaboration). It is a powerful tool to share your work, and make new connections - both for work and for fun! I hope this talk will provide you with some new ideas on how to use this fantastic technology to fulfill your goals.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/0TEdFZ17FhY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+
+
+
+
+ ]]></description>
+  <category>Community</category>
+  <category>Quarto</category>
+  <guid>https://kundan-kumarr.github.io/talks1/community_20240921_quartofriends/</guid>
+  <pubDate>Sat, 21 Sep 2024 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>One step closer to better Electronic Health Records data</title>
+  <link>https://kundan-kumarr.github.io/talks1/ehr_20240918_betterehr/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Real-World Data (RWD) like Electronic Health Records (EHR) is crucial for understanding drug usage and various treatments and generating Real-World Evidence (RWE). Risk prediction has been a major application where EHR is used, and there is now a shift towards causal inference, which requires data of even higher quality. Patients undergo treatments (drugs, procedures) at various times during their hospital stays, yet the data being recorded are messy and error-prone for various reasons. Analysts spend significant amount of time to sit together with clinicians to identify and understand abnormal records, and unfortunately this process is challenging to automate.</p>
+<p>This talk will use an example on antibiotics prescription and use at a Nordic hospital to illustrate how some EHR systems can improve for better clinical decision-making and better data for research. I will also introduce a pilot R package (ggehr) that facilitates visual exploration of EHR data, and how it can help reconstruct patient journeys and enable analysts to perform effective quality control.</p>
+<p><img src="https://kundan-kumarr.github.io/talks1/ehr_20240918_betterehr/image_talk_20240918.png" class="img-fluid"></p>
+
+
+
+
+ ]]></description>
+  <category>RWD-EHR</category>
+  <guid>https://kundan-kumarr.github.io/talks1/ehr_20240918_betterehr/</guid>
+  <pubDate>Wed, 18 Sep 2024 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>CAMIS: An Open-Source, Community endeavour for Comparing Analysis Method Implementations</title>
+  <link>https://kundan-kumarr.github.io/talks1/community_20240710_camis/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>2024.7.8-11, Salzburg, Austria. Conference link: <a href="https://events.linuxfoundation.org/user/">UseR!</a></p>
+<p>Statisticians using multiple softwares (SAS, R, Python) will have found differences in analysis results that warrant further justification. Whilst some industries may accept results not being the same as long as they are “close”, the highly regulated pharmaceutical industry would require an identical match in results. Yet, discrepancies might still occur, and knowing the reasons (different methods, options, algorithms etc) is critical to the modern statistician and subsequent regulatory submissions.</p>
+<p>In this talk I will introduce <strong>CAMIS: Comparing Analysis Method Implementations in Software</strong>. https://psiaims.github.io/CAMIS/ It is a joint-project between PHUSE, the R Validation Hub, PSI AIMS, R consortium and openstatsware. The aim of CAMIS is to investigate and document differences and similarities between different statistical softwares such as SAS and R. We use Quarto and Github to document methods, algorithms and comparisons between softwares through small case studies, and all articles are contributed by the community. In the transition from proprietary to open source technology in the industry, CAMIS can serve as a guidebook to navigate this process.</p>
+<section id="keywords-cross-industry-collaboration-multi-lingua-open-source-quarto" class="level4">
+<h4 class="anchored" data-anchor-id="keywords-cross-industry-collaboration-multi-lingua-open-source-quarto">keywords: cross industry collaboration, multi-lingua, open-source, quarto</h4>
+<p><img src="https://kundan-kumarr.github.io/talks1/community_20240710_camis/image_talk_20240710.png" class="img-fluid"></p>
+
+
+
+</section>
+
+ ]]></description>
+  <category>Community</category>
+  <guid>https://kundan-kumarr.github.io/talks1/community_20240710_camis/</guid>
+  <pubDate>Wed, 10 Jul 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://kundan-kumarr.github.io/talks1/community_20240710_camis/image_talk_20240710.png" medium="image" type="image/png" height="80" width="144"/>
+</item>
+<item>
+  <title>A one year recap on teaching statistcis to medical students: how can R and Quarto help?</title>
+  <link>https://kundan-kumarr.github.io/talks1/rstats_20240613_teaching/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><img src="https://kundan-kumarr.github.io/talks1/rstats_20240613_teaching/image_talk_20240613.png" class="img-fluid"></p>
 <p>Time and place: <strong>June 13 2024. Online</strong></p>
 <p>Slides for this talk can be accessed <a href="https://github.com/chizapoth/talks/tree/master/2024-06-13-rmedicine" class="btn btn-success btn-sm">Code</a>.</p>
 <section id="about-the-topic" class="level2">
@@ -176,18 +242,18 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
   <category>Rstats</category>
   <category>Quarto</category>
   <category>Teaching</category>
-  <guid>https://kundan-kumarr.github.io/talks/rstats_20240613_teaching/</guid>
+  <guid>https://kundan-kumarr.github.io/talks1/rstats_20240613_teaching/</guid>
   <pubDate>Thu, 13 Jun 2024 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Transforming medical statistics classroom with R and Quarto</title>
-  <link>https://kundan-kumarr.github.io/talks/rstats_20230721_teaching/</link>
+  <link>https://kundan-kumarr.github.io/talks1/rstats_20230721_teaching/</link>
   <description><![CDATA[ 
 
 
 
 
-<p><img src="https://kundan-kumarr.github.io/talks/rstats_20230721_teaching/image_talk_20230721.png" class="img-fluid"></p>
+<p><img src="https://kundan-kumarr.github.io/talks1/rstats_20230721_teaching/image_talk_20230721.png" class="img-fluid"></p>
 <p>Time and place: <strong>July 21, 2023 10AM. Roche office, Basel, Switzerland</strong></p>
 <p>Slides for this talk can be accessed <a href="https://github.com/chizapoth/talks/tree/master/2023-07-21-basel" class="btn btn-success btn-sm">Code</a>.</p>
 <section id="about-the-topic" class="level2">
@@ -203,18 +269,36 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
   <category>Rstats</category>
   <category>Quarto</category>
   <category>Teaching</category>
-  <guid>https://kundan-kumarr.github.io/talks/rstats_20230721_teaching/</guid>
+  <guid>https://kundan-kumarr.github.io/talks1/rstats_20230721_teaching/</guid>
   <pubDate>Fri, 21 Jul 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Public health surveillance and reporting</title>
-  <link>https://kundan-kumarr.github.io/talks/ph_20230330_sp/</link>
+  <title>My Dummy Talk</title>
+  <link>https://kundan-kumarr.github.io/talks1/dummy_talk/</link>
   <description><![CDATA[ 
 
 
 
 
-<p><img src="https://kundan-kumarr.github.io/talks/ph_20230330_sp/image_talk_20230330.png" class="img-fluid"></p>
+<p>This is a simple demo of a Quarto talk listing with an image, title, and subtitle.</p>
+
+
+
+
+ ]]></description>
+  <guid>https://kundan-kumarr.github.io/talks1/dummy_talk/</guid>
+  <pubDate>Sat, 15 Jul 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://kundan-kumarr.github.io/talks1/dummy_talk/talk_image.png" medium="image" type="image/png" height="80" width="144"/>
+</item>
+<item>
+  <title>Public health surveillance and reporting</title>
+  <link>https://kundan-kumarr.github.io/talks1/ph_20230330_sp/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><img src="https://kundan-kumarr.github.io/talks1/ph_20230330_sp/image_talk_20230330.png" class="img-fluid"></p>
 <p>Time and place: <strong>Mar.&nbsp;30, 2023 12:00 PM–1:00 PM</strong></p>
 <p>Hybrid: <strong>Georg Sverdrups hus and Zoom</strong></p>
 <p><a href="https://www.ub.uio.no/english/courses-events/events/open-science-lunch/2023-03-30.html">Event page</a></p>
@@ -230,18 +314,74 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
 
  ]]></description>
   <category>ph</category>
-  <guid>https://kundan-kumarr.github.io/talks/ph_20230330_sp/</guid>
+  <guid>https://kundan-kumarr.github.io/talks1/ph_20230330_sp/</guid>
   <pubDate>Thu, 30 Mar 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Building Website in R: Step by Step Introduction to blogdown</title>
-  <link>https://kundan-kumarr.github.io/talks/rstats_20190402_blogdown/</link>
+  <title>Machine Learning in Intensive Care Units</title>
+  <link>https://kundan-kumarr.github.io/talks1/ehr_20221013_ml_icu/</link>
   <description><![CDATA[ 
 
 
 
 
-<p><img src="https://kundan-kumarr.github.io/talks/rstats_20190402_blogdown/image_rstats_20190402.png" class="img-fluid"></p>
+<p>A 45 minutes trial lecture to fulfill the requirement of my PhD degree.</p>
+<p><img src="https://kundan-kumarr.github.io/talks1/ehr_20221013_ml_icu/image_talk_20221013.png" class="img-fluid"></p>
+
+
+
+
+ ]]></description>
+  <category>RWD-EHR</category>
+  <guid>https://kundan-kumarr.github.io/talks1/ehr_20221013_ml_icu/</guid>
+  <pubDate>Thu, 13 Oct 2022 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Network Analysis of Hospital EHR data</title>
+  <link>https://kundan-kumarr.github.io/talks1/ehr_20210218_biday/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><img src="https://kundan-kumarr.github.io/talks1/ehr_20210218_biday/image_ehr_20210218.png" class="img-fluid"></p>
+<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+
+
+
+
+ ]]></description>
+  <category>RWD-EHR</category>
+  <guid>https://kundan-kumarr.github.io/talks1/ehr_20210218_biday/</guid>
+  <pubDate>Thu, 18 Feb 2021 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Learning from Hospital EHR data with R</title>
+  <link>https://kundan-kumarr.github.io/talks1/ehr_20191028_rladies/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><img src="https://kundan-kumarr.github.io/talks1/ehr_20191028_rladies/image_ehr_20191028.png" class="img-fluid"></p>
+
+
+
+
+ ]]></description>
+  <category>ehr</category>
+  <guid>https://kundan-kumarr.github.io/talks1/ehr_20191028_rladies/</guid>
+  <pubDate>Mon, 28 Oct 2019 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Building Website in R: Step by Step Introduction to blogdown</title>
+  <link>https://kundan-kumarr.github.io/talks1/rstats_20190402_blogdown/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><img src="https://kundan-kumarr.github.io/talks1/rstats_20190402_blogdown/image_rstats_20190402.png" class="img-fluid"></p>
 <p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
 
 
@@ -249,7 +389,7 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
 
  ]]></description>
   <category>rstats</category>
-  <guid>https://kundan-kumarr.github.io/talks/rstats_20190402_blogdown/</guid>
+  <guid>https://kundan-kumarr.github.io/talks1/rstats_20190402_blogdown/</guid>
   <pubDate>Tue, 02 Apr 2019 05:00:00 GMT</pubDate>
 </item>
 </channel>
