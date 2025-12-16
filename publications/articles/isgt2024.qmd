@@ -12,6 +12,10 @@ categories:
   - Secure AI
   - Smart Energy Systems
 ---
+<div style="display:flex; justify-content:flex-end; margin-top:-0.5rem; gap:0.5rem;">
+  <a class="btn btn-primary" href="/misc/info/posters/PES_ISGT_poster.pdf" target="_blank" rel="noopener"> Poster (PDF)
+  </a>
+</div>
 
 ## Citation
 
