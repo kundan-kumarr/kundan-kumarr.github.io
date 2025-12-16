@@ -4,6 +4,7 @@ description: |
  Why the next generation of AI must be predictable, aligned, and physically grounded
 author: "Kundan Kumar"
 date: "2025-12-04"
+image: "safe_ai.png"
 categories: [Safe-AI,Alignment, Data science]
 sidebar: false
 code-block-bg: true
@@ -15,6 +16,7 @@ format:
     code-fold: false
     code-tools: false
 ---
+![](safe_ai.png){width=100% fig-align="center"}
 
 Artificial intelligence is no longer limited to chatbots or recommendation systems. It is now capable of analyzing medical images, guiding transportation, filtering online information, and increasingly operating within cyber-physical systems (CPS) such as smart energy systems, hospitals, transportation networks, and industrial plants. Ensuring the safety of these systems is one of the main challenges in modern AI and control engineering.
 

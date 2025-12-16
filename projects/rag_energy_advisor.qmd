@@ -2,8 +2,7 @@
 title: "RAG-Enhanced Energy Advisor"
 description: "Demonstrates how retrieval-augmented generation (RAG) can be exploited or safeguarded when attackers attempt to induce inappropriate responses, such as misleading medical or control suggestions."
 author: Kundan Kumar
-date: "2025-01-20"
-image: "/misc/info/projects/llm_energy_advisor.png"
+date: "2025-12-16"
 image-alt: "Badge for the RAG-Enhanced Energy Advisor showing document and energy icons."
 categories:
   - LLM Security
