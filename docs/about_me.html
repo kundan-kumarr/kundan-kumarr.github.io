@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-author','listing-date','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
@@ -517,14 +517,19 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
     <div class="explore-box">
       <div id="listing-blog" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="U2FmZS1BSSUyQ0FsaWdubWVudCUyQ0RhdGElMjBzY2llbmNl" data-listing-date-sort="1764828000000" data-listing-file-modified-sort="1765579054817" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1085">
+<div class="g-col-1" data-index="0" data-categories="U2FmZS1BSSUyQ0FsaWdubWVudCUyQ0RhdGElMjBzY2llbmNl" data-listing-date-sort="1764828000000" data-listing-file-modified-sort="1765914733218" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1086">
 <a href="./blog/blog_20251204_safe_ai/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 200;">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="./blog/blog_20251204_safe_ai/safe_ai.png" class="thumbnail-image card-img" style="height: 200;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Building Safer AI: Alignment and Robust Cyber-Physical Systems
 </h5>
+<div class="card-text listing-description delink">
+<p>Why the next generation of AI must be predictable, aligned, and physically grounded</p>
+</div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Kundan Kumar
@@ -614,12 +619,10 @@ Nov 1, 2025
     <div class="explore-box">
       <div id="listing-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="TExNJTIwU2VjdXJpdHklMkNFbmVyZ3klMjBTeXN0ZW1zJTJDUkFHJTIwRnJhbWV3b3Jr" data-listing-date-sort="1765864800000" data-listing-file-modified-sort="1765913819761" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="237">
+<div class="g-col-1" data-index="0" data-categories="TExNJTIwU2VjdXJpdHklMkNFbmVyZ3klMjBTeXN0ZW1zJTJDUkFHJTIwRnJhbWV3b3Jr" data-listing-date-sort="1765864800000" data-listing-file-modified-sort="1765914618118" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="237">
 <a href="./projects/rag_energy_advisor.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./misc/info/projects/llm_energy_advisor.png" class="thumbnail-image card-img" style="height: 200;" alt="Badge for the RAG-Enhanced Energy Advisor showing document and energy icons.">
-</p>
+<p class="card-img-top"><img src="misc/info/projects/llm_energy_advisor.png" alt="Badge for the RAG-Enhanced Energy Advisor showing document and energy icons." style="height: 200;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 RAG-Enhanced Energy Advisor

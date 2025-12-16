@@ -43,7 +43,7 @@ listing:
   categories: false
   sort-ui: false
   filter-ui: false
-  fields: [title, author, date, image]
+  fields: [title, description, author, date, image]
   max-items: 1
   image-height: "200"
 - id: talk
