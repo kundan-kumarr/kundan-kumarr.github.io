@@ -2,6 +2,7 @@
 title: "Deep value of information estimators for collaborative human-machine information gathering"
 type: "article"
 author: " Kundan Kumar"
+date: "2025-01-01"
 year: "2016"
 publication: "ACM/IEEE 7th International Conference on Cyber-Physical Systems (ICCPS"
 preprint: "https://ieeexplore.ieee.org/abstract/document/7479095"

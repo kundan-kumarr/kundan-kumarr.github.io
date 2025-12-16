@@ -3,19 +3,18 @@ title: "A Multi-Objective Optimization Framework for Carbon-Aware Smart Energy M
 type: "article"
 pubtype: conference 
 author: "Kundan Kumar"
-year: 2025
+date: "2025-10-01"
 publication: "57th North American Power Symposium"
-doi: ""
+doi: "10.1109/NAPS66256.2025.11272265"
 toc: false
 categories: [Machine Learning, Multi-Objective Optimization, Energy Optimization]
-
 thumbnail: "/misc/info/pubs/thumbs/bilstm.png"
 ---
 
 
 ## Citation
 
->
+> K. Kumar and G. Ravikumar, "A Multi-Objective Framework for Energy, Cost, and Carbon Trade-offs in Smart Energy Systems," 2025 57th North American Power Symposium (NAPS), Storrs, CT, USA, 2025, pp. 1-6, doi: 10.1109/NAPS66256.2025.11272265.
 
 ## Abstract
 As renewable energy sources become more integrated into the power grid, efficient scheduling of household energy consumption is essential to reduce costs and carbon footprint. In this paper, we introduce an energy optimization framework that optimizes the timing of appliance use based on dynamic carbon intensity and electricity prices. We determine optimal operation schedules using a multi-objective optimization model with a Gurobi solver and machine learning. We combine Random Forest and XGBoost for demand prediction, incorporating their uncertainty estimates into the optimization constraints. The model optimizes ON/OFF appliance schedules while considering constraints like minimum operating times and power balance. It shifts usage to lower-cost and carbon-intensity periods, which helps to reduce energy consumption.

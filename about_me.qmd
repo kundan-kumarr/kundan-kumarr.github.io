@@ -43,27 +43,26 @@ listing:
   categories: false
   sort-ui: false
   filter-ui: false
-  fields: [title, date, image]
+  fields: [title, author, date, image]
   max-items: 1
   image-height: "200"
 - id: talk
-  contents: 
+  contents:
     - "../talks/*/index.qmd"
-    - "../talk/*/index.markdown"
   sort: date desc
   type: grid
   grid-columns: 1
   categories: false
   sort-ui: false
   filter-ui: false
-  fields: [title, date, image]
+  fields: [title, author, date, image]
   max-items: 1
   image-height: "200"
   
 
 - id: project
   contents: 
-    - "../projects/*/index.qmd"
+    - "../projects/*.qmd"
     - "../projects/*/index.markdown"
   sort: date desc
   type: grid
@@ -71,7 +70,7 @@ listing:
   categories: false
   sort-ui: false
   filter-ui: false
-  fields: [title, date, image]
+  fields: [title, author, date, image]
   max-items: 1
   image-height: "200"
   
@@ -85,7 +84,7 @@ listing:
   categories: false
   sort-ui: false
   filter-ui: false
-  fields: [title, year, image]
+  fields: [title, author, date, image]
   max-items: 1
   image-height: "200"
 

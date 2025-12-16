@@ -2,7 +2,7 @@
 title: "Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification"
 type: "article"
 author: "Kundan Kumar"
-year: "2025"
+date: "2025-09-01"
 publication: "Electric Power Systems Research (under Review)"
 preprint: ""
 doi: ""
@@ -16,7 +16,7 @@ categories:
 
 ## Citation 
 
-> 
+> A.Hussain, K.Kumar, G.Ravikumar, "Bayesian-optimized bidirectional long-short-term memory network for wind power forecasting with uncertainty quantification," Electric Power Systems Research, Volume 251, 2026, 112261, ISSN 0378-7796, https://doi.org/10.1016/j.epsr.2025.112261.
 
 ## Abstract
 

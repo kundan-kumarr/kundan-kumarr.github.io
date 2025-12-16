@@ -2,9 +2,10 @@
 title: "Bayesian Optimization for Deep Reinforcement Learning for Robust Volt-Var Control"
 type: "article"
 author: "Kundan Kumar"
+date: 2024-01-01
 year: "2024"
 publication: "IEEE"
-doi: "https://ieeexplore.ieee.org/abstract/document/10688889"
+doi: "10.1109/PESGM51994.2024.10688889"
 toc: false
 categories:
   - Bayesian Optimization
@@ -14,7 +15,7 @@ categories:
 
 ## Citation
 
-> K. Kumar, A. A. Mantha and G. Ravikumar, "Bayesian Optimization for Deep Reinforcement Learning for Robust Volt-Var Control," 2024 IEEE Power & Energy Society General Meeting (PESGM), Seattle, WA, USA, 2024, pp. 1-5, doi: 10.1109/PESGM51994.2024.10688889. *IEEE*
+> K. Kumar, A. A. Mantha and G. Ravikumar, "Bayesian Optimization for Deep Reinforcement Learning for Robust Volt-Var Control," 2024 IEEE Power & Energy Society General Meeting (PESGM), Seattle, WA, USA, 2024, pp. 1-5, doi: 10.1109/PESGM51994.2024.10688889.
 
 ## Abstract
 

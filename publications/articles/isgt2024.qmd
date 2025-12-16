@@ -2,9 +2,10 @@
 title: "Deep Rl-based volt-var control and attack resiliency for der-integrated distribution grids"
 type: "article"
 author: "Kundan Kumar"
+date: 2024-11-01
 year: "2024"
 publication: "IEEE"
-doi: "https://ieeexplore.ieee.org/document/10454163"
+doi: "10.1109/ISGT59692.2024.10454163"
 toc: false
 categories:
   - Reinforcement Learning
@@ -14,7 +15,7 @@ categories:
 
 ## Citation
 
-> K. Kumar and G. Ravikumar, "Deep RL-based Volt-VAR Control and Attack Resiliency for DER-integrated Distribution Grids," 2024 IEEE Power & Energy Society Innovative Smart Grid Technologies Conference (ISGT), Washington, DC, USA, 2024, pp. 1-5, doi: 10.1109/ISGT59692.2024.10454163. *IEEE*
+> K. Kumar and G. Ravikumar, "Deep RL-based Volt-VAR Control and Attack Resiliency for DER-integrated Distribution Grids," 2024 IEEE Power & Energy Society Innovative Smart Grid Technologies Conference (ISGT), Washington, DC, USA, 2024, pp. 1-5, doi: 10.1109/ISGT59692.2024.10454163.
 
 ## Abstract
 

@@ -572,6 +572,6 @@ Deep Reinforcement Learning & Safety-Critical AI for Autonomous Systems
     font-family: 'Nunito', sans-serif;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   ">
-    📁 Check My Projects
+    Check My Projects
   </a>
 </div>

@@ -2,7 +2,8 @@
 title: "Deep learning and pattern-based methodology for multivariable sensor data regression"
 type: "article"
 author: "Kundan Kumar"
-year: "2024"
+date: 2022-01-01
+year: "2022"
 publication: "IEEE International Conference on Machine Learning and Applications (ICMLA)"
 doi: "https://ieeexplore.ieee.org/abstract/document/10069730"
 toc: false

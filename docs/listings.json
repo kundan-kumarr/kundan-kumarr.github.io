@@ -12,21 +12,21 @@
       "/talks/rstats_20230721_teaching/index.html",
       "/talks/ph_20230330_sp/index.html",
       "/talks/rstats_20190402_blogdown/index.html",
-      "/projects/project2/index.html",
-      "/projects/project3/index.html",
-      "/projects/project4/index.html",
-      "/projects/project5/index.html",
-      "/projects/project6/index.html",
-      "/projects/project1/index.html",
-      "/projects/project7/index.html",
+      "/projects/citylearn.html",
+      "/projects/llm_grid_planner.html",
+      "/projects/project8.html",
+      "/projects/rag_energy_advisor.html",
+      "/projects/project9.html",
+      "/projects/project10.html",
+      "/projects/project11.html",
+      "/publications/articles/pesgm2025.html",
+      "/publications/articles/naps2025.html",
       "/publications/articles/Journal1.html",
       "/publications/articles/gridedge2025.html",
       "/publications/articles/iccpsS2016.html",
-      "/publications/articles/icmla2022.html",
       "/publications/articles/isgt2024.html",
-      "/publications/articles/naps2025.html",
       "/publications/articles/pesgm2024.html",
-      "/publications/articles/pesgm2025.html"
+      "/publications/articles/icmla2022.html"
     ]
   },
   {
@@ -105,21 +105,21 @@
       "/talks/rstats_20230721_teaching/index.html",
       "/talks/ph_20230330_sp/index.html",
       "/talks/rstats_20190402_blogdown/index.html",
-      "/projects/project2/index.html",
-      "/projects/project3/index.html",
-      "/projects/project4/index.html",
-      "/projects/project5/index.html",
-      "/projects/project6/index.html",
-      "/projects/project1/index.html",
-      "/projects/project7/index.html",
+      "/projects/citylearn.html",
+      "/projects/llm_grid_planner.html",
+      "/projects/project8.html",
+      "/projects/rag_energy_advisor.html",
+      "/projects/project9.html",
+      "/projects/project10.html",
+      "/projects/project11.html",
+      "/publications/articles/pesgm2025.html",
+      "/publications/articles/naps2025.html",
       "/publications/articles/Journal1.html",
       "/publications/articles/gridedge2025.html",
       "/publications/articles/iccpsS2016.html",
-      "/publications/articles/icmla2022.html",
       "/publications/articles/isgt2024.html",
-      "/publications/articles/naps2025.html",
       "/publications/articles/pesgm2024.html",
-      "/publications/articles/pesgm2025.html"
+      "/publications/articles/icmla2022.html"
     ]
   },
   {
@@ -143,6 +143,25 @@
       "/talks/rstats_20230721_teaching/index.html",
       "/talks/ph_20230330_sp/index.html",
       "/talks/rstats_20190402_blogdown/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/project6/index.html",
+      "/projects/project3/index.html",
+      "/projects/project4/index.html",
+      "/projects/project5/index.html",
+      "/projects/project2/index.html",
+      "/projects/project1/index.html",
+      "/projects/citylearn.html",
+      "/projects/rag_energy_advisor.html",
+      "/projects/project8.html",
+      "/projects/llm_grid_planner.html",
+      "/projects/project7/index.html",
+      "/projects/project9.html",
+      "/projects/project10.html",
+      "/projects/project11.html"
     ]
   }
 ]
