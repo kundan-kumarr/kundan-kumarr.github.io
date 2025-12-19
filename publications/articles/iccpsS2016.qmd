@@ -5,20 +5,21 @@ author: " Kundan Kumar"
 date: "2025-01-01"
 year: "2016"
 publication: "ACM/IEEE 7th International Conference on Cyber-Physical Systems (ICCPS"
-preprint: "https://ieeexplore.ieee.org/abstract/document/7479095"
-doi: "https://ieeexplore.ieee.org/abstract/document/7479095"
-poster: /posters/ieee-pes-2025-poster.pdf
-slides: /slides/ieee-pes-2025-slides.pdf
-materials: "https://ieeexplore.ieee.org/abstract/document/7479095"
+preprint: ""
+doi: "10.1109/ICCPS.2016.7479095"
+poster: 
+slides: 
+materials: ""
 toc: false
 categories:
   - convolutional neural networks
   - Value of Information
+thumbnail: "/misc/info/pubs/thumbs/iccps.png"
 ---
 
 ## Citation
 
->K. G. Lore, N. Sweet, K. Kumar, N. Ahmed and S. Sarkar, "Deep Value of Information Estimators for Collaborative Human-Machine Information Gathering," 2016 ACM/IEEE 7th International Conference on Cyber-Physical Systems (ICCPS), Vienna, Austria, 2016, pp. 1-10, doi: 10.1109/ICCPS.2016.7479095. *IEEE*.
+>K. G. Lore, N. Sweet, K. Kumar, N. Ahmed and S. Sarkar, "Deep Value of Information Estimators for Collaborative Human-Machine Information Gathering," 2016 ACM/IEEE 7th International Conference on Cyber-Physical Systems (ICCPS), Vienna, Austria, 2016, pp. 1-10, doi: 10.1109/ICCPS.2016.7479095.
 
 ## Abstract
 
