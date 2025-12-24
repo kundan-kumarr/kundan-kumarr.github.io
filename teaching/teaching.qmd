@@ -90,14 +90,14 @@ In addition to classroom and lab, I also create **online learning resources** th
   </a>
 
   <!-- Notes -->
-  <a class="teach-outline btn-notes"
+ <!-- <a class="teach-outline btn-notes"
      href="https://kundan-kumarr.github.io/Zero2LLM-Crafter/"
      target="_blank" rel="noopener">
     📘
     <span>Notes / Book</span>
   </a>
 
-</div>
+</div> -->
 
 ```
 

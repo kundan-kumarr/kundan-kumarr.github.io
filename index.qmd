@@ -491,7 +491,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 
   <div class="news-card">
     <div class="news-content">
-      Participated in an <strong>AI Strategy and AI Safety</strong> program hosted by 
+      Participated in an <a href="https://bluedot.org">AI Strategy and AI Safety </a> program hosted by 
       <a href="https://bluedot.org/">
         BlueDot Impact
       </a>, focusing on long-term AI risk, governance, and responsible deployment of advanced AI systems.

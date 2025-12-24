@@ -5,13 +5,14 @@ author: "Kundan Kumar"
 date: "2025-09-01"
 publication: "Electric Power Systems Research (under Review)"
 preprint: ""
-doi: ""
+doi: "10.1016/j.epsr.2025.112261"
 materials: ""
 toc: false
 categories:
-  - Uncertainty Esitmation
+  - Uncertainty Estimation
   - Time Series Analysis
   - Forecasting
+  - Estimation
 ---
 
 ## Citation 
