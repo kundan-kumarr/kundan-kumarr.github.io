@@ -3,7 +3,7 @@ title: "Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind
 type: "article"
 author: "Kundan Kumar"
 date: "2025-09-01"
-publication: "Electric Power Systems Research (under Review)"
+publication: "Elsevier Energy Journal on Electric Power Systems Research"
 preprint: ""
 doi: "10.1016/j.epsr.2025.112261"
 materials: ""
@@ -13,6 +13,7 @@ categories:
   - Time Series Analysis
   - Forecasting
   - Estimation
+thumbnail: "/misc/info/pubs/thumbs/bilstm.gif"
 ---
 
 ## Citation 

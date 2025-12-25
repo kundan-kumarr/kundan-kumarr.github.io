@@ -14,7 +14,8 @@ toc: false
 categories:
   - convolutional neural networks
   - Value of Information
-thumbnail: "/misc/info/pubs/thumbs/iccps.png"
+  - Reinforcement Learning 
+thumbnail: "/misc/info/pubs/thumbs/iccps.gif"
 ---
 
 ## Citation

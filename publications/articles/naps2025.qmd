@@ -3,15 +3,15 @@ title: "A Multi-Objective Optimization Framework for Carbon-Aware Smart Energy M
 type: "article"
 pubtype: conference 
 author: "Kundan Kumar"
-date: "2025-10-01"
-publication: "57th North American Power Symposium"
+date: "2025-12-09"
+publication: "57th IEEE North American Power Symposium (NAPS)"
 doi: "10.1109/NAPS66256.2025.11272265"
 toc: false
 categories:
   - Machine Learning
   - Multi-Objective Optimization
   - Energy Optimization
-thumbnail: "/misc/info/pubs/thumbs/bilstm.png"
+thumbnail: "/misc/info/pubs/thumbs/naps.gif"
 ---
 <div style="display:flex; justify-content:flex-end; margin-top:-0.5rem; gap:0.5rem;">
   <a class="btn btn-primary" href="/misc/info/presentations/Multi_objective_NAPS_presentation.pdf" target="_blank" rel="noopener"> Presentation (PDF)

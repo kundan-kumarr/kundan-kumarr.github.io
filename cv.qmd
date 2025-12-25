@@ -54,7 +54,7 @@ National Renewable Energy Laboratory (NREL)
   </tr>
 </table>
 - Developed novel machine learning models for automated network topology inference and resilient control policy optimization for complex distributed systems under extreme and uncertain operating scenarios.
-- Designed and implemented Bayesian neural network–based semi-supervised learning frameworks with explicit uncertainty estimation to learn from limited and unreliable labeled data in energy distribution networks, achieving up to 98% improvement in model accuracy across varying label-availability and data-quality settings.
+- Designed and implemented Bayesian neural network based semi-supervised learning frameworks with explicit uncertainty estimation to learn from limited and unreliable labeled data in energy distribution networks, achieving up to 98% improvement in model accuracy across varying label-availability and data-quality settings.
 - Co-authored the paper “Advanced Semi-Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems,” accepted at IEEE Power & Energy Society General Meeting (PES GM) 2025, demonstrating robust phase identification under noisy measurements and scarce ground-truth labels.
 - Deployed the trained ML models into a practical workflow for distribution utilities, including data preprocessing pipelines, model serving, and evaluation; implemented containerized deployment and API-based integration with existing grid analytics tools to enable reproducible, scalable, and operator-ready decision support.
 

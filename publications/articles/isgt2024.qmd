@@ -1,16 +1,17 @@
 ---
-title: "Deep Rl-based volt-var control and attack resiliency for der-integrated distribution grids"
+title: "Deep RL-based volt-var control and attack resiliency for der-integrated distribution grids"
 type: "article"
 author: "Kundan Kumar"
-date: 2024-11-01
+date: "2024-02-19"
 year: "2024"
-publication: "IEEE"
+publication: "IEEE Power & Energy Society Innovative Smart Grid Technologies Conference (ISGT)"
 doi: "10.1109/ISGT59692.2024.10454163"
 toc: false
 categories:
   - Reinforcement Learning
   - Secure AI
   - Smart Energy Systems
+thumbnail: "/misc/info/pubs/thumbs/isgt.png"
 ---
 <div style="display:flex; justify-content:flex-end; margin-top:-0.5rem; gap:0.5rem;">
   <a class="btn btn-primary" href="/misc/info/posters/PES_ISGT_poster.pdf" target="_blank" rel="noopener"> Poster (PDF)

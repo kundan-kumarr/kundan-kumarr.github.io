@@ -2,15 +2,16 @@
 title: "Bayesian Optimization for Deep Reinforcement Learning for Robust Volt-Var Control"
 type: "article"
 author: "Kundan Kumar"
-date: 2024-01-01
+date: "2024-10-04"
 year: "2024"
-publication: "IEEE"
+publication: "IEEE Power & Energy Society General Meeting (PESGM)"
 doi: "10.1109/PESGM51994.2024.10688889"
 toc: false
 categories:
   - Bayesian Optimization
   - Reinforcement Learning
   - Smart Energy Systems
+thumbnail: "/misc/info/pubs/thumbs/pes-gm.png"
 ---
 <div style="display:flex; justify-content:flex-end; margin-top:-0.5rem; gap:0.5rem;">
   <a class="btn btn-primary" href="/misc/info/posters/Bayesian_PESGM_poster.pdf" target="_blank" rel="noopener"> Poster (PDF)

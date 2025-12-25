@@ -1,9 +1,9 @@
 ---
 title: "Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids"
 author: "Kundan Kumar."
-date: "2025-01-01"
+date: "2025-01-21"
 year: "2025"
-publication: "IEEE"
+publication: "IEEE PES Grid Edge Technologies Conference & Exposition (Grid Edge)"
 doi: "10.1109/GridEdge61154.2025.10887439"
 image: "figures/TL1.png"
 toc: false

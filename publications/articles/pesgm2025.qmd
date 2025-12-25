@@ -2,8 +2,8 @@
 title: "Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems"
 author: 
   - name: Kundan Kumar
-date: "2025-11-01"
-publication: "IEEE Power & Energy Society General Meeting"
+date: "2025-11-10"
+publication: "IEEE Power & Energy Society General Meeting (PESGM)"
 doi: "10.1109/PESGM52009.2025.11225667"
 image: "figures/ssl_techniques.png"
 toc: false
