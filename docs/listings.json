@@ -7,11 +7,11 @@
       "/blog/blog_20251210_self_attention_mechanism/index.html",
       "/blog/technotes_ml_series_20251105_class_unbalanced/index.html",
       "/blog/technotes_llm_series_20251121_llm_reasoning/index.html",
+      "/talks/rstats_20190402_blogdown/index.html",
       "/talks/pes_gm_2025/index.html",
       "/talks/rstats_20240613_teaching/index.html",
       "/talks/rstats_20230721_teaching/index.html",
       "/talks/ph_20230330_sp/index.html",
-      "/talks/rstats_20190402_blogdown/index.html",
       "/projects/rag_energy_advisor.html",
       "/projects/citylearn.html",
       "/projects/llm_grid_planner.html",
@@ -24,8 +24,8 @@
       "/publications/articles/Journal1.html",
       "/publications/articles/gridedge2025.html",
       "/publications/articles/iccpsS2016.html",
-      "/publications/articles/isgt2024.html",
       "/publications/articles/pesgm2024.html",
+      "/publications/articles/isgt2024.html",
       "/publications/articles/icmla2022.html"
     ]
   },
@@ -100,11 +100,11 @@
       "/blog/blog_20251210_self_attention_mechanism/index.html",
       "/blog/technotes_ml_series_20251105_class_unbalanced/index.html",
       "/blog/technotes_llm_series_20251121_llm_reasoning/index.html",
+      "/talks/rstats_20190402_blogdown/index.html",
       "/talks/pes_gm_2025/index.html",
       "/talks/rstats_20240613_teaching/index.html",
       "/talks/rstats_20230721_teaching/index.html",
       "/talks/ph_20230330_sp/index.html",
-      "/talks/rstats_20190402_blogdown/index.html",
       "/projects/rag_energy_advisor.html",
       "/projects/citylearn.html",
       "/projects/llm_grid_planner.html",
@@ -117,8 +117,8 @@
       "/publications/articles/Journal1.html",
       "/publications/articles/gridedge2025.html",
       "/publications/articles/iccpsS2016.html",
-      "/publications/articles/isgt2024.html",
       "/publications/articles/pesgm2024.html",
+      "/publications/articles/isgt2024.html",
       "/publications/articles/icmla2022.html"
     ]
   },
@@ -138,11 +138,11 @@
   {
     "listing": "/talks/index.html",
     "items": [
+      "/talks/rstats_20190402_blogdown/index.html",
       "/talks/pes_gm_2025/index.html",
       "/talks/rstats_20240613_teaching/index.html",
       "/talks/rstats_20230721_teaching/index.html",
-      "/talks/ph_20230330_sp/index.html",
-      "/talks/rstats_20190402_blogdown/index.html"
+      "/talks/ph_20230330_sp/index.html"
     ]
   },
   {
