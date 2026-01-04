@@ -13,7 +13,7 @@ website:
 
   page-footer:  
     left: >-
-      &#169; 2025 Kundan Kumar &#8729; Made with <a href="https://quarto.org" target="_blank">Quarto</a>
+      &#169; 2026 Kundan Kumar &#8729; Made with <a href="https://quarto.org" target="_blank">Quarto</a>
     center: |
       <a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
       <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
@@ -29,6 +29,9 @@ website:
     background: "#A9CCE3"
     search: true
     right: 
+      - text: ""
+        href: "#"
+        id: theme-toggle
       - text: About
         icon: person-circle
         href: about_me.qmd
@@ -73,7 +76,12 @@ website:
 
 format:
   html:
-    theme: styles.scss
+    theme:
+      light: styles.scss
+      dark: styles-dark.scss
+    include-after-body:
+      - theme-toggle.html
+      - theme-toggle.js
     math: mathjax
     html-math-method: mathjax
     toc: true

@@ -299,3 +299,13 @@ h4 {
   border-color: rgba(156, 74, 26, 0.35);
   background: rgba(156, 74, 26, 0.06);
 }
+/* Prevent double arrows: disable the old arrow on the parent */
+.news-item::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* Ensure the arrow belongs to the card only */
+.news-card {
+  position: relative;
+}

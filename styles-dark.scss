@@ -1,0 +1,384 @@
+/*-- scss:defaults --*/
+
+/* =========================================================
+   1) Brand palette (identity colors)
+   ========================================================= */
+$theme-black: #0f1115;
+$theme-white: #ffffff;
+$theme-grey:  #2a2d34;
+
+$theme-purple3: #b07db2;
+$theme-purple4: #9d709e;
+$theme-purple5: #562457;
+$theme-purplebrown1: #b996a4;
+$theme-purplebrown2: #7c6c84;
+
+$theme-darkcoffee1: #e6c2b3;
+$theme-darkcoffee2: #caa193;
+$theme-darkcoffee3: #f1d2c4;
+
+$theme-milkcoffee0: #1b1d22;
+$theme-milkcoffee1: #9e736a;
+$theme-milkcoffee2: #d2a679;
+$theme-milkcoffee3: #cca79f;
+
+$theme-mocha1: #f0b79a;
+$theme-mocha2: #e09b77;
+$theme-mocha3: #b46939;
+
+$theme-orange:  #ffbf3c;
+$theme-pumpkin: #ff8c2b;
+
+$theme-darkgreen1: #9ec7a0;
+$theme-darkgreen2: #3a4d44;
+
+
+/* =========================================================
+   2) Dark surfaces / neutrals (design tokens)
+   ========================================================= */
+$bg-0: #0f1115;   // page
+$bg-1: #16181d;   // cards
+$bg-2: #1e2128;   // elevated
+$border-1: rgba(255,255,255,0.12);
+
+$text-0: rgba(255,255,255,0.92);
+$text-1: rgba(255,255,255,0.70);
+$text-2: rgba(255,255,255,0.50);
+
+
+/* =========================================================
+   3) Quarto / Bootstrap variables
+   ========================================================= */
+$body-bg: $bg-0;
+$body-color: $text-0;
+
+$headings-color: $theme-milkcoffee2;
+$link-color: $theme-orange;
+$link-hover-color: $theme-pumpkin;
+
+$background-color: $bg-0;
+
+// code
+$code-color: $theme-milkcoffee3;
+$code-bg: $bg-2;
+$code-block-bg-alpha: -0.6;
+
+// navbar (NOTE: actual navbar color is locked in rules below)
+$navbar-bg: $bg-1;
+
+// callout blocks
+$callout-color-note: $theme-darkgreen1;
+$callout-color-tip:  $theme-orange;
+
+
+/* =========================================================
+   4) Fonts
+   ========================================================= */
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code_Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+$font-family-sans-serif: 'Poppins', sans-serif;
+$font-family-monospace:  'Source Code Pro', monospace;
+
+$font-poppins:    'Poppins', sans-serif; 
+$font-pt:         'PT Serif', sans-serif;
+$font-cabin:      'Cabin', sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+$font-prompt:     'Prompt', sans-serif;
+
+$font-size-root: 16px;
+
+
+
+/*-- scss:rules --*/
+
+/* =========================================================
+   0) External icon fonts (load once)
+   ========================================================= */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+
+/* =========================================================
+   1) Typography
+   ========================================================= */
+h1, h2 {
+  font-family: $font-pt;
+  color: $theme-milkcoffee2;
+}
+h1 { font-size: 40px; }
+h2 { font-size: 30px; }
+
+h3, h4 {
+  font-family: $font-pt;
+  color: $theme-mocha1;
+}
+h4 { color: $theme-darkgreen1; }
+
+/* Titles */
+.quarto-title .subtitle {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: $text-1;
+}
+.quarto-title .title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $theme-milkcoffee2;
+}
+
+
+/* =========================================================
+   2) Navbar (LOCKED to light theme identity)
+   ========================================================= */
+.navbar,
+.navbar-dark,
+.navbar-light {
+  background-color: #445740 !important; /* keep same as light */
+  border-bottom: none !important;
+}
+
+.navbar { box-shadow: none !important; }
+
+.navbar a,
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .navbar-toggler,
+.navbar .bi,
+.navbar i {
+  color: rgba(255,255,255,0.92) !important;
+}
+
+.navbar .nav-link:hover,
+.navbar a:hover {
+  color: $theme-orange !important;
+}
+
+/* Keep navbar item borders/underline minimal */
+.navbar .nav-link { border: none !important; }
+.navbar .nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+
+/* =========================================================
+   3) Components / UI patterns
+   ========================================================= */
+
+/* Info blocks */
+.render-commit-push,
+.pull {
+  padding: 0.5em 0.5em 0em 3em;
+  margin: 5px 0;
+  background: $bg-1 5px center/3em no-repeat;
+  border-top: 1px solid $border-1;
+  border-bottom: 1px solid $border-1;
+  color: $text-0;
+}
+
+/* CV header */
+.cv-heading-wrapper h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: $theme-milkcoffee2;
+}
+
+/* Buttons */
+.btn-download {
+  background-color: #2E86C1;
+  color: white;
+}
+.btn-download:hover { background-color: #21618C; }
+
+.btn-primary { background-color: #007bff; }
+.btn-success { background-color: #28a745; }
+.btn-info    { background-color: #17a2b8; }
+
+.btn:hover { opacity: 0.85; }
+
+/* Pagination */
+.pagination a,
+.pagination span {
+  border: 1px solid $border-1;
+  color: $text-0;
+  background-color: $bg-1;
+}
+.pagination a.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Tabs */
+.panel-tabset .nav-tabs {
+  border-bottom: 1px solid $border-1;
+}
+.panel-tabset .nav-tabs .nav-link { color: $text-1; }
+.panel-tabset .nav-tabs .nav-link.active {
+  background: $bg-1;
+  color: $text-0;
+  border-color: $border-1 $border-1 $bg-1;
+}
+
+/* Footer */
+.footer-subscribe {
+  color: $text-2;
+  border-top: 1px solid $border-1;
+}
+
+
+/* =========================================================
+   4) Listings / cards
+   ========================================================= */
+.quarto-listing .card,
+.listing .card,
+.card {
+  background: $bg-1 !important;
+  border: 1px solid rgba(255,255,255,0.10) !important;
+}
+
+.card .card-title,
+.card .card-text,
+.card .listing-title {
+  color: rgba(255,255,255,0.88) !important;
+}
+
+
+/* =========================================================
+   5) Publications accents
+   ========================================================= */
+:root { --pub-color: #f0a36a; }
+
+.breadcrumb,
+.breadcrumb a,
+.breadcrumb-item.active {
+  color: var(--pub-color) !important;
+}
+
+.pub-title-link,
+.listing-title,
+.lead {
+  color: var(--pub-color);
+}
+
+.pub-count {
+  color: var(--pub-color);
+  border-color: rgba(240,163,106,0.35);
+  background: rgba(240,163,106,0.08);
+}
+
+
+/* =========================================================
+   6) Theme toggle visuals (shared)
+   ========================================================= */
+.theme-toggle { background: none; border: none; cursor: pointer; padding: 0; }
+
+.toggle-track {
+  width: 44px;
+  height: 24px;
+  background: #444;
+  border-radius: 999px;
+  position: relative;
+}
+
+.toggle-thumb {
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transform: translateX(20px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+
+/* =========================================================
+   7) Custom page blocks (your HTML sections)
+   ========================================================= */
+
+/* ---- News Timeline (dark mode fixes) ---- */
+.news-container::before {
+  background: rgba(255,255,255,0.14) !important;
+}
+
+.news-item::after {
+  border-color: $bg-0 !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.25) !important;
+}
+
+.news-date { color: rgba(255,255,255,0.80) !important; }
+
+.news-logo {
+  box-shadow: 0 10px 26px rgba(0,0,0,0.55) !important;
+}
+
+.news-card {
+  background: $bg-1 !important;
+  border: 1px solid rgba(255,255,255,0.10) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.45) !important;
+}
+
+.news-card::before { border-right-color: $bg-1 !important; }
+
+.news-content { color: rgba(255,255,255,0.88) !important; }
+
+.news-content a {
+  color: #57B9FF !important;
+  text-decoration: none !important;
+}
+.news-content a:hover {
+  color: $theme-orange !important;
+  text-decoration: underline !important;
+}
+
+
+/* ---- Other Research Interests cards (dark mode fixes) ---- */
+.proj-card {
+  background: $bg-1 !important;
+  border: 1px solid rgba(255,255,255,0.10) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.55) !important;
+}
+
+.proj-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.70) !important;
+}
+
+/* body text only (keep your colored headings exactly) */
+.proj-body { color: rgba(255,255,255,0.85); }
+
+.proj-body strong {
+  color: inherit;
+  opacity: 1;
+  filter: none !important;
+}
+
+/* prevent default link colors when href is empty */
+.proj-card:link,
+.proj-card:visited {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+/* Prevent double arrows: disable the old arrow on the parent */
+.news-item::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* Ensure the arrow belongs to the card only */
+.news-card {
+  position: relative;
+}
