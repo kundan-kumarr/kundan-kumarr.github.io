@@ -1,6 +1,6 @@
 ---
 title: "Kundan Kumar"
-subtitle: "Research Scientist | Safe Reinforcement Learning, Multi-Agent Systems & LLM Agents"
+subtitle: "AI Safety Research Fellow @ Algoverse | PhD Researcher | Safe Reinforcement Learning, Multi-Agent Systems & LLM Agents"
 image: misc/info/photo.png
 
 about:
@@ -97,13 +97,22 @@ format:
 ---
 
 ::: {#hero-heading}
+Hi! I’m <strong style="color:#007bff;">Kundan Kumar</strong>, a Ph.D. candidate in Computer Science with a minor in Statistics at Iowa State University and currently an <strong style="color:#007bff;">AI Safety Research Fellow at Algoverse</strong>. My research centers on building safe, reliable, and adaptable AI systems for next-generation cyber-physical infrastructure, including smart grids, autonomous systems, and multi-agent environments, with a particular focus on evaluations, adversarial robustness, and scalable oversight for agentic systems.
 
-Hi! I’m <strong style="color:#007bff;">Kundan Kumar</strong>, a Ph.D. candidate in Computer Science at Iowa State University. My research focuses on creating intelligent and adaptable AI systems for next-generation cyber-physical infrastructure, integrating deep reinforcement learning (DRL), multi-agent systems, large language models (LLMs), and computer vision.
+I design safety-critical deep reinforcement learning (DRL) systems that integrate domain knowledge, uncertainty, and constraints for robust decision-making under distribution shifts and partial observability. My focus includes adversarial robustness, transfer learning, and scalable oversight for reliability in high-stakes environments. Recently, I’ve developed LLM-integrated frameworks that connect perception, planning, and language reasoning, linking low-level control with interpretable decision-making. I am particularly interested in AI safety, alignment, and evaluation at the intersection of foundation models and physical systems.
+
+Beyond research, I enjoy sharing my insights through educational content on [Substack](https://neuravp.substack.com/) and [YouTube](https://www.youtube.com/@AIAgentic-007/). Outside of work, I love cooking and Ice skating 🛼.
+
+<!--Hi! I’m <strong style="color:#007bff;">Kundan Kumar</strong>, a Ph.D. candidate in Computer Science at Iowa State University. My research focuses on creating intelligent and adaptable AI systems for next-generation cyber-physical infrastructure, integrating deep reinforcement learning (DRL), multi-agent systems, large language models (LLMs), and computer vision.
+
+Currently, I’m preparing work aligned with the <strong style="color:#007bff;">Algoverse AI Safety Research Fellowship</strong>, focused on evaluations, adversarial robustness, and agentic safety research.
+
+Hi! I’m <strong style="color:#007bff;">Kundan Kumar</strong>, a Ph.D. candidate in Computer Science and Statistics (minor) at Iowa State University.  My research centers on building safe, reliable, and adaptable AI systems for next-generation cyber-physical infrastructure, spanning smart grids, autonomous systems, and multi-agent environments.
 
 I develop safety-critical DRL frameworks that incorporate domain knowledge and uncertainty, enabling reliable decision-making in complex environments. Recent projects include exploring transfer learning and enhancing adversarial resilience across systems. I also create LLM-integrated simulation frameworks for autonomous systems, combining perception, trajectory planning, and natural language reasoning.
 
 Outside of research, I share insights on [Substack](https://neuravp.substack.com/) and [YouTube](https://www.youtube.com/@AIAgentic-007/). I enjoy cooking and ice skating 🛼 in my free time.
-
+-->
 <!--Hi! I'm <strong style="color:#007bff;">Kundan Kumar</strong>, a Ph.D. candidate and researcher focused on building intelligent, secure, and adaptable AI systems for next-generation cyber-physical infrastructure. My work bridges deep reinforcement learning (DRL), multi-agent systems, large language models (LLMs), safe and explainable AI, and computer vision, with real-world applications in smart grids, autonomous vehicles, and critical infrastructure.
 
 My Ph.D. research centers on physics-informed and safety-critical DRL frameworks that embed domain knowledge, safety constraints, and uncertainty into the learning process—enabling agents to make robust and interpretable decisions in dynamic, complex environments. My research within DRL focuses on techniques such as transfer learning, uncertainty quantification, and adversarial resilience to improve generalization, safety, and reliability across diverse tasks and environments.
@@ -168,20 +177,28 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 <h3 align="center">Other Research Interests</h3>
 <div class="proj-grid">
 
+<a class="proj-card" href="">
+  <span class="proj-body proj-llm">
+    <strong>AI Alignment & Safety</strong><br>
+    Agentic evaluations, adversarial robustness, scalable oversight, and alignment for foundation model–based systems.
+  </span>
+</a>
+
+
   <a class="proj-card" href="">
-    <span class="proj-body proj-llm">
+    <span class="proj-body proj-stat">
       <strong>LLM Reasoning & Agents</strong><br>
       Agentic workflows (LangChain/LangGraph), tool-use, memory, retrieval, planning & reflection loops for robust multi-step reasoning.
     </span>
   </a>
 
 
-  <a class="proj-card" href="">
+ <!-- <a class="proj-card" href="">
     <span class="proj-body proj-stat">
       <strong>Statistical ML</strong><br>
       Uncertainty quantification, probabilistic modeling, and data-driven inference in dynamic environments.
     </span>
-  </a>
+  </a> --> 
 
 <a class="proj-card" href="">
   <span class="proj-body proj-drive">
@@ -484,6 +501,23 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 <h4 align="center">News Highlights</h4>
 <div class="news-container">
 
+<!--- Algoverse -->
+<!-- Algoverse AI Safety Research Fellowship -->
+<div class="news-item">
+  <div class="news-date">[Jan 2026]</div>
+  <img src="/misc/news/algoverse.png" alt="Algoverse" class="news-logo">
+
+  <div class="news-card">
+    <div class="news-content">
+Selected as an AI Safety Research Fellow at 
+<a href="https://algoverseairesearch.org/ai-safety-fellowship">Algoverse</a>. 
+Developing and evaluating methods for agentic AI safety, including robustness testing, oversight, and evaluation frameworks.
+
+    </div>
+  </div>
+</div>
+
+
 <!--- Bluedot -->
 <div class="news-item">
   <div class="news-date">[Dec 2025]</div>
@@ -491,7 +525,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 
   <div class="news-card">
     <div class="news-content">
-      Participated in an <a href="https://bluedot.org">AI Strategy and AI Safety </a> program hosted by 
+      Completed an <a href="https://bluedot.org">AI Strategy, AI Safety, Biosecurity </a> program hosted by 
       <a href="https://bluedot.org/">
         BlueDot Impact
       </a>, focusing on long-term AI risk, governance, and responsible deployment of advanced AI systems.
@@ -534,7 +568,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
   </div>
 
   <!-- IEEE PES GM -->
-  <div class="news-item">
+<!--  <div class="news-item">
     <div class="news-date">[Mar 2025]</div>
     <img src="/misc/news/pesgm.png" alt="IEEE PES General Meeting" class="news-logo">
 
@@ -550,7 +584,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
         </a>.
       </div>
     </div>
-  </div>
+  </div> -->
 
 </div>
 

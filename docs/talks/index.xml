@@ -9,13 +9,14 @@
 <link>https://kundan-kumarr.github.io/talks/</link>
 <atom:link href="https://kundan-kumarr.github.io/talks/index.xml" rel="self" type="application/rss+xml"/>
 <description>Talks, invited lectures, and presentations.</description>
-<generator>quarto-1.7.32</generator>
+<generator>quarto-1.8.25</generator>
 <lastBuildDate>Wed, 29 Oct 2025 05:00:00 GMT</lastBuildDate>
 <item>
   <title>A Multi-Objective Optimization Framework for Carbon-Aware Smart Energy Management</title>
   <dc:creator>Kundan Kumar</dc:creator>
   <link>https://kundan-kumarr.github.io/talks/rstats_20190402_blogdown/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -38,6 +39,7 @@
   <title>AI Safety</title>
   <link>https://kundan-kumarr.github.io/talks/rstats_20230721_teaching/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -68,6 +70,7 @@ This year, we made an attempt to transform the course with R, and aimed to teach
   <dc:creator>Kundan Kumar</dc:creator>
   <link>https://kundan-kumarr.github.io/talks/pes_gm_2025/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -210,6 +213,7 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
 
 
 
+
 <p><img src="https://kundan-kumarr.github.io/talks/rstats_20240613_teaching/.png" class="img-fluid"></p>
 <!--Time and place: **June 13 2024. Online**
 
@@ -238,6 +242,7 @@ Course website can be accessed [here](https://ocbe-uio.github.io/teaching_mf9130
   <title>Science Communication</title>
   <link>https://kundan-kumarr.github.io/talks/ph_20230330_sp/</link>
   <description><![CDATA[ 
+
 
 
 

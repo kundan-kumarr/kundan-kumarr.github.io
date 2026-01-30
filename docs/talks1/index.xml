@@ -9,13 +9,14 @@
 <link>https://kundan-kumarr.github.io/talks1/</link>
 <atom:link href="https://kundan-kumarr.github.io/talks1/index.xml" rel="self" type="application/rss+xml"/>
 <description>Talks, invited lectures, and presentations.</description>
-<generator>quarto-1.7.32</generator>
+<generator>quarto-1.8.25</generator>
 <lastBuildDate>Wed, 16 Jul 2025 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Scaling Smart Grids with Transfer Learning and DRL</title>
   <dc:creator>Kundan Kumar</dc:creator>
   <link>https://kundan-kumarr.github.io/talks1/pes_gm_2025/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -158,6 +159,7 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
 
 
 
+
 <p>It has been two years since Quarto became the most popular reproducible publication tool in data science and R community. However Quarto is so much more than just a publication tool! I started using it since late 2022, and it has helped me become more organized, productive and connected with people in the data science community.</p>
 <p>In this talk I will not focus on the technical aspects on ‘how’ to use this tool. In the first part of the talk, I would like to report the latest news and trends seen in the useR conference and Posit conf, the two biggest global R events. In the second part, I will share my own experience in using Quarto for my career: from learning new skills, collaborating with co-workers, teaching university courses to networking and building a community (CAMIS collaboration). It is a powerful tool to share your work, and make new connections - both for work and for fun! I hope this talk will provide you with some new ideas on how to use this fantastic technology to fulfill your goals.</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/0TEdFZ17FhY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
@@ -179,6 +181,7 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
 
 
 
+
 <p>Real-World Data (RWD) like Electronic Health Records (EHR) is crucial for understanding drug usage and various treatments and generating Real-World Evidence (RWE). Risk prediction has been a major application where EHR is used, and there is now a shift towards causal inference, which requires data of even higher quality. Patients undergo treatments (drugs, procedures) at various times during their hospital stays, yet the data being recorded are messy and error-prone for various reasons. Analysts spend significant amount of time to sit together with clinicians to identify and understand abnormal records, and unfortunately this process is challenging to automate.</p>
 <p>This talk will use an example on antibiotics prescription and use at a Nordic hospital to illustrate how some EHR systems can improve for better clinical decision-making and better data for research. I will also introduce a pilot R package (ggehr) that facilitates visual exploration of EHR data, and how it can help reconstruct patient journeys and enable analysts to perform effective quality control.</p>
 <p><img src="https://kundan-kumarr.github.io/talks1/ehr_20240918_betterehr/image_talk_20240918.png" class="img-fluid"></p>
@@ -195,6 +198,7 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
   <title>CAMIS: An Open-Source, Community endeavour for Comparing Analysis Method Implementations</title>
   <link>https://kundan-kumarr.github.io/talks1/community_20240710_camis/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -220,6 +224,7 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
   <title>A one year recap on teaching statistcis to medical students: how can R and Quarto help?</title>
   <link>https://kundan-kumarr.github.io/talks1/rstats_20240613_teaching/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -253,6 +258,7 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
 
 
 
+
 <p><img src="https://kundan-kumarr.github.io/talks1/rstats_20230721_teaching/image_talk_20230721.png" class="img-fluid"></p>
 <p>Time and place: <strong>July 21, 2023 10AM. Roche office, Basel, Switzerland</strong></p>
 <p>Slides for this talk can be accessed <a href="https://github.com/chizapoth/talks/tree/master/2023-07-21-basel" class="btn btn-success btn-sm">Code</a>.</p>
@@ -280,6 +286,7 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
 
 
 
+
 <p>This is a simple demo of a Quarto talk listing with an image, title, and subtitle.</p>
 
 
@@ -294,6 +301,7 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
   <title>Public health surveillance and reporting</title>
   <link>https://kundan-kumarr.github.io/talks1/ph_20230330_sp/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -325,6 +333,7 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
 
 
 
+
 <p>A 45 minutes trial lecture to fulfill the requirement of my PhD degree.</p>
 <p><img src="https://kundan-kumarr.github.io/talks1/ehr_20221013_ml_icu/image_talk_20221013.png" class="img-fluid"></p>
 
@@ -340,6 +349,7 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
   <title>Network Analysis of Hospital EHR data</title>
   <link>https://kundan-kumarr.github.io/talks1/ehr_20210218_biday/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -363,6 +373,7 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
 
 
 
+
 <p><img src="https://kundan-kumarr.github.io/talks1/ehr_20191028_rladies/image_ehr_20191028.png" class="img-fluid"></p>
 
 
@@ -377,6 +388,7 @@ Workshop on Autonomous Energy Systems, GRID-EDGE 2025.</p>
   <title>Building Website in R: Step by Step Introduction to blogdown</title>
   <link>https://kundan-kumarr.github.io/talks1/rstats_20190402_blogdown/</link>
   <description><![CDATA[ 
+
 
 
 

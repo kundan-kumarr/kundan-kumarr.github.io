@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,18 +35,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2575636bf12bba71c1c5b79222bd7450.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f4186416b92dfa7b836f2033efcd23db.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2575636bf12bba71c1c5b79222bd7450.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-919c7ec90743d9b1e9761dff04b41dfc.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0e6b5171f1292a58de0ff8a7af83c33b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-919c7ec90743d9b1e9761dff04b41dfc.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-325f089f4e33601ef5bd2d6e8984644d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-a7636750ef1f23db0c38a7625e425f32.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-325f089f4e33601ef5bd2d6e8984644d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-7b697dad97c8c66a9b725af4d89d9b7e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-7e06fbf1eceea806cff5da4189abcdd0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-7b697dad97c8c66a9b725af4d89d9b7e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -129,7 +130,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -316,6 +317,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Kundan Kumar</span>
     </a>
@@ -448,7 +451,7 @@ and find out what the world is all about.
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1767390991476" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1768239154118" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="./projects/project6/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -464,7 +467,7 @@ Noreden
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1767390991473" data-listing-reading-time-sort="1" data-listing-word-count-sort="15">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1768239154113" data-listing-reading-time-sort="1" data-listing-word-count-sort="15">
 <a href="./projects/project3/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -480,7 +483,7 @@ NorMOMO
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1767390991474" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1768239154115" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="./projects/project4/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -496,7 +499,7 @@ Chatbot Design using Retrieval‑Augmented Generation (RAG)
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1767390991475" data-listing-reading-time-sort="1" data-listing-word-count-sort="15">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1768239154116" data-listing-reading-time-sort="1" data-listing-word-count-sort="15">
 <a href="./projects/project5/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -512,7 +515,7 @@ NorMOMO
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1767390991472" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1768239154113" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
 <a href="./projects/project2/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -528,7 +531,7 @@ AI-Powered Patient Education System
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="TExNJTIwU2VjdXJpdHklMkNFbmVyZ3klMjBTeXN0ZW1zJTJDUkFHJTIwRnJhbWV3b3Jr" data-listing-date-sort="1765864800000" data-listing-file-modified-sort="1767390991477" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="237">
+<div class="g-col-1" data-index="5" data-categories="TExNJTIwU2VjdXJpdHklMkNFbmVyZ3klMjBTeXN0ZW1zJTJDUkFHJTIwRnJhbWV3b3Jr" data-listing-date-sort="1765864800000" data-listing-file-modified-sort="1768239154119" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="237">
 <a href="./projects/rag_energy_advisor.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="misc/info/projects/llm_energy_advisor.png" alt="Badge for the RAG-Enhanced Energy Advisor showing document and energy icons." style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -556,7 +559,7 @@ December 16, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-listing-date-sort="1762408800000" data-listing-file-modified-sort="1767390991471" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="g-col-1" data-index="6" data-listing-date-sort="1762408800000" data-listing-file-modified-sort="1768239154111" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="./projects/project1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -577,7 +580,7 @@ November 6, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="RW5lcmd5JTIwT3B0aW1pemF0aW9uJTJDUmVpbmZvcmNlbWVudCUyMExlYXJuaW5nJTJDTExNJTIwSW50ZWdyYXRpb24=" data-listing-date-sort="1737352800000" data-listing-file-modified-sort="1767390991471" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="227">
+<div class="g-col-1" data-index="7" data-categories="RW5lcmd5JTIwT3B0aW1pemF0aW9uJTJDUmVpbmZvcmNlbWVudCUyMExlYXJuaW5nJTJDTExNJTIwSW50ZWdyYXRpb24=" data-listing-date-sort="1737352800000" data-listing-file-modified-sort="1768239154111" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="227">
 <a href="./projects/citylearn.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -607,7 +610,7 @@ January 20, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="UiUyMHBhY2thZ2U=" data-listing-date-sort="1737352800000" data-listing-file-modified-sort="1767390991477" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="129">
+<div class="g-col-1" data-index="8" data-categories="UiUyMHBhY2thZ2U=" data-listing-date-sort="1737352800000" data-listing-file-modified-sort="1768239154119" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="129">
 <a href="./projects/project8.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -633,7 +636,7 @@ January 20, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="U21hcnQlMjBHcmlkcyUyQ1JlaW5mb3JjZW1lbnQlMjBMZWFybmluZyUyQ0xMTSUyMEd1aWRhbmNl" data-listing-date-sort="1737352800000" data-listing-file-modified-sort="1767390991471" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="257">
+<div class="g-col-1" data-index="9" data-categories="U21hcnQlMjBHcmlkcyUyQ1JlaW5mb3JjZW1lbnQlMjBMZWFybmluZyUyQ0xMTSUyMEd1aWRhbmNl" data-listing-date-sort="1737352800000" data-listing-file-modified-sort="1768239154111" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="257">
 <a href="./projects/llm_grid_planner.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -663,7 +666,7 @@ January 20, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="UiUyMHBhY2thZ2U=" data-listing-date-sort="1694062800000" data-listing-file-modified-sort="1767390991477" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="82">
+<div class="g-col-1" data-index="10" data-categories="UiUyMHBhY2thZ2U=" data-listing-date-sort="1694062800000" data-listing-file-modified-sort="1768239154119" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="82">
 <a href="./projects/project7/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -689,7 +692,7 @@ September 7, 2023
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="QXJjR0lTJTJDUHl0aG9u" data-listing-date-sort="1683090000000" data-listing-file-modified-sort="1767390991477" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="76">
+<div class="g-col-1" data-index="11" data-categories="QXJjR0lTJTJDUHl0aG9u" data-listing-date-sort="1683090000000" data-listing-file-modified-sort="1768239154119" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="76">
 <a href="./projects/project9.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -717,7 +720,7 @@ May 3, 2023
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="12" data-categories="U2hpbnklMjBhcHA=" data-listing-date-sort="1674367200000" data-listing-file-modified-sort="1767390991472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="80">
+<div class="g-col-1" data-index="12" data-categories="U2hpbnklMjBhcHA=" data-listing-date-sort="1674367200000" data-listing-file-modified-sort="1768239154112" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="80">
 <a href="./projects/project10.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -743,7 +746,7 @@ January 22, 2023
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="13" data-categories="QXV0b25vbW91cyUyMFN5c3RlbXMlMkNEZWVwJTIwTGVhcm5pbmclMkNDb21wdXRlciUyMFZpc2lvbg==" data-listing-date-sort="1670392800000" data-listing-file-modified-sort="1767390991472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
+<div class="g-col-1" data-index="13" data-categories="QXV0b25vbW91cyUyMFN5c3RlbXMlMkNEZWVwJTIwTGVhcm5pbmclMkNDb21wdXRlciUyMFZpc2lvbg==" data-listing-date-sort="1670392800000" data-listing-file-modified-sort="1768239154112" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
 <a href="./projects/project11.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -884,13 +887,14 @@ December 7, 2022
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
