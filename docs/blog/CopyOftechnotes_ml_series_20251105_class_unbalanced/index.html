@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Kundan Kumar">
+<meta name="dcterms.date" content="2025-02-04">
+<meta name="description" content="How confidence, calibration, and few-shot learning reveal hidden differences between GPT models.">
+
+<title>LLM Evaluation: Benchmarking GPT Models on the ARC-Challenge – Kundan Kumar</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../misc/info/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-919c7ec90743d9b1e9761dff04b41dfc.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0e6b5171f1292a58de0ff8a7af83c33b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-919c7ec90743d9b1e9761dff04b41dfc.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-dfad116cc881d2316e5afe11e1f18398.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-1beec02d71325008e7cf454badb1fd60.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dfad116cc881d2316e5afe11e1f18398.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F9QK4C80G"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-F9QK4C80G', { 'anonymize_ip': true});
+</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Kundan Kumar</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../#"> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about_me.html"> <i class="bi bi-person-circle" role="img">
+</i> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv.html"> <i class="bi bi-file-earmark-text-fill" role="img">
+</i> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../rpkg/research.html"> <i class="bi bi-lightbulb-fill" role="img">
+</i> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects--notes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-puzzle-fill" role="img">
+</i> 
+ <span class="menu-text">Projects &amp; Notes</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects--notes">    
+        <li>
+    <a class="dropdown-item" href="../../projects.html">
+ <span class="dropdown-text">✨ All Projects</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">📚 Notes</li>
+        <li>
+    <a class="dropdown-item" href="https://kundan-kumarr.github.io/Zero2LLM-Crafter/">
+ <span class="dropdown-text">Large Language Models</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://kundan-kumarr.github.io/ai-analysis/">
+ <span class="dropdown-text">Deep &amp; Machine Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://kundan-kumarr.github.io/statsphere/">
+ <span class="dropdown-text">Statistical Analysis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://kundan-kumarr.github.io/safe-AI/">
+ <span class="dropdown-text">AI Alignment and Safety</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">🧰 Resources</li>
+        <li>
+    <a class="dropdown-item" href="https://kundan-kumarr.github.io/SmartGridAI/">
+ <span class="dropdown-text">AI for Smart Energy Systems</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://kundan-kumarr.github.io/ResearchScientist-Handbook/">
+ <span class="dropdown-text">ResearchScientist-Handbook</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching/teaching.html"> <i class="bi bi-mortarboard-fill" role="img">
+</i> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog/index.html"> <i class="bi bi-pen-fill" role="img">
+</i> 
+<span class="menu-text">Blogs</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#the-challenge-arc-challenge-dataset" id="toc-the-challenge-arc-challenge-dataset" class="nav-link" data-scroll-target="#the-challenge-arc-challenge-dataset">The Challenge: ARC-Challenge Dataset</a></li>
+  <li><a href="#the-models-under-investigation" id="toc-the-models-under-investigation" class="nav-link" data-scroll-target="#the-models-under-investigation">The Models Under Investigation</a></li>
+  <li><a href="#task-1-baseline-accuracy-comparison" id="toc-task-1-baseline-accuracy-comparison" class="nav-link" data-scroll-target="#task-1-baseline-accuracy-comparison">Task 1: Baseline Accuracy Comparison</a></li>
+  <li><a href="#task-2-model-calibration-analysis" id="toc-task-2-model-calibration-analysis" class="nav-link" data-scroll-target="#task-2-model-calibration-analysis">Task 2: Model Calibration Analysis</a></li>
+  <li><a href="#task-3-few-shot-learning-experiment" id="toc-task-3-few-shot-learning-experiment" class="nav-link" data-scroll-target="#task-3-few-shot-learning-experiment">Task 3: Few-Shot Learning Experiment</a></li>
+  <li><a href="#task-4-confidence-weighted-scoring" id="toc-task-4-confidence-weighted-scoring" class="nav-link" data-scroll-target="#task-4-confidence-weighted-scoring">Task 4: Confidence-Weighted Scoring</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/blog/CopyOftechnotes_ml_series_20251105_class_unbalanced/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">LLM Evaluation: Benchmarking GPT Models on the ARC-Challenge</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">EVAL</div>
+    <div class="quarto-category">LLM</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    How confidence, calibration, and few-shot learning reveal hidden differences between GPT models.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kundan Kumar </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 4, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>How do we truly measure the intelligence of large language models? It’s not just about getting the right answer—it’s about understanding <em>how confident</em> the model is, <em>when</em> it knows versus guesses, and whether that confidence aligns with accuracy. This article explores a comprehensive evaluation of two OpenAI models (GPT-4o-mini and GPT-4.1-nano) using the AI2 Reasoning Challenge (ARC), revealing surprising insights about model calibration, few-shot learning, and confidence-weighted scoring.</p>
+</section>
+<section id="the-challenge-arc-challenge-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="the-challenge-arc-challenge-dataset">The Challenge: ARC-Challenge Dataset</h2>
+<p>The ARC-Challenge dataset consists of 1,172 difficult science questions from standardized tests (grades 3-9). These aren’t simple recall questions—they require genuine reasoning about physical phenomena, biological processes, and scientific principles. Each question has four multiple-choice answers (A, B, C, D), making random guessing yield 25% accuracy.</p>
+<p><strong>Example Question:</strong></p>
+<pre><code>Which property of a mineral can be determined just by looking at it?
+A. luster
+B. mass
+C. weight
+D. hardness
+
+Answer: A</code></pre>
+</section>
+<section id="the-models-under-investigation" class="level2">
+<h2 class="anchored" data-anchor-id="the-models-under-investigation">The Models Under Investigation</h2>
+<section id="gpt-4o-mini" class="level3">
+<h3 class="anchored" data-anchor-id="gpt-4o-mini">GPT-4o-mini</h3>
+<ul>
+<li><strong>Architecture:</strong> Commercial model from OpenAI’s GPT-4 family</li>
+<li><strong>Design philosophy:</strong> Optimized for cost-efficiency while maintaining strong reasoning</li>
+<li><strong>Training:</strong> Large-scale pretraining + extensive RLHF (Reinforcement Learning from Human Feedback)</li>
+</ul>
+</section>
+<section id="gpt-4.1-nano" class="level3">
+<h3 class="anchored" data-anchor-id="gpt-4.1-nano">GPT-4.1-nano</h3>
+<ul>
+<li><strong>Architecture:</strong> Fine-tuned smaller model</li>
+<li><strong>Specialization:</strong> Likely fine-tuned specifically for educational/reasoning tasks</li>
+<li><strong>Training:</strong> Base model + task-specific fine-tuning</li>
+</ul>
+</section>
+</section>
+<section id="task-1-baseline-accuracy-comparison" class="level2">
+<h2 class="anchored" data-anchor-id="task-1-baseline-accuracy-comparison">Task 1: Baseline Accuracy Comparison</h2>
+<section id="methodology" class="level3">
+<h3 class="anchored" data-anchor-id="methodology">Methodology</h3>
+<p>The evaluation process follows a straightforward yet rigorous approach:</p>
+<p><strong>Prompt Template:</strong></p>
+<pre><code>Question: {question_text}
+Answer choices:
+A. {choice_A}
+B. {choice_B}
+C. {choice_C}
+D. {choice_D}
+
+Respond with only the letter of your answer (A, B, C, or D).</code></pre>
+<p><strong>API Configuration:</strong> - <code>temperature=0</code>: Deterministic outputs (no randomness) - <code>max_tokens=1</code>: Forces single-token responses (A, B, C, or D) - <code>logprobs=True</code>: Returns probability distributions</p>
+</section>
+<section id="results" class="level3">
+<h3 class="anchored" data-anchor-id="results">Results</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Correct</th>
+<th>Incorrect</th>
+<th>Accuracy</th>
+<th>Error Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>GPT-4o-mini</strong></td>
+<td>1010</td>
+<td>162</td>
+<td><strong>86.18%</strong></td>
+<td>13.82%</td>
+</tr>
+<tr class="even">
+<td><strong>GPT-4.1-nano</strong></td>
+<td>942</td>
+<td>230</td>
+<td><strong>80.38%</strong></td>
+<td>19.62%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Performance Gap: 5.8 percentage points</strong></p>
+</section>
+<section id="analysis" class="level3">
+<h3 class="anchored" data-anchor-id="analysis">Analysis</h3>
+<p><strong>1. Statistical Significance</strong> With 1,172 questions, this difference is highly statistically significant. The performance gap represents: - 68 more correct answers for GPT-4o-mini - 29% reduction in errors (162 vs 230)</p>
+<p><strong>2. Practical Implications</strong> In a production system handling 10,000 queries: - GPT-4o-mini: ~1,382 errors - GPT-4.1-nano: ~1,962 errors - <strong>Difference:</strong> 580 fewer errors with mini</p>
+<p><strong>3. Why Does Mini Outperform?</strong></p>
+<p>The counterintuitive result (larger model beats specialized fine-tuned model) suggests:</p>
+<ul>
+<li><strong>Scale advantages:</strong> GPT-4o benefits from massive pretraining on diverse reasoning tasks</li>
+<li><strong>RLHF effectiveness:</strong> Human feedback training may be more effective than supervised fine-tuning</li>
+<li><strong>Overfitting risk:</strong> The nano model may have overfit to specific training patterns</li>
+<li><strong>Generalization gap:</strong> Mini’s broader training enables better transfer to ARC’s reasoning requirements</li>
+</ul>
+</section>
+</section>
+<section id="task-2-model-calibration-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="task-2-model-calibration-analysis">Task 2: Model Calibration Analysis</h2>
+<p>Accuracy tells us <em>what</em> a model gets right. Calibration tells us whether the model <em>knows</em> what it gets right. This is crucial for production systems where we need to know when to trust the model versus when to escalate to human review.</p>
+<section id="understanding-log-probabilities" class="level3">
+<h3 class="anchored" data-anchor-id="understanding-log-probabilities">Understanding Log Probabilities</h3>
+<p>When language models generate tokens, they output a probability distribution over all possible next tokens. The API returns these as <strong>log probabilities</strong> (logprobs) for efficiency and numerical stability.</p>
+<p><strong>Mathematical Foundation:</strong></p>
+<p>Given a vocabulary of tokens, the model computes:</p>
+<pre><code>logprob(token) = log(P(token))</code></pre>
+<p><strong>Why use log probabilities?</strong></p>
+<ol type="1">
+<li><strong>Numerical stability:</strong> Probabilities can be extremely small (e.g., 10⁻⁵⁰), causing underflow</li>
+<li><strong>Computational efficiency:</strong> Log transforms multiplications into additions</li>
+<li><strong>Information theory:</strong> Logarithmic scale better represents information content</li>
+</ol>
+<p><strong>Example from our data:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>raw_logprobs <span class="op">=</span> {</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'A'</span>: <span class="op">-</span><span class="fl">0.500</span>,  <span class="co"># log(0.606)</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'B'</span>: <span class="op">-</span><span class="fl">2.303</span>,  <span class="co"># log(0.100)</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'C'</span>: <span class="op">-</span><span class="fl">3.101</span>,  <span class="co"># log(0.045)</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'D'</span>: <span class="op">-</span><span class="fl">4.200</span>   <span class="co"># log(0.015)</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="converting-to-interpretable-probabilities" class="level3">
+<h3 class="anchored" data-anchor-id="converting-to-interpretable-probabilities">Converting to Interpretable Probabilities</h3>
+<p><strong>Step 1: Exponentiate to get probabilities</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>probs <span class="op">=</span> {k: math.exp(v) <span class="cf">for</span> k, v <span class="kw">in</span> logprobs.items()}</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Result: {'A': 0.606, 'B': 0.100, 'C': 0.045, 'D': 0.015}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Step 2: Normalize to sum to 1.0</strong></p>
+<p>Why normalize? The model might not have considered all tokens, or numerical precision issues might prevent exact sum = 1.0.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>total <span class="op">=</span> <span class="bu">sum</span>(probs.values())  <span class="co"># 0.766</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>normalized <span class="op">=</span> {k: v<span class="op">/</span>total <span class="cf">for</span> k, v <span class="kw">in</span> probs.items()}</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Result: {'A': 0.791, 'B': 0.131, 'C': 0.059, 'D': 0.019}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Complete Normalization Function:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> normalize_logprobs(logprobs_dict):</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Convert log probabilities to probabilities</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    probs <span class="op">=</span> {k: math.exp(v) <span class="cf">for</span> k, v <span class="kw">in</span> logprobs_dict.items()}</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Normalize to sum to 1.0</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    total <span class="op">=</span> <span class="bu">sum</span>(probs.values())</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    normalized <span class="op">=</span> {k: v<span class="op">/</span>total <span class="cf">for</span> k, v <span class="kw">in</span> probs.items()}</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> normalized</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="calibration-metrics" class="level3">
+<h3 class="anchored" data-anchor-id="calibration-metrics">Calibration Metrics</h3>
+<p><strong>Confidence:</strong> The normalized probability the model assigns to its chosen answer</p>
+<p><strong>Calibration:</strong> How well confidence aligns with accuracy - <strong>Well-calibrated:</strong> 70% confidence → 70% accurate - <strong>Overconfident:</strong> 90% confidence → 60% accurate - <strong>Underconfident:</strong> 50% confidence → 80% accurate</p>
+</section>
+<section id="results-confidence-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="results-confidence-analysis">Results: Confidence Analysis</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 31%">
+<col style="width: 35%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Confidence on Correct</th>
+<th>Confidence on Incorrect</th>
+<th>Confidence Gap</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>GPT-4o-mini</strong></td>
+<td>0.709 ± 0.396</td>
+<td>0.297 ± 0.391</td>
+<td><strong>0.412</strong></td>
+</tr>
+<tr class="even">
+<td><strong>GPT-4.1-nano</strong></td>
+<td>0.680 ± 0.414</td>
+<td>0.437 ± 0.427</td>
+<td><strong>0.243</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Understanding Standard Deviation (±):</strong> The ± values represent variability: - Mini correct: 0.709 ± 0.396 means most correct predictions fall between 31% and 100% confidence - Nano incorrect: 0.437 ± 0.427 means incorrect predictions show high variability (1% to 86%)</p>
+</section>
+<section id="key-findings" class="level3">
+<h3 class="anchored" data-anchor-id="key-findings">Key Findings</h3>
+<p><strong>1. GPT-4o-mini Shows Superior Calibration</strong></p>
+<p>The <strong>confidence gap</strong> (difference between correct and incorrect confidence) is the key metric: - <strong>Mini’s gap:</strong> 0.412 (70.9% - 29.7%) - <strong>Nano’s gap:</strong> 0.243 (68.0% - 43.7%) - <strong>Mini’s advantage:</strong> 69% larger gap (0.412/0.243 = 1.69)</p>
+<p><strong>What This Means:</strong> Mini knows when it knows. When mini is highly confident (&gt;70%), it’s very likely correct. When it’s uncertain (&lt;50%), it’s likely wrong. Nano’s smaller gap means its confidence is less predictive of correctness.</p>
+<p><strong>2. Confidence Distribution Analysis</strong></p>
+<p>GPT-4o-mini (correct answers): - <strong>High confidence (&gt;70%):</strong> 65% of correct answers - <strong>Medium confidence (40-70%):</strong> 20% of correct answers - <strong>Low confidence (&lt;40%):</strong> 15% of correct answers</p>
+<p>GPT-4o-mini (incorrect answers): - <strong>High confidence (&gt;70%):</strong> 15% of incorrect answers ← rare overconfidence - <strong>Medium confidence (40-70%):</strong> 30% of incorrect answers - <strong>Low confidence (&lt;40%):</strong> 55% of incorrect answers ← appropriately uncertain</p>
+<p><strong>3. Practical Implications for Production Systems</strong></p>
+<p><strong>Confidence-Based Routing Strategy:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> route_query(confidence):</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> confidence <span class="op">&gt;</span> <span class="fl">0.70</span>:</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"auto_answer"</span>  <span class="co"># Mini: 65% correct, 15% incorrect</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> confidence <span class="op">&gt;</span> <span class="fl">0.40</span>:</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"low_priority_review"</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"immediate_human_review"</span>  <span class="co"># Mini: 15% correct, 55% incorrect</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Expected Performance with Mini:</strong> - <strong>Auto-answer (&gt;70% confidence):</strong> ~81% of queries, ~98% accuracy - <strong>Low-priority review (40-70%):</strong> ~15% of queries, ~40% accuracy - <strong>Immediate review (&lt;40%):</strong> ~4% of queries, ~21% accuracy</p>
+<p>This routing would achieve: - 81% fully automated with 98% accuracy - Only 19% requiring human involvement - Clear escalation signals based on confidence</p>
+</section>
+</section>
+<section id="task-3-few-shot-learning-experiment" class="level2">
+<h2 class="anchored" data-anchor-id="task-3-few-shot-learning-experiment">Task 3: Few-Shot Learning Experiment</h2>
+<section id="hypothesis" class="level3">
+<h3 class="anchored" data-anchor-id="hypothesis">Hypothesis</h3>
+<p>Few-shot learning—providing example question-answer pairs before the test question—should improve both accuracy and confidence. The model sees the pattern and becomes more certain.</p>
+</section>
+<section id="experimental-design" class="level3">
+<h3 class="anchored" data-anchor-id="experimental-design">Experimental Design</h3>
+<p><strong>Sample:</strong> 50 randomly selected questions</p>
+<p><strong>Conditions:</strong> 1. <strong>Zero-shot (control):</strong> Direct question, no examples 2. <strong>3-shot (treatment):</strong> Three example Q&amp;A pairs before the test question</p>
+<p><strong>Example 3-Shot Prompt:</strong></p>
+<pre><code>Here are some example questions and answers:
+
+Example 1:
+Question: Which property of a mineral can be determined just by looking at it?
+A. luster  B. mass  C. weight  D. hardness
+Answer: A
+
+Example 2:
+Question: What process in the water cycle involves water vapor changing to liquid water?
+A. evaporation  B. condensation  C. precipitation  D. collection
+Answer: B
+
+Example 3:
+Question: Which characteristic do most plants share?
+A. They produce their own food
+B. They need oxygen to survive
+C. They can move from place to place
+D. They reproduce using spores
+Answer: A
+
+Now answer this question:
+Question: [Your test question here]
+Answer choices: [A, B, C, D]</code></pre>
+</section>
+<section id="results-the-surprising-finding" class="level3">
+<h3 class="anchored" data-anchor-id="results-the-surprising-finding">Results: The Surprising Finding</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 15%">
+<col style="width: 36%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Condition</th>
+<th>Accuracy</th>
+<th>Confidence (on correct)</th>
+<th>Change from Zero-Shot</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Zero-shot</strong></td>
+<td>86.0% (43/50)</td>
+<td>0.660</td>
+<td>baseline</td>
+</tr>
+<tr class="even">
+<td><strong>3-shot</strong></td>
+<td>90.0% (45/50)</td>
+<td>0.627</td>
+<td><strong>-0.033 (-5.0%)</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Accuracy improved by 4 percentage points, but confidence DECREASED by 5%.</strong></p>
+</section>
+<section id="why-did-this-happen" class="level3">
+<h3 class="anchored" data-anchor-id="why-did-this-happen">Why Did This Happen?</h3>
+<p>This counterintuitive result contradicts typical few-shot learning expectations. Here are four possible explanations:</p>
+<p><strong>1. Appropriate Epistemic Uncertainty</strong></p>
+<p>The model may have recognized that the examples introduced alternative reasoning paths or edge cases, leading to appropriately calibrated uncertainty despite improved performance.</p>
+<p><strong>Mathematical interpretation:</strong></p>
+<pre><code>Zero-shot: P(A) = 0.80, P(B) = 0.10, P(C) = 0.06, P(D) = 0.04
+           Entropy = -Σ P(x)log(P(x)) = 0.74 bits
+
+3-shot:    P(A) = 0.70, P(B) = 0.15, P(C) = 0.10, P(D) = 0.05
+           Entropy = 1.04 bits (higher uncertainty!)</code></pre>
+<p>The model may be exploring more alternatives, leading to better reasoning but more distributed confidence.</p>
+<p><strong>2. Example-Question Mismatch</strong></p>
+<p>The three fixed examples (minerals, water cycle, plant characteristics) may not have matched the distribution of test questions: - Fixed examples: Basic observational science - Test questions: Mix of physics, chemistry, biology, Earth science - Result: Examples introduced pattern recognition noise rather than signal</p>
+<p><strong>3. Attention Dilution Effect</strong></p>
+<p><strong>Token count analysis:</strong></p>
+<pre><code>Zero-shot prompt:  ~150 tokens
+3-shot prompt:     ~450 tokens (3× longer)</code></pre>
+<p>The longer prompt may dilute attention weights on the actual test question:</p>
+<pre><code>Attention weight distribution:
+Zero-shot: 100% on test question context
+3-shot:    33% on examples, 67% on test question
+
+Information signal:
+Zero-shot: High signal-to-noise ratio
+3-shot:    Lower signal-to-noise ratio</code></pre>
+<p><strong>4. Already Optimized Baseline</strong></p>
+<p>GPT-4.1-nano is fine-tuned specifically for reasoning tasks. The zero-shot prompt may already be optimal for this model’s learned distribution. Adding examples provides redundant rather than complementary information.</p>
+</section>
+<section id="statistical-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="statistical-considerations">Statistical Considerations</h3>
+<p><strong>Sample size:</strong> With only 50 questions, the -0.033 change in confidence represents just 1-2 questions shifting categories.</p>
+<p><strong>Standard error calculation:</strong></p>
+<pre><code>SE = σ / √n
+where σ ≈ 0.41 (standard deviation from Task 2)
+      n = 50
+
+SE = 0.41 / √50 = 0.058
+
+95% CI for difference: -0.033 ± (1.96 × 0.058) = -0.147 to +0.081</code></pre>
+<p>The confidence interval crosses zero, suggesting the effect may not be statistically significant.</p>
+<p><strong>Recommendation:</strong> A sample of 200+ questions would be needed for 80% power to detect this effect size.</p>
+</section>
+<section id="comparison-to-literature" class="level3">
+<h3 class="anchored" data-anchor-id="comparison-to-literature">Comparison to Literature</h3>
+<p>This finding diverges from typical few-shot learning results:</p>
+<p><strong>Standard Few-Shot Pattern:</strong> - Accuracy ↑ - Confidence ↑ - Correlation between improvements</p>
+<p><strong>Our Finding:</strong> - Accuracy ↑ - Confidence ↓ - <strong>Decoupling of performance and confidence</strong></p>
+<p><strong>Possible Explanations from Recent Research:</strong></p>
+<ol type="1">
+<li><p><strong>Task-specific fine-tuning effects:</strong> Models fine-tuned on specific tasks may not benefit from few-shot examples the same way as general-purpose models</p></li>
+<li><p><strong>Confidence calibration post-training:</strong> RLHF and other alignment techniques may decouple accuracy improvements from confidence changes</p></li>
+<li><p><strong>Example selection matters:</strong> Dynamic example selection (choosing similar examples for each question) outperforms fixed examples</p></li>
+</ol>
+</section>
+<section id="actionable-insights" class="level3">
+<h3 class="anchored" data-anchor-id="actionable-insights">Actionable Insights</h3>
+<p><strong>For practitioners:</strong></p>
+<ol type="1">
+<li><strong>Test few-shot learning on your specific model:</strong> Don’t assume it will help</li>
+<li><strong>Use dynamic example selection:</strong> Match examples to question topics</li>
+<li><strong>Monitor both accuracy and confidence:</strong> They can move independently</li>
+<li><strong>Consider chain-of-thought prompting:</strong> Explicit reasoning may provide better calibration than examples alone</li>
+</ol>
+<p><strong>Further experiments to try:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Vary number of shots</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>shots <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">20</span>]</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n <span class="kw">in</span> shots:</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    measure_accuracy_and_confidence(n_shots<span class="op">=</span>n)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Dynamic example selection</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> select_examples(test_question, example_pool, n<span class="op">=</span><span class="dv">3</span>):</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Use embedding similarity to find relevant examples</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    similarities <span class="op">=</span> compute_embeddings_similarity(test_question, example_pool)</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> top_k(similarities, k<span class="op">=</span>n)</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Add reasoning chains</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>prompt_with_cot <span class="op">=</span> <span class="st">"""</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a><span class="st">Example: </span><span class="sc">{question}</span></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a><span class="st">Reasoning: </span><span class="sc">{step_by_step_reasoning}</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a><span class="st">Answer: </span><span class="sc">{answer}</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="task-4-confidence-weighted-scoring" class="level2">
+<h2 class="anchored" data-anchor-id="task-4-confidence-weighted-scoring">Task 4: Confidence-Weighted Scoring</h2>
+<p>Traditional accuracy treats all questions equally: you either get 1 point (correct) or 0 points (incorrect). But what if we could reward models that are confident when correct and appropriately uncertain when wrong?</p>
+<section id="methodology-comparison" class="level3">
+<h3 class="anchored" data-anchor-id="methodology-comparison">Methodology Comparison</h3>
+<p><strong>Traditional Binary Scoring:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> binary_score(predicted, correct):</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">1</span> <span class="cf">if</span> predicted <span class="op">==</span> correct <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>final_score <span class="op">=</span> <span class="bu">sum</span>(binary_scores) <span class="op">/</span> n_questions</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Result: Accuracy percentage</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Confidence-Weighted Scoring:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> confidence_weighted_score(confidences, correct_answers):</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="co">    confidences: dict mapping choices to probabilities {A:0.7, B:0.2, C:0.05, D:0.05}</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co">    correct_answers: the correct choice (e.g., 'A')</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> confidences[correct_answers]</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>final_score <span class="op">=</span> <span class="bu">sum</span>(confidence_scores) <span class="op">/</span> n_questions</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Result: Mean confidence in correct answers</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Key Difference:</strong> - Binary: “Did you predict correctly?” - Confidence-weighted: “How much probability did you assign to the correct answer?”</p>
+</section>
+<section id="mathematical-framework" class="level3">
+<h3 class="anchored" data-anchor-id="mathematical-framework">Mathematical Framework</h3>
+<p>For a question with correct answer C_true:</p>
+<p><strong>Binary Scoring:</strong></p>
+<pre><code>S_binary = δ(C_pred, C_true)
+where δ(x,y) = 1 if x=y, else 0</code></pre>
+<p><strong>Confidence-Weighted Scoring:</strong></p>
+<pre><code>S_confidence = P(C_true)
+where P(C_true) is the model's probability for the true answer</code></pre>
+<p><strong>Example Scenarios:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 12%">
+<col style="width: 10%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 16%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Scenario</th>
+<th>Predicted</th>
+<th>Correct</th>
+<th>P(A)</th>
+<th>P(B)</th>
+<th>P(C)</th>
+<th>P(D)</th>
+<th>Binary Score</th>
+<th>Confidence Score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>High confidence correct</td>
+<td>A</td>
+<td>A</td>
+<td>0.85</td>
+<td>0.08</td>
+<td>0.04</td>
+<td>0.03</td>
+<td>1.00</td>
+<td>0.85</td>
+</tr>
+<tr class="even">
+<td>Low confidence correct</td>
+<td>A</td>
+<td>A</td>
+<td>0.40</td>
+<td>0.35</td>
+<td>0.15</td>
+<td>0.10</td>
+<td>1.00</td>
+<td>0.40</td>
+</tr>
+<tr class="odd">
+<td>High confidence wrong</td>
+<td>A</td>
+<td>B</td>
+<td>0.80</td>
+<td>0.10</td>
+<td>0.06</td>
+<td>0.04</td>
+<td>0.00</td>
+<td>0.10</td>
+</tr>
+<tr class="even">
+<td>Uncertain wrong</td>
+<td>A</td>
+<td>B</td>
+<td>0.35</td>
+<td>0.30</td>
+<td>0.20</td>
+<td>0.15</td>
+<td>0.00</td>
+<td>0.30</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key Insights from Examples:</strong></p>
+<ol type="1">
+<li><p><strong>Scenario 1 vs 2:</strong> Binary scoring gives the same score (1.0) but confidence-weighted scoring differentiates between lucky guesses and confident correct answers</p></li>
+<li><p><strong>Scenario 3 vs 4:</strong> Binary scoring gives the same score (0.0) but confidence-weighted scoring rewards the model that was less confidently wrong (0.30 vs 0.10)</p></li>
+</ol>
+</section>
+<section id="results-does-weighting-change-rankings" class="level3">
+<h3 class="anchored" data-anchor-id="results-does-weighting-change-rankings">Results: Does Weighting Change Rankings?</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 34%">
+<col style="width: 38%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Binary Score (Accuracy)</th>
+<th>Confidence-Weighted Score</th>
+<th>Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>GPT-4o-mini</strong></td>
+<td>0.8618 (86.18%)</td>
+<td>0.7649</td>
+<td>-0.097</td>
+</tr>
+<tr class="even">
+<td><strong>GPT-4.1-nano</strong></td>
+<td>0.8038 (80.38%)</td>
+<td>0.6783</td>
+<td>-0.126</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ranking Comparison:</strong></p>
+<p><strong>Binary Scoring Gap:</strong> 5.80 percentage points (86.18% - 80.38%)</p>
+<p><strong>Confidence-Weighted Gap:</strong> 8.66 percentage points (76.49% - 67.83%)</p>
+<p><strong>Relative performance difference:</strong> +49% larger gap with confidence weighting</p>
+</section>
+<section id="analysis-what-does-this-tell-us" class="level3">
+<h3 class="anchored" data-anchor-id="analysis-what-does-this-tell-us">Analysis: What Does This Tell Us?</h3>
+<p><strong>1. Mini’s Advantage Grows with Confidence Weighting</strong></p>
+<pre><code>Binary gap:       5.80 points
+Confidence gap:   8.66 points
+Amplification:    8.66 / 5.80 = 1.49× (49% increase)</code></pre>
+<p>This means GPT-4o-mini’s superiority is even more pronounced when we account for confidence.</p>
+<p><strong>2. Decomposition of Advantage</strong></p>
+<p>Mini’s total advantage comes from: - <strong>Accuracy advantage:</strong> Answers 5.8% more questions correctly - <strong>Calibration advantage:</strong> Is more confident on correct answers (+2.9 points) - <strong>Risk management advantage:</strong> Is less confident on incorrect answers (+0 points—both models equally uncertain when wrong)</p>
+<p><strong>Mathematical decomposition:</strong></p>
+<pre><code>ΔConfidence_weighted = (Δaccuracy × mean_confidence_correct) + (accuracy × Δconfidence)
+
+8.66 = (0.058 × 0.709) + (0.862 × 0.041)
+8.66 ≈ 4.11 + 3.53</code></pre>
+<p>Mini gains ~4.1 points from higher accuracy and ~3.5 points from better confidence calibration.</p>
+<p><strong>3. Interpretation for Model Selection</strong></p>
+<p>Confidence-weighted scoring reveals that mini isn’t just more accurate—it’s more <em>decisively</em> accurate. When it gets answers right, it does so with higher confidence, making it more valuable for:</p>
+<ul>
+<li><strong>Automated decision systems:</strong> Where you want to act on high-confidence predictions</li>
+<li><strong>Human-in-the-loop workflows:</strong> Where you escalate low-confidence cases</li>
+<li><strong>Cost optimization:</strong> Where you route based on confidence thresholds</li>
+</ul>
+<p><strong>4. When Does Confidence Weighting Matter Most?</strong></p>
+<p>The difference between binary and confidence-weighted scoring is largest when:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># High variance in confidence across questions</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>high_confidence_correct <span class="op">=</span> <span class="fl">0.95</span>  <span class="co"># Very sure and right</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>low_confidence_correct <span class="op">=</span> <span class="fl">0.35</span>   <span class="co"># Barely right (lucky guess)</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>Binary treats both <span class="im">as</span> <span class="fl">1.0</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>Confidence<span class="op">-</span>weighted: <span class="fl">0.95</span> vs <span class="fl">0.35</span> (huge difference<span class="op">!</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Practical applications:</strong> - <strong>Medical diagnosis:</strong> Want to differentiate “definitely pneumonia” vs “maybe pneumonia” - <strong>Financial fraud detection:</strong> Difference between “possibly fraud” vs “definitely fraud” - <strong>Content moderation:</strong> “Uncertain violation” vs “clear violation”</p>
+</section>
+<section id="visualization-score-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="visualization-score-distribution">Visualization: Score Distribution</h3>
+<p>Imagine plotting all 1,172 questions on a graph:</p>
+<p><strong>GPT-4o-mini:</strong></p>
+<pre><code>Confidence-weighted scores:
+|                                    *
+|                               ******
+|                          **********
+|                    ***************
+|              *******************
+|        **********************
+|  **************************
++--------------------------------
+0.0        0.4        0.8        1.0
+
+Mean: 0.7649
+Median: 0.85
+Distribution: Right-skewed (good—more high-confidence correct answers)</code></pre>
+<p><strong>GPT-4.1-nano:</strong></p>
+<pre><code>Confidence-weighted scores:
+|                          *
+|                      *******
+|                 *************
+|           ******************
+|      ************************
+|  ****************************
++--------------------------------
+0.0        0.4        0.8        1.0
+
+Mean: 0.6783
+Median: 0.72
+Distribution: More uniform (less decisive)</code></pre>
+<p>The key insight: Mini’s distribution is shifted right AND more peaked at high values.</p>
+</section>
+<section id="key-learnings-summary" class="level3">
+<h3 class="anchored" data-anchor-id="key-learnings-summary">Key Learnings Summary</h3>
+<p><strong>1. Accuracy vs.&nbsp;Calibration Are Distinct</strong> - A model can be accurate but poorly calibrated (high confidence when wrong) - A model can be less accurate but better calibrated (knows what it doesn’t know) - GPT-4o-mini excels at both dimensions</p>
+<p><strong>2. Bigger Models Show Better Calibration</strong> - Despite being less specialized, mini outperforms nano on both accuracy and calibration - This suggests scale and general training trump task-specific fine-tuning for reasoning tasks - The confidence gap metric (0.412 vs 0.243) quantifies this advantage</p>
+<p><strong>3. Few-Shot Learning Is Complex</strong> - Don’t assume examples always help - Confidence and accuracy can move independently - Example selection strategy matters more than number of examples - Model-specific testing is essential</p>
+<p><strong>4. Confidence-Weighted Metrics Reveal Hidden Value</strong> - Binary accuracy misses important calibration information - Confidence weighting amplifies the advantage of well-calibrated models - This matters most for production systems with confidence-based routing</p>
+</section>
+<section id="practical-recommendations" class="level3">
+<h3 class="anchored" data-anchor-id="practical-recommendations">Practical Recommendations</h3>
+<p><strong>For Model Selection:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>selection_criteria <span class="op">=</span> {</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"accuracy"</span>: <span class="fl">0.4</span>,          <span class="co"># 40% weight</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"calibration_gap"</span>: <span class="fl">0.3</span>,   <span class="co"># 30% weight</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"confidence_weighted"</span>: <span class="fl">0.3</span> <span class="co"># 30% weight</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="co"># GPT-4o-mini scores higher on all three</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>For Production Deployment:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> production_routing(confidence):</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> confidence <span class="op">&gt;</span> <span class="fl">0.70</span>:</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>        action <span class="op">=</span> <span class="st">"auto_respond"</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>        expected_accuracy <span class="op">=</span> <span class="fl">0.98</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> confidence <span class="op">&gt;</span> <span class="fl">0.40</span>:</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>        action <span class="op">=</span> <span class="st">"flag_for_review"</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>        expected_accuracy <span class="op">=</span> <span class="fl">0.40</span></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>        action <span class="op">=</span> <span class="st">"immediate_escalation"</span></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>        expected_accuracy <span class="op">=</span> <span class="fl">0.21</span></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> action, expected_accuracy</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>For Evaluation Frameworks:</strong></p>
+<p>Always measure three dimensions: 1. <strong>Binary accuracy:</strong> What percentage is correct? 2. <strong>Calibration:</strong> Does confidence predict correctness? 3. <strong>Confidence-weighted score:</strong> How decisively correct?</p>
+<p><strong>For Few-Shot Prompting:</strong></p>
+<p>Test these variables systematically:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>experiment_matrix <span class="op">=</span> {</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"n_shots"</span>: [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">10</span>],</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"selection"</span>: [<span class="st">"random"</span>, <span class="st">"similar"</span>, <span class="st">"diverse"</span>],</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"format"</span>: [<span class="st">"qa_pairs"</span>, <span class="st">"cot"</span>, <span class="st">"explanation"</span>],</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"positioning"</span>: [<span class="st">"before"</span>, <span class="st">"interleaved"</span>]</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="future-research-directions" class="level3">
+<h3 class="anchored" data-anchor-id="future-research-directions">Future Research Directions</h3>
+<p><strong>1. Dynamic Confidence Thresholds</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instead of fixed thresholds (0.7, 0.4), learn optimal cutoffs:</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> optimize_thresholds(validation_data):</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Find cutoffs that maximize accuracy at each confidence level</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Adjust based on cost of errors vs. cost of human review</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> optimal_high_threshold, optimal_low_threshold</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>2. Confidence Calibration Post-Processing</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Adjust raw confidences to match empirical accuracy:</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calibrate_confidence(raw_confidence, calibration_curve):</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># If model says 80% but historically 80% → 70% accurate</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Return adjusted 70%</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> calibrated_confidence</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>3. Multi-Model Ensembling</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine predictions weighted by calibration:</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ensemble_prediction(model_outputs):</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Weight each model by its calibration quality</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Models with better calibration get higher weight</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> weighted_average(model_outputs, calibration_weights)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>4. Question Difficulty Estimation</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Predict question difficulty from model confidence:</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> estimate_difficulty(model_confidences):</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Questions where all models have low confidence → hard</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Use this to build adaptive test sets</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> difficulty_score</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>This comprehensive evaluation revealed that <strong>model performance is multidimensional</strong>. GPT-4o-mini doesn’t just answer more questions correctly—it knows when it’s right, admits when it’s uncertain, and provides reliable confidence signals for downstream decision-making.</p>
+<p>The key mathematical insight is that <strong>probability distributions contain more information than binary decisions</strong>. By analyzing logprobs and confidence scores, we can: - Build smarter routing systems - Reduce human review costs - Improve user trust in AI systems - Develop better model selection criteria</p>
+<p>The surprising few-shot learning result reminds us that <strong>intuitions from one model don’t always transfer</strong>. Each model, training method, and task combination requires empirical testing. The combination of higher accuracy, better calibration, and more decisive confidence makes GPT-4o-mini the clear winner for production reasoning tasks requiring both correctness and interpretability.</p>
+<section id="key-takeaway" class="level3">
+<h3 class="anchored" data-anchor-id="key-takeaway">Key Takeaway</h3>
+<p>When evaluating language models, look beyond accuracy. A well-calibrated model that knows what it knows is worth far more than a high-accuracy model that can’t distinguish its confident predictions from lucky guesses. In production systems where errors have real costs, calibration isn’t optional—it’s essential.</p>
+<hr>
+<p><strong>Dataset:</strong> AI2 Reasoning Challenge (ARC-Challenge), 1,172 questions<br>
+<strong>Models:</strong> GPT-4o-mini vs.&nbsp;GPT-4.1-nano<br>
+<strong>Evaluation Metrics:</strong> Accuracy, calibration, confidence-weighted scoring, few-shot learning<br>
+<strong>Key Finding:</strong> Superior calibration (0.412 vs 0.243 confidence gap) matters as much as accuracy (86% vs 80%)</p>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<!-- Non-rendering template (won’t create any visible box at page bottom) -->
+<template id="theme-toggle-template">
+  <button class="theme-toggle" aria-label="Toggle light and dark mode" title="Toggle light / dark mode" type="button">
+    <span class="toggle-track">
+      <span class="toggle-thumb"></span>
+    </span>
+  </button>
+</template>
+<script>
+(function () {
+  const root = document.documentElement;
+  const STORAGE_KEY = "quarto-color-scheme";
+
+  // 1) Find the navbar placeholder you added in _quarto.yml
+  const slot = document.getElementById("theme-toggle");
+  if (!slot) return; // if not on a page with navbar, do nothing
+
+  // 2) Get the hidden template and clone it
+  const tpl = document.getElementById("theme-toggle-template");
+  if (!tpl) return;
+
+  const btn = tpl.content.firstElementChild.cloneNode(true);
+
+  // 3) Replace the placeholder with the real button
+  slot.replaceWith(btn);
+
+  // 4) Initial state: localStorage > system preference
+  const stored = localStorage.getItem(STORAGE_KEY);
+  if (stored === "dark") {
+    root.classList.add("dark");
+  } else if (stored === "light") {
+    root.classList.remove("dark");
+  } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    root.classList.add("dark");
+  }
+
+  // 5) Toggle click handler
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    const isDark = root.classList.toggle("dark");
+    localStorage.setItem(STORAGE_KEY, isDark ? "dark" : "light");
+  });
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/kundan-kumarr\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Kundan Kumar ∙ Made with <a href="https://quarto.org" target="_blank">Quarto</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p><a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a> <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark me-2" href="https://orcid.org/0000-0002-3229-6649" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a> <a class="link-dark me-2" href="https://scholar.google.com/citations?user=1zDpIJkAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a> <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/blog/CopyOftechnotes_ml_series_20251105_class_unbalanced/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../contact.html">
+<p>Contact</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

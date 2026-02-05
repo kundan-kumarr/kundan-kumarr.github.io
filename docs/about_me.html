@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,17 +35,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2575636bf12bba71c1c5b79222bd7450.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f4186416b92dfa7b836f2033efcd23db.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2575636bf12bba71c1c5b79222bd7450.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-919c7ec90743d9b1e9761dff04b41dfc.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0e6b5171f1292a58de0ff8a7af83c33b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-919c7ec90743d9b1e9761dff04b41dfc.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-563666e36a55f33503da20c3140df202.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-2c963be877970a6a045acc59b382e38e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-563666e36a55f33503da20c3140df202.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6fdd3d416b0315003154cd0068618245.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-08cc227e0dfd31b985d5e04bb7e32b2e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-6fdd3d416b0315003154cd0068618245.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -212,7 +213,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -399,6 +400,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Kundan Kumar</span>
     </a>
@@ -451,17 +454,17 @@ window.Quarto = {
   </li>  
         <li>
     <a class="dropdown-item" href="https://kundan-kumarr.github.io/statsphere/">
- <span class="dropdown-text">Statistics</span></a>
+ <span class="dropdown-text">Statistical Analysis</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="https://kundan-kumarr.github.io/safe-AI/">
- <span class="dropdown-text">AI Security</span></a>
+ <span class="dropdown-text">AI Alignment and Safety</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">🧰 Resources</li>
         <li>
     <a class="dropdown-item" href="https://kundan-kumarr.github.io/SmartGridAI/">
- <span class="dropdown-text">AI for Smart Grids</span></a>
+ <span class="dropdown-text">AI for Smart Energy Systems</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="https://kundan-kumarr.github.io/ResearchScientist-Handbook/">
@@ -689,7 +692,7 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
     <div class="explore-box">
       <div id="listing-blog" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="U2FmZS1BSSUyQ0FsaWdubWVudCUyQ0RhdGElMjBzY2llbmNl" data-listing-date-sort="1764828000000" data-listing-file-modified-sort="1767390991187" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1086">
+<div class="g-col-1" data-index="0" data-categories="U2FmZS1BSSUyQ0FsaWdubWVudCUyQ0RhdGElMjBzY2llbmNl" data-listing-date-sort="1764828000000" data-listing-file-modified-sort="1768239153818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1086">
 <a href="./blog/blog_20251204_safe_ai/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -725,7 +728,7 @@ Dec 4, 2025
     <div class="explore-box">
       <div id="listing-talk" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDTXVsdGktT2JqZWN0aXZlJTIwT3B0aW1pemF0aW9uJTJDRW5lcmd5JTIwT3B0aW1pemF0aW9u" data-listing-date-sort="1761714000000" data-listing-file-modified-sort="1767390991526" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="191">
+<div class="g-col-1" data-index="0" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDTXVsdGktT2JqZWN0aXZlJTIwT3B0aW1pemF0aW9uJTJDRW5lcmd5JTIwT3B0aW1pemF0aW9u" data-listing-date-sort="1761714000000" data-listing-file-modified-sort="1768239154171" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="191">
 <a href="./talks/rstats_20190402_blogdown/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="talks/rstats_20190402_blogdown/naps.png" style="height: 200;"  class="thumbnail-image card-img"/></p>
@@ -756,7 +759,7 @@ Oct 29, 2025
     <div class="explore-box">
       <div id="listing-publication" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="QmF5ZXNpYW4lMjBOZXVyYWwlMjBOZXR3b3JrJTJDU2VtaSUyMFN1cGVydmlzZWQlMjBMZWFybmluZyUyQ1VuY2VydGFpbnR5JTIwRXN0aW1hdGlvbg==" data-listing-date-sort="1762754400000" data-listing-file-modified-sort="1767390991486" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1405">
+<div class="g-col-1" data-index="0" data-categories="QmF5ZXNpYW4lMjBOZXVyYWwlMjBOZXR3b3JrJTJDU2VtaSUyMFN1cGVydmlzZWQlMjBMZWFybmluZyUyQ1VuY2VydGFpbnR5JTIwRXN0aW1hdGlvbg==" data-listing-date-sort="1762754400000" data-listing-file-modified-sort="1768239154131" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1405">
 <a href="./publications/articles/pesgm2025.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -789,7 +792,7 @@ Nov 10, 2025
     <div class="explore-box">
       <div id="listing-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="TExNJTIwU2VjdXJpdHklMkNFbmVyZ3klMjBTeXN0ZW1zJTJDUkFHJTIwRnJhbWV3b3Jr" data-listing-date-sort="1765864800000" data-listing-file-modified-sort="1767390991477" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="237">
+<div class="g-col-1" data-index="0" data-categories="TExNJTIwU2VjdXJpdHklMkNFbmVyZ3klMjBTeXN0ZW1zJTJDUkFHJTIwRnJhbWV3b3Jr" data-listing-date-sort="1765864800000" data-listing-file-modified-sort="1768239154119" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="237">
 <a href="./projects/rag_energy_advisor.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="misc/info/projects/llm_energy_advisor.png" alt="Badge for the RAG-Enhanced Energy Advisor showing document and energy icons." style="height: 200;"  class="thumbnail-image card-img"/></p>
@@ -1184,13 +1187,14 @@ Dec 16, 2025
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

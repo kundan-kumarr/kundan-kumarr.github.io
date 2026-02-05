@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,18 +35,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2575636bf12bba71c1c5b79222bd7450.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-f4186416b92dfa7b836f2033efcd23db.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2575636bf12bba71c1c5b79222bd7450.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-919c7ec90743d9b1e9761dff04b41dfc.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0e6b5171f1292a58de0ff8a7af83c33b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-919c7ec90743d9b1e9761dff04b41dfc.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-325f089f4e33601ef5bd2d6e8984644d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-a7636750ef1f23db0c38a7625e425f32.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-325f089f4e33601ef5bd2d6e8984644d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-7b697dad97c8c66a9b725af4d89d9b7e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-7e06fbf1eceea806cff5da4189abcdd0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-7b697dad97c8c66a9b725af4d89d9b7e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -85,7 +86,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-title','listing-description','listing-date','listing-image','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 5,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
@@ -129,7 +131,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -316,6 +318,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Kundan Kumar</span>
     </a>
@@ -368,17 +372,17 @@ window.Quarto = {
   </li>  
         <li>
     <a class="dropdown-item" href="https://kundan-kumarr.github.io/statsphere/">
- <span class="dropdown-text">Statistics</span></a>
+ <span class="dropdown-text">Statistical Analysis</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="https://kundan-kumarr.github.io/safe-AI/">
- <span class="dropdown-text">AI Security</span></a>
+ <span class="dropdown-text">AI Alignment and Safety</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">🧰 Resources</li>
         <li>
     <a class="dropdown-item" href="https://kundan-kumarr.github.io/SmartGridAI/">
- <span class="dropdown-text">AI for Smart Grids</span></a>
+ <span class="dropdown-text">AI for Smart Energy Systems</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="https://kundan-kumarr.github.io/ResearchScientist-Handbook/">
@@ -409,7 +413,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="QWxpZ25tZW50">Alignment <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2xhc3MlMjBpbWJhbGFuY2U=">class imbalance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMHNjaWVuY2U=">Data science <span class="quarto-category-count">(4)</span></div><div class="category" data-category="RGVlcCUyMExlYXJuaW5n">Deep Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW50ZXJ2aWV3JTIwR3VpZGU=">Interview Guide <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGFyZ2UlMjBMYW5ndWFnZSUyME1vZGVscw==">Large Language Models <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TkxQ">NLP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHJvbXB0aW5n">Prompting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2FmZS1BSQ==">Safe-AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VHJhbnNmb3JtZXJz">Transformers <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="QWxpZ25tZW50">Alignment <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2xhc3MlMjBpbWJhbGFuY2U=">class imbalance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMHNjaWVuY2U=">Data science <span class="quarto-category-count">(4)</span></div><div class="category" data-category="RGVlcCUyMExlYXJuaW5n">Deep Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RVZBTA==">EVAL <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SW50ZXJ2aWV3JTIwR3VpZGU=">Interview Guide <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGFyZ2UlMjBMYW5ndWFnZSUyME1vZGVscw==">Large Language Models <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TExN">LLM <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TkxQ">NLP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHJvbXB0aW5n">Prompting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2FmZS1BSQ==">Safe-AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VHJhbnNmb3JtZXJz">Transformers <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -446,7 +450,7 @@ None at this time.
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-categories="U2FmZS1BSSUyQ0FsaWdubWVudCUyQ0RhdGElMjBzY2llbmNl" data-listing-date-sort="1764828000000" data-listing-file-modified-sort="1767390991187" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1086">
+<div class="quarto-post image-left" data-index="0" data-categories="U2FmZS1BSSUyQ0FsaWdubWVudCUyQ0RhdGElMjBzY2llbmNl" data-listing-date-sort="1764828000000" data-listing-file-modified-sort="1768239153818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1086">
 <div class="thumbnail"><a href="../blog/blog_20251204_safe_ai/index.html" class="no-external">
 
 <img loading="lazy" src="../blog/blog_20251204_safe_ai/safe_ai.png" class="thumbnail-image">
@@ -477,7 +481,7 @@ Dec 4, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="1" data-categories="RGF0YSUyMHNjaWVuY2UlMkNJbnRlcnZpZXclMjBHdWlkZQ==" data-listing-date-sort="1763964000000" data-listing-file-modified-sort="1767390991187" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2828">
+<div class="quarto-post image-left" data-index="1" data-categories="RGF0YSUyMHNjaWVuY2UlMkNJbnRlcnZpZXclMjBHdWlkZQ==" data-listing-date-sort="1763964000000" data-listing-file-modified-sort="1768239153818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2828">
 <div class="thumbnail"><a href="../blog/blog_20251124_research_guide/index.html" class="no-external">
 
 <p class="card-img-top"><img src="blog_20251124_research_guide/guide.png"  class="thumbnail-image card-img"/></p>
@@ -506,7 +510,7 @@ Nov 24, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="2" data-categories="RGVlcCUyMExlYXJuaW5nJTJDTkxQJTJDVHJhbnNmb3JtZXJz" data-listing-date-sort="1761022800000" data-listing-file-modified-sort="1767390991194" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2191">
+<div class="quarto-post image-left" data-index="2" data-categories="RGVlcCUyMExlYXJuaW5nJTJDTkxQJTJDVHJhbnNmb3JtZXJz" data-listing-date-sort="1761022800000" data-listing-file-modified-sort="1768239153824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2191">
 <div class="thumbnail"><a href="../blog/blog_20251210_self_attention_mechanism/index.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -537,7 +541,7 @@ Oct 21, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="3" data-categories="Y2xhc3MlMjBpbWJhbGFuY2UlMkNEYXRhJTIwc2NpZW5jZQ==" data-listing-date-sort="1758949200000" data-listing-file-modified-sort="1767390991194" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1054">
+<div class="quarto-post image-left" data-index="3" data-categories="Y2xhc3MlMjBpbWJhbGFuY2UlMkNEYXRhJTIwc2NpZW5jZQ==" data-listing-date-sort="1758949200000" data-listing-file-modified-sort="1768239153825" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1054">
 <div class="thumbnail"><a href="../blog/technotes_ml_series_20251105_class_unbalanced/index.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -566,7 +570,7 @@ Sep 27, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="4" data-categories="RGF0YSUyMHNjaWVuY2UlMkNMYXJnZSUyMExhbmd1YWdlJTIwTW9kZWxzJTJDUHJvbXB0aW5n" data-listing-date-sort="1746507600000" data-listing-file-modified-sort="1767390991194" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="963">
+<div class="quarto-post image-left" data-index="4" data-categories="RGF0YSUyMHNjaWVuY2UlMkNMYXJnZSUyMExhbmd1YWdlJTIwTW9kZWxzJTJDUHJvbXB0aW5n" data-listing-date-sort="1746507600000" data-listing-file-modified-sort="1768239153825" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="963">
 <div class="thumbnail"><a href="../blog/technotes_llm_series_20251121_llm_reasoning/index.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -597,8 +601,69 @@ May 6, 2025
 </a>
 </div>
 </div>
+<div class="quarto-post image-left" data-index="5" data-categories="RVZBTCUyQ0xMTQ==" data-listing-date-sort="1738648800000" data-listing-file-modified-sort="1770309484767" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3357">
+<div class="thumbnail"><a href="../blog/llm_evaluation_blog.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../blog/llm_evaluation_blog.html" class="no-external">LLM Evaluation: Benchmarking GPT Models on the ARC-Challenge</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RVZBTA=='); return false;">EVAL</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TExN'); return false;">LLM</div>
+
+</div>
+<div class="delink listing-description"><a href="../blog/llm_evaluation_blog.html" class="no-external">
+<p>How confidence, calibration, and few-shot learning reveal hidden differences between GPT models.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../blog/llm_evaluation_blog.html" class="no-external">
+<div class="listing-date">
+Feb 4, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="6" data-categories="RVZBTCUyQ0xMTQ==" data-listing-date-sort="1738648800000" data-listing-file-modified-sort="1770309978340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3357">
+<div class="thumbnail"><a href="../blog/CopyOftechnotes_ml_series_20251105_class_unbalanced/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../blog/CopyOftechnotes_ml_series_20251105_class_unbalanced/index.html" class="no-external">LLM Evaluation: Benchmarking GPT Models on the ARC-Challenge</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RVZBTA=='); return false;">EVAL</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TExN'); return false;">LLM</div>
+
+</div>
+<div class="delink listing-description"><a href="../blog/CopyOftechnotes_ml_series_20251105_class_unbalanced/index.html" class="no-external">
+<p>How confidence, calibration, and few-shot learning reveal hidden differences between GPT models.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../blog/CopyOftechnotes_ml_series_20251105_class_unbalanced/index.html" class="no-external">
+<div class="listing-date">
+Feb 4, 2025
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div></main> <!-- /main -->
 <!-- Non-rendering template (won’t create any visible box at page bottom) -->
 <template id="theme-toggle-template">
@@ -708,13 +773,14 @@ May 6, 2025
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

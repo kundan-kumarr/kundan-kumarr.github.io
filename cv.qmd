@@ -26,8 +26,43 @@ page-layout: full
     </td>
   </tr>
 </table>
+<p style="font-size:1.05rem; color:#444; margin-top:0.4rem;">
+Building safe, uncertainty-aware AI systems for real-world, high-stakes decision making.
+</p>
+
 
 ## <i class="fas fa-briefcase"></i> Professional Experience
+::: {.d-inline-flex style="align-items:baseline"}
+::: p-2
+![](assets/img/algoverse.png){width="90px" fig-alt="Algoverse logo"}
+:::
+::: h3
+Algoverse AI Research
+:::
+:::
+<table style="width: 100%; margin-bottom: 0.5rem;">
+  <tr>
+    <td><strong>AI Safety Research Fellow</strong></td>
+    <td style="text-align: right;">
+      <span style="
+        background-color: #f5f0e9;
+        color: #934c2f;
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-family: system-ui, sans-serif;
+        font-size: 0.9em;
+        white-space: nowrap;">
+        Jan 2026 &nbsp;—&nbsp; Present
+      </span>
+    </td>
+  </tr>
+</table>
+
+- Conducting agentic AI safety research across evaluations, adversarial robustness, and scalable oversight.
+- Designing behavioral and mechanistic evaluations to detect deceptive alignment, reward hacking, and obfuscated internal states in LLM agents.
+- Collaborating with researchers and mentors to design safety benchmarks and diagnostic experiments.
+
+
 ::: {.d-inline-flex style="align-items:baseline"}
 ::: p-2
 ![](assets/img/nrel.png){width="90px" fig-alt="NREL logo"}
@@ -204,7 +239,7 @@ Iowa State University
         font-family: system-ui, sans-serif;
         font-size: 0.9em;
         white-space: nowrap;">
-        2020 &nbsp;—&nbsp; 2025 (Expected)
+        2020 &nbsp;—&nbsp; 2026 (Expected)
       </span>
     </td>
   </tr>
