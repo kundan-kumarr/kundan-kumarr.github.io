@@ -206,13 +206,8 @@ Success is measured as:
 
 **The Evaluation Agent automatically generates behavioral tests from natural language specifications.**
 
-**Core Workflow:**
-```
-User Spec → Planning → Code Generation → Testing → Reporting
-   ↓           ↓            ↓             ↓          ↓
-"Test if  → Create    → Write Python → Run tests → 88% 
- flattery"  strategy    evaluation              success
-```
+![Core Workflow](automated_audit.png)
+
 
 ### The Three-Phase Pipeline
 
