@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,19 +35,18 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../misc/info/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-919c7ec90743d9b1e9761dff04b41dfc.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0e6b5171f1292a58de0ff8a7af83c33b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-919c7ec90743d9b1e9761dff04b41dfc.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2575636bf12bba71c1c5b79222bd7450.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-f4186416b92dfa7b836f2033efcd23db.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2575636bf12bba71c1c5b79222bd7450.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-7b697dad97c8c66a9b725af4d89d9b7e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-7e06fbf1eceea806cff5da4189abcdd0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-7b697dad97c8c66a9b725af4d89d9b7e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a699eb95406d3a62061b73b71e131447.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-0a717fc05431e4900788e7db17ecbab4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-a699eb95406d3a62061b73b71e131447.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -101,7 +100,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -288,8 +287,6 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kundan Kumar</span>
     </a>
@@ -342,17 +339,17 @@ window.Quarto = {
   </li>  
         <li>
     <a class="dropdown-item" href="https://kundan-kumarr.github.io/statsphere/">
- <span class="dropdown-text">Statistics</span></a>
+ <span class="dropdown-text">Statistical Analysis</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="https://kundan-kumarr.github.io/safe-AI/">
- <span class="dropdown-text">AI Security</span></a>
+ <span class="dropdown-text">AI Alignment and Safety</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">🧰 Resources</li>
         <li>
     <a class="dropdown-item" href="https://kundan-kumarr.github.io/SmartGridAI/">
- <span class="dropdown-text">AI for Smart Grids</span></a>
+ <span class="dropdown-text">AI for Smart Energy Systems</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="https://kundan-kumarr.github.io/ResearchScientist-Handbook/">
@@ -718,49 +715,93 @@ By integrating <em>pseudo-labeling</em>, <em>graph-based label propagation</em>,
 
 </main> <!-- /main -->
 <!-- Non-rendering template (won’t create any visible box at page bottom) -->
+
 <template id="theme-toggle-template">
+
   <button class="theme-toggle" aria-label="Toggle light and dark mode" title="Toggle light / dark mode" type="button">
+
     <span class="toggle-track">
+
       <span class="toggle-thumb"></span>
+
     </span>
+
   </button>
+
 </template>
+
 <script>
+
 (function () {
+
   const root = document.documentElement;
+
   const STORAGE_KEY = "quarto-color-scheme";
 
+
+
   // 1) Find the navbar placeholder you added in _quarto.yml
+
   const slot = document.getElementById("theme-toggle");
+
   if (!slot) return; // if not on a page with navbar, do nothing
 
+
+
   // 2) Get the hidden template and clone it
+
   const tpl = document.getElementById("theme-toggle-template");
+
   if (!tpl) return;
+
+
 
   const btn = tpl.content.firstElementChild.cloneNode(true);
 
+
+
   // 3) Replace the placeholder with the real button
+
   slot.replaceWith(btn);
 
+
+
   // 4) Initial state: localStorage > system preference
+
   const stored = localStorage.getItem(STORAGE_KEY);
+
   if (stored === "dark") {
+
     root.classList.add("dark");
+
   } else if (stored === "light") {
+
     root.classList.remove("dark");
+
   } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+
     root.classList.add("dark");
+
   }
 
+
+
   // 5) Toggle click handler
+
   btn.addEventListener("click", function (e) {
+
     e.preventDefault();
+
     const isDark = root.classList.toggle("dark");
+
     localStorage.setItem(STORAGE_KEY, isDark ? "dark" : "light");
+
   });
+
 })();
+
 </script>
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -825,14 +866,13 @@ By integrating <em>pseudo-labeling</em>, <em>graph-based label propagation</em>,
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
