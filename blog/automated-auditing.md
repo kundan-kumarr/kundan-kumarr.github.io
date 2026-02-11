@@ -1,5 +1,5 @@
 ---
-title: "Automated AI Alignment Auditing: A Complete Technical Deep Diveg"
+title: "Automated AI Alignment Auditing: A Complete Technical Deep Dive"
 description: "A comprehensive exploration of Anthropic's three-agent approach to automated behavioral testing."
 author: "Kundan Kumar"
 date: "2026-02-11"
@@ -22,7 +22,7 @@ format:
 2. [The Test Environment: Quirky Models](#quirky-models)
 3. [Agent 1: The Evaluation Agent](#evaluation-agent)
 4. [Agent 2: The Investigator Agent](#investigator-agent)
-5. [Agent 3: The Red-Teaming Agent )](#redteaming-agent)
+5. [Agent 3: The Red-Teaming Agent](#redteaming-agent)
 6. [Comparative Analysis: When to Use Each Agent](#comparative-analysis)
 7. [Implementation Guide](#implementation)
 8. [Possible Extensions & Future Work](#extensions)
@@ -67,7 +67,7 @@ Let's dive deep into each agent, starting with understanding the test environmen
 
 ---
 
-## The Test Environment: Quirky Models 
+## Test Environment: Quirky Models {#quirky-models}
 ### What Are "Quirky Models"?
 
 To test the agents, Anthropic created 10 Claude models with intentional behavioral quirks. Here's the clever part: **these aren't actually separate models** - they're regular Claude models with hidden system prompts!
@@ -1223,6 +1223,8 @@ async def investigate_model(target_model):
 asyncio.run(investigate_model("claude-coral-v0-evals"))
 ```
 
+## Agent 3: The Red-Teaming Agent {#redteaming-agent}
+
 ### Key Innovations
 
 1. **Interpretability-First**
@@ -1259,4 +1261,7 @@ asyncio.run(investigate_model("claude-coral-v0-evals"))
    - Even super-agent can miss quirks
    - Requires many parallel runs
 
+## References & Resources {#references}
+
+- Anthropic. (2025). Towards Automated Auditing for Alignment. https://alignment.anthropic.com/2025/automated-auditing/
 

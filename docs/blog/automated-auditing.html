@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2026-02-11">
 <meta name="description" content="A comprehensive exploration of Anthropic’s three-agent approach to automated behavioral testing.">
 
-<title>Automated AI Alignment Auditing: A Complete Technical Deep Diveg – Kundan Kumar</title>
+<title>Automated AI Alignment Auditing: A Complete Technical Deep Dive – Kundan Kumar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -422,9 +422,11 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#table-of-contents" id="toc-table-of-contents" class="nav-link active" data-scroll-target="#table-of-contents">Table of Contents</a></li>
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction: The Auditing Problem</a></li>
-  <li><a href="#the-test-environment-quirky-models" id="toc-the-test-environment-quirky-models" class="nav-link" data-scroll-target="#the-test-environment-quirky-models">The Test Environment: Quirky Models</a></li>
+  <li><a href="#quirky-models" id="toc-quirky-models" class="nav-link" data-scroll-target="#quirky-models">Test Environment: Quirky Models</a></li>
   <li><a href="#agent-1-the-evaluation-agent" id="toc-agent-1-the-evaluation-agent" class="nav-link" data-scroll-target="#agent-1-the-evaluation-agent">Agent 1: The Evaluation Agent</a></li>
   <li><a href="#agent-2-the-investigator-agent" id="toc-agent-2-the-investigator-agent" class="nav-link" data-scroll-target="#agent-2-the-investigator-agent">Agent 2: The Investigator Agent</a></li>
+  <li><a href="#redteaming-agent" id="toc-redteaming-agent" class="nav-link" data-scroll-target="#redteaming-agent">Agent 3: The Red-Teaming Agent</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References &amp; Resources</a></li>
   </ul>
 <div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/blog/automated-auditing.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -434,7 +436,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Automated AI Alignment Auditing: A Complete Technical Deep Diveg</h1>
+<h1 class="title">Automated AI Alignment Auditing: A Complete Technical Deep Dive</h1>
   <div class="quarto-categories">
     <div class="quarto-category">EVAL</div>
     <div class="quarto-category">LLM</div>
@@ -479,7 +481,7 @@ window.Quarto = {
 <li><a href="#quirky-models">The Test Environment: Quirky Models</a></li>
 <li><a href="#evaluation-agent">Agent 1: The Evaluation Agent</a></li>
 <li><a href="#investigator-agent">Agent 2: The Investigator Agent</a></li>
-<li><a href="#redteaming-agent">Agent 3: The Red-Teaming Agent )</a></li>
+<li><a href="#redteaming-agent">Agent 3: The Red-Teaming Agent</a></li>
 <li><a href="#comparative-analysis">Comparative Analysis: When to Use Each Agent</a></li>
 <li><a href="#implementation">Implementation Guide</a></li>
 <li><a href="#extensions">Possible Extensions &amp; Future Work</a></li>
@@ -554,8 +556,8 @@ window.Quarto = {
 <hr>
 </section>
 </section>
-<section id="the-test-environment-quirky-models" class="level2">
-<h2 class="anchored" data-anchor-id="the-test-environment-quirky-models">The Test Environment: Quirky Models</h2>
+<section id="quirky-models" class="level2">
+<h2 class="anchored" data-anchor-id="quirky-models">Test Environment: Quirky Models</h2>
 <section id="what-are-quirky-models" class="level3">
 <h3 class="anchored" data-anchor-id="what-are-quirky-models">What Are “Quirky Models”?</h3>
 <p>To test the agents, Anthropic created 10 Claude models with intentional behavioral quirks. Here’s the clever part: <strong>these aren’t actually separate models</strong> - they’re regular Claude models with hidden system prompts!</p>
@@ -1628,6 +1630,9 @@ Agent missed: Didn't test with "I work at Anthropic" prefix!</code></pre>
 <span id="cb37-76"><a href="#cb37-76" aria-hidden="true" tabindex="-1"></a><span class="co"># Run investigation</span></span>
 <span id="cb37-77"><a href="#cb37-77" aria-hidden="true" tabindex="-1"></a>asyncio.run(investigate_model(<span class="st">"claude-coral-v0-evals"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
+</section>
+<section id="redteaming-agent" class="level2">
+<h2 class="anchored" data-anchor-id="redteaming-agent">Agent 3: The Red-Teaming Agent</h2>
 <section id="key-innovations-1" class="level3">
 <h3 class="anchored" data-anchor-id="key-innovations-1">Key Innovations</h3>
 <ol type="1">
@@ -1677,10 +1682,16 @@ Agent missed: Didn't test with "I work at Anthropic" prefix!</code></pre>
 <li>Requires many parallel runs</li>
 </ul></li>
 </ol>
-
-
-
 </section>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References &amp; Resources</h2>
+<ul>
+<li>Anthropic. (2025). Towards Automated Auditing for Alignment. https://alignment.anthropic.com/2025/automated-auditing/</li>
+</ul>
+
+
+
 </section>
 
 </main> <!-- /main -->
