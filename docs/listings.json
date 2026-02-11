@@ -33,6 +33,7 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/automated-auditing.html",
       "/blog/blog_20251204_safe_ai/index.html",
       "/blog/blog_20251124_research_guide/index.html",
       "/blog/blog_20251210_self_attention_mechanism/index.html",

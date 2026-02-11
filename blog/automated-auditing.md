@@ -1,11 +1,20 @@
 ---
 title: "Automated AI Alignment Auditing: A Complete Technical Deep Diveg"
-output: html_document
+description: "A comprehensive exploration of Anthropic's three-agent approach to automated behavioral testing."
+author: "Kundan Kumar"
+date: "2026-02-11"
+categories: [EVAL, LLM]
+sidebar: false
+code-block-bg: true
+code-block-border-left: true
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    code-fold: false
+    code-tools: false
 ---
 
-*A comprehensive exploration of Anthropic's three-agent approach to automated behavioral testing*
-
----
 
 ## Table of Contents
 
