@@ -10,11 +10,13 @@ $theme-purple5: #562457;
 $theme-purplebrown1: #b996a4;
 $theme-purplebrown2: #7c6c84;
 $theme-darkcoffee1: #570e06;
+$theme-darkcoffee4: #1a1a1a;
 $theme-darkcoffee2: #78504b;
 $theme-darkcoffee3: #632e0d;
 $theme-milkcoffee0: #f2ece3;
 $theme-milkcoffee3: #cca79f;
 $theme-milkcoffee2: #b98f68;
+$theme-milkcoffee4: #222222;
 $theme-milkcoffee1: #9e736a;
 $theme-mocha1: #7f2606;
 $theme-mocha2: #9a4c28;
@@ -29,8 +31,8 @@ $theme-darkgreen2: #445740;
 
 
 $body-bg: $theme-white;
-$body-color: $theme-darkcoffee1; // text color
-$headings-color: $theme-milkcoffee2; // applies to all 
+$body-color: $theme-darkcoffee4; // text color
+$headings-color: $theme-milkcoffee4; // applies to all 
 $link-color: $theme-pumpkin;
 
 // code

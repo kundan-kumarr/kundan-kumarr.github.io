@@ -39,48 +39,22 @@
       "/blog/blog_20251210_self_attention_mechanism/index.html",
       "/blog/technotes_ml_series_20251105_class_unbalanced/index.html",
       "/blog/technotes_llm_series_20251121_llm_reasoning/index.html",
-      "/blog/CopyOftechnotes_ml_series_20251105_class_unbalanced/index.html",
-      "/blog/llm_evaluation_blog.html"
+      "/blog/llm_evaluation_blog.html",
+      "/blog/CopyOftechnotes_ml_series_20251105_class_unbalanced/index.html"
     ]
   },
   {
-    "listing": "/projects.html",
+    "listing": "/talks/index.html",
     "items": [
-      "/projects/project6/index.html",
-      "/projects/project3/index.html",
-      "/projects/project4/index.html",
-      "/projects/project5/index.html",
-      "/projects/project2/index.html",
-      "/projects/rag_energy_advisor.html",
-      "/projects/project1/index.html",
-      "/projects/citylearn.html",
-      "/projects/project8.html",
-      "/projects/llm_grid_planner.html",
-      "/projects/project7/index.html",
-      "/projects/project9.html",
-      "/projects/project10.html",
-      "/projects/project11.html"
+      "/talks/rstats_20190402_blogdown/index.html",
+      "/talks/rstats_20230721_teaching/index.html",
+      "/talks/pes_gm_2025/index.html",
+      "/talks/rstats_20240613_teaching/index.html",
+      "/talks/ph_20230330_sp/index.html"
     ]
   },
   {
-    "listing": "/talks1/index.html",
-    "items": [
-      "/talks1/pes_gm_2025/index.html",
-      "/talks1/community_20240921_quartofriends/index.html",
-      "/talks1/ehr_20240918_betterehr/index.html",
-      "/talks1/community_20240710_camis/index.html",
-      "/talks1/rstats_20240613_teaching/index.html",
-      "/talks1/rstats_20230721_teaching/index.html",
-      "/talks1/dummy_talk/index.html",
-      "/talks1/ph_20230330_sp/index.html",
-      "/talks1/ehr_20221013_ml_icu/index.html",
-      "/talks1/ehr_20210218_biday/index.html",
-      "/talks1/ehr_20191028_rladies/index.html",
-      "/talks1/rstats_20190402_blogdown/index.html"
-    ]
-  },
-  {
-    "listing": "/publications/index.html",
+    "listing": "/publications/pub.html",
     "items": [
       "/publications/articles/naps2025.html",
       "/publications/articles/pesgm2025.html",
@@ -93,10 +67,6 @@
     ]
   },
   {
-    "listing": "/dl.html",
-    "items": []
-  },
-  {
     "listing": "/about_me.html",
     "items": [
       "/blog/blog_20251204_safe_ai/index.html",
@@ -104,6 +74,7 @@
       "/blog/blog_20251210_self_attention_mechanism/index.html",
       "/blog/technotes_ml_series_20251105_class_unbalanced/index.html",
       "/blog/technotes_llm_series_20251121_llm_reasoning/index.html",
+      "/blog/CopyOftechnotes_ml_series_20251105_class_unbalanced/index.html",
       "/talks/rstats_20190402_blogdown/index.html",
       "/talks/rstats_20230721_teaching/index.html",
       "/talks/pes_gm_2025/index.html",
@@ -127,7 +98,11 @@
     ]
   },
   {
-    "listing": "/publications/pub.html",
+    "listing": "/dl.html",
+    "items": []
+  },
+  {
+    "listing": "/publications/index.html",
     "items": [
       "/publications/articles/naps2025.html",
       "/publications/articles/pesgm2025.html",
@@ -140,26 +115,33 @@
     ]
   },
   {
-    "listing": "/talks/index.html",
+    "listing": "/talks1/index.html",
     "items": [
-      "/talks/rstats_20190402_blogdown/index.html",
-      "/talks/rstats_20230721_teaching/index.html",
-      "/talks/pes_gm_2025/index.html",
-      "/talks/rstats_20240613_teaching/index.html",
-      "/talks/ph_20230330_sp/index.html"
+      "/talks1/pes_gm_2025/index.html",
+      "/talks1/community_20240921_quartofriends/index.html",
+      "/talks1/ehr_20240918_betterehr/index.html",
+      "/talks1/community_20240710_camis/index.html",
+      "/talks1/rstats_20240613_teaching/index.html",
+      "/talks1/rstats_20230721_teaching/index.html",
+      "/talks1/dummy_talk/index.html",
+      "/talks1/ph_20230330_sp/index.html",
+      "/talks1/ehr_20221013_ml_icu/index.html",
+      "/talks1/ehr_20210218_biday/index.html",
+      "/talks1/ehr_20191028_rladies/index.html",
+      "/talks1/rstats_20190402_blogdown/index.html"
     ]
   },
   {
-    "listing": "/projects/index.html",
+    "listing": "/projects.html",
     "items": [
       "/projects/project6/index.html",
       "/projects/project3/index.html",
       "/projects/project4/index.html",
       "/projects/project5/index.html",
       "/projects/project2/index.html",
+      "/projects/rag_energy_advisor.html",
       "/projects/project1/index.html",
       "/projects/citylearn.html",
-      "/projects/rag_energy_advisor.html",
       "/projects/project8.html",
       "/projects/llm_grid_planner.html",
       "/projects/project7/index.html",

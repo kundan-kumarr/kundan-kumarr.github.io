@@ -21,17 +21,18 @@ page-layout: full
         font-size: 0.9em;
         text-decoration: none;
         border: 1px solid #934c2f;">
-        📄 Resume
+        Resume
       </a>
     </td>
   </tr>
 </table>
 <p style="font-size:1.05rem; color:#444; margin-top:0.4rem;">
-Building safe, uncertainty-aware AI systems for real-world, high-stakes decision making.
+PhD candidate and AI safety researcher with 10+ years of experience, specializing in physics-informed deep RL, uncertainty quantification, and adversarial robustness for critical infrastructure, committed to building AI that is safe, auditable, and deployable in the real world.
 </p>
 
 
 ## <i class="fas fa-briefcase"></i> Professional Experience
+
 ::: {.d-inline-flex style="align-items:baseline"}
 ::: p-2
 ![](assets/img/algoverse.png){width="90px" fig-alt="Algoverse logo"}
@@ -62,6 +63,35 @@ Algoverse AI Research
 - Designing behavioral and mechanistic evaluations to detect deceptive alignment, reward hacking, and obfuscated internal states in LLM agents.
 - Collaborating with researchers and mentors to design safety benchmarks and diagnostic experiments.
 
+::: {.d-inline-flex style="align-items:baseline"}
+::: p-2
+![](assets/img/BlueDot_Impact_Logo.svg){width="150px" fig-alt="BlueDot Impact logo"}
+:::
+::: h3
+BlueDot Impact
+:::
+:::
+<table style="width: 100%; margin-bottom: 0.5rem;">
+  <tr>
+    <td><strong>AI Safety Fundamentals — Course Participant</strong></td>
+    <td style="text-align: right;">
+      <span style="
+        background-color: #f5f0e9;
+        color: #934c2f;
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-family: system-ui, sans-serif;
+        font-size: 0.9em;
+        white-space: nowrap;">
+        Jan 2026 &nbsp;—&nbsp; Feb 2026
+      </span>
+    </td>
+  </tr>
+</table>
+
+- Completed BlueDot Impact's 6-week AI Safety Fundamentals cohort, covering core technical and governance dimensions of AI safety including alignment, interpretability, robustness, and oversight.
+- Studied key alignment paradigms — RLHF, Constitutional AI, scalable oversight, and debate — alongside mechanistic interpretability techniques and evaluation frameworks for frontier models.
+- Engaged in structured readings, facilitated discussions, and collaborative problem-solving with a global cohort of researchers and practitioners working on safe and beneficial AI development.
 
 ::: {.d-inline-flex style="align-items:baseline"}
 ::: p-2
@@ -221,7 +251,7 @@ Tata Consultancy Services (TCS)
 
 ::: {.d-inline-flex style="align-items:baseline"}
 ::: p-2
-![](assets/img/isu.png){width="60px" fig-alt="Iowa State University logo"}
+![](assets/img/isu.png){width="100px" fig-alt="Iowa State University logo"}
 :::
 ::: h3
 Iowa State University
@@ -275,7 +305,7 @@ Iowa State University
 
 ::: {.d-inline-flex style="align-items:baseline"}
 ::: p-2
-![](assets/img/isu.png){width="60px" fig-alt="Iowa State University logo"}
+![](assets/img/isu.png){width="100px" fig-alt="Iowa State University logo"}
 :::
 ::: h3
 Iowa State University
@@ -326,7 +356,7 @@ Iowa State University
 
 ::: {.d-inline-flex style="align-items:baseline"}
 ::: p-2
-![](assets/img/isu.png){width="60px" fig-alt="Iowa State University logo"}
+![](assets/img/isu.png){width="100px" fig-alt="Iowa State University logo"}
 :::
 ::: h3
 Iowa State University
