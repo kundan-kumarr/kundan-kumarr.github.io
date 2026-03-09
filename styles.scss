@@ -339,3 +339,27 @@ h4 {
   }
 }
 
+/* Section headings with FA icons */
+h2 .fa-briefcase        { color: #2E86C1; }
+h2 .fa-graduation-cap   { color: #27AE60; }
+h2 .fa-chalkboard-teacher { color: #8E44AD; }
+h2 .fa-flask            { color: #E67E22; }
+h2 .fa-user-gear        { color: #16A085; }
+h2 .fa-award            { color: #F39C12; }
+h2 .fa-handshake-angle  { color: #C0392B; }
+h2 .fa-diagram-project  { color: #2980B9; }
+
+/* Icon sizing and spacing */
+h2 i.fas, h2 i.far, h2 i.fab {
+  font-size: 0.85em;
+  margin-right: 0.45em;
+  vertical-align: middle;
+  opacity: 0.9;
+}
+
+/* Subtle left accent line on each section */
+h2 {
+  border-left: 4px solid currentColor;
+  padding-left: 0.6rem;
+  margin-top: 2rem;
+}
