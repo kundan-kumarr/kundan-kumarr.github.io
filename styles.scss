@@ -10,7 +10,7 @@ $theme-purple5: #562457;
 $theme-purplebrown1: #b996a4;
 $theme-purplebrown2: #7c6c84;
 $theme-darkcoffee1: #570e06;
-$theme-darkcoffee4: #1a1a1a;
+$theme-darkcoffee4: #1f2937;
 $theme-darkcoffee2: #78504b;
 $theme-darkcoffee3: #632e0d;
 $theme-milkcoffee0: #f2ece3;
@@ -69,7 +69,11 @@ $callout-color-tip: $theme-darkgreen1;
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 
-$font-family-sans-serif: 'Poppins', sans-serif;
+//$font-family-sans-serif: 'Poppins', sans-serif;
+$font-family-sans-serif: 'Lato', sans-serif;  // body text
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
 $font-family-monospace: 'Source Code Pro', monospace;
 //$font-family: "Atkinson Hyperlegible", sans-serif;
 $font-poppins: 'Poppins', sans-serif; 
@@ -311,3 +315,27 @@ h4 {
 .news-card {
   position: relative;
 }
+
+/* Override trestles template's font size constraints */
+#hero-heading .about-contents p {
+  font-size: 1.05rem !important;
+  line-height: 1.9 !important;
+}
+
+/* Make the about section wider / less cramped */
+.about-entity {
+  max-width: 100% !important;
+}
+
+/* If you want the bio text to match image 1's large feel */
+#hero-heading {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  #hero-heading .about-contents p {
+    font-size: 0.95rem !important;
+    line-height: 1.7 !important;
+  }
+}
+
