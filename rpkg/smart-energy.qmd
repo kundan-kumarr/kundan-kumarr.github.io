@@ -12,20 +12,37 @@ format:
 ---
 
 ## Research{#research-vision}
-I develop safe, interpretable, and adaptive AI systems for real-world cyber-physical environments that must operate under uncertainty, strict physical constraints, and adversarial conditions. My work sits at the intersection of **safe reinforcement learning**, **physics-informed AI**, **probabilistic modeling**, and **AI safety evaluation**  with a core focus on building systems that are robust, verifiable, and deployable at scale in safety-critical domains.
+I develop safe, interpretable, and adaptive AI systems for real-world cyber-physical environments that must operate under uncertainty, strict physical constraints, and adversarial conditions. My work sits at the intersection of machine learning, control theory, optimization, and AI safety, with a core focus on building models that are robust, predictable, and deployable at scale.
 
-<div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.6rem;">
+<div style="
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:0.6rem;
+">
   <h3 style="margin:0; color:#7a2e1f;">Vision</h3>
+
   <a href="https://kundan-kumarr.github.io/publications/"
-     style="display:inline-flex; align-items:center; gap:6px; padding:6px 14px;
-            border:1.5px solid #7a2e1f; border-radius:999px; font-size:0.85rem;
-            font-weight:600; color:#7a2e1f; background:rgba(122,46,31,0.06);
-            text-decoration:none; white-space:nowrap;">
+     style="
+       display:inline-flex;
+       align-items:center;
+       gap:6px;
+       padding:6px 14px;
+       border:1.5px solid #7a2e1f;
+       border-radius:999px;
+       font-size:0.85rem;
+       font-weight:600;
+       color:#7a2e1f;
+       background:rgba(122,46,31,0.06);
+       text-decoration:none;
+       white-space:nowrap;
+     ">
     Full Publications →
   </a>
 </div>
 
-<!-- I aim to create AI agents that generalize across environments, learn from imperfect or unreliable data, and remain stable under distribution shifts. These capabilities are essential both for scientific progress and for building production-grade intelligent systems used in industry.
+
+I aim to create AI agents that generalize across environments, learn from imperfect or unreliable data, and remain stable under distribution shifts. These capabilities are essential both for scientific progress and for building production-grade intelligent systems used in industry.
 
 My research centers around five pillars:
   
@@ -33,22 +50,11 @@ My research centers around five pillars:
 - Physics-informed Deep Reinforcement Learning (DRL): Embedding physical laws, invariants, and feasibility constraints directly into model architectures and learning objectives to improve convergence, interpretability, and real-world deployability.
 - Probabilistic & Bayesian Modeling: Quantifying epistemic and aleatoric uncertainty for risk-aware planning in partially observable, high-stakes environments using Bayesian neural networks, uncertainty-aware RL, and probabilistic inference.
 - Large Language Models (LLMs) for autonomous reasoning: Leveraging LLMs to support high-level planning, explainable decision pipelines, natural-language supervision, and adaptive control. This enables human-AI collaboration and interpretable reasoning in complex systems.
--  Vision-based simulation environments: Using platforms such as CARLA, CityLearn, AirSim, and OpenDSS to train agents in multimodal, visually rich environments, supporting robust perception-control integration and sim-to-real transfer.-->
-
-My research centers around three core thrusts:
-
-- **Safe & Trustworthy Reinforcement Learning**: Designing agents that remain reliable under sensor noise, hardware faults, non-stationarity, and adversarial perturbations — including constraint-aware learning, certified robustness, and safe exploration in safety-critical settings.
-- **Physics-Informed AI & Probabilistic Modeling**: Embedding physical laws, invariants, and feasibility constraints directly into model architectures; quantifying epistemic and aleatoric uncertainty for risk-aware planning in partially observable environments.
-- **AI Safety, Alignment & LLM Evaluation**: Designing behavioral and mechanistic evaluations to detect deceptive alignment, reward hacking, and eval-awareness in LLM agents; building scalable oversight frameworks for agentic systems in safety-critical deployments.  
+-  Vision-based simulation environments: Using platforms such as CARLA, CityLearn, AirSim, and OpenDSS to train agents in multimodal, visually rich environments, supporting robust perception-control integration and sim-to-real transfer.
+  
 
 ### Mission
-By integrating physics-guided structure, probabilistic reasoning, and safe reinforcement learning, my goal is to build the next generation of AI systems that are:
-
-- **Reliable** — under uncertainty, noise, and adversarial conditions
-- **Generalizable** — across tasks, scales, and distribution shifts
-- **Interpretable** — to operators, engineers, and decision-makers
-- **Deployable** — in large-scale, real-world cyber-physical environments
-<!-- By integrating physics-guided structure, probabilistic reasoning, and safe reinforcement learning, my mission is to build the next generation of AI systems that are:
+By integrating physics-guided structure, probabilistic reasoning, and safe reinforcement learning, my mission is to build the next generation of AI systems that are:
 
 - Reliable, even under uncertainty, noise, and adversarial conditions
 - Generalizable across tasks, scales, and distribution shifts 
@@ -56,8 +62,6 @@ By integrating physics-guided structure, probabilistic reasoning, and safe reinf
 - Deployable in large-scale, real-world cyber-physical environments
 
 My research advances the foundation needed to deploy trustworthy AI across critical infrastructures, autonomous systems, and safety-critical infrastructure domains where reliability and robustness are essential for real-world impact.
-
--->
 
 ## Research Focus {#research-focus}
 These focus areas organize my ongoing and recent projects that bridge **fundamental methods** and **deployable systems**.
@@ -143,7 +147,7 @@ These focus areas organize my ongoing and recent projects that bridge **fundamen
 
 <div class="research-groups">
 
-  <a class="research-group-card" href="smart-energy.qmd">
+  <a class="research-group-card" href="research/smart-energy.qmd">
     <div class="rg-content">
       <strong>Safe & Intelligent Systems for Smart Energy</strong>
       <p>Physics-informed deep RL, safe and uncertainty-aware control, LLM-guided planning, and sim-to-real transfer for smart grid and DER-integrated energy systems.</p>
@@ -157,7 +161,7 @@ These focus areas organize my ongoing and recent projects that bridge **fundamen
     </div>
   </a>
 
-  <a class="research-group-card" href="ai-safety.qmd">
+  <a class="research-group-card" href="research/ai-safety.qmd">
     <div class="rg-content">
       <strong>AI Safety & Alignment</strong>
       <p>Behavioral and mechanistic evaluations for deceptive alignment, adversarial robustness, reward hacking detection, and scalable oversight for agentic LLM systems.</p>
@@ -170,7 +174,7 @@ These focus areas organize my ongoing and recent projects that bridge **fundamen
     </div>
   </a>
 
-  <a class="research-group-card" href="vision-simulation.qmd">
+  <a class="research-group-card" href="research/vision-simulation.qmd">
     <div class="rg-content">
       <strong>Vision & Simulation for Autonomous Systems</strong>
       <p>End-to-end perception-control pipelines, multimodal sensor fusion, and sim-to-real transfer using CARLA, AirSim, and OpenDSS for autonomous and cyber-physical systems.</p>
@@ -249,6 +253,153 @@ These focus areas organize my ongoing and recent projects that bridge **fundamen
   }
 }
 </style>
+<!-- Group: DRL-based Control -->
+
+<div class="group-label" style="justify-content:flex-start;">DRL-based Control</div>
+
+<div class="proj-grid">
+
+  <a class="proj-card" href="drl_vvc/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="drl_vvc/drl_vvc.png" alt="DRL Control">
+      <strong>DRL for Volt-VAR</strong><br>
+      Design control agents for voltage regulation and reactive power optimization in smart distribution grids.
+    </span>
+  </a>
+
+  <a class="proj-card" href="physics-informed-actor-critic/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="physics-informed-actor-critic/physics.png" alt="Actor Critic">
+      <strong>Physics-Informed Actor-Critic</strong><br>
+      Embed grid physics and control limits directly into the DRL learning loop for stable and efficient decisions.
+    </span>
+  </a>
+
+  <a class="proj-card" href="sim2real/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="sim2real/sim2real.png" alt="Sim2Real Transfer">
+      <strong>Sim-to-Real Transfer</strong><br>
+      Train agents in simulated OpenDSS environments and deploy them on real-time OPAL-RT setups.
+    </span>
+  </a>
+
+</div>
+
+<!-- Group: 🔐 Safe & Trustworthy RL -->
+
+<div class="group-label" style="justify-content:flex-start;">Safe & Trustworthy RL</div>
+
+<div class="proj-grid">
+
+  <a class="proj-card" href="safe/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="safe/safe.png" alt="Safe RL">
+      <strong>Robust & Stable Learning</strong><br>
+      Develop agents that ensure system safety, robustness, and interpretability under uncertainty.
+    </span>
+  </a>
+
+  <a class="proj-card" href="uncertainty/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="uncertainty/uncertainty.png" alt="Uncertainty Quantification">
+      <strong>Uncertainty-Aware Policies</strong><br>
+      Quantify epistemic and aleatoric uncertainty in high-stakes, partially observable settings.
+    </span>
+  </a>
+
+</div>
+
+<!-- Group: Transfer & Meta-Adaptation -->
+
+<div class="group-label" style="justify-content:flex-start;">Transfer & Meta-Adaptation</div>
+<div class="proj-grid">
+
+  <a class="proj-card" href="domain_adaptation/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="domain_adaptation/domain_adaptation.png" alt="Transfer Learning">
+      <strong>Domain Adaptation</strong><br>
+      Enable agents to generalize across grids with different topologies, dynamics, and loads.
+    </span>
+  </a>
+
+  <a class="proj-card" href="meta_rl/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="meta_rl/meta_rl.png" alt="Meta RL">
+      <strong>Meta-RL for Efficiency</strong><br>
+      Leverage meta-reasoning to accelerate learning in low-data, high-variance scenarios.
+    </span>
+  </a>
+
+</div>
+
+<!-- Group: Vision-Simulation Integration -->
+
+<div class="group-label" style="justify-content:flex-start;">Vision-Simulation Integration</div>
+<div class="proj-grid">
+
+  <a class="proj-card" href="carla/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="carla/carla.png" alt="Perception Control">
+      <strong>Perception-Control Fusion</strong><br>
+      Use CARLA and AirSim to train end-to-end systems in visual RL tasks with sensors.
+    </span>
+  </a>
+
+  <a class="proj-card" href="multimodal/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="multimodal/multimodal.png" alt="Multimodal Fusion">
+      <strong>Multi-modal Representations</strong><br>
+      Combine visual, state, and contextual features for better decision-making.
+    </span>
+  </a>
+
+</div>
+
+<!-- Group: LLM-Augmented Decision Systems -->
+
+<div class="group-label" style="justify-content:flex-start;">LLM-Augmented Decision Systems</div>
+
+<div class="proj-grid">
+
+  <a class="proj-card" href="llm_control/index.qmd">
+    <span class="proj-body proj-llm">
+      <img src="llm_control/llm_control.png" alt="LLM-guided control">
+      <strong>LLM-Guided Control</strong><br>
+      Translate natural language into actionable policies for real-world environments.
+    </span>
+  </a>
+
+</div>
+
+<div class="group-label" style="justify-content:flex-start;">AI Safety & Alignment</div>
+
+<div class="proj-grid">
+
+  <a class="proj-card" href="#">
+    <span class="proj-body proj-llm">
+      <img src="safe/safe.png" alt="Eval Awareness">
+      <strong>Evaluation Awareness</strong><br>
+      Detecting when models behave differently under evaluation vs. deployment — deceptive alignment and monitor transferability.
+    </span>
+  </a>
+
+  <a class="proj-card" href="#">
+    <span class="proj-body proj-llm">
+      <img src="safe/safe.png" alt="Adversarial Robustness">
+      <strong>Adversarial Robustness & Red-Teaming</strong><br>
+      Systematic stress-testing of LLM agents for reward hacking, obfuscated internal states, and behavioral failures.
+    </span>
+  </a>
+
+  <a class="proj-card" href="#">
+    <span class="proj-body proj-llm">
+      <img src="uncertainty/uncertainty.png" alt="Scalable Oversight">
+      <strong>Scalable Oversight</strong><br>
+      Designing oversight mechanisms and safety benchmarks for agentic systems operating in high-stakes environments.
+    </span>
+  </a>
+
+</div>
 ```
 
 
@@ -659,30 +810,8 @@ function toggleConfPapers(){
 :::
 
 ## Ongoing Projects {#ongoing-projects}
-```{=html}
-<div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-bottom:1.5rem;">
 
-  <div style="padding:1.1rem 1.2rem; border-radius:8px; background:#faf8f5; border:1px solid #e8e0d8;">
-    <div style="font-size:0.68rem; text-transform:uppercase; letter-spacing:0.09em; color:#b46939; font-weight:700; margin-bottom:0.4rem;">Smart Energy</div>
-    <div style="font-size:0.92rem; font-weight:700; color:#2a2a2a; margin-bottom:0.4rem;">Federated DRL for Cyber-Resilient Volt-VAR Optimization</div>
-    <div style="font-size:0.83rem; color:#666; line-height:1.6;">Decentralized, communication-efficient control using LSTM-enhanced PPO agents across distributed DERs.</div>
-  </div>
-
-  <div style="padding:1.1rem 1.2rem; border-radius:8px; background:#f0f4ff; border:1px solid #c5d3f0;">
-    <div style="font-size:0.68rem; text-transform:uppercase; letter-spacing:0.09em; color:#1f5fbf; font-weight:700; margin-bottom:0.4rem;">AI Safety</div>
-    <div style="font-size:0.92rem; font-weight:700; color:#2a2a2a; margin-bottom:0.4rem;">Stress-Testing Eval-Aware Safety Monitors</div>
-    <div style="font-size:0.83rem; color:#666; line-height:1.6;">Probing LLM agents for eval-awareness via CAA on Nemotron-49B and Mistral; extending replication to silent model organisms.</div>
-  </div>
-
-  <div style="padding:1.1rem 1.2rem; border-radius:8px; background:#f0fff4; border:1px solid #b2dfc2;">
-    <div style="font-size:0.68rem; text-transform:uppercase; letter-spacing:0.09em; color:#1f8f4d; font-weight:700; margin-bottom:0.4rem;">LLM Control</div>
-    <div style="font-size:0.92rem; font-weight:700; color:#2a2a2a; margin-bottom:0.4rem;">LLM-Guided Autonomous Planning for Smart Buildings</div>
-    <div style="font-size:0.83rem; color:#666; line-height:1.6;">Converting user prompts to interpretable control policies using LLMs (OpenAI, Claude) in CityLearn environments.</div>
-  </div>
-
-</div>
-```
-<!-- - Federated DRL for Cyber-Resilient Volt-VAR Optimization  
+- Federated DRL for Cyber-Resilient Volt-VAR Optimization  
   Decentralized, communication-efficient control using LSTM-enhanced PPO agents across distributed DERs.
 
 - One-Shot Policy Transfer with Physics Priors  
@@ -690,6 +819,4 @@ function toggleConfPapers(){
 
 - LLM-Guided Autonomous Planning for Smart Buildings  
   Convert user prompts to interpretable control policies using LLMs (OpenAI, Claude) in CityLearn environments.
--->
-
 
