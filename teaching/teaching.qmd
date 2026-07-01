@@ -144,7 +144,7 @@ nav[role="doc-toc"] li > a .nav-link-text {
 :::
 
 ::: {.g-col-12 .g-col-md-10}
-[Fall 2016](/teaching/coms1130/)
+[Fall 2020](/teaching/coms1130/)
 
 This foundational course focuses on using tools such as Microsoft Excel and Microsoft Access for effective data organization, analysis, and reporting. Students develop proficiency in applying formulas, creating pivot tables, designing queries, and building forms and visual analyses to support practical business and data-driven decision-making.
 :::
@@ -213,7 +213,7 @@ This course teaches the modeling and design of software systems using object-ori
 :::
 
 ::: {.g-col-12 .g-col-md-10}
-[Spring 2022](/teaching/coms3630/)
+[Spring 2022](/teaching/coms3630/), &nbsp; [Spring 2026](/teaching/coms3630/)
 
 This course covers the fundamentals of database architecture, data modeling, and Structured Query Language (SQL). Students gain hands-on experience with relational database systems while exploring key concepts such as indexing, transactions, normalization, and comprehensive database design. Emphasis is placed on designing robust schemas and writing efficient queries for real-world applications.
 

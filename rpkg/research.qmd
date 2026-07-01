@@ -12,7 +12,12 @@ format:
 ---
 
 ## Research{#research-vision}
-I develop safe, interpretable, and adaptive AI systems for real-world cyber-physical environments that must operate under uncertainty, strict physical constraints, and adversarial conditions. My work sits at the intersection of **safe reinforcement learning**, **physics-informed AI**, **probabilistic modeling**, and **AI safety evaluation**  with a core focus on building systems that are robust, verifiable, and deployable at scale in safety-critical domains.
+
+I develop safe, interpretable, and adaptive AI systems for real-world cyber-physical environments that must operate under uncertainty, strict physical constraints, and adversarial conditions. My work sits at the intersection of **safe reinforcement learning**, **physics-informed AI**, **probabilistic modeling**, and **AI safety evaluation** — with a core focus on building systems that are robust, verifiable, and deployable at scale in safety-critical domains.
+
+<p style="font-size:0.9rem; color:#666; margin:0.4rem 0 1.2rem 0;">
+  Ph.D. Dissertation: <em>"Safe and Robust Deep Reinforcement Learning for Constrained Control in DER-Integrated Smart Energy Grids"</em> — Iowa State University, 2026
+</p>
 
 <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.6rem;">
   <h3 style="margin:0; color:#7a2e1f;">Vision</h3>
@@ -25,39 +30,21 @@ I develop safe, interpretable, and adaptive AI systems for real-world cyber-phys
   </a>
 </div>
 
-<!-- I aim to create AI agents that generalize across environments, learn from imperfect or unreliable data, and remain stable under distribution shifts. These capabilities are essential both for scientific progress and for building production-grade intelligent systems used in industry.
-
-My research centers around five pillars:
-  
-- Safe & Trustworthy Reinforcement Learning: Designing agents that remain reliable under sensor noise, hardware faults, non-stationarity, and adversarial perturbations. This includes constraint-aware learning, certified robustness, and safe exploration in safety-critical settings.
-- Physics-informed Deep Reinforcement Learning (DRL): Embedding physical laws, invariants, and feasibility constraints directly into model architectures and learning objectives to improve convergence, interpretability, and real-world deployability.
-- Probabilistic & Bayesian Modeling: Quantifying epistemic and aleatoric uncertainty for risk-aware planning in partially observable, high-stakes environments using Bayesian neural networks, uncertainty-aware RL, and probabilistic inference.
-- Large Language Models (LLMs) for autonomous reasoning: Leveraging LLMs to support high-level planning, explainable decision pipelines, natural-language supervision, and adaptive control. This enables human-AI collaboration and interpretable reasoning in complex systems.
--  Vision-based simulation environments: Using platforms such as CARLA, CityLearn, AirSim, and OpenDSS to train agents in multimodal, visually rich environments, supporting robust perception-control integration and sim-to-real transfer.-->
-
 My research centers around three core thrusts:
 
 - **Safe & Trustworthy Reinforcement Learning**: Designing agents that remain reliable under sensor noise, hardware faults, non-stationarity, and adversarial perturbations — including constraint-aware learning, certified robustness, and safe exploration in safety-critical settings.
 - **Physics-Informed AI & Probabilistic Modeling**: Embedding physical laws, invariants, and feasibility constraints directly into model architectures; quantifying epistemic and aleatoric uncertainty for risk-aware planning in partially observable environments.
-- **AI Safety, Alignment & LLM Evaluation**: Designing behavioral and mechanistic evaluations to detect deceptive alignment, reward hacking, and eval-awareness in LLM agents; building scalable oversight frameworks for agentic systems in safety-critical deployments.  
+- **AI Safety, Alignment & LLM Evaluation**: Designing behavioral and mechanistic evaluations to detect deceptive alignment, reward hacking, and eval-awareness in LLM agents; building scalable oversight frameworks for agentic systems in safety-critical deployments.
 
 ### Mission
+
 By integrating physics-guided structure, probabilistic reasoning, and safe reinforcement learning, my goal is to build the next generation of AI systems that are:
 
 - **Reliable** — under uncertainty, noise, and adversarial conditions
 - **Generalizable** — across tasks, scales, and distribution shifts
 - **Interpretable** — to operators, engineers, and decision-makers
 - **Deployable** — in large-scale, real-world cyber-physical environments
-<!-- By integrating physics-guided structure, probabilistic reasoning, and safe reinforcement learning, my mission is to build the next generation of AI systems that are:
 
-- Reliable, even under uncertainty, noise, and adversarial conditions
-- Generalizable across tasks, scales, and distribution shifts 
-- Interpretable to operators, engineers, and decision-makers
-- Deployable in large-scale, real-world cyber-physical environments
-
-My research advances the foundation needed to deploy trustworthy AI across critical infrastructures, autonomous systems, and safety-critical infrastructure domains where reliability and robustness are essential for real-world impact.
-
--->
 
 ## Research Focus {#research-focus}
 These focus areas organize my ongoing and recent projects that bridge **fundamental methods** and **deployable systems**.
@@ -668,11 +655,11 @@ function toggleConfPapers(){
     <div style="font-size:0.83rem; color:#666; line-height:1.6;">Decentralized, communication-efficient control using LSTM-enhanced PPO agents across distributed DERs.</div>
   </div>
 
-  <div style="padding:1.1rem 1.2rem; border-radius:8px; background:#f0f4ff; border:1px solid #c5d3f0;">
-    <div style="font-size:0.68rem; text-transform:uppercase; letter-spacing:0.09em; color:#1f5fbf; font-weight:700; margin-bottom:0.4rem;">AI Safety</div>
-    <div style="font-size:0.92rem; font-weight:700; color:#2a2a2a; margin-bottom:0.4rem;">Stress-Testing Eval-Aware Safety Monitors</div>
-    <div style="font-size:0.83rem; color:#666; line-height:1.6;">Probing LLM agents for eval-awareness via CAA on Nemotron-49B and Mistral; extending replication to silent model organisms.</div>
-  </div>
+<div style="padding:1.1rem 1.2rem; border-radius:8px; background:#f0f4ff; border:1px solid #c5d3f0;">
+  <div style="font-size:0.68rem; text-transform:uppercase; letter-spacing:0.09em; color:#1f5fbf; font-weight:700; margin-bottom:0.4rem;">AI Safety</div>
+  <div style="font-size:0.92rem; font-weight:700; color:#2a2a2a; margin-bottom:0.4rem;">Stress-Testing Eval-Aware Safety Monitors</div>
+  <div style="font-size:0.83rem; color:#666; line-height:1.6;">Probing LLM agents for eval-awareness via CAA on Nemotron-49B and Mistral; extending replication to silent model organisms. Supported by an NSF ACCESS ACCELERATE allocation (CIS260799).</div>
+</div>
 
   <div style="padding:1.1rem 1.2rem; border-radius:8px; background:#f0fff4; border:1px solid #b2dfc2;">
     <div style="font-size:0.68rem; text-transform:uppercase; letter-spacing:0.09em; color:#1f8f4d; font-weight:700; margin-bottom:0.4rem;">LLM Control</div>
