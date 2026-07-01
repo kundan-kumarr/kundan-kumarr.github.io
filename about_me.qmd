@@ -1,6 +1,6 @@
 ---
 title: "Kundan Kumar"
-subtitle: "AI Safety Research Fellow @ Algoverse | PhD Researcher | Safe Reinforcement Learning, Multi-Agent Systems & LLM Agents"
+subtitle: "AI Safety Research Fellow @ Algoverse | PhD, Computer Science (Iowa State) | Safe Reinforcement Learning, Multi-Agent Systems & LLM Agents"
 image: misc/info/photo.png
 
 about:
@@ -97,7 +97,7 @@ format:
 ---
 
 ::: {#hero-heading}
-Hi! I’m <strong style="color:#007bff;">Kundan Kumar</strong>, a Ph.D. candidate in Computer Science with a minor in Statistics at Iowa State University and currently an <strong style="color:#007bff;">AI Safety Research Fellow at Algoverse</strong>. My research centers on building safe, reliable, and adaptable AI systems for next-generation cyber-physical infrastructure, including smart grids, autonomous systems, and multi-agent environments, with a particular focus on evaluations, adversarial robustness, and scalable oversight for agentic systems.
+Hi! I'm <strong style="color:#007bff;">Kundan Kumar</strong>, a Ph.D. in Computer Science (minor: Statistics) from Iowa State University and currently an <strong style="color:#007bff;">AI Safety Research Fellow at Algoverse</strong>. My research centers on building safe, reliable, and adaptable AI systems for next-generation cyber-physical infrastructure, including smart grids, autonomous systems, and multi-agent environments, with a particular focus on evaluations, adversarial robustness, and scalable oversight for agentic systems.
 
 I design safety-critical deep reinforcement learning (DRL) systems that integrate domain knowledge, uncertainty, and constraints for robust decision-making under distribution shifts and partial observability. My focus includes adversarial robustness, transfer learning, and scalable oversight for reliability in high-stakes environments. Recently, I’ve developed LLM-integrated frameworks that connect perception, planning, and language reasoning, linking low-level control with interpretable decision-making. I am particularly interested in AI safety, alignment, and evaluation at the intersection of foundation models and physical systems.
 
@@ -510,6 +510,18 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 <h4 align="center">News Highlights</h4>
 <div class="news-container">
 
+<!-- PhD Complete -->
+<div class="news-item">
+  <div class="news-date">[Jun 2026]</div>
+  <img src="/misc/news/isu.png" alt="Iowa State University" class="news-logo">
+
+  <div class="news-card">
+    <div class="news-content">
+      Successfully defended my Ph.D. dissertation at Iowa State University, advised by Dr. Christopher Quinn and Dr. Ravikumar Gelli.
+    </div>
+  </div>
+</div>
+
 <!--- Algoverse -->
 <!-- Algoverse AI Safety Research Fellowship -->
 <div class="news-item">
@@ -562,7 +574,7 @@ Developing and evaluating methods for agentic AI safety, including robustness te
   </div>
 
   <!-- Cohere ML Summer School -->
-  <div class="news-item">
+<!--  <div class="news-item">
     <div class="news-date">[Jul 2025]</div>
     <img src="/misc/news/cohere.png" alt="Cohere Labs" class="news-logo">
 
@@ -574,7 +586,7 @@ Developing and evaluating methods for agentic AI safety, including robustness te
         </a>, hosted by Cohere Labs.
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- IEEE PES GM -->
 <!--  <div class="news-item">

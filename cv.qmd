@@ -27,7 +27,7 @@ page-layout: full
   </tr>
 </table>
 <p style="font-size:1.05rem; color:#444; margin-top:0.4rem;">
-PhD candidate and AI safety researcher with 10+ years of experience, specializing in physics-informed deep RL, uncertainty quantification, and adversarial robustness for critical infrastructure, committed to building AI that is safe, auditable, and deployable in the real world.
+AI safety researcher with a Ph.D. in Computer Science and 5+ years of industry experience, specializing in physics-informed deep RL, uncertainty quantification, and adversarial robustness for critical infrastructure, committed to building AI that is safe, auditable, and deployable in the real world.
 </p>
 
 
@@ -268,12 +268,13 @@ Iowa State University
         font-family: system-ui, sans-serif;
         font-size: 0.9em;
         white-space: nowrap;">
-        2020 &nbsp;—&nbsp; 2026 (Expected)
+        2020 &nbsp;—&nbsp; 2026 
       </span>
     </td>
   </tr>
 </table> 
 <!-- **Ph.D. in Computer Science (Minor: Statistics)**   `Aug 2020 – Dec 2025 (expected)` -->
+- Dissertation: *"Safe and Robust Deep Reinforcement Learning for Constrained Control in DER-Integrated Smart Energy Grids"* — Advisors: Dr. Christopher Quinn, Dr. Ravikumar Gelli
 - Research Focus: Deep Reinforcement Learning, Physics-Informed AI, Uncertainty Quantification, Bayesian Modeling, Secure & Robust Learning, and LLM-Driven Autonomous Agents. Work spans critical-infrastructure optimization, safety-critical control, and large-scale distributed systems.
 - Technical Contributions: Developed physics-informed DRL algorithms for real-time control, Bayesian neural networks with uncertainty estimation for limited/unreliable data, adversarial robustness frameworks for cyber-physical systems, and LLM-augmented decision-making for energy and autonomous systems.
 - Graduate Coursework:
@@ -536,7 +537,7 @@ Deep Reinforcement Learning & Safety-Critical AI for Autonomous Systems
 
 
 ## <i class="fas fa-award"></i> Honors & Awards
-
+- **ACCESS ACCELERATE Allocation Award** (CIS260799) — "Mechanistic, Transfer-Robust, and Adversarially-Hardened Oversight Methods for Evaluation-Aware Language Models," ~1M compute credits (2026)
 - Selected, Seventh Workshop on Autonomous Energy Systems @ NREL (2024)
 - Selected, ByteBoost Workshop on Accelerating HPC Research Skills (2024)
 - Selected, Oxford Machine Learning Summer School (OxML) (2022)

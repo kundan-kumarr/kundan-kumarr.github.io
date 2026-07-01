@@ -401,4 +401,28 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+/* About-page social/contact link buttons (Email, LinkedIn, GitHub, etc.) */
+.about-link {
+  border: 1px solid $theme-pumpkin !important;
+  color: $theme-pumpkin !important;
+  border-radius: 6px;
+  background-color: transparent;
+  transition: all 0.2s ease;
+}
 
+.about-link:hover {
+  background-color: $theme-pumpkin !important;
+  color: $theme-white !important;
+  transform: translateY(-2px);
+}
+
+.about-link i.bi,
+.about-link .bi {
+  color: $theme-pumpkin !important;
+  transition: color 0.2s ease;
+}
+
+.about-link:hover i.bi,
+.about-link:hover .bi {
+  color: $theme-white !important;
+}
