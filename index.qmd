@@ -186,30 +186,21 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 <h3 align="center">Other Research Interests</h3>
 <div class="proj-grid">
 
-<a class="proj-card" href="">
+<a class="proj-card" href="/rpkg/ai-safety.html">
   <span class="proj-body proj-stat">
     <strong>AI Alignment & Safety</strong><br>
     Agentic evaluations, adversarial robustness, scalable oversight, and alignment for foundation model–based systems.
   </span>
 </a>
 
+<a class="proj-card" href="/rpkg/llm_control/">
+  <span class="proj-body proj-stat">
+    <strong>LLM Reasoning & Agents</strong><br>
+    Agentic workflows (LangChain/LangGraph), tool-use, memory, retrieval, planning & reflection loops for robust multi-step reasoning.
+  </span>
+</a>
 
-  <a class="proj-card" href="">
-    <span class="proj-body proj-stat">
-      <strong>LLM Reasoning & Agents</strong><br>
-      Agentic workflows (LangChain/LangGraph), tool-use, memory, retrieval, planning & reflection loops for robust multi-step reasoning.
-    </span>
-  </a>
-
-
- <!-- <a class="proj-card" href="">
-    <span class="proj-body proj-stat">
-      <strong>Statistical ML</strong><br>
-      Uncertainty quantification, probabilistic modeling, and data-driven inference in dynamic environments.
-    </span>
-  </a> --> 
-
-<a class="proj-card" href="">
+<a class="proj-card" href="/rpkg/vision-simulation.html">
   <span class="proj-body proj-stat">
     <strong>Autonomous Perception & Control</strong><br>
     Vision-based perception (detection, segmentation, sensor fusion) integrated with learning-based control and trajectory planning for autonomous systems.
@@ -315,90 +306,6 @@ Beyond research, I enjoy sharing my insights through educational content on [Sub
 </div>
 ```
 ---
-
-```{=html}
-<style>
-.news-container {
-  position: relative;
-  padding-left: 10rem;
-  margin-left: 2rem;
-}
-
-.news-container::before {
-  content: '';
-  position: absolute;
-  left: 8rem;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: #d0d0d0;
-}
-
-.news-item {
-  position: relative;
-  margin-bottom: 1.0rem;
-  padding: 1.2rem 1.5rem;
-  background: #f8f9fa;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  margin-left: 1.5rem;
-}
-
-.news-item:hover {
-  background: #fff;
-  box-shadow: 0 4px 12px rgba(0,123,255,0.15);
-  transform: translateX(5px);
-}
-
-.news-item::before {
-  content: '';
-  position: absolute;
-  left: -15px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 15px solid #f8f9fa;
-}
-.news-item::after {
-  content: '';
-  position: absolute;
-  left: -3rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 12px;
-  height: 12px;
-  background: #007bff;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px #007bff;
-}
-
-.news-date {
-  position: absolute;
-  left: -10.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-weight: 700;
-  color: #007bff;
-  font-size: 0.9rem;
-  text-align: right;
-  width: 7rem;
-}
-
-.news-content {
-  color: #333;
-  line-height: 1.7;
-}
-
-.news-content a {
-  color: #0056b3;
-  text-decoration: none;
-}
-</style>
-
-```
 
 
 ```{=html}

@@ -1,33 +1,16 @@
 /*-- scss:defaults --*/
 
-$theme-black: #4c4c4c;
-$theme-white: white;
-$theme-grey: #e9ecef;
-
-$theme-purple3: #88398A;
-$theme-purple4: #9d709e;
-$theme-purple5: #562457;
-$theme-purplebrown1: #b996a4;
-$theme-purplebrown2: #7c6c84;
-$theme-darkcoffee1: #570e06;
-$theme-darkcoffee4: #1a1a1a;
-$theme-darkcoffee2: #78504b;
+/* Brand palette — only colors referenced in this file */
+$theme-white:       white;
 $theme-darkcoffee3: #632e0d;
+$theme-darkcoffee4: #1a1a1a;
 $theme-milkcoffee0: #f2ece3;
-$theme-milkcoffee3: #cca79f;
-$theme-milkcoffee2: #b98f68;
 $theme-milkcoffee4: #222222;
-$theme-milkcoffee1: #9e736a;
-$theme-mocha1: #7f2606;
-$theme-mocha2: #9a4c28;
-$theme-mocha3: #b46939;
-$theme-orange: #f9af11;
-$theme-pumpkin: #d05808;
-$theme-darkgreen1: #80a074;
-$theme-darkgreen2: #445740;
-
-
-
+$theme-mocha1:      #7f2606;
+$theme-mocha2:      #9a4c28;
+$theme-pumpkin:     #d05808;
+$theme-darkgreen1:  #80a074;
+$theme-darkgreen2:  #445740;
 
 
 $body-bg: $theme-white;
@@ -36,13 +19,11 @@ $headings-color: $theme-milkcoffee4; // applies to all
 $link-color: $theme-pumpkin;
 
 // code
-$code-color: $theme-mocha2;
-$code-bg: $theme-milkcoffee0;
+$code-color:          $theme-mocha2;
+$code-bg:             $theme-milkcoffee0;
 $code-block-bg-alpha: -0.8;
-//$code-block-border-left: TRUE;
-//$code-block-border-left-style: solid;
 
-$background-color: $theme-milkcoffee0;
+$background-color:    $theme-milkcoffee0;
 
 // navigation
 $navbar-bg: $theme-darkgreen2;
@@ -52,38 +33,19 @@ $callout-color-note: $theme-darkgreen2;
 $callout-color-tip: $theme-darkgreen1;
 
 
-// font
-
-
-@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code_Pro&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&family=Yanone+Kaffeesatz&display=swap');
-
-
+// fonts — only the four families actually used
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
-//$font-family-sans-serif: 'Poppins', sans-serif;
-$font-family-sans-serif: 'Lato', sans-serif;  // body text
+$font-family-sans-serif: 'Lato', sans-serif;       // body text
+$font-family-monospace:  'Source Code Pro', monospace;
+$font-pt:                'PT Serif', sans-serif;   // used in heading rules below
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
-$font-family-monospace: 'Source Code Pro', monospace;
-//$font-family: "Atkinson Hyperlegible", sans-serif;
-$font-poppins: 'Poppins', sans-serif; 
-$font-pt: 'PT Serif', sans-serif;
-$font-cabin: 'Cabin', sans-serif;
-$font-montserrat: 'Montserrat', sans-serif;
-$font-prompt: 'Prompt', sans-serif;
-
-//$font-family-sans-serif: 'Yanone Kaffeesatz', Tahoma, sans-serif;
-//$font-family-sans-serif: 'Signika Negative';
 
 $font-size-root: 16px;
 
@@ -340,14 +302,18 @@ h4 {
 }
 
 /* Section headings with FA icons */
-h2 .fa-briefcase        { color: #2E86C1; }
-h2 .fa-graduation-cap   { color: #27AE60; }
+h2 .fa-briefcase          { color: #2E86C1; }
+h2 .fa-graduation-cap     { color: #27AE60; }
 h2 .fa-chalkboard-teacher { color: #8E44AD; }
-h2 .fa-flask            { color: #E67E22; }
-h2 .fa-user-gear        { color: #16A085; }
-h2 .fa-award            { color: #F39C12; }
-h2 .fa-handshake-angle  { color: #C0392B; }
-h2 .fa-diagram-project  { color: #2980B9; }
+h2 .fa-flask              { color: #E67E22; }
+h2 .fa-user-gear          { color: #16A085; }
+h2 .fa-award              { color: #F39C12; }
+h2 .fa-handshake-angle    { color: #C0392B; }
+h2 .fa-diagram-project    { color: #2980B9; }
+h2 .fa-crosshairs         { color: #d05808; }
+h2 .fa-laptop-code        { color: #445740; }
+h2 .fa-chart-line         { color: #9a4c28; }
+h2 .fa-pen-nib            { color: #7f2606; }
 
 /* Icon sizing and spacing */
 h2 i.fas, h2 i.far, h2 i.fab {
