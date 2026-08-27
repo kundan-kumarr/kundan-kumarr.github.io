@@ -439,8 +439,58 @@ window.Quarto = {
 <p style="font-size:1.05rem; color:#444; margin-top:0.4rem;">
 AI safety researcher with a Ph.D.&nbsp;in Computer Science and 5+ years of industry experience, specializing in physics-informed deep RL, uncertainty quantification, and adversarial robustness for critical infrastructure, committed to building AI that is safe, auditable, and deployable in the real world.
 </p>
+<style>
+/* ── CV entry card ── */
+.cv-entry {
+  border: 1px solid rgba(208,88,8,0.15);
+  border-radius: 10px;
+  padding: 1.1rem 1.4rem 0.9rem 1.4rem;
+  margin-bottom: 1.4rem;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.cv-entry:hover {
+  box-shadow: 0 4px 16px rgba(208,88,8,0.09);
+  transform: translateY(-2px);
+}
+
+/* ── Tag chips (same system as about page) ── */
+.cv-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.7rem; }
+.cv-tag {
+  font-size: 0.69rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.cv-tag-orange { background: rgba(208,88,8,0.08); color: #7f2606; border: 1px solid rgba(208,88,8,0.22); }
+.cv-tag-green  { background: rgba(68,87,64,0.09);  color: #2d3d2a; border: 1px solid rgba(68,87,64,0.25); }
+.cv-tag-blue   { background: rgba(30,86,125,0.09); color: #1e567d; border: 1px solid rgba(30,86,125,0.22); }
+.cv-tag-grey   { background: rgba(100,100,100,0.07); color: #444; border: 1px solid rgba(100,100,100,0.2); }
+
+/* ── Skill chips grid ── */
+.skill-category { margin-bottom: 1.1rem; }
+.skill-cat-label {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.07em;
+  text-transform: uppercase; color: #7f2606; margin-bottom: 0.4rem;
+}
+.skill-chip-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.skill-chip {
+  display: inline-block; padding: 0.25rem 0.7rem;
+  border-radius: 999px; font-size: 0.78rem; font-weight: 500; line-height: 1.4;
+}
+.sc-orange { background: rgba(208,88,8,0.09); color: #a03a00; border: 1px solid rgba(208,88,8,0.28); }
+.sc-green  { background: rgba(68,87,64,0.09);  color: #2d3d2a; border: 1px solid rgba(68,87,64,0.28); }
+.sc-blue   { background: rgba(30,86,125,0.09); color: #1e567d; border: 1px solid rgba(30,86,125,0.25); }
+.sc-grey   { background: rgba(100,100,100,0.07); color: #444; border: 1px solid rgba(100,100,100,0.2); }
+
+/* Ensure logo inline-flex looks tidy inside cards */
+.cv-entry .d-inline-flex { margin-bottom: 0.1rem; }
+</style>
 <section id="professional-experience" class="level2">
 <h2 data-anchor-id="professional-experience"><i class="fas fa-briefcase"></i> Professional Experience</h2>
+<div class="cv-entry">
 <div class="d-inline-flex" style="align-items:baseline">
 <div class="p-2">
 <p><img src="assets/img/algoverse.png" class="img-fluid" alt="Algoverse logo" width="90"></p>
@@ -471,6 +521,15 @@ AI safety researcher with a Ph.D.&nbsp;in Computer Science and 5+ years of indus
 <li>Designing behavioral and mechanistic evaluations to detect deceptive alignment, reward hacking, and obfuscated internal states in LLM agents.</li>
 <li>Collaborating with researchers and mentors to design safety benchmarks and diagnostic experiments.</li>
 </ul>
+<div class="cv-tags">
+  <span class="cv-tag cv-tag-orange">Agentic Evaluations</span>
+  <span class="cv-tag cv-tag-orange">Adversarial Robustness</span>
+  <span class="cv-tag cv-tag-orange">Scalable Oversight</span>
+  <span class="cv-tag cv-tag-orange">Deceptive Alignment</span>
+  <span class="cv-tag cv-tag-green">LLM Agents</span>
+</div>
+</div>
+<div class="cv-entry">
 <div class="d-inline-flex" style="align-items:baseline">
 <div class="p-2">
 <p><img src="assets/img/BlueDot_Impact_Logo.svg" class="img-fluid" alt="BlueDot Impact logo" width="150"></p>
@@ -501,6 +560,13 @@ AI safety researcher with a Ph.D.&nbsp;in Computer Science and 5+ years of indus
 <li>Studied key alignment paradigms — RLHF, Constitutional AI, scalable oversight, and debate — alongside mechanistic interpretability techniques and evaluation frameworks for frontier models.</li>
 <li>Engaged in structured readings, facilitated discussions, and collaborative problem-solving with a global cohort of researchers and practitioners working on safe and beneficial AI development.</li>
 </ul>
+<div class="cv-tags">
+  <span class="cv-tag cv-tag-green">AI Alignment</span>
+  <span class="cv-tag cv-tag-green">Interpretability</span>
+  <span class="cv-tag cv-tag-green">RLHF</span>
+  <span class="cv-tag cv-tag-green">AI Governance</span>
+</div>
+</div>
 <div class="d-inline-flex" style="align-items:baseline">
 <div class="p-2">
 <p><img src="assets/img/nrel.png" class="img-fluid" alt="NREL logo" width="90"></p>
@@ -532,6 +598,13 @@ AI safety researcher with a Ph.D.&nbsp;in Computer Science and 5+ years of indus
 <li>Co-authored the paper “Advanced Semi-Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems,” accepted at IEEE Power &amp; Energy Society General Meeting (PES GM) 2025, demonstrating robust phase identification under noisy measurements and scarce ground-truth labels.</li>
 <li>Deployed the trained ML models into a practical workflow for distribution utilities, including data preprocessing pipelines, model serving, and evaluation; implemented containerized deployment and API-based integration with existing grid analytics tools to enable reproducible, scalable, and operator-ready decision support.</li>
 </ul>
+<div class="cv-tags">
+  <span class="cv-tag cv-tag-blue">Bayesian Neural Networks</span>
+  <span class="cv-tag cv-tag-blue">Semi-Supervised Learning</span>
+  <span class="cv-tag cv-tag-blue">Uncertainty Estimation</span>
+  <span class="cv-tag cv-tag-grey">Smart Grid</span>
+  <span class="cv-tag cv-tag-grey">Docker · Python</span>
+</div>
 <div class="d-inline-flex" style="align-items:baseline">
 <div class="p-2">
 <p><img src="assets/img/comcast.png" class="img-fluid" alt="Comcast logo" width="90"></p>
@@ -563,6 +636,13 @@ AI safety researcher with a Ph.D.&nbsp;in Computer Science and 5+ years of indus
 <li>Delivered low-latency analytics dashboards with PrestoDB, Athena, and Python, enabling real-time visibility into network performance and fraud patterns and improving cross-team decision speed and operational response.</li>
 <li>Collaborated with cross-functional teams (security, data engineering, product) to integrate fraud-intelligence signals into production systems, improving detection latency, system resilience, and customer-impact mitigation.</li>
 </ul>
+<div class="cv-tags">
+  <span class="cv-tag cv-tag-orange">Anomaly Detection</span>
+  <span class="cv-tag cv-tag-orange">Streaming Pipelines</span>
+  <span class="cv-tag cv-tag-grey">Amazon Kinesis · RabbitMQ</span>
+  <span class="cv-tag cv-tag-grey">PrestoDB · Athena</span>
+  <span class="cv-tag cv-tag-grey">Python</span>
+</div>
 <div class="d-inline-flex" style="align-items:baseline">
 <div class="p-2">
 <p><img src="assets/img/IBM.png" class="img-fluid" alt="IBM logo" width="60"></p>
@@ -593,6 +673,12 @@ AI safety researcher with a Ph.D.&nbsp;in Computer Science and 5+ years of indus
 <li>Built a real-time monitoring and observability platform using Grafana, Flask, and distributed exporters, providing actionable visibility across 100+ cloud servers and critical microservices.</li>
 <li>Designed and automated performance-monitoring and alerting pipelines, cutting incident response time by 60% through intelligent thresholds, anomaly alerts, and integrated on-call workflows.</li>
 </ul>
+<div class="cv-tags">
+  <span class="cv-tag cv-tag-grey">OpenShift</span>
+  <span class="cv-tag cv-tag-grey">Grafana · Flask</span>
+  <span class="cv-tag cv-tag-grey">Cloud Infrastructure</span>
+  <span class="cv-tag cv-tag-grey">Observability</span>
+</div>
 <div class="d-inline-flex" style="align-items:baseline">
 <div class="p-2">
 <p><img src="assets/img/hp.png" class="img-fluid" alt="HP logo" width="60"></p>

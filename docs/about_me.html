@@ -34,6 +34,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./misc/info/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -44,9 +46,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-a88deade1133a401a461acf351919818.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f26fe6402379d02e8cc205d0f4ddf424.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-522f4c891bc2ef565d9b3dcc0e432195.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-f26fe6402379d02e8cc205d0f4ddf424.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-45da1cf7d9ce27eccbc34bf06b92728a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-095cb83692d058a32233c6d94e9dda41.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-45da1cf7d9ce27eccbc34bf06b92728a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,6 +76,119 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-blog .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description','listing-author','listing-date','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-blog'] = new List('listing-blog', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-talk .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-talk'] = new List('listing-talk', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-project .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-project'] = new List('listing-project', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-publication .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-publication'] = new List('listing-publication', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F9QK4C80G"></script>
 
 <script type="text/javascript">
@@ -376,40 +491,27 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#current-focus" id="toc-current-focus" class="nav-link active" data-scroll-target="#current-focus"><i class="fas fa-crosshairs"></i> Current Focus</a></li>
-  <li><a href="#research" id="toc-research" class="nav-link" data-scroll-target="#research"><i class="fas fa-flask"></i> Research</a></li>
-  <li><a href="#technical-skills" id="toc-technical-skills" class="nav-link" data-scroll-target="#technical-skills"><i class="fas fa-laptop-code"></i> Technical Skills</a></li>
-  <li><a href="#education-experience" id="toc-education-experience" class="nav-link" data-scroll-target="#education-experience"><i class="fas fa-graduation-cap"></i> Education &amp; Experience</a></li>
-  <li><a href="#at-a-glance" id="toc-at-a-glance" class="nav-link" data-scroll-target="#at-a-glance"><i class="fas fa-chart-line"></i> At a Glance</a></li>
-  <li><a href="#beyond-research" id="toc-beyond-research" class="nav-link" data-scroll-target="#beyond-research"><i class="fas fa-pen-nib"></i> Beyond Research</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/about_me.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 
 
 
 
-<div class="quarto-about-trestles">
+<div class="quarto-about-trestles column-page">
   <div class="about-entity">
     <img src="misc/info/photo.png" class="about-image
-  round " style="height: 13em; width: 13em;">
+  round " style="height: 12em; width: 12em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Kundan Kumar</h1>
-<p class="subtitle lead">AI Safety Research Fellow · PhD in Computer Science · Iowa State University</p>
+<p class="subtitle lead">AI Safety Research Fellow @ Algoverse | PhD in Computer Science (Statistics Minor), Iowa State | Evaluations, Adversarial Robustness &amp; Scalable Oversight</p>
 </div>
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
   </div>
 </header>
     <div class="about-links">
@@ -444,410 +546,486 @@ window.Quarto = {
 </div>
   </div>
   <div class="about-contents"><div id="hero-heading">
-<p>I’m an AI researcher with a <strong>Ph.D.&nbsp;in Computer Science</strong> (minor: Statistics) from Iowa State University, and a current <strong>AI Safety Research Fellow at <a href="https://algoverseairesearch.org/ai-safety-fellowship">Algoverse</a></strong>.</p>
-<p>My path into research started with a practical question: <em>how do we build systems that behave reliably when the real world doesn’t cooperate?</em> That question pulled me from software engineering at Comcast into a PhD focused on safety-critical control for smart energy infrastructure — and eventually toward the broader challenge of making AI systems trustworthy at scale.</p>
-<p>I work at the intersection of <strong>deep reinforcement learning</strong>, <strong>AI safety</strong>, and <strong>physical systems</strong> — building agents that not only perform well, but can be trusted in high-stakes environments.</p>
+<p>Hi! I’m <strong style="color:#007bff;">Kundan Kumar</strong>, a Ph.D.&nbsp;in Computer Science (minor: Statistics) from Iowa State University and currently an <strong style="color:#007bff;">AI Safety Research Fellow at Algoverse</strong>. My research centers on building safe, reliable, and adaptable AI systems for next-generation cyber-physical infrastructure, including smart grids, autonomous systems, and multi-agent environments, with a particular focus on evaluations, adversarial robustness, and scalable oversight for agentic systems.</p>
+<p>I design safety-critical deep reinforcement learning (DRL) systems that integrate domain knowledge, uncertainty, and constraints for robust decision-making under distribution shifts and partial observability. My focus includes adversarial robustness, transfer learning, and scalable oversight for reliability in high-stakes environments. Recently, I’ve developed LLM-integrated frameworks that connect perception, planning, and language reasoning, linking low-level control with interpretable decision-making. I am particularly interested in AI safety, alignment, and evaluation at the intersection of foundation models and physical systems.</p>
+<p>Beyond research, I enjoy sharing my insights through educational content on <a href="https://neuravp.substack.com/">Substack</a> and <a href="https://www.youtube.com/@AIAgentic-007/">YouTube</a>. Outside of work, I love cooking and ice skating ⛸️.</p>
 </div></div>
 </div>
 
 <hr>
+<!--### Other Research Interests -->
 <style>
-/* ── Expertise badge chips ── */
-.skill-group {
-  margin-bottom: 1.4rem;
-}
-.skill-group-label {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #7f2606;
-  margin-bottom: 0.45rem;
-}
-.skill-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-}
-.chip {
-  display: inline-block;
-  padding: 0.28rem 0.75rem;
-  border-radius: 999px;
-  font-size: 0.78rem;
-  font-weight: 500;
-  line-height: 1.4;
-  white-space: nowrap;
-}
-.chip-primary   { background: rgba(208,88,8,0.10);  color: #a03a00; border: 1px solid rgba(208,88,8,0.30); }
-.chip-safety    { background: rgba(68,87,64,0.10);  color: #2d3d2a; border: 1px solid rgba(68,87,64,0.30); }
-.chip-lang      { background: rgba(87,142,255,0.09);color: #1e4fa8; border: 1px solid rgba(87,142,255,0.25);}
-.chip-tool      { background: rgba(127,38,6,0.07);  color: #6b2400; border: 1px solid rgba(127,38,6,0.20); }
+  .proj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1rem;
+  }
+  .proj-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #1e567d;
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+    transition: transform .15s ease;
+    text-decoration: none;
+    color: inherit;
+    min-height: 210px;
+  }
+  .proj-card:hover {
+    transform: translateY(-4px);
+  }
+  .proj-body {
+    display: block;
+    padding: 1rem 1.1rem 1.3rem 1.1rem;
+    font-family: 'Nunito', sans-serif;
+  }
+  .proj-cv strong {
+    color: #228B22; /* Blue for Computer Vision */
+    font-size: 1.05rem;
+  }
+  .proj-stat strong {
+    color: #57B9FF; /* Blue for Statistical ML */
+    font-size: 1.05rem;
+  }
+  .proj-drive strong {
+    color: #8B0000; /* Blue for Self-Driving */
+    font-size: 1.05rem;
+  }
+  .proj-llm strong {
+    color: #8B008B; /* Dark Magenta for LLM Reasoning */
+    font-size: 1.05rem;
+  }
+</style>
+<h3 align="center">Other Research Interests</h3>
+<div class="proj-grid">
 
-/* ── Highlight call-out card ── */
-.highlight-card {
-  background: linear-gradient(135deg, rgba(208,88,8,0.06) 0%, rgba(68,87,64,0.06) 100%);
-  border-left: 4px solid #d05808;
-  border-radius: 0 8px 8px 0;
-  padding: 1.1rem 1.4rem;
-  margin: 1.6rem 0;
-  font-size: 0.97rem;
-  line-height: 1.75;
-}
-.highlight-card strong { color: #7f2606; }
+<a class="proj-card" href="./rpkg/ai-safety.html">
+  <span class="proj-body proj-stat">
+    <strong>AI Alignment &amp; Safety</strong><br>
+    Agentic evaluations, adversarial robustness, scalable oversight, and alignment for foundation model–based systems.
+  </span>
+</a>
 
-/* ── Research focus cards ── */
-.focus-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  gap: 1rem;
-  margin-top: 0.8rem;
-}
-.focus-card {
-  border: 1px solid rgba(208,88,8,0.2);
-  border-radius: 10px;
-  padding: 1.1rem 1.2rem;
-  background: #fff;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-.focus-card:hover {
-  box-shadow: 0 4px 16px rgba(208,88,8,0.12);
-  transform: translateY(-2px);
-}
-.focus-icon {
-  font-size: 1.4rem;
-  margin-bottom: 0.4rem;
-  display: block;
-}
-.focus-title {
-  font-weight: 700;
-  font-size: 0.95rem;
-  color: #7f2606;
-  margin-bottom: 0.3rem;
-}
-.focus-desc {
-  font-size: 0.85rem;
-  color: #444;
-  line-height: 1.6;
-}
+<a class="proj-card" href="./rpkg/llm_control/">
+  <span class="proj-body proj-stat">
+    <strong>LLM Reasoning &amp; Agents</strong><br>
+    Agentic workflows (LangChain/LangGraph), tool-use, memory, retrieval, planning &amp; reflection loops for robust multi-step reasoning.
+  </span>
+</a>
 
-/* ── Education / experience timeline ── */
-.timeline {
+<a class="proj-card" href="./rpkg/vision-simulation.html">
+  <span class="proj-body proj-stat">
+    <strong>Autonomous Perception &amp; Control</strong><br>
+    Vision-based perception (detection, segmentation, sensor fusion) integrated with learning-based control and trajectory planning for autonomous systems.
+  </span>
+</a>
+
+</div>
+<hr>
+<!--### Explore My Work -->
+<style>
+  .explore-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    margin-top: 0.0rem;
+    align-items: start;
+  }
+
+  .explore-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .explore-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #1e529d;
+    margin-bottom: 0.8rem;
+  }
+
+  .explore-box {
+    border: 0px solid #007bff33;
+    background: #f9fbff;
+    border-radius: 10px;
+    padding: 0.1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    
+  }
+
+  .explore-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+
+  .explore-link {
+    text-align: center;
+    margin-top: 0.8rem;
+  }
+
+  .explore-link a {
+    color: #e65100;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .explore-link a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<h3 align="center">Explore My Work</h3>
+<div class="explore-section">
+
+  <div class="explore-item">
+    <h4 class="explore-title">Blogs</h4>
+    <div class="explore-box">
+      <div id="listing-blog" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-1">
+<div class="g-col-1" data-index="0" data-categories="U2FmZS1BSSUyQ0FsaWdubWVudCUyQ0RhdGElMjBzY2llbmNl" data-listing-date-sort="1764828000000" data-listing-file-modified-sort="1786719718291" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1086">
+<a href="./blog/blog_20251204_safe_ai/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./blog/blog_20251204_safe_ai/safe_ai.png" class="thumbnail-image card-img" style="height: 200;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Building Safer AI: Alignment and Robust Cyber-Physical Systems
+</h5>
+<div class="card-text listing-description delink">
+<p>Why the next generation of AI must be predictable, aligned, and physically grounded</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Kundan Kumar
+</div>
+<div class="listing-date">
+Dec 4, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+    </div>
+    <p class="explore-link"><a href="./blog/">See all →</a></p>
+  </div>
+
+  <div class="explore-item">
+    <h4 class="explore-title">Talks</h4>
+    <div class="explore-box">
+      <div id="listing-talk" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-1">
+<div class="g-col-1" data-index="0" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDTXVsdGktT2JqZWN0aXZlJTIwT3B0aW1pemF0aW9uJTJDRW5lcmd5JTIwT3B0aW1pemF0aW9u" data-listing-date-sort="1761714000000" data-listing-file-modified-sort="1786719718583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="191">
+<a href="./talks/rstats_20190402_blogdown/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img loading='lazy' src="talks/rstats_20190402_blogdown/naps.png" style="height: 200;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+A Multi-Objective Optimization Framework for Carbon-Aware Smart Energy Management
+</h5>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Kundan Kumar
+</div>
+<div class="listing-date">
+Oct 29, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+    </div>
+    <p class="explore-link"><a href="./talks/">See all →</a></p>
+  </div>
+
+  <div class="explore-item">
+    <h4 class="explore-title">Publications</h4>
+    <div class="explore-box">
+      <div id="listing-publication" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-1">
+<div class="g-col-1" data-index="0" data-categories="QmF5ZXNpYW4lMjBOZXVyYWwlMjBOZXR3b3JrJTJDU2VtaSUyMFN1cGVydmlzZWQlMjBMZWFybmluZyUyQ1VuY2VydGFpbnR5JTIwRXN0aW1hdGlvbg==" data-listing-date-sort="1762754400000" data-listing-file-modified-sort="1786719718556" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1405">
+<a href="./publications/articles/pesgm2025.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./publications/articles/figures/ssl_techniques.png" class="thumbnail-image card-img" style="height: 200;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems
+</h5>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Kundan Kumar
+</div>
+<div class="listing-date">
+Nov 10, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+    </div>
+    <p class="explore-link"><a href="./publications/">See all →</a></p>
+  </div>
+
+  <div class="explore-item">
+    <h4 class="explore-title">Projects</h4>
+    <div class="explore-box">
+      <div id="listing-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-1">
+<div class="g-col-1" data-index="0" data-categories="TExNJTIwU2VjdXJpdHklMkNFbmVyZ3klMjBTeXN0ZW1zJTJDUkFHJTIwRnJhbWV3b3Jr" data-listing-date-sort="1765864800000" data-listing-file-modified-sort="1786719718549" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="237">
+<a href="./projects/rag_energy_advisor.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img loading='lazy' src="misc/info/projects/llm_energy_advisor.png" alt="Badge for the RAG-Enhanced Energy Advisor showing document and energy icons." style="height: 200;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+RAG-Enhanced Energy Advisor
+</h5>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Kundan Kumar
+</div>
+<div class="listing-date">
+Dec 16, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+    </div>
+    <p class="explore-link"><a href="./projects.html">See all →</a></p>
+  </div>
+
+</div>
+<hr>
+<style>
+.news-container {
   position: relative;
-  padding-left: 1.6rem;
-  margin-top: 0.5rem;
+  padding-left: 10rem;
+  margin-left: 2rem;
 }
-.timeline::before {
+
+/* vertical line */
+.news-container::before {
   content: '';
   position: absolute;
-  left: 0.35rem;
-  top: 0.4rem;
-  bottom: 0.4rem;
-  width: 2px;
-  background: rgba(208,88,8,0.25);
+  left: 8rem;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #d0d0d0;
 }
-.tl-item {
+
+.news-item {
   position: relative;
   margin-bottom: 1.8rem;
+  margin-left: 1.5rem;
+  padding: 0 !important;
+  background: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
-.tl-item::before {
+
+}
+
+/* blue dot on the line */
+.news-item::after {
   content: '';
   position: absolute;
-  left: -1.38rem;
-  top: 0.45rem;
-  width: 10px;
-  height: 10px;
+  left: -3.8rem;              /* aligns with the vertical line */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background: #007bff;
+  border: 3px solid #fff;
   border-radius: 50%;
-  background: #d05808;
-  border: 2px solid #fff;
-  box-shadow: 0 0 0 2px rgba(208,88,8,0.35);
-}
-.tl-header {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 0.2rem;
-}
-.tl-role {
-  font-weight: 700;
-  font-size: 1rem;
-  color: #222;
-}
-.tl-org {
-  font-size: 0.9rem;
-  color: #7f2606;
-  font-weight: 500;
-}
-.tl-date {
-  font-size: 0.78rem;
-  color: #888;
-  margin-left: auto;
-  white-space: nowrap;
-}
-.tl-body {
-  font-size: 0.88rem;
-  color: #444;
-  line-height: 1.65;
-}
-.tl-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
-  margin-top: 0.45rem;
-}
-.tl-tag {
-  font-size: 0.7rem;
-  padding: 0.15rem 0.55rem;
-  border-radius: 999px;
-  background: rgba(208,88,8,0.08);
-  color: #7f2606;
-  border: 1px solid rgba(208,88,8,0.2);
-  font-weight: 500;
+  box-shadow: 0 0 0 1px #007bff;
 }
 
-/* ── Stats row ── */
-.stats-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
-  margin: 1.2rem 0;
-}
-.stat-box {
-  flex: 1;
-  min-width: 110px;
-  text-align: center;
-  padding: 0.9rem 0.5rem;
-  border-radius: 8px;
-  background: rgba(208,88,8,0.05);
-  border: 1px solid rgba(208,88,8,0.15);
-}
-.stat-num {
-  font-size: 1.7rem;
+/* date on the left */
+.news-date {
+  position: absolute;
+  left: -10.5rem;
+  top: 50%;
+  transform: translateY(-50%);
   font-weight: 700;
-  color: #d05808;
-  line-height: 1;
-  display: block;
+  color: #007bff;
+  font-size: 0.9rem;
+  text-align: right;
+  width: 7rem;
 }
-.stat-label {
-  font-size: 0.72rem;
-  color: #666;
-  margin-top: 0.25rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+
+/* logo between dot and card */
+.news-logo {
+  position: absolute;
+  left: -1.5rem;              /* between dot and card */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* text card ONLY */
+.news-card {
+  margin-left: 4.5rem;        /* leaves space for logo */
+  background: none !important;
+  border-radius: 0;
+  padding: 1.1rem 1.5rem;
+  box-shadow: none;
+  position: relative;
+}
+
+/* speech-bubble arrow */
+.news-card::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #f8f9fa;
+}
+
+.news-content {
+  color: #333;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.news-content a {
+  color: #0056b3;
+  text-decoration: none;
 }
 </style>
-<section id="current-focus" class="level2">
-<h2 data-anchor-id="current-focus"><i class="fas fa-crosshairs"></i> Current Focus</h2>
-<div class="highlight-card">
-  <strong>AI Safety Research Fellow @ Algoverse (Jan 2026 – present)</strong><br>
-  Designing and evaluating methods for agentic AI safety — including behavioral evaluations for reward hacking and deceptive alignment, adversarial robustness frameworks for LLM-based agents, and scalable oversight mechanisms. This builds directly on my doctoral work on physics-informed, safety-critical reinforcement learning.
-</div>
-<hr>
-</section>
-<section id="research" class="level2">
-<h2 data-anchor-id="research"><i class="fas fa-flask"></i> Research</h2>
-<p>My doctoral work centered on <strong>physics-informed deep reinforcement learning</strong> for smart grid control: embedding domain knowledge, safety constraints, and uncertainty directly into the learning process so agents make reliable decisions under distribution shifts and partial observability.</p>
-<p>Over time, <em>“how do we keep agents safe?”</em> scaled beyond energy systems. I now focus on <strong>AI safety and alignment</strong> more broadly:</p>
-<div class="focus-grid">
 
-  <div class="focus-card">
-    <span class="focus-icon">🔬</span>
-    <div class="focus-title">Agentic Evaluations</div>
-    <div class="focus-desc">Designing behavioral and mechanistic tests to detect reward hacking, deceptive alignment, and obfuscated internal states in LLM-based agents.</div>
-  </div>
+<h4 align="center">News Highlights</h4>
+<div class="news-container">
 
-  <div class="focus-card">
-    <span class="focus-icon">🛡️</span>
-    <div class="focus-title">Adversarial Robustness</div>
-    <div class="focus-desc">Understanding and hardening AI systems against distributional attacks, prompt injection, and specification gaming in both classical and foundation model pipelines.</div>
-  </div>
+<!-- PhD Complete -->
+<div class="news-item">
+  <div class="news-date">[Jun 2026]</div>
+  <img src="./misc/news/isu.png" alt="Iowa State University" class="news-logo">
 
-  <div class="focus-card">
-    <span class="focus-icon">🔭</span>
-    <div class="focus-title">Scalable Oversight</div>
-    <div class="focus-desc">Exploring how humans and increasingly capable AI systems can collaborate to maintain meaningful supervision at scale.</div>
-  </div>
-
-  <div class="focus-card">
-    <span class="focus-icon">⚡</span>
-    <div class="focus-title">Safe RL for CPS</div>
-    <div class="focus-desc">Physics-informed DRL with Bayesian uncertainty quantification, constraint satisfaction, and transfer learning for smart energy infrastructure.</div>
-  </div>
-
-  <div class="focus-card">
-    <span class="focus-icon">🤖</span>
-    <div class="focus-title">LLM-Integrated Agents</div>
-    <div class="focus-desc">Frameworks connecting perception, planning, and language reasoning for autonomous systems — bridging interpretable decision-making with low-level control.</div>
-  </div>
-
-  <div class="focus-card">
-    <span class="focus-icon">👁️</span>
-    <div class="focus-title">Autonomous Perception</div>
-    <div class="focus-desc">Vision-based perception (detection, segmentation, sensor fusion) integrated with learning-based control and trajectory planning.</div>
-  </div>
-
-</div>
-<p>For a full account of projects and publications, see the <a href="./rpkg/research.html">Research</a> and <a href="./projects.html">Projects</a> pages.</p>
-<hr>
-</section>
-<section id="technical-skills" class="level2">
-<h2 data-anchor-id="technical-skills"><i class="fas fa-laptop-code"></i> Technical Skills</h2>
-<div class="skill-group">
-  <div class="skill-group-label">AI / Machine Learning</div>
-  <div class="skill-chips">
-    <span class="chip chip-primary">Deep Reinforcement Learning</span>
-    <span class="chip chip-primary">Physics-Informed Neural Networks</span>
-    <span class="chip chip-primary">Bayesian Deep Learning</span>
-    <span class="chip chip-primary">Uncertainty Quantification</span>
-    <span class="chip chip-primary">Transfer Learning</span>
-    <span class="chip chip-primary">Multi-Agent Systems</span>
+  <div class="news-card">
+    <div class="news-content">
+      Successfully defended my Ph.D. dissertation at Iowa State University, advised by Dr. Christopher Quinn and Dr. Ravikumar Gelli.
+    </div>
   </div>
 </div>
 
-<div class="skill-group">
-  <div class="skill-group-label">AI Safety &amp; Alignment</div>
-  <div class="skill-chips">
-    <span class="chip chip-safety">Adversarial Robustness</span>
-    <span class="chip chip-safety">Agentic Evaluations</span>
-    <span class="chip chip-safety">Scalable Oversight</span>
-    <span class="chip chip-safety">Reward Hacking Detection</span>
-    <span class="chip chip-safety">Deceptive Alignment</span>
+<!--- Algoverse -->
+<!-- Algoverse AI Safety Research Fellowship -->
+<div class="news-item">
+  <div class="news-date">[Jan 2026]</div>
+  <img src="./misc/news/algoverse.png" alt="Algoverse" class="news-logo">
+
+  <div class="news-card">
+    <div class="news-content">
+Selected as an AI Safety Research Fellow at 
+<a href="https://algoverseairesearch.org/ai-safety-fellowship">Algoverse</a>. 
+Developing and evaluating methods for agentic AI safety, including robustness testing, oversight, and evaluation frameworks.
+
+    </div>
   </div>
 </div>
 
-<div class="skill-group">
-  <div class="skill-group-label">Large Language Models &amp; Agents</div>
-  <div class="skill-chips">
-    <span class="chip chip-lang">LangChain / LangGraph</span>
-    <span class="chip chip-lang">RAG Pipelines</span>
-    <span class="chip chip-lang">Tool-Use &amp; Memory</span>
-    <span class="chip chip-lang">Prompt Engineering</span>
-    <span class="chip chip-lang">OpenAI / Anthropic APIs</span>
-    <span class="chip chip-lang">HuggingFace Transformers</span>
+
+<!--- Bluedot -->
+<div class="news-item">
+  <div class="news-date">[Dec 2025]</div>
+  <img src="./misc/news/bluedot.png" alt="BlueDot Impact" class="news-logo">
+
+  <div class="news-card">
+    <div class="news-content">
+      Completed an <a href="https://bluedot.org">AI Strategy, AI Safety, Biosecurity </a> program hosted by 
+      <a href="https://bluedot.org/">
+        BlueDot Impact
+      </a>, focusing on long-term AI risk, governance, and responsible deployment of advanced AI systems.
+    </div>
   </div>
 </div>
 
-<div class="skill-group">
-  <div class="skill-group-label">Languages &amp; Frameworks</div>
-  <div class="skill-chips">
-    <span class="chip chip-tool">Python</span>
-    <span class="chip chip-tool">PyTorch</span>
-    <span class="chip chip-tool">TensorFlow</span>
-    <span class="chip chip-tool">R</span>
-    <span class="chip chip-tool">OpenAI Gym / Stable Baselines3</span>
-    <span class="chip chip-tool">CARLA Simulator</span>
-    <span class="chip chip-tool">OpenCV</span>
-    <span class="chip chip-tool">scikit-learn</span>
-    <span class="chip chip-tool">SQL</span>
-    <span class="chip chip-tool">Git / Docker</span>
-  </div>
-</div>
-<hr>
-</section>
-<section id="education-experience" class="level2">
-<h2 data-anchor-id="education-experience"><i class="fas fa-graduation-cap"></i> Education &amp; Experience</h2>
-<div class="timeline">
+  <!-- EPSR -->
+  <div class="news-item">
+    <div class="news-date">[Sep 2025]</div>
+    <img src="./misc/news/epsr.png" alt="Electric Power Systems Research" class="news-logo">
 
-  <div class="tl-item">
-    <div class="tl-header">
-      <span class="tl-role">Ph.D., Computer Science</span>
-      <span class="tl-org">Iowa State University</span>
-      <span class="tl-date">2020 – 2026</span>
-    </div>
-    <div class="tl-body">
-      Minor in Statistics. Dissertation: <em>"Safe and Robust Deep Reinforcement Learning for Constrained Control in DER-Integrated Smart Energy Grids."</em> Advised by Dr. Christopher Quinn and Dr. Ravikumar Gelli.
-      Coursework spanned deep learning, NLP, computer vision, AI for cybersecurity, statistical theory, empirical methods, and experimental design.
-    </div>
-    <div class="tl-tags">
-      <span class="tl-tag">Deep RL</span>
-      <span class="tl-tag">Safety-Critical Control</span>
-      <span class="tl-tag">Uncertainty Quantification</span>
-      <span class="tl-tag">Bayesian ML</span>
-      <span class="tl-tag">Smart Grids</span>
+    <div class="news-card">
+      <div class="news-content">
+        Our paper on 
+        <a href="https://www.sciencedirect.com/science/article/pii/S037877962500848X?dgcid=coauthor">
+          Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification
+        </a>
+        has been accepted to 
+        <a href="https://www.sciencedirect.com/journal/electric-power-systems-research">
+          Journal on Electric Power Systems Research 2026
+        </a>.
+      </div>
     </div>
   </div>
 
-  <div class="tl-item">
-    <div class="tl-header">
-      <span class="tl-role">AI Safety Research Fellow</span>
-      <span class="tl-org">Algoverse</span>
-      <span class="tl-date">Jan 2026 – Present</span>
-    </div>
-    <div class="tl-body">
-      Developing evaluation frameworks and robustness methods for agentic AI safety, including behavioral tests for reward hacking, deceptive alignment, and scalable human-AI oversight.
-    </div>
-    <div class="tl-tags">
-      <span class="tl-tag">AI Safety</span>
-      <span class="tl-tag">Agentic Evals</span>
-      <span class="tl-tag">Adversarial Robustness</span>
-    </div>
-  </div>
+  <!-- Cohere ML Summer School -->
+<!--  <div class="news-item">
+    <div class="news-date">[Jul 2025]</div>
+    <img src="/misc/news/cohere.png" alt="Cohere Labs" class="news-logo">
 
-  <div class="tl-item">
-    <div class="tl-header">
-      <span class="tl-role">Teaching Assistant</span>
-      <span class="tl-org">Iowa State University</span>
-      <span class="tl-date">2020 – 2026</span>
+    <div class="news-card">
+      <div class="news-content">
+        Selected for the 
+        <a href="https://sites.google.com/cohere.com/coherelabs-community/community-programs/summer-school">
+          Cohere Machine Learning Summer School
+        </a>, hosted by Cohere Labs.
+      </div>
     </div>
-    <div class="tl-body">
-      Six years supporting 300+ students across software development, database systems, and CS fundamentals. Held office hours, designed assignments, and mentored undergraduate research projects.
-    </div>
-    <div class="tl-tags">
-      <span class="tl-tag">Software Engineering</span>
-      <span class="tl-tag">Database Systems</span>
-      <span class="tl-tag">CS Fundamentals</span>
-    </div>
-  </div>
+  </div> -->
 
-  <div class="tl-item">
-    <div class="tl-header">
-      <span class="tl-role">Software Engineer</span>
-      <span class="tl-org">Comcast</span>
-      <span class="tl-date">Prior to PhD</span>
+  <!-- IEEE PES GM -->
+<!--  <div class="news-item">
+    <div class="news-date">[Mar 2025]</div>
+    <img src="/misc/news/pesgm.png" alt="IEEE PES General Meeting" class="news-logo">
+
+    <div class="news-card">
+      <div class="news-content">
+        Our paper on 
+        <a href="">
+          Advanced Semi-Supervised Learning with Uncertainty Estimation for Phase Identification in Distribution Systems
+        </a>
+        has been accepted to 
+        <a href="https://pes-gm.org/">
+          Conference on IEEE PES General Meeting 2025
+        </a>.
+      </div>
     </div>
-    <div class="tl-body">
-      Worked in industry on software engineering before pivoting to research — motivated by the question of how to build systems that behave reliably when the real world doesn't cooperate.
-    </div>
-    <div class="tl-tags">
-      <span class="tl-tag">Software Engineering</span>
-      <span class="tl-tag">Systems</span>
-    </div>
-  </div>
+  </div> -->
 
 </div>
-<hr>
-</section>
-<section id="at-a-glance" class="level2">
-<h2 data-anchor-id="at-a-glance"><i class="fas fa-chart-line"></i> At a Glance</h2>
-<div class="stats-row">
-  <div class="stat-box">
-    <span class="stat-num">6+</span>
-    <span class="stat-label">Years Research</span>
-  </div>
-  <div class="stat-box">
-    <span class="stat-num">300+</span>
-    <span class="stat-label">Students Taught</span>
-  </div>
-  <div class="stat-box">
-    <span class="stat-num">10+</span>
-    <span class="stat-label">Publications</span>
-  </div>
-  <div class="stat-box">
-    <span class="stat-num">3</span>
-    <span class="stat-label">Research Areas</span>
-  </div>
-</div>
-<hr>
-</section>
-<section id="beyond-research" class="level2">
-<h2 data-anchor-id="beyond-research"><i class="fas fa-pen-nib"></i> Beyond Research</h2>
-<p>I try to give back what I learn. I write on AI safety, reinforcement learning, and LLMs on <a href="https://neuravp.substack.com/">Substack</a>, and produce video explainers and walkthroughs on <a href="https://www.youtube.com/@AIAgentic-007/">YouTube</a>. Outside of work, I love cooking and ice skating 🛼.</p>
-<p><a href="./cv.html" class="btn btn-primary" style="background:#7f2606; border:none; padding:0.5rem 1.2rem; border-radius:6px; font-size:0.9rem;">View full CV →</a> &nbsp; <a href="./rpkg/research.html" class="btn" style="background:rgba(208,88,8,0.1); color:#7f2606; border:1px solid rgba(208,88,8,0.35); padding:0.5rem 1.2rem; border-radius:6px; font-size:0.9rem;">See my Research →</a></p>
 
 
 
 
-</section>
+
+
 
 </main> <!-- /main -->
 <!-- Non-rendering template (won’t create any visible box at page bottom) -->
@@ -1308,7 +1486,7 @@ window.Quarto = {
 </div>   
     <div class="nav-footer-center">
 <p><a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a> <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark me-2" href="https://orcid.org/0000-0002-3229-6649" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a> <a class="link-dark me-2" href="https://scholar.google.com/citations?user=1zDpIJkAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a> <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a></p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/about_me.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/about_me.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
