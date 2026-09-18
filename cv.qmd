@@ -27,7 +27,7 @@ page-layout: full
   </tr>
 </table>
 <p style="font-size:1.05rem; color:#444; margin-top:0.4rem;">
-AI safety researcher with a Ph.D. in Computer Science and 5+ years of industry experience, specializing in physics-informed deep RL, uncertainty quantification, and adversarial robustness for critical infrastructure, committed to building AI that is safe, auditable, and deployable in the real world.
+AI safety researcher with a Ph.D. in Computer Science (Statistics minor) and 10+ years of combined industry and research experience, focused on evaluations, adversarial robustness, and scalable oversight for agentic systems, with applied depth in physics-informed deep RL and uncertainty quantification for critical infrastructure. Committed to building AI that is safe, auditable, and deployable in the real world.
 </p>
 
 ```{=html}
@@ -480,7 +480,7 @@ Iowa State University
         font-family: system-ui, sans-serif;
         font-size: 0.9em;
         white-space: nowrap;">
-        Aug 2022 &nbsp;—&nbsp; Jul 2025 
+        Aug 2022 &nbsp;—&nbsp; Jul 2026 
       </span>
     </td>
   </tr>
