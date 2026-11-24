@@ -1,0 +1,248 @@
+---
+title: "Teaching"
+page-layout: article
+---
+
+As a Computer Science Graduate Teaching Assistant at Iowa State University with over six years of teaching experience, I focus on creating a comprehensive, engaging, and challenging learning environment that meets the diverse needs of students. My teaching approach emphasizes connecting theory with real-world practice, helping students turn core computer science concepts into practical skills. I encourage hands-on learning through software development, user interface design, and database projects that build both technical skills and problem-solving abilities. By combining project-based tasks with personalized guidance, I aim to prepare students to face current challenges in the tech field with confidence and creativity.
+
+In addition to classroom and lab, I also create **online learning resources** that break down complex concepts into simple, digestible formats. These include YouTube tutorials, blog articles, and written notes or mini-books that summarize difficult topics into clear, practical explanations, so learners can master difficult concepts at their own pace.
+
+```{=html}
+<style>
+  .teach-links {
+    margin-top: 1.2rem;
+    display: flex;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+  }
+
+  .teach-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    background: transparent;
+    transition: all 0.18s ease;
+  }
+
+  .teach-outline svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Blog */
+  .btn-blog {
+    color: #4b4544;
+    border: 2px solid #4b4544;
+  }
+  .btn-blog:hover {
+    background: #4b4544;
+    color: #fff;
+  }
+
+  /* YouTube */
+  .btn-youtube {
+    color: #c6281e;
+    border: 2px solid #c6281e;
+  }
+  .btn-youtube:hover {
+    background: #d93025;
+    color: #fff;
+  }
+
+  /* Notes */
+  .btn-notes {
+    color: #3e73e6;
+    border: 2px solid #3e73e6;
+  }
+  .btn-notes:hover {
+    background: #3e73e6;
+    color: #fff;
+  }
+</style>
+
+<div class="teach-links">
+
+  <!-- Blog -->
+  <a class="teach-outline btn-blog"
+     href="https://neuravp.substack.com/"
+     target="_blank" rel="noopener">
+    📝
+    <span>Blogs</span>
+  </a>
+
+  <!-- YouTube -->
+  <a class="teach-outline btn-youtube"
+     href="https://www.youtube.com/@AIAgentic-007"
+     target="_blank" rel="noopener">
+
+    <!-- YouTube SVG icon -->
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M23.5 6.2s-.2-1.7-.9-2.4c-.8-.9-1.7-.9-2.1-1C17.5 2.5 12 2.5 12 2.5h0s-5.5 0-8.5.3c-.4.1-1.3.1-2.1 1C.7 4.5.5 6.2.5 6.2S0 8.1 0 10v1.9c0 1.9.5 3.8.5 3.8s.2 1.7.9 2.4c.8.9 1.9.9 2.4 1 1.7.2 7.2.3 7.2.3s5.5 0 8.5-.3c.4-.1 1.3-.1 2.1-1 .7-.7.9-2.4.9-2.4s.5-1.9.5-3.8V10c0-1.9-.5-3.8-.5-3.8zM9.5 14.5v-5l5 2.5-5 2.5z"/>
+    </svg>
+
+    <span>YouTube</span>
+  </a>
+
+  <!-- Notes -->
+ <!-- <a class="teach-outline btn-notes"
+     href="https://kundan-kumarr.github.io/Zero2LLM-Crafter/"
+     target="_blank" rel="noopener">
+    📘
+    <span>Notes / Book</span>
+  </a> -->
+
+</div>
+
+```
+
+
+**Courses I have served in as a Computer Science Graduate Teaching Assistant or Mentor:**
+
+<style>
+/* Hide visually but keep in DOM so it appears in TOC */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  border: 0; white-space: nowrap;
+}
+</style>
+<style>
+/* --- Keep TOC items on one line (with ellipsis if needed) --- */
+nav[role="doc-toc"] li > a,
+nav[role="doc-toc"] li > a .nav-link-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  hyphens: none;
+}
+
+/* Optional: give the TOC a bit more room so fewer items truncate */
+.sidebar nav[role="doc-toc"] {
+  min-width: 18rem;   /* tweak to 19–20rem if you want more */
+}
+</style>
+
+
+## Spreadsheets and Databases {.visually-hidden #coms1130}
+## COMS 1130 – Spreadsheets and Databases {.unlisted}
+
+
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+![](/misc/info/teaching/spreadsheets.png)
+:::
+
+::: {.g-col-12 .g-col-md-10}
+[Fall 2020](/teaching/coms1130/)
+
+This foundational course focuses on using tools such as Microsoft Excel and Microsoft Access for effective data organization, analysis, and reporting. Students develop proficiency in applying formulas, creating pivot tables, designing queries, and building forms and visual analyses to support practical business and data-driven decision-making.
+:::
+
+:::
+
+## Software Development Practices {.visually-hidden #coms3090}
+## COMS 3090 – Software Development Practices {.unlisted}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+![](/misc/info/teaching/software_development.png)
+:::
+
+::: {.g-col-12 .g-col-md-10}
+[Fall 2022](/teaching/coms3090/), &nbsp; [Spring 2023](/teaching/coms3090/), &nbsp; [Spring 2024](/teaching/coms3090/), &nbsp; [Fall 2025](/teaching/coms3090/)
+
+This course is a practical, **hands-on program** that focuses on modern software development standards. Core topics include Git, Agile methodologies, code reviews, unit testing, and continuous integration and deployment (CI/CD). Students collaborate on team-based projects that replicate real-world development workflows, with particular emphasis on collaboration, documentation, and iterative improvement. The course culminates in comprehensive Android application and game development, including design, implementation, testing, and deployment.
+:::
+
+:::
+
+## User Interface Design {.visually-hidden #coms3190}
+## COMS 3190 – User Interface Design {.unlisted}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+![](/misc/info/teaching/user_interface.png)
+:::
+
+::: {.g-col-12 .g-col-md-10}
+[Fall 2023](/teaching/coms3190/)
+
+This course explores the principles of designing user-friendly and efficient interfaces. It integrates hardware and data-driven UI practices, incorporating Raspberry Pi for Internet of Things (IoT) applications and Node.js for front-end visualization and interactive design. Students learn to design, prototype, and evaluate interfaces with a focus on usability and user experience.
+:::
+
+:::
+
+
+## Object-Oriented Analysis and Design {.visually-hidden #coms3620}
+## COMS 3620 – Object-Oriented Analysis and Design {.unlisted}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+![](/misc/info/teaching/object_oriented.png)
+:::
+
+::: {.g-col-12 .g-col-md-10}
+[Fall 2020](/teaching/coms3620/), &nbsp; [Spring 2021](/teaching/coms3620/), &nbsp; [Fall 2021](/teaching/coms3620/), &nbsp; [Fall 2024](/teaching/coms3620/)
+
+This course teaches the modeling and design of software systems using object-oriented principles. It emphasizes the use of UML diagrams, design patterns, and Java implementations to develop modular, maintainable, and scalable software solutions. Students gain experience moving from requirements to design to code in a structured, iterative way.
+:::
+
+:::
+
+## Database Management Systems {.visually-hidden #coms3630}
+## COMS 3630 – Database Management Systems {.unlisted}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+![](/misc/info/teaching/databases.png)
+:::
+
+::: {.g-col-12 .g-col-md-10}
+[Spring 2022](/teaching/coms3630/), &nbsp; [Spring 2026](/teaching/coms3630/)
+
+This course covers the fundamentals of database architecture, data modeling, and Structured Query Language (SQL). Students gain hands-on experience with relational database systems while exploring key concepts such as indexing, transactions, normalization, and comprehensive database design. Emphasis is placed on designing robust schemas and writing efficient queries for real-world applications.
+
+:::
+
+:::
+
+## Software Testing {.visually-hidden #coms4170}
+## COMS 4170 – Software Testing {.unlisted}
+
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+![](/misc/info/teaching/software_testing.png)
+:::
+
+::: {.g-col-12 .g-col-md-10}
+[Spring 2025](/teaching/coms4170/)
+
+This course focuses on the principles and practices of software verification and validation. Students learn to design and execute effective test cases, utilize debugging tools, and implement automation frameworks to ensure software quality, reliability, and maintainability.
+:::
+:::
+
+## Future Goals
+I am dedicated to the continuous development of my teaching methods and curriculum design. My objectives include:
+
+- Incorporating new AI and software development tools as part of student learning, helping them engage with modern development and analysis workflows.
+- Creating interactive, experiential, and project-based learning environments that encourage students to be actively involved and learn by building.
+- Becoming a resource to the broader computer science education community through curriculum innovation, teaching-focused research, and mentorship of other educators.
+- Broadening students' access to the computing field so they can confidently tackle real-world challenges using both their theoretical foundations and practical skills.
+
+[Email](mailto:cs.kundann@gmail.com) me if you want to collaborate or learn more about my teaching and research initiatives.
+

@@ -1,0 +1,18 @@
+---
+title: "Improving Ensembles in Bootstrap Aggregating with Composite Features"
+type: "article"
+author: "Sathya Narayana Mohan, Kundan Kumar"
+date: "2026-01-30"
+year: "2026"
+toc: false
+categories:
+  - Machine Learning
+  - Ensemble Learning
+pubtype: "conference"
+status: "Under review"
+publication: "International Conference on Machine Learning (ICML)"
+---
+
+## Citation
+
+> S. N. Mohan and K. Kumar, "Improving Ensembles in Bootstrap Aggregating with Composite Features," *International Conference on Machine Learning (ICML)*, 2026. (Under review)

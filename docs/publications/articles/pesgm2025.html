@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kundan Kumar">
+<meta name="author" content="Kundan Kumar, Kumar Utkarsh, Jiyu Wang, Harsha Padullaparti">
 <meta name="dcterms.date" content="2025-11-10">
 
 <title>Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems – Kundan Kumar</title>
@@ -24,6 +24,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -119,9 +154,10 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="paper-article.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="floating nav-fixed slimcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -305,11 +341,6 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about_me.html"> <i class="bi bi-person-circle" role="img">
-</i> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../cv.html"> <i class="bi bi-file-earmark-text-fill" role="img">
 </i> 
 <span class="menu-text">CV</span></a>
@@ -381,15 +412,35 @@ window.Quarto = {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#why-phase-identification-matters" id="toc-why-phase-identification-matters" class="nav-link active" data-scroll-target="#why-phase-identification-matters">Why phase identification matters</a></li>
+  <li><a href="#problem-formulation" id="toc-problem-formulation" class="nav-link" data-scroll-target="#problem-formulation">Problem formulation</a></li>
+  <li><a href="#data-pipeline-from-a-cyme-model-to-features" id="toc-data-pipeline-from-a-cyme-model-to-features" class="nav-link" data-scroll-target="#data-pipeline-from-a-cyme-model-to-features">Data pipeline: from a CYME model to features</a></li>
+  <li><a href="#three-semi-supervised-learners" id="toc-three-semi-supervised-learners" class="nav-link" data-scroll-target="#three-semi-supervised-learners">Three semi-supervised learners</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#cite" id="toc-cite" class="nav-link" data-scroll-target="#cite">Cite this work</a></li>
+  <li><a href="#acknowledgments" id="toc-acknowledgments" class="nav-link" data-scroll-target="#acknowledgments">Acknowledgments</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/publications/articles/pesgm2025.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems</h1>
+<p class="subtitle lead">How a utility can recover which phase every smart meter is on, from a handful of trusted labels, and know how sure it should be.</p>
   <div class="quarto-categories">
     <div class="quarto-category">Bayesian Neural Network</div>
     <div class="quarto-category">Semi Supervised Learning</div>
@@ -404,7 +455,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Kundan Kumar </p>
+             <p>Kundan Kumar, Kumar Utkarsh, Jiyu Wang, Harsha Padullaparti </p>
           </div>
   </div>
     
@@ -431,290 +482,532 @@ window.Quarto = {
 </header>
 
 
-<div style="display:flex; justify-content:flex-end; margin-top:-0.5rem; gap:0.5rem;">
-<p><a class="btn btn-primary" href="semi_supervised_pes_gm_2025/docs/SSL_PESGM_poster.pdf" target="_blank" rel="noopener"> Open Poster (PDF) </a></p>
+<div class="ppr-meta">
+<p>Power Systems Engineering Center, National Renewable Energy Laboratory (NREL) · <em>IEEE PES General Meeting 2025</em>, Austin, TX</p>
 </div>
-<section id="citation-ieee" class="level3">
-<h3 class="anchored" data-anchor-id="citation-ieee">Citation (IEEE)</h3>
-<blockquote class="blockquote">
-<p><strong>K. Kumar</strong>, K. Utkarsh, J. Wang and H. V. Padullaparti, “Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems,” 2025 IEEE Power &amp; Energy Society General Meeting (PESGM), Austin, TX, USA, 2025, pp.&nbsp;1-5, doi: 10.1109/PESGM52009.2025.11225667.</p>
-</blockquote>
-</section>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>The integration of advanced metering infrastructure (AMI) into power distribution networks generates valuable data for tasks such as phase identification; however, the limited and unreliable availability of labeled data in the form of customer phase connectivity presents challenges. To address this issue, we propose a semi-supervised learning (SSL) bayesian framework that effectively leverages both limited labeled and unlimited unlabeled data.</p>
+<div class="ppr-actions">
+  <a href="https://doi.org/10.1109/PESGM52009.2025.11225667" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf-fill"></i> Paper (IEEE Xplore)</a>
+  <a class="a-poster" href="../../misc/info/posters/SSL_PESGM_poster.pdf" target="_blank" rel="noopener"><i class="bi bi-image-fill"></i> Poster</a>
+  <a class="a-slides" href="../../misc/info/presentations/SSL_PESGM_presentation.pdf" target="_blank" rel="noopener"><i class="bi bi-easel2-fill"></i> Slides</a>
+  <a class="a-cite" href="#cite"><i class="bi bi-quote"></i> Cite</a>
+</div>
+<div class="tldr">
+<p><span class="k">TL;DR</span></p>
+<p>Utilities often don’t know which phase each customer’s meter is connected to, and the few labels they have are expensive and partly wrong. We compare three semi-supervised learners (self-training, label spreading, and a Bayesian neural network) that learn from a small labeled set plus many unlabeled meters, and we quantify how uncertain each prediction is. On real AMI data from Duquesne Light Company, the Bayesian neural network reaches about <strong>98% ± 0.08 accuracy</strong> and stays far ahead when labels are scarce.</p>
+<div class="stats">
+  <div><b>64% vs 35–44%</b><span>accuracy with only 5% of meters labeled (BNN vs. other SSL methods)</span></div>
+  <div><b>99.06%</b><span>peak BNN test accuracy, at 70% labeled data</span></div>
+  <div><b>100</b><span>Monte Carlo forward passes per prediction to estimate uncertainty</span></div>
+</div>
+</div>
+<section id="why-phase-identification-matters" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="why-phase-identification-matters">Why phase identification matters</h2>
+<p>Every single-phase customer in a distribution feeder hangs off one of the phases A, B, or C. Utilities need that mapping to balance load across phases, run accurate power-flow simulations, host more rooftop solar and other distributed energy resources (DERs), and localize faults. In practice the mapping in the utility’s model is often <strong>incomplete or out of date</strong>, especially as new customers are added and crews reconfigure lines over the years.</p>
+<p>Advanced metering infrastructure (AMI) gives us a time series of voltage and power from every meter, so phase identification can be cast as a learning problem. The catch is labels. Supervised methods work well<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> but need lots of verified phase labels, and each label usually means a field visit. A utility typically has <strong>a small set of labels it trusts</strong> and <strong>a large pool of meters with no reliable label at all</strong>.</p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;Earlier NREL work showed supervised phase identification works on real feeders with high PV penetration when enough labeled data exists. Padullaparti et al., <em>IEEE PESGM</em> 2022.</p></div><div id="fn2"><p><sup>2</sup>&nbsp;J. E. van Engelen and H. H. Hoos, “A survey on semi-supervised learning,” <em>Machine Learning</em>, 109, 373–440, 2020.</p></div></div><p>That shape of data, few labels and many unlabeled points, is exactly what <strong>semi-supervised learning (SSL)</strong> is built for.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> SSL has been used in power systems for fault and event classification, but existing work has two gaps:</p>
 <ol type="1">
-<li>Why Phase Identification Needs a New Approach ?</li>
+<li><strong>No robust uncertainty quantification.</strong> A model that says “phase B” without saying <em>how sure</em> it is gives an operator no way to decide which predictions to trust and which meters to verify in the field.</li>
+<li><strong>Performance collapses with very few labels</strong>, which is precisely the regime utilities live in.</li>
 </ol>
-<p><strong>Problem:</strong> Utilities don’t know which phase customers are connected to this affects voltage regulation, DER integration, and fault localization.</p>
-<table style="width:100%; border-collapse: collapse;">
-<tbody><tr>
-<td style="width:50%; text-align:center; vertical-align:top; padding-right:15px;">
-<img src="semi_supervised_pes_gm_2025/figures/ssl_techniques.png" style="width:90%; height:auto;">
-<div>
-<strong>Fig. 1:</strong> Illustration of Semi-Supervised Learning Techniques
+<div id="fig-ssl" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-ssl-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="semi_supervised_pes_gm_2025/figures/ssl_techniques.png" class="img-fluid figure-img" style="width:90.0%">
 </div>
-</td>
-<td style="width:50%; vertical-align:top; font-size:0.95em;">
-<p>
-<strong>Challenges &amp; Motivation</strong>
-</p>
-<ul>
-<li>
-<strong>Challenge:</strong> Ground truth phase data is scarce, unreliable, and costly to collect.
-</li>
-<li>
-<strong>Problem:</strong> Supervised ML methods require large amounts of labeled data and often unavailable or unreliable.
-</li>
-<li>
-<strong>Motivation:</strong> How do we scale phase identification without needing tons of labeled data?
-</li>
-</ul>
-</td>
-</tr>
-</tbody></table>
-<!--  <img src="semi_supervised_pes_gm_2025/figures/ssl_techniques.png" alt="Illustration of Semi-Supervised Learning Techniques" style="width: 60%; height: auto;">
-  <figcaption><strong>Fig. 1:</strong> Illustration of Semi-Supervised Learning Techniques</figcaption>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-ssl-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: The semi-supervised idea. A base classifier is trained on the small labeled set, used to produce pseudo-labels on the unlabeled set, and the most confident pseudo-labels are merged with the true labels to train the final SSL classifiers.
+</figcaption>
 </figure>
+</div>
+<section id="what-this-paper-contributes" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="what-this-paper-contributes">What this paper contributes</h3>
+<ul>
+<li><strong>A comparative SSL framework</strong> that combines and benchmarks self-training, label spreading, and Bayesian neural networks (BNNs) for phase identification.</li>
+<li><strong>Epistemic and aleatoric uncertainty</strong> estimated for every prediction, so decisions can be weighted by confidence.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
+<li><strong>A custom BNN</strong> with Bayesian layers and Monte Carlo sampling built for this task.</li>
+<li><strong>A labeled-data sweep from 5% to 80%</strong>, showing how much labeled data each method actually needs for reliable phase identification.</li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="fn3"><p><sup>3</sup>&nbsp;On why separating the two kinds of uncertainty matters, see Wimmer et al., “Quantifying aleatoric and epistemic uncertainty in machine learning,” 2023.</p></div></div></section>
+</section>
+<section id="problem-formulation" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="problem-formulation">Problem formulation</h2>
+<p>We frame phase identification as a <strong>semi-supervised classification</strong> problem. The dataset is split into a small labeled part and a large unlabeled part,</p>
+<p><span class="math display">\[
+\mathcal{D} = \mathcal{D}_L \cup \mathcal{D}_U, \qquad
+\mathcal{D}_L = \{(\mathbf{x}_i, y_i)\}_{i=1}^{n_L}, \quad
+\mathcal{D}_U = \{\mathbf{x}_j\}_{j=1}^{n_U}, \quad n_L \ll n_U,
+\]</span></p>
+<p>where each <span class="math inline">\(\mathbf{x}_i \in \mathbb{R}^d\)</span> holds standardized electrical features of one meter (power, voltage, impedance) and <span class="math inline">\(y_i\)</span> is its phase. The goal is a classifier <span class="math inline">\(f:\mathbb{R}^d \rightarrow \{A, B, C\}\)</span> trained on <strong>both</strong> parts by minimizing</p>
+<p><span id="eq-objective"><span class="math display">\[
+\min_{f} \left( \frac{1}{n_L} \sum_{i=1}^{n_L} \mathcal{L}\big(f(\mathbf{x}_i), y_i\big) \;+\; \lambda \cdot \mathcal{R}\big(f, \mathcal{D}_U\big) \right)
+\tag{1}\]</span></span></p>
 
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Reading <a href="#eq-objective" class="quarto-xref">Eq.&nbsp;1</a>.</strong> The first term is ordinary supervised loss (cross-entropy) on the trusted labels. The second term, <span class="math inline">\(\mathcal{R}\)</span>, rewards a classifier that is <em>consistent with the structure of the unlabeled data</em>. <span class="math inline">\(\lambda\)</span> sets how much we lean on that structure.</p>
+</div></div><p>Each of the three methods below is a different way of building that unlabeled-data term. On top of the predicted label <span class="math inline">\(\hat{y}_i\)</span>, we also return a confidence score <span class="math inline">\(\sigma_i\)</span> for every meter.</p>
 
-• Challenge: Ground truth phase data
-is scarce, unreliable, and costly to collect.
-• Supervised learning ML methods need lots of labeled data – often unavailable
-or unreliable.
-• Motivation: How do we scale phase
-identification without needing tons of labeled
-data?
-
-<table class="caption-top" data-quarto-postprocess="true" style="width:100%; border-collapse: collapse;">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
+<div class="no-row-height column-margin column-container"><div class="">
+<p>In general a meter can sit on one of six phase connections: A, B, C, AB, BC, or AC. Our filtered dataset keeps only single-phase meters, so the classifier predicts A, B, or C.</p>
+</div></div></section>
+<section id="data-pipeline-from-a-cyme-model-to-features" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="data-pipeline-from-a-cyme-model-to-features">Data pipeline: from a CYME model to features</h2>
+<section id="data-preparation" class="level3">
+<h3 class="anchored" data-anchor-id="data-preparation">Data preparation</h3>
+<p>We received the utility’s feeder model in <strong>CYME</strong>, converted it to <strong>OpenDSS</strong> to extract the smart-meter mapping and the network topology that determines impedance, and exported everything to CSV. The raw dataset is</p>
+<p><span id="eq-dataset"><span class="math display">\[
+\mathcal{D} = \{(\mathbf{x}_i, y_i)\}_{i=1}^{N}, \qquad \mathbf{x}_i \in \mathbb{R}^m,\; y_i \in \mathbb{Y} = \{A, B, C, AB, BC, AC\}.
+\tag{2}\]</span></span></p>
+</section>
+<section id="filtering-and-feature-selection" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="filtering-and-feature-selection">Filtering and feature selection</h3>
+<p>A filtering rule <span class="math inline">\(C\)</span> keeps only the samples we can use. It drops rows with missing values and feeders without three-phase data, which leaves single-phase meters:</p>
+<p><span id="eq-filter"><span class="math display">\[
+\mathcal{D}' = \{(\mathbf{x}_i, y_i) \in \mathcal{D} \mid C(\mathbf{x}_i, y_i) = \text{True}\}.
+\tag{3}\]</span></span></p>
+<p>From <span class="math inline">\(\mathcal{D}'\)</span> we keep eight features per meter:</p>
+<p><span id="eq-features"><span class="math display">\[
+F = \{R_0,\, X_0,\, R_1,\, X_1,\, P,\, \text{Max } V,\, \text{Min } V,\, \text{AVG } V\}.
+\tag{4}\]</span></span></p>
+<table class="hp table">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Feature</th>
+<th data-quarto-table-cell-role="th">Meaning</th>
+<th data-quarto-table-cell-role="th">Source</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center; width: 50%; vertical-align: top; padding-right: 15px;"><img src="semi_supervised_pes_gm_2025/figures/ssl_techniques.png" class="img-fluid" style="width:90%; height:auto;" />
-<div>
-<strong>Fig. 1:</strong> Illustration of Semi-Supervised Learning Techniques
-</div></td>
-<td style="width: 50%; vertical-align: top; font-size: 0.95em"><p><strong>Challenges &amp; Motivation</strong></p>
-<ul>
-<li><strong>Challenge:</strong> Ground truth phase data is scarce, unreliable, and costly to collect.</li>
-<li><strong>Problem:</strong> Supervised ML methods require large amounts of labeled data – often unavailable or unreliable.</li>
-<li><strong>Motivation:</strong> How do we scale phase identification without needing tons of labeled data?</li>
-</ul></td>
+<td>R₀, X₀</td>
+<td>Zero-sequence resistance and reactance from the substation to the meter</td>
+<td>OpenDSS model</td>
+</tr>
+<tr class="even">
+<td>R₁, X₁</td>
+<td>Positive-sequence resistance and reactance</td>
+<td>OpenDSS model</td>
+</tr>
+<tr class="odd">
+<td>P</td>
+<td>Active power at the meter over the period T</td>
+<td>AMI data</td>
+</tr>
+<tr class="even">
+<td>Max V, Min V, AVG V</td>
+<td>Maximum, minimum, and average voltage over T</td>
+<td>AMI data</td>
 </tr>
 </tbody>
 </table>
 
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Why impedance helps.</strong> Meters on the same phase share upstream conductors, so their voltages move together and their path impedances to the substation are related. Combining measured voltage statistics with modeled impedance gives the classifier both behavioral and physical evidence.</p>
+</div></div><div id="fig-framework" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-framework-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="semi_supervised_pes_gm_2025/figures/proposed_framework.png" class="img-fluid figure-img" style="width:88.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-framework-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: The full framework. <strong>Bottom (data preparation pipeline):</strong> data acquisition (CYME → OpenDSS → CSV), then preprocessing (integration, cleaning, transformation, dimension reduction), then the labeled and unlabeled split <span class="math inline">\(D = D_U \cup D_L\)</span>. <strong>Top (model development):</strong> self-training, label spreading, and a Bayesian neural network, evaluated with prediction accuracy and upper and lower uncertainty limits.
+</figcaption>
+</figure>
+</div>
+<div id="fig-topology" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-topology-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="semi_supervised_pes_gm_2025/figures/feeder_topology.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-topology-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Network topology of the selected distribution feeder. Red dots are customer meters and blue lines are the primary conductors.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="train-and-test-splits" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="train-and-test-splits">Train and test splits</h3>
+<p><span class="math inline">\(\mathcal{D}'\)</span> is split <strong>70% / 30%</strong> into a development set <span class="math inline">\(\mathcal{D}_{dev}\)</span> and a held-out test set <span class="math inline">\(\mathcal{D}_{test}\)</span>. Inside <span class="math inline">\(\mathcal{D}_{dev}\)</span> we reveal labels for only a fraction <span class="math inline">\(p\)</span> of meters, sweeping <span class="math inline">\(p \in \{5\%, 10\%, 20\%, \dots, 80\%\}\)</span>, and hide the rest so they act as unlabeled data.</p>
+<div id="fig-split" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-split-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="semi_supervised_pes_gm_2025/figures/data_split.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-split-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Data partitions. <strong>Top:</strong> the initial 70/30 split into development and test sets. <strong>Bottom:</strong> for each labeled percentage, how many development meters are labeled (blue) and unlabeled (red). At 5% only 12 meters carry a label.
+</figcaption>
+</figure>
+</div>
 
-add techniques -->
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Scale check.</strong> The development set holds 247 meters (12 + 235 at 5%). Every test accuracy in <a href="#tbl-results" class="quarto-xref">Table&nbsp;1</a> is a multiple of about 0.94%, which matches a test set of <strong>106 meters</strong>. For example, 64.15% is 68 of 106 and 99.06% is 105 of 106.</p>
+</div></div></section>
 </section>
-<section id="contribution" class="level2">
-<h2 class="anchored" data-anchor-id="contribution">Contribution</h2>
-<p>Our approach incorporates:</p>
-<ul>
-<li>Self-training with an ensemble of multilayer perceptron classifiers.</li>
-<li>Label spreading to propagate labels based on data similarity.</li>
-<li>Bayesian Neural Networks (BNNs) for uncertainty estimation, improving confidence and reducing phase identification errors.</li>
-</ul>
-<p>Key Highlights:*</p>
-<ul>
-<li>Achieved <strong>~98% ± 0.08</strong> accuracy on real utility data (Duquesne Light Company) using minimal and unreliable labeled data.</li>
-<li>Uncertainty-aware predictions reduce misclassification risk and improve smart grid reliability.</li>
-<li>Combines pseudo-labeling, graph-based SSL, and probabilistic modeling to handle data scarcity in real-world distribution networks.</li>
-</ul>
-<p>Our “SSL + Uncertainty Estimation” approach provides an efficient and scalable solution for phase identification in AMI data, enabling utilities to improve modeling, simulation, and operational decision-making.</p>
-</section>
-<section id="problem-formulation-of-framework-for-ami" class="level2">
-<h2 class="anchored" data-anchor-id="problem-formulation-of-framework-for-ami">3. Problem Formulation of Framework for AMI</h2>
-<p>We define phase identification as a <strong>semi-supervised classification problem</strong>,<code>\@ref(eq:black-scholes2)</code> where the dataset <span class="math inline">\(D = D_L \cup D_U\)</span> consists of a small labeled subset <span class="math inline">\(D_L\)</span> and a large unlabeled subset <span class="math inline">\(D_U\)</span>.</p>
-<p>The SSL objective is a <strong>regularized minimization</strong>:</p>
-<p><span class="math display">\[
-  \min_{f \in \mathcal{F}} \left[
-    \frac{1}{n_L} \sum_{i=1}^{n_L} \ell(f(x_i), y_i)
-    + \lambda R(f, \mathcal{D}_U)
-  \right]
-\]</span>{#eq:black-scholes2}</p>
-<p>where:<br>
-- <span class="math inline">\(\ell\)</span> is the supervised loss (e.g., cross-entropy)<br>
-- <span class="math inline">\(R(f, \mathcal{D}_U)\)</span> is the regularization term capturing structure in the unlabeled data, - <span class="math inline">\(\lambda\)</span> : trade-off parameter controlling the influence of unlabeled data</p>
-<p>This formulation encourages the model to learn a decision boundary consistent with both labeled examples and the structure of the unlabeled feature space. c’</p>
-</section>
-<section id="methodology" class="level2">
-<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
-<!--Black-Scholes (@eq-black-scholes) is a mathematical model that seeks to explain the behavior of financial derivatives, most commonly options:
+<section id="three-semi-supervised-learners" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="three-semi-supervised-learners">Three semi-supervised learners</h2>
+<div class="cards3">
+  <div class="m-st"><h4 class="anchored">Self-training</h4><p>Train on the labels, predict the rest, keep only confident guesses, retrain. <em>Grows the labeled set.</em></p></div>
+  <div class="m-ls"><h4 class="anchored">Label spreading</h4><p>Build a similarity graph and let labels diffuse to nearby meters. <em>Uses the shape of the data.</em></p></div>
+  <div class="m-bnn"><h4 class="anchored">Bayesian neural network</h4><p>Learn a distribution over weights rather than a single network. <em>Knows what it doesn't know.</em></p></div>
+</div>
+<section id="self-training-with-an-ensemble-of-mlps" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="self-training-with-an-ensemble-of-mlps">1. Self-training with an ensemble of MLPs</h3>
+<p><strong>Intuition.</strong> Start with the few labels you trust, let the model label everything else, and add only the predictions it is very confident about. Repeat. The labeled set grows without anyone visiting a meter.</p>
+<p>An MLP classifier <span class="math inline">\(f\)</span> is first trained on <span class="math inline">\(\mathcal{D}_L\)</span>:</p>
+<p><span id="eq-st-train"><span class="math display">\[
+\theta = \arg\min_{\theta} \sum_{(\mathbf{x}_i, y_i) \in \mathcal{D}_L} \mathcal{L}\big(f(\mathbf{x}_i; \theta),\, y_i\big).
+\tag{5}\]</span></span></p>
+<p>It then predicts a label for every unlabeled meter,</p>
+<p><span id="eq-st-predict"><span class="math display">\[
+\hat{y}_j = f(\mathbf{x}_j; \theta) \qquad \forall j \in \{1, \dots, n_U\},
+\tag{6}\]</span></span></p>
+<p>and only predictions whose class probability clears a threshold <span class="math inline">\(\tau\)</span> become pseudo-labels:</p>
+<p><span id="eq-st-confident"><span class="math display">\[
+\mathcal{D}_L^{\text{new}} = \{(\mathbf{x}_j, \hat{y}_j) \mid p_j &gt; \tau\}.
+\tag{7}\]</span></span></p>
+<p><span class="math inline">\(\mathcal{D}_L\)</span> and <span class="math inline">\(\mathcal{D}_L^{\text{new}}\)</span> are merged and training repeats.</p>
 
-$$
-\frac{\partial \mathrm C}{ \partial \mathrm t } + \frac{1}{2}\sigma^{2} \mathrm S^{2}
-\frac{\partial^{2} \mathrm C}{\partial \mathrm S^2}
-  + \mathrm r \mathrm S \frac{\partial \mathrm C}{\partial \mathrm S}\ =
-  \mathrm r \mathrm C 
-$$ {#eq-black-scholes}
--->
-<section id="self-training-with-mlp-ensembles" class="level3">
-<h3 class="anchored" data-anchor-id="self-training-with-mlp-ensembles">4.1 Self-Training with MLP Ensembles</h3>
-<p>The MLP classifier f(x; <span class="math inline">\(\theta\)</span>) is trained on <span class="math inline">\(D_L\)</span> to minimize cross-entropy loss (<a href="#eq-self-training" class="quarto-xref">Equation&nbsp;1</a>):</p>
-<p><span id="eq-self-training"><span class="math display">\[
-\theta = \arg\min_\theta \sum_{(x_i, y_i) \in D_L} \mathcal{L}(f(x_i; \theta), y_i)
-\tag{1}\]</span></span></p>
-<p>Unlabeled samples with high prediction confidence <span class="math inline">\(p_j\)</span> &gt; <span class="math inline">\(\tau\)</span> receive pseudo-labels:</p>
-<p><span class="math display">\[
-D^{\text{new}}_L = \{(x_j, \hat{y}_j) \mid p_j &gt; \tau\}
-\]</span></p>
-<p>The process repeats iteratively, enriching the labeled dataset.</p>
-<hr>
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>The risk.</strong> If an early pseudo-label is wrong, the model is retrained on its own mistake and can reinforce it. This is called <em>confirmation bias</em>, and it is why the threshold <span class="math inline">\(\tau\)</span> matters so much. The results section shows this happening.</p>
+</div></div><table class="hp table">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Setting</th>
+<th data-quarto-table-cell-role="th">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Architecture</td>
+<td>Two-layer MLP, 64 → 32 units, ReLU</td>
+</tr>
+<tr class="even">
+<td>Optimizer</td>
+<td>Adaptive learning rate starting at 0.001, L2 regularization α = 0.001</td>
+</tr>
+<tr class="odd">
+<td>Pseudo-label threshold</td>
+<td>τ = 0.85</td>
+</tr>
+<tr class="even">
+<td>Self-training iterations</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>Early stopping</td>
+<td>20% of D<sub>L</sub> held out for validation; stop after 10 iterations without improvement</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="label-spreading-graph-based-ssl" class="level3">
-<h3 class="anchored" data-anchor-id="label-spreading-graph-based-ssl">4.2 Label Spreading (Graph-Based SSL)</h3>
-<p>We construct a similarity matrix <span class="math inline">\(W\)</span> where edge weights encode feature similarity:</p>
-<p><span class="math display">\[
+<section id="label-spreading-on-a-similarity-graph" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="label-spreading-on-a-similarity-graph">2. Label spreading on a similarity graph</h3>
+<p><strong>Intuition.</strong> Meters that look electrically alike probably share a phase. Build a graph where similar meters are strongly connected, then let the known labels flow along the edges until the graph settles.</p>
+<p>The edge weight between meters <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> is a Gaussian of their distance, with <span class="math inline">\(\sigma\)</span> setting the scale:</p>
+<p><span id="eq-ls-graph"><span class="math display">\[
 W_{ij} =
 \begin{cases}
-\exp\!\left(-\frac{\|x_i - x_j\|^2}{\sigma^2}\right), &amp; i \neq j \\
-0, &amp; i = j
+\exp\!\left(-\dfrac{\lVert \mathbf{x}_i - \mathbf{x}_j \rVert^2}{\sigma^2}\right), &amp; i \neq j,\\[6pt]
+0, &amp; i = j.
 \end{cases}
-\]</span></p>
-<p>Label distributions are updated iteratively as:</p>
-<p><span class="math display">\[
-Y^{(t+1)} = (1 - \alpha)Y^{(t)} + \alpha D^{-1}WY^{(t)}
-\]</span></p>
-<p>This propagates known labels through the data manifold, smoothing class boundaries.</p>
+\tag{8}\]</span></span></p>
+<p>Known labels seed a label matrix and unlabeled rows start at zero:</p>
+<p><span id="eq-ls-init"><span class="math display">\[
+Y_{ij} =
+\begin{cases}
+y_i, &amp; \text{if } i \text{ is labeled},\\
+0, &amp; \text{if } i \text{ is unlabeled}.
+\end{cases}
+\tag{9}\]</span></span></p>
+<p>Labels then propagate with the update rule</p>
+<p><span id="eq-ls-update"><span class="math display">\[
+Y^{(t+1)} = (1 - \alpha)\, Y^{(t)} + \alpha\, D\, W\, Y^{(t)},
+\tag{10}\]</span></span></p>
+<p>where <span class="math inline">\(D\)</span> is the diagonal degree matrix and <span class="math inline">\(\alpha\)</span> trades off keeping the current labels against adopting the neighbors’ labels. Iteration stops when <span class="math inline">\(\lVert Y^{(t+1)} - Y^{(t)} \rVert &lt; \epsilon\)</span>.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Spreading vs.&nbsp;propagation.</strong> <em>Label propagation</em> clamps the known labels so they never change. <em>Label spreading</em> lets them soften a little through the clamping factor α. That softening helps when some utility labels are wrong, because one bad label can’t dominate its neighborhood.</p>
+</div></div><table class="hp table">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Setting</th>
+<th data-quarto-table-cell-role="th">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Kernel</td>
+<td>k-nearest neighbors, 2 neighbors</td>
+</tr>
+<tr class="even">
+<td>Kernel weight</td>
+<td>γ = 0.9</td>
+</tr>
+<tr class="odd">
+<td>Label clamping</td>
+<td>α = 0.1</td>
+</tr>
+<tr class="even">
+<td>Robustness</td>
+<td>Gaussian noise (scale 0.01) added to training features; only 80% of labels used, the rest treated as unlabeled</td>
+</tr>
+<tr class="odd">
+<td>Convergence</td>
+<td>Tolerance 0.0001, at most 5 iterations, ε ≈ 0.001</td>
+</tr>
+<tr class="even">
+<td>Validation</td>
+<td>20% stratified split</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="bayesian-neural-networks-bnns" class="level3">
-<h3 class="anchored" data-anchor-id="bayesian-neural-networks-bnns">4.3 Bayesian Neural Networks (BNNs)</h3>
-<p>BNNs treat weights as random variables, assigning a Gaussian prior:</p>
-<p><span class="math display">\[
-p(W) = \mathcal{N}(W | \mu_{W}, \sigma_W^2)
-\]</span></p>
-<p>Given training data <span class="math inline">\(D_L\)</span>, the posterior distribution is:</p>
-<p><span class="math display">\[
-p(W | D_L) \propto p(D_L | W) \, p(W)
-\]</span></p>
-<p>The predictive distribution integrates over all possible weight configurations:</p>
-<p><span class="math display">\[
-p(y^* | x^*, D_L) = \int p(y^* | x^*, W) \, p(W | D_L) \, dW
-\]</span></p>
-<p>We approximate this via Monte Carlo dropout by averaging multiple stochastic forward passes:</p>
-<p><span class="math display">\[
-\hat{y}^* = \frac{1}{N} \sum_{n=1}^N f(x^*; W_n)
-\]</span> ### 4.4 Uncertainty Quantification</p>
-<p>Two forms of uncertainty are estimated:</p>
+<section id="bayesian-neural-networks" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="bayesian-neural-networks">3. Bayesian neural networks</h3>
+<p><strong>Intuition.</strong> An ordinary network learns one value per weight. A BNN learns a <em>distribution</em> per weight. Running the network many times with different sampled weights gives a spread of answers, and that spread tells us how much to trust the prediction.</p>
+<p>We place a Gaussian prior over the weights,</p>
+<p><span id="eq-bnn-prior"><span class="math display">\[
+p(W) = \mathcal{N}\big(W \mid \mu_W,\, \sigma_W^2\big),
+\tag{11}\]</span></span></p>
+<p>define the likelihood of the labeled data,</p>
+<p><span id="eq-bnn-lik"><span class="math display">\[
+p(\mathbf{y} \mid X, W) = \prod_{i=1}^{n_L} \mathcal{N}\big(y_i \mid f(\mathbf{x}_i, W),\, \sigma^2\big),
+\tag{12}\]</span></span></p>
+<p>where <span class="math inline">\(\sigma^2\)</span> captures noise in the data itself, and update our beliefs with Bayes’ rule:</p>
+<p><span id="eq-bnn-post"><span class="math display">\[
+p(W \mid \mathcal{D}_L) \propto p(\mathcal{D}_L \mid W)\, p(W).
+\tag{13}\]</span></span></p>
+<p>To classify a new meter <span class="math inline">\(\mathbf{x}\)</span> we average over every plausible network, weighted by the posterior:</p>
+<p><span id="eq-bnn-pred"><span class="math display">\[
+p(y^* \mid \mathbf{x}, \mathcal{D}_L) = \int p(y^* \mid \mathbf{x}, W)\, p(W \mid \mathcal{D}_L)\, dW.
+\tag{14}\]</span></span></p>
+<p>That integral has no closed form, so we approximate it with <strong>Monte Carlo dropout</strong>: keep dropout switched on at inference, run <span class="math inline">\(N\)</span> stochastic forward passes, and average:</p>
+<p><span id="eq-mc"><span class="math display">\[
+\hat{y}^* = \frac{1}{N} \sum_{n=1}^{N} f(\mathbf{x}; W_n).
+\tag{15}\]</span></span></p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Why ρ = −3?</strong> Each weight’s standard deviation is parameterized as <span class="math inline">\(\sigma = \log(1 + e^{\rho})\)</span>, which keeps it positive. With <span class="math inline">\(\rho = -3\)</span>:</p>
+<p><span class="math inline">\(\sigma = \log(1 + e^{-3}) \approx 0.049\)</span></p>
+<p>This is a small initial uncertainty, enough to explore without destabilizing early training.</p>
+</div></div><table class="hp table">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Setting</th>
+<th data-quarto-table-cell-role="th">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Layers</td>
+<td>Input (8 features) → Bayesian 64 → dropout → Bayesian 32 → dropout → softmax over phases</td>
+</tr>
+<tr class="even">
+<td>Bayesian weights</td>
+<td>Gaussian weights and biases; μ initialized at 0.0, ρ at −3 (Kaiming normal)</td>
+</tr>
+<tr class="odd">
+<td>Optimizer</td>
+<td>Adam, learning rate 0.001, weight decay 0.01</td>
+</tr>
+<tr class="even">
+<td>Dropout</td>
+<td>0.7 retention rate</td>
+</tr>
+<tr class="odd">
+<td>Inference</td>
+<td>N = 100 stochastic forward passes, softmax-normalized</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="two-kinds-of-uncertainty" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="two-kinds-of-uncertainty">4. Two kinds of uncertainty</h3>
+<p>From the <span class="math inline">\(N\)</span> Monte Carlo predictions we compute</p>
+<p><span id="eq-epi"><span class="math display">\[
+U_{\text{epistemic}} = \operatorname{Var}\big(\hat{y}^*\big),
+\tag{16}\]</span></span></p>
+<p><span id="eq-ale"><span class="math display">\[
+U_{\text{aleatoric}} = \mathbb{E}\!\left[\big(\hat{y}^* - \mathbb{E}[\hat{y}^*]\big)^2\right].
+\tag{17}\]</span></span></p>
+<div class="insight">
+<p><span class="k">What each one tells a utility</span></p>
+<p><strong>Epistemic uncertainty</strong> is <em>the model doesn’t know</em>. It is high when a meter looks unlike anything in the labeled set, and it <strong>shrinks with more labels</strong>, so it points to which meters are worth a field visit.</p>
+<p><strong>Aleatoric uncertainty</strong> is <em>the data can’t tell</em>. It comes from noise in the measurements themselves, so more labels won’t remove it, and it flags meters whose AMI data may need cleaning.</p>
+</div>
+<p>The full procedure:</p>
+<div class="algo">
+  <div class="t">Algorithm 1 · Semi-supervised phase identification</div>
+  <ol>
+    <li><span class="kw">Input:</span> dataset D = {(xᵢ, yᵢ)}ᵢ₌₁ᴺ, label percentages P</li>
+    <li><span class="kw">Output:</span> accuracies, predictions, uncertainties</li>
+    <li>Filter D → D′; extract features X and labels Y</li>
+    <li>Split D′ into D<sub>dev</sub>, D<sub>test</sub> (70 : 30)</li>
+    <li><span class="kw">for</span> p ∈ P <span class="kw">do</span></li>
+    <li class="in1">Select n = |D<sub>dev</sub>| × p/100 labeled samples</li>
+    <li class="in1">Form D<sub>labeled</sub>, D<sub>unlabeled</sub> from D<sub>dev</sub></li>
+    <li class="in1">X<sub>semi</sub> = X<sub>labeled</sub> ∪ X<sub>unlabeled</sub></li>
+    <li class="in1">y<sub>semi</sub> = [y<sub>labeled</sub>, −1, …, −1]</li>
+    <li class="in1">Run self-training and label spreading on (X<sub>semi</sub>, y<sub>semi</sub>)</li>
+    <li class="in1">Run BNN on (X<sub>labeled</sub>, y<sub>labeled</sub>)</li>
+    <li class="in1">Evaluate all methods on D<sub>test</sub></li>
+    <li><span class="kw">end for</span></li>
+    <li><span class="kw">return</span> results for each label percentage in P</li>
+  </ol>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>The −1 convention.</strong> Unlabeled meters are marked with label −1, which semi-supervised libraries such as scikit-learn treat as “unknown”. Self-training and label spreading see all meters. The BNN trains only on the labeled ones and relies on its uncertainty to generalize.</p>
+</div></div></section>
+</section>
+<section id="results" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<div id="tbl-results" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-tbl figure page-columns page-full">
+<div aria-describedby="tbl-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="res table">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Labeled data</th>
+<th data-quarto-table-cell-role="th">Self-training</th>
+<th data-quarto-table-cell-role="th">Label spreading</th>
+<th data-quarto-table-cell-role="th">BNN</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>5%</td>
+<td>34.91 ± 0.11</td>
+<td>44.34 ± 0.16</td>
+<td class="best">64.15 ± 0.14</td>
+</tr>
+<tr class="even">
+<td>10%</td>
+<td>41.51 ± 0.12</td>
+<td>55.66 ± 0.13</td>
+<td class="best">90.57 ± 0.11</td>
+</tr>
+<tr class="odd">
+<td>20%</td>
+<td>45.28 ± 0.11</td>
+<td>65.09 ± 0.11</td>
+<td class="best">94.34 ± 0.10</td>
+</tr>
+<tr class="even">
+<td>30%</td>
+<td>82.08 ± 0.12</td>
+<td>59.43 ± 0.09</td>
+<td class="best">90.57 ± 0.09</td>
+</tr>
+<tr class="odd">
+<td>40%</td>
+<td>74.53 ± 0.11</td>
+<td>68.87 ± 0.09</td>
+<td class="best">97.17 ± 0.07</td>
+</tr>
+<tr class="even">
+<td>50%</td>
+<td>90.57 ± 0.13</td>
+<td>61.32 ± 0.08</td>
+<td class="best">98.11 ± 0.06</td>
+</tr>
+<tr class="odd">
+<td>60%</td>
+<td>77.36 ± 0.12</td>
+<td>75.47 ± 0.08</td>
+<td class="best">97.17 ± 0.06</td>
+</tr>
+<tr class="even">
+<td>70%</td>
+<td>95.28 ± 0.10</td>
+<td>69.81 ± 0.08</td>
+<td class="best">99.06 ± 0.06</td>
+</tr>
+<tr class="odd">
+<td>80%</td>
+<td>81.13 ± 0.10</td>
+<td>68.87 ± 0.08</td>
+<td class="best">98.11 ± 0.07</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-tbl margin-caption" id="tbl-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Test accuracy (%) with uncertainty for each method as the share of labeled data grows. The best method in every row is highlighted, and it is the BNN in every case.
+</figcaption>
+</figure>
+</div>
+<div id="fig-results" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="semi_supervised_pes_gm_2025/figures/accuracy_comparison.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Training (dashed) and testing (solid) accuracy of the three methods across labeled-data percentages. The BNN (purple) stays near the top from 10% labeled data onward. Self-training (green) swings widely, and label spreading (orange) levels off around 70%.
+</figcaption>
+</figure>
+</div>
+<section id="what-the-numbers-say" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="what-the-numbers-say">What the numbers say</h3>
+<p><strong>BNNs win when labels are scarce.</strong> With only <strong>5%</strong> of meters labeled (12 meters), the BNN reaches <strong>64.15%</strong>, against 34.91% for self-training and 44.34% for label spreading. At <strong>10%</strong> it jumps to <strong>90.57%</strong> while the others are still below 56%. It peaks at <strong>99.06%</strong> with 70% labeled data.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>In practice, at 10% labels the BNN gets about 96 of 106 test meters right. Self-training gets about 44.</p>
+</div></div><p><strong>Self-training is unstable.</strong> Its accuracy is not monotone in the amount of labeled data. It goes from 82.08% at 30% to 74.53% at 40%, and from 95.28% at 70% to 81.13% at 80%. The fixed 0.85 pseudo-label threshold lets confident but wrong labels into the training set, and the model overfits to them.</p>
+<p><strong>Label spreading plateaus.</strong> It improves early but levels off around 70% accuracy. A graph built on only two nearest neighbors captures local structure well but can’t express more complex boundaries between phases.</p>
+</section>
+<section id="why-the-bnn-wins" class="level3">
+<h3 class="anchored" data-anchor-id="why-the-bnn-wins">Why the BNN wins</h3>
+<div class="insight">
+<p><span class="k">Key insight</span></p>
+<p>Treating weights as <strong>distributions</strong> gives the BNN a built-in guard against the failure that hurts self-training. It never commits hard to a single early guess, so errors don’t compound. Its effective complexity also adapts to the amount of data: with few labels the posterior stays broad and the model is cautious, and as labels arrive the posterior narrows and the model becomes confident.</p>
+</div>
+<p>Self-training and label spreading still earn their place. Self-training grows the labeled set cheaply, and label spreading uses the geometry of the unlabeled data. Together with a BNN they give a path <strong>from a handful of trusted labels to a well-calibrated classifier</strong>, while flagging the predictions that need a human check.</p>
+</section>
+</section>
+<section id="conclusion" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Phase identification doesn’t need a fully labeled feeder. A Bayesian neural network trained on a small, partly unreliable set of labels reaches <strong>about 98% ± 0.08 accuracy</strong> on real utility AMI data and attaches an uncertainty to every prediction. The labeled-data sweep also gives utilities a practical answer to <em>how many meters they need to verify</em>: by about 10–20% labeled data, the BNN is already above 90%.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>For practitioners.</strong> Use epistemic uncertainty to prioritize field verification. Verify the meters the model is least sure about first, then retrain. Each verified meter then teaches the model as much as possible.</p>
+</div></div></section>
+<section id="cite" class="level2">
+<h2 class="anchored" data-anchor-id="cite">Cite this work</h2>
+<blockquote class="blockquote">
+<p>K. Kumar, K. Utkarsh, J. Wang and H. V. Padullaparti, “Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems,” <em>2025 IEEE Power &amp; Energy Society General Meeting (PESGM)</em>, Austin, TX, USA, 2025, pp.&nbsp;1–5, doi: <a href="https://doi.org/10.1109/PESGM52009.2025.11225667">10.1109/PESGM52009.2025.11225667</a>.</p>
+</blockquote>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@inproceedings</span>{<span class="ot">kumar2025ssl_phase</span>,</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">author</span>    = {Kumar, Kundan and Utkarsh, Kumar and Wang, Jiyu and Padullaparti, Harsha Vardhana},</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span>     = {Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems},</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">booktitle</span> = {2025 IEEE Power <span class="ch">\&amp;</span> Energy Society General Meeting (PESGM)},</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span>      = {2025},</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">pages</span>     = {1--5},</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">address</span>   = {Austin, TX, USA},</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">doi</span>       = {10.1109/PESGM52009.2025.11225667}</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="acknowledgments" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgments">Acknowledgments</h2>
+<p>This work was authored in part by the National Renewable Energy Laboratory (NREL) for the U.S. Department of Energy (DOE) under Contract No.&nbsp;DE-AC36-08GO28308. Funding was provided by the U.S. DOE Office of Electricity under Agreement No.&nbsp;102400X-FY23 TCF-23-20116. The views expressed do not necessarily represent the views of the DOE or the U.S. Government.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 <ol type="1">
-<li><p><strong>Epistemic (Model Uncertainty):</strong> <span class="math display">\[
-U_{\text{epistemic}} = \mathrm{Var}(\hat{y}^*)
-\]</span></p></li>
-<li><p><strong>Aleatoric (Data Uncertainty):</strong> <span class="math display">\[
-U_{\text{aleatoric}} = \mathbb{E}\!\left[(\hat{y}^* - \mathbb{E}[\hat{y}^*])^2\right]
-\]</span></p></li>
+<li>H. Padullaparti, S. Veda, J. Wang, M. Symko-Davies, and T. Bialek, “Phase identification in real distribution networks with high PV penetration using advanced metering infrastructure data,” <em>IEEE PESGM</em>, 2022.</li>
+<li>H. Padullaparti, S. Veda, S. Dhulipala, M. Baggu, T. Bialek, and M. Symko-Davies, “Considerations for AMI-based operations for distribution feeders,” <em>IEEE PESGM</em>, 2019.</li>
+<li>N. Zaragoza, H. Chaoui, B. Nutter, and V. Rao, “Phase identification in power distribution systems via feature engineering,” <em>IEEE Access</em>, vol.&nbsp;11, pp.&nbsp;118615–118624, 2023.</li>
+<li>F. Olivier, A. Sutera, P. Geurts, R. Fonteneau, and D. Ernst, “Phase identification of smart meters by clustering voltage measurements,” <em>PSCC</em>, 2018.</li>
+<li>J. E. van Engelen and H. H. Hoos, “A survey on semi-supervised learning,” <em>Machine Learning</em>, vol.&nbsp;109, pp.&nbsp;373–440, 2020. <a href="https://doi.org/10.1007/s10994-019-05855-6">doi</a></li>
+<li>S. Li, Y. Zhang, F. Yang, and R. C. Qiu, “Fault classification in transmission network with semi-supervised learning method,” <em>IEEE ISGT Europe</em>, 2021.</li>
+<li>Y. Yuan, Y. Wang, and Z. Wang, “A data-driven framework for power system event type identification via safe semi-supervised techniques,” <em>IEEE Trans. Power Systems</em>, vol.&nbsp;39, no. 1, pp.&nbsp;1460–1471, 2024.</li>
+<li>Z. Wang, Y. Li, Y. Guo, L. Fang, and S. Wang, “Data-uncertainty guided multi-phase learning for semi-supervised object detection,” 2021. <a href="https://arxiv.org/abs/2103.16368">arXiv:2103.16368</a></li>
+<li>E. Goan and C. Fookes, “Bayesian neural networks: An introduction and survey,” Springer, 2020, pp.&nbsp;45–87. <a href="http://dx.doi.org/10.1007/978-3-030-42553-1_3">doi</a></li>
+<li>L. Wimmer, Y. Sale, P. Hofman, B. Bischl, and E. Hüllermeier, “Quantifying aleatoric and epistemic uncertainty in machine learning,” 2023. <a href="https://arxiv.org/abs/2209.03302">arXiv:2209.03302</a></li>
 </ol>
-<p>Together, they help distinguish between <em>what the model doesn’t know</em> and <em>what cannot be known</em> due to noise.</p>
-<!--![](semi_supervised_pes_gm_2025/figures/ssl_techniques.png){ width=50% }-->
-</section>
-</section>
-<section id="experimental-framework" class="level2">
-<h2 class="anchored" data-anchor-id="experimental-framework">5. Experimental Framework</h2>
-<div style="text-align: center;">
-<img src="semi_supervised_pes_gm_2025/figures/proposed_framework.png" alt="SSL Framework" style="width: 70%; height: auto;">
-<div>
-<strong>Fig. 2:</strong> Proposed SSL Framework Applied to AMI Data
-</div>
-</div>
-<section id="data-flow-and-setup" class="level3">
-<h3 class="anchored" data-anchor-id="data-flow-and-setup">Data Flow and Setup</h3>
-<ul>
-<li><strong>Dataset Source:</strong> Real AMI data from a U.S. utility (Duquesne Light Company).<br>
-</li>
-<li><strong>Feature Set:</strong><br>
-( F = {R_0, X_0, R_1, X_1, P, V_{}, V_{}, V_{}} )<br>
-</li>
-<li><strong>Data Split:</strong> 70% development, 30% test; within development, labeled fractions vary from 5–80%.<br>
-</li>
-<li><strong>Models:</strong>
-<ul>
-<li>MLP (64–32 layers, ReLU activation)<br>
-</li>
-<li>Label Spreading with kNN kernel<br>
-</li>
-<li>3-layer BNN using Gaussian priors, dropout rate 0.7, Adam optimizer</li>
-</ul></li>
-</ul>
-<div style="text-align: center;">
-<img src="semi_supervised_pes_gm_2025/figures/feeder_topology.png" alt="Network Topology" style="width: 60%; height: auto;">
-<div>
-<strong>Fig. 3:</strong> Distribution Feeder Topology
-</div>
-</div>
-<div style="text-align: center;">
-<img src="semi_supervised_pes_gm_2025/figures/data_split.png" alt="Data Split" style="width: 60%; height: auto;">
-<div>
-<strong>Fig. 4:</strong> Training and Testing Data Partitions
-</div>
-</div>
-<hr>
-</section>
-</section>
-<section id="results-and-discussion" class="level2">
-<h2 class="anchored" data-anchor-id="results-and-discussion">6. Results and Discussion</h2>
-<p>BNNs outperformed both self-training and label spreading across all labeled data ratios.<br>
-When only <strong>5% of the dataset</strong> was labeled, BNNs already achieved <strong>64.15% ± 0.14</strong>, compared to 34.9% for self-training and 44.3% for label spreading.<br>
-At <strong>70% labeled data</strong>, the BNN reached <strong>99.06% ± 0.06 accuracy</strong>.</p>
-<div style="text-align: center;">
-<img src="semi_supervised_pes_gm_2025/figures/accuracy_comparison.png" alt="Accuracy Comparison" style="width: 70%; height: auto;">
-<div>
-<strong>Fig. 5:</strong> Comparison of SSL Algorithms with Uncertainty Estimation
-</div>
-</div>
-<p><strong>Interpretation:</strong><br>
-BNNs’ probabilistic nature allows them to express <em>how sure</em> they are about each decision. This prevents overfitting and enables informed decision-making when data are uncertain—crucial for utility operations.</p>
-<hr>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">7. Conclusion</h2>
-<p>This research presents a <strong>semi-supervised learning framework enhanced with Bayesian uncertainty estimation</strong> for phase identification in power distribution systems.<br>
-By integrating <em>pseudo-labeling</em>, <em>graph-based label propagation</em>, and <em>Bayesian inference</em>, our framework achieves robust performance with minimal labeled data—<strong>98% ± 0.08 accuracy</strong>—and provides confidence metrics for each prediction.</p>
-<p>This uncertainty-aware paradigm is a step toward <strong>trustworthy, data-efficient, and intelligent smart grids</strong>, where models not only predict but also <em>know when they might be wrong</em>.</p>
-<ol start="2" type="1">
-<li><strong>Proposed SSL Framework Applied to AMI Data</strong>
-<div style="text-align: center;">
-<p><img src="semi_supervised_pes_gm_2025/figures/proposed_framework.png" alt="SSL Framework" style="width: 60%; height: auto;"></p>
-</div></li>
-<li><strong>Distribution Feeder Topology</strong>
-<div style="text-align: center;">
-<p><img src="semi_supervised_pes_gm_2025/figures/feeder_topology.png" alt="Network Toplogy" style="width: 60%; height: auto;"></p>
-</div></li>
-<li><strong>Training and Testing Data Partitions</strong>
-<div style="text-align: center;">
-<p><img src="semi_supervised_pes_gm_2025/figures/data_split.png" alt="Data Split" style="width: 60%; height: auto;"></p>
-</div></li>
-<li><strong>Accuracy Comparison of SSL Methods</strong></li>
-</ol>
-<div style="text-align: center;">
-<p><img src="semi_supervised_pes_gm_2025/figures/accuracy_comparison.png" alt="Accuracy Comparison" style="width: 60%; height: auto;"></p>
-</div>
-<!--
----
-#### Presentation
-<!--<iframe class="slides" src=""></iframe> -->
-<!--
-<iframe 
-  class="slides" 
-  src="semi_supervised_pes_gm_2025/docs/SSL_PESGM_poster.pdf" 
-  width="100%" 
-  height="400px" 
-  style="border: none;">
-</iframe>
-
-<div style="text-align: center; margin-top: 10px;">
-  <a href="semi_supervised_pes_gm_2025/docs/SSL_PESGM_poster.pdf" target="_blank" class="btn btn-primary">
-    View Fullscreen Poster
-  </a>
-</div>
--->
 
 
 
 </section>
+
 
 </main> <!-- /main -->
 <!-- Non-rendering template (won’t create any visible box at page bottom) -->
@@ -1182,7 +1475,7 @@ By integrating <em>pseudo-labeling</em>, <em>graph-based label propagation</em>,
 </div>   
     <div class="nav-footer-center">
 <p><a class="link-dark me-2" href="https://linkedin.com/in/kundan-kumarr" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a> <a class="link-dark me-2" href="https://github.com/kundan-kumarr" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark me-2" href="https://orcid.org/0000-0002-3229-6649" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a> <a class="link-dark me-2" href="https://scholar.google.com/citations?user=1zDpIJkAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a> <a class="link-dark me-2" href="mailto:cs.kundann@gmail.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a></p>
-<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/publications/articles/pesgm2025.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/publications/articles/pesgm2025.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

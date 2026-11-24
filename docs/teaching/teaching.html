@@ -303,11 +303,6 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about_me.html"> <i class="bi bi-person-circle" role="img">
-</i> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../cv.html"> <i class="bi bi-file-earmark-text-fill" role="img">
 </i> 
 <span class="menu-text">CV</span></a>
@@ -384,16 +379,13 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
-  <li><a href="#coms1130" id="toc-coms1130" class="nav-link active" data-scroll-target="#coms1130">Spreadsheets and Databases</a></li>
-  <li><a href="#coms3090" id="toc-coms3090" class="nav-link" data-scroll-target="#coms3090">Software Development Practices</a></li>
-  <li><a href="#coms3190" id="toc-coms3190" class="nav-link" data-scroll-target="#coms3190">User Interface Design</a></li>
-  <li><a href="#coms3620" id="toc-coms3620" class="nav-link" data-scroll-target="#coms3620">Object-Oriented Analysis and Design</a></li>
-  <li><a href="#coms3630" id="toc-coms3630" class="nav-link" data-scroll-target="#coms3630">Database Management Systems</a></li>
-  <li><a href="#coms4170" id="toc-coms4170" class="nav-link" data-scroll-target="#coms4170">Software Testing</a></li>
-  <li><a href="#future-goals" id="toc-future-goals" class="nav-link" data-scroll-target="#future-goals">Future Goals</a></li>
+  <ul class="collapse">
+  <li><a href="#teaching-map" id="toc-teaching-map" class="nav-link active" data-scroll-target="#teaching-map">Teaching Map</a></li>
+  <li><a href="#courses" id="toc-courses" class="nav-link" data-scroll-target="#courses">Courses</a></li>
+  <li><a href="#how-i-teach" id="toc-how-i-teach" class="nav-link" data-scroll-target="#how-i-teach">How I Teach</a></li>
+  <li><a href="#beyond-the-classroom" id="toc-beyond-the-classroom" class="nav-link" data-scroll-target="#beyond-the-classroom">Beyond the Classroom</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/teaching/teaching.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/edit/main/teaching/teaching.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kundan-kumarr/kundan-kumarr.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -402,6 +394,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Teaching</h1>
+<p class="subtitle lead">Graduate Teaching Assistant · Department of Computer Science · Iowa State University · 2020–2026</p>
 </div>
 
 
@@ -418,238 +411,344 @@ window.Quarto = {
 </header>
 
 
-<p>As a Computer Science Graduate Teaching Assistant at Iowa State University with over five years of teaching experience, I focus on creating a comprehensive, engaging, and challenging learning environment that meets the diverse needs of students. My teaching approach emphasizes connecting theory with real-world practice, helping students turn core computer science concepts into practical skills. I encourage hands-on learning through software development, user interface design, and database projects that build both technical skills and problem-solving abilities. By combining project-based tasks with personalized guidance, I aim to prepare students to face current challenges in the tech field with confidence and creativity.</p>
-<p>In addition to classroom and lab, I also create <strong>online learning resources</strong> that break down complex concepts into simple, digestible formats. These include YouTube tutorials, blog articles, and written notes or mini-books that summarize difficult topics into clear, practical explanations and master difficult concepts at their own pace.</p>
 <style>
-  .teach-links {
-    margin-top: 1.2rem;
-    display: flex;
-    gap: 0.9rem;
-    flex-wrap: wrap;
-  }
+  /* ---------- per-course accent colors ---------- */
+  .c1130 { --c: #2f8f6b; }
+  .c3090 { --c: #d05808; }
+  .c3190 { --c: #7b5ea7; }
+  .c3620 { --c: #2b6cb0; }
+  .c3630 { --c: #b8860b; }
+  .c4170 { --c: #c0392b; }
 
-  .teach-outline {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 6px 12px;
-    border-radius: 10px;
-    font-size: 0.85rem;
+  /* ---------- hero stats ---------- */
+  .t-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 1.6rem 0 0.4rem;
+    border-top: 1px solid var(--bs-border-color);
+    border-bottom: 1px solid var(--bs-border-color);
+  }
+  .t-stats > div {
+    flex: 1 1 120px;
+    padding: 0.9rem 0.6rem;
+    text-align: center;
+  }
+  .t-stats > div + div { border-left: 1px solid var(--bs-border-color); }
+  .t-stats strong {
+    display: block;
+    font-size: 1.9rem;
+    line-height: 1.1;
+    font-family: 'PT Serif', serif;
+  }
+  .t-stats span { font-size: 0.8rem; color: var(--bs-secondary-color); text-transform: uppercase; letter-spacing: 0.06em; }
+
+  /* ---------- teaching map ---------- */
+  .t-map-wrap { overflow-x: auto; margin: 0.6rem 0 0.4rem; padding-bottom: 0.3rem; }
+  .t-map {
+    display: grid;
+    grid-template-columns: 7.2rem repeat(12, minmax(2.1rem, 1fr));
+    gap: 4px;
+    min-width: 560px;
+    font-size: 0.78rem;
+  }
+  .t-map .yr {
+    text-align: center;
+    font-weight: 600;
+    color: var(--bs-secondary-color);
+    border-bottom: 2px solid var(--bs-border-color);
+    padding-bottom: 2px;
+  }
+  .t-map .sem { text-align: center; color: var(--bs-secondary-color); }
+  .t-map .lbl {
+    display: flex; align-items: center;
+    font-family: 'Source Code Pro', monospace;
     font-weight: 600;
     text-decoration: none;
-    background: transparent;
-    transition: all 0.18s ease;
+    color: var(--c);
+    white-space: nowrap;
+  }
+  .t-map .cell {
+    height: 1.9rem;
+    border-radius: 5px;
+    border: 1px dashed var(--bs-border-color);
+    opacity: 0.55;
+  }
+  .t-map a.cell {
+    background: var(--c);
+    border: none;
+    opacity: 1;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .t-map a.cell:hover, .t-map a.cell:focus-visible {
+    transform: scale(1.12);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+  }
+  .t-map-note { font-size: 0.82rem; color: var(--bs-secondary-color); }
+
+  /* ---------- course cards (same layout as before) ---------- */
+  .course-card {
+    position: relative;
+    border: 1px solid var(--bs-border-color);
+    border-left: 5px solid var(--c);
+    border-radius: 10px;
+    padding: 1.1rem 1.2rem 0.9rem;
+    margin: 1.1rem 0;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  .course-card:hover { box-shadow: 0 6px 18px rgba(0,0,0,0.08); transform: translateY(-2px); }
+  .course-card .grid { align-items: start; }
+  .course-card img { border-radius: 8px; width: 100%; max-width: 120px; }
+  .course-card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  .course-card h3 .code { color: var(--c); font-family: 'Source Code Pro', monospace; margin-right: 0.3rem; }
+  .terms a {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 1px 10px;
+    margin: 0 4px 4px 0;
+    border-radius: 999px;
+    border: 1.5px solid var(--c);
+    color: var(--c);
+    text-decoration: none;
+  }
+  .terms a:hover { background: var(--c); color: #fff; }
+  .tags { margin-top: 0.3rem; }
+  .tags span {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 1px 8px;
+    margin: 0 4px 4px 0;
+    border-radius: 4px;
+    background: var(--bs-tertiary-bg, rgba(127,127,127,0.12));
+    color: var(--bs-secondary-color);
   }
 
-  .teach-outline svg {
-    width: 20px;
-    height: 20px;
+  /* ---------- principles + resources ---------- */
+  .t-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 0.9rem;
+    margin: 1rem 0;
   }
-
-  /* Blog */
-  .btn-blog {
-    color: #4b4544;
-    border: 2px solid #4b4544;
+  .t-cards > div {
+    border: 1px solid var(--bs-border-color);
+    border-radius: 10px;
+    padding: 1rem 1.05rem;
   }
-  .btn-blog:hover {
-    background: #4b4544;
-    color: #fff;
-  }
-
-  /* YouTube */
-  .btn-youtube {
-    color: #c6281e;
-    border: 2px solid #c6281e;
-  }
-  .btn-youtube:hover {
-    background: #d93025;
-    color: #fff;
-  }
-
-  /* Notes */
-  .btn-notes {
-    color: #3e73e6;
-    border: 2px solid #3e73e6;
-  }
-  .btn-notes:hover {
-    background: #3e73e6;
-    color: #fff;
-  }
+  .t-cards .bi { font-size: 1.5rem; color: var(--bs-link-color); }
+  .t-cards h4 { font-size: 1rem; margin: 0.5rem 0 0.35rem; }
+  .t-cards p { font-size: 0.9rem; margin: 0; }
+  .t-cards ul { font-size: 0.9rem; margin: 0; padding-left: 1.1rem; }
 </style>
-
-<div class="teach-links">
-
-  <!-- Blog -->
-  <a class="teach-outline btn-blog" href="https://neuravp.substack.com/" target="_blank" rel="noopener">
-    📝
-    <span>Blogs</span>
-  </a>
-
-  <!-- YouTube -->
-  <a class="teach-outline btn-youtube" href="https://www.youtube.com/@AIAgentic-007" target="_blank" rel="noopener">
-
-    <!-- YouTube SVG icon -->
-    <svg viewbox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M23.5 6.2s-.2-1.7-.9-2.4c-.8-.9-1.7-.9-2.1-1C17.5 2.5 12 2.5 12 2.5h0s-5.5 0-8.5.3c-.4.1-1.3.1-2.1 1C.7 4.5.5 6.2.5 6.2S0 8.1 0 10v1.9c0 1.9.5 3.8.5 3.8s.2 1.7.9 2.4c.8.9 1.9.9 2.4 1 1.7.2 7.2.3 7.2.3s5.5 0 8.5-.3c.4-.1 1.3-.1 2.1-1 .7-.7.9-2.4.9-2.4s.5-1.9.5-3.8V10c0-1.9-.5-3.8-.5-3.8zM9.5 14.5v-5l5 2.5-5 2.5z"></path>
-    </svg>
-
-    <span>YouTube</span>
-  </a>
-
-  <!-- Notes -->
- <!-- <a class="teach-outline btn-notes"
-     href="https://kundan-kumarr.github.io/Zero2LLM-Crafter/"
-     target="_blank" rel="noopener">
-    📘
-    <span>Notes / Book</span>
-  </a>
-
-</div> -->
-
-<div class="callout callout-style-default callout-note callout-empty-content callout-titled" title="Courses I have served as a Computer Science Graduate Teaching Assistant or Mentor in:">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>From 2020 to 2026 I served as a Computer Science Graduate Teaching Assistant at Iowa State University. My goal in every course was a comprehensive, engaging, and challenging learning environment that met the diverse needs of students, connecting theory with real-world practice so that core computer science concepts became practical skills.</p>
+<div class="t-stats">
+<div>
+<p><strong>6</strong> <span>courses</span></p>
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Courses I have served as a Computer Science Graduate Teaching Assistant or Mentor in:
+<div>
+<p><strong>12</strong> <span>semesters</span></p>
+</div>
+<div>
+<p><strong>13</strong> <span>offerings</span></p>
+</div>
+<div>
+<p><strong>4</strong> <span>areas</span></p>
 </div>
 </div>
-<div class="callout-body-container callout-body">
+<section id="teaching-map" class="level2">
+<h2 class="anchored" data-anchor-id="teaching-map">Teaching Map</h2>
+<p>Every semester from Fall 2020 to Spring 2026, one row per course. Select a block to jump to that course.</p>
+<div class="t-map-wrap">
+<div class="t-map" role="table" aria-label="Courses taught by semester, 2020 to 2026">
+  <div></div>
+  <div class="yr">2020</div>
+  <div class="yr" style="grid-column: span 2">2021</div>
+  <div class="yr" style="grid-column: span 2">2022</div>
+  <div class="yr" style="grid-column: span 2">2023</div>
+  <div class="yr" style="grid-column: span 2">2024</div>
+  <div class="yr" style="grid-column: span 2">2025</div>
+  <div class="yr">2026</div>
 
+  <div></div>
+  <div class="sem">Fall</div><div class="sem">Spr</div><div class="sem">Fall</div><div class="sem">Spr</div><div class="sem">Fall</div><div class="sem">Spr</div><div class="sem">Fall</div><div class="sem">Spr</div><div class="sem">Fall</div><div class="sem">Spr</div><div class="sem">Fall</div><div class="sem">Spr</div>
+
+  <!-- order of columns: F20 S21 F21 S22 F22 S23 F23 S24 F24 S25 F25 S26 -->
+  <a class="lbl c1130" href="#coms1130">COMS 1130</a>
+  <a class="cell c1130" href="#coms1130" title="COMS 1130 · Fall 2020"></a><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+
+  <a class="lbl c3090" href="#coms3090">COMS 3090</a>
+  <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><a class="cell c3090" href="#coms3090" title="COMS 3090 · Fall 2022"></a><a class="cell c3090" href="#coms3090" title="COMS 3090 · Spring 2023"></a><div class="cell"></div><a class="cell c3090" href="#coms3090" title="COMS 3090 · Spring 2024"></a><div class="cell"></div><div class="cell"></div><a class="cell c3090" href="#coms3090" title="COMS 3090 · Fall 2025"></a><div class="cell"></div>
+
+  <a class="lbl c3190" href="#coms3190">COMS 3190</a>
+  <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><a class="cell c3190" href="#coms3190" title="COMS 3190 · Fall 2023"></a><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+
+  <a class="lbl c3620" href="#coms3620">COMS 3620</a>
+  <a class="cell c3620" href="#coms3620" title="COMS 3620 · Fall 2020"></a><a class="cell c3620" href="#coms3620" title="COMS 3620 · Spring 2021"></a><a class="cell c3620" href="#coms3620" title="COMS 3620 · Fall 2021"></a><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><a class="cell c3620" href="#coms3620" title="COMS 3620 · Fall 2024"></a><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+
+  <a class="lbl c3630" href="#coms3630">COMS 3630</a>
+  <div class="cell"></div><div class="cell"></div><div class="cell"></div><a class="cell c3630" href="#coms3630" title="COMS 3630 · Spring 2022"></a><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><a class="cell c3630" href="#coms3630" title="COMS 3630 · Spring 2026"></a>
+
+  <a class="lbl c4170" href="#coms4170">COMS 4170</a>
+  <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><a class="cell c4170" href="#coms4170" title="COMS 4170 · Spring 2025"></a><div class="cell"></div><div class="cell"></div>
 </div>
 </div>
-<style>
-/* Hide visually but keep in DOM so it appears in TOC */
-.visually-hidden {
-  position: absolute !important;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0,0,0,0);
-  border: 0; white-space: nowrap;
-}
-</style>
-<style>
-/* --- Keep TOC items on one line (with ellipsis if needed) --- */
-nav[role="doc-toc"] li > a,
-nav[role="doc-toc"] li > a .nav-link-text {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  hyphens: none;
-}
-
-/* Optional: give the TOC a bit more room so fewer items truncate */
-.sidebar nav[role="doc-toc"] {
-  min-width: 18rem;   /* tweak to 19–20rem if you want more */
-}
-</style>
-<section id="coms1130" class="level2 visually-hidden">
-<h2 class="visually-hidden anchored" data-anchor-id="coms1130">Spreadsheets and Databases</h2>
 </section>
-<section id="coms-1130-spreadsheets-and-databases" class="level2 unlisted">
-<h2 class="unlisted anchored" data-anchor-id="coms-1130-spreadsheets-and-databases">COMS 1130 – Spreadsheets and Databases</h2>
+<section id="courses" class="level2">
+<h2 class="anchored" data-anchor-id="courses">Courses</h2>
+<div id="coms1130" class="course-card c1130">
 <div class="grid">
 <div class="g-col-12 g-col-md-2">
 <p><img src="../misc/info/teaching/spreadsheets.png" class="img-fluid"></p>
 </div>
-<div class="g-col-12 g-col-md-10">
-<p><a href="../teaching/coms1130/">Fall 2020</a></p>
+<section id="coms-1130-spreadsheets-and-databases" class="level3 unnumbered g-col-12 g-col-md-10">
+<h3 class="unnumbered anchored" data-anchor-id="coms-1130-spreadsheets-and-databases"><span class="code">COMS 1130</span> Spreadsheets and Databases</h3>
+<p><span class="terms"><a href="../teaching/coms1130/">Fall 2020</a></span></p>
 <p>This foundational course focuses on using tools such as Microsoft Excel and Microsoft Access for effective data organization, analysis, and reporting. Students develop proficiency in applying formulas, creating pivot tables, designing queries, and building forms and visual analyses to support practical business and data-driven decision-making.</p>
+<p><span class="tags"><span>Excel</span> <span>Access</span> <span>Pivot tables</span> <span>Queries</span></span></p>
+</section>
 </div>
 </div>
-</section>
-<section id="coms3090" class="level2 visually-hidden">
-<h2 class="visually-hidden anchored" data-anchor-id="coms3090">Software Development Practices</h2>
-</section>
-<section id="coms-3090-software-development-practices" class="level2 unlisted">
-<h2 class="unlisted anchored" data-anchor-id="coms-3090-software-development-practices">COMS 3090 – Software Development Practices</h2>
+<div id="coms3090" class="course-card c3090">
 <div class="grid">
 <div class="g-col-12 g-col-md-2">
 <p><img src="../misc/info/teaching/software_development.png" class="img-fluid"></p>
 </div>
-<div class="g-col-12 g-col-md-10">
-<p><a href="../teaching/coms3090/">Fall 2022</a>, &nbsp; <a href="../teaching/coms3090/">Spring 2023</a>, &nbsp; <a href="../teaching/coms3090/">Spring 2024</a>, &nbsp; <a href="../teaching/coms3090/">Fall 2025</a></p>
+<section id="coms-3090-software-development-practices" class="level3 unnumbered g-col-12 g-col-md-10">
+<h3 class="unnumbered anchored" data-anchor-id="coms-3090-software-development-practices"><span class="code">COMS 3090</span> Software Development Practices</h3>
+<p><span class="terms"><a href="../teaching/coms3090/">Fall 2022</a> <a href="../teaching/coms3090/">Spring 2023</a> <a href="../teaching/coms3090/">Spring 2024</a> <a href="../teaching/coms3090/">Fall 2025</a></span></p>
 <p>This course is a practical, <strong>hands-on program</strong> that focuses on modern software development standards. Core topics include Git, Agile methodologies, code reviews, unit testing, and continuous integration and deployment (CI/CD). Students collaborate on team-based projects that replicate real-world development workflows, with particular emphasis on collaboration, documentation, and iterative improvement. The course culminates in comprehensive Android application and game development, including design, implementation, testing, and deployment.</p>
+<p><span class="tags"><span>Git</span> <span>Agile</span> <span>Code review</span> <span>CI/CD</span> <span>Android</span></span></p>
+</section>
 </div>
 </div>
-</section>
-<section id="coms3190" class="level2 visually-hidden">
-<h2 class="visually-hidden anchored" data-anchor-id="coms3190">User Interface Design</h2>
-</section>
-<section id="coms-3190-user-interface-design" class="level2 unlisted">
-<h2 class="unlisted anchored" data-anchor-id="coms-3190-user-interface-design">COMS 3190 – User Interface Design</h2>
+<div id="coms3190" class="course-card c3190">
 <div class="grid">
 <div class="g-col-12 g-col-md-2">
 <p><img src="../misc/info/teaching/user_interface.png" class="img-fluid"></p>
 </div>
-<div class="g-col-12 g-col-md-10">
-<p><a href="../teaching/coms3190/">Fall 2023</a></p>
+<section id="coms-3190-user-interface-design" class="level3 unnumbered g-col-12 g-col-md-10">
+<h3 class="unnumbered anchored" data-anchor-id="coms-3190-user-interface-design"><span class="code">COMS 3190</span> User Interface Design</h3>
+<p><span class="terms"><a href="../teaching/coms3190/">Fall 2023</a></span></p>
 <p>This course explores the principles of designing user-friendly and efficient interfaces. It integrates hardware and data-driven UI practices, incorporating Raspberry Pi for Internet of Things (IoT) applications and Node.js for front-end visualization and interactive design. Students learn to design, prototype, and evaluate interfaces with a focus on usability and user experience.</p>
+<p><span class="tags"><span>Usability</span> <span>Prototyping</span> <span>Raspberry Pi</span> <span>IoT</span> <span>Node.js</span></span></p>
+</section>
 </div>
 </div>
-</section>
-<section id="coms3620" class="level2 visually-hidden">
-<h2 class="visually-hidden anchored" data-anchor-id="coms3620">Object-Oriented Analysis and Design</h2>
-</section>
-<section id="coms-3620-object-oriented-analysis-and-design" class="level2 unlisted">
-<h2 class="unlisted anchored" data-anchor-id="coms-3620-object-oriented-analysis-and-design">COMS 3620 – Object-Oriented Analysis and Design</h2>
+<div id="coms3620" class="course-card c3620">
 <div class="grid">
 <div class="g-col-12 g-col-md-2">
 <p><img src="../misc/info/teaching/object_oriented.png" class="img-fluid"></p>
 </div>
-<div class="g-col-12 g-col-md-10">
-<p><a href="../teaching/coms3620/">Fall 2020</a>, &nbsp; <a href="../teaching/coms3620/">Spring 2021</a>, &nbsp; <a href="../teaching/coms3620/">Fall 2021</a>, &nbsp; <a href="../teaching/coms3620/">Fall 2024</a></p>
+<section id="coms-3620-object-oriented-analysis-and-design" class="level3 unnumbered g-col-12 g-col-md-10">
+<h3 class="unnumbered anchored" data-anchor-id="coms-3620-object-oriented-analysis-and-design"><span class="code">COMS 3620</span> Object-Oriented Analysis and Design</h3>
+<p><span class="terms"><a href="../teaching/coms3620/">Fall 2020</a> <a href="../teaching/coms3620/">Spring 2021</a> <a href="../teaching/coms3620/">Fall 2021</a> <a href="../teaching/coms3620/">Fall 2024</a></span></p>
 <p>This course teaches the modeling and design of software systems using object-oriented principles. It emphasizes the use of UML diagrams, design patterns, and Java implementations to develop modular, maintainable, and scalable software solutions. Students gain experience moving from requirements to design to code in a structured, iterative way.</p>
+<p><span class="tags"><span>UML</span> <span>Design patterns</span> <span>Java</span></span></p>
+</section>
 </div>
 </div>
-</section>
-<section id="coms3630" class="level2 visually-hidden">
-<h2 class="visually-hidden anchored" data-anchor-id="coms3630">Database Management Systems</h2>
-</section>
-<section id="coms-3630-database-management-systems" class="level2 unlisted">
-<h2 class="unlisted anchored" data-anchor-id="coms-3630-database-management-systems">COMS 3630 – Database Management Systems</h2>
+<div id="coms3630" class="course-card c3630">
 <div class="grid">
 <div class="g-col-12 g-col-md-2">
 <p><img src="../misc/info/teaching/databases.png" class="img-fluid"></p>
 </div>
-<div class="g-col-12 g-col-md-10">
-<p><a href="../teaching/coms3630/">Spring 2022</a>, &nbsp; <a href="../teaching/coms3630/">Spring 2026</a></p>
+<section id="coms-3630-database-management-systems" class="level3 unnumbered g-col-12 g-col-md-10">
+<h3 class="unnumbered anchored" data-anchor-id="coms-3630-database-management-systems"><span class="code">COMS 3630</span> Database Management Systems</h3>
+<p><span class="terms"><a href="../teaching/coms3630/">Spring 2022</a> <a href="../teaching/coms3630/">Spring 2026</a></span></p>
 <p>This course covers the fundamentals of database architecture, data modeling, and Structured Query Language (SQL). Students gain hands-on experience with relational database systems while exploring key concepts such as indexing, transactions, normalization, and comprehensive database design. Emphasis is placed on designing robust schemas and writing efficient queries for real-world applications.</p>
+<p><span class="tags"><span>SQL</span> <span>Data modeling</span> <span>Normalization</span> <span>Transactions</span></span></p>
+</section>
 </div>
 </div>
-</section>
-<section id="coms4170" class="level2 visually-hidden">
-<h2 class="visually-hidden anchored" data-anchor-id="coms4170">Software Testing</h2>
-</section>
-<section id="coms-4170-software-testing" class="level2 unlisted">
-<h2 class="unlisted anchored" data-anchor-id="coms-4170-software-testing">COMS 4170 – Software Testing</h2>
+<div id="coms4170" class="course-card c4170">
 <div class="grid">
 <div class="g-col-12 g-col-md-2">
 <p><img src="../misc/info/teaching/software_testing.png" class="img-fluid"></p>
 </div>
-<div class="g-col-12 g-col-md-10">
-<p><a href="../teaching/coms4170/">Spring 2025</a></p>
+<section id="coms-4170-software-testing" class="level3 unnumbered g-col-12 g-col-md-10">
+<h3 class="unnumbered anchored" data-anchor-id="coms-4170-software-testing"><span class="code">COMS 4170</span> Software Testing</h3>
+<p><span class="terms"><a href="../teaching/coms4170/">Spring 2025</a></span></p>
 <p>This course focuses on the principles and practices of software verification and validation. Students learn to design and execute effective test cases, utilize debugging tools, and implement automation frameworks to ensure software quality, reliability, and maintainability.</p>
+<p><span class="tags"><span>Test design</span> <span>Debugging</span> <span>Test automation</span></span></p>
+</section>
 </div>
 </div>
 </section>
-<section id="future-goals" class="level2">
-<h2 class="anchored" data-anchor-id="future-goals">Future Goals</h2>
-<p>I am dedicated to the continuous development of my teaching methods and curriculum design. My objectives include:</p>
+<section id="how-i-teach" class="level2">
+<h2 class="anchored" data-anchor-id="how-i-teach">How I Teach</h2>
+<div class="t-cards">
+<div>
+<p><span class="bi bi-bezier2"></span></p>
+<section id="theory-meets-practice" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="theory-meets-practice">Theory meets practice</h4>
+<p>Every concept tied to a real-world use, so students leave with skills they can apply, not only definitions.</p>
+</section>
+</div>
+<div>
+<p><span class="bi bi-tools"></span></p>
+<section id="learn-by-building" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="learn-by-building">Learn by building</h4>
+<p>Hands-on software development, user interface design, and database projects that build technical skill and problem-solving together.</p>
+</section>
+</div>
+<div>
+<p><span class="bi bi-people"></span></p>
+<section id="guidance-for-every-learner" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="guidance-for-every-learner">Guidance for every learner</h4>
+<p>Project-based tasks combined with personalized guidance, so students with different backgrounds can face current challenges with confidence.</p>
+</section>
+</div>
+</div>
+<p><strong>Looking ahead</strong>, I want to keep growing as an educator by:</p>
 <ul>
-<li>Incorporating new AI and software development tools as part of student learning, helping them engage with modern development and analysis workflows.</li>
-<li>Creating interactive, experiential, and project-based learning environments that encourage students to be actively involved and learn by building.</li>
-<li>Becoming a resource to the broader computer science education community through curriculum innovation, teaching-focused research, and mentorship of other educators.</li>
-<li>Broadening students’ access to the computing field so they can confidently tackle real-world challenges using both their theoretical foundations and practical skills.</li>
+<li>Incorporating new AI and software development tools into student learning, so students engage with modern development and analysis workflows.</li>
+<li>Creating interactive, experiential, and project-based learning environments where students learn by building.</li>
+<li>Contributing to the computer science education community through curriculum innovation, teaching-focused research, and mentoring other educators.</li>
+<li>Broadening access to computing so students can tackle real-world challenges with both theoretical foundations and practical skills.</li>
 </ul>
-<p><a href="mailto:cs.kundann@gmail.com">Email</a> me if you want to collaborate or learn more about my teaching and research initiatives.</p>
+</section>
+<section id="beyond-the-classroom" class="level2">
+<h2 class="anchored" data-anchor-id="beyond-the-classroom">Beyond the Classroom</h2>
+<p>I also create <strong>online learning resources</strong> that break complex concepts into clear, practical explanations that learners can work through at their own pace.</p>
+<div class="t-cards">
+<div>
+<p><span class="bi bi-journal-bookmark"></span></p>
+<section id="notes-and-mini-books" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="notes-and-mini-books">Notes and mini-books</h4>
+<ul>
+<li><a href="https://kundan-kumarr.github.io/Zero2LLM-Crafter/">Large Language Models</a></li>
+<li><a href="https://kundan-kumarr.github.io/ai-analysis/">Deep and Machine Learning</a></li>
+<li><a href="https://kundan-kumarr.github.io/statsphere/">Statistical Analysis</a></li>
+<li><a href="https://kundan-kumarr.github.io/safe-AI/">AI Alignment and Safety</a></li>
+</ul>
+</section>
+</div>
+<div>
+<p><span class="bi bi-youtube"></span></p>
+<section id="video-tutorials" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="video-tutorials">Video tutorials</h4>
+<p>Walkthroughs of AI and computer science topics on <a href="https://www.youtube.com/@AIAgentic-007">YouTube</a>.</p>
+</section>
+</div>
+<div>
+<p><span class="bi bi-pen"></span></p>
+<section id="blog" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="blog">Blog</h4>
+<p>Longer articles and explainers on <a href="https://neuravp.substack.com/">Substack</a>.</p>
+</section>
+</div>
+</div>
+<p><a href="mailto:cs.kundann@gmail.com">Email me</a> if you would like to collaborate or learn more about my teaching and research.</p>
 
 
 
 </section>
 
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <!-- Non-rendering template (won’t create any visible box at page bottom) -->
 <template id="theme-toggle-template">
   <button class="theme-toggle" aria-label="Toggle light and dark mode" title="Toggle light / dark mode" type="button">

@@ -1,9 +1,7 @@
 ---
 title: "Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification"
 type: "article"
-author: "Kundan Kumar"
 date: "2025-09-01"
-publication: "Elsevier Energy Journal on Electric Power Systems Research"
 preprint: ""
 doi: "10.1016/j.epsr.2025.112261"
 materials: ""
@@ -14,6 +12,10 @@ categories:
   - Forecasting
   - Estimation
 thumbnail: "/misc/info/pubs/thumbs/bilstm.gif"
+author: "Arif Hussain, Kundan Kumar, Gelli Ravikumar"
+year: "2026"
+pubtype: "journal"
+publication: "Electric Power Systems Research (Elsevier)"
 ---
 
 ## Citation 

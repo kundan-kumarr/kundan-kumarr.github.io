@@ -1,0 +1,17 @@
+---
+title: "Physics-Based Deep Reinforcement Learning for Grid-Resilient Volt-VAR Control"
+type: "article"
+author: "Kundan Kumar, Gelli Ravikumar"
+date: "2025-12-01"
+year: "2025"
+publication: "IEEE Transactions on Smart Grid (under review)"
+toc: false
+categories:
+  - Reinforcement Learning
+  - Physics-Informed Learning
+  - Smart Energy Systems
+---
+
+## Citation
+
+> K. Kumar and G. Ravikumar, "Physics-Based Deep Reinforcement Learning for Grid-Resilient Volt-VAR Control," *IEEE Transactions on Smart Grid*, 2025. (Under review)

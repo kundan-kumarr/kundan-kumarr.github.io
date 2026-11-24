@@ -1,0 +1,112 @@
+/* Shared styling for long-form paper pages (Tufte-style margin layout) */
+/* ---------- Tufte-style margin notes ---------- */
+.column-margin .column-container,
+.column-margin > div[id^="fn"],
+.column-margin > p,
+.column-margin.margin-note {
+  border-top: 2px solid #2a9d8f;
+  padding-top: 0.5em;
+  margin-bottom: 1.2em;
+  font-size: 0.8rem;
+  color: #555;
+  line-height: 1.55;
+}
+.column-margin a { color: #2a9d8f; }
+body.quarto-dark .column-margin .column-container,
+body.quarto-dark .column-margin > div[id^="fn"],
+body.quarto-dark .column-margin > p { color: #b8b8b8; }
+.margin-caption, figcaption { font-size: 0.8rem; line-height: 1.5; }
+
+/* ---------- header actions ---------- */
+.ppr-meta { font-size: 0.92rem; color: var(--bs-secondary-color); margin: -0.4rem 0 0.8rem; }
+.ppr-meta b { color: var(--bs-body-color); }
+.ppr-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.4rem 0 1.4rem; }
+.ppr-actions a {
+  --b: #1f5fbf;
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 5px 14px; border-radius: 999px;
+  border: 1.5px solid color-mix(in srgb, var(--b) 55%, transparent);
+  background: color-mix(in srgb, var(--b) 8%, transparent);
+  color: var(--bs-body-color); font-size: 0.85rem; font-weight: 600; text-decoration: none;
+}
+.ppr-actions a i { color: var(--b); }
+.ppr-actions a:hover { background: var(--b); color: #fff; border-color: var(--b); }
+.ppr-actions a:hover i { color: #fff; }
+.ppr-actions .a-poster { --b: #7b4fd6; }
+.ppr-actions .a-slides { --b: #d93025; }
+.ppr-actions .a-cite   { --b: #1f8f4d; }
+
+/* ---------- TL;DR ---------- */
+.tldr {
+  border-left: 4px solid #2a9d8f;
+  background: color-mix(in srgb, #2a9d8f 7%, transparent);
+  border-radius: 0 10px 10px 0;
+  padding: 1rem 1.2rem;
+  margin: 0.5rem 0 1.5rem;
+}
+.tldr .k { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #2a9d8f; }
+.tldr p { margin: 0.35rem 0 0; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; margin: 0.9rem 0 0.2rem; }
+.stats div { border: 1px solid var(--bs-border-color); border-radius: 8px; padding: 0.55rem 0.7rem; background: var(--bs-body-bg); }
+.stats b { display: block; font-family: 'PT Serif', serif; font-size: 1.35rem; line-height: 1.15; }
+.stats span { font-size: 0.78rem; color: var(--bs-secondary-color); }
+
+/* ---------- method cards / tables ---------- */
+.cards3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin: 0.8rem 0 1.2rem; }
+.cards3 > div { border: 1px solid var(--bs-border-color); border-top: 4px solid var(--c); border-radius: 10px; padding: 0.8rem 0.9rem; font-size: 0.88rem; }
+.cards3 h4 { font-size: 0.98rem; margin: 0 0 0.35rem; color: var(--c); }
+.cards3 p { margin: 0; }
+.m-st { --c: #2e7d32; } .m-ls { --c: #ef8a17; } .m-bnn { --c: #7b2d8e; }
+table.hp { font-size: 0.86rem; width: 100%; margin: 0.4rem 0 1rem; }
+table.hp td, table.hp th { padding: 0.3rem 0.6rem; border-bottom: 1px solid var(--bs-border-color); vertical-align: top; }
+table.hp th { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--bs-secondary-color); }
+table.hp td:first-child { white-space: nowrap; font-weight: 600; }
+table.res { width: 100%; font-size: 0.9rem; text-align: center; }
+table.res th { font-size: 0.78rem; }
+table.res td.best { font-weight: 700; color: #7b2d8e; background: color-mix(in srgb, #7b2d8e 9%, transparent); }
+body.quarto-dark table.res td.best { color: #d7a6e3; }
+
+/* ---------- algorithm ---------- */
+.algo {
+  border-top: 2px solid var(--bs-body-color); border-bottom: 2px solid var(--bs-body-color);
+  padding: 0.4rem 0 0.6rem; margin: 1rem 0 1.4rem; font-size: 0.88rem;
+}
+.algo .t { font-weight: 700; border-bottom: 1px solid var(--bs-border-color); padding-bottom: 0.3rem; margin-bottom: 0.4rem; }
+.algo ol { margin: 0; padding-left: 1.8rem; font-family: 'Source Code Pro', monospace; font-size: 0.82rem; line-height: 1.75; }
+.algo .in1 { padding-left: 1.2rem; }
+.algo .kw { font-weight: 700; }
+
+/* ---------- key-insight boxes ---------- */
+.insight { border: 1px solid var(--bs-border-color); border-radius: 10px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.insight .k { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #b46939; }
+.insight p { margin: 0.3rem 0 0; }
+
+@media (max-width: 768px) {
+  .stats, .cards3 { grid-template-columns: 1fr; }
+}
+
+/* ---------- objective-weight bar ---------- */
+.wbar { display: flex; height: 34px; border-radius: 8px; overflow: hidden; margin: 0.6rem 0 0.3rem; font-size: 0.8rem; font-weight: 700; color: #fff; }
+.wbar > div { display: flex; align-items: center; justify-content: center; white-space: nowrap; }
+.wbar .w-cost { background: #b46939; flex: 40; }
+.wbar .w-co2  { background: #2e7d32; flex: 30; }
+.wbar .w-en   { background: #1f5fbf; flex: 30; }
+.wbar .w-sl   { background: #888; flex: 1.2; }
+.wbar-legend { font-size: 0.78rem; color: var(--bs-secondary-color); margin-bottom: 1rem; }
+
+/* ---------- 24-hour profile strip ---------- */
+.hours { display: grid; grid-template-columns: 5.2rem repeat(24, 1fr); gap: 2px; font-size: 0.68rem; margin: 0.8rem 0 0.4rem; }
+.hours .lab { font-weight: 700; display: flex; align-items: center; font-size: 0.74rem; }
+.hours .h { text-align: center; color: var(--bs-secondary-color); }
+.hours .c { height: 30px; border-radius: 3px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 0.62rem; }
+.hours-legend { display: flex; flex-wrap: wrap; gap: 0.9rem; font-size: 0.76rem; color: var(--bs-secondary-color); margin-bottom: 1rem; }
+.hours-legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; background: var(--sw); vertical-align: -1px; }
+@media (max-width: 768px) { .hours { grid-template-columns: 3.6rem repeat(24, 1fr); font-size: 0.55rem; } .hours .c { font-size: 0; } }
+
+/* ---------- before/after results ---------- */
+table.ba { width: 100%; font-size: 0.9rem; }
+table.ba td, table.ba th { padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--bs-border-color); }
+table.ba th { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--bs-secondary-color); }
+table.ba td.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.ba td.gain { text-align: right; font-weight: 700; color: #2e7d32; }
+body.quarto-dark table.ba td.gain { color: #7bd389; }

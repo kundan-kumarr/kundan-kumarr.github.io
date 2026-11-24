@@ -87,8 +87,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-bibliography','listing-filters','listing-engines','listing-language','listing-title','listing-type','listing-author','listing-date','listing-publication','listing-preprint','listing-doi','listing-materials','listing-toc','listing-categories','listing-thumbnail','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-year','listing-image','listing-poster','listing-slides','listing-pubtype',{ data: ['index'] },{ data: ['categories'] }],
-      
+      valueNames: ['listing-project','listing-website','listing-format','listing-bibliography','listing-filters','listing-engines','listing-language','listing-title','listing-type','listing-date','listing-preprint','listing-doi','listing-materials','listing-toc','listing-categories','listing-thumbnail','listing-author','listing-year','listing-pubtype','listing-publication','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-image','listing-poster','listing-slides','listing-status','listing-subtitle','listing-toc-location','listing-toc-depth','listing-toc-title','listing-reference-location','listing-citation-location','listing-fig-cap-location','listing-tbl-cap-location','listing-crossref',{ data: ['index'] },{ data: ['categories'] }],
+      page: 10,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-title","listing-author","listing-publication","listing-year"],
     };
 
@@ -334,11 +335,6 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about_me.html"> <i class="bi bi-person-circle" role="img">
-</i> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../cv.html"> <i class="bi bi-file-earmark-text-fill" role="img">
 </i> 
 <span class="menu-text">CV</span></a>
@@ -412,7 +408,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="QmF5ZXNpYW4lMjBOZXVyYWwlMjBOZXR3b3Jr">Bayesian Neural Network <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QmF5ZXNpYW4lMjBPcHRpbWl6YXRpb24=">Bayesian Optimization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29udm9sdXRpb25hbCUyMG5ldXJhbCUyMG5ldHdvcmtz">convolutional neural networks <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGVlcCUyMExlYXJuaW5n">Deep Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RW5lcmd5JTIwT3B0aW1pemF0aW9u">Energy Optimization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RXN0aW1hdGlvbg==">Estimation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Rm9yZWNhc3Rpbmc=">Forecasting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFjaGluZSUyMExlYXJuaW5n">Machine Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TXVsdGktT2JqZWN0aXZlJTIwT3B0aW1pemF0aW9u">Multi-Objective Optimization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TXVsdGl2YXJpYWJsZQ==">Multivariable <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVpbmZvcmNlbWVudCUyMExlYXJuaW5n">Reinforcement Learning <span class="quarto-category-count">(4)</span></div><div class="category" data-category="U2VjdXJlJTIwQUk=">Secure AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2VtaSUyMFN1cGVydmlzZWQlMjBMZWFybmluZw==">Semi Supervised Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U21hcnQlMjBFbmVyZ3klMjBTeXN0ZW1z">Smart Energy Systems <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VGltZSUyMFNlcmllcyUyMEFuYWx5c2lz">Time Series Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VHJhbnNmZXIlMjBMZWFybmluZw==">Transfer Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VW5jZXJ0YWludHklMjBFc3RpbWF0aW9u">Uncertainty Estimation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VmFsdWUlMjBvZiUyMEluZm9ybWF0aW9u">Value of Information <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(11)</span></div><div class="category" data-category="QmF5ZXNpYW4lMjBOZXVyYWwlMjBOZXR3b3Jr">Bayesian Neural Network <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QmF5ZXNpYW4lMjBPcHRpbWl6YXRpb24=">Bayesian Optimization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29udm9sdXRpb25hbCUyMG5ldXJhbCUyMG5ldHdvcmtz">convolutional neural networks <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGVlcCUyMExlYXJuaW5n">Deep Learning <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RW5lcmd5JTIwT3B0aW1pemF0aW9u">Energy Optimization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RW5zZW1ibGUlMjBMZWFybmluZw==">Ensemble Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RXN0aW1hdGlvbg==">Estimation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Rm9yZWNhc3Rpbmc=">Forecasting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFjaGluZSUyMExlYXJuaW5n">Machine Learning <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TXVsdGktT2JqZWN0aXZlJTIwT3B0aW1pemF0aW9u">Multi-Objective Optimization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TXVsdGl2YXJpYWJsZQ==">Multivariable <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UGh5c2ljcy1JbmZvcm1lZCUyMExlYXJuaW5n">Physics-Informed Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVpbmZvcmNlbWVudCUyMExlYXJuaW5n">Reinforcement Learning <span class="quarto-category-count">(5)</span></div><div class="category" data-category="U2VjdXJlJTIwQUk=">Secure AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2VtaSUyMFN1cGVydmlzZWQlMjBMZWFybmluZw==">Semi Supervised Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U21hcnQlMjBFbmVyZ3klMjBTeXN0ZW1z">Smart Energy Systems <span class="quarto-category-count">(3)</span></div><div class="category" data-category="VGltZSUyMFNlcmllcyUyMEFuYWx5c2lz">Time Series Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VHJhbnNmZXIlMjBMZWFybmluZw==">Transfer Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VW5jZXJ0YWludHklMjBFc3RpbWF0aW9u">Uncertainty Estimation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VmFsdWUlMjBvZiUyMEluZm9ybWF0aW9u">Value of Information <span class="quarto-category-count">(1)</span></div><div class="category" data-category="V29ya3Nob3A=">Workshop <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
@@ -429,9 +425,9 @@ window.Quarto = {
 }
 .pub-list > li{
   list-style: none;
-  margin: 0 0 1rem 0;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  margin: 0;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(0,0,0,0.08);
 }
 
 /* ===== Title ===== */
@@ -549,6 +545,66 @@ window.Quarto = {
 
 .pub-main{ flex:1 1 auto; min-width:0; }
 
+/* ===== Placeholder thumbnail (keeps every row aligned) ===== */
+.pub-thumb-empty{
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px;
+  text-decoration:none;
+  --pt:#8b3f1f;
+  color:var(--pt);
+  background:color-mix(in srgb, var(--pt) 7%, transparent);
+  border-color:color-mix(in srgb, var(--pt) 30%, transparent);
+  box-shadow:none;
+}
+.pub-thumb-empty i{ font-size:1.7rem; line-height:1; }
+.pub-thumb-empty span{ font-size:.68rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; }
+.pt-journal{ --pt:#1f5fbf; }
+.pt-conference{ --pt:#b46939; }
+.pt-workshop{ --pt:#1f8f4d; }
+
+/* ===== Authors, type, status ===== */
+.listing-author .author-me{ font-weight:700; color:#2e7d32; }
+.pub-type{
+  display:inline-block; font-size:.7rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+  padding:1px 8px; margin-right:6px; border-radius:5px;
+  color:var(--pt); border:1px solid var(--pt);
+}
+.pub-status{
+  display:inline-block; font-size:.72rem; font-weight:700; margin-left:6px;
+  padding:1px 8px; border-radius:5px;
+  background:rgba(217,119,6,.15); color:#b45309;
+}
+
+/* ===== Empty state ===== */
+.pub-empty{ display:none; color:rgba(0,0,0,.6); font-style:italic; margin-top:1rem; }
+body.quarto-dark .pub-empty{ color:rgba(255,255,255,.6); }
+
+/* ===== Year groups: solid line + year shown once ===== */
+.pub-list > li.year-start{ border-top: 1.5px solid rgba(0,0,0,0.3); }
+.pub-list > li.year-start:first-child{ border-top-color: rgba(0,0,0,0.3); }
+body.quarto-dark .pub-list > li{ border-top-color: rgba(255,255,255,0.10); }
+body.quarto-dark .pub-list > li.year-start{ border-top-color: rgba(255,255,255,0.3); }
+.pub-list > li:not(.year-start) .pub-year-side{ visibility: hidden; }
+
+/* ===== Faded year on the right ===== */
+.pub-year-side{
+  flex:0 0 auto;
+  align-self:flex-start;
+  min-width:3.6rem;
+  text-align:right;
+  font-family:'PT Serif', Georgia, serif;
+  font-size:1.45rem;
+  font-weight:700;
+  line-height:1;
+  color:currentColor;
+  opacity:.25;
+  letter-spacing:.02em;
+  user-select:none;
+  transition:opacity .15s ease;
+}
+@media (max-width: 650px){
+  .pub-year-side{ align-self:flex-end; font-size:1.3rem; }
+}
+
 /* mobile: stack nicely */
 @media (max-width: 650px){
   .pub-row{ flex-direction:column; }
@@ -566,8 +622,60 @@ window.Quarto = {
 <h3 class="pub-title anchored">
 Publications
 </h3>
-<p><span class="pub-total"> Total:8 <strong><span data-listing-count="articles"></span></strong> </span></p>
+<p><span class="pub-total"> <span id="pub-count-label">Total:</span> <strong id="pub-count">11</strong> </span></p>
 </div>
+<p class="pub-empty" id="pub-empty">No publications match these filters.</p>
+
+<script>
+window.addEventListener("load", function () {
+  const L = (window["quarto-listings"] || {})["listing-articles"];
+  const sel = document.getElementById("listing-articles-sort");
+  if (!L || !sel) return;
+  const all = L.items.map(i => i.elm);
+  let type = "";
+
+  /* --- Order By menu: keep the sort options, add a "Show" group for paper type --- */
+  sel.removeAttribute("onchange");
+  const sortGroup = document.createElement("optgroup");
+  sortGroup.label = "Sort by";
+  [...sel.options].filter(o => !o.disabled).forEach(o => sortGroup.appendChild(o));
+  sel.appendChild(sortGroup);
+  const typeGroup = document.createElement("optgroup");
+  typeGroup.label = "Show";
+  [["type:", "All papers (" + all.length + ")"]]
+    .concat([["journal","Journal"],["conference","Conference"],["workshop","Workshop"]]
+      .map(([v, t]) => ["type:" + v, t + " (" + all.filter(e => e.dataset.pubtype === v).length + ")"]))
+    .forEach(([v, t]) => { const o = new Option(t, v); typeGroup.appendChild(o); });
+  sel.appendChild(typeGroup);
+
+  sel.addEventListener("change", () => {
+    const o = sel.options[sel.selectedIndex];
+    if (o.value.startsWith("type:")) {
+      type = o.value.slice(5);
+      if (type) L.filter(item => item.elm.dataset.pubtype === type); else L.filter();
+      const n = L.matchingItems.length;
+      document.getElementById("pub-count").textContent = n;
+      document.getElementById("pub-count-label").textContent = type ? "Showing:" : "Total:";
+      document.getElementById("pub-empty").style.display = n ? "none" : "block";
+    } else {
+      L.sort(o.value, { order: o.getAttribute("data-direction") });
+    }
+    markYears();
+  });
+
+  /* --- Show each year once, with a solid line where a new year starts --- */
+  function markYears() {
+    let prev = null;
+    document.querySelectorAll("#listing-articles .pub-list > li").forEach(li => {
+      const y = li.dataset.year || "";
+      li.classList.toggle("year-start", y !== prev);
+      prev = y;
+    });
+  }
+  L.on("updated", markYears);
+  markYears();
+});
+</script>
 <div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
@@ -596,14 +704,129 @@ Publications
 </div>
 <ul class="pub-list list">
 
-  <li data-index="0" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDTXVsdGktT2JqZWN0aXZlJTIwT3B0aW1pemF0aW9uJTJDRW5lcmd5JTIwT3B0aW1pemF0aW9u" data-listing-date-sort="1761714000000" data-listing-file-modified-sort="1786719718556" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="242">
+  
+  <li data-index="0" data-categories="VW5jZXJ0YWludHklMjBFc3RpbWF0aW9uJTJDVGltZSUyMFNlcmllcyUyMEFuYWx5c2lzJTJDRm9yZWNhc3RpbmclMkNFc3RpbWF0aW9u" data-listing-date-sort="1756702800000" data-listing-file-modified-sort="1795540147635" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="285" data-pubtype="journal" data-year="2026">
     <div class="pub-row">
 
-     
+      
+      
+        <a class="pub-thumb" href="../publications/articles/Journal1.html">
+          <img src="../misc/info/pubs/thumbs/bilstm.gif" alt="Thumbnail for Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification">
+        </a>
+      
 
-  <a class="pub-thumb" href="../publications/articles/naps2025.html">
-    <img src="../misc/info/pubs/thumbs/naps.gif" alt="Thumbnail for A Multi-Objective Optimization Framework for Carbon-Aware Smart Energy Management">
-  </a>
+      <div class="pub-main">
+        <div class="listing-title lead">
+          <a href="../publications/articles/Journal1.html" class="pub-title-link">Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification</a>
+        </div>
+
+        
+          
+          
+          <div class="listing-author">Arif Hussain, <strong class="author-me">Kundan Kumar</strong>, Gelli Ravikumar</div>
+        
+
+        <div class="pub-meta">
+          
+            <span class="pub-type pt-journal">Journal</span>
+          
+          
+            <span class="listing-publication fst-italic">Electric Power Systems Research (Elsevier)</span>
+          
+          
+        </div>
+
+        <div class="paper-actions">
+          <a href="../publications/articles/Journal1.html" class="pub-btn pub-details">Details</a>
+
+          
+            <a href="https://doi.org/10.1016/j.epsr.2025.112261" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
+          
+
+          
+
+          
+
+          
+
+          
+        </div>
+      </div>
+
+      
+        <div class="pub-year-side listing-year" aria-label="Year 2026">2026</div>
+      
+
+    </div>
+  </li>
+
+  
+  <li data-index="1" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDRW5zZW1ibGUlMjBMZWFybmluZw==" data-listing-date-sort="1769752800000" data-listing-file-modified-sort="1795540147635" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="24" data-pubtype="conference" data-year="2026">
+    <div class="pub-row">
+
+      
+      
+        <a class="pub-thumb pub-thumb-empty pt-conference" href="../publications/articles/icml2026.html" aria-hidden="true" tabindex="-1">
+          <i class="bi bi-people"></i>
+          <span>Conference</span>
+        </a>
+      
+
+      <div class="pub-main">
+        <div class="listing-title lead">
+          <a href="../publications/articles/icml2026.html" class="pub-title-link">Improving Ensembles in Bootstrap Aggregating with Composite Features</a>
+        </div>
+
+        
+          
+          
+          <div class="listing-author">Sathya Narayana Mohan, <strong class="author-me">Kundan Kumar</strong></div>
+        
+
+        <div class="pub-meta">
+          
+            <span class="pub-type pt-conference">Conference</span>
+          
+          
+            <span class="listing-publication fst-italic">International Conference on Machine Learning (ICML)</span>
+          
+          
+            <span class="pub-status">Under review</span>
+          
+        </div>
+
+        <div class="paper-actions">
+          <a href="../publications/articles/icml2026.html" class="pub-btn pub-details">Details</a>
+
+          
+
+          
+
+          
+
+          
+
+          
+        </div>
+      </div>
+
+      
+        <div class="pub-year-side listing-year" aria-label="Year 2026">2026</div>
+      
+
+    </div>
+  </li>
+
+  
+  <li data-index="2" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDTXVsdGktT2JqZWN0aXZlJTIwT3B0aW1pemF0aW9uJTJDRW5lcmd5JTIwT3B0aW1pemF0aW9u" data-listing-date-sort="1761714000000" data-listing-file-modified-sort="1795546689578" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="242" data-pubtype="conference" data-year="2025">
+    <div class="pub-row">
+
+      
+      
+        <a class="pub-thumb" href="../publications/articles/naps2025.html">
+          <img src="../misc/info/pubs/thumbs/naps.gif" alt="Thumbnail for A Multi-Objective Optimization Framework for Carbon-Aware Smart Energy Management">
+        </a>
+      
 
       <div class="pub-main">
         <div class="listing-title lead">
@@ -611,12 +834,15 @@ Publications
         </div>
 
         
-          <div class="listing-author">
-            Kundan Kumar
-          </div>
+          
+          
+          <div class="listing-author"><strong class="author-me">Kundan Kumar</strong>, Gelli Ravikumar</div>
         
 
         <div class="pub-meta">
+          
+            <span class="pub-type pt-conference">Conference</span>
+          
           
             <span class="listing-publication fst-italic">57th IEEE North American Power Symposium (NAPS)</span>
           
@@ -627,30 +853,38 @@ Publications
           <a href="../publications/articles/naps2025.html" class="pub-btn pub-details">Details</a>
 
           
-            <a href="10.1109/NAPS66256.2025.11272265" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
+            <a href="https://doi.org/10.1109/NAPS66256.2025.11272265" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
           
 
           
 
           
 
+          
+            <a href="../misc/info/presentations/Multi_objective_NAPS_presentation.pdf" class="pub-btn pub-pres" target="_blank" rel="noopener noreferrer"> Presentation</a>
           
 
           
         </div>
       </div>
 
+      
+        <div class="pub-year-side listing-year" aria-label="Year 2025">2025</div>
+      
+
     </div>
   </li>
 
-  <li data-index="1" data-categories="QmF5ZXNpYW4lMjBOZXVyYWwlMjBOZXR3b3JrJTJDU2VtaSUyMFN1cGVydmlzZWQlMjBMZWFybmluZyUyQ1VuY2VydGFpbnR5JTIwRXN0aW1hdGlvbg==" data-listing-date-sort="1762754400000" data-listing-file-modified-sort="1786719718556" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1405">
+  
+  <li data-index="3" data-categories="QmF5ZXNpYW4lMjBOZXVyYWwlMjBOZXR3b3JrJTJDU2VtaSUyMFN1cGVydmlzZWQlMjBMZWFybmluZyUyQ1VuY2VydGFpbnR5JTIwRXN0aW1hdGlvbg==" data-listing-date-sort="1762754400000" data-listing-file-modified-sort="1795546562352" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3917" data-pubtype="conference" data-year="2025">
     <div class="pub-row">
 
-     
-
-  <a class="pub-thumb" href="../publications/articles/pesgm2025.html">
-    <img src="../publications/articles/figures/ssl_techniques.png" alt="Thumbnail for Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems">
-  </a>
+      
+      
+        <a class="pub-thumb" href="../publications/articles/pesgm2025.html">
+          <img src="../publications/articles/figures/ssl_techniques.png" alt="Thumbnail for Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems">
+        </a>
+      
 
       <div class="pub-main">
         <div class="listing-title lead">
@@ -658,12 +892,15 @@ Publications
         </div>
 
         
-          <div class="listing-author">
-            Kundan Kumar
-          </div>
+          
+          
+          <div class="listing-author"><strong class="author-me">Kundan Kumar</strong>, Kumar Utkarsh, Jiyu Wang, Harsha Padullaparti</div>
         
 
         <div class="pub-meta">
+          
+            <span class="pub-type pt-conference">Conference</span>
+          
           
             <span class="listing-publication fst-italic">IEEE Power &amp; Energy Society General Meeting (PESGM)</span>
           
@@ -674,7 +911,7 @@ Publications
           <a href="../publications/articles/pesgm2025.html" class="pub-btn pub-details">Details</a>
 
           
-            <a href="10.1109/PESGM52009.2025.11225667" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
+            <a href="https://doi.org/10.1109/PESGM52009.2025.11225667" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
           
 
           
@@ -682,46 +919,60 @@ Publications
           
 
           
+            <a href="../misc/info/presentations/SSL_PESGM_presentation.pdf" class="pub-btn pub-pres" target="_blank" rel="noopener noreferrer"> Presentation</a>
+          
 
+          
+            <a href="../misc/info/posters/SSL_PESGM_poster.pdf" class="pub-btn pub-poster" target="_blank" rel="noopener noreferrer"> Poster</a>
           
         </div>
       </div>
 
+      
+        <div class="pub-year-side listing-year" aria-label="Year 2025">2025</div>
+      
+
     </div>
   </li>
 
-  <li data-index="2" data-categories="VW5jZXJ0YWludHklMjBFc3RpbWF0aW9uJTJDVGltZSUyMFNlcmllcyUyMEFuYWx5c2lzJTJDRm9yZWNhc3RpbmclMkNFc3RpbWF0aW9u" data-listing-date-sort="1756702800000" data-listing-file-modified-sort="1786719718550" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="285">
+  
+  <li data-index="4" data-categories="UmVpbmZvcmNlbWVudCUyMExlYXJuaW5nJTJDUGh5c2ljcy1JbmZvcm1lZCUyMExlYXJuaW5nJTJDU21hcnQlMjBFbmVyZ3klMjBTeXN0ZW1z" data-listing-date-sort="1764568800000" data-listing-file-modified-sort="1795540147635" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="22" data-pubtype="journal" data-year="2025">
     <div class="pub-row">
 
-     
-
-  <a class="pub-thumb" href="../publications/articles/Journal1.html">
-    <img src="../misc/info/pubs/thumbs/bilstm.gif" alt="Thumbnail for Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification">
-  </a>
+      
+      
+        <a class="pub-thumb pub-thumb-empty pt-journal" href="../publications/articles/tsg2025.html" aria-hidden="true" tabindex="-1">
+          <i class="bi bi-journal-text"></i>
+          <span>Journal</span>
+        </a>
+      
 
       <div class="pub-main">
         <div class="listing-title lead">
-          <a href="../publications/articles/Journal1.html" class="pub-title-link">Bayesian-Optimized Bidirectional Long-Short-Term Memory network for Wind Power Forecasting with Uncertainty Quantification</a>
+          <a href="../publications/articles/tsg2025.html" class="pub-title-link">Physics-Based Deep Reinforcement Learning for Grid-Resilient Volt-VAR Control</a>
         </div>
 
         
-          <div class="listing-author">
-            Kundan Kumar
-          </div>
+          
+          
+          <div class="listing-author"><strong class="author-me">Kundan Kumar</strong>, Gelli Ravikumar</div>
         
 
         <div class="pub-meta">
           
-            <span class="listing-publication fst-italic">Elsevier Energy Journal on Electric Power Systems Research</span>
+            <span class="pub-type pt-journal">Journal</span>
           
+          
+            <span class="listing-publication fst-italic">IEEE Transactions on Smart Grid</span>
+          
+          
+            <span class="pub-status">Under review</span>
           
         </div>
 
         <div class="paper-actions">
-          <a href="../publications/articles/Journal1.html" class="pub-btn pub-details">Details</a>
+          <a href="../publications/articles/tsg2025.html" class="pub-btn pub-details">Details</a>
 
-          
-            <a href="10.1016/j.epsr.2025.112261" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
           
 
           
@@ -734,17 +985,23 @@ Publications
         </div>
       </div>
 
+      
+        <div class="pub-year-side listing-year" aria-label="Year 2025">2025</div>
+      
+
     </div>
   </li>
 
-  <li data-index="3" data-categories="UmVpbmZvcmNlbWVudCUyMExlYXJuaW5nJTJDVHJhbnNmZXIlMjBMZWFybmluZw==" data-listing-date-sort="1737439200000" data-listing-file-modified-sort="1786719718555" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="204">
+  
+  <li data-index="5" data-categories="UmVpbmZvcmNlbWVudCUyMExlYXJuaW5nJTJDVHJhbnNmZXIlMjBMZWFybmluZw==" data-listing-date-sort="1737439200000" data-listing-file-modified-sort="1795540147636" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="204" data-pubtype="conference" data-year="2025">
     <div class="pub-row">
 
-     
-
-  <a class="pub-thumb" href="../publications/articles/gridedge2025.html">
-    <img src="../publications/articles/figures/TL1.png" alt="Thumbnail for Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids">
-  </a>
+      
+      
+        <a class="pub-thumb" href="../publications/articles/gridedge2025.html">
+          <img src="../publications/articles/figures/TL1.png" alt="Thumbnail for Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids">
+        </a>
+      
 
       <div class="pub-main">
         <div class="listing-title lead">
@@ -752,17 +1009,18 @@ Publications
         </div>
 
         
-          <div class="listing-author">
-            Kundan Kumar.
-          </div>
+          
+          
+          <div class="listing-author"><strong class="author-me">Kundan Kumar</strong>, Gelli Ravikumar</div>
         
 
         <div class="pub-meta">
           
+            <span class="pub-type pt-conference">Conference</span>
+          
+          
             <span class="listing-publication fst-italic">IEEE PES Grid Edge Technologies Conference &amp; Exposition (Grid Edge)</span>
           
-          
-            <span class="listing-year">(2025)</span>
           
         </div>
 
@@ -770,7 +1028,7 @@ Publications
           <a href="../publications/articles/gridedge2025.html" class="pub-btn pub-details">Details</a>
 
           
-            <a href="10.1109/GridEdge61154.2025.10887439" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
+            <a href="https://doi.org/10.1109/GridEdge61154.2025.10887439" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
           
 
           
@@ -779,21 +1037,29 @@ Publications
 
           
 
+          
+            <a href="../misc/info/posters/PES-Gridedge_poster.pdf" class="pub-btn pub-poster" target="_blank" rel="noopener noreferrer"> Poster</a>
           
         </div>
       </div>
 
+      
+        <div class="pub-year-side listing-year" aria-label="Year 2025">2025</div>
+      
+
     </div>
   </li>
 
-  <li data-index="4" data-categories="QmF5ZXNpYW4lMjBPcHRpbWl6YXRpb24lMkNSZWluZm9yY2VtZW50JTIwTGVhcm5pbmclMkNTbWFydCUyMEVuZXJneSUyMFN5c3RlbXM=" data-listing-date-sort="1728018000000" data-listing-file-modified-sort="1786719718556" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="213">
+  
+  <li data-index="6" data-categories="QmF5ZXNpYW4lMjBPcHRpbWl6YXRpb24lMkNSZWluZm9yY2VtZW50JTIwTGVhcm5pbmclMkNTbWFydCUyMEVuZXJneSUyMFN5c3RlbXM=" data-listing-date-sort="1728018000000" data-listing-file-modified-sort="1795540147636" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="213" data-pubtype="conference" data-year="2024">
     <div class="pub-row">
 
-     
-
-  <a class="pub-thumb" href="../publications/articles/pesgm2024.html">
-    <img src="../misc/info/pubs/thumbs/pes-gm.png" alt="Thumbnail for Bayesian Optimization for Deep Reinforcement Learning for Robust Volt-Var Control">
-  </a>
+      
+      
+        <a class="pub-thumb" href="../publications/articles/pesgm2024.html">
+          <img src="../misc/info/pubs/thumbs/pes-gm.png" alt="Thumbnail for Bayesian Optimization for Deep Reinforcement Learning for Robust Volt-Var Control">
+        </a>
+      
 
       <div class="pub-main">
         <div class="listing-title lead">
@@ -801,17 +1067,18 @@ Publications
         </div>
 
         
-          <div class="listing-author">
-            Kundan Kumar
-          </div>
+          
+          
+          <div class="listing-author"><strong class="author-me">Kundan Kumar</strong>, Aditya Akilesh Mantha, Gelli Ravikumar</div>
         
 
         <div class="pub-meta">
           
+            <span class="pub-type pt-conference">Conference</span>
+          
+          
             <span class="listing-publication fst-italic">IEEE Power &amp; Energy Society General Meeting (PESGM)</span>
           
-          
-            <span class="listing-year">(2024)</span>
           
         </div>
 
@@ -819,7 +1086,7 @@ Publications
           <a href="../publications/articles/pesgm2024.html" class="pub-btn pub-details">Details</a>
 
           
-            <a href="10.1109/PESGM51994.2024.10688889" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
+            <a href="https://doi.org/10.1109/PESGM51994.2024.10688889" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
           
 
           
@@ -828,21 +1095,29 @@ Publications
 
           
 
+          
+            <a href="../misc/info/posters/Bayesian_PESGM_poster.pdf" class="pub-btn pub-poster" target="_blank" rel="noopener noreferrer"> Poster</a>
           
         </div>
       </div>
 
+      
+        <div class="pub-year-side listing-year" aria-label="Year 2024">2024</div>
+      
+
     </div>
   </li>
 
-  <li data-index="5" data-categories="UmVpbmZvcmNlbWVudCUyMExlYXJuaW5nJTJDU2VjdXJlJTIwQUklMkNTbWFydCUyMEVuZXJneSUyMFN5c3RlbXM=" data-listing-date-sort="1708322400000" data-listing-file-modified-sort="1786719718556" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="233">
+  
+  <li data-index="7" data-categories="UmVpbmZvcmNlbWVudCUyMExlYXJuaW5nJTJDU2VjdXJlJTIwQUklMkNTbWFydCUyMEVuZXJneSUyMFN5c3RlbXM=" data-listing-date-sort="1708322400000" data-listing-file-modified-sort="1795540147636" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="233" data-pubtype="conference" data-year="2024">
     <div class="pub-row">
 
-     
-
-  <a class="pub-thumb" href="../publications/articles/isgt2024.html">
-    <img src="../misc/info/pubs/thumbs/isgt.png" alt="Thumbnail for Deep RL-based volt-var control and attack resiliency for der-integrated distribution grids">
-  </a>
+      
+      
+        <a class="pub-thumb" href="../publications/articles/isgt2024.html">
+          <img src="../misc/info/pubs/thumbs/isgt.png" alt="Thumbnail for Deep RL-based volt-var control and attack resiliency for der-integrated distribution grids">
+        </a>
+      
 
       <div class="pub-main">
         <div class="listing-title lead">
@@ -850,17 +1125,18 @@ Publications
         </div>
 
         
-          <div class="listing-author">
-            Kundan Kumar
-          </div>
+          
+          
+          <div class="listing-author"><strong class="author-me">Kundan Kumar</strong>, Gelli Ravikumar</div>
         
 
         <div class="pub-meta">
           
+            <span class="pub-type pt-conference">Conference</span>
+          
+          
             <span class="listing-publication fst-italic">IEEE Power &amp; Energy Society Innovative Smart Grid Technologies Conference (ISGT)</span>
           
-          
-            <span class="listing-year">(2024)</span>
           
         </div>
 
@@ -868,7 +1144,7 @@ Publications
           <a href="../publications/articles/isgt2024.html" class="pub-btn pub-details">Details</a>
 
           
-            <a href="10.1109/ISGT59692.2024.10454163" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
+            <a href="https://doi.org/10.1109/ISGT59692.2024.10454163" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
           
 
           
@@ -877,21 +1153,29 @@ Publications
 
           
 
+          
+            <a href="../misc/info/posters/PES_ISGT_poster.pdf" class="pub-btn pub-poster" target="_blank" rel="noopener noreferrer"> Poster</a>
           
         </div>
       </div>
 
+      
+        <div class="pub-year-side listing-year" aria-label="Year 2024">2024</div>
+      
+
     </div>
   </li>
 
-  <li data-index="6" data-categories="RGVlcCUyMExlYXJuaW5nJTJDTXVsdGl2YXJpYWJsZQ==" data-listing-date-sort="1670824800000" data-listing-file-modified-sort="1786719718556" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="138">
+  
+  <li data-index="8" data-categories="RGVlcCUyMExlYXJuaW5nJTJDTXVsdGl2YXJpYWJsZQ==" data-listing-date-sort="1670824800000" data-listing-file-modified-sort="1795540147636" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="138" data-pubtype="conference" data-year="2022">
     <div class="pub-row">
 
-     
-
-  <a class="pub-thumb" href="../publications/articles/icmla2022.html">
-    <img src="../misc/info/pubs/thumbs/iclma.png" alt="Thumbnail for Deep learning and pattern-based methodology for multivariable sensor data regression">
-  </a>
+      
+      
+        <a class="pub-thumb" href="../publications/articles/icmla2022.html">
+          <img src="../misc/info/pubs/thumbs/iclma.png" alt="Thumbnail for Deep learning and pattern-based methodology for multivariable sensor data regression">
+        </a>
+      
 
       <div class="pub-main">
         <div class="listing-title lead">
@@ -899,17 +1183,18 @@ Publications
         </div>
 
         
-          <div class="listing-author">
-            Kundan Kumar
-          </div>
+          
+          
+          <div class="listing-author">J.K. Francis, C. Kumar, J. Herrera-Gerena, <strong class="author-me">Kundan Kumar</strong>, M.J. Darr</div>
         
 
         <div class="pub-meta">
           
+            <span class="pub-type pt-conference">Conference</span>
+          
+          
             <span class="listing-publication fst-italic">21st IEEE International Conference on Machine Learning and Applications (ICMLA)</span>
           
-          
-            <span class="listing-year">(2022)</span>
           
         </div>
 
@@ -917,7 +1202,7 @@ Publications
           <a href="../publications/articles/icmla2022.html" class="pub-btn pub-details">Details</a>
 
           
-            <a href="10.1109/ICMLA55696.2022.00125" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
+            <a href="https://doi.org/10.1109/ICMLA55696.2022.00125" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
           
 
           
@@ -930,17 +1215,78 @@ Publications
         </div>
       </div>
 
+      
+        <div class="pub-year-side listing-year" aria-label="Year 2022">2022</div>
+      
+
     </div>
   </li>
 
-  <li data-index="7" data-categories="Y29udm9sdXRpb25hbCUyMG5ldXJhbCUyMG5ldHdvcmtzJTJDVmFsdWUlMjBvZiUyMEluZm9ybWF0aW9uJTJDUmVpbmZvcmNlbWVudCUyMExlYXJuaW5n" data-listing-date-sort="1735711200000" data-listing-file-modified-sort="1786719718555" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="211">
+  
+  <li data-index="9" data-categories="RGVlcCUyMExlYXJuaW5nJTJDTXVsdGl2YXJpYWJsZSUyQ1dvcmtzaG9w" data-listing-date-sort="1646805600000" data-listing-file-modified-sort="1795540147635" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="28" data-pubtype="workshop" data-year="2022">
     <div class="pub-row">
 
-     
+      
+      
+        <a class="pub-thumb pub-thumb-empty pt-workshop" href="../publications/articles/cvprw2022.html" aria-hidden="true" tabindex="-1">
+          <i class="bi bi-tools"></i>
+          <span>Workshop</span>
+        </a>
+      
 
-  <a class="pub-thumb" href="../publications/articles/iccpsS2016.html">
-    <img src="../misc/info/pubs/thumbs/iccps.gif" alt="Thumbnail for Deep value of information estimators for collaborative human-machine information gathering">
-  </a>
+      <div class="pub-main">
+        <div class="listing-title lead">
+          <a href="../publications/articles/cvprw2022.html" class="pub-title-link">Pattern-Based Multivariable Regression using Deep Learning (PBMR-DP)</a>
+        </div>
+
+        
+          
+          
+          <div class="listing-author">J.K. Francis, C. Kumar, J. Herrera-Gerena, <strong class="author-me">Kundan Kumar</strong>, M.J. Darr</div>
+        
+
+        <div class="pub-meta">
+          
+            <span class="pub-type pt-workshop">Workshop</span>
+          
+          
+            <span class="listing-publication fst-italic">Workshop of CVPR Proceedings</span>
+          
+          
+        </div>
+
+        <div class="paper-actions">
+          <a href="../publications/articles/cvprw2022.html" class="pub-btn pub-details">Details</a>
+
+          
+
+          
+
+          
+
+          
+
+          
+        </div>
+      </div>
+
+      
+        <div class="pub-year-side listing-year" aria-label="Year 2022">2022</div>
+      
+
+    </div>
+  </li>
+
+  
+  <li data-index="10" data-categories="Y29udm9sdXRpb25hbCUyMG5ldXJhbCUyMG5ldHdvcmtzJTJDVmFsdWUlMjBvZiUyMEluZm9ybWF0aW9uJTJDUmVpbmZvcmNlbWVudCUyMExlYXJuaW5n" data-listing-date-sort="1735711200000" data-listing-file-modified-sort="1795540147636" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="211" data-pubtype="conference" data-year="2016">
+    <div class="pub-row">
+
+      
+      
+        <a class="pub-thumb" href="../publications/articles/iccpsS2016.html">
+          <img src="../misc/info/pubs/thumbs/iccps.gif" alt="Thumbnail for Deep value of information estimators for collaborative human-machine information gathering">
+        </a>
+      
 
       <div class="pub-main">
         <div class="listing-title lead">
@@ -948,17 +1294,18 @@ Publications
         </div>
 
         
-          <div class="listing-author">
-             Kundan Kumar
-          </div>
+          
+          
+          <div class="listing-author">Kin Gwn Lore, Nicholas Sweet, <strong class="author-me">Kundan Kumar</strong>, N. Ahmed, S. Sarkar</div>
         
 
         <div class="pub-meta">
           
-            <span class="listing-publication fst-italic">ACM/IEEE 7th International Conference on Cyber-Physical Systems (ICCPS</span>
+            <span class="pub-type pt-conference">Conference</span>
           
           
-            <span class="listing-year">(2016)</span>
+            <span class="listing-publication fst-italic">ACM/IEEE 7th International Conference on Cyber-Physical Systems (ICCPS)</span>
+          
           
         </div>
 
@@ -966,7 +1313,7 @@ Publications
           <a href="../publications/articles/iccpsS2016.html" class="pub-btn pub-details">Details</a>
 
           
-            <a href="10.1109/ICCPS.2016.7479095" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
+            <a href="https://doi.org/10.1109/ICCPS.2016.7479095" class="pub-btn pub-paper" target="_blank" rel="noopener noreferrer"> DOI</a>
           
 
           
@@ -979,12 +1326,18 @@ Publications
         </div>
       </div>
 
+      
+        <div class="pub-year-side listing-year" aria-label="Year 2016">2016</div>
+      
+
     </div>
   </li>
 
 </ul>
-
 <div class="listing-no-matching d-none">No matching items</div>
+<nav id="articles-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 
 

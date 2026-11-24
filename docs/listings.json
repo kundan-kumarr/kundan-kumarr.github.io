@@ -20,6 +20,8 @@
       "/projects/project9.html",
       "/projects/project10.html",
       "/projects/project11.html",
+      "/publications/articles/icml2026.html",
+      "/publications/articles/tsg2025.html",
       "/publications/articles/pesgm2025.html",
       "/publications/articles/naps2025.html",
       "/publications/articles/Journal1.html",
@@ -27,7 +29,8 @@
       "/publications/articles/iccpsS2016.html",
       "/publications/articles/pesgm2024.html",
       "/publications/articles/isgt2024.html",
-      "/publications/articles/icmla2022.html"
+      "/publications/articles/icmla2022.html",
+      "/publications/articles/cvprw2022.html"
     ]
   },
   {
@@ -56,13 +59,16 @@
   {
     "listing": "/publications/pub.html",
     "items": [
+      "/publications/articles/Journal1.html",
+      "/publications/articles/icml2026.html",
       "/publications/articles/naps2025.html",
       "/publications/articles/pesgm2025.html",
-      "/publications/articles/Journal1.html",
+      "/publications/articles/tsg2025.html",
       "/publications/articles/gridedge2025.html",
       "/publications/articles/pesgm2024.html",
       "/publications/articles/isgt2024.html",
       "/publications/articles/icmla2022.html",
+      "/publications/articles/cvprw2022.html",
       "/publications/articles/iccpsS2016.html"
     ]
   },
@@ -104,13 +110,16 @@
   {
     "listing": "/publications/index.html",
     "items": [
+      "/publications/articles/Journal1.html",
+      "/publications/articles/icml2026.html",
       "/publications/articles/naps2025.html",
       "/publications/articles/pesgm2025.html",
-      "/publications/articles/Journal1.html",
+      "/publications/articles/tsg2025.html",
       "/publications/articles/gridedge2025.html",
       "/publications/articles/pesgm2024.html",
       "/publications/articles/isgt2024.html",
       "/publications/articles/icmla2022.html",
+      "/publications/articles/cvprw2022.html",
       "/publications/articles/iccpsS2016.html"
     ]
   },

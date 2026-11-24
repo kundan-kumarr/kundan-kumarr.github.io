@@ -28,9 +28,9 @@ listing:
 }
 .pub-list > li{
   list-style: none;
-  margin: 0 0 1rem 0;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  margin: 0;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(0,0,0,0.08);
 }
 
 /* ===== Title ===== */
@@ -148,6 +148,66 @@ listing:
 
 .pub-main{ flex:1 1 auto; min-width:0; }
 
+/* ===== Placeholder thumbnail (keeps every row aligned) ===== */
+.pub-thumb-empty{
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px;
+  text-decoration:none;
+  --pt:#8b3f1f;
+  color:var(--pt);
+  background:color-mix(in srgb, var(--pt) 7%, transparent);
+  border-color:color-mix(in srgb, var(--pt) 30%, transparent);
+  box-shadow:none;
+}
+.pub-thumb-empty i{ font-size:1.7rem; line-height:1; }
+.pub-thumb-empty span{ font-size:.68rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; }
+.pt-journal{ --pt:#1f5fbf; }
+.pt-conference{ --pt:#b46939; }
+.pt-workshop{ --pt:#1f8f4d; }
+
+/* ===== Authors, type, status ===== */
+.listing-author .author-me{ font-weight:700; color:#2e7d32; }
+.pub-type{
+  display:inline-block; font-size:.7rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+  padding:1px 8px; margin-right:6px; border-radius:5px;
+  color:var(--pt); border:1px solid var(--pt);
+}
+.pub-status{
+  display:inline-block; font-size:.72rem; font-weight:700; margin-left:6px;
+  padding:1px 8px; border-radius:5px;
+  background:rgba(217,119,6,.15); color:#b45309;
+}
+
+/* ===== Empty state ===== */
+.pub-empty{ display:none; color:rgba(0,0,0,.6); font-style:italic; margin-top:1rem; }
+body.quarto-dark .pub-empty{ color:rgba(255,255,255,.6); }
+
+/* ===== Year groups: solid line + year shown once ===== */
+.pub-list > li.year-start{ border-top: 1.5px solid rgba(0,0,0,0.3); }
+.pub-list > li.year-start:first-child{ border-top-color: rgba(0,0,0,0.3); }
+body.quarto-dark .pub-list > li{ border-top-color: rgba(255,255,255,0.10); }
+body.quarto-dark .pub-list > li.year-start{ border-top-color: rgba(255,255,255,0.3); }
+.pub-list > li:not(.year-start) .pub-year-side{ visibility: hidden; }
+
+/* ===== Faded year on the right ===== */
+.pub-year-side{
+  flex:0 0 auto;
+  align-self:flex-start;
+  min-width:3.6rem;
+  text-align:right;
+  font-family:'PT Serif', Georgia, serif;
+  font-size:1.45rem;
+  font-weight:700;
+  line-height:1;
+  color:currentColor;
+  opacity:.25;
+  letter-spacing:.02em;
+  user-select:none;
+  transition:opacity .15s ease;
+}
+@media (max-width: 650px){
+  .pub-year-side{ align-self:flex-end; font-size:1.3rem; }
+}
+
 /* mobile: stack nicely */
 @media (max-width: 650px){
   .pub-row{ flex-direction:column; }
@@ -166,9 +226,64 @@ listing:
 <div class="pub-header">
   <h3 class="pub-title">Publications</h3>
   <span class="pub-total">
-    Total:8 <strong><span data-listing-count="articles"></span></strong>
+    <span id="pub-count-label">Total:</span> <strong id="pub-count">11</strong>
   </span>
 </div>
+
+```{=html}
+<p class="pub-empty" id="pub-empty">No publications match these filters.</p>
+
+<script>
+window.addEventListener("load", function () {
+  const L = (window["quarto-listings"] || {})["listing-articles"];
+  const sel = document.getElementById("listing-articles-sort");
+  if (!L || !sel) return;
+  const all = L.items.map(i => i.elm);
+  let type = "";
+
+  /* --- Order By menu: keep the sort options, add a "Show" group for paper type --- */
+  sel.removeAttribute("onchange");
+  const sortGroup = document.createElement("optgroup");
+  sortGroup.label = "Sort by";
+  [...sel.options].filter(o => !o.disabled).forEach(o => sortGroup.appendChild(o));
+  sel.appendChild(sortGroup);
+  const typeGroup = document.createElement("optgroup");
+  typeGroup.label = "Show";
+  [["type:", "All papers (" + all.length + ")"]]
+    .concat([["journal","Journal"],["conference","Conference"],["workshop","Workshop"]]
+      .map(([v, t]) => ["type:" + v, t + " (" + all.filter(e => e.dataset.pubtype === v).length + ")"]))
+    .forEach(([v, t]) => { const o = new Option(t, v); typeGroup.appendChild(o); });
+  sel.appendChild(typeGroup);
+
+  sel.addEventListener("change", () => {
+    const o = sel.options[sel.selectedIndex];
+    if (o.value.startsWith("type:")) {
+      type = o.value.slice(5);
+      if (type) L.filter(item => item.elm.dataset.pubtype === type); else L.filter();
+      const n = L.matchingItems.length;
+      document.getElementById("pub-count").textContent = n;
+      document.getElementById("pub-count-label").textContent = type ? "Showing:" : "Total:";
+      document.getElementById("pub-empty").style.display = n ? "none" : "block";
+    } else {
+      L.sort(o.value, { order: o.getAttribute("data-direction") });
+    }
+    markYears();
+  });
+
+  /* --- Show each year once, with a solid line where a new year starts --- */
+  function markYears() {
+    let prev = null;
+    document.querySelectorAll("#listing-articles .pub-list > li").forEach(li => {
+      const y = li.dataset.year || "";
+      li.classList.toggle("year-start", y !== prev);
+      prev = y;
+    });
+  }
+  L.on("updated", markYears);
+  markYears();
+});
+</script>
+```
 
 
 

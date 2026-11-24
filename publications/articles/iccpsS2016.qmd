@@ -1,10 +1,8 @@
 ---
 title: "Deep value of information estimators for collaborative human-machine information gathering"
 type: "article"
-author: " Kundan Kumar"
 date: "2025-01-01"
 year: "2016"
-publication: "ACM/IEEE 7th International Conference on Cyber-Physical Systems (ICCPS"
 preprint: ""
 doi: "10.1109/ICCPS.2016.7479095"
 poster: 
@@ -16,6 +14,9 @@ categories:
   - Value of Information
   - Reinforcement Learning 
 thumbnail: "/misc/info/pubs/thumbs/iccps.gif"
+author: "Kin Gwn Lore, Nicholas Sweet, Kundan Kumar, N. Ahmed, S. Sarkar"
+pubtype: "conference"
+publication: "ACM/IEEE 7th International Conference on Cyber-Physical Systems (ICCPS)"
 ---
 
 ## Citation

@@ -1,0 +1,682 @@
+---
+title: ""
+format:
+  html:
+    toc: true
+    toc-title: On this page
+    number-sections: false
+    anchor-sections: true
+    page-layout: full
+    html-math-method: mathjax
+    pandoc-args: ["--number-offset=0"]
+---
+
+## Research{#research-vision}
+
+I develop safe, interpretable, and adaptive AI systems for real-world cyber-physical environments that must operate under uncertainty, strict physical constraints, and adversarial conditions. My work sits at the intersection of **safe reinforcement learning**, **physics-informed AI**, **probabilistic modeling**, and **AI safety evaluation** — with a core focus on building systems that are robust, verifiable, and deployable at scale in safety-critical domains.
+
+<p style="font-size:0.9rem; color:#666; margin:0.4rem 0 1.2rem 0;">
+  Ph.D. Dissertation: <em>"Safe and Robust Deep Reinforcement Learning for Constrained Control in DER-Integrated Smart Energy Grids"</em> — Iowa State University, 2026
+</p>
+
+<div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.6rem;">
+  <h3 style="margin:0; color:#7a2e1f;">Vision</h3>
+  <a href="https://kundan-kumarr.github.io/publications/"
+     style="display:inline-flex; align-items:center; gap:6px; padding:6px 14px;
+            border:1.5px solid #7a2e1f; border-radius:999px; font-size:0.85rem;
+            font-weight:600; color:#7a2e1f; background:rgba(122,46,31,0.06);
+            text-decoration:none; white-space:nowrap;">
+    Full Publications →
+  </a>
+</div>
+
+My research centers around three core thrusts:
+
+- **Safe & Trustworthy Reinforcement Learning**: Designing agents that remain reliable under sensor noise, hardware faults, non-stationarity, and adversarial perturbations — including constraint-aware learning, certified robustness, and safe exploration in safety-critical settings.
+- **Physics-Informed AI & Probabilistic Modeling**: Embedding physical laws, invariants, and feasibility constraints directly into model architectures; quantifying epistemic and aleatoric uncertainty for risk-aware planning in partially observable environments.
+- **AI Safety, Alignment & LLM Evaluation**: Designing behavioral and mechanistic evaluations to detect deceptive alignment, reward hacking, and eval-awareness in LLM agents; building scalable oversight frameworks for agentic systems in safety-critical deployments.
+
+### Mission
+
+By integrating physics-guided structure, probabilistic reasoning, and safe reinforcement learning, my goal is to build the next generation of AI systems that are:
+
+- **Reliable** — under uncertainty, noise, and adversarial conditions
+- **Generalizable** — across tasks, scales, and distribution shifts
+- **Interpretable** — to operators, engineers, and decision-makers
+- **Deployable** — in large-scale, real-world cyber-physical environments
+
+
+## Research Focus {#research-focus}
+These focus areas organize my ongoing and recent projects that bridge **fundamental methods** and **deployable systems**.
+<!-- Styling (optional if handled globally) -->
+
+```{=html}
+<style>
+  .proj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .proj-card {
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 1.2rem;
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: center;
+
+    /* ✅ kill hyperlink look inside the whole card */
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+
+  /* ✅ also kill underline/color on any nested elements */
+  .proj-card * {
+    text-decoration: none !important;
+    color: inherit;
+  }
+
+  .proj-card:hover {
+    transform: translateY(-3px);
+    text-decoration: none !important;
+  }
+
+  /* Small, centered hex-badge style */
+  .proj-card img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    display: block;
+    margin: 0.4rem auto 0.9rem auto;
+    background-color: transparent;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .proj-body {
+    font-family: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .group-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 2rem 0 0.5rem 0;
+    color: #6c2b88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .proj-llm strong {
+    color: #8B008B !important;
+    font-size: 1.05rem;
+  }
+
+  /* Optional: make body text slightly softer */
+  .proj-body {
+    color: #4c4c4c;
+  }
+</style>
+
+<div class="research-groups">
+
+  <a class="research-group-card" href="smart-energy.qmd">
+    <div class="rg-content">
+      <strong>Safe & Intelligent Systems for Smart Energy</strong>
+      <p>Physics-informed deep RL, safe and uncertainty-aware control, LLM-guided planning, and sim-to-real transfer for smart grid and DER-integrated energy systems.</p>
+      <span class="rg-tags">
+        <span>Volt-VAR Control</span>
+        <span>Physics-Informed RL</span>
+        <span>Uncertainty Quantification</span>
+        <span>LLM Control</span>
+        <span>Domain Adaptation</span>
+      </span>
+    </div>
+  </a>
+
+  <a class="research-group-card" href="ai-safety.qmd">
+    <div class="rg-content">
+      <strong>AI Safety & Alignment</strong>
+      <p>Behavioral and mechanistic evaluations for deceptive alignment, adversarial robustness, reward hacking detection, and scalable oversight for agentic LLM systems.</p>
+      <span class="rg-tags">
+        <span>Evaluation Awareness</span>
+        <span>Red-Teaming</span>
+        <span>Scalable Oversight</span>
+        <span>Monitor Transferability</span>
+      </span>
+    </div>
+  </a>
+
+  <a class="research-group-card" href="vision-simulation.qmd">
+    <div class="rg-content">
+      <strong>Vision & Simulation for Autonomous Systems</strong>
+      <p>End-to-end perception-control pipelines, multimodal sensor fusion, and sim-to-real transfer using CARLA, AirSim, and OpenDSS for autonomous and cyber-physical systems.</p>
+      <span class="rg-tags">
+        <span>CARLA</span>
+        <span>Perception-Control</span>
+        <span>Multimodal Fusion</span>
+        <span>Sim-to-Real</span>
+      </span>
+    </div>
+  </a>
+
+</div>
+
+<style>
+.research-groups {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.research-group-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem 1.6rem;
+  border: 1.5px solid #e0d6cc;
+  border-radius: 12px;
+  background: #fff;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: box-shadow 0.2s ease, transform 0.15s ease;
+  border-top: 4px solid #b46939;
+}
+
+.research-group-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+  text-decoration: none !important;
+}
+
+.rg-content strong {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #7a2e1f;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.rg-content p {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0 0 0.8rem 0;
+}
+
+.rg-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+}
+
+.rg-tags span {
+  font-size: 0.72rem;
+  background: #f5f0e9;
+  color: #7a2e1f;
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid #e0d0c0;
+}
+
+@media (max-width: 768px) {
+  .research-groups {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+```
+
+
+## Publications {#publications}
+
+::: {.panel-tabset}
+
+### Journal Papers
+```{=html}
+<h3 style="
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:.8rem;
+">
+  <span>Journal Papers</span>
+
+  <span style="
+    padding:4px 14px;                 /* bigger */
+    border:1.5px solid #cfd8e3;       /* softer border */
+    border-radius:999px;
+    font-size:0.95rem;                /* slightly larger text */
+    color:#1f3a5f;                    /* calm professional blue */
+    background:#f5f9ff;               /* subtle background */
+    margin-left:auto;                 /* pushes fully right */
+  ">
+    Total: <strong style="margin-left:4px;">2</strong>
+  </span>
+</h3>
+
+<style>
+  .paper-title {
+    color: #0077cc;        /* professional blue for titles */
+    font-weight: 600;
+  }
+  .author-me {
+    color: #228B22;        /* same blue for your name */
+    font-weight: 600;
+  }
+</style>
+
+<ol reversed>
+<li>
+  Arif Hussian, <span class="author-me">Kundan Kumar</span>, Gelli Ravikumar<br>
+
+  <span>
+    Bayesian-optimized bidirectional long-short-term memory network for wind power forecasting with uncertainty quantification
+  </span>,
+  <em>Electric Power Systems Research</em>, 2026<br>
+
+  <span class="paper-actions">
+    <a class="pub-btn pub-paper"
+       href="https://www.sciencedirect.com/science/article/pii/S037877962500848X"
+       target="_blank" rel="noopener">
+      Paper
+    </a>
+
+    <a class="pub-btn pub-code"
+       href="#"
+       target="_blank" rel="noopener">
+      Code
+    </a>
+
+    <a class="pub-btn pub-poster"
+       href="#"
+       target="_blank" rel="noopener">
+      ️Poster
+    </a>
+  </span>
+</li>
+
+
+<li>
+  <span class="author-me">Kundan Kumar</span>, Gelli Ravikumar<br>
+
+  <span>
+    Physics-based Deep Reinforcement Learning for Grid-Resilient Volt-VAR Control
+  </span> (Under Review),
+  <em>IEEE Transactions on Smart Grid</em>, 2025<br>
+
+  <span class="paper-actions">
+    <a class="pub-btn pub-paper"
+       href=""
+       target="_blank" rel="noopener">
+      Paper
+    </a>
+
+    <a class="pub-btn pub-code"
+       href="#"
+       target="_blank" rel="noopener">
+      Code
+    </a>
+
+    <a class="pub-btn pub-poster"
+       href="#"
+       target="_blank" rel="noopener">
+       Poster
+    </a>
+  </span>
+</li>
+
+
+</ol>
+<!-- toggle button -->
+<div style="text-align:center;margin-top:.5rem;">
+  <button onclick="toggleConfPapers()" style="
+    padding:6px 14px;
+    font-size:.85rem;
+    background:#f1f1f1;
+    color:#333;
+    border:1px solid #aaa;
+    border-radius:6px;
+    cursor:pointer;">
+    Show More
+  </button>
+</div>
+
+<script>
+function toggleConfPapers(){
+  const section=document.getElementById('conf-more');
+  const btn=event.target;
+  if(section.style.display==='none'){
+    section.style.display='block';
+    btn.textContent='Show Less';
+  }else{
+    section.style.display='none';
+    btn.textContent='Show More';
+  }
+}
+</script>
+
+```
+
+### Conference Papers
+
+```{=html}
+<h3 style="
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:.8rem;
+">
+  <span>Conference Papers</span>
+
+  <span style="
+    padding:4px 14px;                 /* bigger */
+    border:1.5px solid #cfd8e3;       /* softer border */
+    border-radius:999px;
+    font-size:0.95rem;                /* slightly larger text */
+    color:#1f3a5f;                    /* calm professional blue */
+    background:#f5f9ff;               /* subtle background */
+    margin-left:auto;                 /* pushes fully right */
+  ">
+    Total: <strong style="margin-left:4px;">7</strong>
+  </span>
+</h3>
+
+<style>
+  .paper-actions{
+    display:inline-flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-top:6px;
+  }
+
+  .pub-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    padding:6px 12px;
+    border-radius:10px;
+    border:1.8px solid currentColor;
+    text-decoration:none;
+    font-size:.86rem;
+    font-weight:600;
+    line-height:1;
+    background:transparent;
+    transition: color .15s ease, background-color .15s ease, box-shadow .15s ease;
+  }
+
+  .pub-btn:hover{
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+
+  /* ===== Button types ===== */
+
+  .pub-paper{ color:#1f5fbf; }
+  .pub-paper:hover{
+    color:#174a94;                      /* darker blue */
+    background: rgba(31,95,191,0.08);
+  }
+
+  .pub-code{ color:#1f8f4d; }
+  .pub-code:hover{
+    color:#166b39;                      /* darker green */
+    background: rgba(31,143,77,0.08);
+  }
+
+  .pub-pres{ color:#d93025; }
+  .pub-pres:hover{
+    color:#a61f18;                      /* darker red */
+    background: rgba(217,48,37,0.08);
+  }
+
+  .pub-poster{ color:#7b4fd6; }
+  .pub-poster:hover{
+    color:#5f3fb0;                      /* darker purple */
+    background: rgba(123,79,214,0.08);
+  }
+</style>
+
+
+<ol reversed>
+  <li>
+    <span class="author-me">Kundan Kumar</span>, Gelli Ravikumar<br>
+
+    <span>
+      A Multi-Objective Optimization Framework for Carbon-Aware Smart Energy Management
+    </span>,
+    IEEE North American Power Symposium (NAPS), 2025<br>
+
+    <span class="paper-actions">
+      <a class="pub-btn pub-paper"
+         href="YOUR_PAPER_LINK"
+         target="_blank" rel="noopener">
+        Paper
+      </a>
+
+      <a class="pub-btn pub-pres"
+         href="YOUR_SLIDES_LINK"
+         target="_blank" rel="noopener">
+        Presentation
+      </a>
+    </span>
+  </li>
+
+<li>
+  <span class="author-me">Kundan Kumar</span>, Kumar Utkarsh, Wang Jiyu, Padullaparti Harsha<br>
+
+  <span>
+    Advanced Semi-Supervised Learning With Uncertainty Estimation for Phase Identification in Distribution Systems
+  </span>,
+  IEEE PES General Meeting, 2025<br>
+
+  <span class="paper-actions">
+    <a class="pub-btn pub-paper"
+       href="YOUR_PAPER_LINK"
+       target="_blank" rel="noopener">
+      Paper
+    </a>
+
+    <a class="pub-btn pub-pres"
+       href="/misc/info/presentations/SSL_PESGM_presentation.pdf"
+       target="_blank" rel="noopener">
+      Presentation
+    </a>
+
+    <a class="pub-btn pub-poster"
+       href="/misc/info/posters/SSL_PESGM_poster.pdf"
+       target="_blank" rel="noopener">
+       Poster
+    </a>
+  </span>
+</li>
+
+<li>
+  <span class="author-me">Kundan Kumar</span>, Gelli Ravikumar<br>
+
+  <span>
+    Transfer Learning Enhanced Deep Reinforcement Learning for Volt-Var Control in Smart Grids
+  </span>,
+  IEEE PES Grid Edge Technologies Conference & Exposition, 2025<br>
+
+  <span class="paper-actions">
+    <a class="pub-btn pub-paper"
+       href="https://arxiv.org/abs/2202.13541"
+       target="_blank" rel="noopener">
+      Paper
+    </a>
+
+    <a class="pub-btn pub-poster"
+       href="#"
+       target="_blank" rel="noopener">
+       Poster
+    </a>
+  </span>
+</li>
+
+
+  <!-- start collapsible -->
+  <div id="conf-more" style="display:none;">
+
+<li>
+  <span class="author-me">Kundan Kumar</span>, Aditya Akilesh Mantha, Gelli Ravikumar<br>
+
+  <span>
+    Bayesian Optimization for Deep Reinforcement Learning in Robust Volt-Var Control
+  </span>,
+  IEEE PES General Meeting, 2024<br>
+
+  <span class="paper-actions">
+    <a class="pub-btn pub-paper"
+       href="https://arxiv.org/abs/2202.13541"
+       target="_blank" rel="noopener">
+      Paper
+    </a>
+
+    <a class="pub-btn pub-poster"
+       href="#"
+       target="_blank" rel="noopener">
+       Poster
+    </a>
+  </span>
+</li>
+
+ <li>
+  <span class="author-me">Kundan Kumar</span>, Gelli Ravikumar<br>
+
+  <span>
+    Deep RL-based Volt-VAR Control and Attack Resiliency for DER-Integrated Distribution Grids
+  </span>,
+  IEEE Innovative Smart Grid Technologies (ISGT), 2024<br>
+
+  <span class="paper-actions">
+    <a class="pub-btn pub-paper"
+       href="https://ieeexplore.ieee.org/document/10454163"
+       target="_blank" rel="noopener">
+      Paper
+    </a>
+
+    <a class="pub-btn pub-poster"
+       href="#"
+       target="_blank" rel="noopener">
+       Poster
+    </a>
+  </span>
+</li>
+
+
+<li>
+  JK Francis, C Kumar, J Herrera-Gerena, <span class="author-me">Kundan Kumar</span>, MJ Darr<br>
+
+  <span>
+    Deep Learning and Pattern-based Methodology for Multivariable Sensor Data Regression
+  </span>,
+  IEEE ICMLA, 2022<br>
+
+  <span class="paper-actions">
+    <a class="pub-btn pub-paper"
+       href="https://ieeexplore.ieee.org/document/10069730"
+       target="_blank" rel="noopener">
+      Paper
+    </a>
+  </span>
+</li>
+
+
+<li>
+  Kin Gwn Lore, Nicholas Sweet, <span class="author-me">Kundan Kumar</span>, N Ahmed, S Sarkar<br>
+
+  <span>
+    Deep Value of Information Estimators for Collaborative Human-Machine Information Gathering
+  </span>,
+  ACM/IEEE ICCPS, 2016<br>
+
+  <span class="paper-actions">
+    <a class="pub-btn pub-paper"
+       href="https://arxiv.org/abs/1512.07592"
+       target="_blank" rel="noopener">
+      Paper
+    </a>
+  </span>
+</li>
+
+
+  </div>
+</ol>
+
+<!-- toggle button -->
+<div style="text-align:center;margin-top:.5rem;">
+  <button onclick="toggleConfPapers()" style="
+    padding:6px 14px;
+    font-size:.85rem;
+    background:#f1f1f1;
+    color:#333;
+    border:1px solid #aaa;
+    border-radius:6px;
+    cursor:pointer;">
+    Show More
+  </button>
+</div>
+
+<script>
+function toggleConfPapers(){
+  const section=document.getElementById('conf-more');
+  const btn=event.target;
+  if(section.style.display==='none'){
+    section.style.display='block';
+    btn.textContent='Show Less';
+  }else{
+    section.style.display='none';
+    btn.textContent='Show More';
+  }
+}
+</script>
+```
+
+:::
+
+## Ongoing Projects {#ongoing-projects}
+```{=html}
+<div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-bottom:1.5rem;">
+
+  <div style="padding:1.1rem 1.2rem; border-radius:8px; background:#faf8f5; border:1px solid #e8e0d8;">
+    <div style="font-size:0.68rem; text-transform:uppercase; letter-spacing:0.09em; color:#b46939; font-weight:700; margin-bottom:0.4rem;">Smart Energy</div>
+    <div style="font-size:0.92rem; font-weight:700; color:#2a2a2a; margin-bottom:0.4rem;">Federated DRL for Cyber-Resilient Volt-VAR Optimization</div>
+    <div style="font-size:0.83rem; color:#666; line-height:1.6;">Decentralized, communication-efficient control using LSTM-enhanced PPO agents across distributed DERs.</div>
+  </div>
+
+<div style="padding:1.1rem 1.2rem; border-radius:8px; background:#f0f4ff; border:1px solid #c5d3f0;">
+  <div style="font-size:0.68rem; text-transform:uppercase; letter-spacing:0.09em; color:#1f5fbf; font-weight:700; margin-bottom:0.4rem;">AI Safety</div>
+  <div style="font-size:0.92rem; font-weight:700; color:#2a2a2a; margin-bottom:0.4rem;">Stress-Testing Eval-Aware Safety Monitors</div>
+  <div style="font-size:0.83rem; color:#666; line-height:1.6;">Probing LLM agents for eval-awareness via CAA on Nemotron-49B and Mistral; extending replication to silent model organisms. Supported by an NSF ACCESS ACCELERATE allocation (CIS260799).</div>
+</div>
+
+  <div style="padding:1.1rem 1.2rem; border-radius:8px; background:#f0fff4; border:1px solid #b2dfc2;">
+    <div style="font-size:0.68rem; text-transform:uppercase; letter-spacing:0.09em; color:#1f8f4d; font-weight:700; margin-bottom:0.4rem;">LLM Control</div>
+    <div style="font-size:0.92rem; font-weight:700; color:#2a2a2a; margin-bottom:0.4rem;">LLM-Guided Autonomous Planning for Smart Buildings</div>
+    <div style="font-size:0.83rem; color:#666; line-height:1.6;">Converting user prompts to interpretable control policies using LLMs (OpenAI, Claude) in CityLearn environments.</div>
+  </div>
+
+</div>
+```
+<!-- - Federated DRL for Cyber-Resilient Volt-VAR Optimization  
+  Decentralized, communication-efficient control using LSTM-enhanced PPO agents across distributed DERs.
+
+- One-Shot Policy Transfer with Physics Priors  
+  Train agents on small topologies and adapt to IEEE 123-bus, 8500-node networks in a few iterations.
+
+- LLM-Guided Autonomous Planning for Smart Buildings  
+  Convert user prompts to interpretable control policies using LLMs (OpenAI, Claude) in CityLearn environments.
+-->
+
+

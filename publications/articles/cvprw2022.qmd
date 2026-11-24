@@ -1,0 +1,18 @@
+---
+title: "Pattern-Based Multivariable Regression using Deep Learning (PBMR-DP)"
+type: "article"
+author: "J.K. Francis, C. Kumar, J. Herrera-Gerena, Kundan Kumar, M.J. Darr"
+date: "2022-03-09"
+year: "2022"
+publication: "Workshop of CVPR Proceedings"
+toc: false
+categories:
+  - Deep Learning
+  - Multivariable
+  - Workshop
+pubtype: "workshop"
+---
+
+## Citation
+
+> J. K. Francis, C. Kumar, J. Herrera-Gerena, K. Kumar and M. J. Darr, "Pattern-Based Multivariable Regression using Deep Learning (PBMR-DP)," *Workshop of CVPR Proceedings*, March 9, 2022.

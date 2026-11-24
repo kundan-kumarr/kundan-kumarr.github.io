@@ -32,9 +32,9 @@ website:
       - text: ""
         href: "#"
         id: theme-toggle
-      - text: About
-        icon: person-circle
-        href: about_me.qmd
+      #- text: About
+      #  icon: person-circle
+      #  href: about_me.qmd
       - text: CV
         icon: file-earmark-text-fill
         href: cv.qmd
