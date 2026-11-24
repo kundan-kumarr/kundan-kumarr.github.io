@@ -1,44 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kundan-kumarr.github.io/index.html</loc>
-    <lastmod>2026-08-27T16:22:54.147Z</lastmod>
-  </url>
-  <url>
     <loc>https://kundan-kumarr.github.io/dev/short_bio.html</loc>
-    <lastmod>2026-01-12T17:32:33.826Z</lastmod>
+    <lastmod>2026-08-14T15:01:58.297Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/teaching/coms4170/index.html</loc>
     <lastmod>2026-08-14T15:01:58.610Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/teaching/coms1130/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.606Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/teaching/teaching-1.html</loc>
+    <lastmod>2026-11-24T18:23:39.169Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/teaching/coms3190/index.html</loc>
+    <loc>https://kundan-kumarr.github.io/teaching/coms3090/index.html</loc>
     <lastmod>2026-08-14T15:01:58.607Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/teaching/teaching.html</loc>
-    <lastmod>2026-11-24T15:52:53.726Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/teaching/coms3630/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.609Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/rpkg/domain_adaptation/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.574Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/rpkg/sim2real/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.578Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/rpkg/carla/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.573Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/rpkg/uncertainty/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.579Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/rpkg/multimodal/index.html</loc>
+    <loc>https://kundan-kumarr.github.io/rpkg/meta_rl/index.html</loc>
     <lastmod>2026-08-14T15:01:58.575Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/rpkg/physics-informed-actor-critic/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.576Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/rpkg/drl_vvc/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.574Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/rpkg/smart-energy.html</loc>
+    <lastmod>2026-08-14T15:01:58.579Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/rpkg/ai-safety.html</loc>
+    <lastmod>2026-08-14T15:01:58.573Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/rpkg/research.html</loc>
@@ -46,11 +50,11 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/blog/blog_20251210_self_attention_mechanism/index.html</loc>
-    <lastmod>2026-01-12T17:32:33.824Z</lastmod>
+    <lastmod>2026-08-14T15:01:58.297Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/blog/CopyOftechnotes_ml_series_20251105_class_unbalanced/index.html</loc>
-    <lastmod>2026-02-05T16:46:18.340Z</lastmod>
+    <lastmod>2026-08-14T15:01:58.290Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/blog/index.html</loc>
@@ -58,94 +62,102 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/blog/technotes_llm_series_20251121_llm_reasoning/index.html</loc>
-    <lastmod>2026-01-12T17:32:33.825Z</lastmod>
+    <lastmod>2026-08-14T15:01:58.297Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/blog/blog_20251124_research_guide/index.html</loc>
-    <lastmod>2026-01-12T17:32:33.818Z</lastmod>
+    <lastmod>2026-08-14T15:01:58.291Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/talks/pes_gm_2025/index.html</loc>
+    <loc>https://kundan-kumarr.github.io/projects.html</loc>
+    <lastmod>2026-08-14T15:01:58.545Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/talks/rstats_20230721_teaching/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.584Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/talks/ph_20230330_sp/index.html</loc>
     <lastmod>2026-08-14T15:01:58.583Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/talks/rstats_20190402_blogdown/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.583Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/talks/rstats_20240613_teaching/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.585Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/talks/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.582Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/talks1/rstats_20230721_teaching/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.603Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/talks1/pes_gm_2025/index.html</loc>
+    <loc>https://kundan-kumarr.github.io/talks1/rstats_20190402_blogdown/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.603Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/talks1/community_20240921_quartofriends/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.586Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/talks1/ehr_20210218_biday/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.592Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/talks1/index.html</loc>
     <lastmod>2026-08-14T15:01:58.600Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/talks1/ehr_20191028_rladies/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.590Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/talks1/rstats_20240613_teaching/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.604Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/talks1/ph_20230330_sp/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.601Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/talks1/ehr_20240918_betterehr/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.597Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/talks1/community_20240710_camis/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.586Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/talks1/dummy_talk/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.586Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/talks1/ehr_20221013_ml_icu/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.593Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/projects/project2/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.546Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/projects/project10.html</loc>
+    <loc>https://kundan-kumarr.github.io/projects/llm_grid_planner.html</loc>
     <lastmod>2026-08-14T15:01:58.545Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/projects/project3/index.html</loc>
+    <loc>https://kundan-kumarr.github.io/projects/project5/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.547Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/projects/project4/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.547Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/projects/project11.html</loc>
     <lastmod>2026-08-14T15:01:58.546Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/projects/project9.html</loc>
+    <loc>https://kundan-kumarr.github.io/projects/project8.html</loc>
     <lastmod>2026-08-14T15:01:58.549Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/projects/project6/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.549Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/projects/project7/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.549Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/projects/citylearn.html</loc>
+    <loc>https://kundan-kumarr.github.io/projects/project1/index.html</loc>
     <lastmod>2026-08-14T15:01:58.545Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/publications/articles/pesgm2025.html</loc>
-    <lastmod>2026-11-24T18:56:02.352Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/projects/rag_energy_advisor.html</loc>
+    <lastmod>2026-08-14T15:01:58.549Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/publications/articles/Journal1.html</loc>
-    <lastmod>2026-11-24T17:09:07.635Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/publications/index.html</loc>
+    <lastmod>2026-11-24T17:29:23.557Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/publications/articles/iccpsS2016.html</loc>
+    <loc>https://kundan-kumarr.github.io/publications/articles/pesgm2024.html</loc>
     <lastmod>2026-11-24T17:09:07.636Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/publications/articles/gridedge2025.html</loc>
+    <loc>https://kundan-kumarr.github.io/publications/articles/icmla2022.html</loc>
+    <lastmod>2026-11-24T17:09:07.636Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/publications/articles/tsg2025.html</loc>
+    <lastmod>2026-11-24T17:09:07.635Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/publications/articles/naps2025.html</loc>
+    <lastmod>2026-11-24T18:58:09.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/publications/articles/isgt2024.html</loc>
     <lastmod>2026-11-24T17:09:07.636Z</lastmod>
   </url>
   <url>
@@ -162,103 +174,111 @@
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/dl.html</loc>
-    <lastmod>2026-01-12T17:32:33.827Z</lastmod>
+    <lastmod>2026-08-14T15:01:58.297Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/publications/articles/isgt2024.html</loc>
+    <loc>https://kundan-kumarr.github.io/publications/articles/icml2026.html</loc>
+    <lastmod>2026-11-24T17:09:07.635Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/publications/articles/gridedge2025.html</loc>
     <lastmod>2026-11-24T17:09:07.636Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/publications/articles/naps2025.html</loc>
-    <lastmod>2026-11-24T18:58:09.578Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/publications/articles/icmla2022.html</loc>
+    <loc>https://kundan-kumarr.github.io/publications/articles/iccpsS2016.html</loc>
     <lastmod>2026-11-24T17:09:07.636Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/publications/articles/pesgm2024.html</loc>
-    <lastmod>2026-11-24T17:09:07.636Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/publications/articles/cvprw2022.html</loc>
+    <lastmod>2026-11-24T17:09:07.635Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/publications/index.html</loc>
-    <lastmod>2026-11-24T17:29:23.557Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/publications/articles/Journal1.html</loc>
+    <lastmod>2026-11-24T17:09:07.635Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/projects/rag_energy_advisor.html</loc>
-    <lastmod>2026-08-14T15:01:58.549Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/publications/articles/pesgm2025.html</loc>
+    <lastmod>2026-11-24T18:56:02.352Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/projects/project1/index.html</loc>
+    <loc>https://kundan-kumarr.github.io/projects/citylearn.html</loc>
     <lastmod>2026-08-14T15:01:58.545Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/projects/project8.html</loc>
+    <loc>https://kundan-kumarr.github.io/projects/project7/index.html</loc>
     <lastmod>2026-08-14T15:01:58.549Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/projects/project11.html</loc>
+    <loc>https://kundan-kumarr.github.io/projects/project6/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.549Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/projects/project9.html</loc>
+    <lastmod>2026-08-14T15:01:58.549Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/projects/project3/index.html</loc>
     <lastmod>2026-08-14T15:01:58.546Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/projects/project4/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.547Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/projects/project5/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.547Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/projects/llm_grid_planner.html</loc>
+    <loc>https://kundan-kumarr.github.io/projects/project10.html</loc>
     <lastmod>2026-08-14T15:01:58.545Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/talks1/rstats_20240613_teaching/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.604Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/projects/project2/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.546Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/talks1/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.600Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/talks1/ehr_20221013_ml_icu/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.593Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/talks1/ehr_20210218_biday/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.592Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/talks1/community_20240921_quartofriends/index.html</loc>
+    <loc>https://kundan-kumarr.github.io/talks1/dummy_talk/index.html</loc>
     <lastmod>2026-08-14T15:01:58.586Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/talks1/rstats_20190402_blogdown/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.603Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/talks1/community_20240710_camis/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.586Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/talks1/rstats_20230721_teaching/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.603Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/talks1/ehr_20240918_betterehr/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.597Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/talks/rstats_20240613_teaching/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.585Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/talks1/ph_20230330_sp/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.601Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/talks/ph_20230330_sp/index.html</loc>
+    <loc>https://kundan-kumarr.github.io/talks1/ehr_20191028_rladies/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.590Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/talks1/pes_gm_2025/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.600Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/talks/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.582Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/talks/rstats_20190402_blogdown/index.html</loc>
     <lastmod>2026-08-14T15:01:58.583Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/talks/rstats_20230721_teaching/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.584Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/talks/pes_gm_2025/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.583Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/projects.html</loc>
-    <lastmod>2026-08-14T15:01:58.545Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/index.html</loc>
+    <lastmod>2026-08-27T16:22:54.147Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/blog/llm_evaluation_blog.html</loc>
-    <lastmod>2026-02-05T16:38:04.767Z</lastmod>
+    <lastmod>2026-08-14T15:01:58.297Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/blog/technotes_ml_series_20251105_class_unbalanced/index.html</loc>
-    <lastmod>2026-06-30T15:47:51.027Z</lastmod>
+    <lastmod>2026-08-14T15:01:58.297Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/blog/automated-auditing.html</loc>
@@ -277,28 +297,36 @@
     <lastmod>2026-08-14T15:01:58.574Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/rpkg/drl_vvc/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.574Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/rpkg/physics-informed-actor-critic/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.576Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/rpkg/meta_rl/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.575Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/rpkg/uncertainty/index.html</loc>
+    <loc>https://kundan-kumarr.github.io/rpkg/vision-simulation.html</loc>
     <lastmod>2026-08-14T15:01:58.579Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/rpkg/sim2real/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.578Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/rpkg/multimodal/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.575Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/teaching/coms3630/index.html</loc>
-    <lastmod>2026-08-14T15:01:58.609Z</lastmod>
+    <loc>https://kundan-kumarr.github.io/rpkg/carla/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.573Z</lastmod>
   </url>
   <url>
-    <loc>https://kundan-kumarr.github.io/teaching/coms3090/index.html</loc>
+    <loc>https://kundan-kumarr.github.io/rpkg/domain_adaptation/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.574Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/teaching/teaching.html</loc>
+    <lastmod>2026-11-24T15:52:53.726Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/teaching/coms3190/index.html</loc>
     <lastmod>2026-08-14T15:01:58.607Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kundan-kumarr.github.io/teaching/coms1130/index.html</loc>
+    <lastmod>2026-08-14T15:01:58.606Z</lastmod>
   </url>
   <url>
     <loc>https://kundan-kumarr.github.io/teaching/coms3620/index.html</loc>
@@ -307,45 +335,5 @@
   <url>
     <loc>https://kundan-kumarr.github.io/cv.html</loc>
     <lastmod>2026-08-27T16:32:15.818Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/rpkg/smart-energy.html</loc>
-    <lastmod>2026-08-14T15:01:58.579Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/rpkg/ai-safety.html</loc>
-    <lastmod>2026-08-14T15:01:58.573Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/rpkg/research22.html</loc>
-    <lastmod>2026-03-10T01:16:16.962Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/rpkg/research1.html</loc>
-    <lastmod>2026-11-24T18:00:07.890Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/rpkg/vision-simulation.html</loc>
-    <lastmod>2026-08-14T15:01:58.579Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/teaching/teaching1.html</loc>
-    <lastmod>2026-11-24T15:52:53.726Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/publications/articles/tsg2025.html</loc>
-    <lastmod>2026-11-24T17:09:07.635Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/publications/articles/icml2026.html</loc>
-    <lastmod>2026-11-24T17:09:07.635Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/publications/articles/cvprw2022.html</loc>
-    <lastmod>2026-11-24T17:09:07.635Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kundan-kumarr.github.io/teaching/teaching-1.html</loc>
-    <lastmod>2026-11-24T18:23:39.169Z</lastmod>
   </url>
 </urlset>

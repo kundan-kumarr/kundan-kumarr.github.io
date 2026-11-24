@@ -41,6 +41,9 @@ website:
       - text: "Research"
         icon: lightbulb-fill
         href: rpkg/research.qmd
+      - text: "Publications"
+        icon: journal-bookmark-fill
+        href: publications/index.qmd
       - text: "Projects & Notes"
         icon: puzzle-fill
         menu:
